@@ -1,0 +1,149 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "cloud-frontend-v3/Dashboard_Overview",
+          "docs": [
+            {
+              "id": "cloud-frontend-v3/Dashboard_ABR_Transcoding",
+              "path": "/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud-frontend-v3/Dashboard_Getting_Started",
+              "path": "/docs/cloud-frontend-v3/Dashboard_Getting_Started",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud-frontend-v3/Dashboard_nanoPlayer",
+              "path": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud-frontend-v3/Dashboard_Overview",
+              "path": "/docs/cloud-frontend-v3/Dashboard_Overview",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud-frontend-v3/Dashboard_Secure",
+              "path": "/docs/cloud-frontend-v3/Dashboard_Secure",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud-frontend-v3/Dashboard_Start_Streaming",
+              "path": "/docs/cloud-frontend-v3/Dashboard_Start_Streaming",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud-frontend-v3/Dashboard_Stream_Overview",
+              "path": "/docs/cloud-frontend-v3/Dashboard_Stream_Overview",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_autoplay",
+              "path": "/docs/nanoplayer/nanoplayer_autoplay",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_customization",
+              "path": "/docs/nanoplayer/nanoplayer_feature_customization",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_fullscreen_api",
+              "path": "/docs/nanoplayer/nanoplayer_feature_fullscreen_api",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_latency_control_modes",
+              "path": "/docs/nanoplayer/nanoplayer_feature_latency_control_modes",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_media_error_recovery",
+              "path": "/docs/nanoplayer/nanoplayer_feature_media_error_recovery",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_reconnect_timeouts",
+              "path": "/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_source_defaults",
+              "path": "/docs/nanoplayer/nanoplayer_feature_source_defaults",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_stream_group_configuration",
+              "path": "/docs/nanoplayer/nanoplayer_feature_stream_group_configuration",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_stream_switching",
+              "path": "/docs/nanoplayer/nanoplayer_feature_stream_switching",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_feature_video_access_and_processing",
+              "path": "/docs/nanoplayer/nanoplayer_feature_video_access_and_processing",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_getting_started",
+              "path": "/docs/nanoplayer/nanoplayer_getting_started",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_iframe",
+              "path": "/docs/nanoplayer/nanoplayer_iframe",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_introduction",
+              "path": "/docs/nanoplayer/nanoplayer_introduction",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_player_metrics",
+              "path": "/docs/nanoplayer/nanoplayer_player_metrics",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_supported_browsers",
+              "path": "/docs/nanoplayer/nanoplayer_supported_browsers",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_token_security",
+              "path": "/docs/nanoplayer/nanoplayer_token_security",
+              "sidebar": "H5Live Player"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "nanoStream Cloud": {
+              "link": {
+                "path": "/docs/cloud-frontend-v3/Dashboard_Overview",
+                "label": "cloud-frontend-v3/Dashboard_Overview"
+              }
+            },
+            "H5Live Player": {
+              "link": {
+                "path": "/docs/nanoplayer/nanoplayer_introduction",
+                "label": "nanoplayer/nanoplayer_introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

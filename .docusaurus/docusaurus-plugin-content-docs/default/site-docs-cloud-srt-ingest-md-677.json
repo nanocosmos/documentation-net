@@ -1,0 +1,28 @@
+{
+  "unversionedId": "cloud/srt_ingest",
+  "id": "cloud/srt_ingest",
+  "title": "nanoStream Cloud SRT Ingest Guide",
+  "description": "Thank you for your interest in SRT (Secure Reliable Transport) streaming on nanoStream cloud. We are glad that you can start using this new feature.",
+  "source": "@site/docs/cloud/srt_ingest.md",
+  "sourceDirName": "cloud",
+  "slug": "/cloud/srt_ingest",
+  "permalink": "/docs/cloud/srt_ingest",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/srt_ingest.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "srt_ingest",
+    "title": "nanoStream Cloud SRT Ingest Guide",
+    "sidebar_label": "SRT Ingest"
+  },
+  "sidebar": "nanoStream Cloud",
+  "previous": {
+    "title": "Live Encoding",
+    "permalink": "/docs/cloud/live_encoding"
+  },
+  "next": {
+    "title": "Live Recording and VOD",
+    "permalink": "/docs/cloud/live-recording-vod"
+  }
+}

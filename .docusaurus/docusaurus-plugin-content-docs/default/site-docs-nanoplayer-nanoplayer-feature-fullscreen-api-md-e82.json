@@ -1,0 +1,28 @@
+{
+  "unversionedId": "nanoplayer/nanoplayer_feature_fullscreen_api",
+  "id": "nanoplayer/nanoplayer_feature_fullscreen_api",
+  "title": "Fullscreen API",
+  "description": "The nanoStream H5Live Player Version 4.7 is introducing the new fullscreen API which enables to request and exit the player's fullscreen mode as well as listening to fullscreen changes on the application level.",
+  "source": "@site/docs/nanoplayer/nanoplayer_feature_fullscreen_api.md",
+  "sourceDirName": "nanoplayer",
+  "slug": "/nanoplayer/nanoplayer_feature_fullscreen_api",
+  "permalink": "/docs/nanoplayer/nanoplayer_feature_fullscreen_api",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_fullscreen_api.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nanoplayer_feature_fullscreen_api",
+    "title": "Fullscreen API",
+    "sidebar_label": "Fullscreen API"
+  },
+  "sidebar": "H5Live Player",
+  "previous": {
+    "title": "Stream switching and ABR",
+    "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_switching"
+  },
+  "next": {
+    "title": "UI and customization",
+    "permalink": "/docs/nanoplayer/nanoplayer_feature_customization"
+  }
+}

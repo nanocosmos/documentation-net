@@ -1,0 +1,1140 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs",
+          "editUrlLocalized": "https://github.com/nanocosmos/docs/tree/master/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/annamatic/Desktop/nano-docs/sidebars.js",
+          "contentPath": "/Users/annamatic/Desktop/nano-docs/docs",
+          "contentPathLocalized": "/Users/annamatic/Desktop/nano-docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "cloud-frontend-v3/Dashboard_ABR_Transcoding",
+              "id": "cloud-frontend-v3/Dashboard_ABR_Transcoding",
+              "title": "Adaptive Bitrate (ABR) and Live Transoding",
+              "description": "Adaptive Bitrate (ABR)",
+              "source": "@site/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding.md",
+              "sourceDirName": "cloud-frontend-v3",
+              "slug": "/cloud-frontend-v3/Dashboard_ABR_Transcoding",
+              "permalink": "/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "Dashboard_ABR_Transcoding",
+                "title": "Adaptive Bitrate (ABR) and Live Transoding",
+                "sidebar_label": "Adaptive Bitrate (ABR) and Live Transoding"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Stream Overview",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Stream_Overview"
+              },
+              "next": {
+                "title": "Secure Playback & Secure Token",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Secure"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend-v3/Dashboard_Getting_Started",
+              "id": "cloud-frontend-v3/Dashboard_Getting_Started",
+              "title": "Getting Started",
+              "description": "Welcome to the nanoStream Cloud/Bintu dashboard, the official frontend interface that grants developers access to the full suite of features and functionalities provided by the nanoStream Cloud bintu API. Please be aware that in 2022 we have transitioned from version 2 to version 3.",
+              "source": "@site/docs/cloud-frontend-v3/Dashboard_Getting_Started.md",
+              "sourceDirName": "cloud-frontend-v3",
+              "slug": "/cloud-frontend-v3/Dashboard_Getting_Started",
+              "permalink": "/docs/cloud-frontend-v3/Dashboard_Getting_Started",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Getting_Started.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "Dashboard_Getting_Started",
+                "title": "Getting Started",
+                "sidebar_label": "Getting Started"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Overview"
+              },
+              "next": {
+                "title": "Start Streaming",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Start_Streaming"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend-v3/Dashboard_nanoPlayer",
+              "id": "cloud-frontend-v3/Dashboard_nanoPlayer",
+              "title": "Embed nanoPlayer Code on Your Web Page",
+              "description": "Embedding a live stream into your own website is incredibly simple with nanoStream. Each stream has a unique code snippet that is automatically updated to your setup, requiring you to only copy and paste it into the right place.",
+              "source": "@site/docs/cloud-frontend-v3/Dashboard_nanoPlayer.md",
+              "sourceDirName": "cloud-frontend-v3",
+              "slug": "/cloud-frontend-v3/Dashboard_nanoPlayer",
+              "permalink": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_nanoPlayer.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "Dashboard_nanoPlayer",
+                "title": "Embed nanoPlayer Code on Your Web Page",
+                "sidebar_label": "Embed nanoPlayer Code on Your Web Page"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Secure Playback & Secure Token",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Secure"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend-v3/Dashboard_Overview",
+              "id": "cloud-frontend-v3/Dashboard_Overview",
+              "title": "Overview",
+              "description": "The nanoStream Cloud Dashboard is a web-based tool implemented and designed to provide users with an intuitive and comprehensive overview of their streaming activities. It serves as a centralized hub to monitor and manage the users live video streaming workflow.",
+              "source": "@site/docs/cloud-frontend-v3/Dashboard_Overview.md",
+              "sourceDirName": "cloud-frontend-v3",
+              "slug": "/cloud-frontend-v3/Dashboard_Overview",
+              "permalink": "/docs/cloud-frontend-v3/Dashboard_Overview",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Overview.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "Dashboard_Overview",
+                "title": "Overview",
+                "sidebar_label": "Overview"
+              },
+              "sidebar": "nanoStream Cloud",
+              "next": {
+                "title": "Getting Started",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Getting_Started"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend-v3/Dashboard_Secure",
+              "id": "cloud-frontend-v3/Dashboard_Secure",
+              "title": "Secure Playback & Secure Token",
+              "description": "Secure Playback Tokens are a valuable tool that enhances the security of your streams by providing controlled access. With these tokens, you have the ability to decide who can play back your stream, ensuring that only authorized viewers can access your content. The regular playout URL alone will not grant playback privileges.",
+              "source": "@site/docs/cloud-frontend-v3/Dashboard_Secure.md",
+              "sourceDirName": "cloud-frontend-v3",
+              "slug": "/cloud-frontend-v3/Dashboard_Secure",
+              "permalink": "/docs/cloud-frontend-v3/Dashboard_Secure",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Secure.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "Dashboard_Secure",
+                "title": "Secure Playback & Secure Token",
+                "sidebar_label": "Secure Playback & Secure Token"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Adaptive Bitrate (ABR) and Live Transoding",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding"
+              },
+              "next": {
+                "title": "Embed nanoPlayer Code on Your Web Page",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend-v3/Dashboard_Start_Streaming",
+              "id": "cloud-frontend-v3/Dashboard_Start_Streaming",
+              "title": "Start Streaming",
+              "description": "To begin, please sign in using your nanoStream Cloud/Bintu account credentials.",
+              "source": "@site/docs/cloud-frontend-v3/Dashboard_Start_Streaming.md",
+              "sourceDirName": "cloud-frontend-v3",
+              "slug": "/cloud-frontend-v3/Dashboard_Start_Streaming",
+              "permalink": "/docs/cloud-frontend-v3/Dashboard_Start_Streaming",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Start_Streaming.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "Dashboard_Start_Streaming",
+                "title": "Start Streaming",
+                "sidebar_label": "Start Streaming"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Getting Started",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Getting_Started"
+              },
+              "next": {
+                "title": "Stream Overview",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Stream_Overview"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend-v3/Dashboard_Stream_Overview",
+              "id": "cloud-frontend-v3/Dashboard_Stream_Overview",
+              "title": "Stream Overview",
+              "description": "The streams page provides a comprehensive list of all your streams, displaying their state (created, live, ended), stream ID, stream name, whether they are part of a stream group, and their last update timestamp. Additionally, the pesence of tags allows for easier stream identification.",
+              "source": "@site/docs/cloud-frontend-v3/Dashboard_Stream_Overview.md",
+              "sourceDirName": "cloud-frontend-v3",
+              "slug": "/cloud-frontend-v3/Dashboard_Stream_Overview",
+              "permalink": "/docs/cloud-frontend-v3/Dashboard_Stream_Overview",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Stream_Overview.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "Dashboard_Stream_Overview",
+                "title": "Stream Overview",
+                "sidebar_label": "Stream Overview"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Start Streaming",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Start_Streaming"
+              },
+              "next": {
+                "title": "Adaptive Bitrate (ABR) and Live Transoding",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_autoplay",
+              "id": "nanoplayer/nanoplayer_autoplay",
+              "title": "Autoplay",
+              "description": "Autoplay of videos on web pages is a highly discussed topic.",
+              "source": "@site/docs/nanoplayer/nanoplayer_autoplay.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_autoplay",
+              "permalink": "/docs/nanoplayer/nanoplayer_autoplay",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_autoplay.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_autoplay",
+                "title": "Autoplay",
+                "sidebar_label": "Autoplay"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "iframe Embeds",
+                "permalink": "/docs/nanoplayer/nanoplayer_iframe"
+              },
+              "next": {
+                "title": "Latency control modes",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_latency_control_modes"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_customization",
+              "id": "nanoplayer/nanoplayer_feature_customization",
+              "title": "UI and customization",
+              "description": "Changing parameters is straightforward and easy. You can have a tailor-made design and a smooth appearance within seconds. It is possible, among others, to adjust integrated player controls, icons, background color, add a poster, change the cursor etc. Of course, you can also disable all built-in styles. In this manual, we will go through customizable elements so that  H5Live Player UI will suit all your needs.",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_customization.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_customization",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_customization",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_customization.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_customization",
+                "title": "UI and customization",
+                "sidebar_label": "UI and customization"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Fullscreen API",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_fullscreen_api"
+              },
+              "next": {
+                "title": "Reconnect and Timeouts",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_fullscreen_api",
+              "id": "nanoplayer/nanoplayer_feature_fullscreen_api",
+              "title": "Fullscreen API",
+              "description": "The nanoStream H5Live Player Version 4.7 is introducing the new fullscreen API which enables to request and exit the player's fullscreen mode as well as listening to fullscreen changes on the application level.",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_fullscreen_api.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_fullscreen_api",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_fullscreen_api",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_fullscreen_api.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_fullscreen_api",
+                "title": "Fullscreen API",
+                "sidebar_label": "Fullscreen API"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Stream switching and ABR",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_switching"
+              },
+              "next": {
+                "title": "UI and customization",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_customization"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_latency_control_modes",
+              "id": "nanoplayer/nanoplayer_feature_latency_control_modes",
+              "title": "Latency Control Modes",
+              "description": "Click PLAY button to start",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_latency_control_modes.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_latency_control_modes",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_latency_control_modes",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_latency_control_modes.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_latency_control_modes",
+                "title": "Latency Control Modes",
+                "sidebar_label": "Latency control modes"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Autoplay",
+                "permalink": "/docs/nanoplayer/nanoplayer_autoplay"
+              },
+              "next": {
+                "title": "Stream group configuration",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_group_configuration"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_media_error_recovery",
+              "id": "nanoplayer/nanoplayer_feature_media_error_recovery",
+              "title": "Media Error Recovery",
+              "description": "With the nanoStream H5Live Player Version 4.10.4 an automatic recovery workflow was introduced, meaning that for certain media errors which might occur during playback, the recovery will be triggered.  In this way, even if there is a disturbance during media decoding, playback resumes automatically. This feature brings a better experience for users.",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_media_error_recovery.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_media_error_recovery",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_media_error_recovery",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_media_error_recovery.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_media_error_recovery",
+                "title": "Media Error Recovery",
+                "sidebar_label": "Media Error Recovery"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Reconnect and Timeouts",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts"
+              },
+              "next": {
+                "title": "Source defaults",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_source_defaults"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_reconnect_timeouts",
+              "id": "nanoplayer/nanoplayer_feature_reconnect_timeouts",
+              "title": "Reconnect and Timeouts",
+              "description": "Reconnect on unexpected connection close",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_reconnect_timeouts",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_reconnect_timeouts",
+                "title": "Reconnect and Timeouts",
+                "sidebar_label": "Reconnect and Timeouts"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "UI and customization",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_customization"
+              },
+              "next": {
+                "title": "Media Error Recovery",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_media_error_recovery"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_source_defaults",
+              "id": "nanoplayer/nanoplayer_feature_source_defaults",
+              "title": "Source defaults",
+              "description": "Using source defaults with standard nanoStream Cloud",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_source_defaults.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_source_defaults",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_source_defaults",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_source_defaults.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_source_defaults",
+                "title": "Source defaults",
+                "sidebar_label": "Source defaults"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Media Error Recovery",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_media_error_recovery"
+              },
+              "next": {
+                "title": "Video Access and Processing",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_video_access_and_processing"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_stream_group_configuration",
+              "id": "nanoplayer/nanoplayer_feature_stream_group_configuration",
+              "title": "Stream group configuration",
+              "description": "Using stream group configuration with standard nanoStream Cloud",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_stream_group_configuration.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_stream_group_configuration",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_group_configuration",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_stream_group_configuration.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_stream_group_configuration",
+                "title": "Stream group configuration",
+                "sidebar_label": "Stream group configuration"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Latency control modes",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_latency_control_modes"
+              },
+              "next": {
+                "title": "Secure playback with H5Live",
+                "permalink": "/docs/nanoplayer/nanoplayer_token_security"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_stream_switching",
+              "id": "nanoplayer/nanoplayer_feature_stream_switching",
+              "title": "Stream switching and ABR",
+              "description": "Multi stream configuration, integrated ABR and stream switching features",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_stream_switching.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_stream_switching",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_switching",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_stream_switching.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_stream_switching",
+                "title": "Stream switching and ABR",
+                "sidebar_label": "Stream switching and ABR"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Secure playback with H5Live",
+                "permalink": "/docs/nanoplayer/nanoplayer_token_security"
+              },
+              "next": {
+                "title": "Fullscreen API",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_fullscreen_api"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_feature_video_access_and_processing",
+              "id": "nanoplayer/nanoplayer_feature_video_access_and_processing",
+              "title": "Video Access and Processing",
+              "description": "Video access and processing using onActiveVideoElementChange",
+              "source": "@site/docs/nanoplayer/nanoplayer_feature_video_access_and_processing.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_video_access_and_processing",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_video_access_and_processing",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_video_access_and_processing.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_video_access_and_processing",
+                "title": "Video Access and Processing",
+                "sidebar_label": "Video Access and Processing"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Source defaults",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_source_defaults"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_getting_started",
+              "id": "nanoplayer/nanoplayer_getting_started",
+              "title": "Getting started",
+              "description": "Embedding H5Live player on your own web page",
+              "source": "@site/docs/nanoplayer/nanoplayer_getting_started.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_getting_started",
+              "permalink": "/docs/nanoplayer/nanoplayer_getting_started",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_getting_started.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_getting_started",
+                "title": "Getting started",
+                "sidebar_label": "Getting started"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/nanoplayer/nanoplayer_introduction"
+              },
+              "next": {
+                "title": "Supported Browsers",
+                "permalink": "/docs/nanoplayer/nanoplayer_supported_browsers"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_iframe",
+              "id": "nanoplayer/nanoplayer_iframe",
+              "title": "iframe Embeds",
+              "description": "Creating a custom iframe",
+              "source": "@site/docs/nanoplayer/nanoplayer_iframe.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_iframe",
+              "permalink": "/docs/nanoplayer/nanoplayer_iframe",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_iframe.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_iframe",
+                "title": "iframe Embeds",
+                "sidebar_label": "iframe Embeds"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Player Metrics",
+                "permalink": "/docs/nanoplayer/nanoplayer_player_metrics"
+              },
+              "next": {
+                "title": "Autoplay",
+                "permalink": "/docs/nanoplayer/nanoplayer_autoplay"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_introduction",
+              "id": "nanoplayer/nanoplayer_introduction",
+              "title": "Introduction",
+              "description": "Schema",
+              "source": "@site/docs/nanoplayer/nanoplayer_introduction.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_introduction",
+              "permalink": "/docs/nanoplayer/nanoplayer_introduction",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_introduction.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_introduction",
+                "title": "Introduction",
+                "sidebar_label": "Introduction"
+              },
+              "sidebar": "H5Live Player",
+              "next": {
+                "title": "Getting started",
+                "permalink": "/docs/nanoplayer/nanoplayer_getting_started"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_player_metrics",
+              "id": "nanoplayer/nanoplayer_player_metrics",
+              "title": "Player Metrics",
+              "description": "How to use",
+              "source": "@site/docs/nanoplayer/nanoplayer_player_metrics.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_player_metrics",
+              "permalink": "/docs/nanoplayer/nanoplayer_player_metrics",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_player_metrics.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_player_metrics",
+                "title": "Player Metrics",
+                "sidebar_label": "Player Metrics"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Supported Browsers",
+                "permalink": "/docs/nanoplayer/nanoplayer_supported_browsers"
+              },
+              "next": {
+                "title": "iframe Embeds",
+                "permalink": "/docs/nanoplayer/nanoplayer_iframe"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_supported_browsers",
+              "id": "nanoplayer/nanoplayer_supported_browsers",
+              "title": "Support Browsers",
+              "description": "The low-latency nanoStream h5Live Player runs on all full-featured HTML5 browsers including",
+              "source": "@site/docs/nanoplayer/nanoplayer_supported_browsers.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_supported_browsers",
+              "permalink": "/docs/nanoplayer/nanoplayer_supported_browsers",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_supported_browsers.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_supported_browsers",
+                "title": "Support Browsers",
+                "sidebar_label": "Supported Browsers"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Getting started",
+                "permalink": "/docs/nanoplayer/nanoplayer_getting_started"
+              },
+              "next": {
+                "title": "Player Metrics",
+                "permalink": "/docs/nanoplayer/nanoplayer_player_metrics"
+              }
+            },
+            {
+              "unversionedId": "nanoplayer/nanoplayer_token_security",
+              "id": "nanoplayer/nanoplayer_token_security",
+              "title": "Secure playback with H5Live",
+              "description": "Click PLAY button to start",
+              "source": "@site/docs/nanoplayer/nanoplayer_token_security.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_token_security",
+              "permalink": "/docs/nanoplayer/nanoplayer_token_security",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_token_security.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_token_security",
+                "title": "Secure playback with H5Live",
+                "sidebar_label": "Secure playback with H5Live"
+              },
+              "sidebar": "H5Live Player",
+              "previous": {
+                "title": "Stream group configuration",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_group_configuration"
+              },
+              "next": {
+                "title": "Stream switching and ABR",
+                "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_switching"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "nanoStream Cloud": [
+              {
+                "type": "category",
+                "label": "Dashboard",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "cloud-frontend-v3/Dashboard_Overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cloud-frontend-v3/Dashboard_Getting_Started"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Features & Functions",
+                    "collapsible": true,
+                    "collapsed": false,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "cloud-frontend-v3/Dashboard_Start_Streaming"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "cloud-frontend-v3/Dashboard_Stream_Overview"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "cloud-frontend-v3/Dashboard_ABR_Transcoding"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "cloud-frontend-v3/Dashboard_Secure"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "cloud-frontend-v3/Dashboard_nanoPlayer"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "H5Live Player": [
+              {
+                "type": "doc",
+                "id": "nanoplayer/nanoplayer_introduction"
+              },
+              {
+                "type": "doc",
+                "id": "nanoplayer/nanoplayer_getting_started"
+              },
+              {
+                "type": "doc",
+                "id": "nanoplayer/nanoplayer_supported_browsers"
+              },
+              {
+                "type": "doc",
+                "id": "nanoplayer/nanoplayer_player_metrics"
+              },
+              {
+                "type": "doc",
+                "id": "nanoplayer/nanoplayer_iframe"
+              },
+              {
+                "type": "category",
+                "label": "Features",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_autoplay"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_latency_control_modes"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_stream_group_configuration"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_token_security"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_stream_switching"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_fullscreen_api"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_customization"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_reconnect_timeouts"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_media_error_recovery"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_source_defaults"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanoplayer/nanoplayer_feature_video_access_and_processing"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/blog/welcome",
+            "source": "@site/blog/2021-08-26-welcome/index.md",
+            "title": "Welcome",
+            "description": "Docusaurus blogging features are powered by the blog plugin.",
+            "date": "2021-08-26T00:00:00.000Z",
+            "formattedDate": "August 26, 2021",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.405,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              },
+              {
+                "name": "Yangshun Tay",
+                "title": "Front End Engineer @ Facebook",
+                "url": "https://github.com/yangshun",
+                "imageURL": "https://github.com/yangshun.png",
+                "key": "yangshun"
+              }
+            ],
+            "frontMatter": {
+              "slug": "welcome",
+              "title": "Welcome",
+              "authors": [
+                "slorber",
+                "yangshun"
+              ],
+              "tags": [
+                "facebook",
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "nextItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/blog/mdx-blog-post"
+            }
+          },
+          "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimply add Markdown files (or folders) to the `blog` directory.\n\nRegular blog authors can be added to `authors.yml`.\n\nThe blog post date can be extracted from filenames, such as:\n\n- `2019-05-30-welcome.md`\n- `2019-05-30-welcome/index.md`\n\nA blog post folder can be convenient to co-locate blog post images:\n\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\n\nThe blog supports tags as well!\n\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
+        },
+        {
+          "id": "mdx-blog-post",
+          "metadata": {
+            "permalink": "/blog/mdx-blog-post",
+            "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
+            "title": "MDX Blog Post",
+            "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
+            "date": "2021-08-01T00:00:00.000Z",
+            "formattedDate": "August 1, 2021",
+            "tags": [
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.175,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              }
+            ],
+            "frontMatter": {
+              "slug": "mdx-blog-post",
+              "title": "MDX Blog Post",
+              "authors": [
+                "slorber"
+              ],
+              "tags": [
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Long Blog Post",
+              "permalink": "/blog/long-blog-post"
+            }
+          },
+          "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\n\n:::tip\n\nUse the power of React to create interactive blog posts.\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n\n:::"
+        },
+        {
+          "id": "long-blog-post",
+          "metadata": {
+            "permalink": "/blog/long-blog-post",
+            "source": "@site/blog/2019-05-29-long-blog-post.md",
+            "title": "Long Blog Post",
+            "description": "This is the summary of a very long blog post,",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "May 29, 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 2.05,
+            "hasTruncateMarker": true,
+            "authors": [
+              {
+                "name": "Endilie Yacop Sucipto",
+                "title": "Maintainer of Docusaurus",
+                "url": "https://github.com/endiliey",
+                "imageURL": "https://github.com/endiliey.png",
+                "key": "endi"
+              }
+            ],
+            "frontMatter": {
+              "slug": "long-blog-post",
+              "title": "Long Blog Post",
+              "authors": "endi",
+              "tags": [
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/blog/mdx-blog-post"
+            },
+            "nextItem": {
+              "title": "First Blog Post",
+              "permalink": "/blog/first-blog-post"
+            }
+          },
+          "content": "This is the summary of a very long blog post,\n\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\n\n<!--truncate-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        },
+        {
+          "id": "first-blog-post",
+          "metadata": {
+            "permalink": "/blog/first-blog-post",
+            "source": "@site/blog/2019-05-28-first-blog-post.md",
+            "title": "First Blog Post",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "May 28, 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              }
+            ],
+            "frontMatter": {
+              "slug": "first-blog-post",
+              "title": "First Blog Post",
+              "authors": {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              },
+              "tags": [
+                "hola",
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Long Blog Post",
+              "permalink": "/blog/long-blog-post"
+            }
+          },
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 4,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          }
+        }
+      ],
+      "blogTags": {
+        "/blog/tags/facebook": {
+          "label": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/facebook",
+          "pages": [
+            {
+              "items": [
+                "welcome"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/facebook",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/hello": {
+          "label": "hello",
+          "items": [
+            "welcome",
+            "long-blog-post"
+          ],
+          "permalink": "/blog/tags/hello",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "long-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/hello",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 2,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/docusaurus": {
+          "label": "docusaurus",
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "permalink": "/blog/tags/docusaurus",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "mdx-blog-post",
+                "long-blog-post",
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/docusaurus",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 4,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/hola": {
+          "label": "hola",
+          "items": [
+            "first-blog-post"
+          ],
+          "permalink": "/blog/tags/hola",
+          "pages": [
+            {
+              "items": [
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/hola",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        }
+      },
+      "blogTagsListPath": "/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        }
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

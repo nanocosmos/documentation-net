@@ -1,0 +1,28 @@
+{
+  "unversionedId": "nanoplayer/nanoplayer_feature_latency_control_modes",
+  "id": "nanoplayer/nanoplayer_feature_latency_control_modes",
+  "title": "Latency Control Modes",
+  "description": "Click PLAY button to start",
+  "source": "@site/docs/nanoplayer/nanoplayer_feature_latency_control_modes.md",
+  "sourceDirName": "nanoplayer",
+  "slug": "/nanoplayer/nanoplayer_feature_latency_control_modes",
+  "permalink": "/docs/nanoplayer/nanoplayer_feature_latency_control_modes",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_latency_control_modes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nanoplayer_feature_latency_control_modes",
+    "title": "Latency Control Modes",
+    "sidebar_label": "Latency control modes"
+  },
+  "sidebar": "H5Live Player",
+  "previous": {
+    "title": "Autoplay",
+    "permalink": "/docs/nanoplayer/nanoplayer_autoplay"
+  },
+  "next": {
+    "title": "Stream group configuration",
+    "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_group_configuration"
+  }
+}

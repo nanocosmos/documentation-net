@@ -1,0 +1,15 @@
+{
+  "unversionedId": "cloud/network-diagnostics-mtr",
+  "id": "cloud/network-diagnostics-mtr",
+  "title": "network-diagnostics-mtr",
+  "description": "MTR is a powerful tool which enables administrators to diagnose and isolate networking errors and provide reports of network status to upstream providers. MTR represents an evolution of the traceroute command by providing a greater data sample, as if augmenting traceroute with ping output. This document provides an in depth overview of MTR, the data it generates, and how to interpret and draw conclusions based on the data provided by it.",
+  "source": "@site/docs/cloud/network-diagnostics-mtr.md",
+  "sourceDirName": "cloud",
+  "slug": "/cloud/network-diagnostics-mtr",
+  "permalink": "/docs/cloud/network-diagnostics-mtr",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/network-diagnostics-mtr.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,318 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "nanoStream Cloud": [
+      {
+        "type": "category",
+        "label": "Dashboard",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/cloud-frontend-v3/Dashboard_Overview",
+            "docId": "cloud-frontend-v3/Dashboard_Overview"
+          },
+          {
+            "type": "link",
+            "label": "Getting Started",
+            "href": "/docs/cloud-frontend-v3/Dashboard_Getting_Started",
+            "docId": "cloud-frontend-v3/Dashboard_Getting_Started"
+          },
+          {
+            "type": "category",
+            "label": "Features & Functions",
+            "collapsible": true,
+            "collapsed": false,
+            "items": [
+              {
+                "type": "link",
+                "label": "Start Streaming",
+                "href": "/docs/cloud-frontend-v3/Dashboard_Start_Streaming",
+                "docId": "cloud-frontend-v3/Dashboard_Start_Streaming"
+              },
+              {
+                "type": "link",
+                "label": "Stream Overview",
+                "href": "/docs/cloud-frontend-v3/Dashboard_Stream_Overview",
+                "docId": "cloud-frontend-v3/Dashboard_Stream_Overview"
+              },
+              {
+                "type": "link",
+                "label": "Adaptive Bitrate (ABR) and Live Transoding",
+                "href": "/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding",
+                "docId": "cloud-frontend-v3/Dashboard_ABR_Transcoding"
+              },
+              {
+                "type": "link",
+                "label": "Secure Playback & Secure Token",
+                "href": "/docs/cloud-frontend-v3/Dashboard_Secure",
+                "docId": "cloud-frontend-v3/Dashboard_Secure"
+              },
+              {
+                "type": "link",
+                "label": "Embed nanoPlayer Code on Your Web Page",
+                "href": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer",
+                "docId": "cloud-frontend-v3/Dashboard_nanoPlayer"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "H5Live Player": [
+      {
+        "type": "link",
+        "label": "Introduction",
+        "href": "/docs/nanoplayer/nanoplayer_introduction",
+        "docId": "nanoplayer/nanoplayer_introduction"
+      },
+      {
+        "type": "link",
+        "label": "Getting started",
+        "href": "/docs/nanoplayer/nanoplayer_getting_started",
+        "docId": "nanoplayer/nanoplayer_getting_started"
+      },
+      {
+        "type": "link",
+        "label": "Supported Browsers",
+        "href": "/docs/nanoplayer/nanoplayer_supported_browsers",
+        "docId": "nanoplayer/nanoplayer_supported_browsers"
+      },
+      {
+        "type": "link",
+        "label": "Player Metrics",
+        "href": "/docs/nanoplayer/nanoplayer_player_metrics",
+        "docId": "nanoplayer/nanoplayer_player_metrics"
+      },
+      {
+        "type": "link",
+        "label": "iframe Embeds",
+        "href": "/docs/nanoplayer/nanoplayer_iframe",
+        "docId": "nanoplayer/nanoplayer_iframe"
+      },
+      {
+        "type": "category",
+        "label": "Features",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Autoplay",
+            "href": "/docs/nanoplayer/nanoplayer_autoplay",
+            "docId": "nanoplayer/nanoplayer_autoplay"
+          },
+          {
+            "type": "link",
+            "label": "Latency control modes",
+            "href": "/docs/nanoplayer/nanoplayer_feature_latency_control_modes",
+            "docId": "nanoplayer/nanoplayer_feature_latency_control_modes"
+          },
+          {
+            "type": "link",
+            "label": "Stream group configuration",
+            "href": "/docs/nanoplayer/nanoplayer_feature_stream_group_configuration",
+            "docId": "nanoplayer/nanoplayer_feature_stream_group_configuration"
+          },
+          {
+            "type": "link",
+            "label": "Secure playback with H5Live",
+            "href": "/docs/nanoplayer/nanoplayer_token_security",
+            "docId": "nanoplayer/nanoplayer_token_security"
+          },
+          {
+            "type": "link",
+            "label": "Stream switching and ABR",
+            "href": "/docs/nanoplayer/nanoplayer_feature_stream_switching",
+            "docId": "nanoplayer/nanoplayer_feature_stream_switching"
+          },
+          {
+            "type": "link",
+            "label": "Fullscreen API",
+            "href": "/docs/nanoplayer/nanoplayer_feature_fullscreen_api",
+            "docId": "nanoplayer/nanoplayer_feature_fullscreen_api"
+          },
+          {
+            "type": "link",
+            "label": "UI and customization",
+            "href": "/docs/nanoplayer/nanoplayer_feature_customization",
+            "docId": "nanoplayer/nanoplayer_feature_customization"
+          },
+          {
+            "type": "link",
+            "label": "Reconnect and Timeouts",
+            "href": "/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts",
+            "docId": "nanoplayer/nanoplayer_feature_reconnect_timeouts"
+          },
+          {
+            "type": "link",
+            "label": "Media Error Recovery",
+            "href": "/docs/nanoplayer/nanoplayer_feature_media_error_recovery",
+            "docId": "nanoplayer/nanoplayer_feature_media_error_recovery"
+          },
+          {
+            "type": "link",
+            "label": "Source defaults",
+            "href": "/docs/nanoplayer/nanoplayer_feature_source_defaults",
+            "docId": "nanoplayer/nanoplayer_feature_source_defaults"
+          },
+          {
+            "type": "link",
+            "label": "Video Access and Processing",
+            "href": "/docs/nanoplayer/nanoplayer_feature_video_access_and_processing",
+            "docId": "nanoplayer/nanoplayer_feature_video_access_and_processing"
+          }
+        ]
+      }
+    ]
+  },
+  "docs": {
+    "cloud-frontend-v3/Dashboard_ABR_Transcoding": {
+      "id": "cloud-frontend-v3/Dashboard_ABR_Transcoding",
+      "title": "Adaptive Bitrate (ABR) and Live Transoding",
+      "description": "Adaptive Bitrate (ABR)",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud-frontend-v3/Dashboard_Getting_Started": {
+      "id": "cloud-frontend-v3/Dashboard_Getting_Started",
+      "title": "Getting Started",
+      "description": "Welcome to the nanoStream Cloud/Bintu dashboard, the official frontend interface that grants developers access to the full suite of features and functionalities provided by the nanoStream Cloud bintu API. Please be aware that in 2022 we have transitioned from version 2 to version 3.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud-frontend-v3/Dashboard_nanoPlayer": {
+      "id": "cloud-frontend-v3/Dashboard_nanoPlayer",
+      "title": "Embed nanoPlayer Code on Your Web Page",
+      "description": "Embedding a live stream into your own website is incredibly simple with nanoStream. Each stream has a unique code snippet that is automatically updated to your setup, requiring you to only copy and paste it into the right place.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud-frontend-v3/Dashboard_Overview": {
+      "id": "cloud-frontend-v3/Dashboard_Overview",
+      "title": "Overview",
+      "description": "The nanoStream Cloud Dashboard is a web-based tool implemented and designed to provide users with an intuitive and comprehensive overview of their streaming activities. It serves as a centralized hub to monitor and manage the users live video streaming workflow.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud-frontend-v3/Dashboard_Secure": {
+      "id": "cloud-frontend-v3/Dashboard_Secure",
+      "title": "Secure Playback & Secure Token",
+      "description": "Secure Playback Tokens are a valuable tool that enhances the security of your streams by providing controlled access. With these tokens, you have the ability to decide who can play back your stream, ensuring that only authorized viewers can access your content. The regular playout URL alone will not grant playback privileges.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud-frontend-v3/Dashboard_Start_Streaming": {
+      "id": "cloud-frontend-v3/Dashboard_Start_Streaming",
+      "title": "Start Streaming",
+      "description": "To begin, please sign in using your nanoStream Cloud/Bintu account credentials.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud-frontend-v3/Dashboard_Stream_Overview": {
+      "id": "cloud-frontend-v3/Dashboard_Stream_Overview",
+      "title": "Stream Overview",
+      "description": "The streams page provides a comprehensive list of all your streams, displaying their state (created, live, ended), stream ID, stream name, whether they are part of a stream group, and their last update timestamp. Additionally, the pesence of tags allows for easier stream identification.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "nanoplayer/nanoplayer_autoplay": {
+      "id": "nanoplayer/nanoplayer_autoplay",
+      "title": "Autoplay",
+      "description": "Autoplay of videos on web pages is a highly discussed topic.",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_customization": {
+      "id": "nanoplayer/nanoplayer_feature_customization",
+      "title": "UI and customization",
+      "description": "Changing parameters is straightforward and easy. You can have a tailor-made design and a smooth appearance within seconds. It is possible, among others, to adjust integrated player controls, icons, background color, add a poster, change the cursor etc. Of course, you can also disable all built-in styles. In this manual, we will go through customizable elements so that  H5Live Player UI will suit all your needs.",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_fullscreen_api": {
+      "id": "nanoplayer/nanoplayer_feature_fullscreen_api",
+      "title": "Fullscreen API",
+      "description": "The nanoStream H5Live Player Version 4.7 is introducing the new fullscreen API which enables to request and exit the player's fullscreen mode as well as listening to fullscreen changes on the application level.",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_latency_control_modes": {
+      "id": "nanoplayer/nanoplayer_feature_latency_control_modes",
+      "title": "Latency Control Modes",
+      "description": "Click PLAY button to start",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_media_error_recovery": {
+      "id": "nanoplayer/nanoplayer_feature_media_error_recovery",
+      "title": "Media Error Recovery",
+      "description": "With the nanoStream H5Live Player Version 4.10.4 an automatic recovery workflow was introduced, meaning that for certain media errors which might occur during playback, the recovery will be triggered.  In this way, even if there is a disturbance during media decoding, playback resumes automatically. This feature brings a better experience for users.",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_reconnect_timeouts": {
+      "id": "nanoplayer/nanoplayer_feature_reconnect_timeouts",
+      "title": "Reconnect and Timeouts",
+      "description": "Reconnect on unexpected connection close",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_source_defaults": {
+      "id": "nanoplayer/nanoplayer_feature_source_defaults",
+      "title": "Source defaults",
+      "description": "Using source defaults with standard nanoStream Cloud",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_stream_group_configuration": {
+      "id": "nanoplayer/nanoplayer_feature_stream_group_configuration",
+      "title": "Stream group configuration",
+      "description": "Using stream group configuration with standard nanoStream Cloud",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_stream_switching": {
+      "id": "nanoplayer/nanoplayer_feature_stream_switching",
+      "title": "Stream switching and ABR",
+      "description": "Multi stream configuration, integrated ABR and stream switching features",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_feature_video_access_and_processing": {
+      "id": "nanoplayer/nanoplayer_feature_video_access_and_processing",
+      "title": "Video Access and Processing",
+      "description": "Video access and processing using onActiveVideoElementChange",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_getting_started": {
+      "id": "nanoplayer/nanoplayer_getting_started",
+      "title": "Getting started",
+      "description": "Embedding H5Live player on your own web page",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_iframe": {
+      "id": "nanoplayer/nanoplayer_iframe",
+      "title": "iframe Embeds",
+      "description": "Creating a custom iframe",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_introduction": {
+      "id": "nanoplayer/nanoplayer_introduction",
+      "title": "Introduction",
+      "description": "Schema",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_player_metrics": {
+      "id": "nanoplayer/nanoplayer_player_metrics",
+      "title": "Player Metrics",
+      "description": "How to use",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_supported_browsers": {
+      "id": "nanoplayer/nanoplayer_supported_browsers",
+      "title": "Support Browsers",
+      "description": "The low-latency nanoStream h5Live Player runs on all full-featured HTML5 browsers including",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_token_security": {
+      "id": "nanoplayer/nanoplayer_token_security",
+      "title": "Secure playback with H5Live",
+      "description": "Click PLAY button to start",
+      "sidebar": "H5Live Player"
+    }
+  }
+}

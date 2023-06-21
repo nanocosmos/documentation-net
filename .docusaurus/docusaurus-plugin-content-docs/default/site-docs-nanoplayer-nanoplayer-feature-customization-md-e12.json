@@ -1,0 +1,28 @@
+{
+  "unversionedId": "nanoplayer/nanoplayer_feature_customization",
+  "id": "nanoplayer/nanoplayer_feature_customization",
+  "title": "UI and customization",
+  "description": "Changing parameters is straightforward and easy. You can have a tailor-made design and a smooth appearance within seconds. It is possible, among others, to adjust integrated player controls, icons, background color, add a poster, change the cursor etc. Of course, you can also disable all built-in styles. In this manual, we will go through customizable elements so that  H5Live Player UI will suit all your needs.",
+  "source": "@site/docs/nanoplayer/nanoplayer_feature_customization.md",
+  "sourceDirName": "nanoplayer",
+  "slug": "/nanoplayer/nanoplayer_feature_customization",
+  "permalink": "/docs/nanoplayer/nanoplayer_feature_customization",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_customization.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nanoplayer_feature_customization",
+    "title": "UI and customization",
+    "sidebar_label": "UI and customization"
+  },
+  "sidebar": "H5Live Player",
+  "previous": {
+    "title": "Fullscreen API",
+    "permalink": "/docs/nanoplayer/nanoplayer_feature_fullscreen_api"
+  },
+  "next": {
+    "title": "Reconnect and Timeouts",
+    "permalink": "/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts"
+  }
+}

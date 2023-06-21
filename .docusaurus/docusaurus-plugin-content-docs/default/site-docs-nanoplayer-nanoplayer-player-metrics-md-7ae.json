@@ -1,0 +1,28 @@
+{
+  "unversionedId": "nanoplayer/nanoplayer_player_metrics",
+  "id": "nanoplayer/nanoplayer_player_metrics",
+  "title": "Player Metrics",
+  "description": "How to use",
+  "source": "@site/docs/nanoplayer/nanoplayer_player_metrics.md",
+  "sourceDirName": "nanoplayer",
+  "slug": "/nanoplayer/nanoplayer_player_metrics",
+  "permalink": "/docs/nanoplayer/nanoplayer_player_metrics",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_player_metrics.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nanoplayer_player_metrics",
+    "title": "Player Metrics",
+    "sidebar_label": "Player Metrics"
+  },
+  "sidebar": "H5Live Player",
+  "previous": {
+    "title": "Supported Browsers",
+    "permalink": "/docs/nanoplayer/nanoplayer_supported_browsers"
+  },
+  "next": {
+    "title": "iframe Embeds",
+    "permalink": "/docs/nanoplayer/nanoplayer_iframe"
+  }
+}

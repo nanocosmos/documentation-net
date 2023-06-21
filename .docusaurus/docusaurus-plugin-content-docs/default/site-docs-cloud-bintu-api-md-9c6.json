@@ -1,0 +1,28 @@
+{
+  "unversionedId": "cloud/bintu_api",
+  "id": "cloud/bintu_api",
+  "title": "nanoStream Cloud - bintu",
+  "description": "bintu is the stream management dashboard and API for nanoStream Cloud and CDN. By using bintu, you can create and manage your live streams, to enable ultra-low-latency live streaming at a global scale.",
+  "source": "@site/docs/cloud/bintu_api.md",
+  "sourceDirName": "cloud",
+  "slug": "/cloud/bintu_api",
+  "permalink": "/docs/cloud/bintu_api",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/bintu_api.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "bintu_api",
+    "title": "nanoStream Cloud - bintu",
+    "sidebar_label": "bintu api"
+  },
+  "sidebar": "nanoStream Cloud",
+  "previous": {
+    "title": "Embed nanoPlayer Code on Your Web Page",
+    "permalink": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer"
+  },
+  "next": {
+    "title": "bintu custom web hooks",
+    "permalink": "/docs/cloud/bintu_custom_webhooks"
+  }
+}

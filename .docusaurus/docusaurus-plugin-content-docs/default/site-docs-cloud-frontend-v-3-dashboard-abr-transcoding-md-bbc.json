@@ -1,0 +1,28 @@
+{
+  "unversionedId": "cloud-frontend-v3/Dashboard_ABR_Transcoding",
+  "id": "cloud-frontend-v3/Dashboard_ABR_Transcoding",
+  "title": "Adaptive Bitrate (ABR) and Live Transoding",
+  "description": "Adaptive Bitrate (ABR)",
+  "source": "@site/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding.md",
+  "sourceDirName": "cloud-frontend-v3",
+  "slug": "/cloud-frontend-v3/Dashboard_ABR_Transcoding",
+  "permalink": "/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "Dashboard_ABR_Transcoding",
+    "title": "Adaptive Bitrate (ABR) and Live Transoding",
+    "sidebar_label": "Adaptive Bitrate (ABR) and Live Transoding"
+  },
+  "sidebar": "nanoStream Cloud",
+  "previous": {
+    "title": "Stream Overview",
+    "permalink": "/docs/cloud-frontend-v3/Dashboard_Stream_Overview"
+  },
+  "next": {
+    "title": "Secure Playback & Secure Token",
+    "permalink": "/docs/cloud-frontend-v3/Dashboard_Secure"
+  }
+}
