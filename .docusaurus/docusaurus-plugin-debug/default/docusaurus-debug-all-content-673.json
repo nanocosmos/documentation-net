@@ -212,10 +212,170 @@
               }
             },
             {
+              "unversionedId": "cloud/analytics",
+              "id": "cloud/analytics",
+              "title": "nanoStream Cloud Analytics",
+              "description": "nanoStream Cloud Analytics offers a great way to monitor and analyze the performance and quality of service of your live streams.",
+              "source": "@site/docs/cloud/analytics.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/analytics",
+              "permalink": "/docs/cloud/analytics",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "analytics",
+                "title": "nanoStream Cloud Analytics",
+                "sidebar_label": "General"
+              },
+              "sidebar": "nanoStream Analytics",
+              "next": {
+                "title": "World Map",
+                "permalink": "/docs/cloud/worldmap"
+              }
+            },
+            {
+              "unversionedId": "cloud/analytics-api",
+              "id": "cloud/analytics-api",
+              "title": "Analytics API",
+              "description": "The API documentation can be found here.",
+              "source": "@site/docs/cloud/analytics-api.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/analytics-api",
+              "permalink": "/docs/cloud/analytics-api",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics-api.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "analytics-api",
+                "title": "Analytics API",
+                "sidebar_label": "Analytics API"
+              },
+              "sidebar": "nanoStream Analytics",
+              "previous": {
+                "title": "nanoStream Guardian",
+                "permalink": "/docs/cloud/analytics-guardian"
+              }
+            },
+            {
+              "unversionedId": "cloud/analytics-guardian",
+              "id": "cloud/analytics-guardian",
+              "title": "nanoStream Guardian",
+              "description": "This section describes the Guardian features which can be accessed within the analytics dashboard.",
+              "source": "@site/docs/cloud/analytics-guardian.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/analytics-guardian",
+              "permalink": "/docs/cloud/analytics-guardian",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics-guardian.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "analytics-guardian",
+                "title": "nanoStream Guardian",
+                "sidebar_label": "nanoStream Guardian"
+              },
+              "sidebar": "nanoStream Analytics",
+              "previous": {
+                "title": "Troubleshooting",
+                "permalink": "/docs/cloud/troubleshooting"
+              },
+              "next": {
+                "title": "Analytics API",
+                "permalink": "/docs/cloud/analytics-api"
+              }
+            },
+            {
+              "unversionedId": "cloud/analytics-zoom",
+              "id": "cloud/analytics-zoom",
+              "title": "Zoom Feature",
+              "description": "To begin, please sign in to the metrics dashboard using your nanoStream Cloud/Bintu account credentials.",
+              "source": "@site/docs/cloud/analytics-zoom.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/analytics-zoom",
+              "permalink": "/docs/cloud/analytics-zoom",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics-zoom.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "analytics-zoom",
+                "title": "Zoom Feature",
+                "sidebar_label": "Zoom"
+              },
+              "sidebar": "nanoStream Analytics",
+              "previous": {
+                "title": "World Map",
+                "permalink": "/docs/cloud/worldmap"
+              },
+              "next": {
+                "title": "Troubleshooting",
+                "permalink": "/docs/cloud/troubleshooting"
+              }
+            },
+            {
+              "unversionedId": "cloud/troubleshooting",
+              "id": "cloud/troubleshooting",
+              "title": "Troubleshooting",
+              "description": "The trouble shooting page helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. With this feature you have a complete transparent view at your streams, which helps you to find potential problems and be more capable of solving them faster.",
+              "source": "@site/docs/cloud/troubleshooting.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/troubleshooting",
+              "permalink": "/docs/cloud/troubleshooting",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/troubleshooting.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "troubleshooting",
+                "title": "Troubleshooting",
+                "sidebar_label": "Troubleshooting"
+              },
+              "sidebar": "nanoStream Analytics",
+              "previous": {
+                "title": "Zoom",
+                "permalink": "/docs/cloud/analytics-zoom"
+              },
+              "next": {
+                "title": "nanoStream Guardian",
+                "permalink": "/docs/cloud/analytics-guardian"
+              }
+            },
+            {
+              "unversionedId": "cloud/worldmap",
+              "id": "cloud/worldmap",
+              "title": "Worldmap",
+              "description": "The selected filter options affect all availabe metrics.",
+              "source": "@site/docs/cloud/worldmap.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/worldmap",
+              "permalink": "/docs/cloud/worldmap",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/worldmap.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "worldmap",
+                "title": "Worldmap",
+                "sidebar_label": "World Map"
+              },
+              "sidebar": "nanoStream Analytics",
+              "previous": {
+                "title": "General",
+                "permalink": "/docs/cloud/analytics"
+              },
+              "next": {
+                "title": "Zoom",
+                "permalink": "/docs/cloud/analytics-zoom"
+              }
+            },
+            {
               "unversionedId": "nanomeet/api",
               "id": "nanomeet/api",
               "title": "nanoMeet Web API",
-              "description": "&copy; 2021 nanocosmos",
+              "description": "&copy; 2021 nanocosmos.",
               "source": "@site/docs/nanomeet/api.md",
               "sourceDirName": "nanomeet",
               "slug": "/nanomeet/api",
@@ -624,6 +784,24 @@
               }
             },
             {
+              "unversionedId": "nanoplayer/nanoplayer_feature_security_sts",
+              "id": "nanoplayer/nanoplayer_feature_security_sts",
+              "title": "Secure playback with STS tokens",
+              "description": "Signing URLs",
+              "source": "@site/docs/nanoplayer/nanoplayer_security_sts.md",
+              "sourceDirName": "nanoplayer",
+              "slug": "/nanoplayer/nanoplayer_feature_security_sts",
+              "permalink": "/docs/nanoplayer/nanoplayer_feature_security_sts",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_security_sts.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanoplayer_feature_security_sts",
+                "title": "Secure playback with STS tokens"
+              }
+            },
+            {
               "unversionedId": "nanoplayer/nanoplayer_feature_source_defaults",
               "id": "nanoplayer/nanoplayer_feature_source_defaults",
               "title": "Source defaults",
@@ -953,6 +1131,920 @@
               "next": {
                 "title": "Stream switching and ABR",
                 "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_switching"
+              }
+            },
+            {
+              "unversionedId": "nanostream/android/nanostream_android_developer_manual_playback",
+              "id": "nanostream/android/nanostream_android_developer_manual_playback",
+              "title": "RTM Playback",
+              "description": "Description and Features",
+              "source": "@site/docs/nanostream/android/nanostream_android_developer_manual_playback.md",
+              "sourceDirName": "nanostream/android",
+              "slug": "/nanostream/android/nanostream_android_developer_manual_playback",
+              "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_playback",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/android/nanostream_android_developer_manual_playback.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_android_developer_manual_playback",
+                "title": "RTM Playback",
+                "sidebar_label": "Playback"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Getting started",
+                "permalink": "/docs/nanostream/android/nanostream_android_getting_started"
+              },
+              "next": {
+                "title": "Streaming Media",
+                "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_streaming"
+              }
+            },
+            {
+              "unversionedId": "nanostream/android/nanostream_android_developer_manual_sample",
+              "id": "nanostream/android/nanostream_android_developer_manual_sample",
+              "title": "Sample",
+              "description": "Quickstart",
+              "source": "@site/docs/nanostream/android/nanostream_android_developer_manual_sample.md",
+              "sourceDirName": "nanostream/android",
+              "slug": "/nanostream/android/nanostream_android_developer_manual_sample",
+              "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_sample",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/android/nanostream_android_developer_manual_sample.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_android_developer_manual_sample",
+                "title": "Sample",
+                "sidebar_label": "Sample"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Streaming Media",
+                "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_streaming"
+              },
+              "next": {
+                "title": "Developer Quickstart",
+                "permalink": "/docs/nanostream/ios/nanostream_ios_quick_start"
+              }
+            },
+            {
+              "unversionedId": "nanostream/android/nanostream_android_developer_manual_streaming",
+              "id": "nanostream/android/nanostream_android_developer_manual_streaming",
+              "title": "Streaming Media",
+              "description": "Resolution, Aspect Ratio and Orientation",
+              "source": "@site/docs/nanostream/android/nanostream_android_developer_manual_streaming.md",
+              "sourceDirName": "nanostream/android",
+              "slug": "/nanostream/android/nanostream_android_developer_manual_streaming",
+              "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_streaming",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/android/nanostream_android_developer_manual_streaming.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_android_developer_manual_streaming",
+                "title": "Streaming Media",
+                "sidebar_label": "Streaming Media"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Playback",
+                "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_playback"
+              },
+              "next": {
+                "title": "Sample",
+                "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_sample"
+              }
+            },
+            {
+              "unversionedId": "nanostream/android/nanostream_android_getting_started",
+              "id": "nanostream/android/nanostream_android_getting_started",
+              "title": "Getting started",
+              "description": "Purpose",
+              "source": "@site/docs/nanostream/android/nanostream_android_getting_started.md",
+              "sourceDirName": "nanostream/android",
+              "slug": "/nanostream/android/nanostream_android_getting_started",
+              "permalink": "/docs/nanostream/android/nanostream_android_getting_started",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/android/nanostream_android_getting_started.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_android_getting_started",
+                "title": "Getting started",
+                "sidebar_label": "Getting started"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/nanostream/"
+              },
+              "next": {
+                "title": "Playback",
+                "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_playback"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_audio_volume",
+              "id": "nanostream/directshow/directshow_audio_volume",
+              "title": "directshow_audio_volume",
+              "description": "Mix to mono",
+              "source": "@site/docs/nanostream/directshow/directshow_audio_volume.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_audio_volume",
+              "permalink": "/docs/nanostream/directshow/directshow_audio_volume",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_audio_volume.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_avc_h264",
+              "id": "nanostream/directshow/directshow_avc_h264",
+              "title": "DirectShow AVC H264 Codec",
+              "description": "AVC/H.264 Video Codec / SDK",
+              "source": "@site/docs/nanostream/directshow/directshow_avc_h264.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_avc_h264",
+              "permalink": "/docs/nanostream/directshow/directshow_avc_h264",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_avc_h264.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "directshow_avc_h264",
+                "title": "DirectShow AVC H264 Codec",
+                "sidebar_label": "directshow_avc_h264"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_h264_video_decoder",
+              "id": "nanostream/directshow/directshow_h264_video_decoder",
+              "title": "directshow_h264_video_decoder",
+              "description": "nanocosmos H.264 Video Decoder Filter",
+              "source": "@site/docs/nanostream/directshow/directshow_h264_video_decoder.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_h264_video_decoder",
+              "permalink": "/docs/nanostream/directshow/directshow_h264_video_decoder",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_h264_video_decoder.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_h264_video_encoder",
+              "id": "nanostream/directshow/directshow_h264_video_encoder",
+              "title": "directshow_h264_video_encoder",
+              "description": "nanocosmos MPEG-2 Broadcast DirectShow SDK",
+              "source": "@site/docs/nanostream/directshow/directshow_h264_video_encoder.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_h264_video_encoder",
+              "permalink": "/docs/nanostream/directshow/directshow_h264_video_encoder",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_h264_video_encoder.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_mpeg2_broadcast_sdk",
+              "id": "nanostream/directshow/directshow_mpeg2_broadcast_sdk",
+              "title": "directshow_mpeg2_broadcast_sdk",
+              "description": "nanocosmos MPEG-2 Broadcast DirectShow SDK",
+              "source": "@site/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_mpeg2_broadcast_sdk",
+              "permalink": "/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_mpeg2_video_decoder",
+              "id": "nanostream/directshow/directshow_mpeg2_video_decoder",
+              "title": "directshow_mpeg2_video_decoder",
+              "description": "nanocosmos MPEG-2 HD/SD Video Decoder Filter",
+              "source": "@site/docs/nanostream/directshow/directshow_mpeg2_video_decoder.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_mpeg2_video_decoder",
+              "permalink": "/docs/nanostream/directshow/directshow_mpeg2_video_decoder",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_mpeg2_video_decoder.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_mpeg2_video_encoder",
+              "id": "nanostream/directshow/directshow_mpeg2_video_encoder",
+              "title": "directshow_mpeg2_video_encoder",
+              "description": "nanocosmos MPEG-2 Video Encoder Filter",
+              "source": "@site/docs/nanostream/directshow/directshow_mpeg2_video_encoder.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_mpeg2_video_encoder",
+              "permalink": "/docs/nanostream/directshow/directshow_mpeg2_video_encoder",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_mpeg2_video_encoder.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_nanoAVC_decoding_sdk",
+              "id": "nanostream/directshow/directshow_nanoAVC_decoding_sdk",
+              "title": "directshow_nanoAVC_decoding_sdk",
+              "description": "nanoAVC/H.264 DirectShow Decoding SDK",
+              "source": "@site/docs/nanostream/directshow/directshow_nanoAVC_decoding_sdk.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_nanoAVC_decoding_sdk",
+              "permalink": "/docs/nanostream/directshow/directshow_nanoAVC_decoding_sdk",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_nanoAVC_decoding_sdk.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_nanoAVC_encoding_sdk",
+              "id": "nanostream/directshow/directshow_nanoAVC_encoding_sdk",
+              "title": "directshow_nanoAVC_encoding_sdk",
+              "description": "nanoAVC/H.264 DirectShow Encoding SDK",
+              "source": "@site/docs/nanostream/directshow/directshow_nanoAVC_encoding_sdk.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_nanoAVC_encoding_sdk",
+              "permalink": "/docs/nanostream/directshow/directshow_nanoAVC_encoding_sdk",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_nanoAVC_encoding_sdk.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_overlay_mixing",
+              "id": "nanostream/directshow/directshow_overlay_mixing",
+              "title": "directshow_overlay_mixing",
+              "description": "nanocosmos Video Mixer / Overlay",
+              "source": "@site/docs/nanostream/directshow/directshow_overlay_mixing.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_overlay_mixing",
+              "permalink": "/docs/nanostream/directshow/directshow_overlay_mixing",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_overlay_mixing.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_quicktime_imx",
+              "id": "nanostream/directshow/directshow_quicktime_imx",
+              "title": "directshow_quicktime_imx",
+              "description": "QuickTime IMX Video Playback Components",
+              "source": "@site/docs/nanostream/directshow/directshow_quicktime_imx.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_quicktime_imx",
+              "permalink": "/docs/nanostream/directshow/directshow_quicktime_imx",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_quicktime_imx.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_rtmp_source",
+              "id": "nanostream/directshow/directshow_rtmp_source",
+              "title": "RTMP Source",
+              "description": "nanocosmos RTMP Source Filter",
+              "source": "@site/docs/nanostream/directshow/directshow_rtmp_source.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_rtmp_source",
+              "permalink": "/docs/nanostream/directshow/directshow_rtmp_source",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtmp_source.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "directshow_rtmp_source",
+                "title": "RTMP Source",
+                "sidebar_label": "RTMP Source"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_rtmp_status_statistics",
+              "id": "nanostream/directshow/directshow_rtmp_status_statistics",
+              "title": "directshow_rtmp_status_statistics",
+              "description": "RTMP DirectShow Events",
+              "source": "@site/docs/nanostream/directshow/directshow_rtmp_status_statistics.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_rtmp_status_statistics",
+              "permalink": "/docs/nanostream/directshow/directshow_rtmp_status_statistics",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtmp_status_statistics.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_rtmp_writer",
+              "id": "nanostream/directshow/directshow_rtmp_writer",
+              "title": "RTMP Writer",
+              "description": "Purpose",
+              "source": "@site/docs/nanostream/directshow/directshow_rtmp_writer.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_rtmp_writer",
+              "permalink": "/docs/nanostream/directshow/directshow_rtmp_writer",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtmp_writer.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "directshow_rtmp_writer",
+                "title": "RTMP Writer",
+                "sidebar_label": "RTMP Writer"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "RTMP",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_rtmp"
+              },
+              "next": {
+                "title": "RTSP",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_rtsp"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_rtsp_sink",
+              "id": "nanostream/directshow/directshow_rtsp_sink",
+              "title": "directshow_rtsp_sink",
+              "description": "nanocosmos RTSP Sink Filter",
+              "source": "@site/docs/nanostream/directshow/directshow_rtsp_sink.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_rtsp_sink",
+              "permalink": "/docs/nanostream/directshow/directshow_rtsp_sink",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtsp_sink.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_rtsp_source",
+              "id": "nanostream/directshow/directshow_rtsp_source",
+              "title": "directshow_rtsp_source",
+              "description": "nanocosmos RTSP Source Filter",
+              "source": "@site/docs/nanostream/directshow/directshow_rtsp_source.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_rtsp_source",
+              "permalink": "/docs/nanostream/directshow/directshow_rtsp_source",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtsp_source.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_screen_capture_filter",
+              "id": "nanostream/directshow/directshow_screen_capture_filter",
+              "title": "directshow_screen_capture_filter",
+              "description": "How to use the Screen Capture DirectShow filter",
+              "source": "@site/docs/nanostream/directshow/directshow_screen_capture_filter.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_screen_capture_filter",
+              "permalink": "/docs/nanostream/directshow/directshow_screen_capture_filter",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_screen_capture_filter.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_udp_ts_streaming",
+              "id": "nanostream/directshow/directshow_udp_ts_streaming",
+              "title": "directshow_udp_ts_streaming",
+              "description": "nanocosmos UDP/TS Network Writer and Reader Filter",
+              "source": "@site/docs/nanostream/directshow/directshow_udp_ts_streaming.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_udp_ts_streaming",
+              "permalink": "/docs/nanostream/directshow/directshow_udp_ts_streaming",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_udp_ts_streaming.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/directshow_video_mixer",
+              "id": "nanostream/directshow/directshow_video_mixer",
+              "title": "directshow_video_mixer",
+              "description": "Video Mixer / Picture-in-Picture",
+              "source": "@site/docs/nanostream/directshow/directshow_video_mixer.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/directshow_video_mixer",
+              "permalink": "/docs/nanostream/directshow/directshow_video_mixer",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_video_mixer.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "nanostream/directshow/index",
+              "id": "nanostream/directshow/index",
+              "title": "DirectShow Overview",
+              "description": "DirectShow",
+              "source": "@site/docs/nanostream/directshow/index.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/",
+              "permalink": "/docs/nanostream/directshow/",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/index.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "index",
+                "title": "DirectShow Overview",
+                "sidebar_label": "Overview"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Encoder Plugin API",
+                "permalink": "/docs/nanostream/windows/nanostream_encoder_plugin_api"
+              },
+              "next": {
+                "title": "H264",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_h264"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/nanostream_directshow_h264",
+              "id": "nanostream/directshow/nanostream_directshow_h264",
+              "title": "H264",
+              "description": "AVC/H.264 Video Codec / SDK",
+              "source": "@site/docs/nanostream/directshow/nanostream_directshow_h264.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/nanostream_directshow_h264",
+              "permalink": "/docs/nanostream/directshow/nanostream_directshow_h264",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_h264.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_directshow_h264",
+                "title": "H264",
+                "sidebar_label": "H264"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/nanostream/directshow/"
+              },
+              "next": {
+                "title": "RTMP",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_rtmp"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/nanostream_directshow_rtmp",
+              "id": "nanostream/directshow/nanostream_directshow_rtmp",
+              "title": "RTMP",
+              "description": "* nanocosmos RTMP Source Filter",
+              "source": "@site/docs/nanostream/directshow/nanostream_directshow_rtmp.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/nanostream_directshow_rtmp",
+              "permalink": "/docs/nanostream/directshow/nanostream_directshow_rtmp",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_rtmp.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_directshow_rtmp",
+                "title": "RTMP",
+                "sidebar_label": "RTMP"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "H264",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_h264"
+              },
+              "next": {
+                "title": "RTMP Writer",
+                "permalink": "/docs/nanostream/directshow/directshow_rtmp_writer"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/nanostream_directshow_rtsp",
+              "id": "nanostream/directshow/nanostream_directshow_rtsp",
+              "title": "RTSP",
+              "description": "nanocosmos RTSP Sink Filter",
+              "source": "@site/docs/nanostream/directshow/nanostream_directshow_rtsp.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/nanostream_directshow_rtsp",
+              "permalink": "/docs/nanostream/directshow/nanostream_directshow_rtsp",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_rtsp.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_directshow_rtsp",
+                "title": "RTSP",
+                "sidebar_label": "RTSP"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "RTMP Writer",
+                "permalink": "/docs/nanostream/directshow/directshow_rtmp_writer"
+              },
+              "next": {
+                "title": "UDP/TS Streaming",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_udp_streaming"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/nanostream_directshow_udp_streaming",
+              "id": "nanostream/directshow/nanostream_directshow_udp_streaming",
+              "title": "UDP/TS Streaming",
+              "description": "nanocosmos UDP/TS Network Writer and Reader Filter",
+              "source": "@site/docs/nanostream/directshow/nanostream_directshow_udp_streaming.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/nanostream_directshow_udp_streaming",
+              "permalink": "/docs/nanostream/directshow/nanostream_directshow_udp_streaming",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_udp_streaming.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_directshow_udp_streaming",
+                "title": "UDP/TS Streaming",
+                "sidebar_label": "UDP/TS Streaming"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "RTSP",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_rtsp"
+              },
+              "next": {
+                "title": "Video Filter",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_video_filter"
+              }
+            },
+            {
+              "unversionedId": "nanostream/directshow/nanostream_directshow_video_filter",
+              "id": "nanostream/directshow/nanostream_directshow_video_filter",
+              "title": "Video Filter",
+              "description": "How to use the Screen Capture DirectShow filter",
+              "source": "@site/docs/nanostream/directshow/nanostream_directshow_video_filter.md",
+              "sourceDirName": "nanostream/directshow",
+              "slug": "/nanostream/directshow/nanostream_directshow_video_filter",
+              "permalink": "/docs/nanostream/directshow/nanostream_directshow_video_filter",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_video_filter.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_directshow_video_filter",
+                "title": "Video Filter",
+                "sidebar_label": "Video Filter"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "UDP/TS Streaming",
+                "permalink": "/docs/nanostream/directshow/nanostream_directshow_udp_streaming"
+              }
+            },
+            {
+              "unversionedId": "nanostream/ios/bintu_ios_sample",
+              "id": "nanostream/ios/bintu_ios_sample",
+              "title": "iOS Streaming App in 5 Minutes",
+              "description": "Introduction",
+              "source": "@site/docs/nanostream/ios/bintu_ios_sample.md",
+              "sourceDirName": "nanostream/ios",
+              "slug": "/nanostream/ios/bintu_ios_sample",
+              "permalink": "/docs/nanostream/ios/bintu_ios_sample",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/bintu_ios_sample.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "bintu_ios_sample",
+                "title": "iOS Streaming App in 5 Minutes",
+                "sidebar_label": "iOS Streaming App in 5 Minutes"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "bintu.live client SDK",
+                "permalink": "/docs/nanostream/ios/bintu_ios_sdk"
+              },
+              "next": {
+                "title": "License Deployment Information",
+                "permalink": "/docs/nanostream/ios/nanostream_ios_license_deployment"
+              }
+            },
+            {
+              "unversionedId": "nanostream/ios/bintu_ios_sdk",
+              "id": "nanostream/ios/bintu_ios_sdk",
+              "title": "bintu.live client SDK",
+              "description": "(c) 2016-2019 nanocosmos gmbh",
+              "source": "@site/docs/nanostream/ios/bintu_ios_sdk.md",
+              "sourceDirName": "nanostream/ios",
+              "slug": "/nanostream/ios/bintu_ios_sdk",
+              "permalink": "/docs/nanostream/ios/bintu_ios_sdk",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/bintu_ios_sdk.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "bintu_ios_sdk",
+                "title": "bintu.live client SDK",
+                "sidebar_label": "bintu.live client SDK"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "SDK for iOS",
+                "permalink": "/docs/nanostream/ios/nanostream_ios_sdk"
+              },
+              "next": {
+                "title": "iOS Streaming App in 5 Minutes",
+                "permalink": "/docs/nanostream/ios/bintu_ios_sample"
+              }
+            },
+            {
+              "unversionedId": "nanostream/ios/nanostream_ios_license_deployment",
+              "id": "nanostream/ios/nanostream_ios_license_deployment",
+              "title": "License Deployment Information",
+              "description": "For temporary license keys, you need to ensure your app will be updated early enough before expiration.",
+              "source": "@site/docs/nanostream/ios/nanostream_ios_license_deployment.md",
+              "sourceDirName": "nanostream/ios",
+              "slug": "/nanostream/ios/nanostream_ios_license_deployment",
+              "permalink": "/docs/nanostream/ios/nanostream_ios_license_deployment",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream_ios_license_deployment.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_ios_license_deployment",
+                "title": "License Deployment Information",
+                "sidebar_label": "License Deployment Information"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "iOS Streaming App in 5 Minutes",
+                "permalink": "/docs/nanostream/ios/bintu_ios_sample"
+              },
+              "next": {
+                "title": "Binary Modules for Windows",
+                "permalink": "/docs/nanostream/windows/nanostream_windows_binaries"
+              }
+            },
+            {
+              "unversionedId": "nanostream/ios/nanostream_ios_quick_start",
+              "id": "nanostream/ios/nanostream_ios_quick_start",
+              "title": "Developer Quickstart",
+              "description": "The documentation is updated for nanoStream SDK v.4.10.0.0.",
+              "source": "@site/docs/nanostream/ios/nanostream_ios_quick_start.md",
+              "sourceDirName": "nanostream/ios",
+              "slug": "/nanostream/ios/nanostream_ios_quick_start",
+              "permalink": "/docs/nanostream/ios/nanostream_ios_quick_start",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream_ios_quick_start.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_ios_quick_start",
+                "title": "Developer Quickstart",
+                "sidebar_label": "Developer Quickstart"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Sample",
+                "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_sample"
+              },
+              "next": {
+                "title": "Getting started",
+                "permalink": "/docs/nanostream/ios/nanostream-ios-step-by-step"
+              }
+            },
+            {
+              "unversionedId": "nanostream/ios/nanostream_ios_sdk",
+              "id": "nanostream/ios/nanostream_ios_sdk",
+              "title": "nanoStream SDK for iOS",
+              "description": "The documentation is updated for nanoStream SDK v.4.10.0.0 and Xcode 11.",
+              "source": "@site/docs/nanostream/ios/nanostream_ios_sdk.md",
+              "sourceDirName": "nanostream/ios",
+              "slug": "/nanostream/ios/nanostream_ios_sdk",
+              "permalink": "/docs/nanostream/ios/nanostream_ios_sdk",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream_ios_sdk.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_ios_sdk",
+                "title": "nanoStream SDK for iOS",
+                "sidebar_label": "SDK for iOS"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Getting started",
+                "permalink": "/docs/nanostream/ios/nanostream-ios-step-by-step"
+              },
+              "next": {
+                "title": "bintu.live client SDK",
+                "permalink": "/docs/nanostream/ios/bintu_ios_sdk"
+              }
+            },
+            {
+              "unversionedId": "nanostream/ios/nanostream-ios-step-by-step",
+              "id": "nanostream/ios/nanostream-ios-step-by-step",
+              "title": "Tutorial / Getting started with nanoStream and bintu.live",
+              "description": "Overview",
+              "source": "@site/docs/nanostream/ios/nanostream-ios-step-by-step.md",
+              "sourceDirName": "nanostream/ios",
+              "slug": "/nanostream/ios/nanostream-ios-step-by-step",
+              "permalink": "/docs/nanostream/ios/nanostream-ios-step-by-step",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream-ios-step-by-step.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream-ios-step-by-step",
+                "title": "Tutorial / Getting started with nanoStream and bintu.live",
+                "sidebar_label": "Getting started"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Developer Quickstart",
+                "permalink": "/docs/nanostream/ios/nanostream_ios_quick_start"
+              },
+              "next": {
+                "title": "SDK for iOS",
+                "permalink": "/docs/nanostream/ios/nanostream_ios_sdk"
+              }
+            },
+            {
+              "unversionedId": "nanostream/nanostream",
+              "id": "nanostream/nanostream",
+              "title": "Introduction",
+              "description": "Did you know that you do not need native apps anymore for live streaming?",
+              "source": "@site/docs/nanostream/nanostream.md",
+              "sourceDirName": "nanostream",
+              "slug": "/nanostream/",
+              "permalink": "/docs/nanostream/",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/nanostream.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream",
+                "title": "Introduction",
+                "sidebar_label": "Introduction"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "next": {
+                "title": "Getting started",
+                "permalink": "/docs/nanostream/android/nanostream_android_getting_started"
+              }
+            },
+            {
+              "unversionedId": "nanostream/windows/nanostream_encoder_plugin_api",
+              "id": "nanostream/windows/nanostream_encoder_plugin_api",
+              "title": "Encoder Plugin API",
+              "description": "Live Video Encoder - Plugin Interface Version 3.x and 4.x",
+              "source": "@site/docs/nanostream/windows/nanostream_encoder_plugin_api.md",
+              "sourceDirName": "nanostream/windows",
+              "slug": "/nanostream/windows/nanostream_encoder_plugin_api",
+              "permalink": "/docs/nanostream/windows/nanostream_encoder_plugin_api",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_encoder_plugin_api.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_encoder_plugin_api",
+                "title": "Encoder Plugin API",
+                "sidebar_label": "Encoder Plugin API"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Setting the license",
+                "permalink": "/docs/nanostream/windows/nanostream_windows_license_help"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/nanostream/directshow/"
+              }
+            },
+            {
+              "unversionedId": "nanostream/windows/nanostream_windows_binaries",
+              "id": "nanostream/windows/nanostream_windows_binaries",
+              "title": "Binary Modules for Windows",
+              "description": "This list covers the Windows binaries.",
+              "source": "@site/docs/nanostream/windows/nanostream_windows_binaries.md",
+              "sourceDirName": "nanostream/windows",
+              "slug": "/nanostream/windows/nanostream_windows_binaries",
+              "permalink": "/docs/nanostream/windows/nanostream_windows_binaries",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_windows_binaries.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_windows_binaries",
+                "title": "Binary Modules for Windows",
+                "sidebar_label": "Binary Modules for Windows"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "License Deployment Information",
+                "permalink": "/docs/nanostream/ios/nanostream_ios_license_deployment"
+              },
+              "next": {
+                "title": "Developer Manual",
+                "permalink": "/docs/nanostream/windows/nanostream_windows_developer_manual"
+              }
+            },
+            {
+              "unversionedId": "nanostream/windows/nanostream_windows_developer_manual",
+              "id": "nanostream/windows/nanostream_windows_developer_manual",
+              "title": "Developer Manual",
+              "description": "Note:",
+              "source": "@site/docs/nanostream/windows/nanostream_windows_developer_manual.md",
+              "sourceDirName": "nanostream/windows",
+              "slug": "/nanostream/windows/nanostream_windows_developer_manual",
+              "permalink": "/docs/nanostream/windows/nanostream_windows_developer_manual",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_windows_developer_manual.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_windows_developer_manual",
+                "title": "Developer Manual",
+                "sidebar_label": "Developer Manual"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Binary Modules for Windows",
+                "permalink": "/docs/nanostream/windows/nanostream_windows_binaries"
+              },
+              "next": {
+                "title": "nanoStream Windows Language Integration",
+                "permalink": "/docs/nanostream/windows/nanostream_windows_language_integration"
+              }
+            },
+            {
+              "unversionedId": "nanostream/windows/nanostream_windows_language_integration",
+              "id": "nanostream/windows/nanostream_windows_language_integration",
+              "title": "nanoStream Windows Language Integration",
+              "description": "VisualC++ Integration",
+              "source": "@site/docs/nanostream/windows/nanostream_windows_language_integration.md",
+              "sourceDirName": "nanostream/windows",
+              "slug": "/nanostream/windows/nanostream_windows_language_integration",
+              "permalink": "/docs/nanostream/windows/nanostream_windows_language_integration",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_windows_language_integration.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_windows_language_integration",
+                "title": "nanoStream Windows Language Integration",
+                "sidebar_label": "nanoStream Windows Language Integration"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "Developer Manual",
+                "permalink": "/docs/nanostream/windows/nanostream_windows_developer_manual"
+              },
+              "next": {
+                "title": "Setting the license",
+                "permalink": "/docs/nanostream/windows/nanostream_windows_license_help"
+              }
+            },
+            {
+              "unversionedId": "nanostream/windows/nanostream_windows_license_help",
+              "id": "nanostream/windows/nanostream_windows_license_help",
+              "title": "Setting the license",
+              "description": "The nanocosmos Live Encoder Application needs a properly set up license to work. There are a few different ways you can set the license. In general the Live Encoder Application needs a license to be set as a key within the windows registry. Doing this manually is described in the last paragraph of this site. An easier way is using the License Tool. This tool helps you to set you license without changing the registry by yourself.",
+              "source": "@site/docs/nanostream/windows/nanostream_windows_license_help.md",
+              "sourceDirName": "nanostream/windows",
+              "slug": "/nanostream/windows/nanostream_windows_license_help",
+              "permalink": "/docs/nanostream/windows/nanostream_windows_license_help",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_windows_license_help.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_windows_license_help",
+                "title": "Setting the license",
+                "sidebar_label": "Setting the license"
+              },
+              "sidebar": "nanoStream Apps & SDKs",
+              "previous": {
+                "title": "nanoStream Windows Language Integration",
+                "permalink": "/docs/nanostream/windows/nanostream_windows_language_integration"
+              },
+              "next": {
+                "title": "Encoder Plugin API",
+                "permalink": "/docs/nanostream/windows/nanostream_encoder_plugin_api"
               }
             },
             {
@@ -1375,7 +2467,7 @@
                 "type": "category",
                 "label": "Dashboard",
                 "collapsible": true,
-                "collapsed": true,
+                "collapsed": false,
                 "items": [
                   {
                     "type": "doc",
@@ -1658,6 +2750,166 @@
                     "id": "webrtc/nanostream_webrtc_api"
                   }
                 ]
+              }
+            ],
+            "nanoStream Apps & SDKs": [
+              {
+                "type": "category",
+                "label": "nanoStream Apps & SDKs",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "nanostream/nanostream"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Android",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "nanostream/android/nanostream_android_getting_started"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/android/nanostream_android_developer_manual_playback"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/android/nanostream_android_developer_manual_streaming"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/android/nanostream_android_developer_manual_sample"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "iOS",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "nanostream/ios/nanostream_ios_quick_start"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/ios/nanostream-ios-step-by-step"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/ios/nanostream_ios_sdk"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/ios/bintu_ios_sdk"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/ios/bintu_ios_sample"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/ios/nanostream_ios_license_deployment"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Windows",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "nanostream/windows/nanostream_windows_binaries"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/windows/nanostream_windows_developer_manual"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/windows/nanostream_windows_language_integration"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/windows/nanostream_windows_license_help"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/windows/nanostream_encoder_plugin_api"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Direct Show",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "nanostream/directshow/index"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/directshow/nanostream_directshow_h264"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/directshow/nanostream_directshow_rtmp"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/directshow/directshow_rtmp_writer"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/directshow/nanostream_directshow_rtsp"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/directshow/nanostream_directshow_udp_streaming"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "nanostream/directshow/nanostream_directshow_video_filter"
+                  }
+                ]
+              }
+            ],
+            "nanoStream Analytics": [
+              {
+                "type": "doc",
+                "id": "cloud/analytics"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/worldmap"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/analytics-zoom"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/troubleshooting"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/analytics-guardian"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/analytics-api"
               }
             ]
           }

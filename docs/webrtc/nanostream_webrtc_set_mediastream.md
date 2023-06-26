@@ -12,7 +12,7 @@ It works without using video and audio sources from [startPreview()](./nanostrea
 
 :::note camera, microphone or screen share sources
 If you simply intent to utilize a combination of camera, microphone or screen share sources:
-Use the [startPreview()](nanostream_webrtc_api.md#rtcuserstartpreviewconfig) call.
+Use the [startPreview()](./nanostream_webrtc_api#rtcuserstartpreviewconfig) call.
 :::
 
 ## Use cases

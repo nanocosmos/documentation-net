@@ -11,7 +11,7 @@ You will receive the list of devices in the [ReceivedDeviceList](./nanostream_we
 
 ## Preparation
 
-We will need two `<select>` tags in our HTML document, in order to display the attached audio & video devices in your HTML document. Also we will add a button to trigger the [startPreview(previewConfig)](nanostream_webrtc_api#rtcuserstartpreviewconfig) call after we made our device selection in the UI and a video element to show the preview in.
+We will need two `<select>` tags in our HTML document, in order to display the attached audio & video devices in your HTML document. Also we will add a button to trigger the [startPreview(previewConfig)](./nanostream_webrtc_api#rtcuserstartpreviewconfig) call after we made our device selection in the UI and a video element to show the preview in.
 
 ```html
 // in your html body

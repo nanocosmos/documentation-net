@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '53e'),
+    component: ComponentCreator('/docs', '52b'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -142,6 +142,42 @@ export default [
         component: ComponentCreator('/docs/cloud-frontend-v3/Dashboard_Stream_Overview', '71b'),
         exact: true,
         sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/analytics',
+        component: ComponentCreator('/docs/cloud/analytics', '239'),
+        exact: true,
+        sidebar: "nanoStream Analytics"
+      },
+      {
+        path: '/docs/cloud/analytics-api',
+        component: ComponentCreator('/docs/cloud/analytics-api', 'fc7'),
+        exact: true,
+        sidebar: "nanoStream Analytics"
+      },
+      {
+        path: '/docs/cloud/analytics-guardian',
+        component: ComponentCreator('/docs/cloud/analytics-guardian', '7df'),
+        exact: true,
+        sidebar: "nanoStream Analytics"
+      },
+      {
+        path: '/docs/cloud/analytics-zoom',
+        component: ComponentCreator('/docs/cloud/analytics-zoom', 'cb4'),
+        exact: true,
+        sidebar: "nanoStream Analytics"
+      },
+      {
+        path: '/docs/cloud/troubleshooting',
+        component: ComponentCreator('/docs/cloud/troubleshooting', '971'),
+        exact: true,
+        sidebar: "nanoStream Analytics"
+      },
+      {
+        path: '/docs/cloud/worldmap',
+        component: ComponentCreator('/docs/cloud/worldmap', 'fa8'),
+        exact: true,
+        sidebar: "nanoStream Analytics"
       },
       {
         path: '/docs/nanomeet/api',
@@ -234,6 +270,11 @@ export default [
         sidebar: "H5Live Player"
       },
       {
+        path: '/docs/nanoplayer/nanoplayer_feature_security_sts',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_feature_security_sts', 'f3e'),
+        exact: true
+      },
+      {
         path: '/docs/nanoplayer/nanoplayer_feature_source_defaults',
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_feature_source_defaults', 'f75'),
         exact: true,
@@ -304,6 +345,234 @@ export default [
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_token_security', 'cf4'),
         exact: true,
         sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/nanostream/',
+        component: ComponentCreator('/docs/nanostream/', '3f9'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/android/nanostream_android_developer_manual_playback',
+        component: ComponentCreator('/docs/nanostream/android/nanostream_android_developer_manual_playback', '6a7'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/android/nanostream_android_developer_manual_sample',
+        component: ComponentCreator('/docs/nanostream/android/nanostream_android_developer_manual_sample', 'ced'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/android/nanostream_android_developer_manual_streaming',
+        component: ComponentCreator('/docs/nanostream/android/nanostream_android_developer_manual_streaming', '983'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/android/nanostream_android_getting_started',
+        component: ComponentCreator('/docs/nanostream/android/nanostream_android_getting_started', 'd04'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/directshow/',
+        component: ComponentCreator('/docs/nanostream/directshow/', '5e2'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_audio_volume',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_audio_volume', 'd35'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_avc_h264',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_avc_h264', '0dc'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_h264_video_decoder',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_h264_video_decoder', '67e'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_h264_video_encoder',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_h264_video_encoder', '841'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk', 'e9c'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_mpeg2_video_decoder',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_mpeg2_video_decoder', '6b3'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_mpeg2_video_encoder',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_mpeg2_video_encoder', 'e47'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_nanoAVC_decoding_sdk',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_nanoAVC_decoding_sdk', '618'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_nanoAVC_encoding_sdk',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_nanoAVC_encoding_sdk', '9cf'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_overlay_mixing',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_overlay_mixing', '81c'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_quicktime_imx',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_quicktime_imx', 'fb2'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_rtmp_source',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_rtmp_source', '9ac'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_rtmp_status_statistics',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_rtmp_status_statistics', '6f2'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_rtmp_writer',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_rtmp_writer', '702'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_rtsp_sink',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_rtsp_sink', '911'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_rtsp_source',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_rtsp_source', 'a49'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_screen_capture_filter',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_screen_capture_filter', '973'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_udp_ts_streaming',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_udp_ts_streaming', 'c71'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/directshow_video_mixer',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_video_mixer', '2e8'),
+        exact: true
+      },
+      {
+        path: '/docs/nanostream/directshow/nanostream_directshow_h264',
+        component: ComponentCreator('/docs/nanostream/directshow/nanostream_directshow_h264', 'c56'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/directshow/nanostream_directshow_rtmp',
+        component: ComponentCreator('/docs/nanostream/directshow/nanostream_directshow_rtmp', '607'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/directshow/nanostream_directshow_rtsp',
+        component: ComponentCreator('/docs/nanostream/directshow/nanostream_directshow_rtsp', '63f'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/directshow/nanostream_directshow_udp_streaming',
+        component: ComponentCreator('/docs/nanostream/directshow/nanostream_directshow_udp_streaming', '56b'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/directshow/nanostream_directshow_video_filter',
+        component: ComponentCreator('/docs/nanostream/directshow/nanostream_directshow_video_filter', 'f60'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/ios/bintu_ios_sample',
+        component: ComponentCreator('/docs/nanostream/ios/bintu_ios_sample', '555'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/ios/bintu_ios_sdk',
+        component: ComponentCreator('/docs/nanostream/ios/bintu_ios_sdk', '4ec'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/ios/nanostream_ios_license_deployment',
+        component: ComponentCreator('/docs/nanostream/ios/nanostream_ios_license_deployment', '095'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/ios/nanostream_ios_quick_start',
+        component: ComponentCreator('/docs/nanostream/ios/nanostream_ios_quick_start', 'a0b'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/ios/nanostream_ios_sdk',
+        component: ComponentCreator('/docs/nanostream/ios/nanostream_ios_sdk', '3d6'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/ios/nanostream-ios-step-by-step',
+        component: ComponentCreator('/docs/nanostream/ios/nanostream-ios-step-by-step', '212'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/windows/nanostream_encoder_plugin_api',
+        component: ComponentCreator('/docs/nanostream/windows/nanostream_encoder_plugin_api', 'bb8'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/windows/nanostream_windows_binaries',
+        component: ComponentCreator('/docs/nanostream/windows/nanostream_windows_binaries', '9fb'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/windows/nanostream_windows_developer_manual',
+        component: ComponentCreator('/docs/nanostream/windows/nanostream_windows_developer_manual', 'c09'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/windows/nanostream_windows_language_integration',
+        component: ComponentCreator('/docs/nanostream/windows/nanostream_windows_language_integration', '6c2'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/windows/nanostream_windows_license_help',
+        component: ComponentCreator('/docs/nanostream/windows/nanostream_windows_license_help', '46b'),
+        exact: true,
+        sidebar: "nanoStream Apps & SDKs"
       },
       {
         path: '/docs/webrtc/nanostream_webrtc_api',

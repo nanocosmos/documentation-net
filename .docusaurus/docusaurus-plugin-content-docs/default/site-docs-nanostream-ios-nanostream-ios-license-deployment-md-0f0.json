@@ -1,0 +1,28 @@
+{
+  "unversionedId": "nanostream/ios/nanostream_ios_license_deployment",
+  "id": "nanostream/ios/nanostream_ios_license_deployment",
+  "title": "License Deployment Information",
+  "description": "For temporary license keys, you need to ensure your app will be updated early enough before expiration.",
+  "source": "@site/docs/nanostream/ios/nanostream_ios_license_deployment.md",
+  "sourceDirName": "nanostream/ios",
+  "slug": "/nanostream/ios/nanostream_ios_license_deployment",
+  "permalink": "/docs/nanostream/ios/nanostream_ios_license_deployment",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream_ios_license_deployment.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nanostream_ios_license_deployment",
+    "title": "License Deployment Information",
+    "sidebar_label": "License Deployment Information"
+  },
+  "sidebar": "nanoStream Apps & SDKs",
+  "previous": {
+    "title": "iOS Streaming App in 5 Minutes",
+    "permalink": "/docs/nanostream/ios/bintu_ios_sample"
+  },
+  "next": {
+    "title": "Binary Modules for Windows",
+    "permalink": "/docs/nanostream/windows/nanostream_windows_binaries"
+  }
+}

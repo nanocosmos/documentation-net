@@ -66,6 +66,13 @@ export default {
           "sidebarid": "Webcaster",
           "position": "left",
           "label": "Webcaster"
+        },
+        {
+          "type": "doc",
+          "docId": "cloud/analytics",
+          "sidebarid": "Analytics",
+          "position": "left",
+          "label": "Analytics"
         }
       ],
       "hideOnScroll": false
@@ -152,7 +159,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 26 Jun 2023 10:15:55 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 26 Jun 2023 14:54:30 GMT"
     },
     "prism": {
       "theme": {

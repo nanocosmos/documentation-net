@@ -1,8 +1,8 @@
 {
   "unversionedId": "cloud/analytics-guardian",
   "id": "cloud/analytics-guardian",
-  "title": "nanoStream Cloud Analytics",
-  "description": "nanoStream Guardian - Analytics Dashboard Integration",
+  "title": "nanoStream Guardian",
+  "description": "This section describes the Guardian features which can be accessed within the analytics dashboard.",
   "source": "@site/docs/cloud/analytics-guardian.md",
   "sourceDirName": "cloud",
   "slug": "/cloud/analytics-guardian",
@@ -13,10 +13,10 @@
   "version": "current",
   "frontMatter": {
     "id": "analytics-guardian",
-    "title": "nanoStream Cloud Analytics",
-    "sidebar_label": "Guardian"
+    "title": "nanoStream Guardian",
+    "sidebar_label": "nanoStream Guardian"
   },
-  "sidebar": "nanoStream Cloud",
+  "sidebar": "nanoStream Analytics",
   "previous": {
     "title": "Troubleshooting",
     "permalink": "/docs/cloud/troubleshooting"

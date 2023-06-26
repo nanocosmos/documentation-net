@@ -1,8 +1,8 @@
 {
   "unversionedId": "cloud/analytics-api",
   "id": "cloud/analytics-api",
-  "title": "nanoStream Cloud Analytics",
-  "description": "Analytics API",
+  "title": "Analytics API",
+  "description": "The API documentation can be found here.",
   "source": "@site/docs/cloud/analytics-api.md",
   "sourceDirName": "cloud",
   "slug": "/cloud/analytics-api",
@@ -13,16 +13,12 @@
   "version": "current",
   "frontMatter": {
     "id": "analytics-api",
-    "title": "nanoStream Cloud Analytics",
+    "title": "Analytics API",
     "sidebar_label": "Analytics API"
   },
-  "sidebar": "nanoStream Cloud",
+  "sidebar": "nanoStream Analytics",
   "previous": {
-    "title": "Guardian",
+    "title": "nanoStream Guardian",
     "permalink": "/docs/cloud/analytics-guardian"
-  },
-  "next": {
-    "title": "Overview",
-    "permalink": "/docs/cloud-frontend-v3/Dashboard_Overview"
   }
 }

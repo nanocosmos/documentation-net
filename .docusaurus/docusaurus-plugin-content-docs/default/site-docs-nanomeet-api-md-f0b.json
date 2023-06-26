@@ -2,7 +2,7 @@
   "unversionedId": "nanomeet/api",
   "id": "nanomeet/api",
   "title": "nanoMeet Web API",
-  "description": "&copy; 2021 nanocosmos",
+  "description": "&copy; 2021 nanocosmos.",
   "source": "@site/docs/nanomeet/api.md",
   "sourceDirName": "nanomeet",
   "slug": "/nanomeet/api",

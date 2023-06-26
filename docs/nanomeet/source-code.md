@@ -1,5 +1,5 @@
 ---
-id: nanomeet_source-code
+id: source-code
 title: nanoMeet Sample Code Snippets
 sidebar_label: Source Code
 ---

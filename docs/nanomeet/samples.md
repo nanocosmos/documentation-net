@@ -1,5 +1,5 @@
 ---
-id: nanomeet_samples
+id: samples
 title: nanoMeet Samples
 sidebar_label: Samples
 ---

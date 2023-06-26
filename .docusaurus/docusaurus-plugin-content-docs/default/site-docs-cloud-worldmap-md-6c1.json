@@ -1,7 +1,7 @@
 {
   "unversionedId": "cloud/worldmap",
   "id": "cloud/worldmap",
-  "title": "nanoStream Cloud Analytics",
+  "title": "Worldmap",
   "description": "The selected filter options affect all availabe metrics.",
   "source": "@site/docs/cloud/worldmap.md",
   "sourceDirName": "cloud",
@@ -13,10 +13,10 @@
   "version": "current",
   "frontMatter": {
     "id": "worldmap",
-    "title": "nanoStream Cloud Analytics",
-    "sidebar_label": "Worldmap"
+    "title": "Worldmap",
+    "sidebar_label": "World Map"
   },
-  "sidebar": "nanoStream Cloud",
+  "sidebar": "nanoStream Analytics",
   "previous": {
     "title": "General",
     "permalink": "/docs/cloud/analytics"

@@ -87,7 +87,13 @@ const config = {
             sidebarid: "Webcaster",
             position: 'left',
             label: "Webcaster",
-          }
+          },  {
+            type: 'doc',
+            docId: 'cloud/analytics',
+            sidebarid: "Analytics",
+            position: 'left',
+            label: "Analytics",
+          }, 
         ],
       },
       // Footer Items

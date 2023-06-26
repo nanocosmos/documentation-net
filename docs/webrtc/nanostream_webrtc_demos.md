@@ -78,7 +78,9 @@ https://webrtc.nanocosmos.de/release/webcast.html?bintu.apikey=YOURAPIKEY
 
 [![Screenshot: nanoStream Webcaster Live Broadcast](https://i1.wp.com/www.nanocosmos.de/blog/wp-content/uploads/2018/03/h5live-2.png?resize=300%2C279&ssl=1)](https://i1.wp.com/www.nanocosmos.de/blog/wp-content/uploads/2018/03/h5live-2.png?ssl=1)
 
-> Click [here](nanostream_webrtc_getting_started.md) for more information on  how to embed the H5LivePlayer on your own webpage.
+:::info
+Click [here](./nanostream_webrtc_getting_started) for more information on  how to embed the H5LivePlayer on your own webpage.
+:::
 
 7. Broadcast configuration
 

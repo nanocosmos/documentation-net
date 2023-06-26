@@ -4,7 +4,7 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 
-Welcome to the nanoStream Cloud/Bintu dashboard, the official frontend interface that grants developers access to the full suite of features and functionalities provided by the nanoStream Cloud bintu API. Please be aware that in 2022 we have transitioned from [version 2](../cloud-frontend/getting_started.md) to version 3.
+Welcome to the nanoStream Cloud/Bintu dashboard, the official frontend interface that grants developers access to the full suite of features and functionalities provided by the nanoStream Cloud bintu API. Please be aware that in 2022 we have transitioned from [version 2](../cloud-frontend/getting_started) to version 3.
 
 :::info Before starting
 To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>

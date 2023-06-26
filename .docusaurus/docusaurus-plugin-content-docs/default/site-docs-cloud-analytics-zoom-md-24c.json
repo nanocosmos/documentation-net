@@ -1,8 +1,8 @@
 {
   "unversionedId": "cloud/analytics-zoom",
   "id": "cloud/analytics-zoom",
-  "title": "nanoStream Cloud Analytics",
-  "description": "This feature is available for multiple widgets. The zoom tag shows if this feature is supported for this chart.",
+  "title": "Zoom Feature",
+  "description": "To begin, please sign in to the metrics dashboard using your nanoStream Cloud/Bintu account credentials.",
   "source": "@site/docs/cloud/analytics-zoom.md",
   "sourceDirName": "cloud",
   "slug": "/cloud/analytics-zoom",
@@ -13,12 +13,12 @@
   "version": "current",
   "frontMatter": {
     "id": "analytics-zoom",
-    "title": "nanoStream Cloud Analytics",
+    "title": "Zoom Feature",
     "sidebar_label": "Zoom"
   },
-  "sidebar": "nanoStream Cloud",
+  "sidebar": "nanoStream Analytics",
   "previous": {
-    "title": "Worldmap",
+    "title": "World Map",
     "permalink": "/docs/cloud/worldmap"
   },
   "next": {

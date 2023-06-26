@@ -1,5 +1,5 @@
 ---
-id: nanomeet_api
+id: api
 title: nanoMeet Web API
 sidebar_label: nanoMeet API
 ---
@@ -275,5 +275,4 @@ nanoMeet.stopBroadcast()
 :::caution Do you need assistance using nanomeet?
 Please use [our support contact form](https://www.nanocosmos.de/support) for further assistance.
 :::
-
 

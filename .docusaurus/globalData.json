@@ -46,6 +46,36 @@
               "sidebar": "nanoStream Cloud"
             },
             {
+              "id": "cloud/analytics",
+              "path": "/docs/cloud/analytics",
+              "sidebar": "nanoStream Analytics"
+            },
+            {
+              "id": "cloud/analytics-api",
+              "path": "/docs/cloud/analytics-api",
+              "sidebar": "nanoStream Analytics"
+            },
+            {
+              "id": "cloud/analytics-guardian",
+              "path": "/docs/cloud/analytics-guardian",
+              "sidebar": "nanoStream Analytics"
+            },
+            {
+              "id": "cloud/analytics-zoom",
+              "path": "/docs/cloud/analytics-zoom",
+              "sidebar": "nanoStream Analytics"
+            },
+            {
+              "id": "cloud/troubleshooting",
+              "path": "/docs/cloud/troubleshooting",
+              "sidebar": "nanoStream Analytics"
+            },
+            {
+              "id": "cloud/worldmap",
+              "path": "/docs/cloud/worldmap",
+              "sidebar": "nanoStream Analytics"
+            },
+            {
               "id": "nanomeet/api",
               "path": "/docs/nanomeet/api",
               "sidebar": "nanoStream Cloud"
@@ -121,6 +151,10 @@
               "sidebar": "H5Live Player"
             },
             {
+              "id": "nanoplayer/nanoplayer_feature_security_sts",
+              "path": "/docs/nanoplayer/nanoplayer_feature_security_sts"
+            },
+            {
               "id": "nanoplayer/nanoplayer_feature_source_defaults",
               "path": "/docs/nanoplayer/nanoplayer_feature_source_defaults",
               "sidebar": "H5Live Player"
@@ -179,6 +213,193 @@
               "id": "nanoplayer/nanoplayer_token_security",
               "path": "/docs/nanoplayer/nanoplayer_token_security",
               "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanostream/android/nanostream_android_developer_manual_playback",
+              "path": "/docs/nanostream/android/nanostream_android_developer_manual_playback",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/android/nanostream_android_developer_manual_sample",
+              "path": "/docs/nanostream/android/nanostream_android_developer_manual_sample",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/android/nanostream_android_developer_manual_streaming",
+              "path": "/docs/nanostream/android/nanostream_android_developer_manual_streaming",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/android/nanostream_android_getting_started",
+              "path": "/docs/nanostream/android/nanostream_android_getting_started",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/directshow/directshow_audio_volume",
+              "path": "/docs/nanostream/directshow/directshow_audio_volume"
+            },
+            {
+              "id": "nanostream/directshow/directshow_avc_h264",
+              "path": "/docs/nanostream/directshow/directshow_avc_h264"
+            },
+            {
+              "id": "nanostream/directshow/directshow_h264_video_decoder",
+              "path": "/docs/nanostream/directshow/directshow_h264_video_decoder"
+            },
+            {
+              "id": "nanostream/directshow/directshow_h264_video_encoder",
+              "path": "/docs/nanostream/directshow/directshow_h264_video_encoder"
+            },
+            {
+              "id": "nanostream/directshow/directshow_mpeg2_broadcast_sdk",
+              "path": "/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk"
+            },
+            {
+              "id": "nanostream/directshow/directshow_mpeg2_video_decoder",
+              "path": "/docs/nanostream/directshow/directshow_mpeg2_video_decoder"
+            },
+            {
+              "id": "nanostream/directshow/directshow_mpeg2_video_encoder",
+              "path": "/docs/nanostream/directshow/directshow_mpeg2_video_encoder"
+            },
+            {
+              "id": "nanostream/directshow/directshow_nanoAVC_decoding_sdk",
+              "path": "/docs/nanostream/directshow/directshow_nanoAVC_decoding_sdk"
+            },
+            {
+              "id": "nanostream/directshow/directshow_nanoAVC_encoding_sdk",
+              "path": "/docs/nanostream/directshow/directshow_nanoAVC_encoding_sdk"
+            },
+            {
+              "id": "nanostream/directshow/directshow_overlay_mixing",
+              "path": "/docs/nanostream/directshow/directshow_overlay_mixing"
+            },
+            {
+              "id": "nanostream/directshow/directshow_quicktime_imx",
+              "path": "/docs/nanostream/directshow/directshow_quicktime_imx"
+            },
+            {
+              "id": "nanostream/directshow/directshow_rtmp_source",
+              "path": "/docs/nanostream/directshow/directshow_rtmp_source"
+            },
+            {
+              "id": "nanostream/directshow/directshow_rtmp_status_statistics",
+              "path": "/docs/nanostream/directshow/directshow_rtmp_status_statistics"
+            },
+            {
+              "id": "nanostream/directshow/directshow_rtmp_writer",
+              "path": "/docs/nanostream/directshow/directshow_rtmp_writer",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/directshow/directshow_rtsp_sink",
+              "path": "/docs/nanostream/directshow/directshow_rtsp_sink"
+            },
+            {
+              "id": "nanostream/directshow/directshow_rtsp_source",
+              "path": "/docs/nanostream/directshow/directshow_rtsp_source"
+            },
+            {
+              "id": "nanostream/directshow/directshow_screen_capture_filter",
+              "path": "/docs/nanostream/directshow/directshow_screen_capture_filter"
+            },
+            {
+              "id": "nanostream/directshow/directshow_udp_ts_streaming",
+              "path": "/docs/nanostream/directshow/directshow_udp_ts_streaming"
+            },
+            {
+              "id": "nanostream/directshow/directshow_video_mixer",
+              "path": "/docs/nanostream/directshow/directshow_video_mixer"
+            },
+            {
+              "id": "nanostream/directshow/index",
+              "path": "/docs/nanostream/directshow/",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/directshow/nanostream_directshow_h264",
+              "path": "/docs/nanostream/directshow/nanostream_directshow_h264",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/directshow/nanostream_directshow_rtmp",
+              "path": "/docs/nanostream/directshow/nanostream_directshow_rtmp",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/directshow/nanostream_directshow_rtsp",
+              "path": "/docs/nanostream/directshow/nanostream_directshow_rtsp",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/directshow/nanostream_directshow_udp_streaming",
+              "path": "/docs/nanostream/directshow/nanostream_directshow_udp_streaming",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/directshow/nanostream_directshow_video_filter",
+              "path": "/docs/nanostream/directshow/nanostream_directshow_video_filter",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/ios/bintu_ios_sample",
+              "path": "/docs/nanostream/ios/bintu_ios_sample",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/ios/bintu_ios_sdk",
+              "path": "/docs/nanostream/ios/bintu_ios_sdk",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/ios/nanostream_ios_license_deployment",
+              "path": "/docs/nanostream/ios/nanostream_ios_license_deployment",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/ios/nanostream_ios_quick_start",
+              "path": "/docs/nanostream/ios/nanostream_ios_quick_start",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/ios/nanostream_ios_sdk",
+              "path": "/docs/nanostream/ios/nanostream_ios_sdk",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/ios/nanostream-ios-step-by-step",
+              "path": "/docs/nanostream/ios/nanostream-ios-step-by-step",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/nanostream",
+              "path": "/docs/nanostream/",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/windows/nanostream_encoder_plugin_api",
+              "path": "/docs/nanostream/windows/nanostream_encoder_plugin_api",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/windows/nanostream_windows_binaries",
+              "path": "/docs/nanostream/windows/nanostream_windows_binaries",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/windows/nanostream_windows_developer_manual",
+              "path": "/docs/nanostream/windows/nanostream_windows_developer_manual",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/windows/nanostream_windows_language_integration",
+              "path": "/docs/nanostream/windows/nanostream_windows_language_integration",
+              "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/windows/nanostream_windows_license_help",
+              "path": "/docs/nanostream/windows/nanostream_windows_license_help",
+              "sidebar": "nanoStream Apps & SDKs"
             },
             {
               "id": "webrtc/nanostream_webrtc_api",
@@ -274,6 +495,18 @@
               "link": {
                 "path": "/docs/webrtc/nanostream_webrtc_introduction",
                 "label": "webrtc/nanostream_webrtc_introduction"
+              }
+            },
+            "nanoStream Apps & SDKs": {
+              "link": {
+                "path": "/docs/nanostream/",
+                "label": "nanostream/nanostream"
+              }
+            },
+            "nanoStream Analytics": {
+              "link": {
+                "path": "/docs/cloud/analytics",
+                "label": "cloud/analytics"
               }
             }
           }

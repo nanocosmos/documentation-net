@@ -20,7 +20,7 @@ One potential combined use case is a video quality selection offering options au
 Whether you want to configure a [single stream](#single-stream-configuration) or [multiple streams](#multi-stream-configuration) you need to configure them inside the `config.source.entries` object during the initial `setup` call. 
 
 :::info 
-You can find more information on how to configure the player in our [API documentation](./nanoplayer_api.md#nanoplayerconfig--codeobjectcode).
+You can find more information on how to configure the player in our [API documentation](./nanoplayer_api#nanoplayerconfig--codeobjectcode).
 :::
 
 ### ABR stream group configuration
@@ -741,7 +741,7 @@ With the release of the `switchStream` API there are also **4** new events you s
 <br/>
 
 :::tip Also, keep in mind...
-...there will be an [`onStreamInfo`](nanoplayer_api.md#onstreaminfo) event indicating that the first image of the new stream is getting played out.	
+...there will be an [`onStreamInfo`](./nanoplayer_api#onstreaminfo) event indicating that the first image of the new stream is getting played out.	
 :::
 
 ### Difference switchStream API / updateSource API

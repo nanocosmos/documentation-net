@@ -1,5 +1,5 @@
 ---
-id: nanomeet_introduction
+id: introduction
 title: nanoMeet
 sidebar_label: Introduction
 ---

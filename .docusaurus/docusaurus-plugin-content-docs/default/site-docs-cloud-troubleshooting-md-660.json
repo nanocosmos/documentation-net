@@ -1,7 +1,7 @@
 {
   "unversionedId": "cloud/troubleshooting",
   "id": "cloud/troubleshooting",
-  "title": "nanoStream Cloud Analytics",
+  "title": "Troubleshooting",
   "description": "The trouble shooting page helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. With this feature you have a complete transparent view at your streams, which helps you to find potential problems and be more capable of solving them faster.",
   "source": "@site/docs/cloud/troubleshooting.md",
   "sourceDirName": "cloud",
@@ -13,16 +13,16 @@
   "version": "current",
   "frontMatter": {
     "id": "troubleshooting",
-    "title": "nanoStream Cloud Analytics",
+    "title": "Troubleshooting",
     "sidebar_label": "Troubleshooting"
   },
-  "sidebar": "nanoStream Cloud",
+  "sidebar": "nanoStream Analytics",
   "previous": {
     "title": "Zoom",
     "permalink": "/docs/cloud/analytics-zoom"
   },
   "next": {
-    "title": "Guardian",
+    "title": "nanoStream Guardian",
     "permalink": "/docs/cloud/analytics-guardian"
   }
 }

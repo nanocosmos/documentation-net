@@ -1,0 +1,28 @@
+{
+  "unversionedId": "nanostream/ios/bintu_ios_sample",
+  "id": "nanostream/ios/bintu_ios_sample",
+  "title": "iOS Streaming App in 5 Minutes",
+  "description": "Introduction",
+  "source": "@site/docs/nanostream/ios/bintu_ios_sample.md",
+  "sourceDirName": "nanostream/ios",
+  "slug": "/nanostream/ios/bintu_ios_sample",
+  "permalink": "/docs/nanostream/ios/bintu_ios_sample",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/bintu_ios_sample.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "bintu_ios_sample",
+    "title": "iOS Streaming App in 5 Minutes",
+    "sidebar_label": "iOS Streaming App in 5 Minutes"
+  },
+  "sidebar": "nanoStream Apps & SDKs",
+  "previous": {
+    "title": "bintu.live client SDK",
+    "permalink": "/docs/nanostream/ios/bintu_ios_sdk"
+  },
+  "next": {
+    "title": "License Deployment Information",
+    "permalink": "/docs/nanostream/ios/nanostream_ios_license_deployment"
+  }
+}
