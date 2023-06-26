@@ -186,7 +186,7 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-89a": {
+  "/docs-4f7": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-1-d-6-00d"
@@ -221,9 +221,25 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-cloud-frontend-v-3-dashboard-stream-overview-132-081"
   },
+  "/docs/nanoplayer/nanoplayer_api-b3f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanoplayer-nanoplayer-api-227-dfb"
+  },
+  "/docs/nanoplayer/nanoplayer_api_errors-f13": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanoplayer-nanoplayer-api-errors-96-b-ed5"
+  },
   "/docs/nanoplayer/nanoplayer_autoplay-233": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-nanoplayer-nanoplayer-autoplay-62-d-bfc"
+  },
+  "/docs/nanoplayer/nanoplayer_blogposts-20c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanoplayer-nanoplayer-blogposts-97-b-0c5"
+  },
+  "/docs/nanoplayer/nanoplayer_faq-dcf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanoplayer-nanoplayer-faq-7-be-5e6"
   },
   "/docs/nanoplayer/nanoplayer_feature_customization-123": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -277,6 +293,14 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-nanoplayer-nanoplayer-player-metrics-7-ae-891"
   },
+  "/docs/nanoplayer/nanoplayer_release_history-d6c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanoplayer-nanoplayer-release-historyd-60-005"
+  },
+  "/docs/nanoplayer/nanoplayer_release_latest-d06": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanoplayer-nanoplayer-release-latestd-4-a-b44"
+  },
   "/docs/nanoplayer/nanoplayer_supported_browsers-197": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-nanoplayer-nanoplayer-supported-browsers-35-a-5f9"
@@ -284,6 +308,18 @@
   "/docs/nanoplayer/nanoplayer_token_security-cf4": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-nanoplayer-nanoplayer-token-securityff-6-b7c"
+  },
+  "/docs/webrtc/nanostream_webrtc_demos-30e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-webrtc-nanostream-webrtc-demos-928-4c4"
+  },
+  "/docs/webrtc/nanostream_webrtc_getting_started-95f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-webrtc-nanostream-webrtc-getting-started-595-b0a"
+  },
+  "/docs/webrtc/nanostream_webrtc_introduction-391": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-webrtc-nanostream-webrtc-introduction-452-d99"
   },
   "/-7a7": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",

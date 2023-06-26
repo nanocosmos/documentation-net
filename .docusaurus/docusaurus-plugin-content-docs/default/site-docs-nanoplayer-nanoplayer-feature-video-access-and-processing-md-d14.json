@@ -20,5 +20,9 @@
   "previous": {
     "title": "Source defaults",
     "permalink": "/docs/nanoplayer/nanoplayer_feature_source_defaults"
+  },
+  "next": {
+    "title": "Latest",
+    "permalink": "/docs/nanoplayer/nanoplayer_release_latest"
   }
 }

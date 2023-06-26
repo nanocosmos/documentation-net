@@ -11,7 +11,7 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 Locate the "[Create New Stream](https://dashboard.nanostream.cloud/stream/create)" button either next to dashboard overview title (1). Alternatively, you can also navigate to the left-hand side menu, choose the „Outlined Plus Circle“ Icon (2).
 
-![Screenshot: Navigation to Stream Creation](../assets/cf-create-guide.jpg)
+![Screenshot: Navigation to Stream Creation](../assets/cloud-frontend/cf-create-guide.jpg)
 *Screenshot: Navigation to Stream Creation*
 
 ## Setting up and creating a stream
@@ -23,7 +23,7 @@ Locate the "[Create New Stream](https://dashboard.nanostream.cloud/stream/create
 Contact us [here](https://www.nanocosmos.de/contact) to find the perfect solution for you!
 5. After customizing your stream with tags, transcoding profiles, and any additional features, click on „create new stream“. E voila - you created a new stream. :)
 
-![Screenshot: Create Stream](../assets/cf-create.jpg)
+![Screenshot: Create Stream](../assets/cloud-frontend/cf-create.jpg)
 *Screenshot: Create Stream*
 
 ## Start Streaming
@@ -40,7 +40,7 @@ Additionally, the dashboard offers the `secure` option (if enabled) to generate 
 :::
 3. **Stream Overvie**w: This section provides a link to the stream's overview page. By clicking on the URL, you can access the complete stream overview, which includes various other relevant details.
 
-![Screenshot: Easy Instructions to the live stream](../assets/cf-instructions.jpg)
+![Screenshot: Easy Instructions to the live stream](../assets/cloud-frontend/cf-instructions.jpg)
 *Screenshot: Easy Instructions to the live stream*
 
 By following these instructions, you can start your stream smoothly, access playout options, generate playback tokens with specific configurations, and embed the nanoStream H5Live Player on your webpage using the provided code snippets or iFrame tag.

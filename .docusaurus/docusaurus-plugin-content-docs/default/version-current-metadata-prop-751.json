@@ -172,6 +172,86 @@
             "docId": "nanoplayer/nanoplayer_feature_video_access_and_processing"
           }
         ]
+      },
+      {
+        "type": "category",
+        "label": "Releases",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Latest",
+            "href": "/docs/nanoplayer/nanoplayer_release_latest",
+            "docId": "nanoplayer/nanoplayer_release_latest"
+          },
+          {
+            "type": "link",
+            "label": "History",
+            "href": "/docs/nanoplayer/nanoplayer_release_history",
+            "docId": "nanoplayer/nanoplayer_release_history"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "API",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "NanoPlayer",
+            "href": "/docs/nanoplayer/nanoplayer_api",
+            "docId": "nanoplayer/nanoplayer_api"
+          },
+          {
+            "type": "link",
+            "label": "NanoPlayer Error Codes & Handling",
+            "href": "/docs/nanoplayer/nanoplayer_api_errors",
+            "docId": "nanoplayer/nanoplayer_api_errors"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Other",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "FAQ",
+            "href": "/docs/nanoplayer/nanoplayer_faq",
+            "docId": "nanoplayer/nanoplayer_faq"
+          },
+          {
+            "type": "link",
+            "label": "Blog",
+            "href": "/docs/nanoplayer/nanoplayer_blogposts",
+            "docId": "nanoplayer/nanoplayer_blogposts"
+          }
+        ]
+      }
+    ],
+    "nanoStream Webcaster": [
+      {
+        "type": "link",
+        "label": "Introduction",
+        "href": "/docs/webrtc/nanostream_webrtc_introduction",
+        "docId": "webrtc/nanostream_webrtc_introduction"
+      },
+      {
+        "type": "link",
+        "label": "Getting started",
+        "href": "/docs/webrtc/nanostream_webrtc_getting_started",
+        "docId": "webrtc/nanostream_webrtc_getting_started"
+      },
+      {
+        "type": "link",
+        "label": "Browser Demos",
+        "href": "/docs/webrtc/nanostream_webrtc_demos",
+        "docId": "webrtc/nanostream_webrtc_demos"
       }
     ]
   },
@@ -218,10 +298,34 @@
       "description": "The streams page provides a comprehensive list of all your streams, displaying their state (created, live, ended), stream ID, stream name, whether they are part of a stream group, and their last update timestamp. Additionally, the pesence of tags allows for easier stream identification.",
       "sidebar": "nanoStream Cloud"
     },
+    "nanoplayer/nanoplayer_api": {
+      "id": "nanoplayer/nanoplayer_api",
+      "title": "NanoPlayer",
+      "description": "NanoPlayer",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_api_errors": {
+      "id": "nanoplayer/nanoplayer_api_errors",
+      "title": "NanoPlayer Error Codes & Handling",
+      "description": "General",
+      "sidebar": "H5Live Player"
+    },
     "nanoplayer/nanoplayer_autoplay": {
       "id": "nanoplayer/nanoplayer_autoplay",
       "title": "Autoplay",
       "description": "Autoplay of videos on web pages is a highly discussed topic.",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_blogposts": {
+      "id": "nanoplayer/nanoplayer_blogposts",
+      "title": "Other Information",
+      "description": "Here you can find the latest H5LivePlayer blog posts.",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_faq": {
+      "id": "nanoplayer/nanoplayer_faq",
+      "title": "FAQ",
+      "description": "You can find the H5Live Player FAQ here.",
       "sidebar": "H5Live Player"
     },
     "nanoplayer/nanoplayer_feature_customization": {
@@ -302,6 +406,18 @@
       "description": "How to use",
       "sidebar": "H5Live Player"
     },
+    "nanoplayer/nanoplayer_release_history": {
+      "id": "nanoplayer/nanoplayer_release_history",
+      "title": "Release History",
+      "description": "Please find more about the media error recovery feature in our documentation",
+      "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_release_latest": {
+      "id": "nanoplayer/nanoplayer_release_latest",
+      "title": "Latest Release",
+      "description": "Please find more about the media error recovery feature in our documentation",
+      "sidebar": "H5Live Player"
+    },
     "nanoplayer/nanoplayer_supported_browsers": {
       "id": "nanoplayer/nanoplayer_supported_browsers",
       "title": "Support Browsers",
@@ -313,6 +429,24 @@
       "title": "Secure playback with H5Live",
       "description": "Click PLAY button to start",
       "sidebar": "H5Live Player"
+    },
+    "webrtc/nanostream_webrtc_demos": {
+      "id": "webrtc/nanostream_webrtc_demos",
+      "title": "Browser demos",
+      "description": "Webcaster Demos Overview",
+      "sidebar": "nanoStream Webcaster"
+    },
+    "webrtc/nanostream_webrtc_getting_started": {
+      "id": "webrtc/nanostream_webrtc_getting_started",
+      "title": "Getting started",
+      "description": "How to use nanoStream Webcaster with nanoStream Cloud?",
+      "sidebar": "nanoStream Webcaster"
+    },
+    "webrtc/nanostream_webrtc_introduction": {
+      "id": "webrtc/nanostream_webrtc_introduction",
+      "title": "Introduction",
+      "description": "How to build a browser-based live streaming workflow with nanoStream Webcaster and nanoStream Cloud?",
+      "sidebar": "nanoStream Webcaster"
     }
   }
 }

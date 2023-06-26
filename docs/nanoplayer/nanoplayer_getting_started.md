@@ -21,7 +21,7 @@ Bintu stream group configuration was introduced in **nanoStream H5Live Player Ve
 For more than one stream it is necessary to add a `'startIndex'` or `'group.startQuality'`. 
 
 :::info
-More information about stream group configuration, can be found in the feature description: [Stream group configuration](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_stream_group_configuration)
+More information about stream group configuration, can be found in the feature description: [Stream group configuration](./nanoplayer_feature_stream_group_configuration)
 :::
 
 ```html title="nanoplayer.html" live
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 ```
 :::tip
-The configuration with `source.defaults.service` allows for combinations with custom server or RTMP urls. More examples and full documentation of the source defaults feature can be found here: [Source defaults](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_source_defaults).
+The configuration with `source.defaults.service` allows for combinations with custom server or RTMP urls. More examples and full documentation of the source defaults feature can be found here: [Source defaults](./nanoplayer_feature_source_defaults).
 :::
 
 ### Option 3: Custom configuration with RTMP streamname {#option-3-custom-configuration-with-RTMP-streamname}

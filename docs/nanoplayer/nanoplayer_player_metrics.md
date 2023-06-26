@@ -40,5 +40,5 @@ var config = {
 
 
 :::tip Additional Information
- For more information on the metrics configuration object see our [API documentation](./nanoplayer_api/#nanoplayerconfig--codeobjectcode). More detailed information around nanoStream Cloud Analytics can be found in our [blog](https://www.nanocosmos.de/blog/2019/09/nanostream-analytics-get-insights-in-your-nanostream-cloud-service-and-h5live-player-performance/) and [docs](../cloud/analytics).
+ For more information on the metrics configuration object see our [API documentation](./nanoplayer_api/#NanoPlayer..config). More detailed information around nanoStream Cloud Analytics can be found in our [blog](https://www.nanocosmos.de/blog/2019/09/nanostream-analytics-get-insights-in-your-nanostream-cloud-service-and-h5live-player-performance/) and [docs](../cloud/analytics).
 :::

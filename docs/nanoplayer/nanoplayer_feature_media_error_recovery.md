@@ -14,13 +14,13 @@ With the **nanoStream H5Live Player Version 4.10.4** an automatic recovery workf
 - `3100` - `'The media source extension changed the state to \'ended\'.'`
 - `3101` - `'An error occurred while buffering on hls playback.'` (since 4.20.2)
 
-For further information see `errorcode` [definitions](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_api#nanoplayererrorcode--codenumbercode).
+For further information see `errorcode` [definitions](./nanoplayer_api#NanoPlayer..errorcode).
 
 ## Configuration parameter
 
 You can adjust the maximum number of recoveries allowed within **60 seconds**. To do so, use the config parameter `playback.mediaErrorRecoveries`,
 by setting the value to the desired number. Remember that the default value is `3`, which is recommended to use. To disable the recovery feature set the `playback.mediaErrorRecoveries` value to `0`.
-Read more about playback section in [config](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_api#nanoplayerconfig--codeobjectcode).
+Read more about playback section in [config](./nanoplayer_api#NanoPlayer..config).
 
 ## 60 seconds time frame
 
@@ -33,7 +33,7 @@ The default number of recoveries is `3`. When the threshold is reached, an error
 
 ## Warnings
 
-When enabling the media error recovery, each recovery will be indicated by an [`onWarning`](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_api#onwarning) event.
+When enabling the media error recovery, each recovery will be indicated by an [`onWarning`](./nanoplayer_api#NanoPlayer..event_onWarning) event.
 
 A sample message which you might see in the console when a warning is thrown:
 

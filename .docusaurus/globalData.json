@@ -46,8 +46,28 @@
               "sidebar": "nanoStream Cloud"
             },
             {
+              "id": "nanoplayer/nanoplayer_api",
+              "path": "/docs/nanoplayer/nanoplayer_api",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_api_errors",
+              "path": "/docs/nanoplayer/nanoplayer_api_errors",
+              "sidebar": "H5Live Player"
+            },
+            {
               "id": "nanoplayer/nanoplayer_autoplay",
               "path": "/docs/nanoplayer/nanoplayer_autoplay",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_blogposts",
+              "path": "/docs/nanoplayer/nanoplayer_blogposts",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_faq",
+              "path": "/docs/nanoplayer/nanoplayer_faq",
               "sidebar": "H5Live Player"
             },
             {
@@ -116,6 +136,16 @@
               "sidebar": "H5Live Player"
             },
             {
+              "id": "nanoplayer/nanoplayer_release_history",
+              "path": "/docs/nanoplayer/nanoplayer_release_history",
+              "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_release_latest",
+              "path": "/docs/nanoplayer/nanoplayer_release_latest",
+              "sidebar": "H5Live Player"
+            },
+            {
               "id": "nanoplayer/nanoplayer_supported_browsers",
               "path": "/docs/nanoplayer/nanoplayer_supported_browsers",
               "sidebar": "H5Live Player"
@@ -124,6 +154,21 @@
               "id": "nanoplayer/nanoplayer_token_security",
               "path": "/docs/nanoplayer/nanoplayer_token_security",
               "sidebar": "H5Live Player"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_demos",
+              "path": "/docs/webrtc/nanostream_webrtc_demos",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_getting_started",
+              "path": "/docs/webrtc/nanostream_webrtc_getting_started",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_introduction",
+              "path": "/docs/webrtc/nanostream_webrtc_introduction",
+              "sidebar": "nanoStream Webcaster"
             }
           ],
           "draftIds": [],
@@ -138,6 +183,12 @@
               "link": {
                 "path": "/docs/nanoplayer/nanoplayer_introduction",
                 "label": "nanoplayer/nanoplayer_introduction"
+              }
+            },
+            "nanoStream Webcaster": {
+              "link": {
+                "path": "/docs/webrtc/nanostream_webrtc_introduction",
+                "label": "webrtc/nanostream_webrtc_introduction"
               }
             }
           }

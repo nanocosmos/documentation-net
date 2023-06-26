@@ -22,6 +22,6 @@ These snippets can be found on the following locations:
    - **Stream Overview Page**
    - **Playout Page**
 
-![Screenshot: nanoPlayer Code Snippets](../assets/cf-code-snippets.jpg)
+![Screenshot: nanoPlayer Code Snippets](../assets/cloud-frontend/cf-code-snippets.jpg)
 *Screenshot: nanoPlayer Code Snippets*
 

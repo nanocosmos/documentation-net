@@ -30,7 +30,7 @@ To authenticate on the nanoStream Cloud Dashboard, you can either sign in with y
 2. Enter your password in the provided password field. Make sure to type it accurately, as passwords are case-sensitive.
 3. If the entered credentials are correct, you will be successfully logged in to your nanoStream Cloud Dashboard account. You can now access and manage your streaming workflows.
 
-![Screenshot: Authentication Login](../assets/cf-signin.png)
+![Screenshot: Authentication Login](../assets/cloud-frontend/cf-signin.png)
 *Screenshot: Authentication Login*
 
 ### Sign Up
@@ -39,12 +39,12 @@ To authenticate on the nanoStream Cloud Dashboard, you can either sign in with y
 2. Double-check the entered information for accuracy, ensuring that your email address is valid.
 3. If all the information is successfully validated, your account will be created, and you will be logged in automatically. You can now log in to the dashboard and begin managing your streaming workflows using the dashboard's features.
 
-![Screenshot: Authentication Sign Up](../assets/cf-signup.png)
+![Screenshot: Authentication Sign Up](../assets/cloud-frontend/cf-signup.png)
 *Screenshot: Authentication Sign Up*
 
 If you can see the trial flag in the header, it means that you are currently in trial mode with certain limitations. To unlock the full features and capabilities, we encourage you to get in touch with us or use the „Upgrade to Premium" Button.
 
-![Screenhot: Trial Flag and Upgrade to Premium](../assets/cf-trial.jpg)
+![Screenhot: Trial Flag and Upgrade to Premium](../assets/cloud-frontend/cf-trial.jpg)
 *Screenhot: Trial Flag and Upgrade to Premium*
 
 :::info Contact Us
@@ -58,7 +58,7 @@ The Dashboard page of the nanoStream Cloud Dashboard provides a summary of your 
 
 > [Click here](https://dashboard.nanostream.cloud/) to see the dashboard.
 
-![Screenshot: Dashboard Overview](../assets/cf-dashboard.jpg)
+![Screenshot: Dashboard Overview](../assets/cloud-frontend/cf-dashboard.jpg)
 *Screenshot: Dashboard Overview*
 
 ## All Streams
@@ -68,17 +68,17 @@ The "All Streams" section provides a comprehensive list of your streams, display
 
 > [Click here](https://dashboard.nanostream.cloud/stream) to see all streams of your organisation.
 
-![Screenshot: All Streams Overview](../assets/cf-all-streams.jpg)
+![Screenshot: All Streams Overview](../assets/cloud-frontend/cf-all-streams.jpg)
 *Screenshot: All Streams Overview*
 
 If a stream belongs to a stream group, you have the option to collapse the row and view the individual streams within the group, such as passthrough, first transcode, and second transcode.
 
-![Screenhot: Collapsed Streamgroup](../assets/cf-streamgroup.jpg)
+![Screenhot: Collapsed Streamgroup](../assets/cloud-frontend/cf-streamgroup.jpg)
 *Screenhot: Collapsed Streamgroup*
 
 To streamline your search, you can utilize various filters such as selecting a date range to view specific streams, filtering streams by tags, or filtering by state.
 
-![Screenshot: Filter](../assets/cf-filter.png)
+![Screenshot: Filter](../assets/cloud-frontend/cf-filter.png)
 *Screenshot: Filter*
 
 These features enable you to efficiently manage and navigate through your streams, providing a clear and organized overview of your streaming content within the nanoStream Cloud Dashboard.
@@ -102,7 +102,7 @@ Contact us [here](https://www.nanocosmos.de/contact) to find the perfect solutio
 :::
 5. After customizing your stream with tags, transcoding profiles, and any additional features, click on create  and create the new stream.
 
-![Screenshot: Create Stream](../assets/cf-create.jpg)
+![Screenshot: Create Stream](../assets/cloud-frontend/cf-create.jpg)
 *Screenshot: Create Stream*
 
 By following these steps, you can create a new stream using the nanoStream Cloud Dashboard, assign tags for easy identification, configure transcoding profiles for Adaptive Bitrate streaming, and optionally activate advanced features like timecodes and live processing.
@@ -120,7 +120,7 @@ On this page, you'll find all the essential information required to begin your s
 > Additionally, the dashboard offers the `secure` option (if enabled) to generate a playback token. During your logged-in session, you have a jwt token that is valid for the whole organisation and lets you watch every stream. Alternatively, you can create a new stream JWT token with an expiration date. This token can be valid for the entire organization, specific stream groups, or individual stream names. You can specify options such as "not before" date, client IP, domain, user ID, or a single tag for added security and control. Contact us [here](https://www.nanocosmos.de/contact) to enable the `secure` feature for you!
 3. **Stream Overvie**w: This section provides a link to the stream's overview page. By clicking on the URL, you can access the complete stream overview, which includes various other relevant details.
 
-![Screenshot: Easy Instructions to the live stream](../assets/cf-instructions.jpg)
+![Screenshot: Easy Instructions to the live stream](../assets/cloud-frontend/cf-instructions.jpg)
 *Screenshot: Easy Instructions to the live stream*
 
 By following these instructions, you can start your stream smoothly, access playout options, generate playback tokens with specific configurations, and embed the nanoStream H5Live Player on your webpage using the provided code snippets or iFrame tag.
@@ -129,7 +129,7 @@ By following these instructions, you can start your stream smoothly, access play
 
 The stream overview provides a comprehensive view of your streams and their associated details. This section serves as a central hub where you can access important information about your stream.
 
-![Screenshot: Stream Overview](../assets/cf-overview.jpg)
+![Screenshot: Stream Overview](../assets/cloud-frontend/cf-overview.jpg)
 *Screenshot: Stream Overview*
 
 1. **Detailed Stream View**:
@@ -160,7 +160,7 @@ The stream overview provides a comprehensive view of your streams and their asso
 
 The nanoPlayer in the Cloud Dashboard plays all your streams and lets you access important player settings and statistics:
 
-![Screenshot: nanoPlayer](../assets/cf-player.jpg)
+![Screenshot: nanoPlayer](../assets/cloud-frontend/cf-player.jpg)
 *Screenshot: nanoPlayer*
 
 1. **Playing Stream with ID**:
@@ -189,7 +189,7 @@ The nanoPlayer in the Cloud Dashboard plays all your streams and lets you access
 - **API Access**: API Key and Player Key: Important credentials for API access. Remember to keep them private and secure.
 - **Manage Users**: Invite new users and gain an overview of existing users associated with your organization. Additionally, you have the ability to delete user accounts when necessary.
 
-![orga.jpeg](../assets/cf-orga.jpg)
+![orga.jpeg](../assets/cloud-frontend/cf-orga.jpg)
 *Screenshot: Organisation Overview*
 
 > [Click here](https://dashboard.nanostream.cloud/organisation) to see the organisation area.
@@ -200,13 +200,13 @@ The Help Center page offers comprehensive support for implementing various funct
 
 > [Click here](https://dashboard.nanostream.cloud/support) to visit the Help Center.
 
-![Screenshot: Help Center](../assets/cf-help.png)
+![Screenshot: Help Center](../assets/cloud-frontend/cf-help.png)
 *Screenshot: Help Center*
 
 On the About page are various informations provided such as access to social media channels, appearance customization options (light mode, dark mode, system preference), and the ability to view the current version of the platform.
 
 > [Click here](https://dashboard.nanostream.cloud/about) to learn more about nanoStream Cloud.
 
-![Screenshot: About](../assets/cf-about.png)
+![Screenshot: About](../assets/cloud-frontend/cf-about.png)
 *Screenshot: About*
 

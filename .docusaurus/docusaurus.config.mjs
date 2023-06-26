@@ -59,6 +59,13 @@ export default {
           "sidebarid": "H5Live Player",
           "position": "left",
           "label": "H5Live Player"
+        },
+        {
+          "type": "doc",
+          "docId": "webrtc/nanostream_webrtc_introduction",
+          "sidebarid": "nanoStream Webcaster",
+          "position": "left",
+          "label": "nanoStream Webcaster"
         }
       ],
       "hideOnScroll": false
@@ -145,7 +152,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Wed, 21 Jun 2023 11:11:22 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Thu, 22 Jun 2023 15:25:30 GMT"
     },
     "prism": {
       "theme": {

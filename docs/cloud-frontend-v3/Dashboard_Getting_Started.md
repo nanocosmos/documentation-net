@@ -13,7 +13,7 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 ## Use nanoStream Cloud
 
-Getting started with nanoStream Cloud is a straightforward process. You will need a live source, such as a camera, which can be connected to the nanoStream Cloud network (CDN). Our robust platform takes care of efficiently delivering your live stream. To play your live stream on any web browser, you can leverage the power of the [nanoStream H5Live Player (nanoPlayer)](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_introduction).
+Getting started with nanoStream Cloud is a straightforward process. You will need a live source, such as a camera, which can be connected to the nanoStream Cloud network (CDN). Our robust platform takes care of efficiently delivering your live stream. To play your live stream on any web browser, you can leverage the power of the [nanoStream H5Live Player (nanoPlayer)](../nanoplayer/nanoplayer_introduction).
 
 To create and broadcast a live stream, it is essential to have a reliable live source. This can include a webcam, external camera, streaming device, or even the screen of your desktop or laptop. In order to send a live stream to the nanoStream Cloud, you will require a Live Encoder. This can be accomplished using industry-standard software like OBS, dedicated hardware encoders, or even a web page equipped with the [nanoStream Webcaster](https://docs.nanocosmos.de/docs/webrtc/nanostream_webrtc_introduction).
 

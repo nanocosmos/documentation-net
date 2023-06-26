@@ -10,7 +10,7 @@ Secure Playback Tokens are a valuable tool that enhances the security of your st
 If you are interested in utilizing the `secure` feature offered by nanoStream Cloud, please ensure that it is enabled for your account. You can check that on the "[Organisation Overview](https://dashboard.nanostream.cloud/organisation)“ (1). If it is not enabled, or if you have any inquiries regarding this feature, we recommend reaching out to our [sales team](https://www.nanocosmos.de/support). They will be more than happy to provide you with the necessary information and guide you through the process to enable this feature.
 :::
 
-![Screenshot: Enabled Features](../assets/cf-secure-feature.jpg)
+![Screenshot: Enabled Features](../assets/cloud-frontend/cf-secure-feature.jpg)
 *Screenshot: Enabled Features*
 
 ## Token Configuation
@@ -39,7 +39,7 @@ One way to create a secure token for your stream(s) or organisation is to naviga
 4. **UserID** (optional): Add a user ID to your token for identification purposes.
 5. **Tag** (optional): Add a single tag to track your token.
 
-![Screenshot: Create secure playback token](../assets/cf-create-token.png)
+![Screenshot: Create secure playback token](../assets/cloud-frontend/cf-create-token.png)
 *Screenshot: Create secure playback token*
 
 By providing the required information and optionally configuring specific options, you can generate a token that meets your security requirements by clicking on „Create new token“. It is important to manage and safeguard your tokens to ensure the secure playback of your streams.
@@ -58,7 +58,7 @@ security: {
 *Code Snippet: Security Property*
 
 :::tip
-Please note that integrating the security config object correctly into your player configuration is crucial for the secure playback of your streams. On our documentation we provide also more information about [secure playbacks with JSON Web Token (JWT)](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_security_jwt).
+Please note that integrating the security config object correctly into your player configuration is crucial for the secure playback of your streams. On our documentation we provide also more information about [secure playbacks with JSON Web Token (JWT)](../nanoplayer/nanoplayer_feature_security_jwt).
 :::
 
 ## Token Creation Dialog
@@ -71,7 +71,7 @@ You can find the inline token creation dialog in the following pages:
 - **Stream Overview**: On the stream overview page, you have access to the token creation dialog where you can generate secure tokens for your streams.
 - **Playout Page**: Similarly, on the playout page, you can find the dialog for creating secure tokens.
 
-![Screenshot: Token Creation Dialog in Stream Overview](../assets/cf-inline-token-creation.jpg)
+![Screenshot: Token Creation Dialog in Stream Overview](../assets/cloud-frontend/cf-inline-token-creation.jpg)
 *Screenshot: Token Creation Dialog in Stream Overview*
 
 :::info

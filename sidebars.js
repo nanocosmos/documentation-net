@@ -65,8 +65,43 @@ const sidebars = {
         "nanoplayer/nanoplayer_feature_source_defaults",
         "nanoplayer/nanoplayer_feature_video_access_and_processing"
       ]
+    },
+    {
+      "type": "category",
+      "label": "Releases",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "nanoplayer/nanoplayer_release_latest",
+        "nanoplayer/nanoplayer_release_history"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "API",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "nanoplayer/nanoplayer_api",
+        "nanoplayer/nanoplayer_api_errors",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Other",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "nanoplayer/nanoplayer_faq",
+        "nanoplayer/nanoplayer_blogposts"
+      ]
     }
   ],
+  "nanoStream Webcaster": [
+    "webrtc/nanostream_webrtc_introduction",
+    "webrtc/nanostream_webrtc_getting_started",
+    "webrtc/nanostream_webrtc_demos"
+  ]
 };
 
 module.exports = sidebars;

@@ -71,16 +71,22 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'cloud-frontend-v3/Dashboard_Overview', 
+            docId: 'cloud-frontend-v3/Dashboard_Overview',
             sidebarid: "nanoStream Cloud Dashboard",
             position: 'left',
             label: "Dashboard",
           }, {
             type: 'doc',
-            docId: 'nanoplayer/nanoplayer_introduction', 
+            docId: 'nanoplayer/nanoplayer_introduction',
             sidebarid: "H5Live Player",
             position: 'left',
             label: "H5Live Player",
+          }, {
+            type: 'doc',
+            docId: 'webrtc/nanostream_webrtc_introduction',
+            sidebarid: "nanoStream Webcaster",
+            position: 'left',
+            label: "nanoStream Webcaster",
           }
         ],
       },

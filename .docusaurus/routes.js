@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '89a'),
+    component: ComponentCreator('/docs', '4f7'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -144,8 +144,32 @@ export default [
         sidebar: "nanoStream Cloud"
       },
       {
+        path: '/docs/nanoplayer/nanoplayer_api',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_api', 'b3f'),
+        exact: true,
+        sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/nanoplayer/nanoplayer_api_errors',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_api_errors', 'f13'),
+        exact: true,
+        sidebar: "H5Live Player"
+      },
+      {
         path: '/docs/nanoplayer/nanoplayer_autoplay',
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_autoplay', '233'),
+        exact: true,
+        sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/nanoplayer/nanoplayer_blogposts',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_blogposts', '20c'),
+        exact: true,
+        sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/nanoplayer/nanoplayer_faq',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_faq', 'dcf'),
         exact: true,
         sidebar: "H5Live Player"
       },
@@ -228,6 +252,18 @@ export default [
         sidebar: "H5Live Player"
       },
       {
+        path: '/docs/nanoplayer/nanoplayer_release_history',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_release_history', 'd6c'),
+        exact: true,
+        sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/nanoplayer/nanoplayer_release_latest',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_release_latest', 'd06'),
+        exact: true,
+        sidebar: "H5Live Player"
+      },
+      {
         path: '/docs/nanoplayer/nanoplayer_supported_browsers',
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_supported_browsers', '197'),
         exact: true,
@@ -238,6 +274,24 @@ export default [
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_token_security', 'cf4'),
         exact: true,
         sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_demos',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_demos', '30e'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_getting_started',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_getting_started', '95f'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_introduction',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_introduction', '391'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
       }
     ]
   },

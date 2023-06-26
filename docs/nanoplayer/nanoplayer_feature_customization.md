@@ -228,7 +228,7 @@ It is possible to customize other parameters as well by setting them to `true` o
 - `keepFrame`
 - `centerView`
 
-A list of all parameters available for styling can be found in [NanoPlayer API](nanoplayer_api/#nanoplayerconfig--codeobjectcode) in the `config.style` object.
+A list of all parameters available for styling can be found in [NanoPlayer API](./nanoplayer_api/#NanoPlayer..config) in the `config.style` object.
 
 ## Example code snippet with customization
 

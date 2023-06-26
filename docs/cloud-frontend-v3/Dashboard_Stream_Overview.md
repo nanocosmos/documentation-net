@@ -13,12 +13,12 @@ To begin, please sign in using your nanoStream Cloud/Bintu account credentials. 
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 :::
 
-![Screenshot: All Streams Overview](../assets/cf-all-streams.jpg)
+![Screenshot: All Streams Overview](../assets/cloud-frontend/cf-all-streams.jpg)
 *Screenshot: All Streams Overview*
 
 If a stream belongs to a stream group, you have the option to collapse the row and view the individual streams within the group, such as passthrough, first transcode, and second transcode.
 
-![Screenhot: Collapsed Streamgroup](../assets/cf-streamgroup.jpg)
+![Screenhot: Collapsed Streamgroup](../assets/cloud-frontend/cf-streamgroup.jpg)
 *Screenhot: Collapsed Streamgroup*
 
 ## Labels of the Stream List
@@ -44,7 +44,7 @@ Assigned tags or labels for categorizing and identifying streams based on specif
 
 To streamline your search, you can utilize various filters such as selecting a date range to view specific streams, filtering streams by tags, or filtering by state.
 
-![Screenshot: Filter](../assets/cf-filter.png)
+![Screenshot: Filter](../assets/cloud-frontend/cf-filter.png)
 *Screenshot: Filter*
 
 These features enable you to efficiently manage and navigate through your streams, providing a clear and organized overview of your streaming content within the nanoStream Cloud Dashboard.
@@ -74,7 +74,7 @@ The "Filter by State" option allows you to choose between different stream state
 
 The stream overview provides a comprehensive view of your streams and their associated details. This section serves as a central hub where you can access important information about your stream.
 
-![Screenshot: Stream Overview](../assets/cf-overview.jpg)
+![Screenshot: Stream Overview](../assets/cloud-frontend/cf-overview.jpg)
 *Screenshot: Stream Overview*
 
 1. **Detailed Stream View**:
