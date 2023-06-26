@@ -8,9 +8,10 @@
   "slug": "/nanoplayer/nanoplayer_feature_source_defaults",
   "permalink": "/docs/nanoplayer/nanoplayer_feature_source_defaults",
   "draft": false,
-  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_source_defaults.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
   "frontMatter": {
     "id": "nanoplayer_feature_source_defaults",
     "title": "Source defaults",

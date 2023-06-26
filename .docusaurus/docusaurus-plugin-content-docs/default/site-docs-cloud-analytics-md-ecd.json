@@ -8,9 +8,10 @@
   "slug": "/cloud/analytics",
   "permalink": "/docs/cloud/analytics",
   "draft": false,
-  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
   "frontMatter": {
     "id": "analytics",
     "title": "nanoStream Cloud Analytics",

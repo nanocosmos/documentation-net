@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '52b'),
+    component: ComponentCreator('/docs', '60d'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -144,6 +144,71 @@ export default [
         sidebar: "nanoStream Cloud"
       },
       {
+        path: '/docs/cloud-frontend/cloud-playback-tokens',
+        component: ComponentCreator('/docs/cloud-frontend/cloud-playback-tokens', '2b4'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/cloud-readme',
+        component: ComponentCreator('/docs/cloud-frontend/cloud-readme', '8dc'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/cloud-tags',
+        component: ComponentCreator('/docs/cloud-frontend/cloud-tags', 'b92'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/getting_started',
+        component: ComponentCreator('/docs/cloud-frontend/getting_started', 'd19'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/How_to_Delete_a_Stream',
+        component: ComponentCreator('/docs/cloud-frontend/How_to_Delete_a_Stream', 'd72'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/How_to_Find_Metrics',
+        component: ComponentCreator('/docs/cloud-frontend/How_to_Find_Metrics', 'a75'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud',
+        component: ComponentCreator('/docs/cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud', '93f'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream',
+        component: ComponentCreator('/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream', '6d0'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/How_to_Start_a_Stream',
+        component: ComponentCreator('/docs/cloud-frontend/How_to_Start_a_Stream', 'b67'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/How_to_Use_the_nanoStream_Webcaster',
+        component: ComponentCreator('/docs/cloud-frontend/How_to_Use_the_nanoStream_Webcaster', 'bd6'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/nanoplayer-snippet',
+        component: ComponentCreator('/docs/cloud-frontend/nanoplayer-snippet', '394'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/stream-list',
+        component: ComponentCreator('/docs/cloud-frontend/stream-list', 'dac'),
+        exact: true
+      },
+      {
+        path: '/docs/cloud-frontend/transcoding-abr',
+        component: ComponentCreator('/docs/cloud-frontend/transcoding-abr', 'e48'),
+        exact: true
+      },
+      {
         path: '/docs/cloud/analytics',
         component: ComponentCreator('/docs/cloud/analytics', '239'),
         exact: true,
@@ -166,6 +231,48 @@ export default [
         component: ComponentCreator('/docs/cloud/analytics-zoom', 'cb4'),
         exact: true,
         sidebar: "nanoStream Analytics"
+      },
+      {
+        path: '/docs/cloud/bintu_api',
+        component: ComponentCreator('/docs/cloud/bintu_api', '5e4'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/bintu_custom_webhooks',
+        component: ComponentCreator('/docs/cloud/bintu_custom_webhooks', 'dab'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/bintu_stream_tags',
+        component: ComponentCreator('/docs/cloud/bintu_stream_tags', 'ff0'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/guardian',
+        component: ComponentCreator('/docs/cloud/guardian', '74e'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/network-diagnostics',
+        component: ComponentCreator('/docs/cloud/network-diagnostics', '0ca'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/security',
+        component: ComponentCreator('/docs/cloud/security', '9cc'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/support',
+        component: ComponentCreator('/docs/cloud/support', '4e0'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
       },
       {
         path: '/docs/cloud/troubleshooting',

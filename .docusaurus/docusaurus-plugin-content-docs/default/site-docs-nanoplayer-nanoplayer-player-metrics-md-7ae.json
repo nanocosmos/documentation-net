@@ -8,9 +8,10 @@
   "slug": "/nanoplayer/nanoplayer_player_metrics",
   "permalink": "/docs/nanoplayer/nanoplayer_player_metrics",
   "draft": false,
-  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_player_metrics.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
   "frontMatter": {
     "id": "nanoplayer_player_metrics",
     "title": "Player Metrics",

@@ -18,8 +18,18 @@ const sidebars = {
   "nanoStream Cloud": [
     {
       "type": "category",
-      "label": "Dashboard",
-      "collapsible": true,
+      "label": "Security Features",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "cloud/security",
+        "cloud/guardian",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Cloud Dashboard",
+      "collapsible": false,
       "collapsed": false,
       "items": [
         "cloud-frontend-v3/Dashboard_Overview",
@@ -43,7 +53,7 @@ const sidebars = {
       "type": "category",
       "label": "nanoMeet",
       "collapsible": true,
-      "collapsed": false,
+      "collapsed": true,
       "items": [
         "nanomeet/introduction",
         "nanomeet/getting-started",
@@ -66,6 +76,27 @@ const sidebars = {
             "nanomeet/api",
           ]
         },
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Bintu API",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "cloud/bintu_api",
+        "cloud/bintu_custom_webhooks",
+        "cloud/bintu_stream_tags"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Support",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "cloud/network-diagnostics",
+        "cloud/support",
       ]
     },
   ],

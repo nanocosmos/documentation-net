@@ -11,8 +11,6 @@
           "className": "docs-version-current",
           "path": "/docs",
           "tagsPath": "/docs/tags",
-          "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs",
-          "editUrlLocalized": "https://github.com/nanocosmos/docs/tree/master/docs/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "/Users/annamatic/Desktop/docs/sidebars.js",
@@ -29,9 +27,10 @@
               "slug": "/cloud-frontend-v3/Dashboard_ABR_Transcoding",
               "permalink": "/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "Dashboard_ABR_Transcoding",
                 "title": "Adaptive Bitrate (ABR) and Live Transoding",
@@ -57,9 +56,10 @@
               "slug": "/cloud-frontend-v3/Dashboard_Getting_Started",
               "permalink": "/docs/cloud-frontend-v3/Dashboard_Getting_Started",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Getting_Started.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "Dashboard_Getting_Started",
                 "title": "Getting Started",
@@ -85,9 +85,10 @@
               "slug": "/cloud-frontend-v3/Dashboard_nanoPlayer",
               "permalink": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_nanoPlayer.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "Dashboard_nanoPlayer",
                 "title": "Embed nanoPlayer Code on Your Web Page",
@@ -113,15 +114,20 @@
               "slug": "/cloud-frontend-v3/Dashboard_Overview",
               "permalink": "/docs/cloud-frontend-v3/Dashboard_Overview",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Overview.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "Dashboard_Overview",
                 "title": "Overview",
                 "sidebar_label": "Overview"
               },
               "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "nanoStream Guardian",
+                "permalink": "/docs/cloud/guardian"
+              },
               "next": {
                 "title": "Getting Started",
                 "permalink": "/docs/cloud-frontend-v3/Dashboard_Getting_Started"
@@ -137,9 +143,10 @@
               "slug": "/cloud-frontend-v3/Dashboard_Secure",
               "permalink": "/docs/cloud-frontend-v3/Dashboard_Secure",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Secure.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "Dashboard_Secure",
                 "title": "Secure Playback & Secure Token",
@@ -165,9 +172,10 @@
               "slug": "/cloud-frontend-v3/Dashboard_Start_Streaming",
               "permalink": "/docs/cloud-frontend-v3/Dashboard_Start_Streaming",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Start_Streaming.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "Dashboard_Start_Streaming",
                 "title": "Start Streaming",
@@ -193,9 +201,10 @@
               "slug": "/cloud-frontend-v3/Dashboard_Stream_Overview",
               "permalink": "/docs/cloud-frontend-v3/Dashboard_Stream_Overview",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud-frontend-v3/Dashboard_Stream_Overview.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "Dashboard_Stream_Overview",
                 "title": "Stream Overview",
@@ -212,6 +221,254 @@
               }
             },
             {
+              "unversionedId": "cloud-frontend/cloud-playback-tokens",
+              "id": "cloud-frontend/cloud-playback-tokens",
+              "title": "Secure Playback Tokens  - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/How_to_Use_Playback_Tokens.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/cloud-playback-tokens",
+              "permalink": "/docs/cloud-frontend/cloud-playback-tokens",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "cloud-playback-tokens",
+                "title": "Secure Playback Tokens  - (V2)",
+                "sidebar_label": "Secure Playback Tokens"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/cloud-readme",
+              "id": "cloud-frontend/cloud-readme",
+              "title": "Cloud Dashboard Overview - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/cloud-readme.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/cloud-readme",
+              "permalink": "/docs/cloud-frontend/cloud-readme",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "cloud-readme",
+                "title": "Cloud Dashboard Overview - (V2)",
+                "sidebar_label": "Cloud Dashboard Overview"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/cloud-tags",
+              "id": "cloud-frontend/cloud-tags",
+              "title": "nanoStream Cloud Tags  - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/How_to_Use_Tags.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/cloud-tags",
+              "permalink": "/docs/cloud-frontend/cloud-tags",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "cloud-tags",
+                "title": "nanoStream Cloud Tags  - (V2)",
+                "sidebar_label": "nanoStream Cloud Tags"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/getting_started",
+              "id": "cloud-frontend/getting_started",
+              "title": "Getting started - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/getting_started.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/getting_started",
+              "permalink": "/docs/cloud-frontend/getting_started",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "getting_started",
+                "title": "Getting started - (V2)",
+                "sidebar_label": "Getting started"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/How_to_Delete_a_Stream",
+              "id": "cloud-frontend/How_to_Delete_a_Stream",
+              "title": "How to Delete a Stream",
+              "description": "A stream can be deleted in its Stream Overview.",
+              "source": "@site/docs/cloud-frontend/How_to_Delete_a_Stream.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/How_to_Delete_a_Stream",
+              "permalink": "/docs/cloud-frontend/How_to_Delete_a_Stream",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "cloud-frontend/How_to_Find_Metrics",
+              "id": "cloud-frontend/How_to_Find_Metrics",
+              "title": "How to Find Metrics and Analytics",
+              "description": "NanoStream Cloud features a wide range of metrics/analytics features to monitor the live stream activity of your customers.",
+              "source": "@site/docs/cloud-frontend/How_to_Find_Metrics.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/How_to_Find_Metrics",
+              "permalink": "/docs/cloud-frontend/How_to_Find_Metrics",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud",
+              "id": "cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud",
+              "title": "How to Log in to the nanoStream Cloud",
+              "description": "First, go to https://bintu-cloud-frontend.nanocosmos.de/.",
+              "source": "@site/docs/cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud",
+              "permalink": "/docs/cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "cloud-frontend/How_to_Setup_Low_Latency_Stream",
+              "id": "cloud-frontend/How_to_Setup_Low_Latency_Stream",
+              "title": "How to Setup a Low Latency Stream - (V2)",
+              "description": "Click PLAY button to start",
+              "source": "@site/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/How_to_Setup_Low_Latency_Stream",
+              "permalink": "/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "How_to_Setup_Low_Latency_Stream",
+                "title": "How to Setup a Low Latency Stream - (V2)",
+                "sidebar_label": "How to Setup a Low Latency Stream"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/How_to_Start_a_Stream",
+              "id": "cloud-frontend/How_to_Start_a_Stream",
+              "title": "How to start a stream  - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/How_to_Start_a_Stream.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/How_to_Start_a_Stream",
+              "permalink": "/docs/cloud-frontend/How_to_Start_a_Stream",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "How_to_Start_a_Stream",
+                "title": "How to start a stream  - (V2)",
+                "sidebar_label": "Start streaming"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/How_to_Use_the_nanoStream_Webcaster",
+              "id": "cloud-frontend/How_to_Use_the_nanoStream_Webcaster",
+              "title": "nanoStream Webcaster  - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/How_to_Use_the_nanoStream_Webcaster.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/How_to_Use_the_nanoStream_Webcaster",
+              "permalink": "/docs/cloud-frontend/How_to_Use_the_nanoStream_Webcaster",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "How_to_Use_the_nanoStream_Webcaster",
+                "title": "nanoStream Webcaster  - (V2)",
+                "sidebar_label": "nanoStream Webcaster"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/nanoplayer-snippet",
+              "id": "cloud-frontend/nanoplayer-snippet",
+              "title": "Embed nanoPlayer Code  - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/How_to_Use_the_Code_Snippet.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/nanoplayer-snippet",
+              "permalink": "/docs/cloud-frontend/nanoplayer-snippet",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "nanoplayer-snippet",
+                "title": "Embed nanoPlayer Code  - (V2)",
+                "sidebar_label": "Embed nanoPlayer Code"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/stream-list",
+              "id": "cloud-frontend/stream-list",
+              "title": "How to use the Stream List - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/How_to_Use_the_Stream_List.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/stream-list",
+              "permalink": "/docs/cloud-frontend/stream-list",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "stream-list",
+                "title": "How to use the Stream List - (V2)",
+                "sidebar_label": "Stream List"
+              }
+            },
+            {
+              "unversionedId": "cloud-frontend/transcoding-abr",
+              "id": "cloud-frontend/transcoding-abr",
+              "title": "Live Transcoding and Adaptive Bitrate Playback  - (V2)",
+              "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+              "source": "@site/docs/cloud-frontend/How_to_Use_Transcoding.md",
+              "sourceDirName": "cloud-frontend",
+              "slug": "/cloud-frontend/transcoding-abr",
+              "permalink": "/docs/cloud-frontend/transcoding-abr",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "transcoding-abr",
+                "title": "Live Transcoding and Adaptive Bitrate Playback  - (V2)",
+                "sidebar_label": "Adaptive Bitrate"
+              }
+            },
+            {
               "unversionedId": "cloud/analytics",
               "id": "cloud/analytics",
               "title": "nanoStream Cloud Analytics",
@@ -221,9 +478,10 @@
               "slug": "/cloud/analytics",
               "permalink": "/docs/cloud/analytics",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "analytics",
                 "title": "nanoStream Cloud Analytics",
@@ -245,9 +503,10 @@
               "slug": "/cloud/analytics-api",
               "permalink": "/docs/cloud/analytics-api",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics-api.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "analytics-api",
                 "title": "Analytics API",
@@ -269,9 +528,10 @@
               "slug": "/cloud/analytics-guardian",
               "permalink": "/docs/cloud/analytics-guardian",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics-guardian.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "analytics-guardian",
                 "title": "nanoStream Guardian",
@@ -297,9 +557,10 @@
               "slug": "/cloud/analytics-zoom",
               "permalink": "/docs/cloud/analytics-zoom",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/analytics-zoom.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "analytics-zoom",
                 "title": "Zoom Feature",
@@ -316,6 +577,201 @@
               }
             },
             {
+              "unversionedId": "cloud/bintu_api",
+              "id": "cloud/bintu_api",
+              "title": "Bintu API",
+              "description": "What is bintu?",
+              "source": "@site/docs/cloud/bintu_api.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/bintu_api",
+              "permalink": "/docs/cloud/bintu_api",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "bintu_api",
+                "title": "Bintu API",
+                "sidebar_label": "Bintu API"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "nanoMeet API",
+                "permalink": "/docs/nanomeet/api"
+              },
+              "next": {
+                "title": "Bintu custom web hooks",
+                "permalink": "/docs/cloud/bintu_custom_webhooks"
+              }
+            },
+            {
+              "unversionedId": "cloud/bintu_custom_webhooks",
+              "id": "cloud/bintu_custom_webhooks",
+              "title": "Bintu custom web hooks",
+              "description": "It's possible to use a custom web hook for custom based authentication.",
+              "source": "@site/docs/cloud/bintu_custom_webhooks.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/bintu_custom_webhooks",
+              "permalink": "/docs/cloud/bintu_custom_webhooks",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "bintu_custom_webhooks",
+                "title": "Bintu custom web hooks",
+                "sidebar_label": "Bintu custom web hooks"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Bintu API",
+                "permalink": "/docs/cloud/bintu_api"
+              },
+              "next": {
+                "title": "Bintu Stream Tags",
+                "permalink": "/docs/cloud/bintu_stream_tags"
+              }
+            },
+            {
+              "unversionedId": "cloud/bintu_stream_tags",
+              "id": "cloud/bintu_stream_tags",
+              "title": "Bintu Stream Tags",
+              "description": "You can group and tag streams with bintu stream tags. These are human readable words or IDs you can use to identify your streams.",
+              "source": "@site/docs/cloud/bintu_stream_tags.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/bintu_stream_tags",
+              "permalink": "/docs/cloud/bintu_stream_tags",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "bintu_stream_tags",
+                "title": "Bintu Stream Tags",
+                "sidebar_label": "Bintu Stream Tags"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Bintu custom web hooks",
+                "permalink": "/docs/cloud/bintu_custom_webhooks"
+              },
+              "next": {
+                "title": "Network Diagnostics",
+                "permalink": "/docs/cloud/network-diagnostics"
+              }
+            },
+            {
+              "unversionedId": "cloud/guardian",
+              "id": "cloud/guardian",
+              "title": "nanoStream Guardian",
+              "description": "What is nanoStream Guardian?",
+              "source": "@site/docs/cloud/guardian.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/guardian",
+              "permalink": "/docs/cloud/guardian",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "guardian",
+                "title": "nanoStream Guardian",
+                "sidebar_label": "nanoStream Guardian"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "nanoStream Cloud Security",
+                "permalink": "/docs/cloud/security"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_Overview"
+              }
+            },
+            {
+              "unversionedId": "cloud/network-diagnostics",
+              "id": "cloud/network-diagnostics",
+              "title": "Network Diagnostics",
+              "description": "In this section, we'll review some basic commands that will help you assess and diagnose network problems.",
+              "source": "@site/docs/cloud/network-diagnostics.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/network-diagnostics",
+              "permalink": "/docs/cloud/network-diagnostics",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "network-diagnostics",
+                "title": "Network Diagnostics",
+                "sidebar_label": "Network Diagnostics"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Bintu Stream Tags",
+                "permalink": "/docs/cloud/bintu_stream_tags"
+              },
+              "next": {
+                "title": "Support",
+                "permalink": "/docs/cloud/support"
+              }
+            },
+            {
+              "unversionedId": "cloud/security",
+              "id": "cloud/security",
+              "title": "nanoStream Cloud Security",
+              "description": "Click PLAY button to start",
+              "source": "@site/docs/cloud/security.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/security",
+              "permalink": "/docs/cloud/security",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "security",
+                "title": "nanoStream Cloud Security",
+                "sidebar_label": "nanoStream Cloud Security"
+              },
+              "sidebar": "nanoStream Cloud",
+              "next": {
+                "title": "nanoStream Guardian",
+                "permalink": "/docs/cloud/guardian"
+              }
+            },
+            {
+              "unversionedId": "cloud/support",
+              "id": "cloud/support",
+              "title": "Support",
+              "description": "Support Options",
+              "source": "@site/docs/cloud/support.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/support",
+              "permalink": "/docs/cloud/support",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "support",
+                "title": "Support",
+                "sidebar_label": "Support"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Network Diagnostics",
+                "permalink": "/docs/cloud/network-diagnostics"
+              }
+            },
+            {
               "unversionedId": "cloud/troubleshooting",
               "id": "cloud/troubleshooting",
               "title": "Troubleshooting",
@@ -325,9 +781,10 @@
               "slug": "/cloud/troubleshooting",
               "permalink": "/docs/cloud/troubleshooting",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/troubleshooting.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "troubleshooting",
                 "title": "Troubleshooting",
@@ -353,9 +810,10 @@
               "slug": "/cloud/worldmap",
               "permalink": "/docs/cloud/worldmap",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/worldmap.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "worldmap",
                 "title": "Worldmap",
@@ -381,9 +839,10 @@
               "slug": "/nanomeet/api",
               "permalink": "/docs/nanomeet/api",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanomeet/api.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "api",
                 "title": "nanoMeet Web API",
@@ -393,6 +852,10 @@
               "previous": {
                 "title": "Source Code",
                 "permalink": "/docs/nanomeet/source-code"
+              },
+              "next": {
+                "title": "Bintu API",
+                "permalink": "/docs/cloud/bintu_api"
               }
             },
             {
@@ -405,9 +868,10 @@
               "slug": "/nanomeet/getting-started",
               "permalink": "/docs/nanomeet/getting-started",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanomeet/getting-started.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "getting-started",
                 "title": "Getting Started",
@@ -433,9 +897,10 @@
               "slug": "/nanomeet/introduction",
               "permalink": "/docs/nanomeet/introduction",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanomeet/introduction.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "introduction",
                 "title": "nanoMeet",
@@ -461,9 +926,10 @@
               "slug": "/nanomeet/samples",
               "permalink": "/docs/nanomeet/samples",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanomeet/samples.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "samples",
                 "title": "nanoMeet Samples",
@@ -489,9 +955,10 @@
               "slug": "/nanomeet/source-code",
               "permalink": "/docs/nanomeet/source-code",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanomeet/source-code.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "source-code",
                 "title": "nanoMeet Sample Code Snippets",
@@ -517,9 +984,10 @@
               "slug": "/nanoplayer/nanoplayer_api",
               "permalink": "/docs/nanoplayer/nanoplayer_api",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_api.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_api",
                 "title": "NanoPlayer",
@@ -545,9 +1013,10 @@
               "slug": "/nanoplayer/nanoplayer_api_errors",
               "permalink": "/docs/nanoplayer/nanoplayer_api_errors",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_api_errors.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_api_errors",
                 "title": "NanoPlayer Error Codes & Handling",
@@ -573,9 +1042,10 @@
               "slug": "/nanoplayer/nanoplayer_autoplay",
               "permalink": "/docs/nanoplayer/nanoplayer_autoplay",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_autoplay.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_autoplay",
                 "title": "Autoplay",
@@ -601,9 +1071,10 @@
               "slug": "/nanoplayer/nanoplayer_blogposts",
               "permalink": "/docs/nanoplayer/nanoplayer_blogposts",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_blogposts.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_blogposts",
                 "title": "Other Information",
@@ -625,9 +1096,10 @@
               "slug": "/nanoplayer/nanoplayer_faq",
               "permalink": "/docs/nanoplayer/nanoplayer_faq",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_faq.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_faq",
                 "title": "FAQ",
@@ -653,9 +1125,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_customization",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_customization",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_customization.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_customization",
                 "title": "UI and customization",
@@ -681,9 +1154,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_fullscreen_api",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_fullscreen_api",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_fullscreen_api.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_fullscreen_api",
                 "title": "Fullscreen API",
@@ -709,9 +1183,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_latency_control_modes",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_latency_control_modes",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_latency_control_modes.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_latency_control_modes",
                 "title": "Latency Control Modes",
@@ -737,9 +1212,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_media_error_recovery",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_media_error_recovery",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_media_error_recovery.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_media_error_recovery",
                 "title": "Media Error Recovery",
@@ -765,9 +1241,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_reconnect_timeouts",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_reconnect_timeouts.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_reconnect_timeouts",
                 "title": "Reconnect and Timeouts",
@@ -793,9 +1270,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_security_sts",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_security_sts",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_security_sts.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_security_sts",
                 "title": "Secure playback with STS tokens"
@@ -811,9 +1289,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_source_defaults",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_source_defaults",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_source_defaults.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_source_defaults",
                 "title": "Source defaults",
@@ -839,9 +1318,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_stream_group_configuration",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_group_configuration",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_stream_group_configuration.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_stream_group_configuration",
                 "title": "Stream group configuration",
@@ -867,9 +1347,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_stream_switching",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_stream_switching",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_stream_switching.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_stream_switching",
                 "title": "Stream switching and ABR",
@@ -895,9 +1376,10 @@
               "slug": "/nanoplayer/nanoplayer_feature_video_access_and_processing",
               "permalink": "/docs/nanoplayer/nanoplayer_feature_video_access_and_processing",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_feature_video_access_and_processing.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_feature_video_access_and_processing",
                 "title": "Video Access and Processing",
@@ -923,9 +1405,10 @@
               "slug": "/nanoplayer/nanoplayer_getting_started",
               "permalink": "/docs/nanoplayer/nanoplayer_getting_started",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_getting_started.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_getting_started",
                 "title": "Getting started",
@@ -951,9 +1434,10 @@
               "slug": "/nanoplayer/nanoplayer_iframe",
               "permalink": "/docs/nanoplayer/nanoplayer_iframe",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_iframe.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_iframe",
                 "title": "iframe Embeds",
@@ -979,9 +1463,10 @@
               "slug": "/nanoplayer/nanoplayer_introduction",
               "permalink": "/docs/nanoplayer/nanoplayer_introduction",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_introduction.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_introduction",
                 "title": "Introduction",
@@ -1003,9 +1488,10 @@
               "slug": "/nanoplayer/nanoplayer_player_metrics",
               "permalink": "/docs/nanoplayer/nanoplayer_player_metrics",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_player_metrics.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_player_metrics",
                 "title": "Player Metrics",
@@ -1031,9 +1517,10 @@
               "slug": "/nanoplayer/nanoplayer_release_history",
               "permalink": "/docs/nanoplayer/nanoplayer_release_history",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_release_history.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_release_history",
                 "title": "Release History",
@@ -1059,9 +1546,10 @@
               "slug": "/nanoplayer/nanoplayer_release_latest",
               "permalink": "/docs/nanoplayer/nanoplayer_release_latest",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_release_latest.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_release_latest",
                 "title": "Latest Release",
@@ -1087,9 +1575,10 @@
               "slug": "/nanoplayer/nanoplayer_supported_browsers",
               "permalink": "/docs/nanoplayer/nanoplayer_supported_browsers",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_supported_browsers.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_supported_browsers",
                 "title": "Support Browsers",
@@ -1115,9 +1604,10 @@
               "slug": "/nanoplayer/nanoplayer_token_security",
               "permalink": "/docs/nanoplayer/nanoplayer_token_security",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanoplayer/nanoplayer_token_security.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanoplayer_token_security",
                 "title": "Secure playback with H5Live",
@@ -1143,9 +1633,10 @@
               "slug": "/nanostream/android/nanostream_android_developer_manual_playback",
               "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_playback",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/android/nanostream_android_developer_manual_playback.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_android_developer_manual_playback",
                 "title": "RTM Playback",
@@ -1171,9 +1662,10 @@
               "slug": "/nanostream/android/nanostream_android_developer_manual_sample",
               "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_sample",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/android/nanostream_android_developer_manual_sample.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_android_developer_manual_sample",
                 "title": "Sample",
@@ -1199,9 +1691,10 @@
               "slug": "/nanostream/android/nanostream_android_developer_manual_streaming",
               "permalink": "/docs/nanostream/android/nanostream_android_developer_manual_streaming",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/android/nanostream_android_developer_manual_streaming.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_android_developer_manual_streaming",
                 "title": "Streaming Media",
@@ -1227,9 +1720,10 @@
               "slug": "/nanostream/android/nanostream_android_getting_started",
               "permalink": "/docs/nanostream/android/nanostream_android_getting_started",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/android/nanostream_android_getting_started.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_android_getting_started",
                 "title": "Getting started",
@@ -1255,9 +1749,10 @@
               "slug": "/nanostream/directshow/directshow_audio_volume",
               "permalink": "/docs/nanostream/directshow/directshow_audio_volume",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_audio_volume.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1270,9 +1765,10 @@
               "slug": "/nanostream/directshow/directshow_avc_h264",
               "permalink": "/docs/nanostream/directshow/directshow_avc_h264",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_avc_h264.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "directshow_avc_h264",
                 "title": "DirectShow AVC H264 Codec",
@@ -1289,9 +1785,10 @@
               "slug": "/nanostream/directshow/directshow_h264_video_decoder",
               "permalink": "/docs/nanostream/directshow/directshow_h264_video_decoder",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_h264_video_decoder.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1304,9 +1801,10 @@
               "slug": "/nanostream/directshow/directshow_h264_video_encoder",
               "permalink": "/docs/nanostream/directshow/directshow_h264_video_encoder",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_h264_video_encoder.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1319,9 +1817,10 @@
               "slug": "/nanostream/directshow/directshow_mpeg2_broadcast_sdk",
               "permalink": "/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1334,9 +1833,10 @@
               "slug": "/nanostream/directshow/directshow_mpeg2_video_decoder",
               "permalink": "/docs/nanostream/directshow/directshow_mpeg2_video_decoder",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_mpeg2_video_decoder.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1349,9 +1849,10 @@
               "slug": "/nanostream/directshow/directshow_mpeg2_video_encoder",
               "permalink": "/docs/nanostream/directshow/directshow_mpeg2_video_encoder",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_mpeg2_video_encoder.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1364,9 +1865,10 @@
               "slug": "/nanostream/directshow/directshow_nanoAVC_decoding_sdk",
               "permalink": "/docs/nanostream/directshow/directshow_nanoAVC_decoding_sdk",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_nanoAVC_decoding_sdk.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1379,9 +1881,10 @@
               "slug": "/nanostream/directshow/directshow_nanoAVC_encoding_sdk",
               "permalink": "/docs/nanostream/directshow/directshow_nanoAVC_encoding_sdk",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_nanoAVC_encoding_sdk.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1394,9 +1897,10 @@
               "slug": "/nanostream/directshow/directshow_overlay_mixing",
               "permalink": "/docs/nanostream/directshow/directshow_overlay_mixing",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_overlay_mixing.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1409,9 +1913,10 @@
               "slug": "/nanostream/directshow/directshow_quicktime_imx",
               "permalink": "/docs/nanostream/directshow/directshow_quicktime_imx",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_quicktime_imx.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1424,9 +1929,10 @@
               "slug": "/nanostream/directshow/directshow_rtmp_source",
               "permalink": "/docs/nanostream/directshow/directshow_rtmp_source",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtmp_source.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "directshow_rtmp_source",
                 "title": "RTMP Source",
@@ -1443,9 +1949,10 @@
               "slug": "/nanostream/directshow/directshow_rtmp_status_statistics",
               "permalink": "/docs/nanostream/directshow/directshow_rtmp_status_statistics",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtmp_status_statistics.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1458,9 +1965,10 @@
               "slug": "/nanostream/directshow/directshow_rtmp_writer",
               "permalink": "/docs/nanostream/directshow/directshow_rtmp_writer",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtmp_writer.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "directshow_rtmp_writer",
                 "title": "RTMP Writer",
@@ -1486,9 +1994,10 @@
               "slug": "/nanostream/directshow/directshow_rtsp_sink",
               "permalink": "/docs/nanostream/directshow/directshow_rtsp_sink",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtsp_sink.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1501,9 +2010,10 @@
               "slug": "/nanostream/directshow/directshow_rtsp_source",
               "permalink": "/docs/nanostream/directshow/directshow_rtsp_source",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_rtsp_source.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1516,9 +2026,10 @@
               "slug": "/nanostream/directshow/directshow_screen_capture_filter",
               "permalink": "/docs/nanostream/directshow/directshow_screen_capture_filter",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_screen_capture_filter.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1531,9 +2042,10 @@
               "slug": "/nanostream/directshow/directshow_udp_ts_streaming",
               "permalink": "/docs/nanostream/directshow/directshow_udp_ts_streaming",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_udp_ts_streaming.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1546,9 +2058,10 @@
               "slug": "/nanostream/directshow/directshow_video_mixer",
               "permalink": "/docs/nanostream/directshow/directshow_video_mixer",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/directshow_video_mixer.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {}
             },
             {
@@ -1561,9 +2074,10 @@
               "slug": "/nanostream/directshow/",
               "permalink": "/docs/nanostream/directshow/",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/index.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "index",
                 "title": "DirectShow Overview",
@@ -1589,9 +2103,10 @@
               "slug": "/nanostream/directshow/nanostream_directshow_h264",
               "permalink": "/docs/nanostream/directshow/nanostream_directshow_h264",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_h264.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_directshow_h264",
                 "title": "H264",
@@ -1617,9 +2132,10 @@
               "slug": "/nanostream/directshow/nanostream_directshow_rtmp",
               "permalink": "/docs/nanostream/directshow/nanostream_directshow_rtmp",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_rtmp.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_directshow_rtmp",
                 "title": "RTMP",
@@ -1645,9 +2161,10 @@
               "slug": "/nanostream/directshow/nanostream_directshow_rtsp",
               "permalink": "/docs/nanostream/directshow/nanostream_directshow_rtsp",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_rtsp.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_directshow_rtsp",
                 "title": "RTSP",
@@ -1673,9 +2190,10 @@
               "slug": "/nanostream/directshow/nanostream_directshow_udp_streaming",
               "permalink": "/docs/nanostream/directshow/nanostream_directshow_udp_streaming",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_udp_streaming.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_directshow_udp_streaming",
                 "title": "UDP/TS Streaming",
@@ -1701,9 +2219,10 @@
               "slug": "/nanostream/directshow/nanostream_directshow_video_filter",
               "permalink": "/docs/nanostream/directshow/nanostream_directshow_video_filter",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/directshow/nanostream_directshow_video_filter.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_directshow_video_filter",
                 "title": "Video Filter",
@@ -1725,9 +2244,10 @@
               "slug": "/nanostream/ios/bintu_ios_sample",
               "permalink": "/docs/nanostream/ios/bintu_ios_sample",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/bintu_ios_sample.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "bintu_ios_sample",
                 "title": "iOS Streaming App in 5 Minutes",
@@ -1753,9 +2273,10 @@
               "slug": "/nanostream/ios/bintu_ios_sdk",
               "permalink": "/docs/nanostream/ios/bintu_ios_sdk",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/bintu_ios_sdk.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "bintu_ios_sdk",
                 "title": "bintu.live client SDK",
@@ -1781,9 +2302,10 @@
               "slug": "/nanostream/ios/nanostream_ios_license_deployment",
               "permalink": "/docs/nanostream/ios/nanostream_ios_license_deployment",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream_ios_license_deployment.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_ios_license_deployment",
                 "title": "License Deployment Information",
@@ -1809,9 +2331,10 @@
               "slug": "/nanostream/ios/nanostream_ios_quick_start",
               "permalink": "/docs/nanostream/ios/nanostream_ios_quick_start",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream_ios_quick_start.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_ios_quick_start",
                 "title": "Developer Quickstart",
@@ -1837,9 +2360,10 @@
               "slug": "/nanostream/ios/nanostream_ios_sdk",
               "permalink": "/docs/nanostream/ios/nanostream_ios_sdk",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream_ios_sdk.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_ios_sdk",
                 "title": "nanoStream SDK for iOS",
@@ -1865,9 +2389,10 @@
               "slug": "/nanostream/ios/nanostream-ios-step-by-step",
               "permalink": "/docs/nanostream/ios/nanostream-ios-step-by-step",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/ios/nanostream-ios-step-by-step.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream-ios-step-by-step",
                 "title": "Tutorial / Getting started with nanoStream and bintu.live",
@@ -1893,9 +2418,10 @@
               "slug": "/nanostream/",
               "permalink": "/docs/nanostream/",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/nanostream.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream",
                 "title": "Introduction",
@@ -1917,9 +2443,10 @@
               "slug": "/nanostream/windows/nanostream_encoder_plugin_api",
               "permalink": "/docs/nanostream/windows/nanostream_encoder_plugin_api",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_encoder_plugin_api.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_encoder_plugin_api",
                 "title": "Encoder Plugin API",
@@ -1945,9 +2472,10 @@
               "slug": "/nanostream/windows/nanostream_windows_binaries",
               "permalink": "/docs/nanostream/windows/nanostream_windows_binaries",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_windows_binaries.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_windows_binaries",
                 "title": "Binary Modules for Windows",
@@ -1973,9 +2501,10 @@
               "slug": "/nanostream/windows/nanostream_windows_developer_manual",
               "permalink": "/docs/nanostream/windows/nanostream_windows_developer_manual",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_windows_developer_manual.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_windows_developer_manual",
                 "title": "Developer Manual",
@@ -2001,9 +2530,10 @@
               "slug": "/nanostream/windows/nanostream_windows_language_integration",
               "permalink": "/docs/nanostream/windows/nanostream_windows_language_integration",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_windows_language_integration.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_windows_language_integration",
                 "title": "nanoStream Windows Language Integration",
@@ -2029,9 +2559,10 @@
               "slug": "/nanostream/windows/nanostream_windows_license_help",
               "permalink": "/docs/nanostream/windows/nanostream_windows_license_help",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/nanostream/windows/nanostream_windows_license_help.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_windows_license_help",
                 "title": "Setting the license",
@@ -2057,9 +2588,10 @@
               "slug": "/webrtc/nanostream_webrtc_api",
               "permalink": "/docs/webrtc/nanostream_webrtc_api",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_api.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_api",
                 "title": "nanoStream Webcaster API",
@@ -2081,9 +2613,10 @@
               "slug": "/webrtc/nanostream_webrtc_audio_video_only",
               "permalink": "/docs/webrtc/nanostream_webrtc_audio_video_only",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_audio_video_only.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_audio_video_only",
                 "title": "Audio- / Video-Only",
@@ -2109,9 +2642,10 @@
               "slug": "/webrtc/nanostream_webrtc_demos",
               "permalink": "/docs/webrtc/nanostream_webrtc_demos",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_demos.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_demos",
                 "title": "Browser demos",
@@ -2137,9 +2671,10 @@
               "slug": "/webrtc/nanostream_webrtc_device_selection",
               "permalink": "/docs/webrtc/nanostream_webrtc_device_selection",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_device_selection.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_device_selection",
                 "title": "Device Selection",
@@ -2165,9 +2700,10 @@
               "slug": "/webrtc/nanostream_webrtc_getting_started",
               "permalink": "/docs/webrtc/nanostream_webrtc_getting_started",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_getting_started.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_getting_started",
                 "title": "Getting started",
@@ -2193,9 +2729,10 @@
               "slug": "/webrtc/nanostream_webrtc_introduction",
               "permalink": "/docs/webrtc/nanostream_webrtc_introduction",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_introduction.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_introduction",
                 "title": "Introduction",
@@ -2217,9 +2754,10 @@
               "slug": "/webrtc/nanostream_webrtc_multiple_webcasts",
               "permalink": "/docs/webrtc/nanostream_webrtc_multiple_webcasts",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_multiple_webcasts.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_multiple_webcasts",
                 "title": "Multiple Webcasts",
@@ -2245,9 +2783,10 @@
               "slug": "/webrtc/nanostream_webrtc_quality",
               "permalink": "/docs/webrtc/nanostream_webrtc_quality",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_quality.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_quality",
                 "title": "Quality Settings",
@@ -2273,9 +2812,10 @@
               "slug": "/webrtc/nanostream_webrtc_reconnect",
               "permalink": "/docs/webrtc/nanostream_webrtc_reconnect",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_reconnect.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_reconnect",
                 "title": "Automatic Reconnection",
@@ -2301,9 +2841,10 @@
               "slug": "/webrtc/nanostream_webrtc_screen_sharing",
               "permalink": "/docs/webrtc/nanostream_webrtc_screen_sharing",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_screen_sharing.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_screen_sharing",
                 "title": "Screen Sharing",
@@ -2329,9 +2870,10 @@
               "slug": "/webrtc/nanostream_webrtc_secure_ingest",
               "permalink": "/docs/webrtc/nanostream_webrtc_secure_ingest",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_secure_ingest.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_secure_ingest",
                 "title": "Secure ingest with Webcaster",
@@ -2357,9 +2899,10 @@
               "slug": "/webrtc/nanostream_webrtc_set_mediastream",
               "permalink": "/docs/webrtc/nanostream_webrtc_set_mediastream",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_set_mediastream.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_set_mediastream",
                 "title": "External Streams / Mixing",
@@ -2385,9 +2928,10 @@
               "slug": "/webrtc/nanostream_webrtc_speech_music",
               "permalink": "/docs/webrtc/nanostream_webrtc_speech_music",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_speech_music.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_speech_music",
                 "title": "Speech / Music Streaming",
@@ -2413,9 +2957,10 @@
               "slug": "/webrtc/nanostream_webrtc_stats_and_metrics",
               "permalink": "/docs/webrtc/nanostream_webrtc_stats_and_metrics",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_stats_and_metrics.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_stats_and_metrics",
                 "title": "Stats and Metrics",
@@ -2441,9 +2986,10 @@
               "slug": "/webrtc/nanostream_webrtc_support",
               "permalink": "/docs/webrtc/nanostream_webrtc_support",
               "draft": false,
-              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_support.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {
                 "id": "nanostream_webrtc_support",
                 "title": "Support",
@@ -2465,8 +3011,24 @@
             "nanoStream Cloud": [
               {
                 "type": "category",
-                "label": "Dashboard",
-                "collapsible": true,
+                "label": "Security Features",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "cloud/security"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cloud/guardian"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Cloud Dashboard",
+                "collapsible": false,
                 "collapsed": false,
                 "items": [
                   {
@@ -2511,7 +3073,7 @@
                 "type": "category",
                 "label": "nanoMeet",
                 "collapsible": true,
-                "collapsed": false,
+                "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
@@ -2548,6 +3110,42 @@
                         "id": "nanomeet/api"
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Bintu API",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "cloud/bintu_api"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cloud/bintu_custom_webhooks"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cloud/bintu_stream_tags"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Support",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "cloud/network-diagnostics"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cloud/support"
                   }
                 ]
               }

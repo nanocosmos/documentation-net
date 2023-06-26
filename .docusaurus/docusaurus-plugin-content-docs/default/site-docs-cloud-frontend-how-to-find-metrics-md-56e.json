@@ -1,0 +1,16 @@
+{
+  "unversionedId": "cloud-frontend/How_to_Find_Metrics",
+  "id": "cloud-frontend/How_to_Find_Metrics",
+  "title": "How to Find Metrics and Analytics",
+  "description": "NanoStream Cloud features a wide range of metrics/analytics features to monitor the live stream activity of your customers.",
+  "source": "@site/docs/cloud-frontend/How_to_Find_Metrics.md",
+  "sourceDirName": "cloud-frontend",
+  "slug": "/cloud-frontend/How_to_Find_Metrics",
+  "permalink": "/docs/cloud-frontend/How_to_Find_Metrics",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {}
+}

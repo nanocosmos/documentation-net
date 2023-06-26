@@ -11,8 +11,28 @@
     "nanoStream Cloud": [
       {
         "type": "category",
-        "label": "Dashboard",
-        "collapsible": true,
+        "label": "Security Features",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "nanoStream Cloud Security",
+            "href": "/docs/cloud/security",
+            "docId": "cloud/security"
+          },
+          {
+            "type": "link",
+            "label": "nanoStream Guardian",
+            "href": "/docs/cloud/guardian",
+            "docId": "cloud/guardian"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Cloud Dashboard",
+        "collapsible": false,
         "collapsed": false,
         "items": [
           {
@@ -71,7 +91,7 @@
         "type": "category",
         "label": "nanoMeet",
         "collapsible": true,
-        "collapsed": false,
+        "collapsed": true,
         "items": [
           {
             "type": "link",
@@ -118,6 +138,52 @@
                 "docId": "nanomeet/api"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Bintu API",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Bintu API",
+            "href": "/docs/cloud/bintu_api",
+            "docId": "cloud/bintu_api"
+          },
+          {
+            "type": "link",
+            "label": "Bintu custom web hooks",
+            "href": "/docs/cloud/bintu_custom_webhooks",
+            "docId": "cloud/bintu_custom_webhooks"
+          },
+          {
+            "type": "link",
+            "label": "Bintu Stream Tags",
+            "href": "/docs/cloud/bintu_stream_tags",
+            "docId": "cloud/bintu_stream_tags"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Support",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Network Diagnostics",
+            "href": "/docs/cloud/network-diagnostics",
+            "docId": "cloud/network-diagnostics"
+          },
+          {
+            "type": "link",
+            "label": "Support",
+            "href": "/docs/cloud/support",
+            "docId": "cloud/support"
           }
         ]
       }
@@ -658,6 +724,71 @@
       "description": "The streams page provides a comprehensive list of all your streams, displaying their state (created, live, ended), stream ID, stream name, whether they are part of a stream group, and their last update timestamp. Additionally, the pesence of tags allows for easier stream identification.",
       "sidebar": "nanoStream Cloud"
     },
+    "cloud-frontend/cloud-playback-tokens": {
+      "id": "cloud-frontend/cloud-playback-tokens",
+      "title": "Secure Playback Tokens  - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
+    "cloud-frontend/cloud-readme": {
+      "id": "cloud-frontend/cloud-readme",
+      "title": "Cloud Dashboard Overview - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
+    "cloud-frontend/cloud-tags": {
+      "id": "cloud-frontend/cloud-tags",
+      "title": "nanoStream Cloud Tags  - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
+    "cloud-frontend/getting_started": {
+      "id": "cloud-frontend/getting_started",
+      "title": "Getting started - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
+    "cloud-frontend/How_to_Delete_a_Stream": {
+      "id": "cloud-frontend/How_to_Delete_a_Stream",
+      "title": "How to Delete a Stream",
+      "description": "A stream can be deleted in its Stream Overview."
+    },
+    "cloud-frontend/How_to_Find_Metrics": {
+      "id": "cloud-frontend/How_to_Find_Metrics",
+      "title": "How to Find Metrics and Analytics",
+      "description": "NanoStream Cloud features a wide range of metrics/analytics features to monitor the live stream activity of your customers."
+    },
+    "cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud": {
+      "id": "cloud-frontend/How_to_Log_in_to_the_nanoStream_Cloud",
+      "title": "How to Log in to the nanoStream Cloud",
+      "description": "First, go to https://bintu-cloud-frontend.nanocosmos.de/."
+    },
+    "cloud-frontend/How_to_Setup_Low_Latency_Stream": {
+      "id": "cloud-frontend/How_to_Setup_Low_Latency_Stream",
+      "title": "How to Setup a Low Latency Stream - (V2)",
+      "description": "Click PLAY button to start"
+    },
+    "cloud-frontend/How_to_Start_a_Stream": {
+      "id": "cloud-frontend/How_to_Start_a_Stream",
+      "title": "How to start a stream  - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
+    "cloud-frontend/How_to_Use_the_nanoStream_Webcaster": {
+      "id": "cloud-frontend/How_to_Use_the_nanoStream_Webcaster",
+      "title": "nanoStream Webcaster  - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
+    "cloud-frontend/nanoplayer-snippet": {
+      "id": "cloud-frontend/nanoplayer-snippet",
+      "title": "Embed nanoPlayer Code  - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
+    "cloud-frontend/stream-list": {
+      "id": "cloud-frontend/stream-list",
+      "title": "How to use the Stream List - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
+    "cloud-frontend/transcoding-abr": {
+      "id": "cloud-frontend/transcoding-abr",
+      "title": "Live Transcoding and Adaptive Bitrate Playback  - (V2)",
+      "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!"
+    },
     "cloud/analytics": {
       "id": "cloud/analytics",
       "title": "nanoStream Cloud Analytics",
@@ -681,6 +812,48 @@
       "title": "Zoom Feature",
       "description": "To begin, please sign in to the metrics dashboard using your nanoStream Cloud/Bintu account credentials.",
       "sidebar": "nanoStream Analytics"
+    },
+    "cloud/bintu_api": {
+      "id": "cloud/bintu_api",
+      "title": "Bintu API",
+      "description": "What is bintu?",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/bintu_custom_webhooks": {
+      "id": "cloud/bintu_custom_webhooks",
+      "title": "Bintu custom web hooks",
+      "description": "It's possible to use a custom web hook for custom based authentication.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/bintu_stream_tags": {
+      "id": "cloud/bintu_stream_tags",
+      "title": "Bintu Stream Tags",
+      "description": "You can group and tag streams with bintu stream tags. These are human readable words or IDs you can use to identify your streams.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/guardian": {
+      "id": "cloud/guardian",
+      "title": "nanoStream Guardian",
+      "description": "What is nanoStream Guardian?",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/network-diagnostics": {
+      "id": "cloud/network-diagnostics",
+      "title": "Network Diagnostics",
+      "description": "In this section, we'll review some basic commands that will help you assess and diagnose network problems.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/security": {
+      "id": "cloud/security",
+      "title": "nanoStream Cloud Security",
+      "description": "Click PLAY button to start",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/support": {
+      "id": "cloud/support",
+      "title": "Support",
+      "description": "Support Options",
+      "sidebar": "nanoStream Cloud"
     },
     "cloud/troubleshooting": {
       "id": "cloud/troubleshooting",

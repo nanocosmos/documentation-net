@@ -1,0 +1,20 @@
+{
+  "unversionedId": "cloud-frontend/cloud-tags",
+  "id": "cloud-frontend/cloud-tags",
+  "title": "nanoStream Cloud Tags  - (V2)",
+  "description": "With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams!",
+  "source": "@site/docs/cloud-frontend/How_to_Use_Tags.md",
+  "sourceDirName": "cloud-frontend",
+  "slug": "/cloud-frontend/cloud-tags",
+  "permalink": "/docs/cloud-frontend/cloud-tags",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "cloud-tags",
+    "title": "nanoStream Cloud Tags  - (V2)",
+    "sidebar_label": "nanoStream Cloud Tags"
+  }
+}

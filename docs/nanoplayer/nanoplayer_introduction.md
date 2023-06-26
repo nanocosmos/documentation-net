@@ -102,5 +102,5 @@ Our API documentation can be found [here](./nanoplayer_api).
 
 :::info Questions?
 For business related questions reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de. <br/>
-For technical questions you can use our [support form](https://www.nanocosmos.de/support).
+**For technical questions you can use our [support form](https://www.nanocosmos.de/support).**
 :::

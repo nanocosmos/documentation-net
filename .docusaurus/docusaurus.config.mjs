@@ -27,7 +27,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "/Users/annamatic/Desktop/docs/sidebars.js",
-          "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/"
+          "showLastUpdateTime": true
         },
         "theme": {
           "customCss": "/Users/annamatic/Desktop/docs/src/css/custom.css"
@@ -159,7 +159,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 26 Jun 2023 14:54:30 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 26 Jun 2023 17:07:22 GMT"
     },
     "prism": {
       "theme": {

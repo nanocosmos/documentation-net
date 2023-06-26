@@ -23,7 +23,6 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -41,8 +40,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/nanocosmos/docs/tree/master/docs/',
+          // editUrl: 'https://github.com/nanocosmos/docs/tree/master/docs/',
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -87,13 +86,13 @@ const config = {
             sidebarid: "Webcaster",
             position: 'left',
             label: "Webcaster",
-          },  {
+          }, {
             type: 'doc',
             docId: 'cloud/analytics',
             sidebarid: "Analytics",
             position: 'left',
             label: "Analytics",
-          }, 
+          },
         ],
       },
       // Footer Items
