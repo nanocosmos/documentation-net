@@ -156,8 +156,23 @@
               "sidebar": "H5Live Player"
             },
             {
+              "id": "webrtc/nanostream_webrtc_api",
+              "path": "/docs/webrtc/nanostream_webrtc_api",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_audio_video_only",
+              "path": "/docs/webrtc/nanostream_webrtc_audio_video_only",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
               "id": "webrtc/nanostream_webrtc_demos",
               "path": "/docs/webrtc/nanostream_webrtc_demos",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_device_selection",
+              "path": "/docs/webrtc/nanostream_webrtc_device_selection",
               "sidebar": "nanoStream Webcaster"
             },
             {
@@ -168,6 +183,51 @@
             {
               "id": "webrtc/nanostream_webrtc_introduction",
               "path": "/docs/webrtc/nanostream_webrtc_introduction",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_multiple_webcasts",
+              "path": "/docs/webrtc/nanostream_webrtc_multiple_webcasts",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_quality",
+              "path": "/docs/webrtc/nanostream_webrtc_quality",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_reconnect",
+              "path": "/docs/webrtc/nanostream_webrtc_reconnect",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_screen_sharing",
+              "path": "/docs/webrtc/nanostream_webrtc_screen_sharing",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_secure_ingest",
+              "path": "/docs/webrtc/nanostream_webrtc_secure_ingest",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_set_mediastream",
+              "path": "/docs/webrtc/nanostream_webrtc_set_mediastream",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_speech_music",
+              "path": "/docs/webrtc/nanostream_webrtc_speech_music",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_stats_and_metrics",
+              "path": "/docs/webrtc/nanostream_webrtc_stats_and_metrics",
+              "sidebar": "nanoStream Webcaster"
+            },
+            {
+              "id": "webrtc/nanostream_webrtc_support",
+              "path": "/docs/webrtc/nanostream_webrtc_support",
               "sidebar": "nanoStream Webcaster"
             }
           ],

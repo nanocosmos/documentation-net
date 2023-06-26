@@ -1,0 +1,28 @@
+{
+  "unversionedId": "webrtc/nanostream_webrtc_speech_music",
+  "id": "webrtc/nanostream_webrtc_speech_music",
+  "title": "Speech / Music Streaming",
+  "description": "Since Webcaster version 5.8.0 additional audio preprocessing options are available.",
+  "source": "@site/docs/webrtc/nanostream_webrtc_speech_music.md",
+  "sourceDirName": "webrtc",
+  "slug": "/webrtc/nanostream_webrtc_speech_music",
+  "permalink": "/docs/webrtc/nanostream_webrtc_speech_music",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_speech_music.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nanostream_webrtc_speech_music",
+    "title": "Speech / Music Streaming",
+    "sidebar_label": "Speech / Music Streaming"
+  },
+  "sidebar": "nanoStream Webcaster",
+  "previous": {
+    "title": "Audio- / Video-Only",
+    "permalink": "/docs/webrtc/nanostream_webrtc_audio_video_only"
+  },
+  "next": {
+    "title": "External Streams / Mixing",
+    "permalink": "/docs/webrtc/nanostream_webrtc_set_mediastream"
+  }
+}

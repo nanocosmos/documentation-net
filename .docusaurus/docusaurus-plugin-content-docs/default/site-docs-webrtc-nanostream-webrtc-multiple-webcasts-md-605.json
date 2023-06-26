@@ -1,0 +1,28 @@
+{
+  "unversionedId": "webrtc/nanostream_webrtc_multiple_webcasts",
+  "id": "webrtc/nanostream_webrtc_multiple_webcasts",
+  "title": "Multiple Webcasts",
+  "description": "Multiple Webcasts can be started from a single browser tab.",
+  "source": "@site/docs/webrtc/nanostream_webrtc_multiple_webcasts.md",
+  "sourceDirName": "webrtc",
+  "slug": "/webrtc/nanostream_webrtc_multiple_webcasts",
+  "permalink": "/docs/webrtc/nanostream_webrtc_multiple_webcasts",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_multiple_webcasts.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nanostream_webrtc_multiple_webcasts",
+    "title": "Multiple Webcasts",
+    "sidebar_label": "Multiple Webcasts"
+  },
+  "sidebar": "nanoStream Webcaster",
+  "previous": {
+    "title": "Screen Sharing",
+    "permalink": "/docs/webrtc/nanostream_webrtc_screen_sharing"
+  },
+  "next": {
+    "title": "Quality Settings",
+    "permalink": "/docs/webrtc/nanostream_webrtc_quality"
+  }
+}

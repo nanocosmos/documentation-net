@@ -100,7 +100,35 @@ const sidebars = {
   "nanoStream Webcaster": [
     "webrtc/nanostream_webrtc_introduction",
     "webrtc/nanostream_webrtc_getting_started",
-    "webrtc/nanostream_webrtc_demos"
+    "webrtc/nanostream_webrtc_demos",
+    "webrtc/nanostream_webrtc_support",
+    {
+      "type": "category",
+      "label": "Features",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "webrtc/nanostream_webrtc_secure_ingest",
+        "webrtc/nanostream_webrtc_screen_sharing",
+        "webrtc/nanostream_webrtc_multiple_webcasts",
+        "webrtc/nanostream_webrtc_quality",
+        "webrtc/nanostream_webrtc_device_selection",
+        "webrtc/nanostream_webrtc_audio_video_only",
+        "webrtc/nanostream_webrtc_speech_music",
+        "webrtc/nanostream_webrtc_set_mediastream",
+        "webrtc/nanostream_webrtc_stats_and_metrics",
+        "webrtc/nanostream_webrtc_reconnect"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "API",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "webrtc/nanostream_webrtc_api"
+      ]
+    },
   ]
 };
 

@@ -15,9 +15,9 @@
           "editUrlLocalized": "https://github.com/nanocosmos/docs/tree/master/docs/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/annamatic/Desktop/nano-docs/sidebars.js",
-          "contentPath": "/Users/annamatic/Desktop/nano-docs/docs",
-          "contentPathLocalized": "/Users/annamatic/Desktop/nano-docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Users/annamatic/Desktop/docs/sidebars.js",
+          "contentPath": "/Users/annamatic/Desktop/docs/docs",
+          "contentPathLocalized": "/Users/annamatic/Desktop/docs/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "cloud-frontend-v3/Dashboard_ABR_Transcoding",
@@ -816,6 +816,58 @@
               }
             },
             {
+              "unversionedId": "webrtc/nanostream_webrtc_api",
+              "id": "webrtc/nanostream_webrtc_api",
+              "title": "nanoStream Webcaster API",
+              "description": "RtcUser",
+              "source": "@site/docs/webrtc/nanostream_webrtc_api.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_api",
+              "permalink": "/docs/webrtc/nanostream_webrtc_api",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_api.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_api",
+                "title": "nanoStream Webcaster API",
+                "sidebar_label": "Webcaster"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Automatic Reconnection",
+                "permalink": "/docs/webrtc/nanostream_webrtc_reconnect"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_audio_video_only",
+              "id": "webrtc/nanostream_webrtc_audio_video_only",
+              "title": "Audio- / Video-Only",
+              "description": "In addition to regular streaming, with the nanoStream Webcaster you can stream Audio-Only and Video-Only.",
+              "source": "@site/docs/webrtc/nanostream_webrtc_audio_video_only.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_audio_video_only",
+              "permalink": "/docs/webrtc/nanostream_webrtc_audio_video_only",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_audio_video_only.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_audio_video_only",
+                "title": "Audio- / Video-Only",
+                "sidebar_label": "Audio- / Video-Only"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Device Selection",
+                "permalink": "/docs/webrtc/nanostream_webrtc_device_selection"
+              },
+              "next": {
+                "title": "Speech / Music Streaming",
+                "permalink": "/docs/webrtc/nanostream_webrtc_speech_music"
+              }
+            },
+            {
               "unversionedId": "webrtc/nanostream_webrtc_demos",
               "id": "webrtc/nanostream_webrtc_demos",
               "title": "Browser demos",
@@ -837,6 +889,38 @@
               "previous": {
                 "title": "Getting started",
                 "permalink": "/docs/webrtc/nanostream_webrtc_getting_started"
+              },
+              "next": {
+                "title": "Support",
+                "permalink": "/docs/webrtc/nanostream_webrtc_support"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_device_selection",
+              "id": "webrtc/nanostream_webrtc_device_selection",
+              "title": "Device Selection",
+              "description": "The Webcaster API gives you the possibility to present all currently attached audio and video devices to your users.",
+              "source": "@site/docs/webrtc/nanostream_webrtc_device_selection.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_device_selection",
+              "permalink": "/docs/webrtc/nanostream_webrtc_device_selection",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_device_selection.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_device_selection",
+                "title": "Device Selection",
+                "sidebar_label": "Device Selection"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Quality Settings",
+                "permalink": "/docs/webrtc/nanostream_webrtc_quality"
+              },
+              "next": {
+                "title": "Audio- / Video-Only",
+                "permalink": "/docs/webrtc/nanostream_webrtc_audio_video_only"
               }
             },
             {
@@ -889,6 +973,258 @@
               "next": {
                 "title": "Getting started",
                 "permalink": "/docs/webrtc/nanostream_webrtc_getting_started"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_multiple_webcasts",
+              "id": "webrtc/nanostream_webrtc_multiple_webcasts",
+              "title": "Multiple Webcasts",
+              "description": "Multiple Webcasts can be started from a single browser tab.",
+              "source": "@site/docs/webrtc/nanostream_webrtc_multiple_webcasts.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_multiple_webcasts",
+              "permalink": "/docs/webrtc/nanostream_webrtc_multiple_webcasts",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_multiple_webcasts.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_multiple_webcasts",
+                "title": "Multiple Webcasts",
+                "sidebar_label": "Multiple Webcasts"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Screen Sharing",
+                "permalink": "/docs/webrtc/nanostream_webrtc_screen_sharing"
+              },
+              "next": {
+                "title": "Quality Settings",
+                "permalink": "/docs/webrtc/nanostream_webrtc_quality"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_quality",
+              "id": "webrtc/nanostream_webrtc_quality",
+              "title": "Quality Settings",
+              "description": "Configuring stream quality",
+              "source": "@site/docs/webrtc/nanostream_webrtc_quality.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_quality",
+              "permalink": "/docs/webrtc/nanostream_webrtc_quality",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_quality.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_quality",
+                "title": "Quality Settings",
+                "sidebar_label": "Quality Settings"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Multiple Webcasts",
+                "permalink": "/docs/webrtc/nanostream_webrtc_multiple_webcasts"
+              },
+              "next": {
+                "title": "Device Selection",
+                "permalink": "/docs/webrtc/nanostream_webrtc_device_selection"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_reconnect",
+              "id": "webrtc/nanostream_webrtc_reconnect",
+              "title": "Automatic Reconnection",
+              "description": "This feature allows configuration of the reconnection behaviour on API level.",
+              "source": "@site/docs/webrtc/nanostream_webrtc_reconnect.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_reconnect",
+              "permalink": "/docs/webrtc/nanostream_webrtc_reconnect",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_reconnect.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_reconnect",
+                "title": "Automatic Reconnection",
+                "sidebar_label": "Automatic Reconnection"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Stats and Metrics",
+                "permalink": "/docs/webrtc/nanostream_webrtc_stats_and_metrics"
+              },
+              "next": {
+                "title": "Webcaster",
+                "permalink": "/docs/webrtc/nanostream_webrtc_api"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_screen_sharing",
+              "id": "webrtc/nanostream_webrtc_screen_sharing",
+              "title": "Screen Sharing",
+              "description": "The nanoStream Webcaster supports screen sharing!",
+              "source": "@site/docs/webrtc/nanostream_webrtc_screen_sharing.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_screen_sharing",
+              "permalink": "/docs/webrtc/nanostream_webrtc_screen_sharing",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_screen_sharing.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_screen_sharing",
+                "title": "Screen Sharing",
+                "sidebar_label": "Screen Sharing"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Secure ingest with Webcaster",
+                "permalink": "/docs/webrtc/nanostream_webrtc_secure_ingest"
+              },
+              "next": {
+                "title": "Multiple Webcasts",
+                "permalink": "/docs/webrtc/nanostream_webrtc_multiple_webcasts"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_secure_ingest",
+              "id": "webrtc/nanostream_webrtc_secure_ingest",
+              "title": "Secure ingest with Webcaster",
+              "description": "We enable secure ingest with the Webcaster by using JWT (JSON Web Token).",
+              "source": "@site/docs/webrtc/nanostream_webrtc_secure_ingest.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_secure_ingest",
+              "permalink": "/docs/webrtc/nanostream_webrtc_secure_ingest",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_secure_ingest.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_secure_ingest",
+                "title": "Secure ingest with Webcaster",
+                "sidebar_label": "Secure ingest with Webcaster"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Support",
+                "permalink": "/docs/webrtc/nanostream_webrtc_support"
+              },
+              "next": {
+                "title": "Screen Sharing",
+                "permalink": "/docs/webrtc/nanostream_webrtc_screen_sharing"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_set_mediastream",
+              "id": "webrtc/nanostream_webrtc_set_mediastream",
+              "title": "External Streams / Mixing",
+              "description": "Since Webcaster version 5.11.0 you can use sources based on HTML5 canvas or other stream sources to enable user-generated live sources, separate to live camera or device screens.",
+              "source": "@site/docs/webrtc/nanostream_webrtc_set_mediastream.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_set_mediastream",
+              "permalink": "/docs/webrtc/nanostream_webrtc_set_mediastream",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_set_mediastream.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_set_mediastream",
+                "title": "External Streams / Mixing",
+                "sidebar_label": "External Streams / Mixing"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Speech / Music Streaming",
+                "permalink": "/docs/webrtc/nanostream_webrtc_speech_music"
+              },
+              "next": {
+                "title": "Stats and Metrics",
+                "permalink": "/docs/webrtc/nanostream_webrtc_stats_and_metrics"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_speech_music",
+              "id": "webrtc/nanostream_webrtc_speech_music",
+              "title": "Speech / Music Streaming",
+              "description": "Since Webcaster version 5.8.0 additional audio preprocessing options are available.",
+              "source": "@site/docs/webrtc/nanostream_webrtc_speech_music.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_speech_music",
+              "permalink": "/docs/webrtc/nanostream_webrtc_speech_music",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_speech_music.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_speech_music",
+                "title": "Speech / Music Streaming",
+                "sidebar_label": "Speech / Music Streaming"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Audio- / Video-Only",
+                "permalink": "/docs/webrtc/nanostream_webrtc_audio_video_only"
+              },
+              "next": {
+                "title": "External Streams / Mixing",
+                "permalink": "/docs/webrtc/nanostream_webrtc_set_mediastream"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_stats_and_metrics",
+              "id": "webrtc/nanostream_webrtc_stats_and_metrics",
+              "title": "Stats and Metrics",
+              "description": "The Webcaster API provides two types of Quality Of Service reporting mechanisms:",
+              "source": "@site/docs/webrtc/nanostream_webrtc_stats_and_metrics.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_stats_and_metrics",
+              "permalink": "/docs/webrtc/nanostream_webrtc_stats_and_metrics",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_stats_and_metrics.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_stats_and_metrics",
+                "title": "Stats and Metrics",
+                "sidebar_label": "Stats and Metrics"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "External Streams / Mixing",
+                "permalink": "/docs/webrtc/nanostream_webrtc_set_mediastream"
+              },
+              "next": {
+                "title": "Automatic Reconnection",
+                "permalink": "/docs/webrtc/nanostream_webrtc_reconnect"
+              }
+            },
+            {
+              "unversionedId": "webrtc/nanostream_webrtc_support",
+              "id": "webrtc/nanostream_webrtc_support",
+              "title": "Support",
+              "description": "Reporting bugs or issues",
+              "source": "@site/docs/webrtc/nanostream_webrtc_support.md",
+              "sourceDirName": "webrtc",
+              "slug": "/webrtc/nanostream_webrtc_support",
+              "permalink": "/docs/webrtc/nanostream_webrtc_support",
+              "draft": false,
+              "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_support.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "nanostream_webrtc_support",
+                "title": "Support",
+                "sidebar_label": "Support"
+              },
+              "sidebar": "nanoStream Webcaster",
+              "previous": {
+                "title": "Browser Demos",
+                "permalink": "/docs/webrtc/nanostream_webrtc_demos"
+              },
+              "next": {
+                "title": "Secure ingest with Webcaster",
+                "permalink": "/docs/webrtc/nanostream_webrtc_secure_ingest"
               }
             }
           ],
@@ -1074,6 +1410,70 @@
               {
                 "type": "doc",
                 "id": "webrtc/nanostream_webrtc_demos"
+              },
+              {
+                "type": "doc",
+                "id": "webrtc/nanostream_webrtc_support"
+              },
+              {
+                "type": "category",
+                "label": "Features",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_secure_ingest"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_screen_sharing"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_multiple_webcasts"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_quality"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_device_selection"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_audio_video_only"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_speech_music"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_set_mediastream"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_stats_and_metrics"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_reconnect"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "API",
+                "collapsible": false,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "webrtc/nanostream_webrtc_api"
+                  }
+                ]
               }
             ]
           }

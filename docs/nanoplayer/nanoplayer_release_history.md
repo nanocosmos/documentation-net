@@ -551,7 +551,7 @@ The highlighting of the clickable buttons can be disabled via `config.style.butt
 Also the cursor at button mouseover (default: "pointer") can be customized over `config.style.buttonCursor` by passing a valid css cursor keyword or url.
 
 Furthermore support for poster images has been added. Poster images can be applied via the config.style.poster parameter.
-The string has to be a relative or absolute path to a valid "img" element source like "./assets/poster.png" or "<https://[YOURDOMAIN>]**/assets/poster.gif".
+The string has to be a relative or absolute path to a valid "img" element source like "./assets/poster.png" or "https://[YOURDOMAIN]**/assets/poster.gif".
 
 ### **Changelog**
 

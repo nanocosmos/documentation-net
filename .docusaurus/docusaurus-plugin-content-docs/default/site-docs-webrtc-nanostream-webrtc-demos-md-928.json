@@ -20,5 +20,9 @@
   "previous": {
     "title": "Getting started",
     "permalink": "/docs/webrtc/nanostream_webrtc_getting_started"
+  },
+  "next": {
+    "title": "Support",
+    "permalink": "/docs/webrtc/nanostream_webrtc_support"
   }
 }

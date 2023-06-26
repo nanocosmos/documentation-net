@@ -26,11 +26,11 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Users/annamatic/Desktop/nano-docs/sidebars.js",
+          "sidebarPath": "/Users/annamatic/Desktop/docs/sidebars.js",
           "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/"
         },
         "theme": {
-          "customCss": "/Users/annamatic/Desktop/nano-docs/src/css/custom.css"
+          "customCss": "/Users/annamatic/Desktop/docs/src/css/custom.css"
         }
       }
     ]
@@ -152,7 +152,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Thu, 22 Jun 2023 15:25:30 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 26 Jun 2023 09:43:14 GMT"
     },
     "prism": {
       "theme": {

@@ -4,82 +4,82 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '961'),
+    component: ComponentCreator('/__docusaurus/debug', '244'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '369'),
+    component: ComponentCreator('/__docusaurus/debug/config', '518'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'd77'),
+    component: ComponentCreator('/__docusaurus/debug/content', '6a6'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'e8c'),
+    component: ComponentCreator('/__docusaurus/debug/globalData', '926'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', 'd60'),
+    component: ComponentCreator('/__docusaurus/debug/metadata', '8c1'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '006'),
+    component: ComponentCreator('/__docusaurus/debug/registry', '26e'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '26c'),
+    component: ComponentCreator('/__docusaurus/debug/routes', '699'),
     exact: true
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'efb'),
+    component: ComponentCreator('/blog', '5bd'),
     exact: true
   },
   {
     path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '6b1'),
+    component: ComponentCreator('/blog/archive', '375'),
     exact: true
   },
   {
     path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '45c'),
+    component: ComponentCreator('/blog/first-blog-post', '493'),
     exact: true
   },
   {
     path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '09f'),
+    component: ComponentCreator('/blog/long-blog-post', '1b7'),
     exact: true
   },
   {
     path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'ab9'),
+    component: ComponentCreator('/blog/mdx-blog-post', 'ac4'),
     exact: true
   },
   {
     path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '389'),
+    component: ComponentCreator('/blog/tags', 'fd0'),
     exact: true
   },
   {
     path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '2f8'),
+    component: ComponentCreator('/blog/tags/docusaurus', '33b'),
     exact: true
   },
   {
     path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', 'cbf'),
+    component: ComponentCreator('/blog/tags/facebook', '6cd'),
     exact: true
   },
   {
     path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', 'c91'),
+    component: ComponentCreator('/blog/tags/hello', '6ac'),
     exact: true
   },
   {
@@ -89,17 +89,17 @@ export default [
   },
   {
     path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'a86'),
+    component: ComponentCreator('/blog/welcome', '473'),
     exact: true
   },
   {
     path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', 'af8'),
+    component: ComponentCreator('/markdown-page', '532'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '4f7'),
+    component: ComponentCreator('/docs', '5e3'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -276,8 +276,26 @@ export default [
         sidebar: "H5Live Player"
       },
       {
+        path: '/docs/webrtc/nanostream_webrtc_api',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_api', '02e'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_audio_video_only',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_audio_video_only', 'fec'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
         path: '/docs/webrtc/nanostream_webrtc_demos',
         component: ComponentCreator('/docs/webrtc/nanostream_webrtc_demos', '30e'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_device_selection',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_device_selection', '658'),
         exact: true,
         sidebar: "nanoStream Webcaster"
       },
@@ -292,12 +310,66 @@ export default [
         component: ComponentCreator('/docs/webrtc/nanostream_webrtc_introduction', '391'),
         exact: true,
         sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_multiple_webcasts',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_multiple_webcasts', 'ea5'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_quality',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_quality', '5ff'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_reconnect',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_reconnect', '5ba'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_screen_sharing',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_screen_sharing', '8be'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_secure_ingest',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_secure_ingest', '587'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_set_mediastream',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_set_mediastream', 'd3d'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_speech_music',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_speech_music', 'dc6'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_stats_and_metrics',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_stats_and_metrics', '037'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
+      },
+      {
+        path: '/docs/webrtc/nanostream_webrtc_support',
+        component: ComponentCreator('/docs/webrtc/nanostream_webrtc_support', '784'),
+        exact: true,
+        sidebar: "nanoStream Webcaster"
       }
     ]
   },
   {
     path: '/',
-    component: ComponentCreator('/', '7a7'),
+    component: ComponentCreator('/', '01c'),
     exact: true
   },
   {

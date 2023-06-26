@@ -1,0 +1,28 @@
+{
+  "unversionedId": "webrtc/nanostream_webrtc_set_mediastream",
+  "id": "webrtc/nanostream_webrtc_set_mediastream",
+  "title": "External Streams / Mixing",
+  "description": "Since Webcaster version 5.11.0 you can use sources based on HTML5 canvas or other stream sources to enable user-generated live sources, separate to live camera or device screens.",
+  "source": "@site/docs/webrtc/nanostream_webrtc_set_mediastream.md",
+  "sourceDirName": "webrtc",
+  "slug": "/webrtc/nanostream_webrtc_set_mediastream",
+  "permalink": "/docs/webrtc/nanostream_webrtc_set_mediastream",
+  "draft": false,
+  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/webrtc/nanostream_webrtc_set_mediastream.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "nanostream_webrtc_set_mediastream",
+    "title": "External Streams / Mixing",
+    "sidebar_label": "External Streams / Mixing"
+  },
+  "sidebar": "nanoStream Webcaster",
+  "previous": {
+    "title": "Speech / Music Streaming",
+    "permalink": "/docs/webrtc/nanostream_webrtc_speech_music"
+  },
+  "next": {
+    "title": "Stats and Metrics",
+    "permalink": "/docs/webrtc/nanostream_webrtc_stats_and_metrics"
+  }
+}
