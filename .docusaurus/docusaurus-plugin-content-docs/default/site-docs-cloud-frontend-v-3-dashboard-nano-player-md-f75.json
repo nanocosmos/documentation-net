@@ -20,5 +20,9 @@
   "previous": {
     "title": "Secure Playback & Secure Token",
     "permalink": "/docs/cloud-frontend-v3/Dashboard_Secure"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/nanomeet/introduction"
   }
 }

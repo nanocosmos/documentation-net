@@ -66,6 +66,60 @@
             ]
           }
         ]
+      },
+      {
+        "type": "category",
+        "label": "nanoMeet",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/nanomeet/introduction",
+            "docId": "nanomeet/introduction"
+          },
+          {
+            "type": "link",
+            "label": "Getting Started",
+            "href": "/docs/nanomeet/getting-started",
+            "docId": "nanomeet/getting-started"
+          },
+          {
+            "type": "category",
+            "label": "Samples",
+            "collapsible": false,
+            "collapsed": false,
+            "items": [
+              {
+                "type": "link",
+                "label": "Samples",
+                "href": "/docs/nanomeet/samples",
+                "docId": "nanomeet/samples"
+              },
+              {
+                "type": "link",
+                "label": "Source Code",
+                "href": "/docs/nanomeet/source-code",
+                "docId": "nanomeet/source-code"
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "API",
+            "collapsible": false,
+            "collapsed": false,
+            "items": [
+              {
+                "type": "link",
+                "label": "nanoMeet API",
+                "href": "/docs/nanomeet/api",
+                "docId": "nanomeet/api"
+              }
+            ]
+          }
+        ]
       }
     ],
     "H5Live Player": [
@@ -384,6 +438,36 @@
       "id": "cloud-frontend-v3/Dashboard_Stream_Overview",
       "title": "Stream Overview",
       "description": "The streams page provides a comprehensive list of all your streams, displaying their state (created, live, ended), stream ID, stream name, whether they are part of a stream group, and their last update timestamp. Additionally, the pesence of tags allows for easier stream identification.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "nanomeet/api": {
+      "id": "nanomeet/api",
+      "title": "nanoMeet Web API",
+      "description": "&copy; 2021 nanocosmos",
+      "sidebar": "nanoStream Cloud"
+    },
+    "nanomeet/getting-started": {
+      "id": "nanomeet/getting-started",
+      "title": "Getting Started",
+      "description": "nanoMeet is part of nanoStream Cloud.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "nanomeet/introduction": {
+      "id": "nanomeet/introduction",
+      "title": "nanoMeet",
+      "description": "&copy; 2021 nanocosmos.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "nanomeet/samples": {
+      "id": "nanomeet/samples",
+      "title": "nanoMeet Samples",
+      "description": "The nanoMeet online samples utilize the nanoMeet web API.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "nanomeet/source-code": {
+      "id": "nanomeet/source-code",
+      "title": "nanoMeet Sample Code Snippets",
+      "description": "To create your own token helper you can use our way of implementation. Find here working code snippets and use our approach to create new nanoMeet rooms or use the nanoMeet web API to do it on your own.",
       "sidebar": "nanoStream Cloud"
     },
     "nanoplayer/nanoplayer_api": {

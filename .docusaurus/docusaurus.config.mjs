@@ -49,9 +49,9 @@ export default {
         {
           "type": "doc",
           "docId": "cloud-frontend-v3/Dashboard_Overview",
-          "sidebarid": "nanoStream Cloud Dashboard",
+          "sidebarid": "nanoStream Cloud",
           "position": "left",
-          "label": "Dashboard"
+          "label": "nanoStream Cloud"
         },
         {
           "type": "doc",
@@ -63,9 +63,9 @@ export default {
         {
           "type": "doc",
           "docId": "webrtc/nanostream_webrtc_introduction",
-          "sidebarid": "nanoStream Webcaster",
+          "sidebarid": "Webcaster",
           "position": "left",
-          "label": "nanoStream Webcaster"
+          "label": "Webcaster"
         }
       ],
       "hideOnScroll": false
@@ -152,7 +152,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 26 Jun 2023 09:43:14 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 26 Jun 2023 10:15:55 GMT"
     },
     "prism": {
       "theme": {

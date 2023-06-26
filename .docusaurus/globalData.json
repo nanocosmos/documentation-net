@@ -46,6 +46,31 @@
               "sidebar": "nanoStream Cloud"
             },
             {
+              "id": "nanomeet/api",
+              "path": "/docs/nanomeet/api",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "nanomeet/getting-started",
+              "path": "/docs/nanomeet/getting-started",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "nanomeet/introduction",
+              "path": "/docs/nanomeet/introduction",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "nanomeet/samples",
+              "path": "/docs/nanomeet/samples",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "nanomeet/source-code",
+              "path": "/docs/nanomeet/source-code",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
               "id": "nanoplayer/nanoplayer_api",
               "path": "/docs/nanoplayer/nanoplayer_api",
               "sidebar": "H5Live Player"

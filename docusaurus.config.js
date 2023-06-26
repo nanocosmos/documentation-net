@@ -72,9 +72,9 @@ const config = {
           {
             type: 'doc',
             docId: 'cloud-frontend-v3/Dashboard_Overview',
-            sidebarid: "nanoStream Cloud Dashboard",
+            sidebarid: "nanoStream Cloud",
             position: 'left',
-            label: "Dashboard",
+            label: "nanoStream Cloud",
           }, {
             type: 'doc',
             docId: 'nanoplayer/nanoplayer_introduction',
@@ -84,9 +84,9 @@ const config = {
           }, {
             type: 'doc',
             docId: 'webrtc/nanostream_webrtc_introduction',
-            sidebarid: "nanoStream Webcaster",
+            sidebarid: "Webcaster",
             position: 'left',
-            label: "nanoStream Webcaster",
+            label: "Webcaster",
           }
         ],
       },
