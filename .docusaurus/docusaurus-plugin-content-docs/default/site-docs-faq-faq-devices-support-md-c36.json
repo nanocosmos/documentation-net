@@ -1,0 +1,29 @@
+{
+  "unversionedId": "faq/faq_devices_support",
+  "id": "faq/faq_devices_support",
+  "title": "Capture Devices & Camera Support Questions",
+  "description": "Questions Overview",
+  "source": "@site/docs/faq/faq_devices_support.md",
+  "sourceDirName": "faq",
+  "slug": "/faq/faq_devices_support",
+  "permalink": "/docs/faq/faq_devices_support",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "faq_devices_support",
+    "title": "Capture Devices & Camera Support Questions",
+    "sidebar_label": "Capture Devices & Camera Support"
+  },
+  "sidebar": "FAQ",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/docs/faq/"
+  },
+  "next": {
+    "title": "Advanced Codec Configuration",
+    "permalink": "/docs/faq/faq_adv_codec_config"
+  }
+}

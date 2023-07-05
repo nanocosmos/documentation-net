@@ -664,6 +664,89 @@
               }
             },
             {
+              "unversionedId": "cloud/cloud_getting_started",
+              "id": "cloud/cloud_getting_started",
+              "title": "Getting started",
+              "description": "To begin, please sign in to your nanoStream Cloud/Bintu account and copy your API key here.",
+              "source": "@site/docs/cloud/cloud_getting_started.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/cloud_getting_started",
+              "permalink": "/docs/cloud/cloud_getting_started",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "cloud_getting_started",
+                "title": "Getting started",
+                "sidebar_label": "Getting started"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/cloud/cloud_introduction"
+              },
+              "next": {
+                "title": "nanoStream Cloud Security",
+                "permalink": "/docs/cloud/security"
+              }
+            },
+            {
+              "unversionedId": "cloud/cloud_introduction",
+              "id": "cloud/cloud_introduction",
+              "title": "Introduction",
+              "description": "nanoStream Cloud is a unique live streaming platform based on different components for ultra low latency live streaming.",
+              "source": "@site/docs/cloud/cloud_introduction.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/cloud_introduction",
+              "permalink": "/docs/cloud/cloud_introduction",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "cloud_introduction",
+                "title": "Introduction",
+                "sidebar_label": "Introduction"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Product & Services Overview",
+                "permalink": "/docs/cloud/cloud_overview"
+              },
+              "next": {
+                "title": "Getting started",
+                "permalink": "/docs/cloud/cloud_getting_started"
+              }
+            },
+            {
+              "unversionedId": "cloud/cloud_overview",
+              "id": "cloud/cloud_overview",
+              "title": "nanoStream Cloud Product and Services Overview",
+              "description": "",
+              "source": "@site/docs/cloud/cloud_overview.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/cloud_overview",
+              "permalink": "/docs/cloud/cloud_overview",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "cloud_overview",
+                "title": "nanoStream Cloud Product and Services Overview",
+                "sidebar_label": "Product & Services Overview"
+              },
+              "sidebar": "nanoStream Cloud",
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/cloud/cloud_introduction"
+              }
+            },
+            {
               "unversionedId": "cloud/guardian",
               "id": "cloud/guardian",
               "title": "nanoStream Guardian",
@@ -741,6 +824,10 @@
                 "sidebar_label": "nanoStream Cloud Security"
               },
               "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Getting started",
+                "permalink": "/docs/cloud/cloud_getting_started"
+              },
               "next": {
                 "title": "nanoStream Guardian",
                 "permalink": "/docs/cloud/guardian"
@@ -827,6 +914,250 @@
               "next": {
                 "title": "Zoom",
                 "permalink": "/docs/cloud/analytics-zoom"
+              }
+            },
+            {
+              "unversionedId": "faq/faq",
+              "id": "faq/faq",
+              "title": "FAQ",
+              "description": "Dashboard",
+              "source": "@site/docs/faq/faq.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/",
+              "permalink": "/docs/faq/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq",
+                "title": "FAQ",
+                "sidebar_label": "FAQ"
+              },
+              "sidebar": "FAQ",
+              "next": {
+                "title": "Capture Devices & Camera Support",
+                "permalink": "/docs/faq/faq_devices_support"
+              }
+            },
+            {
+              "unversionedId": "faq/faq_adv_codec_config",
+              "id": "faq/faq_adv_codec_config",
+              "title": "Advanced Codec Configuration Questions",
+              "description": "Questions Overview",
+              "source": "@site/docs/faq/faq_adv_codec_config.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/faq_adv_codec_config",
+              "permalink": "/docs/faq/faq_adv_codec_config",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq_adv_codec_config",
+                "title": "Advanced Codec Configuration Questions",
+                "sidebar_label": "Advanced Codec Configuration"
+              },
+              "sidebar": "FAQ",
+              "previous": {
+                "title": "Capture Devices & Camera Support",
+                "permalink": "/docs/faq/faq_devices_support"
+              },
+              "next": {
+                "title": "Purchase and License",
+                "permalink": "/docs/faq/faq_purchase_and_license"
+              }
+            },
+            {
+              "unversionedId": "faq/faq_devices_support",
+              "id": "faq/faq_devices_support",
+              "title": "Capture Devices & Camera Support Questions",
+              "description": "Questions Overview",
+              "source": "@site/docs/faq/faq_devices_support.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/faq_devices_support",
+              "permalink": "/docs/faq/faq_devices_support",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq_devices_support",
+                "title": "Capture Devices & Camera Support Questions",
+                "sidebar_label": "Capture Devices & Camera Support"
+              },
+              "sidebar": "FAQ",
+              "previous": {
+                "title": "FAQ",
+                "permalink": "/docs/faq/"
+              },
+              "next": {
+                "title": "Advanced Codec Configuration",
+                "permalink": "/docs/faq/faq_adv_codec_config"
+              }
+            },
+            {
+              "unversionedId": "faq/faq_h5live_player_adjust_style",
+              "id": "faq/faq_h5live_player_adjust_style",
+              "title": "Adjust/Styling Questions",
+              "description": "Questions Overview",
+              "source": "@site/docs/faq/faq_h5live_player_adjust_style.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/faq_h5live_player_adjust_style",
+              "permalink": "/docs/faq/faq_h5live_player_adjust_style",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq_h5live_player_adjust_style",
+                "title": "Adjust/Styling Questions",
+                "sidebar_label": "Adjust/Style"
+              },
+              "sidebar": "FAQ",
+              "previous": {
+                "title": "General",
+                "permalink": "/docs/faq/faq_h5live_player_general"
+              },
+              "next": {
+                "title": "General",
+                "permalink": "/docs/faq/faq_WebRTC_general"
+              }
+            },
+            {
+              "unversionedId": "faq/faq_h5live_player_general",
+              "id": "faq/faq_h5live_player_general",
+              "title": "General Questions",
+              "description": "Questions Overivew",
+              "source": "@site/docs/faq/faq_h5live_player_general.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/faq_h5live_player_general",
+              "permalink": "/docs/faq/faq_h5live_player_general",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq_h5live_player_general",
+                "title": "General Questions",
+                "sidebar_label": "General"
+              },
+              "sidebar": "FAQ",
+              "previous": {
+                "title": "Purchase and License",
+                "permalink": "/docs/faq/faq_purchase_and_license"
+              },
+              "next": {
+                "title": "Adjust/Style",
+                "permalink": "/docs/faq/faq_h5live_player_adjust_style"
+              }
+            },
+            {
+              "unversionedId": "faq/faq_purchase_and_license",
+              "id": "faq/faq_purchase_and_license",
+              "title": "Purchase and License Questions",
+              "description": "<!-- - How to purchase a product?",
+              "source": "@site/docs/faq/faq_purchase_and_license.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/faq_purchase_and_license",
+              "permalink": "/docs/faq/faq_purchase_and_license",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq_purchase_and_license",
+                "title": "Purchase and License Questions",
+                "sidebar_label": "Purchase and License"
+              },
+              "sidebar": "FAQ",
+              "previous": {
+                "title": "Advanced Codec Configuration",
+                "permalink": "/docs/faq/faq_adv_codec_config"
+              },
+              "next": {
+                "title": "General",
+                "permalink": "/docs/faq/faq_h5live_player_general"
+              }
+            },
+            {
+              "unversionedId": "faq/faq_streaming",
+              "id": "faq/faq_streaming",
+              "title": "General Questions",
+              "description": "What is nanoStream Cloud?",
+              "source": "@site/docs/faq/faq_streaming.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/faq_streaming",
+              "permalink": "/docs/faq/faq_streaming",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq_streaming",
+                "title": "General Questions",
+                "sidebar_label": "Live Streaming"
+              }
+            },
+            {
+              "unversionedId": "faq/faq_WebRTC_devices",
+              "id": "faq/faq_WebRTC_devices",
+              "title": "Device Questions",
+              "description": "Questions Overview",
+              "source": "@site/docs/faq/faq_WebRTC_devices.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/faq_WebRTC_devices",
+              "permalink": "/docs/faq/faq_WebRTC_devices",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq_WebRTC_devices",
+                "title": "Device Questions",
+                "sidebar_label": "Devices"
+              },
+              "sidebar": "FAQ",
+              "previous": {
+                "title": "General",
+                "permalink": "/docs/faq/faq_WebRTC_general"
+              }
+            },
+            {
+              "unversionedId": "faq/faq_WebRTC_general",
+              "id": "faq/faq_WebRTC_general",
+              "title": "General Questions",
+              "description": "Questions Overivew",
+              "source": "@site/docs/faq/faq_WebRTC_general.md",
+              "sourceDirName": "faq",
+              "slug": "/faq/faq_WebRTC_general",
+              "permalink": "/docs/faq/faq_WebRTC_general",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "faq_WebRTC_general",
+                "title": "General Questions",
+                "sidebar_label": "General"
+              },
+              "sidebar": "FAQ",
+              "previous": {
+                "title": "Adjust/Style",
+                "permalink": "/docs/faq/faq_h5live_player_adjust_style"
+              },
+              "next": {
+                "title": "Devices",
+                "permalink": "/docs/faq/faq_WebRTC_devices"
               }
             },
             {
@@ -2579,6 +2910,26 @@
               }
             },
             {
+              "unversionedId": "samples/samples",
+              "id": "samples/samples",
+              "title": "nanoStream Cloud Samples",
+              "description": "Ready-to-use demos",
+              "source": "@site/docs/samples/samples.md",
+              "sourceDirName": "samples",
+              "slug": "/samples/",
+              "permalink": "/docs/samples/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "samples",
+                "title": "nanoStream Cloud Samples",
+                "sidebar_label": "nanoStream Cloud Samples"
+              }
+            },
+            {
               "unversionedId": "webrtc/nanostream_webrtc_api",
               "id": "webrtc/nanostream_webrtc_api",
               "title": "nanoStream Webcaster API",
@@ -3009,6 +3360,18 @@
           "drafts": [],
           "sidebars": {
             "nanoStream Cloud": [
+              {
+                "type": "doc",
+                "id": "cloud/cloud_overview"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/cloud_introduction"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/cloud_getting_started"
+              },
               {
                 "type": "category",
                 "label": "Security Features",
@@ -3509,6 +3872,56 @@
                 "type": "doc",
                 "id": "cloud/analytics-api"
               }
+            ],
+            "FAQ": [
+              {
+                "type": "doc",
+                "id": "faq/faq"
+              },
+              {
+                "type": "doc",
+                "id": "faq/faq_devices_support"
+              },
+              {
+                "type": "doc",
+                "id": "faq/faq_adv_codec_config"
+              },
+              {
+                "type": "doc",
+                "id": "faq/faq_purchase_and_license"
+              },
+              {
+                "type": "category",
+                "label": "H5Live Player",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "faq/faq_h5live_player_general"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "faq/faq_h5live_player_adjust_style"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Webcaster",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "faq/faq_WebRTC_general"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "faq/faq_WebRTC_devices"
+                  }
+                ]
+              }
             ]
           }
         }
@@ -3857,23 +4270,24 @@
   "docusaurus-plugin-content-pages": {
     "default": [
       {
-        "type": "jsx",
-        "permalink": "/",
-        "source": "@site/src/pages/index.js"
-      },
-      {
         "type": "mdx",
-        "permalink": "/markdown-page",
-        "source": "@site/src/pages/markdown-page.md",
+        "permalink": "/empty-markdown-page",
+        "source": "@site/src/pages/empty-markdown-page.md",
         "title": "Markdown page example",
         "description": "You don't need React to write simple standalone pages.",
         "frontMatter": {
           "title": "Markdown page example"
         }
+      },
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
       }
     ]
   },
   "docusaurus-plugin-debug": {},
+  "docusaurus-plugin-google-gtag": {},
   "docusaurus-theme-classic": {},
   "docusaurus-bootstrap-plugin": {},
   "docusaurus-mdx-fallback-plugin": {}

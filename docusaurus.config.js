@@ -46,6 +46,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'G-D55K07W445',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -70,7 +74,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'cloud-frontend-v3/Dashboard_Overview',
+            docId: 'cloud/cloud_overview',
             sidebarid: "nanoStream Cloud",
             position: 'left',
             label: "nanoStream Cloud",
@@ -92,6 +96,18 @@ const config = {
             sidebarid: "Analytics",
             position: 'left',
             label: "Analytics",
+          }, {
+            type: 'doc',
+            docId: 'faq/faq',
+            sidebarid: "FAQ",
+            position: 'left',
+            label: "FAQ",
+          }, {
+            type: 'doc',
+            docId: 'samples/samples',
+            sidebarid: "Samples",
+            position: 'left',
+            label: "Samples",
           },
         ],
       },

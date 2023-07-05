@@ -1,0 +1,25 @@
+{
+  "unversionedId": "faq/faq_WebRTC_devices",
+  "id": "faq/faq_WebRTC_devices",
+  "title": "Device Questions",
+  "description": "Questions Overview",
+  "source": "@site/docs/faq/faq_WebRTC_devices.md",
+  "sourceDirName": "faq",
+  "slug": "/faq/faq_WebRTC_devices",
+  "permalink": "/docs/faq/faq_WebRTC_devices",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "faq_WebRTC_devices",
+    "title": "Device Questions",
+    "sidebar_label": "Devices"
+  },
+  "sidebar": "FAQ",
+  "previous": {
+    "title": "General",
+    "permalink": "/docs/faq/faq_WebRTC_general"
+  }
+}

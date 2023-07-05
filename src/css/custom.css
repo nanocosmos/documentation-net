@@ -13,6 +13,7 @@
   --ifm-color-primary-light: #f28a22;
   --ifm-color-primary-lighter: #f3902e;
   --ifm-color-primary-lightest: #f5a352;
+  /* --ifm-background-color: #020305; */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -25,6 +26,16 @@
   --ifm-color-primary-darkest: #a6580a;
   --ifm-color-primary-light: #f28a22;
   --ifm-color-primary-lighter: #f3902e;
-  --ifm-color-primary-lightest: #f5a352;
+  --ifm-background-color: #020305;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.cardContainer_Uewx {
+  --ifm-link-color: var(--ifm-color-emphasis-800);
+  --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+  --ifm-link-hover-decoration: none;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, .15);
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border, box-shadow;
 }

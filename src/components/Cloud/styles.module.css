@@ -1,0 +1,42 @@
+
+.sectionWrapper {
+  padding: 30px 15px;
+  background-color: #hhh;
+}
+
+.cardWrapper {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .cardWrapper {
+    max-width: 100%;
+  }
+}
+
+.card {
+  padding: 10px;
+  color: #ed7d0e;
+}
+
+.sectionWrapper h1 {
+  margin-bottom: 0;
+  color: #ed7d0e;
+}
+
+.cardContent {
+  border: 1px solid #ed7d0e;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.cardContent:hover {
+  transform: scale(1.01);
+}
+
+.overline {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: smaller;
+}

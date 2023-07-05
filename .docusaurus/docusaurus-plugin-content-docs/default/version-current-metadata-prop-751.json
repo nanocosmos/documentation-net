@@ -10,6 +10,24 @@
   "docsSidebars": {
     "nanoStream Cloud": [
       {
+        "type": "link",
+        "label": "Product & Services Overview",
+        "href": "/docs/cloud/cloud_overview",
+        "docId": "cloud/cloud_overview"
+      },
+      {
+        "type": "link",
+        "label": "Introduction",
+        "href": "/docs/cloud/cloud_introduction",
+        "docId": "cloud/cloud_introduction"
+      },
+      {
+        "type": "link",
+        "label": "Getting started",
+        "href": "/docs/cloud/cloud_getting_started",
+        "docId": "cloud/cloud_getting_started"
+      },
+      {
         "type": "category",
         "label": "Security Features",
         "collapsible": false,
@@ -679,6 +697,72 @@
         "href": "/docs/cloud/analytics-api",
         "docId": "cloud/analytics-api"
       }
+    ],
+    "FAQ": [
+      {
+        "type": "link",
+        "label": "FAQ",
+        "href": "/docs/faq/",
+        "docId": "faq/faq"
+      },
+      {
+        "type": "link",
+        "label": "Capture Devices & Camera Support",
+        "href": "/docs/faq/faq_devices_support",
+        "docId": "faq/faq_devices_support"
+      },
+      {
+        "type": "link",
+        "label": "Advanced Codec Configuration",
+        "href": "/docs/faq/faq_adv_codec_config",
+        "docId": "faq/faq_adv_codec_config"
+      },
+      {
+        "type": "link",
+        "label": "Purchase and License",
+        "href": "/docs/faq/faq_purchase_and_license",
+        "docId": "faq/faq_purchase_and_license"
+      },
+      {
+        "type": "category",
+        "label": "H5Live Player",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "General",
+            "href": "/docs/faq/faq_h5live_player_general",
+            "docId": "faq/faq_h5live_player_general"
+          },
+          {
+            "type": "link",
+            "label": "Adjust/Style",
+            "href": "/docs/faq/faq_h5live_player_adjust_style",
+            "docId": "faq/faq_h5live_player_adjust_style"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Webcaster",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "General",
+            "href": "/docs/faq/faq_WebRTC_general",
+            "docId": "faq/faq_WebRTC_general"
+          },
+          {
+            "type": "link",
+            "label": "Devices",
+            "href": "/docs/faq/faq_WebRTC_devices",
+            "docId": "faq/faq_WebRTC_devices"
+          }
+        ]
+      }
     ]
   },
   "docs": {
@@ -831,6 +915,24 @@
       "description": "You can group and tag streams with bintu stream tags. These are human readable words or IDs you can use to identify your streams.",
       "sidebar": "nanoStream Cloud"
     },
+    "cloud/cloud_getting_started": {
+      "id": "cloud/cloud_getting_started",
+      "title": "Getting started",
+      "description": "To begin, please sign in to your nanoStream Cloud/Bintu account and copy your API key here.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/cloud_introduction": {
+      "id": "cloud/cloud_introduction",
+      "title": "Introduction",
+      "description": "nanoStream Cloud is a unique live streaming platform based on different components for ultra low latency live streaming.",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/cloud_overview": {
+      "id": "cloud/cloud_overview",
+      "title": "nanoStream Cloud Product and Services Overview",
+      "description": "",
+      "sidebar": "nanoStream Cloud"
+    },
     "cloud/guardian": {
       "id": "cloud/guardian",
       "title": "nanoStream Guardian",
@@ -866,6 +968,59 @@
       "title": "Worldmap",
       "description": "The selected filter options affect all availabe metrics.",
       "sidebar": "nanoStream Analytics"
+    },
+    "faq/faq": {
+      "id": "faq/faq",
+      "title": "FAQ",
+      "description": "Dashboard",
+      "sidebar": "FAQ"
+    },
+    "faq/faq_adv_codec_config": {
+      "id": "faq/faq_adv_codec_config",
+      "title": "Advanced Codec Configuration Questions",
+      "description": "Questions Overview",
+      "sidebar": "FAQ"
+    },
+    "faq/faq_devices_support": {
+      "id": "faq/faq_devices_support",
+      "title": "Capture Devices & Camera Support Questions",
+      "description": "Questions Overview",
+      "sidebar": "FAQ"
+    },
+    "faq/faq_h5live_player_adjust_style": {
+      "id": "faq/faq_h5live_player_adjust_style",
+      "title": "Adjust/Styling Questions",
+      "description": "Questions Overview",
+      "sidebar": "FAQ"
+    },
+    "faq/faq_h5live_player_general": {
+      "id": "faq/faq_h5live_player_general",
+      "title": "General Questions",
+      "description": "Questions Overivew",
+      "sidebar": "FAQ"
+    },
+    "faq/faq_purchase_and_license": {
+      "id": "faq/faq_purchase_and_license",
+      "title": "Purchase and License Questions",
+      "description": "<!-- - How to purchase a product?",
+      "sidebar": "FAQ"
+    },
+    "faq/faq_streaming": {
+      "id": "faq/faq_streaming",
+      "title": "General Questions",
+      "description": "What is nanoStream Cloud?"
+    },
+    "faq/faq_WebRTC_devices": {
+      "id": "faq/faq_WebRTC_devices",
+      "title": "Device Questions",
+      "description": "Questions Overview",
+      "sidebar": "FAQ"
+    },
+    "faq/faq_WebRTC_general": {
+      "id": "faq/faq_WebRTC_general",
+      "title": "General Questions",
+      "description": "Questions Overivew",
+      "sidebar": "FAQ"
     },
     "nanomeet/api": {
       "id": "nanomeet/api",
@@ -1261,6 +1416,11 @@
       "title": "Setting the license",
       "description": "The nanocosmos Live Encoder Application needs a properly set up license to work. There are a few different ways you can set the license. In general the Live Encoder Application needs a license to be set as a key within the windows registry. Doing this manually is described in the last paragraph of this site. An easier way is using the License Tool. This tool helps you to set you license without changing the registry by yourself.",
       "sidebar": "nanoStream Apps & SDKs"
+    },
+    "samples/samples": {
+      "id": "samples/samples",
+      "title": "nanoStream Cloud Samples",
+      "description": "Ready-to-use demos"
     },
     "webrtc/nanostream_webrtc_api": {
       "id": "webrtc/nanostream_webrtc_api",

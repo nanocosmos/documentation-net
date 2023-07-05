@@ -1,0 +1,25 @@
+{
+  "unversionedId": "faq/faq",
+  "id": "faq/faq",
+  "title": "FAQ",
+  "description": "Dashboard",
+  "source": "@site/docs/faq/faq.md",
+  "sourceDirName": "faq",
+  "slug": "/faq/",
+  "permalink": "/docs/faq/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "faq",
+    "title": "FAQ",
+    "sidebar_label": "FAQ"
+  },
+  "sidebar": "FAQ",
+  "next": {
+    "title": "Capture Devices & Camera Support",
+    "permalink": "/docs/faq/faq_devices_support"
+  }
+}

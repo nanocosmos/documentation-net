@@ -1,0 +1,29 @@
+{
+  "unversionedId": "faq/faq_h5live_player_adjust_style",
+  "id": "faq/faq_h5live_player_adjust_style",
+  "title": "Adjust/Styling Questions",
+  "description": "Questions Overview",
+  "source": "@site/docs/faq/faq_h5live_player_adjust_style.md",
+  "sourceDirName": "faq",
+  "slug": "/faq/faq_h5live_player_adjust_style",
+  "permalink": "/docs/faq/faq_h5live_player_adjust_style",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "faq_h5live_player_adjust_style",
+    "title": "Adjust/Styling Questions",
+    "sidebar_label": "Adjust/Style"
+  },
+  "sidebar": "FAQ",
+  "previous": {
+    "title": "General",
+    "permalink": "/docs/faq/faq_h5live_player_general"
+  },
+  "next": {
+    "title": "General",
+    "permalink": "/docs/faq/faq_WebRTC_general"
+  }
+}

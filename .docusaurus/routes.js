@@ -93,13 +93,13 @@ export default [
     exact: true
   },
   {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '532'),
+    path: '/empty-markdown-page',
+    component: ComponentCreator('/empty-markdown-page', 'e1f'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '60d'),
+    component: ComponentCreator('/docs', '3b1'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -251,6 +251,24 @@ export default [
         sidebar: "nanoStream Cloud"
       },
       {
+        path: '/docs/cloud/cloud_getting_started',
+        component: ComponentCreator('/docs/cloud/cloud_getting_started', '5b0'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/cloud_introduction',
+        component: ComponentCreator('/docs/cloud/cloud_introduction', 'fdf'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/cloud_overview',
+        component: ComponentCreator('/docs/cloud/cloud_overview', '83e'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
         path: '/docs/cloud/guardian',
         component: ComponentCreator('/docs/cloud/guardian', '74e'),
         exact: true,
@@ -285,6 +303,59 @@ export default [
         component: ComponentCreator('/docs/cloud/worldmap', 'fa8'),
         exact: true,
         sidebar: "nanoStream Analytics"
+      },
+      {
+        path: '/docs/faq/',
+        component: ComponentCreator('/docs/faq/', '898'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/faq/faq_adv_codec_config',
+        component: ComponentCreator('/docs/faq/faq_adv_codec_config', '502'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/faq/faq_devices_support',
+        component: ComponentCreator('/docs/faq/faq_devices_support', '33b'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/faq/faq_h5live_player_adjust_style',
+        component: ComponentCreator('/docs/faq/faq_h5live_player_adjust_style', '360'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/faq/faq_h5live_player_general',
+        component: ComponentCreator('/docs/faq/faq_h5live_player_general', '918'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/faq/faq_purchase_and_license',
+        component: ComponentCreator('/docs/faq/faq_purchase_and_license', '06e'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/faq/faq_streaming',
+        component: ComponentCreator('/docs/faq/faq_streaming', 'dac'),
+        exact: true
+      },
+      {
+        path: '/docs/faq/faq_WebRTC_devices',
+        component: ComponentCreator('/docs/faq/faq_WebRTC_devices', 'dca'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/faq/faq_WebRTC_general',
+        component: ComponentCreator('/docs/faq/faq_WebRTC_general', '4f2'),
+        exact: true,
+        sidebar: "FAQ"
       },
       {
         path: '/docs/nanomeet/api',
@@ -680,6 +751,11 @@ export default [
         component: ComponentCreator('/docs/nanostream/windows/nanostream_windows_license_help', '46b'),
         exact: true,
         sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/samples/',
+        component: ComponentCreator('/docs/samples/', '0ff'),
+        exact: true
       },
       {
         path: '/docs/webrtc/nanostream_webrtc_api',

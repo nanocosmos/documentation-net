@@ -2,15 +2,16 @@
   "unversionedId": "cloud/cloud_getting_started",
   "id": "cloud/cloud_getting_started",
   "title": "Getting started",
-  "description": "Using the bintu.live dashboard",
+  "description": "To begin, please sign in to your nanoStream Cloud/Bintu account and copy your API key here.",
   "source": "@site/docs/cloud/cloud_getting_started.md",
   "sourceDirName": "cloud",
   "slug": "/cloud/cloud_getting_started",
   "permalink": "/docs/cloud/cloud_getting_started",
   "draft": false,
-  "editUrl": "https://github.com/nanocosmos/docs/tree/master/docs/docs/cloud/cloud_getting_started.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
   "frontMatter": {
     "id": "cloud_getting_started",
     "title": "Getting started",
@@ -22,7 +23,7 @@
     "permalink": "/docs/cloud/cloud_introduction"
   },
   "next": {
-    "title": "Live Encoding",
-    "permalink": "/docs/cloud/live_encoding"
+    "title": "nanoStream Cloud Security",
+    "permalink": "/docs/cloud/security"
   }
 }

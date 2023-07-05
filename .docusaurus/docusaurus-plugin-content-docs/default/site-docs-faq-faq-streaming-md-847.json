@@ -1,0 +1,20 @@
+{
+  "unversionedId": "faq/faq_streaming",
+  "id": "faq/faq_streaming",
+  "title": "General Questions",
+  "description": "What is nanoStream Cloud?",
+  "source": "@site/docs/faq/faq_streaming.md",
+  "sourceDirName": "faq",
+  "slug": "/faq/faq_streaming",
+  "permalink": "/docs/faq/faq_streaming",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "faq_streaming",
+    "title": "General Questions",
+    "sidebar_label": "Live Streaming"
+  }
+}

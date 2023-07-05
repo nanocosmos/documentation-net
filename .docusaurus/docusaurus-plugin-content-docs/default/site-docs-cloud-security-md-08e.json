@@ -18,6 +18,10 @@
     "sidebar_label": "nanoStream Cloud Security"
   },
   "sidebar": "nanoStream Cloud",
+  "previous": {
+    "title": "Getting started",
+    "permalink": "/docs/cloud/cloud_getting_started"
+  },
   "next": {
     "title": "nanoStream Guardian",
     "permalink": "/docs/cloud/guardian"

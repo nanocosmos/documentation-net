@@ -31,6 +31,10 @@ export default {
         },
         "theme": {
           "customCss": "/Users/annamatic/Desktop/docs/src/css/custom.css"
+        },
+        "gtag": {
+          "trackingID": "G-D55K07W445",
+          "anonymizeIP": true
         }
       }
     ]
@@ -48,7 +52,7 @@ export default {
       "items": [
         {
           "type": "doc",
-          "docId": "cloud-frontend-v3/Dashboard_Overview",
+          "docId": "cloud/cloud_overview",
           "sidebarid": "nanoStream Cloud",
           "position": "left",
           "label": "nanoStream Cloud"
@@ -73,6 +77,20 @@ export default {
           "sidebarid": "Analytics",
           "position": "left",
           "label": "Analytics"
+        },
+        {
+          "type": "doc",
+          "docId": "faq/faq",
+          "sidebarid": "FAQ",
+          "position": "left",
+          "label": "FAQ"
+        },
+        {
+          "type": "doc",
+          "docId": "samples/samples",
+          "sidebarid": "Samples",
+          "position": "left",
+          "label": "Samples"
         }
       ],
       "hideOnScroll": false
@@ -159,7 +177,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 26 Jun 2023 17:07:22 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Wed, 05 Jul 2023 12:00:59 GMT"
     },
     "prism": {
       "theme": {

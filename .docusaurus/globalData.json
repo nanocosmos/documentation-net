@@ -1,4 +1,13 @@
 {
+  "docusaurus-plugin-google-gtag": {
+    "default": {
+      "trackingID": [
+        "G-D55K07W445"
+      ],
+      "anonymizeIP": true,
+      "id": "default"
+    }
+  },
   "docusaurus-plugin-content-docs": {
     "default": {
       "path": "/docs",
@@ -8,7 +17,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "cloud/security",
+          "mainDocId": "cloud/cloud_overview",
           "docs": [
             {
               "id": "cloud-frontend-v3/Dashboard_ABR_Transcoding",
@@ -133,6 +142,21 @@
               "sidebar": "nanoStream Cloud"
             },
             {
+              "id": "cloud/cloud_getting_started",
+              "path": "/docs/cloud/cloud_getting_started",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud/cloud_introduction",
+              "path": "/docs/cloud/cloud_introduction",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud/cloud_overview",
+              "path": "/docs/cloud/cloud_overview",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
               "id": "cloud/guardian",
               "path": "/docs/cloud/guardian",
               "sidebar": "nanoStream Cloud"
@@ -161,6 +185,50 @@
               "id": "cloud/worldmap",
               "path": "/docs/cloud/worldmap",
               "sidebar": "nanoStream Analytics"
+            },
+            {
+              "id": "faq/faq",
+              "path": "/docs/faq/",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "faq/faq_adv_codec_config",
+              "path": "/docs/faq/faq_adv_codec_config",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "faq/faq_devices_support",
+              "path": "/docs/faq/faq_devices_support",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "faq/faq_h5live_player_adjust_style",
+              "path": "/docs/faq/faq_h5live_player_adjust_style",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "faq/faq_h5live_player_general",
+              "path": "/docs/faq/faq_h5live_player_general",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "faq/faq_purchase_and_license",
+              "path": "/docs/faq/faq_purchase_and_license",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "faq/faq_streaming",
+              "path": "/docs/faq/faq_streaming"
+            },
+            {
+              "id": "faq/faq_WebRTC_devices",
+              "path": "/docs/faq/faq_WebRTC_devices",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "faq/faq_WebRTC_general",
+              "path": "/docs/faq/faq_WebRTC_general",
+              "sidebar": "FAQ"
             },
             {
               "id": "nanomeet/api",
@@ -489,6 +557,10 @@
               "sidebar": "nanoStream Apps & SDKs"
             },
             {
+              "id": "samples/samples",
+              "path": "/docs/samples/"
+            },
+            {
               "id": "webrtc/nanostream_webrtc_api",
               "path": "/docs/webrtc/nanostream_webrtc_api",
               "sidebar": "nanoStream Webcaster"
@@ -568,8 +640,8 @@
           "sidebars": {
             "nanoStream Cloud": {
               "link": {
-                "path": "/docs/cloud/security",
-                "label": "cloud/security"
+                "path": "/docs/cloud/cloud_overview",
+                "label": "cloud/cloud_overview"
               }
             },
             "H5Live Player": {
@@ -594,6 +666,12 @@
               "link": {
                 "path": "/docs/cloud/analytics",
                 "label": "cloud/analytics"
+              }
+            },
+            "FAQ": {
+              "link": {
+                "path": "/docs/faq/",
+                "label": "faq/faq"
               }
             }
           }
