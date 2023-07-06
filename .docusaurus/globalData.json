@@ -162,6 +162,16 @@
               "sidebar": "nanoStream Cloud"
             },
             {
+              "id": "cloud/live_encoding",
+              "path": "/docs/cloud/live_encoding",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud/live-recording-vod",
+              "path": "/docs/cloud/live-recording-vod",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
               "id": "cloud/network-diagnostics",
               "path": "/docs/cloud/network-diagnostics",
               "sidebar": "nanoStream Cloud"
@@ -169,6 +179,11 @@
             {
               "id": "cloud/security",
               "path": "/docs/cloud/security",
+              "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud/srt_ingest",
+              "path": "/docs/cloud/srt_ingest",
               "sidebar": "nanoStream Cloud"
             },
             {

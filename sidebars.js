@@ -19,6 +19,9 @@ const sidebars = {
     "cloud/cloud_overview",
     "cloud/cloud_introduction",
     "cloud/cloud_getting_started",
+    "cloud/live_encoding",
+    "cloud/srt_ingest",
+    "cloud/live-recording-vod",
     {
       "type": "category",
       "label": "Security Features",

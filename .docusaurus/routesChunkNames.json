@@ -186,7 +186,7 @@
     },
     "content": "content---empty-markdown-pagef-09-404"
   },
-  "/docs-3b1": {
+  "/docs-6ac": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-5-d-6-ce5"
@@ -317,6 +317,14 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-cloud-guardian-5-c-9-272"
   },
+  "/docs/cloud/live_encoding-76f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-cloud-live-encoding-532-c82"
+  },
+  "/docs/cloud/live-recording-vod-f74": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-cloud-live-recording-vod-1-aa-e74"
+  },
   "/docs/cloud/network-diagnostics-0ca": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-cloud-network-diagnostics-5-fc-21c"
@@ -324,6 +332,10 @@
   "/docs/cloud/security-9cc": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-cloud-security-08-e-0a8"
+  },
+  "/docs/cloud/srt_ingest-2e6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-cloud-srt-ingest-677-a34"
   },
   "/docs/cloud/support-4e0": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -347,7 +359,7 @@
   },
   "/docs/faq/faq_devices_support-33b": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-faq-faq-h-5-live-player-adjust-stylec-36-bc2"
+    "content": "content---docs-faq-faq-devices-supportc-36-e6b"
   },
   "/docs/faq/faq_h5live_player_adjust_style-360": {
     "__comp": "__comp---theme-doc-item-178-a40",

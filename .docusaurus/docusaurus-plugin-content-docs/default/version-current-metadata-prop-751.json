@@ -28,6 +28,24 @@
         "docId": "cloud/cloud_getting_started"
       },
       {
+        "type": "link",
+        "label": "Live Encoding",
+        "href": "/docs/cloud/live_encoding",
+        "docId": "cloud/live_encoding"
+      },
+      {
+        "type": "link",
+        "label": "SRT Ingest",
+        "href": "/docs/cloud/srt_ingest",
+        "docId": "cloud/srt_ingest"
+      },
+      {
+        "type": "link",
+        "label": "Live Recording and VOD",
+        "href": "/docs/cloud/live-recording-vod",
+        "docId": "cloud/live-recording-vod"
+      },
+      {
         "type": "category",
         "label": "Security Features",
         "collapsible": false,
@@ -939,6 +957,18 @@
       "description": "What is nanoStream Guardian?",
       "sidebar": "nanoStream Cloud"
     },
+    "cloud/live_encoding": {
+      "id": "cloud/live_encoding",
+      "title": "Live Encoding",
+      "description": "What is Live Encoding ?",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/live-recording-vod": {
+      "id": "cloud/live-recording-vod",
+      "title": "Live Recording and VOD",
+      "description": "Please reach out to our dedicated sales team via the contact form or by sending an email to sales(at)nanocosmos.de",
+      "sidebar": "nanoStream Cloud"
+    },
     "cloud/network-diagnostics": {
       "id": "cloud/network-diagnostics",
       "title": "Network Diagnostics",
@@ -949,6 +979,12 @@
       "id": "cloud/security",
       "title": "nanoStream Cloud Security",
       "description": "Click PLAY button to start",
+      "sidebar": "nanoStream Cloud"
+    },
+    "cloud/srt_ingest": {
+      "id": "cloud/srt_ingest",
+      "title": "nanoStream Cloud SRT Ingest Guide",
+      "description": "Hi!",
       "sidebar": "nanoStream Cloud"
     },
     "cloud/support": {

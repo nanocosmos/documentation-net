@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '3b1'),
+    component: ComponentCreator('/docs', '6ac'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -275,6 +275,18 @@ export default [
         sidebar: "nanoStream Cloud"
       },
       {
+        path: '/docs/cloud/live_encoding',
+        component: ComponentCreator('/docs/cloud/live_encoding', '76f'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/live-recording-vod',
+        component: ComponentCreator('/docs/cloud/live-recording-vod', 'f74'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
         path: '/docs/cloud/network-diagnostics',
         component: ComponentCreator('/docs/cloud/network-diagnostics', '0ca'),
         exact: true,
@@ -283,6 +295,12 @@ export default [
       {
         path: '/docs/cloud/security',
         component: ComponentCreator('/docs/cloud/security', '9cc'),
+        exact: true,
+        sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/srt_ingest',
+        component: ComponentCreator('/docs/cloud/srt_ingest', '2e6'),
         exact: true,
         sidebar: "nanoStream Cloud"
       },

@@ -19,8 +19,8 @@
   },
   "sidebar": "nanoStream Cloud",
   "previous": {
-    "title": "Getting started",
-    "permalink": "/docs/cloud/cloud_getting_started"
+    "title": "Live Recording and VOD",
+    "permalink": "/docs/cloud/live-recording-vod"
   },
   "next": {
     "title": "nanoStream Guardian",

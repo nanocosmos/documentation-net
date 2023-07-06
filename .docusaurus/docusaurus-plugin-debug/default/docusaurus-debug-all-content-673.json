@@ -688,8 +688,8 @@
                 "permalink": "/docs/cloud/cloud_introduction"
               },
               "next": {
-                "title": "nanoStream Cloud Security",
-                "permalink": "/docs/cloud/security"
+                "title": "Live Encoding",
+                "permalink": "/docs/cloud/live_encoding"
               }
             },
             {
@@ -776,6 +776,64 @@
               }
             },
             {
+              "unversionedId": "cloud/live_encoding",
+              "id": "cloud/live_encoding",
+              "title": "Live Encoding",
+              "description": "What is Live Encoding ?",
+              "source": "@site/docs/cloud/live_encoding.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/live_encoding",
+              "permalink": "/docs/cloud/live_encoding",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "live_encoding",
+                "title": "Live Encoding",
+                "sidebar_label": "Live Encoding"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Getting started",
+                "permalink": "/docs/cloud/cloud_getting_started"
+              },
+              "next": {
+                "title": "SRT Ingest",
+                "permalink": "/docs/cloud/srt_ingest"
+              }
+            },
+            {
+              "unversionedId": "cloud/live-recording-vod",
+              "id": "cloud/live-recording-vod",
+              "title": "Live Recording and VOD",
+              "description": "Please reach out to our dedicated sales team via the contact form or by sending an email to sales(at)nanocosmos.de",
+              "source": "@site/docs/cloud/live-recording-vod.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/live-recording-vod",
+              "permalink": "/docs/cloud/live-recording-vod",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "live-recording-vod",
+                "title": "Live Recording and VOD",
+                "sidebar_label": "Live Recording and VOD"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "SRT Ingest",
+                "permalink": "/docs/cloud/srt_ingest"
+              },
+              "next": {
+                "title": "nanoStream Cloud Security",
+                "permalink": "/docs/cloud/security"
+              }
+            },
+            {
               "unversionedId": "cloud/network-diagnostics",
               "id": "cloud/network-diagnostics",
               "title": "Network Diagnostics",
@@ -825,12 +883,41 @@
               },
               "sidebar": "nanoStream Cloud",
               "previous": {
-                "title": "Getting started",
-                "permalink": "/docs/cloud/cloud_getting_started"
+                "title": "Live Recording and VOD",
+                "permalink": "/docs/cloud/live-recording-vod"
               },
               "next": {
                 "title": "nanoStream Guardian",
                 "permalink": "/docs/cloud/guardian"
+              }
+            },
+            {
+              "unversionedId": "cloud/srt_ingest",
+              "id": "cloud/srt_ingest",
+              "title": "nanoStream Cloud SRT Ingest Guide",
+              "description": "Hi!",
+              "source": "@site/docs/cloud/srt_ingest.md",
+              "sourceDirName": "cloud",
+              "slug": "/cloud/srt_ingest",
+              "permalink": "/docs/cloud/srt_ingest",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "srt_ingest",
+                "title": "nanoStream Cloud SRT Ingest Guide",
+                "sidebar_label": "SRT Ingest"
+              },
+              "sidebar": "nanoStream Cloud",
+              "previous": {
+                "title": "Live Encoding",
+                "permalink": "/docs/cloud/live_encoding"
+              },
+              "next": {
+                "title": "Live Recording and VOD",
+                "permalink": "/docs/cloud/live-recording-vod"
               }
             },
             {
@@ -3371,6 +3458,18 @@
               {
                 "type": "doc",
                 "id": "cloud/cloud_getting_started"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/live_encoding"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/srt_ingest"
+              },
+              {
+                "type": "doc",
+                "id": "cloud/live-recording-vod"
               },
               {
                 "type": "category",
