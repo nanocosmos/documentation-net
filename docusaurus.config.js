@@ -126,7 +126,7 @@ const config = {
             title: 'nanoStream Cloud',
             items: [
               {
-                label: 'nanoStream Cloud Dashboard',
+                label: 'Dashboard',
                 href: 'https://dashboard.nanostream.cloud/'
               },
               {
@@ -159,16 +159,16 @@ const config = {
                 href: 'https://www.nanocosmos.de/blog/',
               },
               {
+                label: 'GitHub',
+                href: 'https://github.com/nanocosmos/docs',
+              },
+              {
                 label: 'LinkedIn',
                 href: 'https://www.facebook.com/nanocosmos.net/',
               },
               {
                 label: 'YouTube',
                 href: 'https://www.youtube.com/@nanocosmos',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/nanocosmos/docs',
               },
             ],
           },

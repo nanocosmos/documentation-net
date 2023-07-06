@@ -109,7 +109,7 @@ export default {
           "title": "nanoStream Cloud",
           "items": [
             {
-              "label": "nanoStream Cloud Dashboard",
+              "label": "Dashboard",
               "href": "https://dashboard.nanostream.cloud/"
             },
             {
@@ -142,16 +142,16 @@ export default {
               "href": "https://www.nanocosmos.de/blog/"
             },
             {
+              "label": "GitHub",
+              "href": "https://github.com/nanocosmos/docs"
+            },
+            {
               "label": "LinkedIn",
               "href": "https://www.facebook.com/nanocosmos.net/"
             },
             {
               "label": "YouTube",
               "href": "https://www.youtube.com/@nanocosmos"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/nanocosmos/docs"
             }
           ]
         },
@@ -177,7 +177,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Thu, 06 Jul 2023 09:14:31 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Thu, 06 Jul 2023 17:17:13 GMT"
     },
     "prism": {
       "theme": {

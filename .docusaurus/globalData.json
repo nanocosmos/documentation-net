@@ -177,6 +177,10 @@
               "sidebar": "nanoStream Cloud"
             },
             {
+              "id": "cloud/network-diagnostics-mtr",
+              "path": "/docs/cloud/network-diagnostics-mtr"
+            },
+            {
               "id": "cloud/security",
               "path": "/docs/cloud/security",
               "sidebar": "nanoStream Cloud"
@@ -375,6 +379,10 @@
               "sidebar": "H5Live Player"
             },
             {
+              "id": "nanoplayer/nanoplayer_security_jwt",
+              "path": "/docs/nanoplayer/nanoplayer_security_jwt"
+            },
+            {
               "id": "nanoplayer/nanoplayer_supported_browsers",
               "path": "/docs/nanoplayer/nanoplayer_supported_browsers",
               "sidebar": "H5Live Player"
@@ -383,6 +391,10 @@
               "id": "nanoplayer/nanoplayer_token_security",
               "path": "/docs/nanoplayer/nanoplayer_token_security",
               "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_update_source",
+              "path": "/docs/nanoplayer/nanoplayer_update_source"
             },
             {
               "id": "nanostream/android/nanostream_android_developer_manual_playback",

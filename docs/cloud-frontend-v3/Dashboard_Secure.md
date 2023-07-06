@@ -58,7 +58,7 @@ security: {
 *Code Snippet: Security Property*
 
 :::tip
-Please note that integrating the security config object correctly into your player configuration is crucial for the secure playback of your streams. On our documentation we provide also more information about [secure playbacks with JSON Web Token (JWT)](../nanoplayer/nanoplayer_feature_security_jwt).
+Please note that integrating the security config object correctly into your player configuration is crucial for the secure playback of your streams. On our documentation we provide also more information about [secure playbacks with JSON Web Token (JWT)](../nanoplayer/nanoplayer_security_jwt).
 :::
 
 ## Token Creation Dialog

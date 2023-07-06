@@ -15,14 +15,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  color: #fff;
+  color: #ed7d0e;
+}
 
+.subtitle {
+  color: #fff;
+}
+
+.logo {
+  max-width: 250px;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
     min-height: auto;
+  }
+  .logo {
+    max-width: 150px;
   }
 }
 
@@ -34,11 +44,8 @@
 }
 
 .buttons {
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.cheetha {
-  max-width: 250px;
 }

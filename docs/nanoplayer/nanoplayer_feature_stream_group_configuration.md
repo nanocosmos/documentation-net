@@ -15,7 +15,7 @@ The stream group supports both: standard and secure stream playback.
 ### Adding the `stream group` to the config
 
 Find the stream group id in the `stream` object in the Cloud Dashboard or in the `/stream/{id}` response from the Bintu API. Pass the `group` object with nested `'id' : 'your_stream_group_id'` in the `source`. <br/>
-In case of a secure stream group, add `security` with JSON Web Token (JWT) `'jwtoken' : 'your_token'`. Find more information about the security with [JSON Web Token here](./nanoplayer_feature_security_jwt).
+In case of a secure stream group, add `security` with JSON Web Token (JWT) `'jwtoken' : 'your_token'`. Find more information about the security with [JSON Web Token here](./nanoplayer_security_jwt).
 Adding `'apiurl'` and `'startQuality'` is optional.
 
 

@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '6ac'),
+    component: ComponentCreator('/docs', '139'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -291,6 +291,11 @@ export default [
         component: ComponentCreator('/docs/cloud/network-diagnostics', '0ca'),
         exact: true,
         sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/network-diagnostics-mtr',
+        component: ComponentCreator('/docs/cloud/network-diagnostics-mtr', 'ac5'),
+        exact: true
       },
       {
         path: '/docs/cloud/security',
@@ -531,6 +536,11 @@ export default [
         sidebar: "H5Live Player"
       },
       {
+        path: '/docs/nanoplayer/nanoplayer_security_jwt',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_security_jwt', 'f36'),
+        exact: true
+      },
+      {
         path: '/docs/nanoplayer/nanoplayer_supported_browsers',
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_supported_browsers', '197'),
         exact: true,
@@ -541,6 +551,11 @@ export default [
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_token_security', 'cf4'),
         exact: true,
         sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/nanoplayer/nanoplayer_update_source',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_update_source', 'cff'),
+        exact: true
       },
       {
         path: '/docs/nanostream/',

@@ -25,7 +25,7 @@ const sidebars = {
     {
       "type": "category",
       "label": "Security Features",
-      "collapsible": false,
+      "collapsible": true,
       "collapsed": false,
       "items": [
         "cloud/security",
@@ -35,7 +35,7 @@ const sidebars = {
     {
       "type": "category",
       "label": "Cloud Dashboard",
-      "collapsible": false,
+      "collapsible": true,
       "collapsed": false,
       "items": [
         "cloud-frontend-v3/Dashboard_Overview",
@@ -63,30 +63,14 @@ const sidebars = {
       "items": [
         "nanomeet/introduction",
         "nanomeet/getting-started",
-        {
-          "type": "category",
-          "label": "Samples",
-          "collapsible": false,
-          "collapsed": false,
-          "items": [
-            "nanomeet/samples",
-            "nanomeet/source-code"
-          ]
-        },
-        {
-          "type": "category",
-          "label": "API",
-          "collapsible": false,
-          "collapsed": false,
-          "items": [
-            "nanomeet/api",
-          ]
-        },
+        "nanomeet/samples",
+        "nanomeet/source-code",
+        "nanomeet/api",
       ]
     },
     {
       "type": "category",
-      "label": "Bintu API",
+      "label": "REST API",
       "collapsible": false,
       "collapsed": false,
       "items": [

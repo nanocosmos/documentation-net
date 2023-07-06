@@ -48,7 +48,7 @@
       {
         "type": "category",
         "label": "Security Features",
-        "collapsible": false,
+        "collapsible": true,
         "collapsed": false,
         "items": [
           {
@@ -68,7 +68,7 @@
       {
         "type": "category",
         "label": "Cloud Dashboard",
-        "collapsible": false,
+        "collapsible": true,
         "collapsed": false,
         "items": [
           {
@@ -142,44 +142,28 @@
             "docId": "nanomeet/getting-started"
           },
           {
-            "type": "category",
+            "type": "link",
             "label": "Samples",
-            "collapsible": false,
-            "collapsed": false,
-            "items": [
-              {
-                "type": "link",
-                "label": "Samples",
-                "href": "/docs/nanomeet/samples",
-                "docId": "nanomeet/samples"
-              },
-              {
-                "type": "link",
-                "label": "Source Code",
-                "href": "/docs/nanomeet/source-code",
-                "docId": "nanomeet/source-code"
-              }
-            ]
+            "href": "/docs/nanomeet/samples",
+            "docId": "nanomeet/samples"
           },
           {
-            "type": "category",
-            "label": "API",
-            "collapsible": false,
-            "collapsed": false,
-            "items": [
-              {
-                "type": "link",
-                "label": "nanoMeet API",
-                "href": "/docs/nanomeet/api",
-                "docId": "nanomeet/api"
-              }
-            ]
+            "type": "link",
+            "label": "Source Code",
+            "href": "/docs/nanomeet/source-code",
+            "docId": "nanomeet/source-code"
+          },
+          {
+            "type": "link",
+            "label": "nanoMeet API",
+            "href": "/docs/nanomeet/api",
+            "docId": "nanomeet/api"
           }
         ]
       },
       {
         "type": "category",
-        "label": "Bintu API",
+        "label": "REST API",
         "collapsible": false,
         "collapsed": false,
         "items": [
@@ -948,7 +932,7 @@
     "cloud/cloud_overview": {
       "id": "cloud/cloud_overview",
       "title": "nanoStream Cloud Product and Services Overview",
-      "description": "",
+      "description": "nanoStream Cloud Components",
       "sidebar": "nanoStream Cloud"
     },
     "cloud/guardian": {
@@ -974,6 +958,11 @@
       "title": "Network Diagnostics",
       "description": "In this section, we'll review some basic commands that will help you assess and diagnose network problems.",
       "sidebar": "nanoStream Cloud"
+    },
+    "cloud/network-diagnostics-mtr": {
+      "id": "cloud/network-diagnostics-mtr",
+      "title": "Network Diagnostics MTR",
+      "description": "MTR is a powerful tool which enables administrators to diagnose and isolate networking errors and provide reports of network status to upstream providers. MTR represents an evolution of the traceroute command by providing a greater data sample, as if augmenting traceroute with ping output. This document provides an in depth overview of MTR, the data it generates, and how to interpret and draw conclusions based on the data provided by it."
     },
     "cloud/security": {
       "id": "cloud/security",
@@ -1213,6 +1202,11 @@
       "description": "Please find more about the media error recovery feature in our documentation",
       "sidebar": "H5Live Player"
     },
+    "nanoplayer/nanoplayer_security_jwt": {
+      "id": "nanoplayer/nanoplayer_security_jwt",
+      "title": "Secure playback with JSON Web Token (JWT)",
+      "description": "Since nanoStream H5Live Player Version 4.18.0 it is possible to use JSON Web Token (JWT) for a secure playback for all use cases. It can be applied with the entries configuration and with the group configuration. Contrary to the STS secure configuration, there can be single JWT token for all streams within the stream group. It is now easier than ever to use live transcoding and ABR with ultra-low-latency live streaming."
+    },
     "nanoplayer/nanoplayer_supported_browsers": {
       "id": "nanoplayer/nanoplayer_supported_browsers",
       "title": "Support Browsers",
@@ -1224,6 +1218,11 @@
       "title": "Secure playback with H5Live",
       "description": "Click PLAY button to start",
       "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_update_source": {
+      "id": "nanoplayer/nanoplayer_update_source",
+      "title": "Update Source",
+      "description": "The nanoStream H5Live Player updateSource API lets you replace the exisiting source (config.source) with a new source."
     },
     "nanostream/android/nanostream_android_developer_manual_playback": {
       "id": "nanostream/android/nanostream_android_developer_manual_playback",

@@ -2,7 +2,7 @@
   "unversionedId": "cloud/cloud_overview",
   "id": "cloud/cloud_overview",
   "title": "nanoStream Cloud Product and Services Overview",
-  "description": "",
+  "description": "nanoStream Cloud Components",
   "source": "@site/docs/cloud/cloud_overview.md",
   "sourceDirName": "cloud",
   "slug": "/cloud/cloud_overview",
