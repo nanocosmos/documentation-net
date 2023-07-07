@@ -1,0 +1,16 @@
+{
+  "unversionedId": "nanostream/directshow/directshow_mpeg_audio_encoder",
+  "id": "nanostream/directshow/directshow_mpeg_audio_encoder",
+  "title": "directshow_mpeg_audio_encoder",
+  "description": "Configure encoder settings",
+  "source": "@site/docs/nanostream/directshow/directshow_mpeg_audio_encoder.md",
+  "sourceDirName": "nanostream/directshow",
+  "slug": "/nanostream/directshow/directshow_mpeg_audio_encoder",
+  "permalink": "/docs/nanostream/directshow/directshow_mpeg_audio_encoder",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {}
+}

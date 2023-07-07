@@ -726,7 +726,7 @@ For use with the API function:
 | RegionOrigin                 | Set position of the dynamic cropping region (only used when using resizing)                                                                                       | "left,top"                                                                                                                                                                                                                                                                                                                    |
 | RTMPAllowFallbackPorts       | Try fallback ports (443, 80), if no connection to server can be established on default port 1935                                                                  | 0 (default) / 1                                                                                                                                                                                                                                                                                                               |
 | RTMPAllowFallbackTunnelPorts | Try to connect to rtmpt, if connection could not be establisged for rtmp. Also, try fallback ports (443, 1935), if connection could not be established for rtmpt. | 0 (default) / 1                                                                                                                                                                                                                                                                                                               |
-| RtmpUrlDelimiter             | Set delimiter for RTMP-url and streamname.                                                                                                                        | Example: "+" will split "[rtmp://localhost/live+myStream](rtmp///localhost/live+myStream)" so that "myStream" is the stream name.                                                                                                                                                                                             |
+| RtmpUrlDelimiter             | Set delimiter for RTMP-url and streamname.                                                                                                                        | Example: "+" will split " rtmp://localhost/live+myStream" so that "myStream" is the stream name.                                                                                                                                                                                             |
 | LockGraph                    | StartPreview(), StopPreview(), StartBroadcast() and StopBroadcast() are denied when locked                                                                        | 0 (unlock) / 1 (lock)                                                                                                                                                                                                                                                                                                         |
 | AddExtraFilter               | Add extra filter(s) to the graph under specific circumstances                                                                                                     | "mp4Audio:GUID", "mp4Video:GUID" (e.g. "mp4Audio;{AEED2B3D-6DA1-4C84-A85D-83547FA90486}" would add the nanocosmos aac decoder for mp4 files to the graph)                                                                                                                                                                     |
 | OverlayRect                  | Sets the dimensions for a given overlay-image.                                                                                                                    | "index,left,top,right,bottom". index: the overlay-index, beginning with 0. left, top, right and bottom define a rectangle in screen-coordinates.                                                                                                                                                                              |
@@ -759,7 +759,7 @@ For use with the API function:
 
 ### Advanced Settings for extra module SourceBridge using ControlCommand
 
-The [SourceBridge](SourceBridge) can be used for streaming and looping files and video clips (Example: Ad-insertion). 
+The SourceBridge can be used for streaming and looping files and video clips (Example: Ad-insertion). 
 
 Other available options:
 
@@ -920,5 +920,4 @@ For further options to configure low latency streaming see the separate document
 
 [http://www.nanocosmos.de](http://www.nanocosmos.de/)
 
-[info@nanocosmos.de](mailto/info@nanocosmos.de)
 

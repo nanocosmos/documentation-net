@@ -433,6 +433,10 @@
               "path": "/docs/nanostream/directshow/directshow_h264_video_encoder"
             },
             {
+              "id": "nanostream/directshow/directshow_mpeg_audio_encoder",
+              "path": "/docs/nanostream/directshow/directshow_mpeg_audio_encoder"
+            },
+            {
               "id": "nanostream/directshow/directshow_mpeg2_broadcast_sdk",
               "path": "/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk"
             },
@@ -552,6 +556,10 @@
               "id": "nanostream/ios/nanostream-ios-step-by-step",
               "path": "/docs/nanostream/ios/nanostream-ios-step-by-step",
               "sidebar": "nanoStream Apps & SDKs"
+            },
+            {
+              "id": "nanostream/macos/nanostream_macos_sdk",
+              "path": "/docs/nanostream/macos/nanostream_macos_sdk"
             },
             {
               "id": "nanostream/nanostream",

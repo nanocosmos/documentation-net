@@ -213,6 +213,7 @@ const config = {
       //   textColor: '#091E42',
       //   isCloseable: false,
       // },
+      metadata: [{ name: 'keywords', content: 'live streaming, video live streaming, streaming, docs, developer docs' }],
     }),
 };
 

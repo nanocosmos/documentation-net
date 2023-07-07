@@ -1,0 +1,20 @@
+{
+  "unversionedId": "nanostream/macos/nanostream_macos_sdk",
+  "id": "nanostream/macos/nanostream_macos_sdk",
+  "title": "nanoStream SDK for macOS",
+  "description": "This API is deprecated! Please use nanoStream Webcaster and H5Live!",
+  "source": "@site/docs/nanostream/macos/nanostream_macos_sdk.md",
+  "sourceDirName": "nanostream/macos",
+  "slug": "/nanostream/macos/nanostream_macos_sdk",
+  "permalink": "/docs/nanostream/macos/nanostream_macos_sdk",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "frontMatter": {
+    "id": "nanostream_macos_sdk",
+    "title": "nanoStream SDK for macOS",
+    "sidebar_label": "SDK for macOS"
+  }
+}

@@ -186,7 +186,7 @@
     },
     "content": "content---empty-markdown-pagef-09-404"
   },
-  "/docs-139": {
+  "/docs-57b": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-5-d-6-ce5"
@@ -549,6 +549,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-nanostream-directshow-directshow-h-264-video-encoderf-5-b-340"
   },
+  "/docs/nanostream/directshow/directshow_mpeg_audio_encoder-cb5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanostream-directshow-directshow-mpeg-audio-encoder-81-c-ecb"
+  },
   "/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk-e9c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-nanostream-directshow-directshow-mpeg-2-broadcast-sdk-5-ae-771"
@@ -652,6 +656,10 @@
   "/docs/nanostream/ios/nanostream-ios-step-by-step-212": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-nanostream-ios-nanostream-ios-step-by-stepdf-7-e11"
+  },
+  "/docs/nanostream/macos/nanostream_macos_sdk-b9c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanostream-macos-nanostream-macos-sdkef-7-b48"
   },
   "/docs/nanostream/windows/nanostream_encoder_plugin_api-bb8": {
     "__comp": "__comp---theme-doc-item-178-a40",

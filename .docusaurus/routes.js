@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '139'),
+    component: ComponentCreator('/docs', '57b'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -614,6 +614,11 @@ export default [
         exact: true
       },
       {
+        path: '/docs/nanostream/directshow/directshow_mpeg_audio_encoder',
+        component: ComponentCreator('/docs/nanostream/directshow/directshow_mpeg_audio_encoder', 'cb5'),
+        exact: true
+      },
+      {
         path: '/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk',
         component: ComponentCreator('/docs/nanostream/directshow/directshow_mpeg2_broadcast_sdk', 'e9c'),
         exact: true
@@ -754,6 +759,11 @@ export default [
         component: ComponentCreator('/docs/nanostream/ios/nanostream-ios-step-by-step', '212'),
         exact: true,
         sidebar: "nanoStream Apps & SDKs"
+      },
+      {
+        path: '/docs/nanostream/macos/nanostream_macos_sdk',
+        component: ComponentCreator('/docs/nanostream/macos/nanostream_macos_sdk', 'b9c'),
+        exact: true
       },
       {
         path: '/docs/nanostream/windows/nanostream_encoder_plugin_api',

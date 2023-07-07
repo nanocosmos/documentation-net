@@ -177,7 +177,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Thu, 06 Jul 2023 17:17:13 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Fri, 07 Jul 2023 08:25:14 GMT"
     },
     "prism": {
       "theme": {
@@ -388,6 +388,12 @@ export default {
       "respectPrefersColorScheme": true,
       "disableSwitch": false
     },
+    "metadata": [
+      {
+        "name": "keywords",
+        "content": "live streaming, video live streaming, streaming, docs, developer docs"
+      }
+    ],
     "docs": {
       "versionPersistence": "localStorage",
       "sidebar": {
@@ -395,7 +401,6 @@ export default {
         "autoCollapseCategories": false
       }
     },
-    "metadata": [],
     "tableOfContents": {
       "minHeadingLevel": 2,
       "maxHeadingLevel": 3

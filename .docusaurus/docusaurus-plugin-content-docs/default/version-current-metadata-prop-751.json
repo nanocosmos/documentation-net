@@ -1268,6 +1268,11 @@
       "title": "directshow_h264_video_encoder",
       "description": "nanocosmos MPEG-2 Broadcast DirectShow SDK"
     },
+    "nanostream/directshow/directshow_mpeg_audio_encoder": {
+      "id": "nanostream/directshow/directshow_mpeg_audio_encoder",
+      "title": "directshow_mpeg_audio_encoder",
+      "description": "Configure encoder settings"
+    },
     "nanostream/directshow/directshow_mpeg2_broadcast_sdk": {
       "id": "nanostream/directshow/directshow_mpeg2_broadcast_sdk",
       "title": "directshow_mpeg2_broadcast_sdk",
@@ -1415,6 +1420,11 @@
       "title": "Tutorial / Getting started with nanoStream and bintu.live",
       "description": "Overview",
       "sidebar": "nanoStream Apps & SDKs"
+    },
+    "nanostream/macos/nanostream_macos_sdk": {
+      "id": "nanostream/macos/nanostream_macos_sdk",
+      "title": "nanoStream SDK for macOS",
+      "description": "This API is deprecated! Please use nanoStream Webcaster and H5Live!"
     },
     "nanostream/nanostream": {
       "id": "nanostream/nanostream",
