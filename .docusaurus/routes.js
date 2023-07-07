@@ -104,7 +104,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'f6c'),
+    component: ComponentCreator('/docs', '588'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -482,7 +482,7 @@ export default [
       },
       {
         path: '/docs/nanoplayer/nanoplayer_feature_security_sts',
-        component: ComponentCreator('/docs/nanoplayer/nanoplayer_feature_security_sts', 'f3e'),
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_feature_security_sts', '994'),
         exact: true
       },
       {
