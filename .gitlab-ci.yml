@@ -39,8 +39,8 @@ review:
   rules:
     - if: '($CI_KUBERNETES_ACTIVE == null || $CI_KUBERNETES_ACTIVE == "") && ($KUBECONFIG == null || $KUBECONFIG == "")'
       when: never
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-      when: never
+    #    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    #      when: never
     - if: '$REVIEW_DISABLED'
       when: never
 
@@ -60,8 +60,8 @@ stop_review:
   rules:
     - if: '($CI_KUBERNETES_ACTIVE == null || $CI_KUBERNETES_ACTIVE == "") && ($KUBECONFIG == null || $KUBECONFIG == "")'
       when: never
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-      when: never
+    #    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    #      when: never
     - if: '$REVIEW_DISABLED'
       when: never
 
