@@ -57,6 +57,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'W2KLNFIT5W',
+
+        // Public API key: it is safe to commit it
+        apiKey: '01938bdccd0554b1fec9c77a8ad00e4e',
+
+        indexName: 'nanocosmos',
+
+        debug: false // Set debug to true if you want to inspect the moda
+      },
       // Social Card
       image: 'img/social-card.jpg',
       // Navbar

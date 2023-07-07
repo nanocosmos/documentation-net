@@ -938,7 +938,7 @@
     "cloud/guardian": {
       "id": "cloud/guardian",
       "title": "nanoStream Guardian",
-      "description": "What is nanoStream Guardian?",
+      "description": "Click PLAY button to start",
       "sidebar": "nanoStream Cloud"
     },
     "cloud/live_encoding": {
@@ -1100,6 +1100,11 @@
       "title": "Other Information",
       "description": "Here you can find the latest H5LivePlayer blog posts.",
       "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_embed_detailed": {
+      "id": "nanoplayer/nanoplayer_embed_detailed",
+      "title": "Embed detailed",
+      "description": "Player Embed v1.3.3"
     },
     "nanoplayer/nanoplayer_faq": {
       "id": "nanoplayer/nanoplayer_faq",

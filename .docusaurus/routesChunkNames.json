@@ -186,7 +186,13 @@
     },
     "content": "content---empty-markdown-pagef-09-404"
   },
-  "/docs-57b": {
+  "/search-324": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---searchd-73-b7e"
+    }
+  },
+  "/docs-f6c": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-5-d-6-ce5"
@@ -424,6 +430,10 @@
   "/docs/nanoplayer/nanoplayer_blogposts-20c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-nanoplayer-nanoplayer-blogposts-97-b-0c5"
+  },
+  "/docs/nanoplayer/nanoplayer_embed_detailed-6e0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-nanoplayer-nanoplayer-embed-detailedf-29-409"
   },
   "/docs/nanoplayer/nanoplayer_faq-dcf": {
     "__comp": "__comp---theme-doc-item-178-a40",

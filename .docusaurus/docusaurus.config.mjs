@@ -40,6 +40,15 @@ export default {
     ]
   ],
   "themeConfig": {
+    "algolia": {
+      "appId": "W2KLNFIT5W",
+      "apiKey": "01938bdccd0554b1fec9c77a8ad00e4e",
+      "indexName": "nanocosmos",
+      "debug": false,
+      "contextualSearch": true,
+      "searchParameters": {},
+      "searchPagePath": "search"
+    },
     "image": "img/social-card.jpg",
     "navbar": {
       "style": "primary",
@@ -177,7 +186,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Fri, 07 Jul 2023 08:25:14 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Fri, 07 Jul 2023 09:31:33 GMT"
     },
     "prism": {
       "theme": {

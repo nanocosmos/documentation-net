@@ -295,6 +295,10 @@
               "sidebar": "H5Live Player"
             },
             {
+              "id": "nanoplayer/nanoplayer_embed_detailed",
+              "path": "/docs/nanoplayer/nanoplayer_embed_detailed"
+            },
+            {
               "id": "nanoplayer/nanoplayer_faq",
               "path": "/docs/nanoplayer/nanoplayer_faq",
               "sidebar": "H5Live Player"

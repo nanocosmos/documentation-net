@@ -98,8 +98,13 @@ export default [
     exact: true
   },
   {
+    path: '/search',
+    component: ComponentCreator('/search', '324'),
+    exact: true
+  },
+  {
     path: '/docs',
-    component: ComponentCreator('/docs', '57b'),
+    component: ComponentCreator('/docs', 'f6c'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -433,6 +438,11 @@ export default [
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_blogposts', '20c'),
         exact: true,
         sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/nanoplayer/nanoplayer_embed_detailed',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_embed_detailed', '6e0'),
+        exact: true
       },
       {
         path: '/docs/nanoplayer/nanoplayer_faq',

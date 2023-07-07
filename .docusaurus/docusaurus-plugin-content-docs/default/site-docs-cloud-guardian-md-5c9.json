@@ -2,7 +2,7 @@
   "unversionedId": "cloud/guardian",
   "id": "cloud/guardian",
   "title": "nanoStream Guardian",
-  "description": "What is nanoStream Guardian?",
+  "description": "Click PLAY button to start",
   "source": "@site/docs/cloud/guardian.md",
   "sourceDirName": "cloud",
   "slug": "/cloud/guardian",
