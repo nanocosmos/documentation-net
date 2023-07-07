@@ -2,7 +2,6 @@ include:
   - template: Auto-DevOps.gitlab-ci.yml
 
 variables:
-#  BUILD_DISABLED: "true"
   TEST_DISABLED: "true"
   CODE_QUALITY_DISABLED: "true"
   CODE_INTELLIGENCE_DISABLED: "true"
@@ -13,8 +12,6 @@ variables:
   DEPENDENCY_SCANNING_DISABLED: "true"
   LICENSE_MANAGEMENT_DISABLED: "true"
   SECRET_DETECTION_DISABLED: "false"
-#  STAGING_ENABLED: "false"
-#  CANARY_ENABLED: "false"
 
 .review: &review_template
   stage: review
@@ -46,8 +43,6 @@ review:
       when: never
     - if: '$REVIEW_DISABLED'
       when: never
-    - if: '$CI_COMMIT_BRANCH =~ /feature.*/i'
-      when: manual
 
 stop_review:
   extends: .auto-deploy
@@ -69,5 +64,20 @@ stop_review:
       when: never
     - if: '$REVIEW_DISABLED'
       when: never
-    - if: '$CI_COMMIT_BRANCH =~ /feature.*/i'
-      when: manual
+
+production:
+  rules:
+    - if: '$CI_DEPLOY_FREEZE'
+      when: never
+    - if: '($CI_KUBERNETES_ACTIVE == null || $CI_KUBERNETES_ACTIVE == "") && ($KUBECONFIG == null || $KUBECONFIG == "")'
+      when: never
+    - if: '$STAGING_ENABLED'
+      when: never
+    - if: '$CANARY_ENABLED'
+      when: never
+    - if: '$INCREMENTAL_ROLLOUT_ENABLED'
+      when: never
+    - if: '$INCREMENTAL_ROLLOUT_MODE'
+      when: never
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: never
