@@ -1,0 +1,73 @@
+include:
+  - template: Auto-DevOps.gitlab-ci.yml
+
+variables:
+  BUILD_DISABLED: "true"
+  TEST_DISABLED: "true"
+  CODE_QUALITY_DISABLED: "true"
+  CODE_INTELLIGENCE_DISABLED: "true"
+  DAST_DISABLED: "true"
+  SAST_DISABLED: "true"
+  BROWSER_PERFORMANCE_DISABLED: "true"
+  CONTAINER_SCANNING_DISABLED: "true"
+  DEPENDENCY_SCANNING_DISABLED: "true"
+  LICENSE_MANAGEMENT_DISABLED: "true"
+  SECRET_DETECTION_DISABLED: "false"
+  STAGING_ENABLED: "false"
+  CANARY_ENABLED: "false"
+
+.review: &review_template
+  stage: review
+  extends: .auto-deploy
+  script:
+    - auto-deploy check_kube_domain
+    - auto-deploy download_chart
+    - auto-deploy use_kube_context || true
+    - auto-deploy ensure_namespace
+    - auto-deploy initialize_tiller
+    - auto-deploy create_secret
+    - auto-deploy deploy
+    - auto-deploy persist_environment_url
+  environment:
+    name: $CI_COMMIT_REF_SLUG
+    url: http://docs-dev-$CI_COMMIT_REF_SLUG.$KUBE_INGRESS_BASE_DOMAIN
+    on_stop: stop_review
+  artifacts:
+    paths: [ environment_url.txt, tiller.log ]
+    when: always
+
+review:
+  <<: *review_template
+  stage: review
+  rules:
+    - if: '($CI_KUBERNETES_ACTIVE == null || $CI_KUBERNETES_ACTIVE == "") && ($KUBECONFIG == null || $KUBECONFIG == "")'
+      when: never
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: never
+    - if: '$REVIEW_DISABLED'
+      when: never
+    - if: '$CI_COMMIT_BRANCH =~ /feature.*/i'
+      when: manual
+
+stop_review:
+  extends: .auto-deploy
+  stage: cleanup
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - auto-deploy use_kube_context || true
+    - auto-deploy initialize_tiller
+    - auto-deploy delete
+  environment:
+    name: $CI_COMMIT_REF_SLUG
+    action: stop
+  allow_failure: true
+  rules:
+    - if: '($CI_KUBERNETES_ACTIVE == null || $CI_KUBERNETES_ACTIVE == "") && ($KUBECONFIG == null || $KUBECONFIG == "")'
+      when: never
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: never
+    - if: '$REVIEW_DISABLED'
+      when: never
+    - if: '$CI_COMMIT_BRANCH =~ /feature.*/i'
+      when: manual
