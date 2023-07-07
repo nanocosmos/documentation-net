@@ -2,7 +2,7 @@ include:
   - template: Auto-DevOps.gitlab-ci.yml
 
 variables:
-  BUILD_DISABLED: "true"
+#  BUILD_DISABLED: "true"
   TEST_DISABLED: "true"
   CODE_QUALITY_DISABLED: "true"
   CODE_INTELLIGENCE_DISABLED: "true"
@@ -13,8 +13,8 @@ variables:
   DEPENDENCY_SCANNING_DISABLED: "true"
   LICENSE_MANAGEMENT_DISABLED: "true"
   SECRET_DETECTION_DISABLED: "false"
-  STAGING_ENABLED: "false"
-  CANARY_ENABLED: "false"
+#  STAGING_ENABLED: "false"
+#  CANARY_ENABLED: "false"
 
 .review: &review_template
   stage: review
