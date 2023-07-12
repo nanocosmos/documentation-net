@@ -1156,8 +1156,8 @@
               },
               "sidebar": "FAQ",
               "previous": {
-                "title": "Purchase and License",
-                "permalink": "/docs/faq/faq_purchase_and_license"
+                "title": "Videos",
+                "permalink": "/docs/tutorial/getting_started"
               },
               "next": {
                 "title": "Adjust/Style",
@@ -1189,8 +1189,8 @@
                 "permalink": "/docs/faq/faq_adv_codec_config"
               },
               "next": {
-                "title": "General",
-                "permalink": "/docs/faq/faq_h5live_player_general"
+                "title": "Videos",
+                "permalink": "/docs/tutorial/getting_started"
               }
             },
             {
@@ -3131,6 +3131,35 @@
               }
             },
             {
+              "unversionedId": "tutorial/getting_started",
+              "id": "tutorial/getting_started",
+              "title": "Video Tutorials",
+              "description": "",
+              "source": "@site/docs/tutorial/getting_started.md",
+              "sourceDirName": "tutorial",
+              "slug": "/tutorial/getting_started",
+              "permalink": "/docs/tutorial/getting_started",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "frontMatter": {
+                "id": "getting_started",
+                "title": "Video Tutorials",
+                "sidebar_label": "Videos"
+              },
+              "sidebar": "FAQ",
+              "previous": {
+                "title": "Purchase and License",
+                "permalink": "/docs/faq/faq_purchase_and_license"
+              },
+              "next": {
+                "title": "General",
+                "permalink": "/docs/faq/faq_h5live_player_general"
+              }
+            },
+            {
               "unversionedId": "webrtc/nanostream_webrtc_api",
               "id": "webrtc/nanostream_webrtc_api",
               "title": "nanoStream Webcaster API",
@@ -4086,6 +4115,18 @@
               {
                 "type": "doc",
                 "id": "faq/faq_purchase_and_license"
+              },
+              {
+                "type": "category",
+                "label": "Tutorials",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "tutorial/getting_started"
+                  }
+                ]
               },
               {
                 "type": "category",

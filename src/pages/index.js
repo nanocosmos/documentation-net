@@ -40,7 +40,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
       </main>
-      {/* <FooterExtension /> */}
+      <FooterExtension />
     </Layout>
   );
 }

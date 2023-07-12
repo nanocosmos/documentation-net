@@ -3,7 +3,7 @@
   "id": "nanoplayer/nanoplayer_feature_security_sts",
   "title": "Secure playback with STS tokens",
   "description": "Signing URLs",
-  "source": "@site/docs/nanoplayer/nanoplayer_feature_security_sts.md",
+  "source": "@site/docs/nanoplayer/nanoplayer_security_sts.md",
   "sourceDirName": "nanoplayer",
   "slug": "/nanoplayer/nanoplayer_feature_security_sts",
   "permalink": "/docs/nanoplayer/nanoplayer_feature_security_sts",

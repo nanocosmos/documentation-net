@@ -104,7 +104,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '588'),
+    component: ComponentCreator('/docs', '9c3'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -809,6 +809,12 @@ export default [
         path: '/docs/samples/',
         component: ComponentCreator('/docs/samples/', '0ff'),
         exact: true
+      },
+      {
+        path: '/docs/tutorial/getting_started',
+        component: ComponentCreator('/docs/tutorial/getting_started', 'ed8'),
+        exact: true,
+        sidebar: "FAQ"
       },
       {
         path: '/docs/webrtc/nanostream_webrtc_api',

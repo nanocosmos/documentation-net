@@ -1,9 +1,14 @@
 .footerExtensionWrapper {
+  background-color: #303846;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.footerExtensionSection {
   display: flex;
   align-items: center;
   padding: 2rem 0;
-  width: 100%;
-  background-color: #303846;
+  color: #fff;
 }
 
 .features {
@@ -16,4 +21,8 @@
 .featureSvg {
   height: 100px;
   width: 100px;
+}
+
+.horizontalLine {
+  margin: 0 10%;
 }

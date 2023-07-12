@@ -727,6 +727,20 @@
       },
       {
         "type": "category",
+        "label": "Tutorials",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Videos",
+            "href": "/docs/tutorial/getting_started",
+            "docId": "tutorial/getting_started"
+          }
+        ]
+      },
+      {
+        "type": "category",
         "label": "H5Live Player",
         "collapsible": true,
         "collapsed": false,
@@ -1471,6 +1485,12 @@
       "id": "samples/samples",
       "title": "nanoStream Cloud Samples",
       "description": "Ready-to-use demos"
+    },
+    "tutorial/getting_started": {
+      "id": "tutorial/getting_started",
+      "title": "Video Tutorials",
+      "description": "",
+      "sidebar": "FAQ"
     },
     "webrtc/nanostream_webrtc_api": {
       "id": "webrtc/nanostream_webrtc_api",

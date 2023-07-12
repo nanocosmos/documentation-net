@@ -259,6 +259,15 @@ const sidebars = {
     "faq/faq_purchase_and_license",
     {
       "type": "category",
+      "label": "Tutorials",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "tutorial/getting_started"
+      ]
+    },
+    {
+      "type": "category",
       "label": "H5Live Player",
       "collapsible": true,
       "collapsed": false,

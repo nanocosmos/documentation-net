@@ -156,7 +156,11 @@ export default {
             },
             {
               "label": "LinkedIn",
-              "href": "https://www.facebook.com/nanocosmos.net/"
+              "href": "https://www.linkedin.com/company/nanocosmos-gmbh/"
+            },
+            {
+              "label": "Instagram",
+              "href": "https://www.instagram.com/nanovideo"
             },
             {
               "label": "YouTube",
@@ -186,7 +190,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Fri, 07 Jul 2023 10:00:49 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Wed, 12 Jul 2023 10:23:27 GMT"
     },
     "prism": {
       "theme": {
