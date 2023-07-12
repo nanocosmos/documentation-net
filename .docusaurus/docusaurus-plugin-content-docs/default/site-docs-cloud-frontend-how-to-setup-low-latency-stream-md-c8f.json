@@ -1,7 +1,7 @@
 {
   "unversionedId": "cloud-frontend/How_to_Setup_Low_Latency_Stream",
   "id": "cloud-frontend/How_to_Setup_Low_Latency_Stream",
-  "title": "How to Setup a Low Latency Stream - (V2)",
+  "title": "How to Setup a Low Latency Stream",
   "description": "Click PLAY button to start",
   "source": "@site/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream.md",
   "sourceDirName": "cloud-frontend",
@@ -14,7 +14,12 @@
   "formattedLastUpdatedAt": "Oct 14, 2018",
   "frontMatter": {
     "id": "How_to_Setup_Low_Latency_Stream",
-    "title": "How to Setup a Low Latency Stream - (V2)",
+    "title": "How to Setup a Low Latency Stream",
     "sidebar_label": "How to Setup a Low Latency Stream"
+  },
+  "sidebar": "FAQ",
+  "previous": {
+    "title": "Devices",
+    "permalink": "/docs/faq/faq_WebRTC_devices"
   }
 }

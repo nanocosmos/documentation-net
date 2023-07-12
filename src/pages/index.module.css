@@ -49,3 +49,7 @@
   align-items: center;
   justify-content: center;
 }
+
+.horizontalLine {
+  margin: 0 5%;
+}

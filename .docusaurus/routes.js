@@ -104,7 +104,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '9c3'),
+    component: ComponentCreator('/docs', 'f8b'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -185,8 +185,9 @@ export default [
       },
       {
         path: '/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream',
-        component: ComponentCreator('/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream', '6d0'),
-        exact: true
+        component: ComponentCreator('/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream', '507'),
+        exact: true,
+        sidebar: "FAQ"
       },
       {
         path: '/docs/cloud-frontend/How_to_Start_a_Stream',

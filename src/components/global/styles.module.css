@@ -1,7 +1,13 @@
 .footerExtensionWrapper {
   background-color: #303846;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
+}
+
+.footerExtensionWrapper h2 {
+  color: rgba(15, 141, 201, 1);
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .footerExtensionSection {
@@ -9,6 +15,10 @@
   align-items: center;
   padding: 2rem 0;
   color: #fff;
+}
+
+.footerExtensionSection h3 {
+  color: #ed7d0e;
 }
 
 .features {
@@ -25,4 +35,11 @@
 
 .horizontalLine {
   margin: 0 10%;
+}
+
+.buttons {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

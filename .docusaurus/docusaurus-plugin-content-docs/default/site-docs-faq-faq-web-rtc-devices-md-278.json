@@ -21,5 +21,9 @@
   "previous": {
     "title": "General",
     "permalink": "/docs/faq/faq_WebRTC_general"
+  },
+  "next": {
+    "title": "How to Setup a Low Latency Stream",
+    "permalink": "/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream"
   }
 }

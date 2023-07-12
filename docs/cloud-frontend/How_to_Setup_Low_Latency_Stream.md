@@ -1,6 +1,6 @@
 ---
 id: How_to_Setup_Low_Latency_Stream
-title: How to Setup a Low Latency Stream - (V2)
+title: How to Setup a Low Latency Stream
 sidebar_label: How to Setup a Low Latency Stream
 ---
 

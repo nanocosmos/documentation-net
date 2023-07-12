@@ -84,7 +84,8 @@
             },
             {
               "id": "cloud-frontend/How_to_Setup_Low_Latency_Stream",
-              "path": "/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream"
+              "path": "/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream",
+              "sidebar": "FAQ"
             },
             {
               "id": "cloud-frontend/How_to_Start_a_Stream",

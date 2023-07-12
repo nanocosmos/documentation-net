@@ -286,6 +286,15 @@ const sidebars = {
         "faq/faq_WebRTC_devices",
       ]
     },
+    {
+      "type": "category",
+      "label": "Tutorials",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "cloud-frontend/How_to_Setup_Low_Latency_Stream"
+      ]
+    }
   ],
   // "Samples": [
   //   "samples/samples",
