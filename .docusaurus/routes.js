@@ -104,7 +104,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'f8b'),
+    component: ComponentCreator('/docs', '5e3'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -221,6 +221,12 @@ export default [
         sidebar: "nanoStream Analytics"
       },
       {
+        path: '/docs/cloud/analytics_for_low_latency_streams',
+        component: ComponentCreator('/docs/cloud/analytics_for_low_latency_streams', '2e1'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
         path: '/docs/cloud/analytics-api',
         component: ComponentCreator('/docs/cloud/analytics-api', 'fc7'),
         exact: true,
@@ -275,10 +281,28 @@ export default [
         sidebar: "nanoStream Cloud"
       },
       {
+        path: '/docs/cloud/defend_against_misuse_with_nanostream_guardian',
+        component: ComponentCreator('/docs/cloud/defend_against_misuse_with_nanostream_guardian', '778'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
         path: '/docs/cloud/guardian',
         component: ComponentCreator('/docs/cloud/guardian', '74e'),
         exact: true,
         sidebar: "nanoStream Cloud"
+      },
+      {
+        path: '/docs/cloud/how_to_setup_ingest_security',
+        component: ComponentCreator('/docs/cloud/how_to_setup_ingest_security', '3b3'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/cloud/how_to_setup_streamgroups',
+        component: ComponentCreator('/docs/cloud/how_to_setup_streamgroups', '8f1'),
+        exact: true,
+        sidebar: "FAQ"
       },
       {
         path: '/docs/cloud/live_encoding',
@@ -562,6 +586,18 @@ export default [
         component: ComponentCreator('/docs/nanoplayer/nanoplayer_token_security', 'cf4'),
         exact: true,
         sidebar: "H5Live Player"
+      },
+      {
+        path: '/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes', '842'),
+        exact: true,
+        sidebar: "FAQ"
+      },
+      {
+        path: '/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security',
+        component: ComponentCreator('/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security', '39a'),
+        exact: true,
+        sidebar: "FAQ"
       },
       {
         path: '/docs/nanoplayer/nanoplayer_update_source',

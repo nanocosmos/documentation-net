@@ -113,6 +113,11 @@
               "sidebar": "nanoStream Analytics"
             },
             {
+              "id": "cloud/analytics_for_low_latency_streams",
+              "path": "/docs/cloud/analytics_for_low_latency_streams",
+              "sidebar": "FAQ"
+            },
+            {
               "id": "cloud/analytics-api",
               "path": "/docs/cloud/analytics-api",
               "sidebar": "nanoStream Analytics"
@@ -158,9 +163,24 @@
               "sidebar": "nanoStream Cloud"
             },
             {
+              "id": "cloud/defend_against_misuse_with_nanostream_guardian",
+              "path": "/docs/cloud/defend_against_misuse_with_nanostream_guardian",
+              "sidebar": "FAQ"
+            },
+            {
               "id": "cloud/guardian",
               "path": "/docs/cloud/guardian",
               "sidebar": "nanoStream Cloud"
+            },
+            {
+              "id": "cloud/how_to_setup_ingest_security",
+              "path": "/docs/cloud/how_to_setup_ingest_security",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "cloud/how_to_setup_streamgroups",
+              "path": "/docs/cloud/how_to_setup_streamgroups",
+              "sidebar": "FAQ"
             },
             {
               "id": "cloud/live_encoding",
@@ -396,6 +416,16 @@
               "id": "nanoplayer/nanoplayer_token_security",
               "path": "/docs/nanoplayer/nanoplayer_token_security",
               "sidebar": "H5Live Player"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes",
+              "path": "/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes",
+              "sidebar": "FAQ"
+            },
+            {
+              "id": "nanoplayer/nanoplayer_tutorial_how_to_setup_player_security",
+              "path": "/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security",
+              "sidebar": "FAQ"
             },
             {
               "id": "nanoplayer/nanoplayer_update_source",

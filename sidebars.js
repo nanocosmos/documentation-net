@@ -288,11 +288,17 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "Tutorials",
+      "label": "Video Tutorials",
       "collapsible": true,
       "collapsed": false,
       "items": [
-        "cloud-frontend/How_to_Setup_Low_Latency_Stream"
+        "cloud-frontend/How_to_Setup_Low_Latency_Stream",
+        "cloud/analytics_for_low_latency_streams",
+        "cloud/how_to_setup_streamgroups",
+        "nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes",
+        "cloud/how_to_setup_ingest_security",
+        "nanoplayer/nanoplayer_tutorial_how_to_setup_player_security",
+        "cloud/defend_against_misuse_with_nanostream_guardian"
       ]
     }
   ],
