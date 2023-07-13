@@ -175,7 +175,11 @@ const config = {
               },
               {
                 label: 'LinkedIn',
-                href: 'https://www.facebook.com/nanocosmos.net/',
+                href: 'https://www.linkedin.com/company/nanocosmos-gmbh/',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/nanovideo',
               },
               {
                 label: 'YouTube',

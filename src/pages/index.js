@@ -10,6 +10,10 @@ import styles from './index.module.css';
 
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import FooterExtension from '../components/global/FooterExtension';
+import Player from '../components/player';
+import Cloud from '../components/cloud';
+import Analytics from '../components/analytics';
+import Webcaster from '../components/webcaster';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -39,8 +43,15 @@ export default function Home() {
       description={`${siteConfig.title} | Official nanocosmos Developer Documentation`}>
       <HomepageHeader />
       <main>
+        <Cloud />
+        <hr className={styles.horizontalLine} />
+        <Player />
+        <hr className={styles.horizontalLine} />
+        <Analytics />
+        <hr className={styles.horizontalLine} />
+        <Webcaster/>
       </main>
-      {/* <FooterExtension /> */}
+      <FooterExtension />
     </Layout>
   );
 }

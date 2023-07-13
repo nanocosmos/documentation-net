@@ -259,6 +259,15 @@ const sidebars = {
     "faq/faq_purchase_and_license",
     {
       "type": "category",
+      "label": "Tutorials",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "tutorial/getting_started"
+      ]
+    },
+    {
+      "type": "category",
       "label": "H5Live Player",
       "collapsible": true,
       "collapsed": false,
@@ -277,6 +286,15 @@ const sidebars = {
         "faq/faq_WebRTC_devices",
       ]
     },
+    {
+      "type": "category",
+      "label": "Tutorials",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "cloud-frontend/How_to_Setup_Low_Latency_Stream"
+      ]
+    }
   ],
   // "Samples": [
   //   "samples/samples",
