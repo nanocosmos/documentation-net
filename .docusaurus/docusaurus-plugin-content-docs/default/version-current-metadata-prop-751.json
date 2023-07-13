@@ -781,7 +781,7 @@
       },
       {
         "type": "category",
-        "label": "Tutorials",
+        "label": "Video Tutorials",
         "collapsible": true,
         "collapsed": false,
         "items": [
@@ -790,6 +790,42 @@
             "label": "How to Setup a Low Latency Stream",
             "href": "/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream",
             "docId": "cloud-frontend/How_to_Setup_Low_Latency_Stream"
+          },
+          {
+            "type": "link",
+            "label": "Analytics For Low Latency Streams",
+            "href": "/docs/cloud/analytics_for_low_latency_streams",
+            "docId": "cloud/analytics_for_low_latency_streams"
+          },
+          {
+            "type": "link",
+            "label": "How To Setup Streamgroups Through Dashboard",
+            "href": "/docs/cloud/how_to_setup_streamgroups",
+            "docId": "cloud/how_to_setup_streamgroups"
+          },
+          {
+            "type": "link",
+            "label": "How to Setup Optimal Latency Modes for Streaming",
+            "href": "/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes",
+            "docId": "nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes"
+          },
+          {
+            "type": "link",
+            "label": "How To Setup Ingest Security For Your Live Streams",
+            "href": "/docs/cloud/how_to_setup_ingest_security",
+            "docId": "cloud/how_to_setup_ingest_security"
+          },
+          {
+            "type": "link",
+            "label": "Implement Playback Security For Your Live Streams",
+            "href": "/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security",
+            "docId": "nanoplayer/nanoplayer_tutorial_how_to_setup_player_security"
+          },
+          {
+            "type": "link",
+            "label": "Defend Against Misuse With nanoStream Guardian",
+            "href": "/docs/cloud/defend_against_misuse_with_nanostream_guardian",
+            "docId": "cloud/defend_against_misuse_with_nanostream_guardian"
           }
         ]
       }
@@ -876,7 +912,7 @@
     "cloud-frontend/How_to_Setup_Low_Latency_Stream": {
       "id": "cloud-frontend/How_to_Setup_Low_Latency_Stream",
       "title": "How to Setup a Low Latency Stream",
-      "description": "Click PLAY button to start",
+      "description": "We will show you here how to easily setup your low latency live stream with just a few clicks!",
       "sidebar": "FAQ"
     },
     "cloud-frontend/How_to_Start_a_Stream": {
@@ -909,6 +945,12 @@
       "title": "nanoStream Cloud Analytics",
       "description": "nanoStream Cloud Analytics offers a great way to monitor and analyze the performance and quality of service of your live streams.",
       "sidebar": "nanoStream Analytics"
+    },
+    "cloud/analytics_for_low_latency_streams": {
+      "id": "cloud/analytics_for_low_latency_streams",
+      "title": "Analytics For Low Latency Streams",
+      "description": "In this video we will show you the analytics dashboard created by nanocosmos. It will provide a high level insight on the kind of data you will be able to view and use to improve your streams and track performance.",
+      "sidebar": "FAQ"
     },
     "cloud/analytics-api": {
       "id": "cloud/analytics-api",
@@ -961,14 +1003,32 @@
     "cloud/cloud_overview": {
       "id": "cloud/cloud_overview",
       "title": "nanoStream Cloud Product and Services Overview",
-      "description": "nanoStream Cloud Components",
+      "description": "Real-time streaming to boost your business",
       "sidebar": "nanoStream Cloud"
+    },
+    "cloud/defend_against_misuse_with_nanostream_guardian": {
+      "id": "cloud/defend_against_misuse_with_nanostream_guardian",
+      "title": "Defend Against Misuse With nanoStream Guardian",
+      "description": "You're now able to protect your live streams with the touch of a button. With the nanoStream Guardian you can instantly block IP addresses!",
+      "sidebar": "FAQ"
     },
     "cloud/guardian": {
       "id": "cloud/guardian",
       "title": "nanoStream Guardian",
       "description": "Click PLAY button to start",
       "sidebar": "nanoStream Cloud"
+    },
+    "cloud/how_to_setup_ingest_security": {
+      "id": "cloud/how_to_setup_ingest_security",
+      "title": "How To Setup Ingest Security For Your Live Streams",
+      "description": "During this brief how to video we want to show you how you can protect your streams when you ingest them into our nanoStream Cloud",
+      "sidebar": "FAQ"
+    },
+    "cloud/how_to_setup_streamgroups": {
+      "id": "cloud/how_to_setup_streamgroups",
+      "title": "How To Setup Streamgroups Through Dashboard",
+      "description": "During this video we will give a quick overview on how to bundle your streams even easier than before! By using our Adaptive Bitrates you can now easily track each stream and the transcodes for optimised accessibility.",
+      "sidebar": "FAQ"
     },
     "cloud/live_encoding": {
       "id": "cloud/live_encoding",
@@ -1252,6 +1312,18 @@
       "title": "Secure playback with H5Live",
       "description": "Click PLAY button to start",
       "sidebar": "H5Live Player"
+    },
+    "nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes": {
+      "id": "nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes",
+      "title": "How to Setup Optimal Latency Modes for Streaming",
+      "description": "During this video we will show you how to best setup your latency controls modes for the best viewer experience!",
+      "sidebar": "FAQ"
+    },
+    "nanoplayer/nanoplayer_tutorial_how_to_setup_player_security": {
+      "id": "nanoplayer/nanoplayer_tutorial_how_to_setup_player_security",
+      "title": "Implement Playback Security For Your Live Streams",
+      "description": "In this video we will show you how to secure your streams by making sure only the right people are able to view your content, and how you will be able to track swiftly anyone making misuse of it.",
+      "sidebar": "FAQ"
     },
     "nanoplayer/nanoplayer_update_source": {
       "id": "nanoplayer/nanoplayer_update_source",
