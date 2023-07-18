@@ -670,24 +670,6 @@
         "docId": "faq/faq"
       },
       {
-        "type": "link",
-        "label": "Capture Devices & Camera Support",
-        "href": "/docs/faq/faq_devices_support",
-        "docId": "faq/faq_devices_support"
-      },
-      {
-        "type": "link",
-        "label": "Advanced Codec Configuration",
-        "href": "/docs/faq/faq_adv_codec_config",
-        "docId": "faq/faq_adv_codec_config"
-      },
-      {
-        "type": "link",
-        "label": "Purchase and License",
-        "href": "/docs/faq/faq_purchase_and_license",
-        "docId": "faq/faq_purchase_and_license"
-      },
-      {
         "type": "category",
         "label": "H5Live Player",
         "collapsible": true,
@@ -1040,14 +1022,12 @@
     "faq/faq_adv_codec_config": {
       "id": "faq/faq_adv_codec_config",
       "title": "Advanced Codec Configuration Questions",
-      "description": "Questions Overview",
-      "sidebar": "FAQ"
+      "description": "Questions Overview"
     },
     "faq/faq_devices_support": {
       "id": "faq/faq_devices_support",
       "title": "Capture Devices & Camera Support Questions",
-      "description": "Questions Overview",
-      "sidebar": "FAQ"
+      "description": "Questions Overview"
     },
     "faq/faq_h5live_player_adjust_style": {
       "id": "faq/faq_h5live_player_adjust_style",
@@ -1064,8 +1044,7 @@
     "faq/faq_purchase_and_license": {
       "id": "faq/faq_purchase_and_license",
       "title": "Purchase and License Questions",
-      "description": "<!-- - How to purchase a product?",
-      "sidebar": "FAQ"
+      "description": "<!-- - How to purchase a product?"
     },
     "faq/faq_streaming": {
       "id": "faq/faq_streaming",

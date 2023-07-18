@@ -254,9 +254,9 @@ const sidebars = {
   ],
   "FAQ": [
     "faq/faq",
-    "faq/faq_devices_support",
-    "faq/faq_adv_codec_config",
-    "faq/faq_purchase_and_license",
+    // "faq/faq_devices_support",
+    // "faq/faq_adv_codec_config",
+    // "faq/faq_purchase_and_license",
     {
       "type": "category",
       "label": "H5Live Player",

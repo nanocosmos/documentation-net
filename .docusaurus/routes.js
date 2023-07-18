@@ -104,7 +104,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'f52'),
+    component: ComponentCreator('/docs', 'b06'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -365,15 +365,13 @@ export default [
       },
       {
         path: '/docs/faq/faq_adv_codec_config',
-        component: ComponentCreator('/docs/faq/faq_adv_codec_config', '502'),
-        exact: true,
-        sidebar: "FAQ"
+        component: ComponentCreator('/docs/faq/faq_adv_codec_config', 'b7a'),
+        exact: true
       },
       {
         path: '/docs/faq/faq_devices_support',
-        component: ComponentCreator('/docs/faq/faq_devices_support', '33b'),
-        exact: true,
-        sidebar: "FAQ"
+        component: ComponentCreator('/docs/faq/faq_devices_support', '4e0'),
+        exact: true
       },
       {
         path: '/docs/faq/faq_h5live_player_adjust_style',
@@ -389,9 +387,8 @@ export default [
       },
       {
         path: '/docs/faq/faq_purchase_and_license',
-        component: ComponentCreator('/docs/faq/faq_purchase_and_license', '06e'),
-        exact: true,
-        sidebar: "FAQ"
+        component: ComponentCreator('/docs/faq/faq_purchase_and_license', '343'),
+        exact: true
       },
       {
         path: '/docs/faq/faq_streaming',
