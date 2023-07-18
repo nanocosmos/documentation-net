@@ -104,7 +104,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '5e3'),
+    component: ComponentCreator('/docs', 'b06'),
     routes: [
       {
         path: '/docs/cloud-frontend-v3/Dashboard_ABR_Transcoding',
@@ -365,15 +365,13 @@ export default [
       },
       {
         path: '/docs/faq/faq_adv_codec_config',
-        component: ComponentCreator('/docs/faq/faq_adv_codec_config', '502'),
-        exact: true,
-        sidebar: "FAQ"
+        component: ComponentCreator('/docs/faq/faq_adv_codec_config', 'b7a'),
+        exact: true
       },
       {
         path: '/docs/faq/faq_devices_support',
-        component: ComponentCreator('/docs/faq/faq_devices_support', '33b'),
-        exact: true,
-        sidebar: "FAQ"
+        component: ComponentCreator('/docs/faq/faq_devices_support', '4e0'),
+        exact: true
       },
       {
         path: '/docs/faq/faq_h5live_player_adjust_style',
@@ -389,9 +387,8 @@ export default [
       },
       {
         path: '/docs/faq/faq_purchase_and_license',
-        component: ComponentCreator('/docs/faq/faq_purchase_and_license', '06e'),
-        exact: true,
-        sidebar: "FAQ"
+        component: ComponentCreator('/docs/faq/faq_purchase_and_license', '343'),
+        exact: true
       },
       {
         path: '/docs/faq/faq_streaming',
@@ -412,33 +409,28 @@ export default [
       },
       {
         path: '/docs/nanomeet/api',
-        component: ComponentCreator('/docs/nanomeet/api', 'b1b'),
-        exact: true,
-        sidebar: "nanoStream Cloud"
+        component: ComponentCreator('/docs/nanomeet/api', 'db1'),
+        exact: true
       },
       {
         path: '/docs/nanomeet/getting-started',
-        component: ComponentCreator('/docs/nanomeet/getting-started', '10f'),
-        exact: true,
-        sidebar: "nanoStream Cloud"
+        component: ComponentCreator('/docs/nanomeet/getting-started', '7e7'),
+        exact: true
       },
       {
         path: '/docs/nanomeet/introduction',
-        component: ComponentCreator('/docs/nanomeet/introduction', '549'),
-        exact: true,
-        sidebar: "nanoStream Cloud"
+        component: ComponentCreator('/docs/nanomeet/introduction', '3e1'),
+        exact: true
       },
       {
         path: '/docs/nanomeet/samples',
-        component: ComponentCreator('/docs/nanomeet/samples', 'c08'),
-        exact: true,
-        sidebar: "nanoStream Cloud"
+        component: ComponentCreator('/docs/nanomeet/samples', '521'),
+        exact: true
       },
       {
         path: '/docs/nanomeet/source-code',
-        component: ComponentCreator('/docs/nanomeet/source-code', '105'),
-        exact: true,
-        sidebar: "nanoStream Cloud"
+        component: ComponentCreator('/docs/nanomeet/source-code', 'db5'),
+        exact: true
       },
       {
         path: '/docs/nanoplayer/nanoplayer_api',
@@ -849,9 +841,8 @@ export default [
       },
       {
         path: '/docs/tutorial/getting_started',
-        component: ComponentCreator('/docs/tutorial/getting_started', 'ed8'),
-        exact: true,
-        sidebar: "FAQ"
+        component: ComponentCreator('/docs/tutorial/getting_started', 'ab1'),
+        exact: true
       },
       {
         path: '/docs/webrtc/nanostream_webrtc_api',

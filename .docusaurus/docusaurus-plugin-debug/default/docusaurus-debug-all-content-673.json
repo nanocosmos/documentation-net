@@ -100,8 +100,8 @@
                 "permalink": "/docs/cloud-frontend-v3/Dashboard_Secure"
               },
               "next": {
-                "title": "Introduction",
-                "permalink": "/docs/nanomeet/introduction"
+                "title": "Bintu API",
+                "permalink": "/docs/cloud/bintu_api"
               }
             },
             {
@@ -635,8 +635,8 @@
               },
               "sidebar": "nanoStream Cloud",
               "previous": {
-                "title": "nanoMeet API",
-                "permalink": "/docs/nanomeet/api"
+                "title": "Embed nanoPlayer Code on Your Web Page",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer"
               },
               "next": {
                 "title": "Bintu custom web hooks",
@@ -1165,8 +1165,8 @@
               },
               "sidebar": "FAQ",
               "next": {
-                "title": "Capture Devices & Camera Support",
-                "permalink": "/docs/faq/faq_devices_support"
+                "title": "General",
+                "permalink": "/docs/faq/faq_h5live_player_general"
               }
             },
             {
@@ -1187,15 +1187,6 @@
                 "id": "faq_adv_codec_config",
                 "title": "Advanced Codec Configuration Questions",
                 "sidebar_label": "Advanced Codec Configuration"
-              },
-              "sidebar": "FAQ",
-              "previous": {
-                "title": "Capture Devices & Camera Support",
-                "permalink": "/docs/faq/faq_devices_support"
-              },
-              "next": {
-                "title": "Purchase and License",
-                "permalink": "/docs/faq/faq_purchase_and_license"
               }
             },
             {
@@ -1216,15 +1207,6 @@
                 "id": "faq_devices_support",
                 "title": "Capture Devices & Camera Support Questions",
                 "sidebar_label": "Capture Devices & Camera Support"
-              },
-              "sidebar": "FAQ",
-              "previous": {
-                "title": "FAQ",
-                "permalink": "/docs/faq/"
-              },
-              "next": {
-                "title": "Advanced Codec Configuration",
-                "permalink": "/docs/faq/faq_adv_codec_config"
               }
             },
             {
@@ -1277,8 +1259,8 @@
               },
               "sidebar": "FAQ",
               "previous": {
-                "title": "Videos",
-                "permalink": "/docs/tutorial/getting_started"
+                "title": "FAQ",
+                "permalink": "/docs/faq/"
               },
               "next": {
                 "title": "Adjust/Style",
@@ -1303,15 +1285,6 @@
                 "id": "faq_purchase_and_license",
                 "title": "Purchase and License Questions",
                 "sidebar_label": "Purchase and License"
-              },
-              "sidebar": "FAQ",
-              "previous": {
-                "title": "Advanced Codec Configuration",
-                "permalink": "/docs/faq/faq_adv_codec_config"
-              },
-              "next": {
-                "title": "Videos",
-                "permalink": "/docs/tutorial/getting_started"
               }
             },
             {
@@ -1410,15 +1383,6 @@
                 "id": "api",
                 "title": "nanoMeet Web API",
                 "sidebar_label": "nanoMeet API"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Source Code",
-                "permalink": "/docs/nanomeet/source-code"
-              },
-              "next": {
-                "title": "Bintu API",
-                "permalink": "/docs/cloud/bintu_api"
               }
             },
             {
@@ -1439,15 +1403,6 @@
                 "id": "getting-started",
                 "title": "Getting Started",
                 "sidebar_label": "Getting Started"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Introduction",
-                "permalink": "/docs/nanomeet/introduction"
-              },
-              "next": {
-                "title": "Samples",
-                "permalink": "/docs/nanomeet/samples"
               }
             },
             {
@@ -1468,15 +1423,6 @@
                 "id": "introduction",
                 "title": "nanoMeet",
                 "sidebar_label": "Introduction"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Embed nanoPlayer Code on Your Web Page",
-                "permalink": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer"
-              },
-              "next": {
-                "title": "Getting Started",
-                "permalink": "/docs/nanomeet/getting-started"
               }
             },
             {
@@ -1497,15 +1443,6 @@
                 "id": "samples",
                 "title": "nanoMeet Samples",
                 "sidebar_label": "Samples"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Getting Started",
-                "permalink": "/docs/nanomeet/getting-started"
-              },
-              "next": {
-                "title": "Source Code",
-                "permalink": "/docs/nanomeet/source-code"
               }
             },
             {
@@ -1526,15 +1463,6 @@
                 "id": "source-code",
                 "title": "nanoMeet Sample Code Snippets",
                 "sidebar_label": "Source Code"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Samples",
-                "permalink": "/docs/nanomeet/samples"
-              },
-              "next": {
-                "title": "nanoMeet API",
-                "permalink": "/docs/nanomeet/api"
               }
             },
             {
@@ -3331,15 +3259,6 @@
                 "id": "getting_started",
                 "title": "Video Tutorials",
                 "sidebar_label": "Videos"
-              },
-              "sidebar": "FAQ",
-              "previous": {
-                "title": "Purchase and License",
-                "permalink": "/docs/faq/faq_purchase_and_license"
-              },
-              "next": {
-                "title": "General",
-                "permalink": "/docs/faq/faq_h5live_player_general"
               }
             },
             {
@@ -3859,34 +3778,6 @@
               },
               {
                 "type": "category",
-                "label": "nanoMeet",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/introduction"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/getting-started"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/samples"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/source-code"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/api"
-                  }
-                ]
-              },
-              {
-                "type": "category",
                 "label": "REST API",
                 "collapsible": false,
                 "collapsed": false,
@@ -4286,30 +4177,6 @@
               {
                 "type": "doc",
                 "id": "faq/faq"
-              },
-              {
-                "type": "doc",
-                "id": "faq/faq_devices_support"
-              },
-              {
-                "type": "doc",
-                "id": "faq/faq_adv_codec_config"
-              },
-              {
-                "type": "doc",
-                "id": "faq/faq_purchase_and_license"
-              },
-              {
-                "type": "category",
-                "label": "Tutorials",
-                "collapsible": true,
-                "collapsed": false,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "tutorial/getting_started"
-                  }
-                ]
               },
               {
                 "type": "category",

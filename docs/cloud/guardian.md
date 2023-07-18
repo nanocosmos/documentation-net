@@ -4,11 +4,8 @@ title: nanoStream Guardian
 sidebar_label: nanoStream Guardian
 ---
 
-<div class="video-wrap">
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/hVbkifac1uo" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/hVbkifac1uo" frameborder="0" allowfullscreen></iframe>
+
 
 ***Click `PLAY` button to start***
 

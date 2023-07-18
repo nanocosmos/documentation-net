@@ -233,13 +233,11 @@
             },
             {
               "id": "faq/faq_adv_codec_config",
-              "path": "/docs/faq/faq_adv_codec_config",
-              "sidebar": "FAQ"
+              "path": "/docs/faq/faq_adv_codec_config"
             },
             {
               "id": "faq/faq_devices_support",
-              "path": "/docs/faq/faq_devices_support",
-              "sidebar": "FAQ"
+              "path": "/docs/faq/faq_devices_support"
             },
             {
               "id": "faq/faq_h5live_player_adjust_style",
@@ -253,8 +251,7 @@
             },
             {
               "id": "faq/faq_purchase_and_license",
-              "path": "/docs/faq/faq_purchase_and_license",
-              "sidebar": "FAQ"
+              "path": "/docs/faq/faq_purchase_and_license"
             },
             {
               "id": "faq/faq_streaming",
@@ -272,28 +269,23 @@
             },
             {
               "id": "nanomeet/api",
-              "path": "/docs/nanomeet/api",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/api"
             },
             {
               "id": "nanomeet/getting-started",
-              "path": "/docs/nanomeet/getting-started",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/getting-started"
             },
             {
               "id": "nanomeet/introduction",
-              "path": "/docs/nanomeet/introduction",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/introduction"
             },
             {
               "id": "nanomeet/samples",
-              "path": "/docs/nanomeet/samples",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/samples"
             },
             {
               "id": "nanomeet/source-code",
-              "path": "/docs/nanomeet/source-code",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/source-code"
             },
             {
               "id": "nanoplayer/nanoplayer_api",
@@ -632,8 +624,7 @@
             },
             {
               "id": "tutorial/getting_started",
-              "path": "/docs/tutorial/getting_started",
-              "sidebar": "FAQ"
+              "path": "/docs/tutorial/getting_started"
             },
             {
               "id": "webrtc/nanostream_webrtc_api",

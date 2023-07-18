@@ -4,11 +4,8 @@ title: Secure playback with H5Live
 sidebar_label: Secure playback with H5Live
 ---
 
-<div class="video-wrap">
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/nOmcvcgr6UI" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/nOmcvcgr6UI" frameborder="0" allowfullscreen></iframe>
+
 
 ***Click `PLAY` button to start***
 
