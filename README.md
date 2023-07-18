@@ -1,5 +1,3 @@
-# README
-
 # Hey dear colleagues
 
 The [Docusaurus documentation](https://docusaurus.io/docs/category/guides) offers a certain number of features that can be used to keep the documentation descriptive.
@@ -80,8 +78,6 @@ Creating a sidebar enables you to:
 - provide next/previous navigation
 
 Learn more about sidebars [here](https://docusaurus.io/docs/sidebar/items).
-
-## Landing Page
 
 ### Installation
 
