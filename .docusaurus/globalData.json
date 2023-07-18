@@ -272,28 +272,23 @@
             },
             {
               "id": "nanomeet/api",
-              "path": "/docs/nanomeet/api",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/api"
             },
             {
               "id": "nanomeet/getting-started",
-              "path": "/docs/nanomeet/getting-started",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/getting-started"
             },
             {
               "id": "nanomeet/introduction",
-              "path": "/docs/nanomeet/introduction",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/introduction"
             },
             {
               "id": "nanomeet/samples",
-              "path": "/docs/nanomeet/samples",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/samples"
             },
             {
               "id": "nanomeet/source-code",
-              "path": "/docs/nanomeet/source-code",
-              "sidebar": "nanoStream Cloud"
+              "path": "/docs/nanomeet/source-code"
             },
             {
               "id": "nanoplayer/nanoplayer_api",

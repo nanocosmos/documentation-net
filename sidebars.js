@@ -55,19 +55,19 @@ const sidebars = {
         }
       ]
     },
-    {
-      "type": "category",
-      "label": "nanoMeet",
-      "collapsible": true,
-      "collapsed": true,
-      "items": [
-        "nanomeet/introduction",
-        "nanomeet/getting-started",
-        "nanomeet/samples",
-        "nanomeet/source-code",
-        "nanomeet/api",
-      ]
-    },
+    // {
+    //   "type": "category",
+    //   "label": "nanoMeet",
+    //   "collapsible": true,
+    //   "collapsed": true,
+    //   "items": [
+    //     "nanomeet/introduction",
+    //     "nanomeet/getting-started",
+    //     "nanomeet/samples",
+    //     "nanomeet/source-code",
+    //     "nanomeet/api",
+    //   ]
+    // },
     {
       "type": "category",
       "label": "REST API",

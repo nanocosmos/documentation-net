@@ -100,8 +100,8 @@
                 "permalink": "/docs/cloud-frontend-v3/Dashboard_Secure"
               },
               "next": {
-                "title": "Introduction",
-                "permalink": "/docs/nanomeet/introduction"
+                "title": "Bintu API",
+                "permalink": "/docs/cloud/bintu_api"
               }
             },
             {
@@ -635,8 +635,8 @@
               },
               "sidebar": "nanoStream Cloud",
               "previous": {
-                "title": "nanoMeet API",
-                "permalink": "/docs/nanomeet/api"
+                "title": "Embed nanoPlayer Code on Your Web Page",
+                "permalink": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer"
               },
               "next": {
                 "title": "Bintu custom web hooks",
@@ -1410,15 +1410,6 @@
                 "id": "api",
                 "title": "nanoMeet Web API",
                 "sidebar_label": "nanoMeet API"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Source Code",
-                "permalink": "/docs/nanomeet/source-code"
-              },
-              "next": {
-                "title": "Bintu API",
-                "permalink": "/docs/cloud/bintu_api"
               }
             },
             {
@@ -1439,15 +1430,6 @@
                 "id": "getting-started",
                 "title": "Getting Started",
                 "sidebar_label": "Getting Started"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Introduction",
-                "permalink": "/docs/nanomeet/introduction"
-              },
-              "next": {
-                "title": "Samples",
-                "permalink": "/docs/nanomeet/samples"
               }
             },
             {
@@ -1468,15 +1450,6 @@
                 "id": "introduction",
                 "title": "nanoMeet",
                 "sidebar_label": "Introduction"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Embed nanoPlayer Code on Your Web Page",
-                "permalink": "/docs/cloud-frontend-v3/Dashboard_nanoPlayer"
-              },
-              "next": {
-                "title": "Getting Started",
-                "permalink": "/docs/nanomeet/getting-started"
               }
             },
             {
@@ -1497,15 +1470,6 @@
                 "id": "samples",
                 "title": "nanoMeet Samples",
                 "sidebar_label": "Samples"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Getting Started",
-                "permalink": "/docs/nanomeet/getting-started"
-              },
-              "next": {
-                "title": "Source Code",
-                "permalink": "/docs/nanomeet/source-code"
               }
             },
             {
@@ -1526,15 +1490,6 @@
                 "id": "source-code",
                 "title": "nanoMeet Sample Code Snippets",
                 "sidebar_label": "Source Code"
-              },
-              "sidebar": "nanoStream Cloud",
-              "previous": {
-                "title": "Samples",
-                "permalink": "/docs/nanomeet/samples"
-              },
-              "next": {
-                "title": "nanoMeet API",
-                "permalink": "/docs/nanomeet/api"
               }
             },
             {
@@ -3845,34 +3800,6 @@
                         "id": "cloud-frontend-v3/Dashboard_nanoPlayer"
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "type": "category",
-                "label": "nanoMeet",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/introduction"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/getting-started"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/samples"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/source-code"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "nanomeet/api"
                   }
                 ]
               },

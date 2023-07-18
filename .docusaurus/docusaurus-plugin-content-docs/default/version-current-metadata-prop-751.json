@@ -125,44 +125,6 @@
       },
       {
         "type": "category",
-        "label": "nanoMeet",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "link",
-            "label": "Introduction",
-            "href": "/docs/nanomeet/introduction",
-            "docId": "nanomeet/introduction"
-          },
-          {
-            "type": "link",
-            "label": "Getting Started",
-            "href": "/docs/nanomeet/getting-started",
-            "docId": "nanomeet/getting-started"
-          },
-          {
-            "type": "link",
-            "label": "Samples",
-            "href": "/docs/nanomeet/samples",
-            "docId": "nanomeet/samples"
-          },
-          {
-            "type": "link",
-            "label": "Source Code",
-            "href": "/docs/nanomeet/source-code",
-            "docId": "nanomeet/source-code"
-          },
-          {
-            "type": "link",
-            "label": "nanoMeet API",
-            "href": "/docs/nanomeet/api",
-            "docId": "nanomeet/api"
-          }
-        ]
-      },
-      {
-        "type": "category",
         "label": "REST API",
         "collapsible": false,
         "collapsed": false,
@@ -1125,32 +1087,27 @@
     "nanomeet/api": {
       "id": "nanomeet/api",
       "title": "nanoMeet Web API",
-      "description": "&copy; 2021 nanocosmos.",
-      "sidebar": "nanoStream Cloud"
+      "description": "&copy; 2021 nanocosmos."
     },
     "nanomeet/getting-started": {
       "id": "nanomeet/getting-started",
       "title": "Getting Started",
-      "description": "nanoMeet is part of nanoStream Cloud.",
-      "sidebar": "nanoStream Cloud"
+      "description": "nanoMeet is part of nanoStream Cloud."
     },
     "nanomeet/introduction": {
       "id": "nanomeet/introduction",
       "title": "nanoMeet",
-      "description": "&copy; 2021 nanocosmos.",
-      "sidebar": "nanoStream Cloud"
+      "description": "&copy; 2021 nanocosmos."
     },
     "nanomeet/samples": {
       "id": "nanomeet/samples",
       "title": "nanoMeet Samples",
-      "description": "The nanoMeet online samples utilize the nanoMeet web API.",
-      "sidebar": "nanoStream Cloud"
+      "description": "The nanoMeet online samples utilize the nanoMeet web API."
     },
     "nanomeet/source-code": {
       "id": "nanomeet/source-code",
       "title": "nanoMeet Sample Code Snippets",
-      "description": "To create your own token helper you can use our way of implementation. Find here working code snippets and use our approach to create new nanoMeet rooms or use the nanoMeet web API to do it on your own.",
-      "sidebar": "nanoStream Cloud"
+      "description": "To create your own token helper you can use our way of implementation. Find here working code snippets and use our approach to create new nanoMeet rooms or use the nanoMeet web API to do it on your own."
     },
     "nanoplayer/nanoplayer_api": {
       "id": "nanoplayer/nanoplayer_api",
