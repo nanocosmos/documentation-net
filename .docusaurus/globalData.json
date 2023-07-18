@@ -632,8 +632,7 @@
             },
             {
               "id": "tutorial/getting_started",
-              "path": "/docs/tutorial/getting_started",
-              "sidebar": "FAQ"
+              "path": "/docs/tutorial/getting_started"
             },
             {
               "id": "webrtc/nanostream_webrtc_api",

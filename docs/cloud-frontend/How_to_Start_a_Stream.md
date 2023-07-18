@@ -10,11 +10,8 @@ With the release of nanoStream Cloud 2022, it is now even easier to create and m
 **Find the documentation of V3 [here](../cloud-frontend-v3/Dashboard_Overview).**
 :::
 
-<div class="video-wrap">
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/om3cOpV0WKo" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/om3cOpV0WKo" frameborder="0" allowfullscreen></iframe>
+
 
 ##### *Click `PLAY` button to start*
 

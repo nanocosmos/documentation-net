@@ -4,11 +4,8 @@ title: Latency Control Modes
 sidebar_label: Latency control modes
 ---
 
-<div class="video-wrap">
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/65qfMRSSPjU" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/65qfMRSSPjU" frameborder="0" allowfullscreen></iframe>
+
 
 ***Click `PLAY` button to start***
 
