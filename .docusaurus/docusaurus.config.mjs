@@ -190,7 +190,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Tue, 18 Jul 2023 12:46:44 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 14 Aug 2023 12:41:53 GMT"
     },
     "prism": {
       "theme": {

@@ -83,6 +83,18 @@ To streamline your search, you can utilize various filters such as selecting a d
 
 These features enable you to efficiently manage and navigate through your streams, providing a clear and organized overview of your streaming content within the nanoStream Cloud Dashboard.
 
+## Search for a stream
+
+To locate a specific stream within the platform, follow these steps:
+
+1. Click on the search icon, accessible from every dialog you are in, located in the top right corner of the app bar.
+2. Enter the precise stream name or stream ID into the search bar. It's essential to input this information accurately and in a case-sensitive manner.
+3. Execute the search.
+
+:::caution Please note
+Accuracy is crucial. Even a slight deviation, typo, or missing character in your input can result in a "not found" outcome. Ensure you've entered the details correctly to obtain the desired results.
+:::
+
 ## Stream Creation
 
 The nanoStream Cloud Dashboard offers a straightforward process for creating a new stream with various customization options. 
