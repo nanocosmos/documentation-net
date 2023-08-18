@@ -18,11 +18,11 @@ nanoStream Cloud ensures security on several levels:
 
 - nanoStream H5Live Player and Webcaster by default work over transport level security (HTTPS), based on industry standards.
 
-- RTMP can be encrypted with SSL. You can use rtmps over port 1936 instead 1935.
+- RTMP can be encrypted with SSL. You can use rtmps over port 1937 instead 1935.
 
 :::tip example
 + **Standard non-encrypted ingest (RTMP)**: rtmp://bintu-stream.nanocosmos.de:1935/live/STREAM 
-+ **Encrypted ingest (RTMPS)**: rtmps://bintu-stream.nanocosmos.de:1936/live/STREAM
++ **Encrypted ingest (RTMPS)**: rtmps://bintu-stream.nanocosmos.de:1937/live/STREAM
 :::
 
 ## Client authorization

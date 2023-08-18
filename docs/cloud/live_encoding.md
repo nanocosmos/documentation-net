@@ -141,7 +141,7 @@ There is some general advice for low latency:
 
 **4K**
 
-- up to 3820x2048, min 6 MBit/s
+- up to 4096x2160, min 6 MBit/s
 
 
 ### Encoding for low bandwidth or bad networks
