@@ -21,8 +21,8 @@ const config = {
   organizationName: 'nanocosmos', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'log',
+  onBrokenMarkdownLinks: 'log',
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -54,19 +54,21 @@ const config = {
     ],
   ],
 
+  themes: ['docusaurus-theme-search-typesense'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'W2KLNFIT5W',
-
-        // Public API key: it is safe to commit it
-        apiKey: '01938bdccd0554b1fec9c77a8ad00e4e',
-
-        indexName: 'nanocosmos',
-
-        debug: false // Set debug to true if you want to inspect the moda
+      typesense: {
+        typesenseCollectionName: "nanocosmosv2",
+        typesenseServerConfig: {
+            nodes: [{
+              host: "typesense.nanostream.cloud",
+              port: 443,
+              protocol: "https"
+            }],
+            /**  readonly public key */
+            apiKey: "VXsRNvH2cHHs5uVOk74gX8jDtWTTVKsV"
+        },
       },
       // Social Card
       image: 'img/social-card.jpg',

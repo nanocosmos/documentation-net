@@ -1,0 +1,223 @@
+INFO:scrapy.utils.log:Scrapy 2.9.0 started (bot: scrapybot)
+INFO:scrapy.utils.log:Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0], pyOpenSSL 23.1.1 (OpenSSL 3.1.0 14 Mar 2023), cryptography 40.0.2, Platform Linux-5.15.49-linuxkit-pr-x86_64-with-glibc2.35
+INFO:scrapy.crawler:Overridden settings:
+{'DUPEFILTER_CLASS': 'src.custom_dupefilter.CustomDupeFilter',
+ 'LOG_ENABLED': '1',
+ 'LOG_LEVEL': 'ERROR',
+ 'TELNETCONSOLE_ENABLED': False,
+ 'USER_AGENT': 'Algolia DocSearch Crawler'}
+WARNING:py.warnings:/home/seleuser/.local/share/virtualenvs/seleuser-AdYDHarm/lib/python3.10/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.epollreactor.EPollReactor
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'src.custom_downloader_middleware.CustomDownloaderMiddleware']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+WARNING:py.warnings:/home/seleuser/.local/share/virtualenvs/seleuser-AdYDHarm/lib/python3.10/site-packages/scrapy/dupefilters.py:89: ScrapyDeprecationWarning: RFPDupeFilter subclasses must either modify their overridden '__init__' method and 'from_settings' class method to support a 'fingerprinter' parameter, or reimplement the 'from_crawler' class method.
+  warn(
+
+WARNING:py.warnings:/home/seleuser/.local/share/virtualenvs/seleuser-AdYDHarm/lib/python3.10/site-packages/scrapy/dupefilters.py:53: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  self.fingerprinter = fingerprinter or RequestFingerprinter()
+
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/sitemap.xml> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/> (referer: None)
+DEBUG:typesense.api_call:Making post /collections/nanocosmosv2_1692408222/documents/import
+DEBUG:typesense.api_call:Try 1 to node typesense.nanostream.cloud:443 -- healthy? True
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): typesense.nanostream.cloud:443
+DEBUG:urllib3.connectionpool:https://typesense.nanostream.cloud:443 "POST /collections/nanocosmosv2_1692408222/documents/import HTTP/1.1" 200 None
+DEBUG:typesense.api_call:typesense.nanostream.cloud:443 is healthy. Status code: 200
+[94m> DocSearch: [0mhttps://docs-dev-feature-preview.dev-k8s.nanostream.cloud/[93m 1 records[0m)
+DEBUG:scrapy.dupefilters:Filtered duplicate request: <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/security/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/security>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_api/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/nanoplayer/nanoplayer_api>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_release_latest/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/nanoplayer/nanoplayer_release_latest>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_demos/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/webrtc/nanostream_webrtc_demos>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/cloud_overview/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/cloud_overview>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_introduction/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/webrtc/nanostream_webrtc_introduction>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_introduction/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/nanoplayer/nanoplayer_introduction>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/analytics>
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_api/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/samples/> (referer: https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/faq/> (referer: https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/)
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/security/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:typesense.api_call:Making post /collections/nanocosmosv2_1692408222/documents/import
+DEBUG:typesense.api_call:Try 1 to node typesense.nanostream.cloud:443 -- healthy? True
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): typesense.nanostream.cloud:443
+DEBUG:urllib3.connectionpool:https://typesense.nanostream.cloud:443 "POST /collections/nanocosmosv2_1692408222/documents/import HTTP/1.1" 200 None
+DEBUG:typesense.api_call:typesense.nanostream.cloud:443 is healthy. Status code: 200
+[94m> DocSearch: [0mhttps://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/samples/[93m 16 records[0m)
+DEBUG:typesense.api_call:Making post /collections/nanocosmosv2_1692408222/documents/import
+DEBUG:typesense.api_call:Try 1 to node typesense.nanostream.cloud:443 -- healthy? True
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): typesense.nanostream.cloud:443
+DEBUG:urllib3.connectionpool:https://typesense.nanostream.cloud:443 "POST /collections/nanocosmosv2_1692408222/documents/import HTTP/1.1" 200 None
+DEBUG:typesense.api_call:typesense.nanostream.cloud:443 is healthy. Status code: 200
+[94m> DocSearch: [0mhttps://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/faq/[93m 10 records[0m)
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_demos/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_release_latest/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_introduction/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_introduction/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/cloud_overview/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_api/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/security/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/cloud_overview/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_introduction/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_introduction/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_release_latest/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_demos/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/security/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/security/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_api/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_api/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_devices/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/faq/faq_WebRTC_devices>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_general/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/faq/faq_WebRTC_general>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend-v3/Dashboard_Overview/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud-frontend-v3/Dashboard_Overview>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_general/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/faq/faq_h5live_player_general>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_getting_started/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/nanoplayer/nanoplayer_getting_started>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/defend_against_misuse_with_nanostream_guardian/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/defend_against_misuse_with_nanostream_guardian>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_adjust_style/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/faq/faq_h5live_player_adjust_style>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_ingest_security/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/how_to_setup_ingest_security>
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_demos/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_demos/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_release_latest/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_release_latest/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_introduction/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_introduction/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_introduction/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/webrtc/nanostream_webrtc_introduction/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/cloud_overview/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/cloud_overview/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:50 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_devices/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_general/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_adjust_style/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/defend_against_misuse_with_nanostream_guardian/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_getting_started/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_general/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend-v3/Dashboard_Overview/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_streamgroups/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/how_to_setup_streamgroups>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics_for_low_latency_streams/> from <GET https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/analytics_for_low_latency_streams>
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_ingest_security/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_devices/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_adjust_style/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_general/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/defend_against_misuse_with_nanostream_guardian/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_general/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_getting_started/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend-v3/Dashboard_Overview/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_streamgroups/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics_for_low_latency_streams/> (failed 1 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_ingest_security/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_adjust_style/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_adjust_style/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_devices/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_devices/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend/How_to_Setup_Low_Latency_Stream/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_general/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_WebRTC_general/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/defend_against_misuse_with_nanostream_guardian/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/defend_against_misuse_with_nanostream_guardian/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_general/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/faq/faq_h5live_player_general/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend-v3/Dashboard_Overview/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud-frontend-v3/Dashboard_Overview/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_getting_started/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_getting_started/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics_for_low_latency_streams/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_streamgroups/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes/> (failed 2 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_ingest_security/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_ingest_security/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_player_security/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics_for_low_latency_streams/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/analytics_for_low_latency_streams/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_streamgroups/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/cloud/how_to_setup_streamgroups/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+ERROR:scrapy.downloadermiddlewares.retry:Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+2023-08-19 01:23:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://docs-dev-feature-preview.dev-k8s.nanostream.cloud:5000/docs/nanoplayer/nanoplayer_tutorial_how_to_setup_latency_modes/> (failed 3 times): Connection was refused by other side: 111: Connection refused.
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/exception_count': 63,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 63,
+ 'downloader/request_bytes': 26176,
+ 'downloader/request_count': 88,
+ 'downloader/request_method_count/GET': 88,
+ 'downloader/response_bytes': 178290,
+ 'downloader/response_count': 25,
+ 'downloader/response_status_count/200': 4,
+ 'downloader/response_status_count/301': 21,
+ 'dupefilter/filtered': 40,
+ 'elapsed_time_seconds': 7.720908,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 8, 19, 1, 23, 52, 827237),
+ 'log_count/ERROR': 21,
+ 'memusage/max': 129830912,
+ 'memusage/startup': 129830912,
+ 'request_depth_max': 2,
+ 'response_received_count': 4,
+ 'retry/count': 42,
+ 'retry/max_reached': 21,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 42,
+ 'scheduler/dequeued': 88,
+ 'scheduler/dequeued/memory': 88,
+ 'scheduler/enqueued': 88,
+ 'scheduler/enqueued/memory': 88,
+ 'start_time': datetime.datetime(2023, 8, 19, 1, 23, 45, 106329)}
+INFO:scrapy.core.engine:Spider closed (finished)
+
+DEBUG:typesense.api_call:Making get /aliases/nanocosmosv2
+DEBUG:typesense.api_call:Try 1 to node typesense.nanostream.cloud:443 -- healthy? True
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): typesense.nanostream.cloud:443
+DEBUG:urllib3.connectionpool:https://typesense.nanostream.cloud:443 "GET /aliases/nanocosmosv2 HTTP/1.1" 404 None
+DEBUG:typesense.api_call:typesense.nanostream.cloud:443 is healthy. Status code: 404
+DEBUG:typesense.api_call:Making put /aliases/nanocosmosv2
+DEBUG:typesense.api_call:Try 1 to node typesense.nanostream.cloud:443 -- healthy? True
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): typesense.nanostream.cloud:443
+DEBUG:urllib3.connectionpool:https://typesense.nanostream.cloud:443 "PUT /aliases/nanocosmosv2 HTTP/1.1" 200 None
+DEBUG:typesense.api_call:typesense.nanostream.cloud:443 is healthy. Status code: 200
+Nb hits: 27
+
