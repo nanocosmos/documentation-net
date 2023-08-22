@@ -10,7 +10,7 @@ sidebar_label: nanoStream Cloud Security
     </div>
 </div>
 
-##### *Click `PLAY` button to start*
+***Click `PLAY` button to start***
 
 nanoStream Cloud ensures security on several levels:
 
