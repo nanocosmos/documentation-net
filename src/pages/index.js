@@ -21,7 +21,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <img src={Logo} className={styles.logo} />
-        <h1 className="hero__title">Developer Documentation</h1>
+        <h1 className="hero__title">Official Documentation</h1>
         <p className={clsx("hero__subtitle", styles.subtitle)}>Browse the latest developer documentation, including sample code, tutorials, and API reference.</p>
         {/* <div className={styles.buttons}>
           <Link
@@ -49,7 +49,7 @@ export default function Home() {
         <hr className={styles.horizontalLine} />
         <Analytics />
         <hr className={styles.horizontalLine} />
-        <Webcaster/>
+        <Webcaster />
       </main>
       <FooterExtension />
     </Layout>

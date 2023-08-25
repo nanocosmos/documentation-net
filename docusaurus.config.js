@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'nanocosmos Docs',
-  tagline: 'nanocosmos Developer Documentation',
+  tagline: 'nanocosmos Official Documentation',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -61,13 +61,13 @@ const config = {
       typesense: {
         typesenseCollectionName: "nanocosmosv2",
         typesenseServerConfig: {
-            nodes: [{
-              host: "typesense.nanostream.cloud",
-              port: 443,
-              protocol: "https"
-            }],
-            /**  readonly public key */
-            apiKey: "VXsRNvH2cHHs5uVOk74gX8jDtWTTVKsV"
+          nodes: [{
+            host: "typesense.nanostream.cloud",
+            port: 443,
+            protocol: "https"
+          }],
+          /**  readonly public key */
+          apiKey: "VXsRNvH2cHHs5uVOk74gX8jDtWTTVKsV"
         },
       },
       // Social Card

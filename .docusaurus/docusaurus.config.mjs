@@ -5,14 +5,14 @@
  */
 export default {
   "title": "nanocosmos Docs",
-  "tagline": "nanocosmos Developer Documentation",
+  "tagline": "nanocosmos Official Documentation",
   "favicon": "img/favicon.ico",
   "url": "https://docs.nanocosmos.de",
   "baseUrl": "/",
   "organizationName": "nanocosmos",
   "projectName": "docs",
-  "onBrokenLinks": "throw",
-  "onBrokenMarkdownLinks": "warn",
+  "onBrokenLinks": "log",
+  "onBrokenMarkdownLinks": "log",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -39,14 +39,24 @@ export default {
       }
     ]
   ],
+  "themes": [
+    "docusaurus-theme-search-typesense"
+  ],
   "themeConfig": {
-    "algolia": {
-      "appId": "W2KLNFIT5W",
-      "apiKey": "01938bdccd0554b1fec9c77a8ad00e4e",
-      "indexName": "nanocosmos",
-      "debug": false,
+    "typesense": {
+      "typesenseCollectionName": "nanocosmosv2",
+      "typesenseServerConfig": {
+        "nodes": [
+          {
+            "host": "typesense.nanostream.cloud",
+            "port": 443,
+            "protocol": "https"
+          }
+        ],
+        "apiKey": "VXsRNvH2cHHs5uVOk74gX8jDtWTTVKsV"
+      },
       "contextualSearch": true,
-      "searchParameters": {},
+      "typesenseSearchParameters": {},
       "searchPagePath": "search"
     },
     "image": "img/social-card.jpg",
@@ -190,7 +200,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Mon, 14 Aug 2023 12:41:53 GMT"
+      "copyright": "Copyright © 2023. nanocosmos GmbH - Docs Version: Fri, 25 Aug 2023 07:49:43 GMT"
     },
     "prism": {
       "theme": {
@@ -426,7 +436,6 @@ export default {
   ],
   "customFields": {},
   "plugins": [],
-  "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
