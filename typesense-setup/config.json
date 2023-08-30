@@ -1,11 +1,11 @@
 {
   "index_name": "nanocosmosv2",
   "start_urls": [
-    "https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/",
-    "https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/cloud_overview/",
-    "https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/nanoplayer/nanoplayer_introduction/",
-    "https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/webrtc/nanostream_webrtc_introduction/",
-    "https://docs-dev-feature-preview.dev-k8s.nanostream.cloud/docs/cloud/analytics/"
+    "https://docs.nanocosmos.de",
+    "https://docs.nanocosmos.de/docs/cloud/cloud_overview",
+    "https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_introduction",
+    "https://docs.nanocosmos.de/docs/webrtc/nanostream_webrtc_introduction",
+    "https://docs.nanocosmos.de/docs/cloud/analytics"
   ],
   "stop_urls": [
     "/blog"
