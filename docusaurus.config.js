@@ -11,7 +11,8 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs.nanocosmos.de',
+  // url: 'https://docs.nanocosmos.de',
+  url: 'https://docs-dev-feature-preview.dev-k8s.nanostream.cloud',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -62,7 +63,7 @@ const config = {
         typesenseCollectionName: "nanocosmosv2",
         typesenseServerConfig: {
           nodes: [{
-            host: "typesense.nanostream.cloud",
+            host: "typesense.int.nanostream.cloud",
             port: 443,
             protocol: "https"
           }],
