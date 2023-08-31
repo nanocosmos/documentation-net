@@ -32,7 +32,11 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 
 ## Tutorial 
-<iframe width="100%" height="360" src="https://www.youtube.com/embed/Z2zekGZG-fg" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrap">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Z2zekGZG-fg" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
 
 ***Click `PLAY` button to start***
 

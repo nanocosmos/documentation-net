@@ -8,5 +8,9 @@ sidebar_label: How to Setup a Low Latency Stream
 
 We will show you here how to easily setup your low latency live stream with just a few clicks! 
 
-<iframe width="100%" height="360" src="https://www.youtube.com/embed/om3cOpV0WKo" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrap">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/om3cOpV0WKo" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
 *Click `PLAY` button to start*
