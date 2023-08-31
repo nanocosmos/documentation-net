@@ -250,7 +250,8 @@ const sidebars = {
     "cloud/analytics-zoom",
     "cloud/troubleshooting",
     "cloud/analytics-guardian",
-    "cloud/analytics-api"
+    "cloud/analytics-api",
+    "cloud/alerting"
   ],
   "FAQ": [
     "faq/faq",
