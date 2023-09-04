@@ -12,6 +12,8 @@ variables:
   DEPENDENCY_SCANNING_DISABLED: "true"
   LICENSE_MANAGEMENT_DISABLED: "true"
   SECRET_DETECTION_DISABLED: "false"
+  STAGING_ENABLED: "false"
+  CANARY_ENABLED: "false"
 
 .review: &review_template
   stage: review
@@ -43,7 +45,7 @@ review:
       when: never
     - if: '$REVIEW_DISABLED'
       when: never
-    - if: '$CI_COMMIT_BRANCH =~ /feature.*/i'
+    - if: '$CI_COMMIT_BRANCH =~ /feature.*/i || $CI_COMMIT_BRANCH =~ /hotfix.*/i'
       when: manual
 
 stop_review:
@@ -66,7 +68,7 @@ stop_review:
       when: never
     - if: '$REVIEW_DISABLED'
       when: never
-    - if: '$CI_COMMIT_BRANCH =~ /feature.*/i'
+    - if: '$CI_COMMIT_BRANCH =~ /feature.*/i || $CI_COMMIT_BRANCH =~ /hotfix.*/i'
       when: manual
 
 production:
