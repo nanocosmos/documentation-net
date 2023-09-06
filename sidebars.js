@@ -248,10 +248,19 @@ const sidebars = {
     "cloud/analytics",
     "cloud/worldmap",
     "cloud/analytics-zoom",
-    "cloud/troubleshooting",
+    {
+      "type": "category",
+      "label": "Alerts",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "cloud/alerting",
+        "cloud/troubleshooting",
+      ]
+    },
     "cloud/analytics-guardian",
     "cloud/analytics-api",
-    "cloud/alerting"
+
   ],
   "FAQ": [
     "faq/faq",
