@@ -7,79 +7,130 @@ sidebar_label: Alerts
 ## Introduction
 The general purpose of stream alerts is providing more transparent insights about the current live stream performances, estimated causes and possible solutions. Alerts offer mutliple capabilities to take immediate action and therefore improve the streaming experience for your audience.
 
-:::info Before starting
-To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>
-If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
+:::info Focus on Ingest 
+The current version supports ingest related quality and performance issues of the first mile, meaning from your ingest point via your ISP to our nearest ingest server.   
 :::
 
+## Before starting
+To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>
+If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 
 :::tip Good to know
 Alerts are effortlessly activated for all organizations by default.
-Starting from version `3.x.x.x` onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
-These notifications are conveniently accessible in either of these two locations: <br/>
-- [Metrics Dashboard](https://metrics.nanocosmos.de/)
-- [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts)
+Starting from version <span className="badge badge-inText"> 3.8.0.2</span> onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
 :::
 
-## General
+## Alert Categories and Severity Levels
 
-There are four primary alert groupings:
+Alerts are categorized in multiple **severity levels**, that should help to prioritize them, such as: <span className="badge badge-criticalAlert">Critical</span>, <span className="badge badge-moderateAlert">Moderate</span>, <span className="badge badge-minorAlert">Minor</span> and <span className="badge badge-adviceAlert">Advices</span>. Each alert is part of an specific **alert category** and owns a unique alert code:
+- [**General Alerts**](#-21000---21999-) ranging from 21000 to 21999
+- [**Stability Alerts**](#-22000---22999-) ranging from 22000 to 22999
+- [**Performance Alerts**](#-23000---23999-) ranging from 23000 to 23999
+- [**Infrastructure Alerts**](#-24000---24999-) ranging from 24000 to 24999
 
-- **General Alerts** `21000 - 21999`
-- **Stability Alerts** `22000 - 22999`
-- **Performance Alerts** `23000 - 23999`
-- **Infrastructure Alerts** `24000 - 24999`
+## How to use
 
-Alerts also have various severity levels, categorized as:
+### Analytics API
 
-- Critical
-- Moderate
-- Minor
-- Advices
+Our Analytics API provides 2 different alerting routes ([API Docs](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting)).
+- via `GET` - route you can check if alerts currently exist for any of your current live streams.
+- via `POST` - route you can pass ingest streams that should either be excluded from detection or define ingest streams for which an alert should be triggered if they are detected as offline.
 
-## How to use 
+### nanostream Cloud Dashboard
 
-## Steps to solve this
+After you login with your credentials, you can access the alerting overview on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts). Please refer to the corresponding feature documentation on the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Overview.md). There you can find additional guidelines and useful explanations for your first hands on!
 
-1. Do this
-2. Do that
-3. Go to trouble shooting
-4. Create ticket with info x,y,z
+## Steps to solve alerted issues
+
+**1.** Open up the corresponding stream playback within the dashboard and look out for anomalies, like continous buffering, stuttering, visual or connection issues.<br/>
+**2.** Execute a hard restart of the ingest connection / encoder source to force application to restart the ingest process.<br/>
+**3.** Use the link to the trouble shooting page to investigate the ingest stream, while looking for anomalies within the stream duration, like performance drops or occurred errors.<br/>
+**4.** If the alert persists, please use the support link of the correspondig alert below to submit a ticket with the necessary details. 
 
 ## Alert Codes
 
-### `21000 - 21999` General Alerts
+### <span className="badge badge-heading analytics-alertHeading-general"> 21000 - 21999 &nbsp</span>
 
-| Code | Type | Description |
-| ---- | ---- | ----------- |
-| 21001         | Offline                   | The ingest stream is offline, but is expected to ingest. |
+| Code | Type | Description | Recommended Action |
+| ---- | ---- | ----------- | ------------------ |
+| 21001 | Offline | The ingest stream is offline, but is expected to ingest. | Restart the stream. |
 
-### `22000 - 22999` Stability Alerts
+### <span className="badge badge-heading analytics-alertHeading-stability"> 22000 - 22999 &nbsp</span>
 
-| Code | Type | Description |
-| ---- | ---- | ----------- |
-| 22001         | Continous Restarts        | The ingest stream starts and stops continuously. |
+| Code | Type | Description | Recommended Action | 
+| ---- | ---- | ----------- | ------------------ |
+| 22001 | Continous Restarts | The ingest stream starts and stops continuously. | Restart the stream. |
 
-### `23000 - 23999` Performance Alerts
+### <span className="badge badge-heading analytics-alertHeading-performance"> 23000 - 23999 &nbsp</span>
 
-| Code | Type | Description |
-| ---- | ---- | ----------- |
-| 23001         | Suboptimal Performance    | The ingest streaming is not optimal; ultra-low latency reliant apps may be affected. |
-| 23002         | Poor Performance          | The ingest streaming is malfunctioning; please restart the stream. |
+<!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 
-### `24000 - 24999` Infrastructure Alerts
+<table>
+    <thead>
+        <tr>
+        <th>Code</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Recommended Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>23001</td>
+            <td>Suboptimal Performance</td>
+            <td>The ingest streaming is not optimal; ultra-low latency reliant apps may be affected..</td>
+            <td rowSpan="2">Restart the stream and do a bandwith speedtest afterwards.</td>
+        </tr>
+        <tr>
+            <td>23002</td>
+            <td>Poor Performance</td>
+            <td>The ingest streaming is malfunctioning.</td>
+        </tr>
+    </tbody>
+</table>
 
-| Code | Type | Description |
-| ---- | ---- | ----------- |
-| 24100         | Duplicated Ingests        | Duplicated ingests detected. |
-| 24101         | Multiple Infrastructures  | Duplicated ingests found on varying infrastructures. |
-| 24102         | Multiple Locations        | Duplicated ingests found across different locations. |
-| 24103         | Multiple IPs              | Duplicated ingests have different IP addresses. |
+### <span className="badge badge-heading analytics-alertHeading-infrastructure"> 24000 - 24999 &nbsp</span>
+
+<!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
+
+<table>
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Recommended Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>24100</td>
+            <td>Duplicated Ingests</td>
+            <td>Duplicated ingests detected.</td>
+            <td rowSpan="4">Stop all the ingests using the same stream name from all machines/encoders/locations and restart only 1 from the intended machine/encoder/location. Review ingest workflow.</td>
+        </tr>
+        <tr>
+            <td>24101</td>
+            <td>Multiple Infrastructures</td>
+            <td>Duplicated ingests found on varying infrastructures.</td>
+        </tr>
+        <tr>
+            <td>24102</td>
+            <td>Multiple Locations</td>
+            <td>Duplicated ingests found across different locations.</td>
+        </tr>
+        <tr>
+            <td>24103</td>
+            <td>Multiple IPs</td>
+            <td>Duplicated ingests have different IP addresses.</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Advices
 
-Advices can be seen as low priority alerts and shall inform you about better stream configurations.
+Advices can be seen as low priority alerts and shall inform you about possible improvements of the stream configuration.
 
-| Code | Description |
-| ---- | ----------- |
-| 01001 | The ingest stream has a high bitrate. Viewers with poor connection might can not playback the stream smoothly. Consider to use adaptive bitrate streams. |
+| Code | Description | Recommended Action |
+| ---- | ----------- | ------------------ |
+| 01001 | The ingest stream has a high bitrate. Viewers with poor connection might not be able to playback the stream smoothly. | Consider to use adaptive bitrate streams with different transcoding profiles. |
