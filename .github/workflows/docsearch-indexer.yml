@@ -5,7 +5,7 @@ on:
   # run manually
 
   workflow_run:
-    workflows: ['Build and Deploy']
+    workflows: ['Deploy to GitHub Pages']
     types: [completed]
 
 jobs:
