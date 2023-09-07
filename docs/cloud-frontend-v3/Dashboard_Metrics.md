@@ -18,21 +18,12 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 ## Month to Date Usage
 
 The *Month to Date Usage* feature provides a comparative analysis of the current month's usage of your organization against the previous month. 
+This comparative analysis is crucial to understand your stream's growth trajectory and to make informed decisions based on past trends.
 
 > [Click here](https://dashboard.nanostream.cloud) to see this metric.
 
 ![Screenshot: Month to Date Usage](../assets/cloud-frontend/cf-month-to-date-closeup.png)
 *Screenshot: Month to Date Usage*
-
-This comparative analysis is crucial to understand your stream's growth trajectory and to make informed decisions based on past trends.
-
-:::tip example
-Consider today's date as September 16th.
-- Last month, up to August 16th, you generated 300GB of traffic.
-- This month, as of September 16th, you've generated 325GB.
-
-Therefore, as of September 16th, your traffic has increased by **8.33%** compared to the same date in the previous month.
-:::
 
 ### Total Usage *Month*
 Represents the aggregate traffic for the ongoing month. It encompasses both ingest and playout traffic, offering a holistic view of your stream's overall traffic.
@@ -42,6 +33,15 @@ Exclusively displays the playout traffic for the month. This metric is pivotal i
 
 ### Total Ingest *Month*
 Focuses on the total ingest for the current month, providing clarity on the amount of data your streams are taking in.
+
+:::tip example
+Consider today's date as September 16th.
+- Last month, up to August 16th, you generated 300GB of traffic.
+- This month, as of September 16th, you've generated 325GB.
+
+Therefore, as of September 16th, your traffic has increased by **8.33%** compared to the same date in the previous month.
+:::
+
 
 ## Concurrent Viewer
 
