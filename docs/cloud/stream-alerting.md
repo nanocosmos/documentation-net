@@ -17,7 +17,7 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 :::tip Good to know
 Alerts are effortlessly activated for all organizations by default.
-Starting from version <span className="badge badge-inText"> 3.8.0.2</span> onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
+Starting from version `3.7.x.x` onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
 :::
 
 ## Alert Categories and Severity Levels
@@ -38,7 +38,7 @@ Our Analytics API provides 2 different alerting routes ([API Docs](https://metri
 
 ### nanostream Cloud Dashboard
 
-After you login with your credentials, you can access the alerting overview on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts). Please refer to the corresponding feature documentation on the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Overview.md). There you can find additional guidelines and useful explanations for your first hands on!
+You can view the alerting overview directly on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts). For a detailed guide and additional insights, please refer to the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Alerting.md). This resource offers explanations to ensure you make the most out of the features available.
 
 ## Steps to solve alerted issues
 
@@ -49,19 +49,23 @@ After you login with your credentials, you can access the alerting overview on t
 
 ## Alert Codes
 
-### <span className="badge badge-heading analytics-alertHeading-general"> 21000 - 21999 &nbsp</span>
+### 21000 - 21999
 
 | Code | Type | Description | Recommended Action |
 | ---- | ---- | ----------- | ------------------ |
 | 21001 | Offline | The ingest stream is offline, but is expected to ingest. | Restart the stream. |
 
-### <span className="badge badge-heading analytics-alertHeading-stability"> 22000 - 22999 &nbsp</span>
+-----
+
+### 22000 - 22999
 
 | Code | Type | Description | Recommended Action | 
 | ---- | ---- | ----------- | ------------------ |
 | 22001 | Continous Restarts | The ingest stream starts and stops continuously. | Restart the stream. |
 
-### <span className="badge badge-heading analytics-alertHeading-performance"> 23000 - 23999 &nbsp</span>
+-----
+
+### 23000 - 23999
 
 <!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 
@@ -89,7 +93,9 @@ After you login with your credentials, you can access the alerting overview on t
     </tbody>
 </table>
 
-### <span className="badge badge-heading analytics-alertHeading-infrastructure"> 24000 - 24999 &nbsp</span>
+-----
+
+### 24000 - 24999
 
 <!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 

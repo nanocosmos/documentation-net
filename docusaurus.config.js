@@ -74,7 +74,7 @@ const config = {
         },
       },
       // Social Card
-      image: 'static/img/social-card.jpg',
+      image: 'img/social-card.jpeg',
       // Navbar
       navbar: {
         style: 'primary',
