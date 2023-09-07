@@ -94,7 +94,15 @@ const config = {
             sidebarid: "nanoStream Cloud",
             position: 'left',
             label: "nanoStream Cloud",
-          }, {
+          }, 
+          // {
+          //   type: 'doc',
+          //   docId: 'cloud-frontend-v3/Dashboard_Overview',
+          //   sidebarid: "Dashboard_Overview",
+          //   position: 'left',
+          //   label: "Dashboard",
+          // }, 
+          {
             type: 'doc',
             docId: 'nanoplayer/nanoplayer_introduction',
             sidebarid: "H5Live Player",

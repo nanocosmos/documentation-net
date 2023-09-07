@@ -129,3 +129,56 @@
   max-width: 1200px;
 }
 
+/* BEGINN --> These classes were designed for the analytics alerting page. */ 
+.badge {
+  display: inline-block;
+  padding: 4px 6px;
+  background-color: #ed7d0e;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.badge-heading {
+  font-size: 18px;
+}
+
+.badge-inText {
+  font-size: 18px;
+}
+
+.badge-criticalAlert {
+  background-color: #D22315;
+}
+
+.badge-moderateAlert {
+  background-color: #ef5350; 
+}
+
+.badge-minorAlert {
+  background-color: #ef9a9a;
+}
+
+.badge-adviceAlert {
+  background-color: #03a9f4;
+}
+
+.analytics-alertHeading-general::after {
+  content: 'General Alerts'
+}
+
+.analytics-alertHeading-stability::after {
+  content: 'Stability Alerts'
+}
+
+.analytics-alertHeading-performance::after {
+  content: 'Performance Alerts'
+}
+
+.analytics-alertHeading-infrastructure::after {
+  content: 'Infrastructure Alerts'
+}
+/* END --> Analytics Alerting Section */
