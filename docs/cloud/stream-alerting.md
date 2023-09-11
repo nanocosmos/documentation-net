@@ -11,7 +11,9 @@ The general purpose of stream alerts is providing more transparent insights abou
 The current version supports ingest related quality and performance issues of the first mile, meaning from your ingest point via your ISP to our nearest ingest server.   
 :::
 
-## Before starting
+**Important Note:** The used <u>**analysis algorithm**</u> for this alerting feature is based on the stream quality and performance logs of the <u>**previous 15 minutes**</u>.
+
+### Before starting
 To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 
