@@ -65,7 +65,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 **1.** Open up the corresponding stream playback within the dashboard and look out for anomalies, like continous buffering, stuttering, visual or connection issues.<br/>
 **2.** Execute a hard restart of the ingest connection / encoder source to force application to restart the ingest process.<br/>
 **3.** Use the link to the trouble shooting page to investigate the ingest stream, while looking for anomalies within the stream duration, like performance drops or occurred errors.<br/>
-**4.** If the alert persists, please use the support link of the correspondig alert below to submit a ticket with the necessary details. 
+**4.** If the alert persists, please use the support link of the corresponding alert below to submit a ticket with the necessary details. 
 
 ## Alert Codes
 
