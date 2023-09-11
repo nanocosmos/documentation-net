@@ -511,7 +511,6 @@ var source = {
             'method': 'server',
             'pauseOnError': false,
             'forcePlay': true,
-            'fastStart': false,
             'timeout': 20
         }
     },
@@ -2614,7 +2613,7 @@ The config object to pass as param for the 'setup' call.
     <td>[source.options.switch.forcePlay]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>If set the player starts playback in case the player is paused. Default is true.</p>
 </td>
     </tr><tr>
-    <td>[source.options.switch.fastStart]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>Only if method is &#39;server&#39;. Tries to accelerate the startup time of the new source. Default is false.</p>
+    <td>[source.options.switch.fastStart]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>DEPRECATED. Only if method is &#39;server&#39;. Tries to accelerate the startup time of the new source. Default is false.</p>
 </td>
     </tr><tr>
     <td>[source.options.switch.timeout]</td><td><code>number</code></td><td><code>20</code></td><td><p>The timeout for the update source request in seconds. If reached the error 4006 will thrown in the <a href="#NanoPlayer..event_onUpdateSourceFail">&#39;onUpdateSourceFail&#39;</a> and the <a href="#NanoPlayer..event_onSwitchStreamFail">&#39;onSwitchStreamFail&#39;</a> event. Default is 20 seconds, valid range is between 5 and 30.</p>
@@ -3059,7 +3058,6 @@ var config = {
                 'method': 'server',
                 'pauseOnError': false,
                 'forcePlay': true,
-                'fastStart': false,
                 'timeout': 20
             }
         },
@@ -3437,7 +3435,6 @@ var source = {
             'method': 'server',
             'pauseOnError': false,
             'forcePlay': true,
-            'fastStart': false,
             'timeout': 20
         }
     },
