@@ -73,7 +73,12 @@ Determine if the alert message is self-explanatory. Often, the alert might provi
 Always consult the [metrics documentation](../cloud/stream-alerting.md) for a deeper understanding of the alert and the recommended corrective actions.
 
 **3. Troubleshoot the Alert**:
-If the problem persists or isn't evident, consider using our troubleshooting tools available on the metrics dashboard.
+If the problem persists or isn't evident, consider using our troubleshooting tools available on the [metrics dashboard](https://metrics.nanocosmos.de/). 
+
+:::tip Troubleshooting
+The trouble shooting page on the [metrics dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser.
+Learn more on how to troubleshoot [here](../cloud/troubleshooting).
+:::
 
 **4. Contact Support**:
 If challenges persist, we're here to help! [Create a new support request](https://www.nanocosmos.de/support) and ensure you attach all relevant data related to the alert. Our team will address your concerns promptly.
@@ -86,6 +91,6 @@ Advices provide recommendations and best practices to enhance the quality and vi
 
 | Field     | Value                                                              | Explanation |
 |-----------|--------------------------------------------------------------------|-------------|
-| Code      | `1001`                                                           | A unique code for the advice type. Read more [here](../cloud/stream-alerting.md#advices)|
+| Code      | `29001`                                                           | A unique code for the advice type. Read more [here](../cloud/stream-alerting.md#advices)|
 | Type      | ABR Recommended                                                    | The nature of the advice. |
 | Message   | The ingest stream has a high bitrate. Consider using adaptive bitrate streams to ensure smooth playback for viewers with poor connections. | A detailed description of the advice, providing actionable recommendations. |
