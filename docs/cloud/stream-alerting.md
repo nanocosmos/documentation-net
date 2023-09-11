@@ -43,10 +43,10 @@ Lastly we fire an **<u>Advice</u>** for non-ABR streams with a higher bitrate th
 ## Alert Categories and Severity Levels
 
 Alerts are categorized in multiple **severity levels**, that should help to prioritize them, such as: <span className="badge badge-criticalAlert">Critical</span>, <span className="badge badge-moderateAlert">Moderate</span>, <span className="badge badge-minorAlert">Minor</span> and <span className="badge badge-adviceAlert">Advices</span>. Each alert is part of an specific **alert category** and owns a unique alert code:
-- [**General Alerts**](#21000---21999) ranging from **21000** to **21999**
-- [**Stability Alerts**](#22000---22999) ranging from **22000** to **22999**
-- [**Performance Alerts**](#23000---23999) ranging from **23000** to **23999**
-- [**Infrastructure Alerts**](#24000---24999) ranging from **24000** to **24999**
+- [**General Alerts**](#-21000---21999-) ranging from **21000** to **21999**
+- [**Stability Alerts**](#-22000---22999-) ranging from **22000** to **22999**
+- [**Performance Alerts**](#-23000---23999-) ranging from **23000** to **23999**
+- [**Infrastructure Alerts**](#-24000---24999-) ranging from **24000** to **24999**
 
 ## How to use
 
@@ -69,7 +69,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 ## Alert Codes
 
-### <span className="badge badge-heading analytics-alertHeading-general"> 21000 - 21999 &nbsp </span>
+### <span className="badge badge-heading analytics-alertHeading-general"> 21000 - 21999 &nbsp</span>
 
 | Code | Type | Description | Recommended Action |
 | ---- | ---- | ----------- | ------------------ |
@@ -77,7 +77,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### <span className="badge badge-heading analytics-alertHeading-stability"> 22000 - 22999 &nbsp </span>
+### <span className="badge badge-heading analytics-alertHeading-stability"> 22000 - 22999 &nbsp</span>
 
 | Code | Type | Description | Recommended Action | 
 | ---- | ---- | ----------- | ------------------ |
@@ -85,7 +85,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### <span className="badge badge-heading analytics-alertHeading-performance"> 23000 - 23999 &nbsp </span>
+### <span className="badge badge-heading analytics-alertHeading-performance"> 23000 - 23999 &nbsp</span>
 
 <!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 
@@ -115,7 +115,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### <span className="badge badge-heading analytics-alertHeading-infrastructure"> 24000 - 24999 &nbsp </span>
+### <span className="badge badge-heading analytics-alertHeading-infrastructure"> 24000 - 24999 &nbsp</span>
 
 <!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 
