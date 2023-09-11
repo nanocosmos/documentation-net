@@ -11,8 +11,6 @@ The general purpose of stream alerts is providing more transparent insights abou
 The current version supports ingest related quality and performance issues of the first mile, meaning from your ingest point via your ISP to our nearest ingest server.   
 :::
 
-**Important Note:** The used <u>**analysis algorithm**</u> for this alerting feature is based on the stream quality and performance logs of the <u>**previous 15 minutes**</u>.
-
 ### Before starting
 To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
@@ -22,13 +20,33 @@ Alerts are effortlessly activated for all organizations by default.
 Starting from version `3.7.x.x` onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
 :::
 
+### Details of the Ingest Stream Analysis
+
+**<u>Important Note:</u>** The used **analysis algorithm** for this alerting feature is based on the stream quality and performance logs of the **previous 15 minutes**.
+
+The analysis for live stream alerts is executed every minute. The considered time ranges for the calculation are:  
+- end: `start of current minute`
+- start: `end - 15 minutes`
+
+The algorithm makes use of 4 RTMP stats events for each minute. For the maximum of the 15 minute interval up to 60 events are collected in total. These events contain information regarding the stream time ratio, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts.
+
+At first we separate (re)started ingest stream events and continous events. Every stream is checked regarding the average of all stream time ratio values < 0.9. Meeting the condition of case 1 and/or case 2 in at least **5** stream time ratio values, fires **<u>Performance Alerts</u>**, like:
+- Case 1: `stream time ratio < 0.93 && > 0.86` **(Suboptimal Performance)**
+- Case 2: `stream time ratio <= 0.86` **(Poor Performance)**
+
+After this the amount of occured restart events is analysed. Meeting the condition of having at least **6 restarts** within the 15 minute range is considered as **<u>Stability Issue</u>** and therefore fires a **Continous Restarts Alert**.
+
+Issues regarding the underlying **<u>Infrastructure</u>** of the corresponding stream are detected by analysing just the passthrough (non-transcoding) streams. Finding multiple references on different server instances fires a **Duplicated Ingest Alert**. Depending on the passthrough ingest location or source, the specific alert varies slightly.
+
+Lastly we fire an **<u>Advice</u>** for non-ABR streams with a higher bitrate than 4 MBit on every RTMP stat event. If you encounter such an advice, please consider using transcoding profiles ([activating ABR](../cloud-frontend/How_to_Use_Transcoding.md)) to insure a better streaming experience for clients located in lower bandwith regions.
+
 ## Alert Categories and Severity Levels
 
 Alerts are categorized in multiple **severity levels**, that should help to prioritize them, such as: <span className="badge badge-criticalAlert">Critical</span>, <span className="badge badge-moderateAlert">Moderate</span>, <span className="badge badge-minorAlert">Minor</span> and <span className="badge badge-adviceAlert">Advices</span>. Each alert is part of an specific **alert category** and owns a unique alert code:
-- [**General Alerts**](#-21000---21999-) ranging from 21000 to 21999
-- [**Stability Alerts**](#-22000---22999-) ranging from 22000 to 22999
-- [**Performance Alerts**](#-23000---23999-) ranging from 23000 to 23999
-- [**Infrastructure Alerts**](#-24000---24999-) ranging from 24000 to 24999
+- [**General Alerts**](#21000---21999) ranging from **21000** to **21999**
+- [**Stability Alerts**](#22000---22999) ranging from **22000** to **22999**
+- [**Performance Alerts**](#23000---23999) ranging from **23000** to **23999**
+- [**Infrastructure Alerts**](#24000---24999) ranging from **24000** to **24999**
 
 ## How to use
 
@@ -51,7 +69,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 ## Alert Codes
 
-### 21000 - 21999
+### <span className="badge badge-heading analytics-alertHeading-general"> 21000 - 21999 &nbsp </span>
 
 | Code | Type | Description | Recommended Action |
 | ---- | ---- | ----------- | ------------------ |
@@ -59,7 +77,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### 22000 - 22999
+### <span className="badge badge-heading analytics-alertHeading-stability"> 22000 - 22999 &nbsp </span>
 
 | Code | Type | Description | Recommended Action | 
 | ---- | ---- | ----------- | ------------------ |
@@ -67,7 +85,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### 23000 - 23999
+### <span className="badge badge-heading analytics-alertHeading-performance"> 23000 - 23999 &nbsp </span>
 
 <!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 
@@ -97,7 +115,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### 24000 - 24999
+### <span className="badge badge-heading analytics-alertHeading-infrastructure"> 24000 - 24999 &nbsp </span>
 
 <!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 
