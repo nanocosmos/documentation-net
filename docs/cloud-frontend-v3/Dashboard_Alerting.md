@@ -51,8 +51,8 @@ In addition to the stream-specific details, there are specific [alert informatio
 Alerts are immediate notifications generated when there's a potential issue or a noteworthy event related to your live streams.
 
 
-![Screenshot: Expanded Moderate Alert](../assets/cloud-frontend/cf-moderate-alerts.png)
-*Screenshot: Expanded Moderate Alerts*
+![Screenshot: Expanded Critical Alert](../assets/cloud-frontend/cf-critical-alerts.png)
+*Screenshot: Expanded Critical Alerts*
 
 
 ### Alert Info
