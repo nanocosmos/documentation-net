@@ -4,26 +4,43 @@ title: Latest Release
 sidebar_label: Latest
 ---
 
-## Please find more about the **media error recovery** feature in our [documentation](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_media_error_recovery/)
+## Please find more about the **fast playback start** feature in our [documentation](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_fast_start/)
 
-## **[4.20.4]**
+## **[4.22.0]**
 
 ### **Release Notes**
 
-This version fixes an issue that occurred when attempting media error recovery immediately after a switch stream fail on iOS. The issue was introduced in version 4.20.2. Additionally, an issue related to the `interactionrequired` error with code `1005` on iOS has been resolved. The `onStreamInfo` event will now be fired correctly before the `onError` and `onPause` events. This problem was introduced with the release of version 4.20.3.
+This version is introducing the new Fast Start Mode feature that enhances playback start-up times with nanoStream Cloud.
+This cutting-edge addition allows you to significantly reduce startup times when initiating playback.
+Fast Start Mode can be enabled using the configuration setting `config.playback.faststart`.
+Please note that it is disabled by default, so you have full control over its activation.
+The unused option `config.source.options.switch.fastStart` has been deprecated.
 
-Furthermore, a minor issue regarding the automute feature at delayed play attempts without prior or direct user interaction has been fixed. The same applies to unmute attempts without user interaction during playback, that was started in `muted` state. These attempts will now result in muted playback or, in the case of automute being disabled, in error `1005`.
+Furthermore we have improved the Adaptive Bitrate (ABR) initial switch-up behavior in case of degraded network conditions.
+In addition, a layout issue that occured after exiting fullscreen mode in Safari 16.5 macOS has been fixed.
 
 ### **Changelog**
 
+### Added
+
+- fast start mode feature for improved playback start-up times with nanoStream Cloud
+  - can be enabled via boolean `config.playback.faststart`, disabled by default
+  - fast start related values in `onStreamInfo` and `onPlay` event
+
+### Improved
+
+- initial ABR switch up behaviour in case of degraded network conditions
+
 ### Fixed
 
-- issue in case of a media error recovery immediately after a switch stream fail
-- correct emitting of `onStreamInfo` in case of the error `1005` `interactionrequired` on iOS
-- automute behaviour at delayed play or unmute attempts without prior or direct user interaction on iOS
+- layout issue after exiting fullscreen mode in Safari 16.5 macOS
+
+## Removed
+
+- deprecated unused option `config.source.options.switch.fastStart`
 
 ### **Release Package**
 
-- [4.20.4](https://files.nanocosmos.de/index.php/s/jJgLQ3a2n3EXWtB)
+- [4.22.0](https://files.nanocosmos.de/index.php/s/yMLjK43fsnHotwe)
 - [latest 4.x](https://files.nanocosmos.de/index.php/s/4nndC45mcB6oSa6)
 - [latest](https://files.nanocosmos.de/index.php/s/2tpCzgRjNEZDzeP)

@@ -103,6 +103,7 @@ const sidebars = {
       "collapsed": false,
       "items": [
         "nanoplayer/nanoplayer_autoplay",
+        "nanoplayer/nanoplayer_feature_fast_start",
         "nanoplayer/nanoplayer_feature_latency_control_modes",
         "nanoplayer/nanoplayer_feature_stream_group_configuration",
         "nanoplayer/nanoplayer_token_security",
