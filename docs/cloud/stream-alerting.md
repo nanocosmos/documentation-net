@@ -139,4 +139,4 @@ Advices can be seen as low priority alerts and shall inform you about possible i
 
 | Code | Description | Recommended Action |
 | ---- | ----------- | ------------------ |
-| 01001 | The ingest stream has a high bitrate. Viewers with poor connection might not be able to playback the stream smoothly. | Consider to use adaptive bitrate streams with different transcoding profiles. |
+| 29001 | The ingest stream has a high bitrate. Viewers with poor connection might not be able to playback the stream smoothly. | Consider to use adaptive bitrate streams with different transcoding profiles. |
