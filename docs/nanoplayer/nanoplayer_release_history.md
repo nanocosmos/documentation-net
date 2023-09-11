@@ -6,6 +6,41 @@ sidebar_label: History
 
 # **NanoPlayer - Release History**
 
+## Please find more about the **fast playback start** feature in our [documentation](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_fast_start/)
+
+## **[4.22.0]**
+
+### **Release Notes**
+
+This version is introducing the new Fast Start Mode feature that enhances playback start-up times with nanoStream Cloud.
+This cutting-edge addition allows you to significantly reduce startup times when initiating playback.
+Fast Start Mode can be enabled using the configuration setting `config.playback.faststart`.
+Please note that it is disabled by default, so you have full control over its activation.
+The unused option `config.source.options.switch.fastStart` has been deprecated.
+
+Furthermore we have improved the Adaptive Bitrate (ABR) initial switch-up behavior in case of degraded network conditions.
+In addition, a layout issue that occured after exiting fullscreen mode in Safari 16.5 macOS has been fixed.
+
+### **Changelog**
+
+### Added
+
+- fast start mode feature for improved playback start-up times with nanoStream Cloud
+  - can be enabled via boolean `config.playback.faststart`, disabled by default
+  - fast start related values in `onStreamInfo` and `onPlay` event
+
+### Improved
+
+- initial ABR switch up behaviour in case of degraded network conditions
+
+### Fixed
+
+- layout issue after exiting fullscreen mode in Safari 16.5 macOS
+
+## Removed
+
+- deprecated unused option `config.source.options.switch.fastStart`
+
 ## Please find more about the **media error recovery** feature in our [documentation](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_media_error_recovery/)
 
 ## **[4.20.4]**
@@ -1273,7 +1308,7 @@ This release patches an issue with bintu sources. Now after a successful bintu c
 ### **Release Notes**
 
 With this release come new features and some patches. One feature is about firing 'onError' with new error codes in case of a setup error. See the docs for more information (<https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc21__anchor>). Also a warnings will be fired if config properties are not valid or from wrong type.
-The other introduces a new metrics api which enables internal event logging and data aggregation with a nanocosmos backend. Please contact our sales team (mailto:sales@nanocosmos.de) for more information and see './js/nanoplayer-metrics-config.js' in the 'Demo Package'. This release also includes patches for IE/Edge regarding play stats and stable playback after viewport lost.
+The other introduces a new metrics api which enables internal event logging and data aggregation with a nanocosmos backend. Please contact our sales team (mailto:<sales@nanocosmos.de>) for more information and see './js/nanoplayer-metrics-config.js' in the 'Demo Package'. This release also includes patches for IE/Edge regarding play stats and stable playback after viewport lost.
 Now also 'Windows 10' will be detected correctly and on 'Destroy' pause will be fired only if playing.
 
 ### **Changelog**
@@ -1310,7 +1345,7 @@ Now also 'Windows 10' will be detected correctly and on 'Destroy' pause will be 
   - enables event logging and data aggregation
   - configurable via the new 'config.metrics' object, see <https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc20__anchor>
   - disabled by default
-  - for more information contact our sales team: mailto:sales@nanocosmos.de
+  - for more information contact our sales team: mailto:<sales@nanocosmos.de>
   - NOTE: don't set if you have no account!
   - NOTE: if 'Demo Package' is used see './js/nanoplayer-metrics-config.js'!
 
@@ -1349,7 +1384,7 @@ The second feature is the new public event 'onDestroy'. This event is fired when
   - subobject 'stats' in 'event.data'
   - keys: 'connecting', 'connected', 'firstFragmentReceived', 'firstFrameRendered', 'playable', 'playing'
   - times in milliseconds relative to 'connecting'
-  - see 'https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#~event:onPlay'
+  - see '<https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#~event:onPlay>'
   - an example 'event.data.stats' object:
 
 ````javascript
