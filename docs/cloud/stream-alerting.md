@@ -1,7 +1,7 @@
 ---
 id: alerting        
-title: Alerting Feature
-sidebar_label: Alerts
+title: Alerts and Advices
+sidebar_label: Alerts and Advices
 ---
 
 ## Introduction
@@ -17,16 +17,18 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 :::tip Good to know
 Alerts are effortlessly activated for all organizations by default.
-Starting from version `3.7.x.x` onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
+Starting from version `3.7.1.0` onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
 :::
 
 ### Details of the Ingest Stream Analysis
 
-**<u>Important Note:</u>** The used **analysis algorithm** for this alerting feature is based on the stream quality and performance logs of the **previous 15 minutes**.
+:::caution important note
+The used **analysis algorithm** for this alerting feature is based on the stream quality and performance logs of the **previous 15 minutes**.
+:::
 
 The analysis for live stream alerts is executed every minute. The considered time ranges for the calculation are:  
-- end: `start of current minute`
-- start: `end - 15 minutes`
+- End: `start of current minute`
+- Start: `end - 15 minutes`
 
 The algorithm makes use of 4 RTMP stats events for each minute. For the maximum of the 15 minute interval up to 60 events are collected in total. These events contain information regarding the stream time ratio, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts.
 
@@ -38,7 +40,7 @@ After this the amount of occured restart events is analysed. Meeting the conditi
 
 Issues regarding the underlying **<u>Infrastructure</u>** of the corresponding stream are detected by analysing just the passthrough (non-transcoding) streams. Finding multiple references on different server instances fires a **Duplicated Ingest Alert**. Depending on the passthrough ingest location or source, the specific alert varies slightly.
 
-Lastly we fire an **<u>Advice</u>** for non-ABR streams with a higher bitrate than 4 MBit on every RTMP stat event. If you encounter such an advice, please consider using transcoding profiles ([activating ABR](../cloud-frontend/How_to_Use_Transcoding.md)) to insure a better streaming experience for clients located in lower bandwith regions.
+Lastly we fire an **<u>Advice</u>** for non-ABR streams with a higher bitrate than 4 MBit on every RTMP stat event. If you encounter such an advice, please consider using transcoding profiles ([Activating ABR](../cloud-frontend-v3/Dashboard_ABR_Transcoding)) to insure a better streaming experience for clients located in lower bandwith regions.
 
 ## Alert Categories and Severity Levels
 
@@ -52,13 +54,35 @@ Alerts are categorized in multiple **severity levels**, that should help to prio
 
 ### Analytics API
 
-Our Analytics API provides 2 different alerting routes ([API Docs](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting)).
-- via `GET` - route you can check if alerts currently exist for any of your current live streams.
-- via `POST` - route you can pass ingest streams that should either be excluded from detection or define ingest streams for which an alert should be triggered if they are detected as offline.
+Our Analytics API provides 2 different alerting routes:
+
+> [Click here](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting) to dive into the alerting routes and visit our nanoStream Analytics API developer documentation.
+
+- **[`GET` Ingest stream alerts/advices](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting/paths/~1api~1v2~1alerting~1ingest/get)**: Returns all detected alerts and advices for all live ingest streams in the last 15 minutes.
+- **[`POST` Custom ingest stream alerts/advices](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting/paths/~1api~1v2~1alerting~1ingest~1custom/post)**: Returns all detected alerts and advices for all live ingest streams in the last 15 minutes. Additionally, through this API route, it is possible to pass ingest streams that should either be excluded from detection or define ingest streams for which an alert should be triggered if they are detected as offline.
 
 ### nanostream Cloud Dashboard
 
-You can view the alerting overview directly on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts). For a detailed guide and additional insights, please refer to the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Alerting.md). This resource offers explanations to ensure you make the most out of the features available.
+You can view the alerting overview directly on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts). For a detailed guide and additional insights, please refer to the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Alerting). This resource offers explanations to ensure you make the most out of the features available.
+
+<article class="margin-top--lg">
+    <section class="row list_ZO3j">
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="https://dashboard.nanostream.cloud/alerts">
+                <h2 class="text--truncate cardTitle_dwRT" title="Playground">Dashboard</h2>
+                <p class="text--truncate cardDescription_mCBT">
+                  The nanoStream Cloud Dashboard is a web-based tool implemented and designed to provide users with an intuitive and comprehensive overview of their streaming activities.
+                </p>
+            </a></article>
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="../cloud-frontend-v3/Dashboard_Alerting">
+                <h2 class="text--truncate cardTitle_dwRT" title="TypeScript Support">Dashboard Docs</h2>
+                <p class="text--truncate cardDescription_mCBT">
+                    The dashboard docs offer explanations to ensure you make the most out of the features available.
+                </p>
+            </a></article>
+    </section>
+</article>
 
 ## Steps to solve alerted issues
 
@@ -69,7 +93,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 ## Alert Codes
 
-### <span className="badge badge-heading analytics-alertHeading-general"> 21000 - 21999 &nbsp</span>
+### `21000 - 21999`
 
 | Code | Type | Description | Recommended Action |
 | ---- | ---- | ----------- | ------------------ |
@@ -77,7 +101,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### <span className="badge badge-heading analytics-alertHeading-stability"> 22000 - 22999 &nbsp</span>
+### `22000 - 22999`
 
 | Code | Type | Description | Recommended Action | 
 | ---- | ---- | ----------- | ------------------ |
@@ -85,7 +109,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### <span className="badge badge-heading analytics-alertHeading-performance"> 23000 - 23999 &nbsp</span>
+### `23000 - 23999`
 
 <!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 
@@ -115,7 +139,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
 
 -----
 
-### <span className="badge badge-heading analytics-alertHeading-infrastructure"> 24000 - 24999 &nbsp</span>
+### `24000 - 24999`
 
 <!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 

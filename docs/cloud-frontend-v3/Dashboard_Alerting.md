@@ -6,8 +6,8 @@ sidebar_label: Alerts and Advices
 
 # Analytics: Alerts and Advices
 
-:::note Analytics Enhancement from Version `3.7.x.x`
-With the release of version `3.7.x.x`, the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/) has enhanced its user interface in addition to the [Metrics Dashboard](https://metrics.nanocosmos.de).
+:::note Analytics Enhancement from Version `3.7.1.0`
+With the release of version `3.7.1.0`, the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/) has enhanced its user interface in addition to the [Metrics Dashboard](https://metrics.nanocosmos.de).
 :::
 
 ## General
