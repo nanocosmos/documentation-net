@@ -60,23 +60,27 @@ Alerts are immediate notifications generated when there's a potential issue or a
 | Field     | Value    | Explanation |
 |-----------|---------------------------|-------------|
 | Severity  | <span className="badge badge-criticalAlert">Critical</span> | <span className="badge badge-criticalAlert">Critical</span>, <span className="badge badge-moderateAlert">Moderate</span>, <span className="badge badge-minorAlert">Minor</span> or <span className="badge badge-adviceAlert">Advices</span> |
-| Code      | `22001`                      | A unique code for the alert type. Read more [here](../cloud/stream-alerting.md#alert-codes)|
+| Code      | `22001`                      | A unique code for the alert type. Read more [here](../cloud/stream-alerting.md#alert-codes).|
 | Type      | Continuous Restarts       | The nature of the alert.|
 | Message   | The ingest stream starts and stops continuously. | A detailed description of the alert.|
 
 ### Responding to Alerts
 
+:::tip nanoStream Analytics Documentation
+To learn more about the *Alerts & Advices* feature, you can visit our dedicated [alerts documentation](../cloud/alerting) as part of our analytics documentation. You will be able to understand how it works and how to proceed once you get an alert or advice.
+:::
+
 **1. Understand the Message**:
 Determine if the alert message is self-explanatory. Often, the alert might provide clear insights into the issue and potential remedies.
 
 **2. Refer to the Documentation**:
-Always consult the [metrics documentation](../cloud/stream-alerting.md) for a deeper understanding of the alert and the recommended corrective actions.
+Always consult the [metrics documentation](../cloud/stream-alerting#steps-to-solve-alerted-issues) for a deeper understanding of the alert and the recommended corrective actions.
 
 **3. Troubleshoot the Alert**:
 If the problem persists or isn't evident, consider using our troubleshooting tools available on the [metrics dashboard](https://metrics.nanocosmos.de/). 
 
-:::tip Troubleshooting
-The trouble shooting page on the [metrics dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser.
+:::note Troubleshooting
+The troubleshooting page on the [metrics dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser.
 Learn more on how to troubleshoot [here](../cloud/troubleshooting).
 :::
 
@@ -91,6 +95,6 @@ Advices provide recommendations and best practices to enhance the quality and vi
 
 | Field     | Value                                                              | Explanation |
 |-----------|--------------------------------------------------------------------|-------------|
-| Code      | `29001`                                                           | A unique code for the advice type. Read more [here](../cloud/stream-alerting.md#advices)|
+| Code      | `29001`                                                           | A unique code for the advice type. Read more [here](../cloud/stream-alerting.md#advices).|
 | Type      | ABR Recommended                                                    | The nature of the advice. |
 | Message   | The ingest stream has a high bitrate. Consider using adaptive bitrate streams to ensure smooth playback for viewers with poor connections. | A detailed description of the advice, providing actionable recommendations. |
