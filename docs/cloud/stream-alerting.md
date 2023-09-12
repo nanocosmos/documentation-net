@@ -63,9 +63,19 @@ Our Analytics API provides 2 different alerting routes:
 
 ### nanostream Cloud Dashboard
 
-You can view the alerting overview directly on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts). For a detailed guide and additional insights, please refer to the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Alerting). This resource offers explanations to ensure you make the most out of the features available.
+> You can view **Alerts and Advices** of your organization directly on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts).
 
-<article class="margin-top--lg">
+:::info Analytics Enhancement from Version `3.7.1.0`
+With the release of version `3.7.1.0`, the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/) has enhanced its user interface in addition to the [Metrics Dashboard](https://metrics.nanocosmos.de). <br/>
+For a detailed guide and additional insights in regards of the **Alerts and Advices** feature, please refer to the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Alerting). This resource offers explanations to ensure you make the most out of the features available.
+:::
+
+
+![Screenshot: Alerts and Advices](../assets/cloud-frontend/cf-critical-alerts.png)
+*Screenshot: Alerts and Advices*
+
+
+<!-- <article class="margin-top--lg">
     <section class="row list_ZO3j">
         <article class="col col--6 margin-bottom--lg">
             <a class="card padding--lg cardContainer_Uewx" href="https://dashboard.nanostream.cloud/alerts">
@@ -82,7 +92,7 @@ You can view the alerting overview directly on the [nanoStream Cloud Dashboard](
                 </p>
             </a></article>
     </section>
-</article>
+</article> -->
 
 ## Steps to solve alerted issues
 

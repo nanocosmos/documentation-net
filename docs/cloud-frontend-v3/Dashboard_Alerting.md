@@ -60,7 +60,7 @@ Alerts are immediate notifications generated when there's a potential issue or a
 | Field     | Value    | Explanation |
 |-----------|---------------------------|-------------|
 | Severity  | <span className="badge badge-criticalAlert">Critical</span> | <span className="badge badge-criticalAlert">Critical</span>, <span className="badge badge-moderateAlert">Moderate</span>, <span className="badge badge-minorAlert">Minor</span> or <span className="badge badge-adviceAlert">Advices</span> |
-| Code      | `22001`                      | A unique code for the alert type. Read more [here](../cloud/stream-alerting.md#alert-codes).|
+| Code      | `22001`                      | A unique code for the alert type. By clicking on the button, you will be redirected to the [analytics documentation](../cloud/stream-alerting.md#alert-codes), where you can learn what this specific error code means.|
 | Type      | Continuous Restarts       | The nature of the alert.|
 | Message   | The ingest stream starts and stops continuously. | A detailed description of the alert.|
 
