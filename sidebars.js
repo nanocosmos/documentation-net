@@ -52,22 +52,19 @@ const sidebars = {
             "cloud-frontend-v3/Dashboard_Secure",
             "cloud-frontend-v3/Dashboard_nanoPlayer"
           ]
-        }
+        },
+        {
+          "type": "category",
+          "label": "Analytics",
+          "collapsible": true,
+          "collapsed": false,
+          "items": [
+            "cloud-frontend-v3/Dashboard_Metrics",
+            "cloud-frontend-v3/Dashboard_Alerting",
+          ]
+        },
       ]
     },
-    // {
-    //   "type": "category",
-    //   "label": "nanoMeet",
-    //   "collapsible": true,
-    //   "collapsed": true,
-    //   "items": [
-    //     "nanomeet/introduction",
-    //     "nanomeet/getting-started",
-    //     "nanomeet/samples",
-    //     "nanomeet/source-code",
-    //     "nanomeet/api",
-    //   ]
-    // },
     {
       "type": "category",
       "label": "REST API",
@@ -249,9 +246,19 @@ const sidebars = {
     "cloud/analytics",
     "cloud/worldmap",
     "cloud/analytics-zoom",
-    "cloud/troubleshooting",
+    {
+      "type": "category",
+      "label": "Alerts",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "cloud/alerting",
+        "cloud/troubleshooting",
+      ]
+    },
     "cloud/analytics-guardian",
-    "cloud/analytics-api"
+    "cloud/analytics-api",
+
   ],
   "FAQ": [
     "faq/faq",

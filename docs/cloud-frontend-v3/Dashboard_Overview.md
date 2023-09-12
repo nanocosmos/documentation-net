@@ -53,12 +53,14 @@ If you can see the trial flag in the header, it means that you are currently in 
 
 ## Dashboard
 
-The Dashboard page of the nanoStream Cloud Dashboard provides a summary of your streaming activities. It includes the count of all streams, ended streams, created streams, live streams, and deleted streams. Additionally, it displays the details of your latest 5 streams. This gives you a quick overview of your streaming status and recent activities.
+The Dashboard page of the nanoStream Cloud Dashboard provides a summary of your streaming activities. It includes the count of all streams, ended streams, created streams, live streams, and deleted streams. Additionally, it displays the details of your latest 5 streams. 
+
+Furthermore, it displays the number of alerts, provides an insight into the health status of your live streams, and aggregates the total usage of your streaming traffic. This consolidated view ensures you're always informed and can make data-driven decisions regarding your streams.
 
 
 > [Click here](https://dashboard.nanostream.cloud/) to see the dashboard.
 
-![Screenshot: Dashboard Overview](../assets/cloud-frontend/cf-dashboard.jpg)
+![Screenshot: Dashboard Overview](../assets/cloud-frontend/cf-dashboard.png)
 *Screenshot: Dashboard Overview*
 
 ## All Streams
@@ -194,6 +196,34 @@ The nanoPlayer in the Cloud Dashboard plays all your streams and lets you access
    - Utilize the iframe embed URL to seamlessly integrate the nanoPlayer into any webpage.
 6. **Code Snippets for NanoPlayer Integration**:
    - Simplify the integration process by using provided code snippets, such as an iframe embed tag or a nanoStream H5Live code snippet, to seamlessly embed the nanoPlayer onto your webpage.
+
+## Metrics
+
+The nanoStream Cloud Dashboard seamlessly integrates with our Analytics API. This connection allows users to harness detailed insights and statistical data, offering a more comprehensive view of their streaming activities directly from the dashboard. Leveraging these analytics can greatly enhance the management and understanding of your streaming operations.
+
+> [Click here](https://dashboard.nanostream.cloud/metrics) to check your traffic.
+
+:::tip Learn More
+Visit our dedicated [metrics documentation](./Dashboard_Metrics) for a detailed understanding of alerts and how to use them in the nanoStream Cloud Dashboard.
+:::
+
+![Screenshot: Metrics Overview](../assets/cloud-frontend/cf-metrics.jpg)
+*Screenshot: Metrics Overview*
+
+## Alerts and Advices
+
+The Alerts and Advices page in the nanoStream Cloud Dashboard offers an in-depth perspective on the performance and potential issues of your streams. By monitoring real-time feedback, you can gain transparent insights into the current live stream performance, identify potential causes, and explore suggested solutions.
+
+> [Click here](https://dashboard.nanostream.cloud/alerts) to explore them.
+
+Alerting focuses on real-time notifications about performance, stability, and technical challenges, guiding you toward immediate remedies for a better streaming experience. Metrics, on the other hand, provide a detailed analysis of stream data, helping you understand usage patterns, viewer engagement, and other valuable metrics.
+
+:::tip Learn More
+Visit our dedicated [alerts documentation](./Dashboard_Alerting) for a detailed understanding of alerts and how to use them in the nanoStream Cloud Dashboard.
+:::
+
+![Screenshot: Alerts and Advices Overview](../assets/cloud-frontend/cf-alerts-page.png)
+*Screenshot: Alerts and Advices Overview*
 
 ## Organisation Area
 
