@@ -79,8 +79,8 @@ Always consult the [metrics documentation](../cloud/stream-alerting#steps-to-sol
 **3. Troubleshoot the Alert**:
 If the problem persists or isn't evident, consider using our troubleshooting tools available on the [metrics dashboard](https://metrics.nanocosmos.de/). 
 
-:::note Troubleshooting
-The troubleshooting page on the [metrics dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser.
+:::tip Troubleshooting
+The troubleshooting page on the [metrics dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. <br/>
 Learn more on how to troubleshoot [here](../cloud/troubleshooting).
 :::
 
