@@ -225,6 +225,9 @@ Note that a long encode time is an indicator for high encoder workload, which ca
 Note, a high count of lost packages at a time can lead to issues with the video representation on the side of the end user.
 :::
 
+### Ingest Alerting
+
+#### Stream Time Ratio
 
 ## Workflow Examples 
 

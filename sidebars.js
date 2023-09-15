@@ -247,7 +247,7 @@ const sidebars = {
     "cloud/analytics-zoom",
     {
       "type": "category",
-      "label": "Alerts",
+      "label": "Stream Health Monitoring",
       "collapsible": true,
       "collapsed": false,
       "items": [

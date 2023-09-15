@@ -74,10 +74,10 @@ To learn more about the *Alerts & Advices* feature, you can visit our dedicated 
 Determine if the alert message is self-explanatory. Often, the alert might provide clear insights into the issue and potential remedies.
 
 **2. Refer to the Documentation**:
-Always consult the [metrics documentation](../cloud/stream-alerting#steps-to-solve-alerted-issues) for a deeper understanding of the alert and the recommended corrective actions.
+Always consult the specific [alert code description](../cloud/stream-alerting.md#alert-codes) for a deeper understanding of the alert and the recommended corrective actions.
 
 **3. Troubleshoot the Alert**:
-If the problem persists or isn't evident, consider using our troubleshooting tools available on the [metrics dashboard](https://metrics.nanocosmos.de/). 
+If the problem persists or isn't evident, consider using our troubleshooting tools available on the [metrics dashboard](https://metrics.nanocosmos.de/troubleshooting). 
 
 :::tip Troubleshooting
 The troubleshooting page on the [metrics dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. <br/>
@@ -95,6 +95,6 @@ Advices provide recommendations and best practices to enhance the quality and vi
 
 | Field     | Value                                                              | Explanation |
 |-----------|--------------------------------------------------------------------|-------------|
-| Code      | `29001`                                                           | A unique code for the advice type. Read more [here](../cloud/stream-alerting.md#advices).|
+| Code      | `29001`                                                            | A unique code for the advice type. Read more [here](../cloud/stream-alerting.md#advices).|
 | Type      | ABR Recommended                                                    | The nature of the advice. |
 | Message   | The ingest stream has a high bitrate. Consider using adaptive bitrate streams to ensure smooth playback for viewers with poor connections. | A detailed description of the advice, providing actionable recommendations. |
