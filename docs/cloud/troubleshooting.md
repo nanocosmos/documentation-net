@@ -227,7 +227,15 @@ Note, a high count of lost packages at a time can lead to issues with the video 
 
 ### Ingest Alerting
 
+Via troubleshooting capability you can examine affected streams and make potential issues visible, by checking the following metrics.
+
 #### Stream Time Ratio
+
+The stream time ratio (STR) represents the relation between the elapsed real time and the stream time within a window of 15 seconds. A constant ratio value of 1 would be ideal - but a small fluctuation is expected. A big fluctuation or deviation from the value 1 indicates issues on the ingest side, for instance caused by a limited bandwidth or high CPU load. The higher the deviation from the value 1, the higher the probability for an increased latency on the playback/viewer side.
+
+![Regular STR Graph](../assets/analytics/str_normal.png =200x)
+![Fluctuation and Recover STR Graph](../assets/analytics/str_fluc_recover.png)
+![Drop STR Graph](../assets/analytics/str_big_drop.png)
 
 ## Workflow Examples 
 
