@@ -74,80 +74,81 @@ Alerts are categorized in multiple **severity levels**, that should help to prio
 | <span className="badge badge-minorAlert">Minor</span>         | low       | The corresponding issue might partially affecting the stream quality. |
 | <span className="badge badge-adviceAlert">Advices</span>      | info      | This can be seen as a general info about unused streaming potential. Please consider reading the advice message or refer to the [advice codes in the table below.](#advices)|
 
-
-
-
-
-
-After this the amount of occured restart events is analysed. Meeting the condition of having at least **6 restarts** within the 15 minute range is considered as **<u>Stability Issue</u>** and therefore fires a **Continous Restarts Alert**.
-
-Issues regarding the underlying **<u>Infrastructure</u>** of the corresponding stream are detected by analysing just the passthrough (non-transcoding) streams. Finding multiple references on different server instances fires a **Duplicated Ingest Alert**. Depending on the passthrough ingest location or source, the specific alert varies slightly.
-
 Lastly we fire an **<u>Advice</u>** for non-ABR streams with a higher bitrate than 4 MBit on every RTMP stat event. If you encounter such an advice, please consider using transcoding profiles ([Activating ABR](../cloud-frontend-v3/Dashboard_ABR_Transcoding)) to insure a better streaming experience for clients located in lower bandwith regions.
 
 ## Alert Definitions
 
-:::caution important note
+:::caution time range of relevant data
 The used **analysis algorithm** for this alerting feature is based on the stream quality and performance logs of the **previous 15 minutes**.
+The analysis for live stream alerts is executed every minute. The considered time ranges for the calculation are:  
+- end of time range: `start of current minute`
+- start of time range: `end - 15 minutes`
 :::
 
-The analysis for live stream alerts is executed every minute. The considered time ranges for the calculation are:  
-- End: `start of current minute`
-- Start: `end - 15 minutes`
+To fire up alerts we make use of 4 RTMP stats events for each minute. 60 events are collected in total for the given maximum range of 15 minutes. These events contain information regarding the **stream time ratio**, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts. This specific stat can be examined in detail using the [troubleshooting](./troubleshooting.md#stream-time-ratio) feature on the [analytics dashboard](https://metrics.nanocosmos.de/troubleshooting).
 
-The algorithm makes use of 4 RTMP stats events for each minute. For the maximum of the 15 minute interval up to 60 events are collected in total. These events contain information regarding the stream time ratio, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts.
-
-At first we separate (re)started ingest stream events and continous events. Every stream is checked regarding the average of all stream time ratio values
-
-Each alert is part of an specific **alert category** and owns a unique alert code. These are the available **alert categories**:
+Each alert is part of an specific **alert category** and owns a unique alert code.
 
 ### General Alerts
 
+General alerts include basic issues related to unexpected ingest behavior.
+
 - [**General** alert codes](#21000---21999) are ranging from **21000** to **21999**
 
+
 ### Stability Alerts
+
+Stream issues that may appear as a consequence of irregular communication problems with the nanoStream Cloud can be identified through stability alerts. Therefore the stream restart attempts are getting analysed. Meeting the condition of having at least **6 restarts** within the 15 minute range fires a **Continous Restarts Alert**.
 
 - [**Stability** alert codes](#22000---22999) are ranging from **22000** to **22999**
 
 ### Performance Alerts
 
+Either bandwidth issues or insufficient encoder/computing performances of the ingest source can be observed by fired performance alerts. 
+
 - [**Performance** alert codes](#23000---23999) are ranging from **23000** to **23999**
 
 <details>
-    <summary>Calculation Background</summary>
+    <summary>How do we classify ingest stream performances?</summary>
     <div>
         <div>
-            The stream is checked regarding the average of all stream time ratio values smaller than 0.9. Meeting the condition of case 1 and/or case 2 in at least 5 stream time ratio values, fires Performance Alerts, like:
+            <div className="add-margin-bottom">
+                <span>
+                    The stream is checked regarding the average of all <a href="./troubleshooting#stream-time-ratio">stream time ratio (STR)</a> values &lt; 0,9. Meeting the given conditions in one of these cases in at least 5 stream time ratio values, fires an performance alert:
+                </span>
+            </div>
             <details>
                 <summary>
-                    Case 1 ([example](./troubleshooting.md#stream-time-ratio))
+                    Suboptimal Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
                 </summary>
-                <div>
-                    `stream time ratio 0.93 && > 0.86` **(Suboptimal Performance)**
+                <div className="inline-math">
+                    0.93 > average STR > 0.86
                 </div>
             </details>
             <details>
                 <summary>
-                    Case 2 ([example](./troubleshooting.md#stream-time-ratio))
+                    Poor Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
                 </summary>
-                <div>
-                    `stream time ratio 0.93 && > 0.86` **(Suboptimal Performance)**
+                <div className="inline-math">
+                    0.86 >= average STR 
                 </div>
             </details>
         </div>
     </div>
 </details>
 
-            - Case 2: `stream time ratio <= 0.86` **(Poor Performance)**
-
 ### Infrastructure Alerts
+
+Infrastructure alerts represent issues that may be invisble from the outside of our infrastructure and even if there are no direct impairments stream performance/quality wise, these issues can lead to critical problems. Alerts of this category serve especially as early notification system, so taking action is immediately possible. Occuring problems with the underlying **<u>Infrastructure</u>** of the corresponding stream are detected by analysing just the passthrough (non-transcoding) streams. Finding multiple references on different server instances fires a **Duplicated Ingest Alert**. Depending on the passthrough ingest location or source, the specific alert varies slightly.
 
 - [**Infrastructure** alert codes](#24000---24999) are ranging from **24000** to **24999**
 
 ## Steps to solve alerted issues
-:::info
-These alternative guidelines can be used to get an idea about **what** the problem is, **why** it is appearing and **how** to encounter any kind of alert code in general.
+
+:::tip Guideline to handle alerts
+These guidelines can be used to get an idea about **what** the problem is, **why** it is appearing and **how** to encounter any kind of alert code in general.
 :::
+
 **1.** Open up the corresponding stream playback within the dashboard and look out for anomalies, like continous buffering, stuttering, visual interferences or connection issues.<br/><br/>
 **2.** Execute a hard restart of the ingest connection / encoder source to force application to restart the ingest process.<br/><br/>
 **3.** Use the direct link to the [Troubleshooting Page](https://metrics.nanocosmos.de/troubleshooting) right below the alert to investigate the ingest stream, while looking for anomalies within the stream duration, like performance drops or occurred errors. Using the provided direct link of the alert is automatically filling the necessary data and you can begin to troubleshoot right away. If you do not know what to look for, please consider taking a look at [these examples](./troubleshooting.md#stream-time-ratio).<br/><br/>
@@ -239,7 +240,7 @@ These alternative guidelines can be used to get an idea about **what** the probl
     </tbody>
 </table>
 
-## Advices
+## Advice Codes
 
 Advices can be seen as low priority alerts and shall inform you about possible improvements of the stream configuration.
 

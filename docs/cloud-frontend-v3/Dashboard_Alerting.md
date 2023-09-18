@@ -95,6 +95,6 @@ Advices provide recommendations and best practices to enhance the quality and vi
 
 | Field     | Value                                                              | Explanation |
 |-----------|--------------------------------------------------------------------|-------------|
-| Code      | `29001`                                                            | A unique code for the advice type. Read more [here](../cloud/stream-alerting.md#advices).|
+| Code      | `29001`                                                            | A unique code for the advice type. Read more [here](../cloud/stream-alerting.md#advice-codes).|
 | Type      | ABR Recommended                                                    | The nature of the advice. |
 | Message   | The ingest stream has a high bitrate. Consider using adaptive bitrate streams to ensure smooth playback for viewers with poor connections. | A detailed description of the advice, providing actionable recommendations. |
