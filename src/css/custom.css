@@ -130,7 +130,6 @@
 }
 
 /* BEGINN GENERAL --> These classes were designed for a general purpose to be used across. */
-
 .add-margin-bottom {
   display: flex;
   margin-bottom: 20px;
@@ -141,9 +140,13 @@
   text-align: center;
   display: inline-block;
   font-family: monaco;
-  background-color: rgba(241, 241, 241, 0.1);;
+  background-color: rgba(241, 241, 241, 0.1);
   padding: 5px;
   border-radius: 4px;
+}
+
+.text-normal {
+  font-size: 12px;
 }
 /* END GENERAL */
 
@@ -199,4 +202,5 @@
 .analytics-alertHeading-infrastructure::after {
   content: ' Infrastructure Alerts'
 }
+
 /* END ANALYTICS */

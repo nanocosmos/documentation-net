@@ -43,3 +43,44 @@
   align-items: center;
   justify-content: center;
 }
+
+.scaled-image-30 {
+  width: 50%;
+}
+
+.scaled-image-40 {
+  width: 50%;
+}
+
+.scaled-image-50 {
+  width: 50%;
+}
+
+.scaled-image-60 {
+  width: 50%;
+}
+
+.scaled-image-70 {
+  width: 50%;
+}
+
+.scaled-image-80 {
+  width: 50%;
+}
+
+.scaled-image-container {
+  margin: 20px;
+  display: flex;
+  width: 100%!important;
+}
+
+.scaled-image-textbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.scaled-image-description {
+  margin: 5px;
+}
