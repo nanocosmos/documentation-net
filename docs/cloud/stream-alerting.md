@@ -20,9 +20,9 @@ Alerts are effortlessly activated for all organizations by default.
 Starting from version `3.7.1.0` onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
 :::
 
-## How to use
+### How to use
 
-### Analytics API
+#### Analytics API
 
 Our Analytics API provides 2 different alerting routes:
 
@@ -31,7 +31,7 @@ Our Analytics API provides 2 different alerting routes:
 - **[`GET` Ingest stream alerts/advices](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting/paths/~1api~1v2~1alerting~1ingest/get)**: Returns all detected alerts and advices for all live ingest streams in the last 15 minutes.
 - **[`POST` Custom ingest stream alerts/advices](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting/paths/~1api~1v2~1alerting~1ingest~1custom/post)**: Returns all detected alerts and advices for all live ingest streams in the last 15 minutes. Additionally, through this API route, it is possible to pass ingest streams that should either be excluded from detection or define ingest streams for which an alert should be triggered if they are detected as offline.
 
-### nanostream Cloud Dashboard
+#### nanostream Cloud Dashboard
 
 > You can view **Alerts and Advices** of your organization directly on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts).
 
@@ -85,7 +85,7 @@ The analysis for live stream alerts is executed every minute. The considered tim
 - start of time range: `end - 15 minutes`
 :::
 
-To fire up alerts we make use of 4 RTMP stats events for each minute. 60 events are collected in total for the given maximum range of 15 minutes. These events contain information regarding the **stream time ratio**, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts. This specific stat can be examined in detail using the [troubleshooting](./troubleshooting.md#stream-time-ratio) feature on the [analytics dashboard](https://metrics.nanocosmos.de/troubleshooting).
+To fire up alerts we make use of 4 RTMP stats events for each minute. 60 events are collected in total for the given maximum range of 15 minutes. These events contain information regarding the **stream time ratio**, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts. This specific stat can be examined in detail using the [troubleshooting](./troubleshooting.mdx#stream-time-ratio) feature on the [analytics dashboard](https://metrics.nanocosmos.de/troubleshooting).
 
 Each alert is part of an specific **alert category** and owns a unique alert code.
 
@@ -108,13 +108,16 @@ Either bandwidth issues or insufficient encoder/computing performances of the in
 
 - [**Performance** alert codes](#23000---23999) are ranging from **23000** to **23999**
 
+#### Stream Time Ratio
 <details>
-    <summary>How do we classify ingest stream performances?</summary>
+    <summary>Classification by Stream Time Ratio (STR) Metric</summary>
     <div>
         <div>
             <div className="add-margin-bottom">
                 <span>
-                    The stream is checked regarding the average of all <a href="./troubleshooting#stream-time-ratio">stream time ratio (STR)</a> values &lt; 0,9. Meeting the given conditions in one of these cases in at least 5 stream time ratio values, fires an performance alert:
+                    Pre-filtering:
+                    <br></br>
+                    If the average of all <a href="./troubleshooting#stream-time-ratio">stream time ratio (STR)</a> values is <a className="inline-math text-normal">&le; 0.9</a>, the stream has potential performance issues. Further classifications follow by matching the given conditions in one of these cases below for at least 5 stream time ratio values. If one case is true, a performance alert is created for this particular stream.
                 </span>
             </div>
             <details>
@@ -122,7 +125,7 @@ Either bandwidth issues or insufficient encoder/computing performances of the in
                     Suboptimal Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
                 </summary>
                 <div className="inline-math">
-                    0.93 > average STR > 0.86
+                    0.93 &ge; (5 STR values) > 0.86
                 </div>
             </details>
             <details>
@@ -130,7 +133,7 @@ Either bandwidth issues or insufficient encoder/computing performances of the in
                     Poor Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
                 </summary>
                 <div className="inline-math">
-                    0.86 >= average STR 
+                    0.86 &ge; (5 STR values)
                 </div>
             </details>
         </div>
@@ -151,7 +154,7 @@ These guidelines can be used to get an idea about **what** the problem is, **why
 
 **1.** Open up the corresponding stream playback within the dashboard and look out for anomalies, like continous buffering, stuttering, visual interferences or connection issues.<br/><br/>
 **2.** Execute a hard restart of the ingest connection / encoder source to force application to restart the ingest process.<br/><br/>
-**3.** Use the direct link to the [Troubleshooting Page](https://metrics.nanocosmos.de/troubleshooting) right below the alert to investigate the ingest stream, while looking for anomalies within the stream duration, like performance drops or occurred errors. Using the provided direct link of the alert is automatically filling the necessary data and you can begin to troubleshoot right away. If you do not know what to look for, please consider taking a look at [these examples](./troubleshooting.md#stream-time-ratio).<br/><br/>
+**3.** Use the direct link to the [Troubleshooting Page](https://metrics.nanocosmos.de/troubleshooting) right below the alert to investigate the ingest stream, while looking for anomalies within the stream duration, like performance drops or occurred errors. Using the provided direct link of the alert is automatically filling the necessary data and you can begin to troubleshoot right away. If you do not know what to look for, please consider taking a look at [these examples](./troubleshooting.mdx#stream-time-ratio).<br/><br/>
 **4.** If the alert persists, please use the support link of the corresponding alert below to submit a ticket with the necessary details. 
 
 ## Alert Codes
