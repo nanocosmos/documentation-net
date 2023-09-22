@@ -95,7 +95,6 @@ General alerts include basic issues related to unexpected ingest behavior.
 
 - [**General** alert codes](#21000---21999) are ranging from **21000** to **21999**
 
-
 ### Stability Alerts
 
 Stream issues that may appear as a consequence of irregular communication problems with the nanoStream Cloud can be identified through stability alerts. Therefore the stream restart attempts are getting analysed. Meeting the condition of having at least **6 restarts** within the 15 minute range fires a **Continous Restarts Alert**.

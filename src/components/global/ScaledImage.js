@@ -11,20 +11,25 @@ export const ScaledImage = ({image, alt, widthScaling, title, description}) => {
         return (
             <div className={styles['scaled-image-container']}> 
                 <img src={`/${image}`} alt={alt} />
+                <figcaption>{alt}</figcaption>
             </div>
         );
     }
 
     return (
         <div className={styles['scaled-image-container']}>
-            <img src={`/${image}`} alt={alt} className={styles[`scaled-image-${widthScaling}`]} />
+            <div className={styles[`scaled-image-${widthScaling}`]}>
+                <img src={`/${image}`} alt={alt} />
+                <figcaption>{alt}</figcaption>
+            </div>
             { title && 
                 <div className={styles['scaled-image-textbox']}>
                     <div>
-                    <ImageTitle title={title} />
-                    <ImageDescription description={description}/>
+                        <ImageTitle title={title} />
+                        <ImageDescription description={description}/>
                     </div>
-                </div> }
+                </div>
+            }
         </div>
     ) 
 }
