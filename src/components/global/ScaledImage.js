@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import remark from 'remark';
-import remarkReact from 'remark-react';
-import remarkImages from 'remark-images';
 import styles from './styles.module.css';
-import ReactMarkdown from 'react-markdown';
+
 
 // IMPORTANT: image must be served from static source, therefore create a public subdirectory, like: assets/<used_dir>/public , place the needed asset there and be sure to sync with the staticDirectories property in docusaurus.config.js
 // scaling is available between 10-100% in 10% steps
