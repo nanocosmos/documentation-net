@@ -129,7 +129,28 @@
   max-width: 1200px;
 }
 
-/* BEGINN --> These classes were designed for the analytics alerting page. */ 
+/* BEGINN GENERAL --> These classes were designed for a general purpose to be used across. */
+.add-margin-bottom {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* math inside div containers */
+.inline-math {
+  text-align: center;
+  display: inline-block;
+  font-family: monaco;
+  background-color: rgba(241, 241, 241, 0.1);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.text-normal {
+  font-size: 12px;
+}
+/* END GENERAL */
+
+/* BEGINN ANALYTICS --> These classes were designed for the analytics sections. */ 
 .badge {
   display: inline-block;
   padding: 4px 6px;
@@ -137,7 +158,7 @@
   color: #fff;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -167,18 +188,19 @@
 }
 
 .analytics-alertHeading-general::after {
-  content: 'General Alerts'
+  content: ' General Alerts'
 }
 
 .analytics-alertHeading-stability::after {
-  content: 'Stability Alerts'
+  content: ' Stability Alerts'
 }
 
 .analytics-alertHeading-performance::after {
-  content: 'Performance Alerts'
+  content: ' Performance Alerts'
 }
 
 .analytics-alertHeading-infrastructure::after {
-  content: 'Infrastructure Alerts'
+  content: ' Infrastructure Alerts'
 }
-/* END --> Analytics Alerting Section */
+
+/* END ANALYTICS */

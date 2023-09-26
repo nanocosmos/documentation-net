@@ -34,6 +34,8 @@ const config = {
     locales: ['en'],
   },
 
+  staticDirectories: ['static', 'docs/assets/analytics/public'],
+
   presets: [
     [
       'classic',
