@@ -8,6 +8,18 @@ sidebar_label: History
 
 ## Please find more about the **fast playback start** feature in our [documentation](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_fast_start/)
 
+## **[4.22.1]**
+
+### **Release Notes**
+
+This version fixes a rare issue that could lead to incorrect startup stats, mainly occuring if the browser or tab was not visible in `LOADING` state.
+
+### **Changelog**
+
+### Fixed
+
+- issue with incorrect startup stats in `LOADING` state at visibility `hidden`
+
 ## **[4.22.0]**
 
 ### **Release Notes**
@@ -42,6 +54,33 @@ In addition, a layout issue that occured after exiting fullscreen mode in Safari
 - deprecated unused option `config.source.options.switch.fastStart`
 
 ## Please find more about the **media error recovery** feature in our [documentation](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_media_error_recovery/)
+
+## **[4.21.0]**
+
+### **Release Notes**
+
+This release brings a range of enhancements and fixes to improve your experience. We have made adjustments to iOS buffer control to ensure best performance with iOS 17.
+All metrics events now include an event counter and an indication of `Document.visibilityState` to provide deeper insights into user interactions.
+Furthermore we've worked on enhancing iOS playback recovery. In case of network interruptions or degradations, the iOS playback will be recovered more smoothly.
+An issue has been resolved that previously led to a false positive `PLAYING` state on iOS during network interruptions. This will result in more accurate playback status representation.
+In addition we've addressed an issue that could occasionally lead to an incomplete or empty `stats` object in the `onPlay` event.
+
+### **Changelog**
+
+### Added
+
+- iOS 17 related adjustment in iOS buffer control
+- indication of `Document.visibilityState` in all metrics events
+- event counter in all metrics events
+
+### Improved
+
+- iOS playback recovery in case of network interruptions or degradations
+
+### Fixed
+
+- prevent false positive `playing` state in case of iOS network interruptions
+- issue that could cause an incomplete or empty `stats` object in the `onPlay` event
 
 ## **[4.20.4]**
 
