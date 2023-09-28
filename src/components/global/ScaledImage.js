@@ -17,7 +17,6 @@ export const ScaledImage = ({image, alt, widthScaling, title, description}) => {
     useEffect(() => {
         const handleResize = () => {
             const parentContainers = document.querySelectorAll('div[class^="scaled-image-container"]');
-            console.log(parentContainers[0].offsetWidth, parentContainers[0].style.display);
             if (parentContainers[0]?.offsetWidth < 800){
                 setReArrange(true);
                 parentContainers.forEach(parentContainer => {
