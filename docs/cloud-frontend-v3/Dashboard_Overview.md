@@ -153,7 +153,7 @@ The stream overview provides a comprehensive view of your streams and their asso
    - Gain insights into the stream group by accessing its ID and the timestamp of the last update.
 3. **Adaptive Bitrate (ABR) Stream Overview**:
    - Switch between tabs to access a more detailed overview of individual streams within a stream group.
-   - Each stream's ABR profile quality, stream ID, tags, push URL, and stream name are presented. The tags and push url of each profile can be edited.
+   - Each stream's ABR profile quality, stream ID, tags, push URL, and stream name are presented. The tags and push url of each profile can be edited. Additional you can [add](./Dashboard_ABR_Transcoding#transform-a-non-transcoding-stream-into-an-abr-stream), [edit](./Dashboard_ABR_Transcoding#edit-profiles) and [remove](Dashboard_ABR_Transcoding#delete-profiles) a profile.
 4. **Ingest Section**:
    - Find the RTMP ingest stream name and RTMP ingest URL for seamless integration with your streaming source.
 5. **H5Live Playout**:
