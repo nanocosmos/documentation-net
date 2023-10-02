@@ -82,7 +82,7 @@ Upon selection, a side-by-side comparison layout emerges. On the left, you're pr
 
 ### Delete profiles
 
-Alongside the edit function, the "remove profile" option is noticeably presentc for every transcoding profile. Initiating the removal action triggers a modal window, necessitating your confirmation for the deletion.
+Alongside the edit function, the "remove profile" option is noticeably present for every transcoding profile. Initiating the removal action triggers a modal window, necessitating your confirmation for the deletion.
 
 It's worth noting that post-deletion, the system intuitively restructures the extant profiles within the streamgroup. This automatic reorganization ensures that the streaming quality remains at its optimal level, even in the absence of the deleted profile.
 
