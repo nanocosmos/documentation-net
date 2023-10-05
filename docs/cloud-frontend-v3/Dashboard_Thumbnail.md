@@ -4,7 +4,7 @@ title: Thumbnails
 sidebar_label: Thumbnails
 ---
 
-Thumbnails are small-sized preview images used to give viewers a quick snapshot of the content they represent. They help users easily identify and select videos, images, or files without having to open or play them first. By providing a visual summary, thumbnails enhance user experience and navigation efficiency.
+Thumbnails are small-sized preview images used to give viewers a quick snapshot of the content they represent. They open up new use-cases including and not limited to, e.g snapshots of content of interest or poster images for streams. By providing a visual summary, thumbnails enhance user experience and navigation efficiency. 
 
 :::info Before starting
 To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>

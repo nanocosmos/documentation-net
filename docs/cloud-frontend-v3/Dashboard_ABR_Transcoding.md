@@ -40,7 +40,7 @@ To begin, please sign in using your nanoStream Cloud/Bintu account credentials. 
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 :::
 
-![Screenshot: Create Stream and select Transcoding Profiles](../assets/cloud-frontend/cf-abr-stream.jpg)
+![Screenshot: Create Stream and select Transcoding Profiles](../assets/cloud-frontend/cf-abr-stream.png)
 *Screenshot: Create Stream and select Transcoding Profiles*
 
 During the stream creation process live transcoding is already enabled by default. You have the option to add transcoding profiles and configure them according to your requirements. The default selection is pre-filled, but you can choose different settings. Ensure that the bitrate of each Transcoding Profile is lower than the ingest/passthrough bitrate or the profile above. Once you have completed the setup and created the stream, you can start broadcasting using your live encoder or the nanoStream Webcaster.

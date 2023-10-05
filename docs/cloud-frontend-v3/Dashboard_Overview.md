@@ -99,21 +99,20 @@ Accuracy is crucial. Even a slight deviation, typo, or missing character in your
 
 ## Stream Creation
 
+:::tip Detailed Instructions
+For a detailed introduction to the creation of streams and the features explained in depth, as well as more related content, visit the [Start Streaming Page](Dashboard_Start_Streaming).
+:::
+
 The nanoStream Cloud Dashboard offers a straightforward process for creating a new stream with various customization options. 
 
 > [Click here ](https://dashboard.nanostream.cloud/stream/create)to create a stream.
 
-Here's how you can do it:
+Here's a quick breakdown how you can do it:
 
 1. Access the nanoStream Cloud Dashboard and navigate to the stream creation section.
 2. You have the option to add stream tags. You can either manually enter tags or choose from your existing ones, making it easier to categorize and identify your streams.
 3. For enhanced streaming quality, you have the option to configure transcoding profiles. You can define up to three profiles that enable Adaptive Bitrate (ABR) streaming. These profiles provide multiple quality versions of the stream, ensuring optimal playback across different network conditions.
-4. The dashboard also offers advanced features like `timecode` and `live processing`, but please note that these features are available as paid options. Timecodes allow precise synchronization or indexing of video content, while live processing enables real-time modifications or effects during the streaming process.
-
-:::info Contact Us
-If you wish to utilize these features, you would need to activate them and ensure that the corresponding pricing and payment options are set up. 
-Contact us [here](https://www.nanocosmos.de/contact) to find the perfect solution for you!
-:::
+4. The dashboard also offers the addition of features like `timecode` and `thumbnails`.
 5. After customizing your stream with tags, transcoding profiles, and any additional features, click on create  and create the new stream.
 
 ![Screenshot: Create Stream](../assets/cloud-frontend/cf-create.jpg)
