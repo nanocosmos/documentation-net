@@ -77,27 +77,24 @@ The stream overview provides a comprehensive view of your streams and their asso
 ![Screenshot: Stream Overview](../assets/cloud-frontend/cf-overview.jpg)
 *Screenshot: Stream Overview*
 
-1. **Detailed Stream View**:
-   - Take a closer look at a specific stream by identifying it through its unique stream ID.
-   - The stream's state (`live`, `created`, `ended`), date of creation, stream group association, and the number of associated playouts are on the top of each stream overview.
+1. **Detailed Stream View**
+   - View the unique stream ID, its current state (live, created, ended), date of creation, its association with a stream group, and the number of associated playouts. Determine if the stream is secure.
 2. **Stream Group Details**:
-   - Gain insights into the stream group by accessing its ID and the timestamp of the last update.
+   - Understand your stream group with its ID and the last update timestamp. You have the option to activate the time code interval and thumbnails. If activated, the chosen intervals are displayed.
 3. **Adaptive Bitrate (ABR) Stream Overview**:
-   - Switch between tabs to access a more detailed overview of individual streams within a stream group.
-   - Each stream's ABR profile quality, stream ID, tags, push URL, and stream name are presented. The tags and push url of each profile can be edited.
-4. **Ingest Section**:
-   - Find the RTMP ingest stream name and RTMP ingest URL for seamless integration with your streaming source.
-5. **H5Live Playout**:
-   - Access the live playout URL, which enables viewers to watch the stream in real-time.
-   - If you prefer embedding the nanoStream H5Live Player on your webpage, an iframe embed URL is also provided for quick integration.
+   - Navigate between tabs for a comprehensive view of individual streams within a stream group.
+   - Details include each stream's ABR profile quality, ID, tags, push URL, and name. You can edit the tags and push URL for each profile. Additionally, profiles can be [added](./Dashboard_ABR_Transcoding#transform-a-non-transcoding-stream-into-an-abr-stream), [edited](./Dashboard_ABR_Transcoding#edit-profiles), or [removed](Dashboard_ABR_Transcoding#delete-profiles).
+4. **Thumbnails**:
+   - If activated, view the thumbnail of your stream generated based on the chosen interval during activation.
+5. **Ingest Section**:
+   - Access the RTMP ingest stream name and URL for easy integration with your streaming source.
 6. **Secure JWT Token Creation** (if enabled):
-   - If enabled, you have the `secure` option to generate secure JWT tokens for stream access, ensuring enhanced security and control.
-7. **Codes for nanoPlayer Integration**:
-   - Simplify the integration process by utilizing the provided code snippets, such as an iframe embed tag or a HTML nanoStream H5Live code snippet, to seamlessly integrate the nanoStream H5Live Player into your own webpage.
-8. **RTMP Playout Stream**:
-   - Obtain the RTMP playout stream name and URL, which can be used for further distribution or integration with other platforms.
-9. **VODs** (if enabled):
-    - If `vod` is enabled, this section provides relevant information about associated Video-On-Demand content, enabling easy management and access.
+   - Generate secure JWT tokens for enhanced stream access control when this feature is activated.
+7. **H5Live Playout**:
+   - View the live playout URL, enabling real-time streaming for viewers. For embedding the nanoStream H5Live Player on a website, an iframe embed URL is available for integration.
+8. **Codes for Nanoplayer Integration**:
+   - Use the provided code snippets, such as the iframe embed tag or the HTML nanoStream H5Live code, to embed the nanoStream H5Live Player effortlessly on your website.
+9. **RTMP Playout Stream**:
+   - Retrieve the RTMP playout stream name and URL for broader distribution or integration into other platforms.
 10. **Stream Management (Delete, Lock)**:
-    - Take control of your streams by performing actions such as removing a stream, or locking and unlocking it for ingests.
-
+      - Manage your streams effectively with options to delete, lock, or unlock them for ingest purposes.

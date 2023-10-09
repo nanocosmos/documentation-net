@@ -11,59 +11,76 @@
   font-style: normal;
   font-weight: 200;
   src: local('Source Sans Pro'),
-  url('../../static/fonts/source-sans-pro-v21-latin-200.ttf') format('truetype'), 
-  url('../../static/fonts/source-sans-pro-v21-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../../static/fonts/source-sans-pro-v21-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-200.ttf') format('truetype'),
+    url('../../static/fonts/source-sans-pro-v21-latin-200.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-200.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* source-sans-pro-300 - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 300;
   src: local('Source Sans Pro'),
-  url('../../static/fonts/source-sans-pro-v21-latin-300.ttf') format('truetype'), 
-  url('../../static/fonts/source-sans-pro-v21-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../../static/fonts/source-sans-pro-v21-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-300.ttf') format('truetype'),
+    url('../../static/fonts/source-sans-pro-v21-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-300.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* source-sans-pro-regular - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
   src: local('Source Sans Pro'),
-  url('../../static/fonts/source-sans-pro-v21-latin-regular.ttf') format('truetype'), 
-  url('../../static/fonts/source-sans-pro-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../../static/fonts/source-sans-pro-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-regular.ttf') format('truetype'),
+    url('../../static/fonts/source-sans-pro-v21-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* source-sans-pro-600 - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
   src: local('Source Sans Pro'),
-  url('../../static/fonts/source-sans-pro-v21-latin-600.ttf') format('truetype'),
-  url('../../static/fonts/source-sans-pro-v21-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../../static/fonts/source-sans-pro-v21-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-600.ttf') format('truetype'),
+    url('../../static/fonts/source-sans-pro-v21-latin-600.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-600.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* source-sans-pro-700 - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;
   src: local('Source Sans Pro'),
-  url('../../static/fonts/source-sans-pro-v21-latin-700.ttf') format('truetype'),
-  url('../../static/fonts/source-sans-pro-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../../static/fonts/source-sans-pro-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-700.ttf') format('truetype'),
+    url('../../static/fonts/source-sans-pro-v21-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* source-sans-pro-900 - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 900;
   src: local('Source Sans Pro'),
-  url('../../static/fonts/source-sans-pro-v21-latin-900.ttf') format('truetype'),
-  url('../../static/fonts/source-sans-pro-v21-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../../static/fonts/source-sans-pro-v21-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-900.ttf') format('truetype'),
+    url('../../static/fonts/source-sans-pro-v21-latin-900.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../static/fonts/source-sans-pro-v21-latin-900.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
@@ -108,7 +125,8 @@
   position: relative;
   overflow: hidden;
   height: 0;
-  padding-bottom: 56.25%; /* creates a 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* creates a 16:9 aspect ratio */
   border: 4px solid;
   border-color: #d28130;
 }
@@ -148,9 +166,10 @@
 .text-normal {
   font-size: 12px;
 }
+
 /* END GENERAL */
 
-/* BEGINN ANALYTICS --> These classes were designed for the analytics sections. */ 
+/* BEGINN ANALYTICS --> These classes were designed for the analytics sections. */
 .badge {
   display: inline-block;
   padding: 4px 6px;
@@ -171,12 +190,42 @@
   font-size: 18px;
 }
 
+.badge-noStreamgroup {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: lightgray;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
+}
+
+.badge-streamgroup {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #ed7d0e;
+  color: #ed7d0e;
+  font-weight: 600;
+}
+
+.badge-criticalAlert {
+  background-color: #D22315;
+}
+
 .badge-criticalAlert {
   background-color: #D22315;
 }
 
 .badge-moderateAlert {
-  background-color: #ef5350; 
+  background-color: #ef5350;
 }
 
 .badge-minorAlert {

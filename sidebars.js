@@ -49,6 +49,7 @@ const sidebars = {
             "cloud-frontend-v3/Dashboard_Start_Streaming",
             "cloud-frontend-v3/Dashboard_Stream_Overview",
             "cloud-frontend-v3/Dashboard_ABR_Transcoding",
+            "cloud-frontend-v3/Dashboard_Thumbnail",
             "cloud-frontend-v3/Dashboard_Secure",
             "cloud-frontend-v3/Dashboard_nanoPlayer"
           ]

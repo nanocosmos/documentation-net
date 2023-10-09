@@ -16,15 +16,67 @@ Locate the "[Create New Stream](https://dashboard.nanostream.cloud/stream/create
 
 ## Setting up and creating a stream
 
-1. Access the nanoStream Cloud Dashboard and navigate to the stream creation section.
-2. You have the option to add stream tags. You can either manually enter tags or choose from your existing ones, making it easier to categorize and identify your streams.
-3. For enhanced streaming quality, you have the option to configure transcoding profiles. You can define up to three profiles that enable Adaptive Bitrate (ABR) streaming. These profiles provide multiple quality versions of the stream, ensuring optimal playback across different network conditions.
-4. The dashboard also offers advanced features like `timecodes` and `live processing`, but please note that these features are available as paid options. Timecodes allow precise synchronization or indexing of video content, while live processing enables real-time modifications or effects during the streaming process. If you wish to utilize these features, you would need to activate them and ensure that the corresponding pricing and payment options are set up. 
-Contact us [here](https://www.nanocosmos.de/contact) to find the perfect solution for you!
-5. After customizing your stream with tags, transcoding profiles, and any additional features, click on „create new stream“. E voila - you created a new stream. :)
+You can access the stream creation page using the menu on the left. You can tell whether you are on the right page when the round plus icon is highlighted in orange and you can see the UI as shown in the screenshot.
 
-![Screenshot: Create Stream](../assets/cloud-frontend/cf-create.jpg)
+![Screenshot: Create Stream](../assets/cloud-frontend/cf-create-stream.png)
 *Screenshot: Create Stream*
+
+### Add Tags
+
+In the "Add Tags" section you can add tag(s) to identify your stream more easily in the future. 
+1. You can enter in the text field a tag that you want to add. 
+2. By hitting "Enter" they will be added to the list above the text field and are added to the stream you are about to create.
+3. From the 3rd letter in the text field, it will be checked if you have used such a series of characters in the past and all tags that contain these three letters will be suggested to you. By clicking on them, they will also be added to the list (see 2).
+4. Independently if you have already typed something, you can press "Show all tags" and see the last tags you have used in the organization. You can scroll through them all using the menu at the bottom right. By clicking on them you can add them to the list of your tags (see 2).
+
+![Screenshot: Addition of Tags during Stream Creation](../assets/cloud-frontend/cf-add-tags-steps.jpg)
+*Screenshot: Addition of Tags during Stream Creation*
+
+### Add Transcoding
+
+During the stream creation process live transcoding is already enabled by default. You have the option to add transcoding profiles and configure them according to your requirements. The default selection is pre-filled, but you can choose different settings. Ensure that the bitrate of each Transcoding Profile is lower than the ingest/passthrough bitrate or the profile above.
+
+:::tip Adaptive Bitrate (ABR) and Live Transcoding
+To learn more about Adaptive Bitrate (ABR) and Live Transcoding, you can have a look here:
+- [What is Adaptive Bitrate Playback?](Dashboard_ABR_Transcoding#what-is-adaptive-bitrate-playback)
+- [What is Live Transcoding?](Dashboard_ABR_Transcoding#what-is-live-transcoding)
+:::
+
+![Screenshot: Create Stream and select Transcoding Profiles](../assets/cloud-frontend/cf-abr-stream.png)
+*Screenshot: Create Stream and select Transcoding Profiles*
+
+:::info Modifying Transcoding Profiles After Stream Creation
+As your streaming requirements evolve, you may find the need to revise your transcoding profiles. Learn more about this here:
+- [Modifying Transcoding Profiles After Stream Creation](Dashboard_ABR_Transcoding#modifying-transcoding-profiles-after-stream-creation)
+- [Transform a Non-Transcoding Stream into an ABR Stream](Dashboard_ABR_Transcoding#transform-a-non-transcoding-stream-into-an-abr-stream)
+- [Integrating Additional Profiles to Your Streamgroup](Dashboard_ABR_Transcoding#integrating-additional-profiles-to-your-streamgroup)
+- [Edit profiles](Dashboard_ABR_Transcoding#edit-profiles) or [Delete profiles](Dashboard_ABR_Transcoding#delete-profiles)
+:::
+
+### Add thumbnail
+
+By clicking on "Add thumbnail" you can enable the thumbnail generation and select an interval for the creation. This can range from 10 to 3600 seconds. The default is set to 30s. The thumbnail will be generated based on the selected interval.
+
+![Screenshot: Thumbnail Activation during Stream Creation](../assets/cloud-frontend/cf-add-thumbnail.png)
+*Screenshot: Thumbnail Activation during Stream Creation*
+
+:::tip Learn more
+- [Setting up thumbnails after stream creation](Dashboard_Thumbnail#setting-up-thumbnails)
+- [Updating thumbnail settings after stream creation](Dashboard_Thumbnail#updating-settings)
+:::
+
+### Add timecode injection
+
+:::info Enabling `timecode` feature
+If you wish to utilize this feature, you would need to activate them and ensure that the corresponding pricing and payment options are set up. 
+Contact us [here](https://www.nanocosmos.de/contact) to find the perfect solution for you!
+:::
+
+By clicking on "Add timecode" you can enable this feature. It allows precise synchronization or indexing of video content. You can set the time injection interval between 500 ms and 3600000 ms (1 hour), recommended: 1000-5000 ms. The default is 2000ms. 
+
+![Screenshot: Thumbnail Activation during Stream Creation](../assets/cloud-frontend/cf-timecode.jpg)
+*Screenshot: Timecode Injection during Stream Creation*
+
 
 ## Start Streaming
 
