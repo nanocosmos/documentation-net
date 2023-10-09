@@ -11,6 +11,11 @@ To begin, please sign in using your nanoStream Cloud/Bintu account credentials. 
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 :::
 
+:::warning Important to know
+The functionality for this feature is exclusively available on our vtrans ingest servers. <br/>
+Bintu only recommends these servers when transcodings are in use. If your stream doesn't have transcoding profiles and you wish to utilize the thumbnails feature, please ingest using `rtmp://bintu-vtrans.nanocosmos.de`.
+:::
+
 ## Setting up thumbnails
 
 To activate a thumbnail, you need to navigate to the Stream Overview page of your stream. Within the "Details" section at the top, you can find there the "Thumbnail" flag at the end of the list. By clicking on the "Edit" button located at the end of the row, a dialog to appear.
@@ -24,6 +29,11 @@ In this dialog, you can enable the thumbnail generation and select an interval. 
 *Screenshot: Thumbnail Activation Dialog*
 
 Upon enabling the thumbnail generation, you'll notice a update in the user interface showcasing the thumbnail. Furthermore, the details list will now include the Thumbnail URL, and the selected interval will be prominently displayed.
+
+:::warning Important to know
+The functionality for this feature is exclusively available on our vtrans ingest servers. <br/>
+Bintu only recommends these servers when transcodings are in use. If your stream doesn't have transcoding profiles and you wish to utilize the thumbnails feature, please ingest using `rtmp://bintu-vtrans.nanocosmos.de`.
+:::
 
 ![Screenshot: Thumbnail in Stream Overview](../assets/cloud-frontend/cf-thumbnail-added.jpg)
 *Screenshot: Thumbnail in Stream Overview*
