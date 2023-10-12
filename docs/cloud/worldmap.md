@@ -42,7 +42,7 @@ In the **Country View** you can investigate the TOP 50 countries that apply to y
 (A) `View Switch` lets you change between **Country View** and **World Regions View**. <br/>
 (B) `Metric Selection` select a metric category. <br/>
 (C) `Metric Subswitch` lets you choose a **sub-metric** if the current selected metric has more than one. <br/>
-(C) `Legend` describes the visible metric data in more detail.
+(D) `Legend` describes the visible metric data in more detail.
 
 ## World Regions View
 
