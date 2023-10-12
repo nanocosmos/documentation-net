@@ -100,6 +100,13 @@ Tag selection works like an `AND` filter, only metrics for streams are shown, wh
 The filter option are available directly at the top of each sub-dashboard.
 When switching to another sub-dashboard, already selected filter options will be applied there as well.
 
+### Export Data via CSV File Format
+
+To export the shown data and download it as &nbsp;`.csv` &nbsp;file, simply search for the &nbsp;`Get CSV` &nbsp;button inside the widget's header. 
+
+![Screenshot: CSV Export](../assets/analytics/analytics-csv-export.png) <br/>
+*Screenshot(s): CSV Export Button*
+
 ### Home
 
 The selected filter options affect all availabe metrics.
@@ -126,7 +133,7 @@ The maximum concurrent viewer count for a time interval.
 
 The total traffic per month. Can be used to compare the current month with the previous month.
 
-![Screenshot: Metrics Month To Date Chart](../assets/analytics/analytics-widget-month-to-date.png)
+![Screenshot: Metrics Month To Date Chart](../assets/analytics/analytics-widget-month-to-date.png) <br/>
 *Screenshot: Metrics Month To Date Chart*
 
 - **First row**: shows the total usage from the previous month
