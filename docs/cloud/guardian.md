@@ -73,10 +73,10 @@ curl --location 'https://guardian.nanostream.cloud/ip' \
 }'
 ```
 
-#### Block a Referer
+#### Block a Referrer
 
 ```shell
-curl --location 'https://guardian.nanostream.cloud/referer' \
+curl --location 'https://guardian.nanostream.cloud/referrer' \
 --header 'Content-Type: application/json' \
 --header 'X-BINTU-APIKEY: BINTU_API_KEY' \
 --data '{
