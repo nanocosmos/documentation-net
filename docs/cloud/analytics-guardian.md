@@ -26,7 +26,7 @@ Once you logged in, click on the Guardian tab to open the Guardian menu.
 
 (B) `Filter` to investigate stream related user behavior or streams with [**STS**](../nanoplayer/nanoplayer_feature_security_sts) tag configuration.
 
-(C) `Time Range Filter (UTC Time)` the **start** (From) and **end** (To) of the time range to search in.
+(C) `Time Range Filter (UTC Time)` the **start** (From) and **end** (To) of the time range to search in. Adjust this easily by jumping backwards and forwards, using the `-` and `+` buttons. These select the pre- and post- time range depending on the current selected range.
 
 To use referrer blocking as a security measure, you have to switch into the [Breakdown](./analytics#breakdown) tab.
 

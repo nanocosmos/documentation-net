@@ -11,7 +11,7 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 This feature is available for multiple widgets. The zoom tag shows if this feature is supported for this chart.
 
-![Screenshot: Zoom Tag](../assets/analytics/analytics-zoom_tag.png)
+![Screenshot: Zoom Tag](../assets/analytics/analytics-zoom-tag.png)
 *Screenshot: Zoom Tag*
 
 ## Zoom in for more insight
