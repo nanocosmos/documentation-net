@@ -157,6 +157,7 @@ const sidebars = {
       "collapsed": false,
       "items": [
         "webrtc/nanostream_webrtc_secure_ingest",
+        "webrtc/nanostream_webcaster_input_sources",
         "webrtc/nanostream_webrtc_screen_sharing",
         "webrtc/nanostream_webrtc_multiple_webcasts",
         "webrtc/nanostream_webrtc_quality",
