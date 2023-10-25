@@ -159,6 +159,7 @@ const sidebars = {
         "webrtc/nanostream_webcaster_input_sources",
         "webrtc/nanostream_webrtc_multiple_webcasts",
         "webrtc/nanostream_webrtc_quality",
+        "webrtc/nanostream_webrtc_audio_video_only",
         "webrtc/nanostream_webrtc_stats_and_metrics",
       ]
     },
