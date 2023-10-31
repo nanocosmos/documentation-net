@@ -115,7 +115,7 @@ const config = {
             docId: 'webrtc/nanostream_webrtc_introduction',
             sidebarid: "Webcaster",
             position: 'left',
-            label: "Webcaster",
+            label: "nanoStream Webcaster",
           }, {
             type: 'doc',
             docId: 'cloud/analytics',
