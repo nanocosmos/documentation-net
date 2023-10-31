@@ -173,6 +173,15 @@ const sidebars = {
         "webrtc/nanostream_webrtc_api"
       ]
     },
+    {
+      "type": "category",
+      "label": "Other",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "webrtc/nanostream_webrtc_faq"
+      ]
+    }
   ],
   "nanoStream Webcaster V5": [
     "webrtc-v5/nanostream_webrtc_introduction",
