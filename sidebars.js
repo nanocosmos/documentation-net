@@ -170,7 +170,8 @@ const sidebars = {
       "collapsible": false,
       "collapsed": false,
       "items": [
-        "webrtc/nanostream_webrtc_api"
+        "webrtc/nanostream_webrtc_api",
+        "webrtc/migration_guide_v6"
       ]
     },
   ],
