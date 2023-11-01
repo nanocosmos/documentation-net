@@ -4,6 +4,18 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
+:::warning deprecated
+
+You're looking at the deprecated Webcaster Client API. If you're still on v5,
+learn more about features and changes [here](../webrtc/nanostream_webrtc_introduction.md)
+
+Follow this link If are ready to [migrate](../webrtc/)
+
+:::
+
+
+
+
 ## How to build a browser-based live streaming workflow with nanoStream Webcaster and nanoStream Cloud?
 
 We are entering a new live streaming era where **browser-based, plugin-free** and **ultra-low latency on any device** are the key drivers for interactive customer engagement. What’s needed? nanoStream Webcaster (formerly known as WebRTC.live) in combination with nanoStream Cloud!
