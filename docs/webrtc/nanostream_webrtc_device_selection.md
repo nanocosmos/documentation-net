@@ -118,6 +118,6 @@ let initConfig = {
 };
 ```
 
-### Using MediaStream injection vs Device selection
+## Using MediaStream injection vs Device selection
 
 TBC
