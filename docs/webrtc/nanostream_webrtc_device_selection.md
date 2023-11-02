@@ -26,7 +26,7 @@ A convenience function to filter out specific kinds of devices. By default "inpu
 function filterDevices(
     devices: MediaDeviceInfo[],
     deviceKinds: MediaDeviceKind[] = ['audioinput', 'videoinput'],
-    groupId?:string,
+    groupId?: string,
     deviceId?: string
 ): MediaDeviceInfo[]
 ```
