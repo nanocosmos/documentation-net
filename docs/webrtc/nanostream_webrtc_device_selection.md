@@ -4,6 +4,8 @@ title: Device Selection
 sidebar_label: Device Selection
 ---
 
+## Device Enumeration & Pre-selection filtering API
+
 The browsers native WebRTC API gives you the possibility to present all currently attached audio and video devices to be used for input recording and streaming ingest.
 
 The top-level API exports under namespace `DeviceUtils` (among others):
@@ -29,14 +31,18 @@ function filterDevices(
 ): MediaDeviceInfo[]
 ```
 
-## Example
+## Device Permissions
+
+Please notice that the device obtained by native enumeration interface from the platform (directly or indirectly via above utilities) are only the ones which have been granted permissions accordingly for the respective domain/page via the browsers interactive user prompt or general page presets (for example a browser may be configured to never grant device permissions for a specific page, type of page, or either input type).
+
+## Examples
+
+### 1) Showing a dropdown menu
 
 ```html
 <h2>MediaDevices:</h2>
 <div id="devices"></div>
 ```
-
-### Showing a dropdown menu
 
 This is an example of how to use the devices API information gathered,
 and render it to a basic select menu. 
@@ -84,40 +90,32 @@ function createDevicesDropdown(devices) {
 }
 ```
 
-### Setting selected MediaDevice IDs programmatically 
+### 2) Setting selected MediaDevice IDs programmatically 
 
 A typical configuration may look like below.
 
 Notice the `audioDeviceId` and `videoDeviceId` fields. They are both optional i.e nullable (e.g empty string).
 
-They are supposed to take any Device-ID string value which you would get from the devices list above (`MediaDeviceInfo#deviceId` property).  
+These can be set to any Device-ID string value which you would get from the devices list above (`MediaDeviceInfo#deviceId` property).  
 
 ```js
 let initConfig = {
     inputCfg: {
         mediaStreamCfg: {
-            audioDeviceId: '',
-            videoDeviceId: '',
+            audioDeviceId: '<audio-input-device-ID>',
+            videoDeviceId: '<video-input-device-ID>',
             maxFramerate: 30,
             resolution: [1280, 720],
-            audioConstraints: {
-                autoGainControl: true,
-                channelCount: 1,
-                echoCancellation: true,
-                noiseSuppression: true
-            },
         },
         broadcastCfg: {
-            transcodeAudioBitrateBps: HelperUtils.kbps(TRANSCO_AUDIO_RATE_KBPS),
-            maxAudioBitrateBps: HelperUtils.kbps(AUDIO_RATE_KBPS),
-            maxVideoBitrateBps: HelperUtils.kbps(VIDEO_RATE_KBPS),
-            maxEncodingFramerate: 30,
+            maxAudioBitrateBps: 128000,
+            maxVideoBitrateBps: 8000000,
         }
     },
     previewVideoElId: 'preview',
 };
 ```
 
-## Using MediaStream injection vs Device selection
+## On Using MediaStream injection vs Device selection
 
 TBC
