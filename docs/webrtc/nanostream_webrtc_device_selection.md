@@ -35,6 +35,10 @@ function filterDevices(
 
 Please notice that the device obtained by native enumeration interface from the platform (directly or indirectly via above utilities) are only the ones which have been granted permissions accordingly for the respective domain/page via the browsers interactive user prompt or general page presets (for example a browser may be configured to never grant device permissions for a specific page, type of page, or either input type).
 
+See on standard `getUserMedia`, default way to query/prompt for device usage: https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia .
+
+Also see the more generic permissions related novel standard API: https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API 
+
 ## Examples
 
 ### 1) Showing a dropdown menu
