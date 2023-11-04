@@ -4,23 +4,25 @@ title: Device Selection
 sidebar_label: Device Selection
 ---
 
-## Device Enumeration & Pre-selection filtering API
+## Device Enumeration & Pre-selection Filtering API
 
-The browsers native WebRTC API gives you the possibility to present all currently attached audio and video devices to be used for input recording and streaming ingest.
+The browsers native WebRTC API gives you the possibility to present all currently attached audio and video devices available for input recording and streaming ingest.
 
-The top-level API exports under namespace `DeviceUtils` (among others):
+The nanoStream Webcaster Client API exports the following utility functions —among others—  under the namespace `DeviceUtils`:
 
-* getAvailableMediaDevices:
 
-This function wraps the native WebRTC API for convenience. You also retrieve an equivalent list by directly using the platform support. See https://developer.mozilla.org/en-US/docs/Web/API/MediaDeviceInfo
+### — `getAvailableMediaDevices`:
+
+This function wraps the native WebRTC API for convenience. You also retrieve an equivalent list by directly using the platform support. See [MediaDeviceInfo](https://developer.mozilla.org/en-US/docs/Web/API/MediaDeviceInfo) interface.
+
 
 ```ts
 async function getAvailableMediaDevices(): Promise<MediaDeviceInfo[]>
 ```
 
-* filterDevices:
+### — `filterDevices`:
 
-A convenience function to filter out specific kinds of devices. By default "input" only, since we only can select these for our streaming application obviously.
+A convenience function to filter out specific kinds of devices. By default "input" only, since you only can select these for your streaming application obviously.
 
 ```ts
 function filterDevices(
@@ -33,11 +35,15 @@ function filterDevices(
 
 ## Device Permissions
 
-Please notice that the device obtained by native enumeration interface from the platform (directly or indirectly via above utilities) are only the ones which have been granted permissions accordingly for the respective domain/page via the browsers interactive user prompt or general page presets (for example a browser may be configured to never grant device permissions for a specific page, type of page, or either input type).
+Please notice that the device obtained by the native enumeration interface from the platform —either directly via the Media Stream Web API or indirectly via the preceding utilities— only include devices which the user have granted permissions in the current context, via the browsers interactive user prompt, or via general page presets. For example, a browser may reject device permissions for a specific page, type of page, and either 'audio' or 'video' input types, and store these as user preferences.
 
-See on standard `getUserMedia`, default way to query/prompt for device usage: https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia .
 
-Also see the more generic permissions related novel standard API: https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API 
+:::info
+See the standard [MediaDevices: getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia), for default way to query/prompt for device usage. 
+
+Also see the more generic permissions related novel standard: [Permissions API](https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API) 
+:::
+
 
 ## Examples
 
@@ -48,11 +54,18 @@ Also see the more generic permissions related novel standard API: https://develo
 <div id="devices"></div>
 ```
 
-This is an example of how to use the devices API information gathered,
-and render it to a basic select menu. 
+This example shows how to use the information gathered from devices API, and render it as a basic select menu. 
 
-Derived to your existing applications UX, or specific UI frameworks and methodology used,
-this may (potentially heavily) differ, but should anyway be applicable as we go from basic HTML web concepts.
+
+:::note
+
+Derived to your existing applications UX, or UI frameworks and methodology in use,
+this may (potentially heavily) differ, but generally the same concepts from basic HTML and vanilla Javascript
+should apply.
+
+:::
+
+
 
 ```js
 DeviceUtils.getAvailableMediaDevices().then(devices => {
@@ -98,9 +111,9 @@ function createDevicesDropdown(devices) {
 
 A typical configuration may look like below.
 
-Notice the `audioDeviceId` and `videoDeviceId` fields. They are both optional i.e nullable (e.g empty string).
+Notice the `audioDeviceId` and `videoDeviceId` fields. They are both optional i.e. nullable (e.g. empty string).
 
-These can be set to any Device-ID string value which you would get from the devices list above (`MediaDeviceInfo#deviceId` property).  
+These can be set to any Device-ID string value which you would get from the devices list above (`MediaDeviceInfo#deviceId` property).
 
 ```js
 let initConfig = {
