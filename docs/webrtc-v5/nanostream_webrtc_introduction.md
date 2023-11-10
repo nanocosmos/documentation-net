@@ -7,9 +7,9 @@ sidebar_label: Introduction
 :::warning deprecated version
 
 You're looking at the deprecated Webcaster Client API. If you're still on v5,
-learn more about features and changes [here](../webrtc/nanostream_webrtc_introduction.md)
+learn more about features and changes [here](../webrtc/nanostream_webrtc_introduction.md).
 
-Follow this link If are ready to [migrate](../webrtc/)
+Follow this link If are ready to [migrate](../webrtc/migration_guide_v6) to the new API version 6.
 
 :::
 
