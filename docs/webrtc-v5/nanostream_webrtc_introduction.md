@@ -4,7 +4,7 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-:::warning deprecated
+:::warning deprecated version
 
 You're looking at the deprecated Webcaster Client API. If you're still on v5,
 learn more about features and changes [here](../webrtc/nanostream_webrtc_introduction.md)
@@ -44,7 +44,7 @@ You can use nanoStream Cloud as a low-latency CDN to distribute your live stream
 
 nanoStream Cloud including nanoStream H5Live Player is the perfect solution to deliver and playback live streams in a scalable way. It brings together the easiness of a cloud solution with the ability of delivery and playback in ultra-low latency on any device and HTML5 browser, including Safari on iOS. Hence, together with nanoStream Webcaster for live encoding, they set an entire browser-based live streaming workflow.
 
-![Infographic: Webcaster Workflow](https://www.nanocosmos.de/blog/wp-content/uploads/2018/02/webrtc-workflow-1024x358.png)
+![Infographic: Webcaster Workflow](../assets/webrtc/webrtc-workflow-1024x358.png)
 *Infographic: Webcaster Workflow*
 
 nanoStream Cloud works out of the box; your presenters can instantly go live and share their live stream with anyone in the world, completely plugin-free within the browser.

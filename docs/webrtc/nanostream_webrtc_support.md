@@ -9,10 +9,10 @@ sidebar_label: Support
 If you encounter any bugs or issues, we're here to help! To ensure a swift resolution, please provide a comprehensive issue report with the following details:
 
 1. **Description**
-: Clearly outline the issue you're facing and what results you were expecting.
+: Clearly outline the issue you're facing and what results you were expecting. Include time frames of any incidents when appropriate.
 
 2. **Configuration Details**
-: Include your configuration settings for WebRTC, bintu.live, and h5live.
+: Include your configuration settings for __Webcaster__, __bintu.live__, and __H5live player__.
 
 3. **Stream IDs**
 : Provide any relevant stream IDs and/or stream names that demonstrate the issue.
