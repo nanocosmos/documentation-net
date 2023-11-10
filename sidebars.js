@@ -175,6 +175,15 @@ const sidebars = {
         "webrtc/migration_guide_v6"
       ]
     },
+    {
+      "type": "category",
+      "label": "Other",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "webrtc/nanostream_webrtc_faq"
+      ]
+    }
   ],
   "nanoStream Webcaster V5": [
     "webrtc-v5/nanostream_webrtc_introduction",
