@@ -8,6 +8,6 @@ sidebar_label: Webcaster
 
 
 :::info 
- [Webcaster Client  API](https://webrtc.pages.nanocosmos.de/webcaster-api/docs/index.html)
+ [Webcaster Client  API](https://nanocosmos.github.io/webcaster/docs/)
 
 :::
