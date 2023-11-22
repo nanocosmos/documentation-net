@@ -22,9 +22,9 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 Append your stream name to one of the following samples:
 
-- Main Sample: https://webrtc.pages.nanocosmos.de/webcaster-api/samples/index.html?streamName=[stream-name]
-- Minimal Sample: https://webrtc.pages.nanocosmos.de/webcaster-api/samples/minimal/index.html?streamName=[stream-name]
-- Screen Share: https://webrtc.pages.nanocosmos.de/webcaster-api/samples/screenshare/index.html?streamName=[stream-name]
+- Main Sample: https://nanocosmos.github.io/webcaster/samples/index.html?streamName=[stream-name]
+- Minimal Sample: https://nanocosmos.github.io/webcaster/samples/minimal/index.html?streamName=[stream-name]
+- Screen Share: https://nanocosmos.github.io/webcaster/samples/screenshare/index.html?streamName=[stream-name]
 
 ### Usage
 
