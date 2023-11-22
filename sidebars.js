@@ -156,7 +156,7 @@ const sidebars = {
       "collapsible": true,
       "collapsed": false,
       "items": [
-        "webrtc/nanostream_webcaster_input_sources",
+        "webrtc/nanostream_webrtc_input_sources",
         "webrtc/nanostream_webrtc_multiple_webcasts",
         "webrtc/nanostream_webrtc_quality",
         "webrtc/nanostream_webrtc_device_selection",

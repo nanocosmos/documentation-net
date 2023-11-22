@@ -1,5 +1,5 @@
 ---
-id: nanostream_webcaster_input_sources
+id: nanostream_webrtc_input_sources
 title: Input sources
 sidebar_label: Input sources
 ---
