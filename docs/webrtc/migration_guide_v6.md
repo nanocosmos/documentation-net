@@ -94,7 +94,7 @@ This new promise-based model makes your code more robust and easier to understan
 
 Please find the documentation for v6 of the Webcaster API below:
 
-https://webrtc.pages.nanocosmos.de/webcaster-api/docs/classes/webcaster.Webcaster.html
+https://nanocosmos.github.io/webcaster/docs/classes/webcaster.Webcaster.html
 
 ## <a id="Steps"></a>Migration Steps
 
