@@ -4,101 +4,99 @@ title: Quality Settings
 sidebar_label: Quality Settings
 ---
 
-## Configuring stream quality
+## Stream Quality Configuration
 
-Webcasting quality can be configured by setting different stream encoding properties.
-In the nanoStream Webcaster this is basically performed in three steps:
+Webcaster API allows you to configure the quality settings for your broadcasts. You can control the quality of your streams through Media Stream constraints and encoding properties in two corresponding places:
 
-**1. Previewing a stream.**
-Certain stream properties can be set when starting the preview: [Video and audio preview](#video-and-audio-preview) <br/>
-**2. Encoding the stream in the browser.**
-Upstream bitrates can be configured: [Encoding bitrates](#encoding-bitrates) <br/>
-**3. Sending the stream to the nanoStream Cloud.** 
-Audio is converted again on server side: [Audio conversion on the server](#audio-conversion-on-the-server)
- 
-### Video and audio preview 
+1. **Media Stream (Preview) Configuration:** These settings affect the quality of the preview stream before broadcasting. Learn more about [Media Stream Quality Configuration](#media-stream-quality-configuration).
 
-Streams have different properties that can be set when starting a preview.<br/>
-Those are:
+2. **Broadcast Configuration:** These settings influence the encoding and quality of the stream as it's sent to the nanoStream Cloud. Explore [Browser-side Encoding Options](#browser-side-encoding-options) and [Audio Conversion on the Server](#audio-conversion-on-the-server).
 
-- video source (camera or screen share)
-- video resolution
-- video framerate
-- audio source
 
-The corresponding API call is [startPreview(previewConfig)](./nanostream_webrtc_api#rtcuserstartpreviewconfig)
+### Media Stream Quality Configuration
+
+Adjust various quality settings for your media stream:
+
+- Video resolution
+- Maximum video frame rate
+- Audio constraints
 
 ```js
-var videoDeviceConfig = {
-  device: 0, // use first video device
-  source: 'camera', // or 'screen'
-  width: 1280,
-  height: 720,
-  framerate: 30
-};
+const webcaster = new window.WebcasterApiV6.Webcaster({
+  inputCfg: {
+    mediaStreamCfg: {
+      resolution: [1280, 720],
+      maxFramerate: 30,
+      audioConstraints: {
+        autoGainControl: true,
+        channelCount: 1,
+        echoCancellation: true,
+        noiseSuppression: true
+      }
+    },
+  },
+  serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
+  ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
+  streamName: '<STREAM-NAME-1>'
+});
 
-var audioDeviceConfig = {
-  device: 0 // use first audio device
-};
-
-var videoElement = 'video-local'; // preview stream in <video id="video-local"> tag
-
-var previewConfig = {
-  videoDeviceConfig: videoDeviceConfig,
-  audioDeviceConfig: audioDeviceConfig,
-  elementId: videoElement
-};
-
-// Start the camera
-// (Note: some browsers will show a popup asking for permission)
-rtcuser.startPreview(previewConfig);
-
+await webcaster.setup()
+await webcaster.startBroadcast()
 ```
 
 :::info
-Note that the `width`, `height`, and `framerate` parameters provided to the `startPreview` are "ideal" values. In the end, it is up to a browser to decide what resolution and frame rate are the most optimal ones in a particular case.
+Note that the `resolution` is "ideal" value. In the end, it is up to a browser to decide what resolution is the most optimal one in a particular case. Similar applies to `maxFramerate` which only sets the upper limit of frame rate
 :::
 
-### Encoding bitrates
+### Browser-side Encoding Options
 
-After the preview has been started and before the stream gets send to the nanoStream Cloud, it will be encoded in the browser.
-You can set audio and video target encoding bitrates. <br/>
-This is done with [setConfig(config)](./nanostream_webrtc_api#rtcusersetconfigconfig)
+After the webcaster has been set up and before the stream is sent to the nanoStream cloud, it is encoded in the browser.
+It's possible to configure the following encoding properties:
+
+- Maximum video bitrate
+- Maximum audio bitrate
+- Maximum encoding frame rate
+- Audio transcoding bitrate
 
 ```js
-// set bitrates in kbits/s
-var config = {
-  bitrates: {
-    videoSendInitialBitrate: 1000, // min bitrate (chrome only!)
-    videoSendBitrate: 1500, // max video bitrate
-    audioSendBitrate: 64 // max audio bitrate
-  }
-};
+const webcaster = new window.WebcasterApiV6.Webcaster({
+  inputCfg: {
+    broadcastCfg: {
+      maxAudioBitrateBps: 64000,
+      maxVideoBitrateBps: 2000000,
+      maxEncodingFramerate: 30,
+    },
+  },
+  serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
+  ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
+  streamName: '<STREAM-NAME-1>'
+});
 
-rtcuser.setConfig(config);
+await webcaster.setup()
+await webcaster.startBroadcast()
 ```
 :::info
-Note that those are target bitrates, `videoSendBitrate` is the maximum bitrate. The Webcaster will only go up to the configured bitrate when the image is complex (e.g., when much movement is visible in the image). This usually means that the mean bitrate will be lower than the
-configured maximum bitrate. For example: if there is no movement in front of the camera or the image is dark, the video bitrate will be lower than configured.
-:::
-:::caution Android devices
-Also note that due to non spec-compliant behaviour of some Android devices, it might be required to restart a stream after resolution has changed. Not doing so, can result in a corrupted playback. Resolution change can be detected in the Webcaster stats that is enabled by [enableStats([enable], [interval])](./nanostream_webrtc_api#rtcuserenablestatsenable-interval).
+Note that these values are upper limits. The browser will only go up to the configured bitrate if the image is complex (for example, if there is a lot of motion in the image). This usually means that the average bitrate will be lower than the
+configured maximum bitrate. For example, if there is no movement in front of the camera or the image is dark, the video bitrate will be lower than configured.
+maxEncodingFramerate' takes into account the Media Stream frame rate setting and cannot be higher than this.
 :::
 
-### Audio conversion on the server
+### Audio Conversion on the Server
 
-Video bitrate of the resulting RTMP stream will be similar to the bitrate encoded by the browsers. Audio is converted on server side.<br/>
-**RTMP audio bitrate** can be set with [startBroadcast(broadcastConfig)](./nanostream_webrtc_api#rtcuserstartbroadcastconfig).
+The video bitrate of the resulting RTMP stream will be similar to the bitrate encoded by browsers. Audio is converted on the server side, so it's also possible to set the transcoding bitrate for audio.<br/>
 
 ```js
-// set audio transcoding bitrate in bits/s
-var broadcastConfig = {
-  transcodingTargets: {
-    output: url,
-    streamname: streamname,
-    audiobitrate: 64000 // value is in bits/s!
-  }
-};
+const webcaster = new window.WebcasterApiV6.Webcaster({
+  inputCfg: {
+    broadcastCfg: {
+      transcodeAudioBitrateBps: 64000,
+    },
+  },
+  serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
+  ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
+  streamName: '<STREAM-NAME-1>'
+});
 
-rtcuser.startBroadcast(broadcastConfig);
+await webcaster.setup()
+await webcaster.startBroadcast()
 ```

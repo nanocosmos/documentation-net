@@ -4,26 +4,25 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-:::caution Version
+:::warning deprecated version
 
-You're looking at the new Webcaster Client API version 6, if you're still on v5 
-check out our [migration guide](./migration_guide_v6) guide 
-Follow this link If you still need help with 
-[nanoStream Webcaster Client API v5](../webrtc-v5/nanostream_webrtc_introduction.md)
+You're looking at the deprecated Webcaster Client API. If you're still on v5,
+learn more about features and changes [here](../webrtc/nanostream_webrtc_introduction.md).
 
+Follow this link If are ready to [migrate](../webrtc/migration_guide_v6) to the new API version 6.
 
 :::
 
 
-## Build a browser-based live streaming workflow with nanoStream Webcaster and nanoStream Cloud
 
+
+## How to build a browser-based live streaming workflow with nanoStream Webcaster and nanoStream Cloud?
 
 We are entering a new live streaming era where **browser-based, plugin-free** and **ultra-low latency on any device** are the key drivers for interactive customer engagement. What’s needed? nanoStream Webcaster (formerly known as WebRTC.live) in combination with nanoStream Cloud!
 
-
 ### Live streaming to large audiences with nanoStream Webcaster
 
-Scalability for large audiences is probably the greatest challenge for new audio/video-based interactive use cases. Scaling your live streaming means to have the capability of handling different amounts of work or, in other words, dealing with a large number of viewers that might change on a short period of time.
+Scalability for large audiences is probably the greatest challenge for new audio/video-based interactive use cases. Scaling your live streaming means to have the capability of handling different amounts of work or, in other words, dealing with a large number of viewers that might change on a short period of time. 
 
 Doing this completely relying on WebRTC-based workflows is challenging. WebRTC is not designed for live streaming, but rather for peer-to-peer collaboration. For live streaming to larger audiences, you need a service (SaaS, PaaS) to connect your WebRTC client to.
 
@@ -38,15 +37,14 @@ nanoStream Webcaster will work as a powerful live encoder from the broadcaster/p
 WebRTC.live can be used completely end-to-end with nanoStream Cloud but also integrates well with existing live streaming environments based on RTMP and HLS.
 
 ### nanoStream Cloud as a low-latency CDN
- You can use nanoStream Cloud as a low-latency CDN to distribute your live streams with low latency to audiences worldwide. We handle the transport for you across our own origin/edge server network.
+
+You can use nanoStream Cloud as a low-latency CDN to distribute your live streams with low latency to audiences worldwide. We handle the transport for you across our own origin/edge server network.
 
 ### Advantages of connecting to nanoStream Cloud
 
 nanoStream Cloud including nanoStream H5Live Player is the perfect solution to deliver and playback live streams in a scalable way. It brings together the easiness of a cloud solution with the ability of delivery and playback in ultra-low latency on any device and HTML5 browser, including Safari on iOS. Hence, together with nanoStream Webcaster for live encoding, they set an entire browser-based live streaming workflow.
 
-
 ![Infographic: Webcaster Workflow](../assets/webrtc/webrtc-workflow-1024x358.png)
 *Infographic: Webcaster Workflow*
 
 nanoStream Cloud works out of the box; your presenters can instantly go live and share their live stream with anyone in the world, completely plugin-free within the browser.
-

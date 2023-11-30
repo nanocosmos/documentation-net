@@ -1,57 +1,53 @@
 ---
 id: nanostream_webrtc_audio_video_only
-title: Audio- / Video-Only
-sidebar_label: Audio- / Video-Only
+title: Audio-Only / Video-Only
+sidebar_label: Audio-Only / Video-Only
 ---
 
-In addition to regular streaming, with the nanoStream Webcaster you can stream Audio-Only and Video-Only.<br/>
+In addition to streaming both, audio and video, you can stream Audio-Only and Video-Only with the nanoStream Webcaster.<br/>
 
-Audio-Only or Video-Only streaming is enabled by setting video or audio device to `false` in the configuration object passed to [startPreview(config)](./nanostream_webrtc_api#rtcuserstartpreviewconfig).<br/>
+Audio-Only or Video-Only streaming is enabled by setting `audioVideoOnly` property of the `mediaStreamCfg` to either `video` or `audio` in the configuration object passed to the constructor of the API.<br/>
 
 ## Audio-Only Streaming
 
 :::tip audio-only streaming
-To start Audio-Only streaming, we pass `false` to the video device configuration.
+To start Audio-Only streaming, we pass `audio` in `mediaStreamCfg.audioVideoOnly` .
 :::
 
 ```javascript
-var videoDeviceConfig = {
-  device: false  // setting a video device to "false" allows to stream Audio-Only
-};
+const webcaster = new window.WebcasterApiV6.Webcaster({
+    inputCfg: {
+        mediaStreamCfg: {
+            audioVideoOnly: 'audio'
+        }
+    },
+    ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
+    serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
+    streamName: '<STREAM-NAME-1>'
+});
 
-var audioDeviceConfig = {
-  device: 0 // we select the first available audio device
-};
-
-var config = {
-  videoDeviceConfig: videoDeviceConfig,
-  audioDeviceConfig: audioDeviceConfig,
-  elementId: videoElement
-};
- 
-user.startPreview(config);
+await webcaster.setup()
+await webcaster.startBroadcast()
 ```
 
 ## Video-Only Streaming
 
 :::tip video-only streaming
-To start Video-Only streaming, we pass `false` to the audio device configuration
+To start Video-Only streaming, we pass `video` in `mediaStreamCfg.audioVideoOnly` .
 :::
 
 ```javascript
-var videoDeviceConfig = {
-  device: 0  // we select the first available video device
-};
+const webcaster = new window.WebcasterApiV6.Webcaster({
+    inputCfg: {
+        mediaStreamCfg: {
+            audioVideoOnly: 'video'
+        }
+    },
+    ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
+    serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
+    streamName: '<STREAM-NAME-1>'
+});
 
-var audioDeviceConfig = {
-  device: false // setting an audio device to "false" allows to stream Video-Only
-};
-
-var config = {
-  videoDeviceConfig: videoDeviceConfig,
-  audioDeviceConfig: audioDeviceConfig,
-  elementId: videoElement
-};
- 
-user.startPreview(config);
+await webcaster.setup()
+await webcaster.startBroadcast()
 ```

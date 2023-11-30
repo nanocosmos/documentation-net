@@ -4,87 +4,135 @@ title: Device Selection
 sidebar_label: Device Selection
 ---
 
-The Webcaster API gives you the possibility to present all currently attached audio and video devices to your users.
-The API call to requrest the device list is [getDevices()](./nanostream_webrtc_api#rtcusergetdevices).
+## Device Enumeration & Pre-selection Filtering API
 
-You will receive the list of devices in the [ReceivedDeviceList](./nanostream_webrtc_api#receiveddevicelist) event. After that you can show this list to the user, so he can choose which devices he wants to be used for the Webcast.
+The browsers native WebRTC API gives you the possibility to present all currently attached audio and video devices available for input recording and streaming ingest.
 
-## Preparation
+The nanoStream Webcaster Client API exports the following utility functions —among others—  under the namespace `DeviceUtils`:
 
-We will need two `<select>` tags in our HTML document, in order to display the attached audio & video devices in your HTML document. Also we will add a button to trigger the [startPreview(previewConfig)](./nanostream_webrtc_api#rtcuserstartpreviewconfig) call after we made our device selection in the UI and a video element to show the preview in.
 
-```html
-// in your html body
-<video id="video-preview" autoplay playsinline muted></video>
+### — `getAvailableMediaDevices`:
 
-<select id="audio-device-list"></select>
-<select id="video-device-list"></select>
+This function wraps the native WebRTC API for convenience. You also retrieve an equivalent list by directly using the platform support. See [MediaDeviceInfo](https://developer.mozilla.org/en-US/docs/Web/API/MediaDeviceInfo) interface.
 
-<button id="start-preview-button" type="button">start preview</button>
+
+```ts
+async function getAvailableMediaDevices(): Promise<MediaDeviceInfo[]>
 ```
 
-Also we will create a Javascript function that populates above device selection lists later on.
+### — `filterDevices`:
+
+A convenience function to filter out specific kinds of devices. By default "input" only, since you only can select these for your streaming application obviously.
+
+```ts
+function filterDevices(
+    devices: MediaDeviceInfo[],
+    deviceKinds: MediaDeviceKind[] = ['audioinput', 'videoinput'],
+    groupId?: string,
+    deviceId?: string
+): MediaDeviceInfo[]
+```
+
+## Device Permissions
+
+Please notice that the device obtained by the native enumeration interface from the platform —either directly via the Media Stream Web API or indirectly via the preceding utilities— only include devices which the user have granted permissions in the current context, via the browsers interactive user prompt, or via general page presets. For example, a browser may reject device permissions for a specific page, type of page, and either 'audio' or 'video' input types, and store these as user preferences.
+
+
+:::info
+See the standard [MediaDevices: getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia), for default way to query/prompt for device usage. 
+
+Also see the more generic permissions related novel standard: [Permissions API](https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API) 
+:::
+
+
+## Examples
+
+### 1) Showing a dropdown menu
+
+```html
+<h2>MediaDevices:</h2>
+<div id="devices"></div>
+```
+
+This example shows how to use the information gathered from devices API, and render it as a basic select menu. 
+
+
+:::note
+
+Derived to your existing applications UX, or UI frameworks and methodology in use,
+this may (potentially heavily) differ, but generally the same concepts from basic HTML and vanilla Javascript
+should apply.
+
+:::
+
+
 
 ```js
-// adds options to a select element
-var createSelectOptions = function (elementId, devices) {
+DeviceUtils.getAvailableMediaDevices().then(devices => {
 
-  var selectOptions = document.getElementById(elementId).options;
+    const videoDevices = DeviceUtils.filterDevices(devices, ['videoinput']);
+    const audioDevices = DeviceUtils.filterDevices(devices, ['audioinput']);
 
-  // Add all devices by id and index
-  for (var device of devices) {
-    selectOptions[selectOptions.length] = new Option(device.id, device.index);
-  }
+    console.debug('Available devices:', devices);
 
+    const devicesDiv = document.querySelector('#devices')
+
+    const videoDevicesSelect = createDevicesDropdown(videoDevices);
+    const audioDevicesSelect = createDevicesDropdown(audioDevices);
+
+    const videoDevicesLabel = document.createElement('label');
+    videoDevicesLabel.innerText = 'video devices: ';
+    const audioDevicesLabel = document.createElement('label');
+    audioDevicesLabel.innerText = 'audio devices: ';
+
+    devicesDiv.appendChild(videoDevicesLabel);
+    devicesDiv.appendChild(videoDevicesSelect);
+    devicesDiv.appendChild(document.createElement('br'));
+    devicesDiv.appendChild(audioDevicesLabel);
+    devicesDiv.appendChild(audioDevicesSelect);
+});
+
+function createDevicesDropdown(devices) {
+    // Create a select element
+    const selectElement = document.createElement('select');
+
+    devices.forEach(device => {
+        const optionElement = document.createElement('option');
+        optionElement.value = device.deviceId;
+        optionElement.textContent = `${device.label || 'Unknown Device'} - id: ${device.deviceId}` ;
+        selectElement.appendChild(optionElement);
+    });
+
+    return selectElement;
+}
+```
+
+### 2) Setting selected MediaDevice IDs programmatically 
+
+A typical configuration may look like below.
+
+Notice the `audioDeviceId` and `videoDeviceId` fields. They are both optional i.e. nullable (e.g. empty string).
+
+These can be set to any Device-ID string value which you would get from the devices list above (`MediaDeviceInfo#deviceId` property).
+
+```js
+let initConfig = {
+    inputCfg: {
+        mediaStreamCfg: {
+            audioDeviceId: '<audio-input-device-ID>',
+            videoDeviceId: '<video-input-device-ID>',
+            maxFramerate: 30,
+            resolution: [1280, 720],
+        },
+        broadcastCfg: {
+            maxAudioBitrateBps: 128000,
+            maxVideoBitrateBps: 8000000,
+        }
+    },
+    previewVideoElId: 'preview',
 };
 ```
 
-## Request and render devices
+## On Using MediaStream injection vs Device selection
 
-Next we will create an instance of the Webcaster API and request attached devices with the [getDevices()](./nanostream_webrtc_api#rtcusergetdevices) call.
-
-```js
-// create an instance of the API
-var user = new window.nanowebrtc.user();
-
-user.on('ReceivedDeviceList', function(event) {
-
-  // device lists are arrays, received in event.data.devices
-  var audioDevices = event.data.devices.audiodevices;
-  var videoDevices = event.data.devices.videodevices;
-
-  createSelectOptions('audio-device-list', audioDevices);
-  createSelectOptions('video-device-list', videoDevices);
-
-});
-
-// request device list, will fire 'ReceivedDeviceList' event
-user.getDevices();
-```
-
-## Start the preview
-
-Once a user has selected audio and video devices from the lists, the preview can be started.
-
-```js
-// we will trigger the preview once the 'start-preview-button' has been clicked.
-document.getElementById('start-preview-button').addEventListener('click', function() {
-
-  // get the index of the selected audio device
-  var audioDeviceList = document.getElementById('audio-device-list');
-  var audioDeviceIndex = audioDeviceList.options[audioDeviceList.selectedIndex].value;
-
-  // get the index of the selected video device
-  var videoDeviceList = document.getElementById('video-device-list');
-  var videoDeviceIndex = videoDeviceList.options[videoDeviceList.selectedIndex].value;
-
-  var previewConfig = {
-      audioDeviceConfig: {device: audioDeviceIndex},
-      videoDeviceConfig: {device: videoDeviceIndex},
-      elementId: 'video-preview'
-  };
-
-  user.startPreview(previewConfig);
-
-});
-```
+TBC

@@ -4,79 +4,63 @@ title: Speech / Music Streaming
 sidebar_label: Speech / Music Streaming
 ---
 
-Since Webcaster version 5.8.0 additional audio preprocessing options are available.<br/>
-Additionally to configuring bitrates ([Features > Quality Settings](./nanostream_webrtc_quality/)),
-it is from now on possible to disable or enable the following filters explicitly:
+In addition to configuring bitrates ([Features > Quality Settings](./nanostream_webrtc_quality/)),
+it is possible to explicitly disable or enable the following audio filters:
 
 - **autoGainControl** - Attempts to automatically maintain a steady overall volume level.
 - **echoCancellation** - Attempts to prevent echo effects.
 - **noiseSuppression** - Automatically filters the audio to remove background noise.
 
-Depending on the use case it can make sense to disable or enable all of those filters at once. <br/>
-In general there are two different types of audio content:
+Depending on the use case, it can be beneficial to enable or disable all of these filters at once. <br/>
+In general, there are two primary types of audio content:
 
-- Audio containing **speech**
-- Audio containing **music**
+- **Speech:** Typically includes spoken content
+- **Music:** Comprises musical audio content
 
-:::tip recommendation
-We recommend setting all of the above filters to `true` for speech/voice streams and all of them to `false` for music streaming.
-On most systems these filters will be on by default.
+:::tip Recommendation
+For optimal results, we recommend setting all of the above filters to `true` for speech/voice streams and all of them to `false` for music streaming. In most systems, these filters are enabled by default.
 :::
 
 ## Speech audio
 
+For speech audio streaming, enable the recommended filters
+
 ```js
-var videoDeviceConfig = {
-  device: 0, // use first video device
-  source: 'camera'
-};
+const webcaster = new window.WebcasterApiV6.Webcaster({
+  inputCfg: {
+    mediaStreamCfg: {
+      audioConstraints: {
+        autoGainControl: true,
+        echoCancellation: true,
+        noiseSuppression: true,
+      }
+    },
+  },
+  streamName: '<STREAM-NAME-1>'
+});
 
-// set all filters to 'true' for streaming voice/speech
-var audioDeviceConfig = {
-  device: 0, // use first audio device
-  echoCancellation: true,
-  autoGainControl: true,
-  noiseSuppression: true
-};
-
-var videoElement = 'video-local'; // preview stream in <video id="video-local"> tag
-
-var previewConfig = {
-  videoDeviceConfig: videoDeviceConfig,
-  audioDeviceConfig: audioDeviceConfig,
-  elementId: videoElement
-};
-
-// Start the preview
-rtcuser.startPreview(previewConfig);
-
+await webcaster.setup()
+await webcaster.startBroadcast()
 ```
 
 ## Music audio
 
+For music audio streaming, disable the filters:
+
 ```js
-var videoDeviceConfig = {
-  device: 0, // use first video device
-  source: 'camera'
-};
+const webcaster = new window.WebcasterApiV6.Webcaster({
+  inputCfg: {
+    mediaStreamCfg: {
+      audioConstraints: {
+        autoGainControl: false,
+        echoCancellation: false,
+        noiseSuppression: false,
+      }
+    },
+  },
+  streamName: '<STREAM-NAME-1>'
+});
 
-// set all filters to 'false' for streaming music
-var audioDeviceConfig = {
-  device: 0, // use first audio device
-  echoCancellation: false,
-  autoGainControl: false,
-  noiseSuppression: false
-};
-
-var videoElement = 'video-local'; // preview stream in <video id="video-local"> tag
-
-var previewConfig = {
-  videoDeviceConfig: videoDeviceConfig,
-  audioDeviceConfig: audioDeviceConfig,
-  elementId: videoElement
-};
-
-// start the preview
-rtcuser.startPreview(previewConfig);
-
+await webcaster.setup()
+await webcaster.startBroadcast()
 ```

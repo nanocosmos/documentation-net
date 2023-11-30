@@ -4,142 +4,77 @@ title: Multiple Webcasts
 sidebar_label: Multiple Webcasts
 ---
 
-Multiple Webcasts can be started from a single browser tab. <br/>
-Use cases can be:
-- broadcast multiple camera (and/or microphone) streams at once
-- broadcast a camera and a screen share stream
-- broadcast multiple audio streams
+Multiple Webcasts allow you to simultaneously broadcast multiple streams from a single browser tab. This feature is particularly useful for a range of use cases, including:
 
-## Setup Multiple Webcasts
+- Broadcasting multiple camera and/or microphone streams at once.
+- Broadcasting a camera and screen share streams.
+- Broadcasting multiple audio streams.
 
-In order to set up multiple Webcasts you will have to create multiple instances of
-the Webcaster API in your code. Depending on what sources you want to use for streaming,
-you will set up those instances differently.
+## Setting Up Multiple Webcasts
 
+To start multiple Webcasts, you'll need to create and setup multiple instances of the Webcaster API in your code. How you configure these instances depends on the sources you want to use for streaming.
 
-## Example: Camera & Screen Share
+### Example: Broadcasting Camera & Screen Share
 
-:::tip What we will do in this example
-- create two instances of the API
-- register required event handlers
-- start two previews, one for camera, one for screen share
-- start each Webcast, once the regarding preview has succeeded
+In this example, we'll demonstrate how to:
 
-:::
+- Create and configure two instances of the Webcaster API for camera and screen sharing.
+- Set up both instances.
+- Start two previews, one for the camera and one for screen sharing.
+- Start the broadcast on both instances.
 
-### 1. Create API instances
-
-Create two instances of the API, one for camera, one for screen share.
+#### 1. Create API Instances
 
 ```js
-// we will broadcast a camera with the first instance
-var camUser = new window.nanowebrtc.user();
+// First, create an instance for broadcasting a camera stream
+// The media stream will be created internally with default constraints
+const camWebcaster = new window.WebcasterApiV6({
+  serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
+  ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
+  streamName: '<STREAM-NAME-1>'
+});
 
-// we will broadcast a screen share with the second instance
-var screenUser = new window.nanowebrtc.user();
+// For screen sharing, obtain a media stream
+const screenMediaStream = await navigator.mediaDevices.getDisplayMedia({ video: true });
+
+// Create a second instance for broadcasting the screen share
+// Pass the screenMediaStream as a part of config object
+const screenWebcaster = new window.WebcasterApiV6({
+  inputCfg: {
+    mediaStream: screenMediaStream
+  },
+  serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
+  ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
+  streamName: '<STREAM-NAME-2>'
+});
 ```
 
-### 2. Starting the previews
+#### 2. Set up the instances
 
-We have to start the previews after the device lists have been emitted.
-Therefore, we start the previews within [ReceivedDeviceList](./nanostream_webrtc_api#receiveddevicelist) event listeners for both API instances.
-Requesting devices will be done in the next step.
+Before using the API further, make sure to set up the instances. This step includes creating a media stream if it's not passed and configuring other internal settings. Feel free to run these calls in parallel.
 
 ```js
-camUser.on('ReceivedDeviceList', function(event) {
-  // we received the device list, now we start a preview of the first camera in the list
-  var cameraConfig = {
-    source: 'camera',  
-    device: 0,
-    width: 1280,
-    height: 720,
-    framerate: 30
-  };
+await camWebcaster.setup(),
 
-  var audioDeviceConfig = {
-    device: 0 // choose first audio device found
-  };
-  
-  // preview camera in <video id="video-local-camera"> tag
-  var videoElementCamera = 'video-local-camera';
-
-  camUser.startPreview({
-    videoDeviceConfig: cameraConfig,
-    audioDeviceConfig: audioDeviceConfig,
-    elementId: videoElementCamera
-  });
-});
-
-screenUser.on('ReceivedDeviceList', function(event) {
-  // we received the device list, now we start a preview of the screen
-  var screenConfig = {
-    source: 'screen',   
-    width: 1920,
-    height: 1080,
-    framerate: 5
-  };
-
-  var audioDeviceConfig = {
-    device: 0 // choose first audio device found
-  };
-
-  // preview screen share in <video id="video-local-screen"> tag
-  var videoElementScreen = 'video-local-screen';
-
-  screenUser.startPreview({
-    videoDeviceConfig: screenConfig,
-    audioDeviceConfig: audioDeviceConfig,
-    elementId: videoElementScreen
-  });
-});
-
+await screenWebcaster.setup()
 ```
 
-### 3. Start both workflows
+#### 3. Optional: Start previews
 
-:::tip We will now
-- sign in to the server
-- request the device lists for both instances
-- start the webcasts once we have a preview (prepared in last step)
-:::
-
-After we signed in successfully, we can call [getDevices()](./nanostream_webrtc_api#rtcusergetdevices),
-this will emit the [ReceivedDeviceList](./nanostream_webrtc_api#receiveddevicelist) event when succeeding.
-In this example we simply start the broadcasts immediately once the [StartPreviewSuccess()](./nanostream_webrtc_api#startpreviewsuccess) events have been fired.
+To start previews, call **startPreview** on both instances and pass the corresponding video element IDs.
 
 ```js
-camUser.on('SignInSuccess', function(event) {
-  camUser.getDevices(); // will fire 'ReceivedDeviceList' for the camUser
-});
+camWebcaster.startPreview('camera-preview-id');
 
-screenUser.on('SignInSuccess', function(event) {
-  screenUser.getDevices(); // will fire 'ReceivedDeviceList' for the screenUser
-});
+screenWebcaster.startPreview('screenshare-preview-id');
+```
 
-camUser.on('StartPreviewSuccess', function(event) {
-  camUser.startBroadcast({
-      transcodingTargets: {
-        output: streamUrl1,
-        streamname: streamName1,
-      }
-    }
-});
+#### 4. Start broadcasts on both instances
 
-screenUser.on('StartPreviewSuccess', function(event) {
-  screenUser.startBroadcast({
-      transcodingTargets: {
-        output: streamUrl2,
-        streamname: streamName2,
-      }
-    }
-});
+To initiate the broadcasts one after another, call and await **startBroadcast** on both instances. You can run these calls in parallel.
 
-var signInConfig = {
-   server: config.webrtc.server, // do not change the default
-   bintuApiKey: bintuApiKey // your api key
-};
+```js
+await camWebcaster.startBroadcast();
 
-// on success, both
-camUser.signIn(signInConfig);
-screenUser.signIn(signInConfig);
+await screenWebcaster.startBroadcast();
 ```

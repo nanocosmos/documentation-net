@@ -156,16 +156,13 @@ const sidebars = {
       "collapsible": true,
       "collapsed": false,
       "items": [
-        "webrtc/nanostream_webrtc_secure_ingest",
-        "webrtc/nanostream_webrtc_screen_sharing",
+        "webrtc/nanostream_webrtc_input_sources",
         "webrtc/nanostream_webrtc_multiple_webcasts",
         "webrtc/nanostream_webrtc_quality",
         "webrtc/nanostream_webrtc_device_selection",
         "webrtc/nanostream_webrtc_audio_video_only",
-        "webrtc/nanostream_webrtc_speech_music",
-        "webrtc/nanostream_webrtc_set_mediastream",
         "webrtc/nanostream_webrtc_stats_and_metrics",
-        "webrtc/nanostream_webrtc_reconnect"
+        "webrtc/nanostream_webrtc_speech_music",
       ]
     },
     {
@@ -174,7 +171,50 @@ const sidebars = {
       "collapsible": false,
       "collapsed": false,
       "items": [
-        "webrtc/nanostream_webrtc_api"
+        "webrtc/nanostream_webrtc_api",
+        "webrtc/migration_guide_v6"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Other",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "webrtc/nanostream_webrtc_faq"
+      ]
+    }
+  ],
+  "nanoStream Webcaster V5": [
+    "webrtc-v5/nanostream_webrtc_introduction",
+    "webrtc-v5/nanostream_webrtc_getting_started",
+    "webrtc-v5/nanostream_webrtc_demos",
+    "webrtc-v5/nanostream_webrtc_support",
+    {
+      "type": "category",
+      "label": "Features",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "webrtc-v5/nanostream_webrtc_secure_ingest",
+        "webrtc-v5/nanostream_webrtc_screen_sharing",
+        "webrtc-v5/nanostream_webrtc_multiple_webcasts",
+        "webrtc-v5/nanostream_webrtc_quality",
+        "webrtc-v5/nanostream_webrtc_device_selection",
+        "webrtc-v5/nanostream_webrtc_audio_video_only",
+        "webrtc-v5/nanostream_webrtc_speech_music",
+        "webrtc-v5/nanostream_webrtc_set_mediastream",
+        "webrtc-v5/nanostream_webrtc_stats_and_metrics",
+        "webrtc-v5/nanostream_webrtc_reconnect"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "API",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "webrtc-v5/nanostream_webrtc_api"
       ]
     },
   ],

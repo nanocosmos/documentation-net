@@ -6,35 +6,37 @@ sidebar_label: Support
 
 ## Reporting bugs or issues 
 
-To report any bugs or issues, please send a complete issue report including the following:
+If you encounter any bugs or issues, we're here to help! To ensure a swift resolution, please provide a comprehensive issue report with the following details:
 
-- a description of the issue and expected results
-- the configuration you are using for webrtc, bintu.live and h5live
-- potential stream IDs which show the issue
-- how to replicate the issue
+1. **Description**
+: Clearly outline the issue you're facing and what results you were expecting. Include time frames of any incidents when appropriate.
 
-### Log information
+2. **Configuration Details**
+: Include your configuration settings for __Webcaster__, __bintu.live__, and __H5live player__.
 
-#### Browser console log
+3. **Stream IDs**
+: Provide any relevant stream IDs and/or stream names that demonstrate the issue.
 
-Press `Ctrl+Shift+J` or `F12` (Windows / Linux) or `Cmd+Opt+J` (Mac)
-copy/paste the result of the console
-
-
-#### Use debug-log information 
-
-Enhanced logging can be enabled by adding `&debug=3` to the web page URL
+4. **Replication Steps**
+: Help us understand how to replicate the issue so we can investigate effectively.
 
 
-#### Chrome webrtc-internals 
+## Log Information
 
-Open a separate browser tab and open the URL `chrome://webrtc-internals` click `dump` and download the data and send to us.
+### Browser Console Log
 
+    Press Ctrl+Shift+J or F12 (Windows/Linux) or Cmd+Opt+J (Mac).
+    Copy and paste the console log results.
 
-### Remote Support 
+### Chrome WebRTC-Internals
 
-:::caution Remote support session
-Any potential issues might be best resolved based on a remote support session, dependent on your support level.
-**Please [contact](mailto:support@nanocosmos.de) us to arrange an online meeting.**
+    Open a new browser tab and go to chrome://webrtc-internals.
+    Click on dump, download the data, and send it to us.
+
+:::caution Remote Support Session
+For expedited issue resolution, consider a remote support session and 
+[reach out](mailto:support@nanocosmos.de) to us to arrange an online meeting.
+
+**Please be aware that this option is contingent upon your support level and may offer the most effective solution to production critical issues.**
 :::
 

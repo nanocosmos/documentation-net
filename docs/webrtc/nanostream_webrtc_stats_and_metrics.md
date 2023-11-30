@@ -4,125 +4,130 @@ title: Stats and Metrics
 sidebar_label: Stats and Metrics
 ---
 
-The Webcaster API provides two types of Quality Of Service reporting mechanisms:
+The Webcaster API offers two Quality of Service reporting mechanisms for monitoring the performance of your webcasts:
 
-- Client side statistics
-- Collection of backend metrics 
+- [Client-side emitted metrics](#client-side-emitted-metrics)
+- [Sending Metrics to Our Backend](#sending-metrics-to-our-backend)
 
-## Stats
+### Client-side emitted metrics
 
-In order to display client side statistics that are visible directly in your Webcaster application, please:
-
-- Enable stats via the [enableStats()](./nanostream_webrtc_api#rtcuserenablestatsenable-interval) API call
-- Listen to the ["ReceivedWebRTCStats"](./nanostream_webrtc_api#receivedwebrtcstats) Event
-
-:::tip note
-Please find a list of available stats [here](./nanostream_webrtc_api#webrtcstatsevent--object).
-Also note that most of the stats are available in Chrome. The other browsers, e.g. Firefox, may not provide all the documented stats.
-:::
-
-### Stats Example
-
-The following snippet will enable stats reporting on the client side:
+You can receive client-side metrics on an interval,
+Note: Metrics indicating an error would be output regardless of the interval.
+For a comprehensive list of metrics, please refer to the [Webcaster API docs](./nanostream_webrtc_api.md).
 
 ```js
-// rtcUser: instance of RtcUser
-rtcUser.enableStats();
-
-rtcUser.on('ReceivedWebRTCStats', function(event) {
-    var results = event.data.results;
-    console.log(JSON.stringify(results));
+const webcaster = new window.WebcasterApiV6.Webcaster({
+  streamName: '<STREAM-NAME-1>'
 });
+
+webcaster.onMetrics = (metrics) => {
+    console.log(metrics);
+
+    // Check if the metric contains error information
+    if (metrics.errorMessage) {
+        console.log(metrics.errorMessage, metrics.errorCode);
+    }
+};
+
+await webcaster.setup();
+
+// Will also start emitting metrics at an interval
+await webcaster.startBroadcast();
 ```
 
 ### Ingest Quality Indicators
 
-Bad network is the major reason for bad end to end user experience.
-In case of bad network conditions you can warn your users and they will be able to take further steps in order to improve the situation.
+Detecting and addressing poor network conditions is crucial for ensuring a good end-to-end user experience. Specific statistics indicate the current upstream quality:
 
 There are specific stats that indicate the current upstream quality:
 
-- **roundTripTime** - Current time in milliseconds that data takes from the client to the webcaster server and back.
-- **packetLoss** - Percentage of packets lost during past 10 seconds.
-- **videoSendDelay** (Chromium based browsers only) - Delay before video frames are send to the server. 
+- **RTT (Round Trip Time)** - The current time in milliseconds that data takes from the client to the webcaster server and back.
+- **Packet loss** - The percentage of packets lost during the past 10 seconds.
+- **Send Delay** (Chromium-based browsers only) - The delay before video frames are sent to the server.
 
-Those statitics will allow you to show a **traffic light** to your webcasters, that indicates the current ingest quality. This regards the upstream network conditions from your customers browsers to our webcast servers.
+These statistics enable you to display  **traffic lights** to your webcasters, indicating the current ingest quality and network conditions from your customers' browsers to our webcast servers.
 
 ### Traffic Light Recommendations
 
-Based upon our analysis, we have gathered recommendations for indicating bad streaming conditions to the end users.
+We have gathered recommendations for indicating poor streaming conditions to end users based on our analysis:
 
 #### Round Trip Time
 
-We concider an rtt of 150 or less as acceptable. We observed RTT values going up to 150, with still good playback experience.
-Above 150 and below 250 the viewer experience will degrade slighly. Above 250 milliseconds users should check their network and
-see if there are things that can be improved.
+- An RTT of 150 milliseconds or less is considered acceptable and may result in a good playback experience.
+- Above 150 and below 250 milliseconds, viewer experience may degrade slightly.
+- Above 250 milliseconds, users should check their network for improvements.
 
 #### Packet Loss
 
-A packet loss of less than 5% still results good playback experience. Greater than 10% of lost packages will degrade viewer experience, 
-especially for streams with higher bitrates (2Mb and above). Above 10% of packet loss, we observed that streams can get chunky and your users should take action then.
+- Packet loss of less than 5% generally results in a good playback experience.
+- Packet loss exceeding 10%, especially for streams with higher bitrates (2Mb and above), can degrade viewer experience.
+- Beyond 10% packet loss, streams can become chunky, and users should take action.
 
-
-#### Sample for a simple traffic light implementation:
+#### Sample of a simple traffic light implementation:
 
 ```js
-// rtcUser: instance of RtcUser
-rtcUser.enableStats();
+const webcaster = new window.WebcasterApiV6.Webcaster({
+  streamName: '<STREAM-NAME-1>'
+});
 
-rtcUser.on('ReceivedWebRTCStats', function(event) {
-    
-    var results = event.data.results;
-    var roundTripTime = results.roundTripTime;
-    var packetLoss = results.packetLoss;
+webcaster.onMetrics = (metrics) => {
+    console.log(metrics);
 
-    if (!roundTripTime || !packetLoss) return; // values can be undefined
+    const rtcstats = metrics.rtcstats;
+    const connectionRtt = rtcstats.connection.rtt.value;
+    const packetLoss = rtcstats.connection.packetLoss.value;
+
+    if (!connectionRtt || !packetLoss) {
+        return // values can be undefined
+    };
 
     // thresholds
-    var quality = 'good';
-    var packetLossLowerBound = 5;
-    var packetLossUpperBound = 10;
-    var rttLowerBound = 150;
-    var rttUpperBound = 250;
+    let quality = 'good';
+    const packetLossLowerBound = 5;
+    const packetLossUpperBound = 10;
+    const rttLowerBound = 150;
+    const rttUpperBound = 250;
 
-    if(packetLoss < packetLossLowerBound && roundTripTime < rttLowerBound) {
+    if (packetLoss < packetLossLowerBound && connectionRtt < rttLowerBound) {
         quality = 'good';
-    } 
-    
-    if ((packetLoss > packetLossLowerBound && packetLoss < packetLossUpperBound) 
-        || (roundTripTime > rttLowerBound && roundTripTime < rttUpperBound)) {
+    }
+
+    if ((packetLoss > packetLossLowerBound && packetLoss < packetLossUpperBound)
+        || (connectionRtt > rttLowerBound && connectionRtt < rttUpperBound)) {
         quality = 'medium';
     }
 
-    if (packetLoss > packetLossUpperBound || roundTripTime > rttUpperBound) {
+    if (packetLoss > packetLossUpperBound || connectionRtt > rttUpperBound) {
         quality = 'bad';
     }
 
-    console.log('roundTripTime: ', roundTripTime);
+    console.log('roundTripTime: ', connectionRtt);
     console.log('packetLoss: ', packetLoss);
     console.log('quality: ', quality);
+};
 
-});
+await webcaster.setup()
+
+await webcaster.startBroadcast()
 ```
 
-## Metrics
+## Sending Metrics to Our Backend
 
-Sending metrics to our backend will help us analyze your customers webcast ingest quality and track down client side issues. Additionally you will be able to see useful information in the Analytics Dashboard. Please refer to the [nanoStream Cloud](../cloud/analytics#webcaster) documentation for details on how to enable client metrics for your organization.
+Sending metrics to our backend is useful for analyzing webcast ingest quality and tracking client-side issues. It also provides valuable information in the Analytics Dashboard. Refer to the [nanoStream Cloud](../cloud/analytics#webcaster) for details on enabling client metrics for your organization.
 
-### Metrics configuration
+### Metrics Configuration
 
-In order to enable sending metrics from the clients, please configure your accountId and accountKey with the [setConfig()](./nanostream_webrtc_api#rtcusersetconfigconfig) API call.
+To configure sending metrics from clients, set your accountId and accountKey in the constructor's config object.
 
 ```js
-// rtcUser: instance of RtcUser
-var rtcConfig = {
+const webcaster = new window.WebcasterApiV6.Webcaster({
+    streamName: '<STREAM-NAME-1>',
     metrics: {
         accountId: 'myAccountId',
         accountKey: 'myAccountKey'
     }
-};
+});
 
-// Set metrics credentials
-rtcUser.setConfig(rtcConfig);
-
+await webcaster.setup()
+await webcaster.startBroadcast()
 ```
