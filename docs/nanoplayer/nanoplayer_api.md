@@ -2898,22 +2898,22 @@ The config object to pass as param for the 'setup' call.
     <td>[tweaks]</td><td><code>object</code></td><td></td><td><p>The object to tweak the player (only h5live).</p>
 </td>
     </tr><tr>
-    <td>[tweaks.buffer]</td><td><code>object</code></td><td></td><td><p>The buffer tweak object. NOTE: Changing the values can result in unstable playback. The values have to ascend in the correct order (**&#39;min&#39; < &#39;start&#39; < &#39;target&#39; < &#39;limit&#39; < &#39;max&#39;**) to avoid unusual playback behaviour. Differences between &#39;min&#39; & &#39;start&#39;, &#39;min&#39; & &#39;target&#39;, &#39;target&#39; & &#39;limit&#39; have to be significant enough.</p>
+    <td>[tweaks.buffer]</td><td><code>object</code></td><td></td><td><p>The buffer tweak object. NOTE: Changing the values can result in unstable playback. The values have to ascend in the correct order (**`min` &lt; `start` &lt; `target` &lt; `limit` &lt; `max`**) to avoid unusual playback behaviour. Differences between `min` & `start`, `min` & `target`, `target` & `limit` have to be significant enough.</p>
 </td>
     </tr><tr>
-    <td>tweaks.buffer.min</td><td><code>number</code></td><td><code>0.2</code></td><td><p>The minimum buffer in seconds. If buffer underrun occurs while playing and reaches this value, buffering initiates until the&#39;start&#39; value is reached for playback to resume. It should be significantly lower than &#39;start&#39;.</p>
+    <td>tweaks.buffer.min</td><td><code>number</code></td><td><code>0.2</code></td><td><p>The minimum buffer in seconds. If buffer underrun occurs while playing and reaches this value, buffering initiates until the`start` value is reached for playback to resume. It should be significantly lower than `start`.</p>
 </td>
     </tr><tr>
-    <td>tweaks.buffer.start</td><td><code>number</code></td><td><code>0.5</code></td><td><p>The start buffer in seconds. Playback starts at this buffer value upon the play call. It should be lower or equal than &#39;target&#39;.</p>
+    <td>tweaks.buffer.start</td><td><code>number</code></td><td><code>0.5</code></td><td><p>The start buffer in seconds. Playback starts at this buffer value upon the play call. It should be lower or equal than `target`.</p>
 </td>
     </tr><tr>
-    <td>tweaks.buffer.target</td><td><code>number</code></td><td><code>1.2</code></td><td><p>The target buffer in seconds. This value is aimed for if the buffer reaches&#39;limit&#39; or &#39;max&#39;. It ensures stable playback. It should be significantly lower than &#39;limit&#39;.</p>
+    <td>tweaks.buffer.target</td><td><code>number</code></td><td><code>1.2</code></td><td><p>The target buffer in seconds. This value is aimed for if the buffer reaches`limit` or `max`. It ensures stable playback. It should be significantly lower than `limit`.</p>
 </td>
     </tr><tr>
-    <td>tweaks.buffer.limit</td><td><code>number</code></td><td><code>1.7</code></td><td><p>The limit buffer in seconds. Smooth latency reduction occurs if this value is reached, moving towards&#39;target&#39;. It should be significantly higher than &#39;target&#39;.</p>
+    <td>tweaks.buffer.limit</td><td><code>number</code></td><td><code>1.7</code></td><td><p>The limit buffer in seconds. Smooth latency reduction occurs if this value is reached, moving towards`target`. It should be significantly higher than `target`.</p>
 </td>
     </tr><tr>
-    <td>tweaks.buffer.max</td><td><code>number</code></td><td><code>8.0</code></td><td><p>The absolute maximum buffer in seconds. Upon reaching this value, a hard seek to &#39;target&#39; is performed. It should be significantly higher than &#39;limit&#39;.</p>
+    <td>tweaks.buffer.max</td><td><code>number</code></td><td><code>8.0</code></td><td><p>The absolute maximum buffer in seconds. Upon reaching this value, a hard seek to `target` is performed. It should be significantly higher than `limit`.</p>
 </td>
     </tr><tr>
     <td>[tweaks.bufferDynamic]</td><td><code>object</code></td><td></td><td><p>The buffer dynamic tweak object.</p>
