@@ -90,7 +90,7 @@ The information is presented in three sections:
 :::info
 Additionally, the dashboard offers the `secure` option (if enabled) to generate a playback token. During your logged-in session, you have a jwt token that is valid for the whole organisation and lets you watch every stream. Alternatively, you can create a new stream JWT token with an expiration date. This token can be valid for the entire organization, specific stream groups, or individual stream names. You can specify options such as "not before" date, client IP, domain, user ID, or a single tag for added security and control. Contact us [here](https://www.nanocosmos.de/contact) to enable the `secure` feature for you!
 :::
-3. **Stream Overvie**w: This section provides a link to the stream's overview page. By clicking on the URL, you can access the complete stream overview, which includes various other relevant details.
+3. **Stream Overview**: This section provides a link to the stream's overview page. By clicking on the URL, you can access the complete stream overview, which includes various other relevant details.
 
 ![Screenshot: Easy Instructions to the live stream](../assets/cloud-frontend/cf-instructions.jpg)
 *Screenshot: Easy Instructions to the live stream*
@@ -99,11 +99,52 @@ By following these instructions, you can start your stream smoothly, access play
 
 Once you have accessed this page, you have two options for broadcasting a live streaming:
 
-### Option 1: Use the nanoStream Webcaster
+## Option 1: Use the nanoStream Webcaster
 
-…wip…
+The Webcaster interface is designed with simplicity and efficiency in mind, offering key elements that make live streaming easy.
 
-### Option 2: Use a separate live encoder software or hardware:
+![Screenshot: Webcaster Integration in the Dashboard](../assets/cloud-frontend/cf-webrtc.jpg)
+*Screenshot: Webcaster Integration in the Dashboard*
+
+The Webcaster interface, shown in the screenshot above, is divided into three main sections: 
+- Top left: The webcaster itself,
+- Top right: Real-time metrics and
+- Bottom: The usual stream details at the bottom.
+
+![Screenshot: Webcaster Close Up](../assets/cloud-frontend/cf-webrtc-closeup.png)
+*Screenshot: Webcaster Close Up*
+
+In the top corner, you can easily identify the version of the Webcaster API in use. Once you begin streaming, the interface displays information such as connection status and stream quality.
+
+### Toolbar
+
+The Toolbar, located below the webcaster, acts as your command center, providing quick access to essential functions:
+
+- **Camera On/Off**: Toggle your camera.
+- **Audio On/Off**: Control your audio input.
+- **Start/Stop Streaming**: Initiate or conclude your live stream.
+- **Settings**: Access detailed customization options.
+- **Playout Link**: Quickly retrieve the link to share your live stream.
+
+### Settings
+
+Tailor your streaming experience with the nanoStream Webcaster settings, accessible when you are not actively streaming.
+
+![Screenshot: Webcaster Settings](../assets/cloud-frontend/cf-webrtc-settings.png)
+*Screenshot: Webcaster Settings*
+
+1. **Video Source**: Choose between video feed from your camera or screen sharing. If you opt for screen sharing, a dedicated dialog will appear upon application of changes, allowing you to select the specific screen. Should you wish to switch to a different window, revisit the settings, click on screenshare again, and apply changes.
+
+2. **Video Quality**: Adjust the maximum video bitrate, resolution, and framerate according to your preferences. Fine-tune these settings to achieve the desired balance between video quality and bandwidth efficiency.
+
+3. **Audio Configuration**: Select your preferred audio input device and set the maximum bitrate to ensure optimal audio quality during your stream.
+
+### Metrics
+
+The metrics section provides crucial information, including *Packet Loss* (Packetloss) and *Round-Trip Time* (RTT). Packet Loss is a vital metric for checking stream health, while RTT offers insights into stream performance and responsiveness.
+
+
+## Option 2: Use a separate live encoder software or hardware:
 
 - Configure your preferred live encoder software or hardware, such as OBS or Wirecast, according to the setup instructions.
 - Obtain the necessary RTMP stream details (stream name and URL) from the "Ingest" section on the stream creation or easy instructions page.

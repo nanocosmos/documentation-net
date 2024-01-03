@@ -4,22 +4,17 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-:::caution Version
-
-You're looking at the new Webcaster Client API version 6, if you're still on v5 
-check out our [migration guide](./migration_guide_v6) guide 
+:::caution Version v6
+You're looking at the Webcaster Client API version 6, that we launched in 2023. <br/>
+If you're still on version 5 check out our [migration guide](./migration_guide_v6) guide. <br/>
 Follow this link If you still need help with 
 [nanoStream Webcaster Client API v5](../webrtc-v5/nanostream_webrtc_introduction.md)
-
-
 :::
 
 
 ## Build a browser-based live streaming workflow with nanoStream Webcaster and nanoStream Cloud
 
-
 We are entering a new live streaming era where **browser-based, plugin-free** and **ultra-low latency on any device** are the key drivers for interactive customer engagement. What’s needed? nanoStream Webcaster (formerly known as WebRTC.live) in combination with nanoStream Cloud!
-
 
 ### Live streaming to large audiences with nanoStream Webcaster
 

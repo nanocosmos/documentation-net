@@ -9,14 +9,31 @@ sidebar_label: Browser Demos
 Below you can find links to our Webcaster demo applications.
 These samples are designed to showcase the broad capabilities of our Webcaster technology, providing you with practical experience and insight into its features. Explore our sample code to see how nanoStream Webcaster can enhance your webcasting projects.
 
-To fully utilize these samples, please ensure you have a bintu account. Create a stream in the bintu frontend, and then append the stream name to the sample pages' URLs using the `streamName` URL parameter.
-
-## Before You Start
+To fully utilize these samples, please ensure you have a bintu account. [Create a stream in the nanoStream Cloud Dashboard](../cloud-frontend-v3/Dashboard_Start_Streaming), and then append the stream name to the sample pages' URLs using the `streamName` URL parameter.
 
 :::info Before starting
-To begin testing our samples, please sign in to your nanoStream Cloud/Bintu account and create a new stream here [here](https://dashboard.nanostream.cloud/stream/create). <br/>
-If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email  [sales@nanocosmos.net](mailto:sales@nanocosmos.net)
+To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>
+If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 :::
+
+<article class="margin-top--lg">
+    <section class="row list_ZO3j">
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="./nanostream_webrtc_demos#webcaster-samples">
+                <h2 class="text--truncate cardTitle_dwRT" title="Installation">Webcaster Samples</h2>
+                <p class="text--truncate cardDescription_mCBT">
+                    Find browser demos and examples how to implement the webcaster on your webpage.
+                </p>
+            </a></article>
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="../cloud-frontend-v3/Dashboard_Start_Streaming#option-1-use-the-nanostream-webcaster">
+                <h2 class="text--truncate cardTitle_dwRT" title="Configuration">Dashboard Integration</h2>
+                <p class="text--truncate cardDescription_mCBT">
+                    Use the Webcaster directly in the Cloud Dashboard.
+                </p>
+            </a></article>
+    </section>
+</article>
 
 ## Webcaster Samples
 
@@ -40,13 +57,13 @@ The main sample showcases the lifecyle of the Webcaster, you can perform the fol
 - click `dispose` to destroy the Webcaster instance
 - click `setMuted` to mute the ingest
 
-## Playback
+### Playback
 
 You can play back your Webcaster ingests with our H5LivePlayer.
 
 The main sample from above includes a side-by-side player for your convencience when testing.
 To create a shareable player link, append the stream name to our player demo URL:
-- player url: https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?entry.rtmp.streamname=[stream-name]
+- Player url: https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?entry.rtmp.streamname=[stream-name]
 
 
 :::info
