@@ -1,6 +1,6 @@
 ---
 id: analytics
-title: nanoStream Cloud Analytics
+title: Introduction
 sidebar_label: General
 ---
 

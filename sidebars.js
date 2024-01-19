@@ -284,22 +284,77 @@ const sidebars = {
     },
   ],
   "nanoStream Analytics": [
-    "cloud/analytics",
-    "cloud/worldmap",
-    "cloud/analytics-zoom",
     {
       "type": "category",
-      "label": "Stream Health Monitoring",
-      "collapsible": true,
+      "label": "Analytics",
+      "collapsible": false,
       "collapsed": false,
+      "link": {"type": "doc", "id": "cloud/analytics"},
       "items": [
-        "cloud/alerting",
-        "cloud/troubleshooting",
+        {
+          "type": "category",
+          "label": "Features",
+          "link": {
+            "type": 'generated-index',
+            "title": 'Analytics Features',
+            "description": 'Learn about these important nanoStream Analytics features!',
+            "slug": '/analytics/features',
+            "keywords": ['features, list, utility']
+          },
+          "collapsible": false,
+          "collapsed": false,
+          "items": [
+            "cloud/worldmap",
+            "cloud/analytics-zoom",
+            "cloud/analytics-guardian",
+            {
+              "type": "category",
+              "label": "Stream Health Monitoring",
+              "collapsible": false,
+              "collapsed": false,
+              "link": {
+                "type": 'generated-index',
+                "title": 'Analytics Features',
+                "description": 'Make your stream performance observable and learn how to deal with different situtations!',
+                "slug": '/analytics/features',
+                "keywords": ['stream', 'health', 'monitoring']
+              },
+              "items": [
+                "cloud/alerting",
+                "cloud/troubleshooting",
+              ]
+            },
+            {
+              "type": "category",
+              "label": "API",
+              "collapsible": false,
+              "collapsed": false,
+              "link": {
+                "type": 'generated-index',
+                "title": 'Analytics API',
+                "description": 'Learn about these important nanoStream Analytics features!',
+                "slug": '/analytics/features',
+                "keywords": ['stream', 'health', 'monitoring']
+              },
+              "items": [
+                "cloud/analytics-api",
+                "cloud/analytics-api-error-codes",
+                {
+                  "type": "category",
+                  "label": "Releases",
+                  "collapsible": false,
+                  "collapsed": false,
+                  "items": [
+                    "cloud/analytics-api-releases-latest",
+                    "cloud/analytics-api-releases-history",
+                  ]
+                },
+              ]
+            },
+          ]
+        },
       ]
     },
-    "cloud/analytics-guardian",
-    "cloud/analytics-api",
-
   ],
   "FAQ": [
     "faq/faq",

@@ -1,7 +1,7 @@
 ---
 id: analytics-api
-title: Analytics API
-sidebar_label: Analytics API
+title: Analytics API Docs
+sidebar_label: Documentation
 ---
 
 The API documentation can be found [here](https://metrics.nanocosmos.de/api/doc/).
