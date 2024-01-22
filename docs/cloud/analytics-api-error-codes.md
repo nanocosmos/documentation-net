@@ -62,20 +62,20 @@ Processing errors may be encountered if something unexpected is happening on ser
 | E4002 | The intersection of multiple sets of streams, which are tagged with the respective tag, has resulted in an empty set of streams. Please use less or other tags for filtering. | 404 | 
 | E4011 | Internal Server Cache Error | 500 | 
 | E4012 | Internal Server Cache Error | 500 | 
-| E5001_ES_TIMEOUT | Internal data request ran into timeout. | 500 | 
-| E5002_ES_GENERAL_ISSUE | Internal Server Error | 500 | 
-| E5003_ES_SHARD_ERROR | Internal Server Error | 500 | 
-| E5010_AUX_ERROR | Internal Auxiliary Server Error | 500 | 
-| E5011_AUX_HTTP_ERROR | Internal Auxiliary Server Communication Error | 500 | 
-| E5020_BINTU_ERROR | Internal Bintu Error | 500 | 
-| E5021_BINTU_HTTP_ERROR | Internal Bintu Communication Error | 500 | 
-| E5030_CTS_ERROR | Internal Auth-Service Error | 500 | 
-| E5031_CTS_HTTP_ERROR | Internal Auth-Service Communication Error | 500 |
+| E5001 | Internal data request ran into timeout. | 500 | 
+| E5002 | Internal Server Error | 500 | 
+| E5003 | Internal Server Error | 500 | 
+| E5010 | Internal Auxiliary Server Error | 500 | 
+| E5011 | Internal Auxiliary Server Communication Error | 500 | 
+| E5020 | Internal Bintu Error | 500 | 
+| E5021 | Internal Bintu Communication Error | 500 | 
+| E5030 | Internal Auth-Service Error | 500 | 
+| E5031 | Internal Auth-Service Communication Error | 500 |
 
 ## Accessability Errors
 
 | Error Code | Description | HTTP Code |
 |------------|---------------|-----------|
-| E6001_ACCESS_DENIED | You got no access to the content you requested.  | 403 |
-| E6002_ACCESS_LVL_TOO_LOW | Access denied: The user access level is too low. Contact your system admin for more permissions. | 403 | 
-| E6003_ACCESS_FOR_FE_ONLY | Access denied: This route does not support requests via API. Please consider using our [nanoStream Analytics dashboard](https://metrics.nanocosmos.de/api/doc/v2/) to access further utilities and details about your live streams and audience! | 403 |
+| E6001 | You got no access to the content you requested.  | 403 |
+| E6002 | Access denied: The user access level is too low. Contact your system admin for more permissions. | 403 | 
+| E6003 | Access denied: This route does not support requests via API. Please consider using our [nanoStream Analytics dashboard](https://metrics.nanocosmos.de/api/doc/v2/) to access further utilities and details about your live streams and audience! | 403 |
