@@ -4,40 +4,78 @@ title: Error Codes
 sidebar_label: Error Code Definitions
 ---
 
-In this table we provide an overview and description about all possible error codes of the Analytics API.  
+# Analytics API Error Codes 
 
-| Error Code | Error Message | HTTP Code | 
-|------------|---------------|-----------| 
-| E1001_ENDPOINT_NOT_FOUND | The requested URL was not found on this server | 404 | 
-| E1002_PARAM_REQUIRED | Parameter is required | 400 | 
-| E1003_WRONG_DATA_TYPE | Wrong data type | 400 | 
-| E1004_INVALID_VALUE | Invalid value | 400 | 
-| E1005_TOO_MANY_PARAMS | Too many parameters | 400 | 
-| E1006_INVALID_REQ_BODY | Error while JSON/URL request body parsing | 400 | 
-| E1007_MISSING_PROPS_REQ_BODY | The request body has missing properties | 422 | 
-| E1008_GENERAL_REQ_BODY_ISSUES | Found issues with the request body | 403 | 
-| E1009_INVALID_HEADER | The given header is invalid | 403 | 
-| E2001_USER_NOT_FOUND | User not found | 404 | 
-| E2002_INVALID_USER_CREDENTIALS | Invalid user credentials | 401 | 
-| E2011_ORGA_NOT_FOUND | Organization not found | 404 | 
-| E2012_ORGA_IS_NOT_ENABLED | Organization is not enabled | 403 | 
-| E2021_API_KEY_NOT_FOUND | API key not found or invalid | 404 | 
-| E3001_STREAM_NOT_FOUND | Stream not found | 404 | 
-| E3002_TAG_NOT_FOUND | Tag not found | 404 | 
-| E3003_COUNTRY_NOT_FOUND | Country/region not found | 404 | 
-| E4001_INTERNAL_ERROR | DefaultErrorMsg | 500 | 
-| E4002_TAG_STREAM_INTERSECTION_ISSUE | The intersection of multiple sets of streams, which are tagged with the respective tag, has resulted in an empty set of streams. Please use less or other tags for filtering. | 404 | 
-| E4011_REDIS_GENERAL_ISSUE | DefaultErrorMsg | 500 | | E4012_REDIS_KEY_ISSUE | DefaultErrorMsg | 500 | | E5001_ES_TIMEOUT | Data request ran into timeout | 500 | 
-| E5002_ES_GENERAL_ISSUE | DefaultErrorMsg | 500 | 
-| E5003_ES_SHARD_ERROR | DefaultErrorMsg | 500 | 
-| E5010_AUX_ERROR | DefaultErrorMsg | 500 | 
-| E5011_AUX_HTTP_ERROR | DefaultErrorMsg | 500 | 
-| E5020_BINTU_ERROR | DefaultErrorMsg | 500 | 
-| E5021_BINTU_HTTP_ERROR | DefaultErrorMsg | 500 | 
-| E5030_CTS_ERROR | DefaultErrorMsg | 500 | 
-| E5031_CTS_HTTP_ERROR | DefaultErrorMsg | 500 | 
-| E6001_ACCESS_DENIED | Access denied | 403 | 
-| E6002_ACCESS_LVL_TOO_LOW | Access denied: User access level is too low | 403 | 
-| E6003_ACCESS_FOR_FE_ONLY | Access denied: Only FE requests are allowed | 403 | 
-| E6011_JWT_ERROR | Invalid JWT token | 401 | 
-| E6012_JWT_MISSING | JWT token has not been set for the request. Please add to the request header field 'x-access-token' your JWT token. | 401 |
+In this table we provide an overview about all possible error codes that you could encounter using the nanoStream Analytics API.
+
+## Request Configuration Errors
+
+The following error codes will be send as a response to faulty request configurations.
+
+| Error Code | Description | HTTP Code |
+|------------|-------------|-----------|
+| E1001 | The requested URL was not found on this server. This may happen if you are trying to access a wrong/unavailble URI endpoint. Please verify, that your request will be send to **metrics.nanocosmos.de/api/v2/\<path-of-your-desired-endpoint\>**. | 404 | 
+| E1002 | A parameter is required, but is missing in the request. The response body should contain more information about which parameter is missing. | 400 | 
+| E1003 | Your request accepts the wrong response type in return. Make sure you define **application/json** as the correct response type. | 400 | 
+| E1004 | 1 or more parameters you sent, have not passed validation. This happens, if you try to filter for non-existing countries or faulty time range references. | 400 | 
+| E1005 | The route you are trying to access, does have a maximum limit of parameters. Some routes do have a limit for stream names or tags filter. Please refer to our [API documentation](https://metrics.nanocosmos.de/api/doc/v2/) to check if there are limitations to the used route. | 400 | 
+| E1006 | The request body contains invalid/unexpected data or follows an unknown/falsy structure scheme. | 400 | 
+| E1007 | The request body has missing properties. Check your request body content and compare it with the route requirements at our [API documentation](https://metrics.nanocosmos.de/api/doc/v2/) | 422 | 
+| E1008 | Found issues within the request body. These can be referred to format issuse (e.g. stream names must be strings), issues with one or more stream names, that do not belong to your organization or issues regarding stream alert data access, while the stream was manually excluded from alert detection before.  | 403 | 
+| E1009 | The given header is invalid and does follow our request scheme. Detailed info can be found in the response statement. | 403 | 
+
+Learn to specify your request correctly by taking a look at our [API documentation](https://metrics.nanocosmos.de/api/doc/v2/).
+
+
+## Authentication Errors
+
+These error codes will be send as response, if the client's authentication is not working properly.
+
+| Error Code | Description | HTTP Code |
+|------------|---------------|-----------|
+| E2002 | The provided email and/or password are incorrect. | 401 |  
+| E2012 | The used organization is not enabled. To switch from trial status to regular organization please [contact us](https://www.nanocosmos.de/contact)! We will get in touch with you shortly. | 403 | 
+| E2021 | The provided API key is invalid or malformed. | 404 |
+| E6011 | The provided login token is invalid or malformed. | 401 | 
+| E6012 | JWT token has not been set for the request. Please add to the request header field 'x-access-token' your JWT token. | 401 |
+
+
+## Filter Errors
+
+If the filter options are not used as intended, the user will be notified by these error codes.
+
+| Error Code | Description | HTTP Code |
+|------------|---------------|-----------|
+| E3001 | The provided stream name is not found on our servers. Please check for typos.  | 404 | 
+| E3002 | The given stream tag is not found on our servers. Please check for typos and varify if this tag actually exist, using the [bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Tag%20Collection). | 404 | 
+| E3003 | The provided country/region is not known on our servers. Please check for typos.  | 404 | 
+
+## Processing Errors
+
+Processing errors may be encountered if something unexpected is happening on serverside. The causes of this can be the results of a server maintenance measurement, hotfixes or unwanted cloud communication behavior. If you encounter such errors, please submit a support ticket.
+
+| Error Code | Description | HTTP Code |
+|------------|---------------|-----------|
+| E2001 | The used user account is not known to our systems. | 404 | 
+| E2011 | The used organization is not known to our systems. | 404 |
+| E4001 | Something went wrong on our server side. Please try again later. If this issue persists, please do not hesitate to contact our support team. | 500 | 
+| E4002 | The intersection of multiple sets of streams, which are tagged with the respective tag, has resulted in an empty set of streams. Please use less or other tags for filtering. | 404 | 
+| E4011 | Internal Server Cache Error | 500 | 
+| E4012 | Internal Server Cache Error | 500 | 
+| E5001_ES_TIMEOUT | Internal data request ran into timeout. | 500 | 
+| E5002_ES_GENERAL_ISSUE | Internal Server Error | 500 | 
+| E5003_ES_SHARD_ERROR | Internal Server Error | 500 | 
+| E5010_AUX_ERROR | Internal Auxiliary Server Error | 500 | 
+| E5011_AUX_HTTP_ERROR | Internal Auxiliary Server Communication Error | 500 | 
+| E5020_BINTU_ERROR | Internal Bintu Error | 500 | 
+| E5021_BINTU_HTTP_ERROR | Internal Bintu Communication Error | 500 | 
+| E5030_CTS_ERROR | Internal Auth-Service Error | 500 | 
+| E5031_CTS_HTTP_ERROR | Internal Auth-Service Communication Error | 500 |
+
+## Accessability Errors
+
+| Error Code | Description | HTTP Code |
+|------------|---------------|-----------|
+| E6001_ACCESS_DENIED | You got no access to the content you requested.  | 403 |
+| E6002_ACCESS_LVL_TOO_LOW | Access denied: The user access level is too low. Contact your system admin for more permissions. | 403 | 
+| E6003_ACCESS_FOR_FE_ONLY | Access denied: This route does not support requests via API. Please consider using our [nanoStream Analytics dashboard](https://metrics.nanocosmos.de/api/doc/v2/) to access further utilities and details about your live streams and audience! | 403 |
