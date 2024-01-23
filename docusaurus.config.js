@@ -118,7 +118,7 @@ const config = {
             label: "Webcaster",
           }, {
             type: 'doc',
-            docId: 'cloud/analytics',
+            docId: 'cloud/analytics-introduction',
             sidebarid: "Analytics",
             position: 'left',
             label: "Analytics",
