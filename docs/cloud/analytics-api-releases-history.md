@@ -35,16 +35,6 @@ sidebar_label: History
    -  countries: `api/v2/filters/countries`
    -  events: `api/v2/filters/events`
 
-### Aggregation service
-
--  automatic validation of written hourly usage data against accounting data after 5 / 30 / 60 days (with mattermost notification in case of detected differences)
--  added stream aggregation -> support for countries and streams filtering (currently still pending)
--  added aggregation of playtime, which is required for FE usage of aggregated data (currently still pending)
-
-### Current viewer service
-
--  added country aggregation -> support for countries and streams filtering
-
 ## 2.20.1 - new API routes part 2
 
 ### official
@@ -242,13 +232,8 @@ sidebar_label: History
 -  added ABR viewers by profile/quality
 -  added historical usage view to see development of usage over months
 -  added further Webcaster error codes
--  added option to route `/bytes/perorga` so that the new trial guardian service is able to get the usage for a list of organization hashes
--  improved: use ES field `CloudComponent` instead of `source` where possible
--  improved: split up single express router into multiple router categories
 -  improved: centralized chart.js options
 -  changed: maximum concurrent viewers moved from "H5Live" to "Home" view
--  fixed: maximum concurrent viewers was wrong, if multiple streams were selected, e.g using the tag filter
--  fixed: use type undefined as return value instead of string "undefined" so that no unnecessary ES requests are made
 
 ## 2.9 - world map improvement
 
@@ -260,32 +245,23 @@ sidebar_label: History
 -  added percentage for usage values in admin organization list
 -  added (enabled) adaptive bitrate metrics for premium level customers
 -  improved zoom for usage: now also displays referrer and related organization
--  improved concurrent viewer calculation: script will not abort processing for subsequent organizations and streams if an error occurs
 -  improved: load data for a world map category when it was selected by the user
 -  improved: world map options can now be shared with URL sharing
--  improved: only use one term aggregation for each Elasticsearch query for better performance
 -  improved: limited "GBytes per ..." widgets to 1k results for better performance
 -  improved play/buffer ratio calculation
 -  fixed handling of special characters for URL sharing
 -  fixed: URL sharing would not switch to specified view if user had to login first
 -  fixed: zoom Top10 list of stream names did not show correct usage
--  fixed for admin: content of filter drop down menus were not always correctly updated when switching to another organization
--  removed old unused h5live pull tokens
 
 ## 2.8 - Insight
 
 -  added analytics URL sharing
 -  added: the admin organization list is now searchable for email addresses
 -  added usage current month to admin organization overview
--  added admin option to switch between metrics level
--  added H5Live token for customer Aerodyne
 -  improved: playout counts for ABR view were limited to 10k
 -  improved buffering/play ratio, invalid values where bufferingTotal is bigger than elapsedTotal are omitted
--  improved: do not show negative latency values on world map, because of invalid values stored in Elasticsearch
 -  improved caching for month-to-date metric
--  improved use of local cache on the backend
 -  improved canceling of requests when switching to another view
--  improved: monolithic "BytesController" has been split up into single protocol controllers
 -  fixed: playout count on world map was wrong for numbers below 10
 -  fixed: user selected date was not always displayed correctly in the headline of single metrics
 -  fixed: time span selection for "Absolute" worked inconsistently
@@ -300,7 +276,6 @@ sidebar_label: History
 -  added switch to show traffic either in GBs or hours
 -  improved: also consider "bytes_received" to be part of the playback usage, and "bytes_sent" to be part of the ingest usage
    -  the usage for each protocol (RTMP playout, RTMP ingest, H5Live playout, etc.) is now calculated separately, so that the usage for communication between client and server is assigned to the right protocol
--  improved: only use react hook "useMemo" if required
 -  fixed: country usage pie chart only considered playout, not ingest
 -  fixed: tag filtering did not work for concurrent viewers
 
@@ -309,9 +284,7 @@ sidebar_label: History
 -  added QoE score to world map
 -  added new view for QoE metrics
 -  added user documentation (on docs.nanocosmos.de)
--  added option to only show trial organisations
 -  improved: refactored code for world map
--  improved: integrated ESlint for consistent code formatting rules
 -  fixed: webcaster traffic which is ingested locally on rtc servers was not considered
 -  fixed: playout count on world map did not consider H5Live pull token playbacks
 
@@ -325,11 +298,7 @@ sidebar_label: History
    -  count of up and down switches
    -  comparison of playouts with and without switches, if ABR is enabled
    -  comparison of playouts with ABR available and ABR not available
--  added: store monthly usage values for each organisation in separate Elasticsearch index
-   -  can be used to track trends and changes over months
 -  added metric for client versions for H5live and Webcaster
--  updated h5live pull token list
--  fixed: Elasticsearch NOT operator is used in parentheses to prevent unexpected query results
 
 ## 2.4 - initial webcaster metrics
 
@@ -348,21 +317,13 @@ sidebar_label: History
 -  added hidden option to select a country directly from the country pie chart
 -  improved display of world map: flatter world map and highlight top 10 points
 -  improved month to date widget: user can compare current month with same period of previous month
--  improved: refactored and restructured frontend code
 
 ## 2.2 - internal cleanup and refactoring
 
 -  added new H5Live metric: average and median of played time
 -  added server/player ratio for H5live metrics to admin organisation list
    -  can be used to see which customers are sending H5live client metrics and for how many playbacks
--  added usage of last hour to admin organisation list
--  improved: use new API route from Bintu to fetch only the recently used tags (last 90 days) to better handle organisations with a high number of tags
--  improved: use React method componentWillUnmount for widgets and cancelable tokens for axios to ignore unfinished requests to the backend
--  improved: refactor the way Elasticsearch request are prepared and created
-   -  to avoid duplicate code and simplify adding new widgets and functionality in the future
--  improved: updated React to version 16.8, which allows us to use a new React feature named `hooks`
 -  improved display of legend values for the world map
--  improved: unified promise error handling for the backend
 -  fixed unrealistically high playback counts on world map
 -  fixed: widgets were not loaded when switching views (home to h5live or vice versa) and an absolute time span was selected
 
@@ -372,25 +333,17 @@ sidebar_label: History
    -  sample use cases: tag one or more streams for one event, or use tag(s) to identify an iGaming table
 -  added play/buffer ratio and latency to world map
 -  added column received for metric "GBytes per IP"
-   -  because of the change for the query to calculate the ingest traffic it is now possible to get IP addresses of the publisher clients
 -  added total values to world map
 -  added sum of GB sent/received to all "GBytes per ..." metrics
--  improved: in addition to the Bintu orga hash, use account id for an organisation to search for H5live player metrics in Elasticsearch
-   -  we can now query and visualize metrics for customers who are not using Bintu but use H5Live token/pull playback and are sending H5Live player metrics
 -  improved: round legend values for world map
 -  improved user experience for multi country selection
--  improved: use redux store instead of session storage
--  improved: extended QueryBuilder
 -  fixed unexpected spikes for play/buffer ratio
 -  fixed: drop down menus like the data picker or the tag filter were partly hidden beneath other widgets
 
 ## 2.0 - added country filters and caching
 
 -  added new filter to select single or multiple countries, metrics will then only show data for the selected countries
--  added caching on the backend side
 -  changed: query for calculating the ingest traffic now uses ingest rtmp applications of the ingest servers instead of the play rtmp application
-   -  also required for the country filter
-   -  note for sales: this leads to negative difference of 4600GB for the customer top4 (1,2% of total monthly traffic for top4)
 -  improved tag search: now also shows deleted streams
 -  improved time intervals for metric histograms, before it was possible that the current day or hour was not shown (depending on the selected time)
 -  fixed: link for exporting a pdf was not available anymore for the admin user
@@ -398,30 +351,23 @@ sidebar_label: History
 ## 1.9
 
 -  improved: replaced percentiles with median and average for player buffer length, only admin can now see the percentile metric
--  improved: playback and ingest counts on the world map now only show connections which lasted at least 2 seconds, so that we won't show false positives, like e.g. for customer ezugi, which is doing one second playbacks to check if a stream is live
+-  improved: playback and ingest counts on the world map now only show connections which lasted at least 2 seconds, so that we won't show false positives
 -  improved: show connections in region US
 -  added hover for world map
 -  changed: customers with package full can see the first three H5Live metrics
--  fixed: keep selected organisation when changing to different dashboard
--  hotfix: handle countries from Elasticsearch response, which are not available on the world map
--  hotfix: improve check for updating the sums for the stream name list, led to sluggish UI
--  hotfix: sorting for data and numbers did not work anymore, used in the admin organisation list
+-  hotfix: improve check for updating the sums for the stream name list, had impact on UI performance
 
 ## 1.8
 
--  added option to filter list of stream names in "GBytes per Streamname" by using tags (hidden option for now)
+-  added option to filter list of stream names in "GBytes per Streamname" by using tags
 -  improved understandability of H5Live metrics
--  fixed: handle empty Elasticsearch query results for H5Live metrics
--  fixed: admin filter does not always show the selected organisation
 
-## 1.7 - added H5Live metrics and world map (not deployed to prod)
+## 1.7 - added H5Live metrics and world map
 
--  improved: use queue for Elasticsearch queries, so they are not executed all at once
 -  added initial version of worldmap widget
 -  added new H5Live metrics: error/status codes, reasons for stopping, play buffering ratio, player loading count, percentiles of average player buffer length in seconds, median play start time in seconds
--  removed local IP address from GBytes per IP
 -  fixed: pie chart not shown in some cases
--  fixed missing organisation name and hash in exported pdf for non-admin users
+-  fixed missing organisation name and hash in exported pdf
 
 ## 1.6
 
@@ -430,7 +376,6 @@ sidebar_label: History
 -  improved logging (less verbose, log rotation)
 -  improved display of long strings
 -  removed unneeded column received for table "GBytes per Client"
--  refactored code for Elasticsearch queries
 
 ## 1.5
 
@@ -440,9 +385,7 @@ sidebar_label: History
 
 ## 1.4
 
--  added login for different Bintu instances - currently only c-t6-bintu.nanocosmos.de is additionally supported
-   -  can be tested with demo+top4@nanocosmos.de and url c-t6-metrics.nanocosmos.de (will resolve to the same host as for metrics.nanocosmos.de, but is requires to distinguish between the two different Bintu instances)
--  show H5Live pull traffic (playback from external rtmp servers with a customer token)
+-  show H5Live token traffic
 -  fixed difference in total playout usage
 
 ## 1.3
@@ -465,7 +408,7 @@ sidebar_label: History
 
 -  improved: don't trigger API requests for every change in the date selector
 -  fixed: customer name was missing in PDF
--  fixed wrong total values for custom selected time span
+-  fixed: wrong total values for custom selected time span
 
 ## 1.0 - initial release
 
