@@ -1,10 +1,8 @@
 ---
 id: analytics-api-error-codes
-title: Error Codes
+title: Analytics API Error Codes
 sidebar_label: Error Code Definitions
 ---
-
-# Analytics API Error Codes 
 
 In this table we provide an overview about all possible error codes that you could encounter using the nanoStream Analytics API.
 

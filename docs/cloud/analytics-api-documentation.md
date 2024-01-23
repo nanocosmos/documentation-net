@@ -1,5 +1,5 @@
 ---
-id: analytics-api
+id: analytics-api-docs
 title: Analytics API Docs
 sidebar_label: Documentation
 ---

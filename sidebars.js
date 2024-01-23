@@ -286,10 +286,10 @@ const sidebars = {
   "nanoStream Analytics": [
     {
       "type": "category",
-      "label": "Analytics",
+      "label": "nanoStream Analytics",
       "collapsible": false,
       "collapsed": false,
-      "link": {"type": "doc", "id": "cloud/analytics"},
+      "link": {"type": "doc", "id": "cloud/analytics-introduction"},
       "items": [
         {
           "type": "category",
@@ -299,7 +299,7 @@ const sidebars = {
             "title": 'Analytics Features',
             "description": 'Learn about these important nanoStream Analytics features!',
             "slug": '/analytics/features',
-            "keywords": ['features, list, utility']
+            "keywords": ['features, list, utilities']
           },
           "collapsible": false,
           "collapsed": false,
@@ -316,7 +316,7 @@ const sidebars = {
                 "type": 'generated-index',
                 "title": 'Analytics Features',
                 "description": 'Make your stream performance observable and learn how to deal with different situtations!',
-                "slug": '/analytics/features',
+                "slug": '/analytics/features/monitoring',
                 "keywords": ['stream', 'health', 'monitoring']
               },
               "items": [
@@ -333,17 +333,24 @@ const sidebars = {
                 "type": 'generated-index',
                 "title": 'Analytics API',
                 "description": 'Learn about these important nanoStream Analytics features!',
-                "slug": '/analytics/features',
-                "keywords": ['stream', 'health', 'monitoring']
+                "slug": '/analytics/features/api',
+                "keywords": ['api', 'request', 'query']
               },
               "items": [
-                "cloud/analytics-api",
+                "cloud/analytics-api-docs",
                 "cloud/analytics-api-error-codes",
                 {
                   "type": "category",
                   "label": "Releases",
                   "collapsible": false,
                   "collapsed": false,
+                  "link": {
+                    "type": 'generated-index',
+                    "title": 'API Releases',
+                    "description": 'Check out the latest nanoStream Analytics updates and learn more about the newest dashboard and API features & improvements!',
+                    "slug": '/analytics/features/api/releases',
+                    "keywords": ['releases', 'version']
+                  },
                   "items": [
                     "cloud/analytics-api-releases-latest",
                     "cloud/analytics-api-releases-history",
