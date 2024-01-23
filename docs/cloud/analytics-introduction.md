@@ -16,7 +16,7 @@ nanoStream Cloud and the unique nanoStream H5Live Player have been designed as a
 nanoStream Analytics provides three levels of information.
 
 1. **General information** about usage, traffic volume, countries, customers, IP’s and world map overview on ingest/playout
-2. **Business intelligence**, conclusions about several aggregated metrics. Example: Tagging: you can “tag” your live streams by topics or events and then query them from the Analytics dashboard. Or you want insight on how certain countries perform compared to each other. by using the country filter.
+2. **Business intelligence**, conclusions about several aggregated metrics. Example: Tagging: you can “tag” your live streams by topics or events and then query them from the Analytics Dashboard. Or you want insight on how certain countries perform compared to each other. by using the country filter.
 3. **Customers enabled for H5Live metrics** will get additional insight and details about the player clients: we show H5Live player information like OS/browser, max concurrent viewers, play buffer ratio, startup time, player error codes and other events like buffer play ratio and latency, both shown as graphs and on a world map
 
 :::tip info
@@ -26,22 +26,8 @@ All of this data is meant to help you improve your Quality of Service and your v
 In addition to improving your technical capabilities, nanoStream Analytics enables also a big advantage to your business intelligence, providing valuable data to your Management and to your Marketing and Sales teams to understand where they should strengthen your service and decide on the next steps to be taken.
 
 :::info Before starting
-To begin, please sign in to the [metrics dashboard](https://metrics.nanocosmos.de/login) using your nanoStream Cloud/Bintu account credentials. <br/>
+To begin, please sign in to the [Analytics Dashboard](https://metrics.nanocosmos.de/login) using your nanoStream Cloud/Bintu account credentials. <br/>
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
-:::
-
-
-## Tutorial 
-<div class="video-wrap">
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/Z2zekGZG-fg" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-***Click `PLAY` button to start***
-
-:::tip Tutorial
-Analytics for Low Latency Streams with nanocosomos
 :::
 
 ## Server and Service Metrics
