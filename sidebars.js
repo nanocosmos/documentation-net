@@ -314,8 +314,8 @@ const sidebars = {
               "collapsed": false,
               "link": {
                 "type": 'generated-index',
-                "title": 'Analytics Features',
-                "description": 'Make your stream performance observable and learn how to deal with different situtations!',
+                "title": 'Stream Health Monitoring',
+                "description": 'Make your stream performance observable and learn how to deal with different situtations, which affect the overall quality of your live streams!',
                 "slug": '/analytics/features/monitoring',
                 "keywords": ['stream', 'health', 'monitoring']
               },
