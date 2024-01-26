@@ -6,7 +6,12 @@ sidebar_label: Latest
 
 ## 2.24 - Alerting service & Error response improvement
 
-### official
+### Analytics Dashboard
+
+-  use toasts for error messages
+-  improved troubleshooting fine time range slider to automatically keep the maximal selected time range duration at 12 hours
+
+### API
 
 -  added timestamp as a human readable date string (in addition to the existing UNIX seconds timestamp) to all API route responses containing a timestamp (property name: `timestampAsString`)
 -  added additional fields to detected alerts/advices via `/api/v2/alerting/ingest/`:

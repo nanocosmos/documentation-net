@@ -8,7 +8,12 @@ sidebar_label: History
 
 ## 2.24 - Alerting service & Error response improvement
 
-### official
+### Analytics Dashboard
+
+-  use toasts for error messages
+-  improved troubleshooting fine time range slider to automatically keep the maximal selected time range duration at 12 hours
+
+### API
 
 -  added timestamp as a human readable date string (in addition to the existing UNIX seconds timestamp) to all API route responses containing a timestamp (property name: `timestampAsString`)
 -  added additional fields to detected alerts/advices via `/api/v2/alerting/ingest/`:
@@ -29,8 +34,6 @@ sidebar_label: History
 
 ## 2.23 - CSV export
 
-### official
-
 -  added support for CSV export via public API and frontend
 -  added support for country filtering to historical usage
 -  added table with numbers shown in chart to historical usage
@@ -40,8 +43,6 @@ sidebar_label: History
 
 ## 2.22 - Alerting service
 
-### official
-
 -  added route to request detected alerts
    -  GET `/api/v2/alerting/ingest/`
    -  POST `/api/v2/alerting/ingest/` (supports excluded streams / stream expected to be online detection)
@@ -49,16 +50,12 @@ sidebar_label: History
 
 ## 2.21 - JWT / API improvement / agg service extension
 
-### official
-
 -  enabled country, tag and event filtering for supporting API routes
 -  added routes to ask for values which can be used for filtering (recent used tags are requestable via bintu):
    -  countries: `api/v2/filters/countries`
    -  events: `api/v2/filters/events`
 
 ## 2.20.1 - new API routes part 2
-
-### official
 
 -  new API route: `/api/v2/usage/hourly/bytes/timeseries`:
    -  time series of byte usage for playout and ingest traffic with a maximum temporal resolution of an hour
@@ -68,8 +65,6 @@ sidebar_label: History
 -  added IP/referrer blocking either via `Breakdown` or `Guardian` view
 
 ## 2.20.0 - new API routes
-
-### official
 
 -  new API routes to request monitoring metrics
 
@@ -91,21 +86,15 @@ sidebar_label: History
 
 ## 2.19 - Elasticsearch query optimization
 
-### official
-
 -  improved dashboard loading time
 -  improved: standardized public API route naming (v2)
 -  fixed: minor bugfixes
 
 ## 2.18.1 - Block/Unblock IPs and referrers
 
-### official
-
 -  enabled functionality to block/unblocking of certain IPs or referrers on 'Breakdown' view
 
 ## 2.18 - More WebRTC metrics/details
-
-### official
 
 -  new API routes to request ingest counts broken down to browsers and operating systems
    -  `/api/v1/stats/webrtc/ingest/count/browser`
@@ -120,8 +109,6 @@ sidebar_label: History
    -  `/api/v1/stats/webrtc/ingest/bitrate/video`
 
 ## 2.16 - Zoom for every widget / monitoring ingest bitrate for multiple stream at once
-
-### official
 
 -  added Zoom feature (breakdown for interesting chart datapoints) to widgets
 
@@ -164,8 +151,6 @@ sidebar_label: History
 
 ## 2.15 - ES7 support / public API: h5live client metrics
 
-### official
-
 -  added API routes for h5live client metrics
    -  `/api/v1/stats/h5live/bufferingratio`
    -  `/api/v1/stats/h5live/bufferingratio/streams`
@@ -179,8 +164,6 @@ sidebar_label: History
 -  fixed minor issue with time range validation
 
 ## 2.14 - public API: ingest video and audio bitrate
-
-### official
 
 -  added API route for monitoring ingest audio and video bitrate
 -  improved StreamGuard: accuracy of values have been increased, particularly for concurrency metric
@@ -200,8 +183,6 @@ sidebar_label: History
 
 ## 2.13 - StreamGuard
 
-### official
-
 -  added new StreamGuard view which allows filtering and blocking of IPs
    -  currently only available for selected customers
 -  added API route for filtering IPs (used also by the StreamGuard view)
@@ -209,21 +190,7 @@ sidebar_label: History
 -  fixed: when changing to a different view it was possible that loading indications did not work anymore
 -  fixed wrong UTC dates on time axes in the troubleshooting view
 
-### internal/confidential
-
--  added possibility to use Elasticsearch 7 endpoint
-   -  important to verify data validity before ES7 can be used in production
--  improved: the backend now only sends the number of publish events (five) for troubleshooting which are actually shown by the frontend
--  improved: further migration work to typescript in the backend
--  fixed: the hash value for the monthly data was always the same, independent of the actual data
--  fixed: the "ratio player/ server metric current month", which is shown for the admin user, was wrong on the first day of the month
--  already deployed as hotfix to production:
-   -  improved: use new index `streamcloud_metrics_webrtc` for webrtc client metrics, which are now sent to logstash
-   -  improved: use new index `streamcloud_metrics_player` for h5live client metrics, which are now sent to logstash
-
 ## 2.12 - public API: concurrent viewer
-
-### official
 
 -  added API route for concurrent viewers
 -  added boundaries to US regions
@@ -239,8 +206,6 @@ sidebar_label: History
 -  removed unused setting "start of week"
 
 ## 2.11 - public API
-
-### official
 
 -  added direct API access: accounting data for last month can be queried
 -  created API documentation: https://metrics.nanocosmos.de/api/doc/
