@@ -6,7 +6,7 @@ sidebar_label: Introduction
 
 :::caution Version v6
 You're looking at the Webcaster Client API version 6, that we launched in 2023. <br/>
-If you're still on version 5 check out our [migration guide](./migration_guide_v6) guide. <br/>
+If you're still using version 5, check out our [migration guide](./migration_guide_v6). <br/>
 Follow this link If you still need help with 
 [nanoStream Webcaster Client API v5](../webrtc-v5/nanostream_webrtc_introduction.md)
 :::

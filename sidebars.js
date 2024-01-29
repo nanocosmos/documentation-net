@@ -89,99 +89,114 @@ const sidebars = {
     },
   ],
   "H5Live Player": [
-    "nanoplayer/nanoplayer_introduction",
-    "nanoplayer/nanoplayer_getting_started",
-    "nanoplayer/nanoplayer_supported_browsers",
-    "nanoplayer/nanoplayer_player_metrics",
-    "nanoplayer/nanoplayer_iframe",
     {
       "type": "category",
-      "label": "Features",
-      "collapsible": true,
-      "collapsed": false,
-      "items": [
-        "nanoplayer/nanoplayer_autoplay",
-        "nanoplayer/nanoplayer_feature_fast_start",
-        "nanoplayer/nanoplayer_feature_latency_control_modes",
-        "nanoplayer/nanoplayer_feature_stream_group_configuration",
-        "nanoplayer/nanoplayer_token_security",
-        "nanoplayer/nanoplayer_feature_stream_switching",
-        "nanoplayer/nanoplayer_feature_fullscreen_api",
-        "nanoplayer/nanoplayer_feature_customization",
-        "nanoplayer/nanoplayer_feature_reconnect_timeouts",
-        "nanoplayer/nanoplayer_feature_media_error_recovery",
-        "nanoplayer/nanoplayer_feature_source_defaults",
-        "nanoplayer/nanoplayer_feature_video_access_and_processing"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Releases",
+      "label": "nanoStream H5Live Player",
       "collapsible": false,
       "collapsed": false,
+      "link": { "type": "doc", "id": "nanoplayer/nanoplayer_introduction" },
       "items": [
-        "nanoplayer/nanoplayer_release_latest",
-        "nanoplayer/nanoplayer_release_history"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "API",
-      "collapsible": false,
-      "collapsed": false,
-      "items": [
-        "nanoplayer/nanoplayer_api",
-        "nanoplayer/nanoplayer_api_errors",
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Other",
-      "collapsible": false,
-      "collapsed": false,
-      "items": [
-        "nanoplayer/nanoplayer_faq",
-        "nanoplayer/nanoplayer_blogposts"
+        "nanoplayer/nanoplayer_getting_started",
+        "nanoplayer/nanoplayer_supported_browsers",
+        "nanoplayer/nanoplayer_player_metrics",
+        "nanoplayer/nanoplayer_iframe",
+        {
+          "type": "category",
+          "label": "Features",
+          "collapsible": true,
+          "collapsed": false,
+          "items": [
+            "nanoplayer/nanoplayer_autoplay",
+            "nanoplayer/nanoplayer_feature_fast_start",
+            "nanoplayer/nanoplayer_feature_latency_control_modes",
+            "nanoplayer/nanoplayer_feature_stream_group_configuration",
+            "nanoplayer/nanoplayer_token_security",
+            "nanoplayer/nanoplayer_feature_stream_switching",
+            "nanoplayer/nanoplayer_feature_fullscreen_api",
+            "nanoplayer/nanoplayer_feature_customization",
+            "nanoplayer/nanoplayer_feature_reconnect_timeouts",
+            "nanoplayer/nanoplayer_feature_media_error_recovery",
+            "nanoplayer/nanoplayer_feature_source_defaults",
+            "nanoplayer/nanoplayer_feature_video_access_and_processing"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Releases",
+          "collapsible": false,
+          "collapsed": false,
+          "items": [
+            "nanoplayer/nanoplayer_release_latest",
+            "nanoplayer/nanoplayer_release_history"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "API",
+          "collapsible": false,
+          "collapsed": false,
+          "items": [
+            "nanoplayer/nanoplayer_api",
+            "nanoplayer/nanoplayer_api_errors",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Other",
+          "collapsible": false,
+          "collapsed": false,
+          "items": [
+            "nanoplayer/nanoplayer_faq",
+            "nanoplayer/nanoplayer_blogposts"
+          ]
+        }
       ]
     }
   ],
   "nanoStream Webcaster": [
-    "webrtc/nanostream_webrtc_introduction",
-    "webrtc/nanostream_webrtc_getting_started",
-    "webrtc/nanostream_webrtc_demos",
-    "webrtc/nanostream_webrtc_support",
-    {
-      "type": "category",
-      "label": "Features",
-      "collapsible": true,
-      "collapsed": false,
-      "items": [
-        "webrtc/nanostream_webrtc_input_sources",
-        "webrtc/nanostream_webrtc_multiple_webcasts",
-        "webrtc/nanostream_webrtc_quality",
-        "webrtc/nanostream_webrtc_device_selection",
-        "webrtc/nanostream_webrtc_audio_video_only",
-        "webrtc/nanostream_webrtc_stats_and_metrics",
-        "webrtc/nanostream_webrtc_speech_music",
-      ]
-    },
-    {
-      "type": "category",
-      "label": "API",
+    { "type": "category",
+      "label": "nanoStream Webcaster",
       "collapsible": false,
       "collapsed": false,
+      "link": {"type": "doc", "id": "webrtc/nanostream_webrtc_introduction",},
       "items": [
-        "webrtc/nanostream_webrtc_api",
-        "webrtc/migration_guide_v6"
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Other",
-      "collapsible": false,
-      "collapsed": false,
-      "items": [
-        "webrtc/nanostream_webrtc_faq"
+        "webrtc/nanostream_webrtc_getting_started",
+        "webrtc/nanostream_webrtc_demos",
+        "webrtc/nanostream_webrtc_support",
+        {
+          "type": "category",
+          "label": "Features",
+          "collapsible": true,
+          "collapsed": false,
+          "items": [
+            "webrtc/nanostream_webrtc_input_sources",
+            "webrtc/nanostream_webrtc_multiple_webcasts",
+            "webrtc/nanostream_webrtc_quality",
+            "webrtc/nanostream_webrtc_device_selection",
+            "webrtc/nanostream_webrtc_audio_video_only",
+            "webrtc/nanostream_webrtc_stats_and_metrics",
+            "webrtc/nanostream_webrtc_speech_music",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "API",
+          "collapsible": false,
+          "collapsed": false,
+          "items": [
+            "webrtc/nanostream_webrtc_api",
+            "webrtc/migration_guide_v6"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Other",
+          "collapsible": false,
+          "collapsed": false,
+          "items": [
+            "webrtc/nanostream_webrtc_faq"
+          ]
+        }
       ]
     }
   ],
