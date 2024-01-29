@@ -7,7 +7,7 @@ sidebar_label: Alerts and Advices
 # Analytics: Alerts and Advices
 
 :::note Analytics Enhancement from Version `3.7.1.0`
-With the release of version `3.7.1.0`, the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/) has enhanced its user interface in addition to the [Metrics Dashboard](https://metrics.nanocosmos.de).
+With the release of version `3.7.1.0`, the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/) has enhanced its user interface in addition to the [Analytics Dashboard](https://metrics.nanocosmos.de).
 :::
 
 ## General
@@ -77,10 +77,10 @@ Determine if the alert message is self-explanatory. Often, the alert might provi
 Always consult the specific [alert code description](../cloud/stream-alerting.md#alert-codes) for a deeper understanding of the alert and the recommended corrective actions.
 
 **3. Troubleshoot the Alert**:
-If the problem persists or isn't evident, consider using our troubleshooting tools available on the [metrics dashboard](https://metrics.nanocosmos.de/troubleshooting). 
+If the problem persists or isn't evident, consider using our troubleshooting tools available on the [Analytics Dashboard](https://metrics.nanocosmos.de/troubleshooting). 
 
 :::tip Troubleshooting
-The troubleshooting page on the [metrics dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. <br/>
+The troubleshooting page on the [Analytics Dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. <br/>
 Learn more on how to troubleshoot [here](../cloud/troubleshooting).
 :::
 

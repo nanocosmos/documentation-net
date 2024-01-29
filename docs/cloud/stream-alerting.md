@@ -17,7 +17,7 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 :::tip Good to know
 Alerts are effortlessly activated for all organizations by default.
-Starting from version `3.7.1.0` onwards, beside the Metrics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
+Starting from version `3.7.1.0` onwards, beside the Analytics Dashboard, the nanoStream Cloud Dashboard provides a seamless way to access alerts, ensuring a streamlined experience for your organization.
 :::
 
 ### How to use
@@ -36,7 +36,7 @@ Our Analytics API provides 2 different alerting routes:
 > You can view **Alerts and Advices** of your organization directly on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts).
 
 :::info Analytics Enhancement from Version `3.7.1.0`
-With the release of version `3.7.1.0`, the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/) has enhanced its user interface in addition to the [Metrics Dashboard](https://metrics.nanocosmos.de). <br/>
+With the release of version `3.7.1.0`, the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/) has enhanced its user interface in addition to the [Analytics Dashboard](https://metrics.nanocosmos.de). <br/>
 For a detailed guide and additional insights in regards of the **Alerts and Advices** feature, please refer to the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Alerting). This resource offers explanations to ensure you make the most out of the features available.
 :::
 
@@ -85,7 +85,7 @@ The analysis for live stream alerts is executed every minute. The considered tim
 - start of time range: `end - 15 minutes`
 :::
 
-To fire up alerts we make use of 4 RTMP stats events for each minute. 60 events are collected in total for the given maximum range of 15 minutes. These events contain information regarding the **stream time ratio**, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts. This specific stat can be examined in detail using the [troubleshooting](./troubleshooting.mdx#stream-time-ratio) feature on the [analytics dashboard](https://metrics.nanocosmos.de/troubleshooting).
+To fire up alerts we make use of 4 RTMP stats events for each minute. 60 events are collected in total for the given maximum range of 15 minutes. These events contain information regarding the **stream time ratio**, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts. This specific stat can be examined in detail using the [troubleshooting](./troubleshooting.mdx#stream-time-ratio) feature on the [Analytics Dashboard](https://metrics.nanocosmos.de/troubleshooting).
 
 Each alert is part of an specific **alert category** and owns a unique alert code.
 
