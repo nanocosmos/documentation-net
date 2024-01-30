@@ -26,7 +26,7 @@ More information about stream group configuration, can be found in the feature d
 
 ```html title="nanoplayer.html" live
 <div id='playerDiv'></div>
-<script src='https://demo.nanocosmos.de/nanoplayer/api/release/nanoplayer.4.18.0.min.js'></script>
+<script src='https://demo.nanocosmos.de/nanoplayer/api/release/nanoplayer.4.min.js'></script>
 <script>
 var player;
 var config = {
@@ -46,8 +46,7 @@ var config = {
             "switch": {
                 'method': 'server',
                 'pauseOnError': false,
-                'forcePlay': true,
-                'fastStart': false,
+                'forcePlay': true
                 'timeout': 10,
             }
         },
@@ -55,7 +54,9 @@ var config = {
     'playback': {
         'autoplay': true,
         'automute': true,
-        'muted': false
+        'muted': false,
+        'faststart': true,
+        'latencyControlMode': 'balancedadaptive'
     }
 };
 document.addEventListener('DOMContentLoaded', function () {
@@ -97,7 +98,9 @@ var config = {
     'playback': {
         'autoplay': true,
         'automute': true,
-        'muted': false
+        'muted': false,
+        'faststart': true,
+        'latencyControlMode': 'balancedadaptive'
     },
 };
 document.addEventListener('DOMContentLoaded', function () {
@@ -146,7 +149,9 @@ var config = {
     'playback': {
         'autoplay': true,
         'automute': true,
-        'muted': false
+        'muted': false,
+        'faststart': true,
+        'latencyControlMode': 'balancedadaptive'
     },
 };
 document.addEventListener('DOMContentLoaded', function () {
@@ -182,7 +187,9 @@ var config = {
     'playback': {
         'autoplay': true,
         'automute': true,
-        'muted': false
+        'muted': false,
+        'faststart': true,
+        'latencyControlMode': 'balancedadaptive'
     }
 };
 document.addEventListener('DOMContentLoaded', function () {
@@ -261,7 +268,9 @@ Embedding the H5LivePlayer in your Vue.js project is simple:
                     'playback': {
                         'autoplay': true,
                         'automute': true,
-                        'muted': false
+                        'muted': false,
+                        'faststart': true,
+                        'latencyControlMode': 'balancedadaptive'
                     }
                 }
             }
@@ -348,7 +357,9 @@ Embedding the H5LivePlayer in your Vue.js project is simple:
         'playback': {
             'autoplay': true,
             'automute': true,
-            'muted': false
+            'muted': false,
+            'faststart': true,
+            'latencyControlMode': 'balancedadaptive'
         }
     };
     ```
@@ -419,7 +430,9 @@ Embedding the H5LivePlayer in your Vue.js project is simple:
                 'playback': {
                     'autoplay': true,
                     'automute': true,
-                    'muted': false
+                    'muted': false,
+                    'faststart': true,
+                    'latencyControlMode': 'balancedadaptive'
                 }
             };
             player = new NanoPlayer('playerDiv');
