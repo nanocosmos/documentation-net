@@ -6,10 +6,10 @@ sidebar_label: NanoPlayer
 
 ## NanoPlayer {#NanoPlayer}
 
-NanoPlayer (H5Live) Public API Class 4.22.3
+NanoPlayer (H5Live) Public API Class 4.23.1
 
 **Kind**: global class  
-**Version**: 4.22.3  
+**Version**: 4.23.1  
 
 ### new NanoPlayer(playerDivId) {#new_NanoPlayer_new}
 
@@ -2954,11 +2954,30 @@ The config object to pass as param for the 'setup' call.
 #### Example  
 
 ```js
+// stream group config example
 var config = {
-    source: {
-        bintu: { // DEPRECATED. PLEASE USE ENTRIES!!! WILL BE OVERWRITTEN IN CASE AT LEAST ONE 'ENTRY' IS DEFINED IN 'ENTRIES' ARRAY.
-            streamid: 'q23rf2tzw3h6754iretmft7irt'
+    "source" : {
+        "group": {
+            "id": "3b6cca80-91ca-49f1-b7da-6486317ac077",
+            "startQuality": "low"
         }
+    },
+    "playback": {
+        "autoplay": true,
+        "automute": true,
+        "muted": false,
+        "metadata": true,
+        "faststart": true,
+        "latencyControlMode": 'balancedadaptive'
+    },
+    "events": {
+        "onError": function (e) {
+            console.log(e);
+        }
+    },
+    "style": {
+        "width": 'auto',
+        "height": 'auto'
     }
 };
 ```
@@ -2966,7 +2985,74 @@ var config = {
 #### Example  
 
 ```js
-// Complete config example
+// example with bintu as default service
+var config = {
+    "source": {
+        "defaults": {
+            "service": 'bintu'
+        },
+        "entries": [ // array of 'entry' objects
+                {
+                    "index": 0,
+                    "label": "high",
+                    "h5live": {
+                        "rtmp": {
+                            "streamname": "XXXXX-YYYY1"
+                        }
+                    }
+                },
+                {
+                    "index": 1,
+                    "label": "medium",
+                    "h5live": {
+                        "rtmp": {
+                            "streamname": "XXXXX-YYYY2"
+                        }
+                    }
+                },
+                {
+                    "index": 2,
+                    "label": "low",
+                    "h5live": {
+                        "rtmp": {
+                            "streamname": "XXXXX-YYYY3"
+                        }
+                    }
+                }
+        ],
+        "options": {
+            "adaption": {
+                "rule": "deviationOfMean2"
+            }
+        },
+        "startIndex": 2 // lowest
+    },
+    "playback": {
+        "autoplay": true,
+        "automute": true,
+        "muted": false,
+        "faststart": true,
+        "latencyControlMode": 'balancedadaptive'
+    },
+    "events": {
+        "onStats": function (e) {
+            console.log(e);
+        }
+    },
+    "style": {
+       view: false
+    },
+    "metrics": {
+        "accountId": 'myId',
+        "accountKey": 'sdfhe457zsjhnrtzd8'
+    }
+};
+```
+
+#### Example  
+
+```js
+// complete config example
 var config = {
     "source" : {
         "entries": [ // array of 'entry' objects
@@ -3058,6 +3144,7 @@ var config = {
                 'method': 'server',
                 'pauseOnError': false,
                 'forcePlay': true,
+                'fastStart': false,
                 'timeout': 20
             }
         },
@@ -3068,13 +3155,16 @@ var config = {
         "autoplay": true,
         "automute": true,
         "muted": false,
+        "faststart": true,
+        "latencyControlMode": 'balancedadaptive',
         "metadata": true,
         "reconnect": {
             "minDelay": 2.5,
             "maxDelay": 12.5,
             "delaySteps": 6,
             "maxRetries": 20
-        }
+        },
+        "videoId": ['myVideoTagId', 'myVideoTagId']
     },
     "events": {
         "onWarning": function (e) {
@@ -3105,44 +3195,6 @@ var config = {
         "customField1": 'custom',
         "customField2": 42,
         "customField3": true
-    }
-};
-```
-
-#### Example  
-
-```js
-// example with source url params and events
-var config = {
-    "source": {
-        "h5live": { // DEPRECATED. PLEASE USE ENTRIES!!! WILL BE OVERWRITTEN IN CASE AT LEAST ONE 'ENTRY' IS DEFINED IN 'ENTRIES' ARRAY.
-            "server": {
-                "websocket": 'wss://bintu-h5live.nanocosmos.de/h5live/stream',
-                "hls": 'https://bintu-h5live.nanocosmos.de/h5live/http/playlist.m3u8'
-            },
-            // rtmp stream source (your live stream)
-            "params": {
-                "url": 'rtmp://bintu-play.nanocosmos.de:80/live',
-                "streamname": 'XXXXX-YYYYY'
-                "custom_key": 'custom_value'
-            }
-        }
-    },
-    "playback": {
-        "autoplay": false,
-        "videoId": ['myVideoTagId', 'myVideoTagId']
-    },
-    "events": {
-        "onStats": function (e) {
-            console.log(e);
-        }
-    },
-    "style": {
-       view: false
-    },
-    "metrics": {
-        "accountId": 'myId',
-        "accountKey": 'sdfhe457zsjhnrtzd8'
     }
 };
 ```

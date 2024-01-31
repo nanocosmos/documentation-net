@@ -27,9 +27,18 @@ Version 4.14.x added support for all major desktop and Android browsers.
 
 * Desktop Windows/Mac/Linux: Chrome, Edge Chromium (80+), Firefox, Safari, Chromium-based browsers
 * Android: Chrome, Firefox, Chromium-based browsers
-* iOS is planned to follow soon
 
 For unsupported platforms/browsers the player is doing automatic fallback to `'classic'` mode.
+
+### v.4.23.1
+
+Version 4.23.1 added support of `'balancedadaptive'` latency control mode on iOS.
+
+* Desktop Windows/Mac/Linux: Chrome, Edge Chromium (80+), Firefox, Safari, Chromium-based browsers
+* Android: Chrome, Firefox, Chromium-based browsers, WebViews
+* iOS: Safari, Chrome, Firefox, WebViews and other supported browsers
+  * `'balancedadaptive'` mode only
+  * `'fastadaptive'` mode configuration will automatically fall back to `'balancedadaptive'` mode
 
 ## Configuration
 
@@ -80,7 +89,7 @@ var config = {
 
 ### `'balancedadaptive'` mode
 
-* added in version 4.14.x
+* added in version 4.14.x, iOS support added in 4.23.x
 * latency control adapting to current stream and network conditions
 * capable of achieving and maintaining lower playback latency
 * lower operating points compared to `classic` mode
