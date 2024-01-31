@@ -97,7 +97,14 @@ await webcaster.startBroadcast();
 To capture a screen share, you can use the [getDisplayMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia) method. Here's a snippet:
 
 ~~~js
-const stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: true });
+// First create two MediaStreams and access the regarding MediaStreamTracks
+const audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+const videoStream = await navigator.mediaDevices.getDisplayMedia({ video: true });
+const audioTrack = audioStream.getAudioTracks()[0];
+const videoTrack = videoStream.getVideoTracks()[0];
+// Then construct a new MediaStream from a MediaStreamTrack for video (screen share)
+// and a MediaStreamTrack for audio (microphone).
+const stream = new MediaStream([audioTrack, videoTrack]);
 
 const webcaster = new window.WebcasterApiV6.Webcaster({
     inputCfg: {
