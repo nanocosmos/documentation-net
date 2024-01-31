@@ -22,7 +22,7 @@ We enable two workflows for the creation of input sources:
 Please find additional documentation for different topics below:
 
 - Access [audio and video devices](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
-- Capture a screen share [share or an application window](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia)
+- Capture a [screen share or an application window](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia)
 - Creating a [MediaStream from a HTML canvas](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream)
 
 ## Supported Browsers
