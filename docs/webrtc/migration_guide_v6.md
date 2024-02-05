@@ -235,7 +235,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         // create your audio/video stream from camera or microphone sources:
         stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: true });
         // or create a screen share:
-        // stream = await navigator.mediaDevices.getDisplayMedia({ audio: true, video: true });
+        /*
+        // First create two MediaStreams and access the regarding MediaStreamTracks
+        const audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const videoStream = await navigator.mediaDevices.getDisplayMedia({ video: true });
+        const audioTrack = audioStream.getAudioTracks()[0];
+        const videoTrack = videoStream.getVideoTracks()[0];
+        // Then construct a new MediaStream from a MediaStreamTrack for video (screen share)
+        // and a MediaStreamTrack for audio (microphone).
+        stream = new MediaStream([audioTrack, videoTrack]);
+        */
     } catch(error) {
         alert('Error creating stream:', error);
         return;
