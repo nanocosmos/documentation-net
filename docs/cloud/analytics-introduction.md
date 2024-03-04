@@ -1,4 +1,5 @@
 ---
+slug: /cloud/analytics
 id: analytics-introduction
 title: Introduction
 sidebar_label: General
