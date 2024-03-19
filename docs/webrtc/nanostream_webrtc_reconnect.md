@@ -15,6 +15,8 @@ Network Alteration:
 - Short-term disruptions in the broadcaster's internet connection
 - Sudden network-related complications
 
+Read how to be notified of a reconnect [below](#notice-when-a-reconnect-occurs).
+
 ## Configuration
 
 Initiating automatic reconnection involves including the **reconnect** option within the Webcaster configuration object.
@@ -30,8 +32,7 @@ Initiating automatic reconnection involves including the **reconnect** option wi
 For effective reconnection execution, it is advised to set the total reconnection delay to exceed 1 minute. This strategy accommodates DNS record Time-To-Live (TTL) adjustments.
 :::
 
-
-```javascript
+```typescript
 const webcaster = new window.WebcasterApiV6.Webcaster({
     reconnect: {
       minDelaySec: 2,
@@ -44,3 +45,22 @@ const webcaster = new window.WebcasterApiV6.Webcaster({
 await webcaster.setup()
 await webcaster.startBroadcast()
 ```
+
+## Notice When a Reconnect Occurs
+
+To monitor the status of the reconnection process, the Webcaster API provides an `onReconnectionStateChange` callback, which is invoked with a `ReconnectionState` argument.
+
+```typescript
+webcaster.onReconnectionStateChange = (newState: ReconnectionState) => {
+  console.log(newState);
+};
+```
+
+`ReconnectionState` indicates the current state of the reconnection process. Possible values:
+
+- **idle**: The initial state indicating no current activity in the reconnection process.
+- **reconnecting**: Connection has failed and a reconnection attempt is underway.
+- **failed**: Reconnection process has reached the retry limit and has stopped attempting to reconnect.
+
+
+
