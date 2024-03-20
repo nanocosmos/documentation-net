@@ -176,6 +176,7 @@ const sidebars = {
             "webrtc/nanostream_webrtc_audio_video_only",
             "webrtc/nanostream_webrtc_stats_and_metrics",
             "webrtc/nanostream_webrtc_speech_music",
+            "webrtc/nanostream_webrtc_reconnect"
           ]
         },
         {
