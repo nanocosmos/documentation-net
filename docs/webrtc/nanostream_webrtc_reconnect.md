@@ -21,7 +21,15 @@ Read how to be notified of a reconnect [below](#notice-when-a-reconnect-occurs).
 
 Initiating automatic reconnection involves including the **reconnect** option within the Webcaster configuration object.
 
-- **reconnect: true**: This setting activates automatic reconnection with predetermined configurations.
+- **reconnect: true**: This setting activates automatic reconnection with predetermined configurations:
+
+```typescript
+{
+  minDelaySec: 2,
+  maxDelaySec: 15,
+  maxRetries: 10
+}
+```
 
 - **Custom Configuration**:
   - **reconnect.minDelaySec**: Minimum amount of seconds to wait before attempting a reconnect after connection loss. Minimum value: 1.
