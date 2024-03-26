@@ -57,8 +57,25 @@ The `main sample` showcases the lifecyle of the Webcaster, you can perform the f
 - click `dispose` to destroy the Webcaster instance
 - click `setMuted` to mute the ingest
 
-:::info[Configuration]
-You can pre-configure the `main sample` through the `webcasterconfig` url parameter.<br/>
+### Configuration
+
+All samples can be configured by the following url query parameters:
+
+- streamName
+- ingestUrl
+- serverUrl
+- maxAudioBitrateBps
+- transcodeAudioBitrateBps
+- maxVideoBitrateBps
+- maxEncodingFramerate
+
+:::info[Config Interface]
+For explanation of the configuration options, please see the definition of the [Config interface](https://nanocosmos.github.io/webcaster/docs/interfaces/config_types.Config.html).
+:::
+
+#### Main Sample
+
+The `main sample` can be pre-configure through the `webcasterconfig` url parameter.<br/>
 Please see this link: [TODO AFTER MERGE TO GITHUB]
 
 Configuration can be changed in the JSON editor under the **WebcasterApiV6.Config** section.<br/>
@@ -69,9 +86,6 @@ This means:
 - you can then:
   - reload the window and changes will be persisted
   - or share your config by copying the url from the location bar
-
-For more details about the config options, please see the definition of the [Config interface](https://nanocosmos.github.io/webcaster/docs/interfaces/config_types.Config.html).
-:::
 
 ### Playback
 
