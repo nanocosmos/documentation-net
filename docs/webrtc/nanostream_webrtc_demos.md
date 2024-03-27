@@ -52,7 +52,7 @@ Append your stream name to one of the following samples:
 
 ### Usage
 
-The main sample showcases the lifecyle of the Webcaster, you can perform the following actions there:
+The `main sample` showcases the lifecyle of the Webcaster, you can perform the following actions there:
 
 - append your bintu stream name to one of the URLs
 - configure stream properties in the editor `WebcasterApiV6.Config`
@@ -63,6 +63,36 @@ The main sample showcases the lifecyle of the Webcaster, you can perform the fol
 - click `recover` to restart the webcast with the same configuration
 - click `dispose` to destroy the Webcaster instance
 - click `setMuted` to mute the ingest
+
+### Configuration
+
+All samples can be configured by the following url query parameters:
+
+- streamName
+- ingestUrl
+- serverUrl
+- maxAudioBitrateBps
+- transcodeAudioBitrateBps
+- maxVideoBitrateBps
+- maxEncodingFramerate
+
+:::info[Config Interface]
+For explanation of the configuration options, please see the definition of the [Config interface](https://nanocosmos.github.io/webcaster/docs/interfaces/config_types.Config.html).
+:::
+
+#### Main Sample
+
+The `main sample` can be pre-configure through the `webcasterconfig` url parameter.<br/>
+Please see this link: [TODO AFTER MERGE TO GITHUB]
+
+Configuration can be changed in the JSON editor under the **WebcasterApiV6.Config** section.<br/>
+Changes to this config will be reflected into the location bar of the browser.
+
+This means:
+- you can change the settings, like resolution, bitrates, streamName etc
+- you can then:
+  - reload the window and changes will be persisted
+  - or share your config by copying the url from the location bar
 
 ### Playback
 
