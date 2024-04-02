@@ -6,10 +6,10 @@ sidebar_label: NanoPlayer
 
 ## NanoPlayer {#NanoPlayer}
 
-NanoPlayer (H5Live) Public API Class 4.23.1
+NanoPlayer (H5Live) Public API Class 4.24.0
 
-**Kind**: global class  
-**Version**: 4.23.1  
+**Kind**: global class
+**Version**: 4.24.0
 
 ### new NanoPlayer(playerDivId) {#new_NanoPlayer_new}
 
@@ -3629,6 +3629,9 @@ The possible error codes in a onError event.
 </td>
     </tr><tr>
     <td>3101</td><td></td><td><p>An error occurred while buffering on hls playback.</p>
+</td>
+    </tr><tr>
+    <td>3102</td><td></td><td><p>Buffer range is higher than allowed on hls playback.</p>
 </td>
     </tr><tr>
     <td>3200</td><td></td><td><p>An unspecific media error occurred.</p>
