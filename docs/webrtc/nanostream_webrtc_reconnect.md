@@ -68,7 +68,7 @@ webcaster.onReconnectionStateChange = (newState: ReconnectionState) => {
 
 - **idle**: The initial state indicating no current activity in the reconnection process.
 - **reconnecting**: Connection has failed and a reconnection attempt is underway.
-- **failed**: Reconnection process has reached the retry limit and has stopped attempting to reconnect.
+- **failed**: Reconnection process has reached the retry limit and has stopped attempting to reconnect. To start a new broadcast instance, `recover` should be called first.
 
 
 
