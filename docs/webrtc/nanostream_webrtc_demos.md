@@ -9,12 +9,19 @@ sidebar_label: Browser Demos
 Below you can find links to our Webcaster demo applications.
 These samples are designed to showcase the broad capabilities of our Webcaster technology, providing you with practical experience and insight into its features. Explore our sample code to see how nanoStream Webcaster can enhance your webcasting projects.
 
-To fully utilize these samples, please ensure you have a bintu account. [Create a stream in the nanoStream Cloud Dashboard](../cloud-frontend-v3/Dashboard_Start_Streaming), and then append the stream name to the sample pages' URLs using the `streamName` URL parameter.
+To fully utilize these samples, please ensure you have a bintu account.<br/> [Create a stream in the nanoStream Cloud Dashboard](../cloud-frontend-v3/Dashboard_Start_Streaming), then create a stream and append the stream name to the sample pages' URLs using the `streamName` URL parameter.
 
-:::info Before starting
+**Please Note Before starting:**
+
+:::info[Bintu Account]
 To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 :::
+
+:::info[Live Transcoding]
+Currently, the nanoStream Webcaster does not support [live transcoding](../cloud-frontend-v3/Dashboard_ABR_Transcoding).
+:::
+
 
 <article class="margin-top--lg">
     <section class="row list_ZO3j">
@@ -45,7 +52,7 @@ Append your stream name to one of the following samples:
 
 ### Usage
 
-The main sample showcases the lifecyle of the Webcaster, you can perform the following actions there:
+The `main sample` showcases the lifecyle of the Webcaster, you can perform the following actions there:
 
 - append your bintu stream name to one of the URLs
 - configure stream properties in the editor `WebcasterApiV6.Config`
@@ -57,15 +64,53 @@ The main sample showcases the lifecyle of the Webcaster, you can perform the fol
 - click `dispose` to destroy the Webcaster instance
 - click `setMuted` to mute the ingest
 
+### Configuration
+
+All samples can be configured by the following url query parameters:
+
+- streamName
+- ingestUrl
+- serverUrl
+- maxAudioBitrateBps
+- transcodeAudioBitrateBps
+- maxVideoBitrateBps
+- maxEncodingFramerate
+
+:::info[Config Interface]
+For explanation of the configuration options, please see the definition of the [Config interface](https://nanocosmos.github.io/webcaster/docs/interfaces/config_types.Config.html).
+:::
+
+#### Main Sample
+
+The `main sample` can be pre-configure through the `webcasterconfig` url parameter.<br/>
+Please see this link: [TODO AFTER MERGE TO GITHUB]
+
+Configuration can be changed in the JSON editor under the **WebcasterApiV6.Config** section.<br/>
+Changes to this config will be reflected into the location bar of the browser.
+
+This means:
+- you can change the settings, like resolution, bitrates, streamName etc
+- you can then:
+  - reload the window and changes will be persisted
+  - or share your config by copying the url from the location bar
+
 ### Playback
 
-You can play back your Webcaster ingests with our H5LivePlayer.
+You can play back your Webcaster ingests with our **H5Live Player**.
 
 The main sample from above includes a side-by-side player for your convencience when testing.
 To create a shareable player link, append the stream name to our player demo URL:
 - Player url: https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?entry.rtmp.streamname=[stream-name]
 
 
-:::info
-Click [here](../nanoplayer/nanoplayer_getting_started) for more information on  how to embed the H5LivePlayer on your own webpage.
+
+:::info[Embedding]
+Click [here](../nanoplayer/nanoplayer_getting_started) for more information on  how to **embed the H5Live Player** on your own webpage.
 :::
+
+:::info[Secure Playback]
+Also note that for secure playback, you need to create your own playback tokens.
+Find information about secure playback tokens [here](../nanoplayer/nanoplayer_token_security).
+:::
+
+
