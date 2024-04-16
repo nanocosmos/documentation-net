@@ -100,6 +100,7 @@ const sidebars = {
         "nanoplayer/nanoplayer_supported_browsers",
         "nanoplayer/nanoplayer_player_metrics",
         "nanoplayer/nanoplayer_iframe",
+        "nanoplayer/nanoplayer_webview",
         {
           "type": "category",
           "label": "Features",
