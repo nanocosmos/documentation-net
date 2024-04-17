@@ -181,6 +181,9 @@ Use Case: Ideal for maintaining the original aspect ratio of the video while ens
 
     `"scaling" : "letterbox"`
 
+![Screenshot: H5Live Player scaling letterbox](../assets/nanoplayer/h5Live_scaling_letterbox43.png)<br/>
+*Screenshot: H5Live Player scaling set to letterbox, 16:9 stream would look like this in a 4:3 player*
+
 2. Crop
 
 Cropping removes parts of the video frame to fit it within the player's dimensions, resulting in a loss of content from the original video. 
@@ -189,6 +192,9 @@ Use Case: Useful when you want to fill the entire player frame with the video co
 
     `"scaling" : "crop"`
 
+![Screenshot: H5Live Player scaling crop](../assets/nanoplayer/h5Live_scaling_crop43.png)<br/>
+*Screenshot: H5Live Player scaling set to crop, 16:9 stream would look like this in a 4:3 player*
+
 3. Fill
 
 Filling scales the video to completely fill the player's frame, potentially distorting the video if the aspect ratio of the video and player frame differs. 
@@ -196,6 +202,16 @@ Filling scales the video to completely fill the player's frame, potentially dist
 Use Case: Suitable for cases where filling the player frame with the video content is more important than maintaining the original aspect ratio, such as fullscreen playback. 
 
     `"scaling” : "fill"`
+
+![Screenshot: H5Live Player scaling fill](../assets/nanoplayer/h5Live_scaling_fill43.png)<br/>
+*Screenshot: H5Live Player scaling set to fill, 16:9 stream would look like this in a 4:3 player*
+
+
+#### Original grapic without scaling
+![Original graphic](../assets/nanoplayer/h5Live_original.png)<br/>
+*Original graphic*
+
+
 
 ## Other Customizations {#other-customizations}
 
