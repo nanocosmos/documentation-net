@@ -6,7 +6,7 @@ sidebar_label: Documentation
 
 ## Technical Developer Documentation
 
-For API route specifications please refer to our <a className="badge" href="https://metrics.nanocosmos.de/api/doc/v2/">technical API documentation ⚙️</a>.
+For API route specifications please refer to our <a className="badge-inText" href="https://metrics.nanocosmos.de/api/doc/v2/">technical API documentation. ⚙️</a>
 
 ### Usage Metrics
 
@@ -34,14 +34,20 @@ The alerting routes provide an overview of either your current and historical al
 
 ### Successful Playback Start Ratio
 
-This ratio determines the relation between all occuring playback initializations that terminate with an error **within the first 30 seconds** after the playback starts and the total number of playback initializations. Terminations after pausing or subsequently restarting the playback are not taken into account.
+This ratio determines the relation between all occuring playback initializations that **DO NOT** terminate with an error **within the first 30 seconds** after the playback starts and the total number of playback initializations. Terminations after pausing or subsequently restarting the playback are not taken into account.
 
-#### How To Use
+<div style={{display: "flex", justifyContent: "center"}} className="inline-math">SPSR = (100 - failed playback starts) * 100 / all playbacks</div>
+<br/>
+<br/>
 
 :::info
 - **SPSR** = "Successful Playback Start Ratio"
 - **PSE** = "Playback Start Error"
 :::
+
+#### How To Use
+
+
 
 #### General Details
 
@@ -64,13 +70,13 @@ Either the calculated **ratios and errors** are based on your **organisation**, 
 #### API Details
 
 Basically the API routes are divided in 2 groups: 
-- [SPSR API Routes](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Playback-start-success)
-- [PSE API Routes](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Playback-start-errors)
+- [SPSR API Routes](https://metrics.nanocosmos.de/api/doc/v2/#tag/Playback-start-success)
+- [PSE API Routes](https://metrics.nanocosmos.de/api/doc/v2/#tag/Playback-start-errors)
 
 **SPSR** returns 3 metric values:
 - Total count of errors
 - Total count of playback starts
-- Proportion in percent of playback starts (2. total count of playback starts) to sum of playback starts from all buckets
+- Proportion in percent of playback starts to sum of playback starts from all buckets
 
 **PSE** returns a break down of:
 - The found error codes & error messages (usually error code and message is 1:1 linked) occurred at playback start (refers to total count of errors of the SPSR metric)
@@ -80,10 +86,10 @@ Basically the API routes are divided in 2 groups:
 
 <u>Problem</u>:
 
-You observe a high number of errors since yesterday morning.<br/>
-You assume it is the result of h5live player version upgrade.<br/>
-You are not sure how to validate that assumption, telling us it seems particularly concerning for brazil.<br/>
-You want to know if we can confirm and solve the issue.
+A high number of errors can be observed since yesterday morning.<br/>
+The assumption is made that this was caused by the h5live player version upgrade.<br/>
+Problem is particularly present in brazil and needs validation whether this affects a large number of clients.<br/>
+Confirmation can now be done with the help of the **SPSR** & **PSE** API routes.
 
 <u>How to investigate</u>:
 
@@ -93,12 +99,12 @@ You want to know if we can confirm and solve the issue.
 3. Take this time range and check if a certain country is responsible for the drop:<br/> 
 `/api/v2/playback/start/success/ratio/world?from=2024-04-10T19%3A00&to=2024-04-10T21%3A00`
 4. Found some countries with quite **low SPSR** but for the most, the playback start count / proportion is not quite high, compared to the playback start count of all countries, so they affect the **average SPSR** not significantly
-5. To get a better view of the data repeat the request with the added URL parameter &format=csv
-6. The obtained .csv file can be used in Excel to obtain a compact table which offers the option of quick sorting of the countries (for example for playback starts)
-7. Brazil shows a **inconspicuous SPSR**, so the customer assertion can't be confirmed, maybe they refer rather to errors after the 30 seconds after playback start, which is not considered in the SPRS metrics
-8. To get an idea why the SPRS is low for time range breakdown the data for a country with both qualities low SPRS and a fairly high count of playback starts / proportion: in this case for example Armenia
+5. To get a better view of the data repeat the request with the added URL parameter `&format=csv`
+6. The generated .csv file can be used in Excel to obtain a compact table which offers the option of quick sorting of the countries (for example for playback starts)
+7. Brazil shows a **inconspicuous SPSR**, means the customer assertion can't be confirmed, maybe they refer rather to errors after the 30 seconds after playback start, which is not considered in the SPRS metrics
+8. To get an idea why the SPRS is low for the selected time range, breakdown the data for a country with both qualities low SPRS and a fairly high count of playback starts / proportion: in this case for example Brazil
 9. Get the IP breakdown of the error codes for Armenia:<br/>
-`/api/v2/playback/start/errors/countries/ip?from=2024-04-10T19%3A00&to=2024-04-10T21%3A00&countries=AM`
+`/api/v2/playback/start/errors/countries/ip?from=2024-04-10T19%3A00&to=2024-04-10T21%3A00&countries=BR`
 10. The response exhibits that almost all errors were generated by one IP, which means it is **not a general problem**
 
 ### Filtering

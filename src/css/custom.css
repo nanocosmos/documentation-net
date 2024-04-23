@@ -172,14 +172,14 @@
 /* BEGINN ANALYTICS --> These classes were designed for the analytics sections. */
 .badge {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 8px 10px;
   background-color: #ed7d0e;
   color: #fff;
   border-radius: 10px;
   font-weight: bold;
   font-size: 16px;
   margin-left: 5px;
-  margin-right: 1px;
+  margin-right: 5px;
 }
 
 .badge-heading {
@@ -187,7 +187,22 @@
 }
 
 .badge-inText {
-  font-size: 18px;
+  display: inline-block;
+  padding: 6px 8px;
+  background-color: #ed7d0e;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 1px;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.badge-inText:hover {
+  color: #ed7d0e;
+  background-color: #fff;
 }
 
 .badge-noStreamgroup {
