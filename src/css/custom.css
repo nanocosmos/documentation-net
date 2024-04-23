@@ -172,14 +172,14 @@
 /* BEGINN ANALYTICS --> These classes were designed for the analytics sections. */
 .badge {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 8px 12px;
   background-color: #ed7d0e;
   color: #fff;
   border-radius: 10px;
   font-weight: bold;
   font-size: 16px;
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 1px;
 }
 
 .badge-heading {
@@ -214,10 +214,6 @@
   border: 1px solid #ed7d0e;
   color: #ed7d0e;
   font-weight: 600;
-}
-
-.badge-criticalAlert {
-  background-color: #D22315;
 }
 
 .badge-criticalAlert {
