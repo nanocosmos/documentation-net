@@ -89,7 +89,7 @@ Basically the API routes are divided in 2 groups:
 A high number of errors can be observed since yesterday morning.<br/>
 The assumption is made that this was caused by the h5live player version upgrade.<br/>
 Problem is particularly present in brazil and needs validation whether this affects a large number of clients.<br/>
-Confirmation can now be done with the help of the **SPSR** & **PSE** API routes.
+The **SPSR** & **PSE** API routes can possibly reveal more insights about this incident.
 
 <u>How to investigate</u>:
 
@@ -101,7 +101,7 @@ Confirmation can now be done with the help of the **SPSR** & **PSE** API routes.
 4. Found some countries with quite **low SPSR** but for the most, the playback start count / proportion is not quite high, compared to the playback start count of all countries, so they affect the **average SPSR** not significantly
 5. To get a better view of the data repeat the request with the added URL parameter `&format=csv`
 6. The generated .csv file can be used in Excel to obtain a compact table which offers the option of quick sorting of the countries (for example for playback starts)
-7. In case Brazil shows an **inconspicuous SPSR**, means the customer **assertion can't be confirmed**, maybe they refer rather to errors after the 30 seconds after playback start, which is not considered in the SPSR metrics
+7. In this case Brazil shows an **inconspicuous SPSR**, means the customer **assertion can't be confirmed**, maybe they refer rather to errors after the 30 seconds after playback start, which is not considered in the SPSR metrics
 8. To get an idea why the SPSR is low for the selected time range, breakdown the data for a country with both qualities low SPSR and a fairly high count of playback starts / proportion: as an example Armenia would fulfill both criteria
 9. Get the IP breakdown of the error codes for Armenia:<br/>
 `/api/v2/playback/start/errors/countries/ip?from=2024-04-10T19%3A00&to=2024-04-10T21%3A00&countries=AM`

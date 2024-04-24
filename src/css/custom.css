@@ -201,8 +201,9 @@
 }
 
 .badge-inText:hover {
-  color: #ed7d0e;
-  background-color: #fff;
+  color: #fff;
+  background-color: #ed7d0e;
+  text-decoration: none;
 }
 
 .badge-noStreamgroup {
