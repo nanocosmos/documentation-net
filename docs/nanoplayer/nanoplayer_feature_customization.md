@@ -181,7 +181,7 @@ Use Case: Ideal for maintaining the original aspect ratio of the video while ens
 
     `"scaling" : "letterbox"`
 
-![Screenshot: H5Live Player scaling letterbox](../assets/nanoplayer/h5Live_scaling_letterbox43.png)<br/>
+![Screenshot: H5Live Player scaling letterbox](../assets/nanoplayer/h5live_scaling_letterbox43.png)<br/>
 *Screenshot: H5Live Player scaling set to letterbox, 16:9 stream would look like this in a 4:3 player*
 
 2. Crop
