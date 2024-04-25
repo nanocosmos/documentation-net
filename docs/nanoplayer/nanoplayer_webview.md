@@ -10,7 +10,7 @@ For native apps, you can use WebView components in-app, which both operating sys
 The operating systems need to support H264 video and AAC audio formats for playback, which most platforms do.
 
 ### Mobile Webviews
-Mobile webviews provide a seamless integration of web content within a native mobile application, offering numerous advantages for a smooth user experience. However, certain considerations need to be addressed, particularly on [iOS](#iOS) and Android [Android](#Android) devices.
+Mobile webviews provide a seamless integration of web content within a native mobile application, offering numerous advantages for a smooth user experience. However, certain considerations need to be addressed, particularly on [iOS](#ios) and Android [Android](#android) devices.
 
 #### Webview Loading Recommendations
 When integrating web content into mobile applications using webviews, it must consider whether to load content locally or remotely:
