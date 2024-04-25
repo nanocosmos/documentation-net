@@ -192,7 +192,7 @@ Use Case: Useful when you want to fill the entire player frame with the video co
 
     `"scaling" : "crop"`
 
-![Screenshot: H5Live Player scaling crop](../assets/nanoplayer/h5Live_scaling_crop43.png)<br/>
+![Screenshot: H5Live Player scaling crop](../assets/nanoplayer/h5live_scaling_crop43.png)<br/>
 *Screenshot: H5Live Player scaling set to crop, 16:9 stream would look like this in a 4:3 player*
 
 3. Fill
@@ -203,7 +203,7 @@ Use Case: Suitable for cases where filling the player frame with the video conte
 
     `"scaling” : "fill"`
 
-![Screenshot: H5Live Player scaling fill](../assets/nanoplayer/h5Live_scaling_fill43.png)<br/>
+![Screenshot: H5Live Player scaling fill](../assets/nanoplayer/h5live_scaling_fill43.png)<br/>
 *Screenshot: H5Live Player scaling set to fill, 16:9 stream would look like this in a 4:3 player*
 
 
