@@ -4,21 +4,24 @@ title: Latest Release
 sidebar_label: Latest
 ---
 
-## **[4.24.1]**
+## **[4.24.2]**
 
 ### **Release Notes**
 
-The update addresses an issue where playback would become stuck after repeated stream switches or pause/play actions in H5Live-HLS mode on iOS devices. Specifically, the fix resolves problems encountered with H5Live-HLS fallback when using locally loaded web pages in iOS WKWebView.
+This patch release addresses an autoplay issue occurring when the application called `player.unmute()` without user interaction context. This issue could result in black frames or errors during playback start if unmuted playback was not permitted. Further we enhanced the smoothness of stream switches specifically in H5Live-HLS mode, providing a better viewing experience for users.
 
 ### **Changelog**
 
 ### Fixed
 
-- playback stuck after repeated stream switches or pause/play in H5Live-HLS mode on iOS
-  - H5Live-HLS fallback with locally loaded web pages in iOS WKWebView
+- autoplay issue in case of application calling `player.unmute()` without user interaction context that could lead to black frames or errors during playback start if unmuted playback was not permitted
+
+### Improved
+
+- smoothness during stream switches in H5Live-HLS mode
 
 ### **Release Package**
 
-- [4.24.1](https://files.nanocosmos.de/index.php/s/3D9Ff68TjeFaqBe)
+- [4.24.2](https://files.nanocosmos.de/index.php/s/457mNxNanLn6WAZ)
 - [latest 4.x](https://files.nanocosmos.de/index.php/s/4nndC45mcB6oSa6)
 - [latest](https://files.nanocosmos.de/index.php/s/2tpCzgRjNEZDzeP)

@@ -6,6 +6,22 @@ sidebar_label: History
 
 # **NanoPlayer - Release History**
 
+## **[4.24.2]**
+
+### **Release Notes**
+
+This patch release addresses an autoplay issue occurring when the application called `player.unmute()` without user interaction context. This issue could result in black frames or errors during playback start if unmuted playback was not permitted. Further we enhanced the smoothness of stream switches specifically in H5Live-HLS mode, providing a better viewing experience for users.
+
+### **Changelog**
+
+### Fixed
+
+- autoplay issue in case of application calling `player.unmute()` without user interaction context that could lead to black frames or errors during playback start if unmuted playback was not permitted
+
+### Improved
+
+- smoothness during stream switches in H5Live-HLS mode
+
 ## **[4.24.1]**
 
 ### **Release Notes**
@@ -734,7 +750,7 @@ The highlighting of the clickable buttons can be disabled via `config.style.butt
 Also the cursor at button mouseover (default: "pointer") can be customized over `config.style.buttonCursor` by passing a valid css cursor keyword or url.
 
 Furthermore support for poster images has been added. Poster images can be applied via the config.style.poster parameter.
-The string has to be a relative or absolute path to a valid "img" element source like "./assets/poster.png" or "https://[YOURDOMAIN]**/assets/poster.gif".
+The string has to be a relative or absolute path to a valid "img" element source like "./assets/poster.png" or "<https://[YOURDOMAIN>]**/assets/poster.gif".
 
 ### **Changelog**
 
