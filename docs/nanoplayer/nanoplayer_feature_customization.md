@@ -208,7 +208,7 @@ Use Case: Suitable for cases where filling the player frame with the video conte
 
 
 #### Original grapic without scaling
-![Original graphic](../assets/nanoplayer/h5Live_original.png)<br/>
+![Original graphic](../assets/nanoplayer/h5live_original.png)<br/>
 *Original graphic*
 
 
