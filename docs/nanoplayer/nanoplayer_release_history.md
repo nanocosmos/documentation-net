@@ -6,6 +6,18 @@ sidebar_label: History
 
 # **NanoPlayer - Release History**
 
+## **[4.24.3]**
+
+### **Release Notes**
+
+This patch release is enabling H5Live-HLS fallbacks when access to ManagedMediaSource API is denied for locally loaded webpages in iOS WKWebView.
+
+### **Changelog**
+
+### Fixed
+
+- H5Live-HLS fallback in case of a denied access to the ManagedMediaSource API for locally loaded webpages in iOS WKWebView
+
 ## **[4.24.2]**
 
 ### **Release Notes**
