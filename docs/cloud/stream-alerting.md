@@ -1,4 +1,5 @@
 ---
+slug: /analytics/alerting
 id: alerting        
 title: Alerts and Advices
 sidebar_label: Alerts and Advices

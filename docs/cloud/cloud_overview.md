@@ -82,7 +82,7 @@ Complete streaming metrics overview for insights on Quality of Service and Quali
                 </p>
             </a></article>
         <article class="col col--6 margin-bottom--lg">
-            <a class="card padding--lg cardContainer_Uewx" href="/docs/cloud/analytics-guardian">
+            <a class="card padding--lg cardContainer_Uewx" href="/docs/analytics/guardian">
                 <h2 class="text--truncate cardTitle_dwRT" title="Playground">nanoStream Guardian</h2>
                 <p class="text--truncate cardDescription_mCBT">
                     nanoStream Guardian is a new service integrated into nanoStream Cloud, which allows you to block specific IP addresses, referrers, and even entire CIDR masks from accessing your streams.

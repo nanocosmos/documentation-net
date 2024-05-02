@@ -1,4 +1,5 @@
 ---
+slug: /analytics/api-docs
 id: analytics-api-docs
 title: Analytics API Docs
 sidebar_label: Documentation

@@ -1,4 +1,5 @@
 ---
+slug: /analytics/api-error-codes
 id: analytics-api-error-codes
 title: Analytics API Error Codes
 sidebar_label: Error Code Definitions

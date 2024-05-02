@@ -5,7 +5,10 @@ title: Introduction
 sidebar_label: General
 ---
 
-nanoStream Cloud Analytics offers a great way to monitor and analyze the performance and quality of service of your live streams.
+**nanoStream Analytics** offers a great way to monitor and analyze the performance and quality of service of your live streams.<br/>
+Get started today with either:
+- our dedicated **<a href="https://metrics.nanocosmos.de/">Analytics Dashboard</a>**, providing the most important metrics for a quick and easy start
+- and a corresponding **<a  href="https://metrics.nanocosmos.de/api/doc/v2/">API</a>** to get you covered with even more insights and full access of your streaming performances
 
 ![Screenshot: nanoStream Analytics Worldmap](../assets/analytics/analytics.png)
 *Screenshot: nanoStream Analytics Worldmap*
@@ -60,7 +63,7 @@ Please reach out to sales(at)nanocosmos.de if you like to use it.
 
 ## Analytics Dashboard
 
-Analytics and metrics is available in several levels, dependent on your business agreement, support level and subscription plan. Please get in touch for any questions.
+Check out our dedicated dashboard features at [metrics.nanocosmos.de](https://metrics.nanocosmos.de)! Many different metrics are available in several levels, dependent on your business agreement, support level and subscription plan. Please get in touch for any questions.
 
 The default level allows you to access most of the metrics available on the different dashboards.
 

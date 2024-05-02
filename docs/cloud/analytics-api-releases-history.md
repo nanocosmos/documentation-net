@@ -1,4 +1,5 @@
 ---
+slug: /analytics/api-releases/history
 id: analytics-api-releases-history
 title: API Release - History
 sidebar_label: History

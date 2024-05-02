@@ -1,4 +1,5 @@
 ---
+slug: /analytics/worldmap
 id: worldmap
 title: Worldmap
 sidebar_label: World Map

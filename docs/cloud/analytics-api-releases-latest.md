@@ -1,4 +1,5 @@
 ---
+slug: /analytics/api-releases/latest
 id: analytics-api-releases-latest
 title: Latest Releases
 sidebar_label: Latest
