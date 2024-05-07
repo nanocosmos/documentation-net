@@ -160,6 +160,57 @@ For a 16:9 aspect ratio: **(9 / 16 = 0.5625) = 56.25%**
 | 16:9         | 56.25%         |
 | 4:3          | 75%            |
 
+### Scaling Options
+
+In video playback, scaling refers to the process of adjusting the size and aspect ratio of a video to fit within the dimensions of the player or display screen. Scaling is essential for ensuring that videos are displayed properly and optimally on various devices and screen sizes. Different scaling options are available to accommodate different aspect ratios and preferences, each offering unique benefits and considerations.
+In H5Live player scaling can be adjusted in the `config.style`:
+
+```javascript
+    "style": {
+        "scaling": "crop"
+    }
+```
+#### Modes:
+
+#### Original graphic without scaling for comparison with each scaling option
+![Original graphic](../assets/nanoplayer/h5live_original.png)<br/>
+*Original graphic*
+
+1. Letterbox
+
+Letterboxing maintains the aspect ratio of the video by adding black bars to the sides or top and bottom of the video to fit it within the player's dimensions without stretching or cropping. This method is keeping the original aspect ratio.
+By default, the scaling option is set to `"letterbox"`.
+
+Use Case: Ideal for maintaining the original aspect ratio of the video while ensuring it fits within the player's frame without distortion. 
+
+    "scaling" : "letterbox"
+
+![Screenshot: H5Live Player scaling letterbox](../assets/nanoplayer/h5live_scaling_letterbox43.png)<br/>
+*Screenshot: H5Live Player scaling set to letterbox, 16:9 stream would look like this in a 4:3 player*
+
+2. Crop
+
+Cropping removes parts of the video frame to fit it within the player's dimensions, resulting in a loss of content from the original video. This method is keeping the original aspect ratio but could be removing parts of content.
+
+Use Case: Useful when you want to fill the entire player frame with the video content, even if it means cropping parts of the original video.
+
+    "scaling" : "crop"
+
+![Screenshot: H5Live Player scaling crop](../assets/nanoplayer/h5live_scaling_crop43.png)<br/>
+*Screenshot: H5Live Player scaling set to crop, 16:9 stream would look like this in a 4:3 player*
+
+3. Fill
+
+Filling scales the video to completely fill the player's frame, potentially distorting the video if the aspect ratio of the video and player frame differs. This method is not prioritizing the original aspect ratio.
+
+Use Case: Suitable for cases where filling the player frame with the video content is more important than maintaining the original aspect ratio, such as fullscreen playback. 
+
+    "scaling” : "fill"
+
+![Screenshot: H5Live Player scaling fill](../assets/nanoplayer/h5live_scaling_fill43.png)<br/>
+*Screenshot: H5Live Player scaling set to fill, 16:9 stream would look like this in a 4:3 player*
+
+
 ## Other Customizations {#other-customizations}
 
 To disable all custom properties in the player, e.g. in case you want to build your controls or display the video as a background without any icons, you can simply set the `view` to false in `config.style.controls`. In this way, you receive a plain video element.
