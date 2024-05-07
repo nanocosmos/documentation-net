@@ -90,8 +90,60 @@ You can check the static capabilities array of the NanoPlayers class `NanoPlayer
 
 H5Live Player works on native browsers like Safari on iOS and Chrome on Android.
 For native apps, you can use WebView components in-app, which both operating systems support.
-Example for iOS can be found [here](https://developer.apple.com/documentation/webkit/wkwebview/).
-The operating systems need to support both H264 video and AAC audio formats for playback, which most platforms do.
+The operating systems need to support H264 video and AAC audio formats for playback, which most platforms do.
+
+### Mobile Webviews
+Mobile webviews provide a seamless integration of web content within a native mobile application, offering numerous advantages for a smooth user experience. However, certain considerations need to be addressed, particularly on iOS and Android devices.
+
+#### Recommendation:
+We strongly recommend utilizing webviews with remote pages to leverage their benefits, including enhanced performance and flexibility. This approach ensures compatibility with various web technologies and allows for seamless integration of dynamic content.
+
+* Android
+
+    Android webviews generally offer robust support for web technologies and extensions. However, it's important to consider the specific APIs and features required by your web content to ensure compatibility across different Android versions and device configurations.
+
+* iOS
+
+    In some cases, such as with the introduction of the Managed Media Source Extension API by Apple in iOS 17.1, playback on iOS devices may encounter issues when loaded within a webview. This is due to the inherent limitations of webviews and their interaction with certain APIs and extensions.
+
+ Example of configuring a WKWebView instance in an iOS application to load a remote page:
+
+
+```
+//  ViewController.swift
+//  wkwebview
+
+
+import UIKit
+import WebKit
+
+class ViewController: UIViewController, WKNavigationDelegate {
+    var webView: WKWebView!
+
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webConfiguration.preferences.javaScriptEnabled = true
+        webConfiguration.mediaPlaybackRequiresUserAction = false
+        webConfiguration.allowsInlineMediaPlayback = true
+        webConfiguration.mediaTypesRequiringUserActionForPlayback = []
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.navigationDelegate = self
+        if #available(iOS 16.4, *) {
+            webView.isInspectable = true
+        } else {
+            // Fallback on earlier versions
+        }
+        view = webView
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let url = URL(string: “https://your-page.com")!
+        webView.load(URLRequest(url: url))
+        webView.allowsBackForwardNavigationGestures = true
+    }
+}
+```
 
 ## Is there an API documentation available?
 
