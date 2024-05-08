@@ -4,17 +4,9 @@ title: nanoStream Cloud SRT Ingest Guide
 sidebar_label: SRT Ingest
 ---
 
-## Hi!
+## What is SRT
 
-Thank you for your interest in SRT (Secure Reliable Transport) streaming on nanoStream cloud. We are glad that you can start using this new feature. 
-
-:::caution Feedback
-We welcome any feedback that can help us improve the service. Send an email to support(at)nanocosmos.de with subject ***SRT feedback program*** or use [our support contact form](https://www.nanocosmos.de/support)and share with us the following information:
-- Encoding or streaming software being used and hardware equipment setup.
-- Video and audio encoding, or streaming parameters being used. For example: format, resolution, bit-rate, and so on.
-- Full test results with description of expected outcomes and issues encountered.
-- All issues reported must contain a time frame in UTC and relevant stream names.
-:::
+The Secure Reliable Transport (SRT) protocol is a user-level protocol designed for low-latency live video streaming and generic bulk data transfer over the internet. It is built on top of UDP and provides reliability and security features optimized for real-time data transmission.
 
 ## SRT Setup Guide
 
