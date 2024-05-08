@@ -1,4 +1,5 @@
 ---
+slug: /analytics/zoom
 id: analytics-zoom
 title: Zoom Feature
 sidebar_label: Zoom

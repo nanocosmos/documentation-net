@@ -1,4 +1,5 @@
 ---
+slug: /analytics/alerting
 id: alerting        
 title: Alerts and Advices
 sidebar_label: Alerts and Advices
@@ -22,7 +23,7 @@ Starting from version `3.7.1.0` onwards, beside the Analytics Dashboard, the nan
 
 ### How to use
 
-#### Analytics API
+#### via nanoStream Analytics API
 
 Our Analytics API provides 2 different alerting routes:
 
@@ -31,7 +32,7 @@ Our Analytics API provides 2 different alerting routes:
 - **[`GET` Ingest stream alerts/advices](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting/paths/~1api~1v2~1alerting~1ingest/get)**: Returns all detected alerts and advices for all live ingest streams in the last 15 minutes.
 - **[`POST` Custom ingest stream alerts/advices](https://metrics-dev.nanocosmos.de/api/doc/v2/#tag/Alerting/paths/~1api~1v2~1alerting~1ingest~1custom/post)**: Returns all detected alerts and advices for all live ingest streams in the last 15 minutes. Additionally, through this API route, it is possible to pass ingest streams that should either be excluded from detection or define ingest streams for which an alert should be triggered if they are detected as offline.
 
-#### nanostream Cloud Dashboard
+#### via nanoStream Cloud Dashboard
 
 > You can view **Alerts and Advices** of your organization directly on the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/alerts).
 
@@ -110,33 +111,29 @@ Either bandwidth issues or insufficient encoder/computing performances of the in
 #### Stream Time Ratio
 <details>
     <summary>Classification by Stream Time Ratio (STR) Metric</summary>
-    <div>
-        <div>
-            <div className="add-margin-bottom">
-                <span>
-                    Pre-filtering:
-                    <br></br>
-                    If the average of all <a href="./troubleshooting#stream-time-ratio">stream time ratio (STR)</a> values is <a className="inline-math text-normal">&le; 0.9</a>, the stream has potential performance issues. Further classifications follow by matching the given conditions in one of these cases below for at least 5 stream time ratio values. If one case is true, a performance alert is created for this particular stream.
-                </span>
-            </div>
-            <details>
-                <summary>
-                    Suboptimal Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
-                </summary>
-                <div className="inline-math">
-                    0.93 &ge; (5 STR values) > 0.86
-                </div>
-            </details>
-            <details>
-                <summary>
-                    Poor Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
-                </summary>
-                <div className="inline-math">
-                    0.86 &ge; (5 STR values)
-                </div>
-            </details>
-        </div>
+    <div className="add-margin-bottom">
+        <span>
+            Pre-filtering:
+            <br/>
+            If the average of all <a href="./troubleshooting#stream-time-ratio">stream time ratio (STR)</a> values is <a className="inline-math text-normal">&le; 0.9</a>, the stream has potential performance issues. Further classifications follow by matching the given conditions in one of these cases below for at least 5 stream time ratio values. If one case is true, a performance alert is created for this particular stream.
+        </span>
     </div>
+    <details>
+        <summary>
+            Suboptimal Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
+        </summary>
+        <div className="inline-math">
+            0.93 &ge; (5 STR values) > 0.86
+        </div>
+    </details>
+    <details>
+        <summary>
+            Poor Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
+        </summary>
+        <div className="inline-math">
+            0.86 &ge; (5 STR values)
+        </div>
+    </details>
 </details>
 
 ### Infrastructure Alerts

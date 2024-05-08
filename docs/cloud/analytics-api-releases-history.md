@@ -1,4 +1,5 @@
 ---
+slug: /analytics/api-releases/history
 id: analytics-api-releases-history
 title: API Release - History
 sidebar_label: History
@@ -22,7 +23,7 @@ sidebar_label: History
    -  **elapsedTime** : minute of the current detection cycle minus `firstDetection` timestamp in seconds
    -  **countryName** : replaced the existing property `country`
    -  **countryCode** : 2 letter country code
--  improved error responses: (find error codes [here](https://dev.nanocosmos.de/redmine/issues/40724#note-1), will be part of the documentation later)
+-  improved error responses:
    -  now each error has a certain error code (starting with `10` followed by a 4 digit error code)
    -  **error.message**: general error message
    -  **error.errorCode**: 6 digit long error code

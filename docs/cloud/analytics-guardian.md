@@ -1,4 +1,5 @@
 ---
+slug: /analytics/guardian
 id: analytics-guardian
 title: nanoStream Guardian
 sidebar_label: nanoStream Guardian
@@ -33,9 +34,9 @@ To use referrer blocking as a security measure, you have to switch into the [Bre
 ![Screenshot: Guardian Breakdown](../assets/analytics/analytics-guardian-referrer.png)
 *Screenshot: Guardian Breakdown*
 
-(A) `IP Block Button` that blocks the corresponding IP from stream access.
+(D) `IP Block Button` that blocks the corresponding IP from stream access.
 
-(B) `Referrer Block Button` that blocks requests from a specific referrer.
+(E) `Referrer Block Button` that blocks requests from a specific referrer.
 
 ### Detailed View
 

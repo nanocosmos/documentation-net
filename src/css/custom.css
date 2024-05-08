@@ -172,7 +172,7 @@
 /* BEGINN ANALYTICS --> These classes were designed for the analytics sections. */
 .badge {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 8px 10px;
   background-color: #ed7d0e;
   color: #fff;
   border-radius: 10px;
@@ -187,7 +187,23 @@
 }
 
 .badge-inText {
-  font-size: 18px;
+  display: inline-block;
+  padding: 6px 8px;
+  background-color: #ed7d0e;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 1px;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.badge-inText:hover {
+  color: #fff;
+  background-color: #ed7d0e;
+  text-decoration: none;
 }
 
 .badge-noStreamgroup {
@@ -214,10 +230,6 @@
   border: 1px solid #ed7d0e;
   color: #ed7d0e;
   font-weight: 600;
-}
-
-.badge-criticalAlert {
-  background-color: #D22315;
 }
 
 .badge-criticalAlert {

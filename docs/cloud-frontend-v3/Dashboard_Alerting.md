@@ -67,7 +67,7 @@ Alerts are immediate notifications generated when there's a potential issue or a
 ### Responding to Alerts
 
 :::tip nanoStream Analytics Documentation
-To learn more about the *Alerts & Advices* feature, you can visit our dedicated [alerts documentation](../cloud/alerting) as part of our analytics documentation. You will be able to understand how it works and how to proceed once you get an alert or advice.
+To learn more about the *Alerts & Advices* feature, you can visit our dedicated [alerts documentation](../analytics/alerting) as part of our analytics documentation. You will be able to understand how it works and how to proceed once you get an alert or advice.
 :::
 
 **1. Understand the Message**:
@@ -81,7 +81,7 @@ If the problem persists or isn't evident, consider using our troubleshooting too
 
 :::tip Troubleshooting
 The troubleshooting page on the [Analytics Dashboard](https://metrics.nanocosmos.de/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. <br/>
-Learn more on how to troubleshoot [here](../cloud/troubleshooting).
+Learn more on how to troubleshoot [here](../analytics/troubleshooting).
 :::
 
 **4. Contact Support**:
