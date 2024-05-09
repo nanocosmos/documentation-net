@@ -196,6 +196,7 @@ const sidebars = {
           "collapsible": false,
           "collapsed": false,
           "items": [
+            "webrtc/nanostream_webrtc_whip_ingest",
             "webrtc/nanostream_webrtc_faq"
           ]
         }
