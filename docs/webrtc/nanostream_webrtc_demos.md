@@ -15,7 +15,8 @@ To fully utilize these samples, please ensure you have a bintu account.<br/> [Cr
 
 :::info[Bintu Account]
 To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>
-If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
+If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to<mailto:sales@nanocosmos.de> 
+.
 :::
 
 :::info[Live Transcoding]
@@ -66,7 +67,7 @@ The `main sample` showcases the lifecyle of the Webcaster, you can perform the f
 
 ### Configuration
 
-All samples can be configured by the following url query parameters:
+All samples can be configured by the following URL query parameters:
 
 - streamName
 - ingestUrl
@@ -82,9 +83,17 @@ For explanation of the configuration options, please see the definition of the [
 
 #### Main Sample
 
-The `main sample` can be pre-configure through the `webcasterconfig` url parameter.<br/>
-Please see this link 
-<https://nanocosmos.github.io/webcaster/samples/index.html?webcasterconfig=eyJpbnB1dENmZyI6eyJtZWRpYVN0cmVhbUNmZyI6eyJtYXhGcmFtZXJhdGUiOjMwLCJyZXNvbHV0aW9uIjpbNjQwLDQ4MF0sImF1ZGlvQ29uc3RyYWludHMiOnsiYXV0b0dhaW5Db250cm9sIjp0cnVlLCJjaGFubmVsQ291bnQiOjIsImVjaG9DYW5jZWxsYXRpb24iOnRydWUsIm5vaXNlU3VwcHJlc3Npb24iOnRydWV9fSwiYnJvYWRjYXN0Q2ZnIjp7InRyYW5zY29kZUF1ZGlvQml0cmF0ZUJwcyI6MTI4MDAwLCJtYXhBdWRpb0JpdHJhdGVCcHMiOjEyODAwMCwibWF4VmlkZW9CaXRyYXRlQnBzIjo1MDAwMDAsIm1heEVuY29kaW5nRnJhbWVyYXRlIjozMH19LCJwcmV2aWV3VmlkZW9FbElkIjoicHJldmlldyIsInN0cmVhbU5hbWUiOiJbU1RSRUFNLU5BTUVdIiwic2VydmVyVXJsIjoiaHR0cHM6Ly90M2Rldi1ydGMtZXUtaGMtbmJnMS0wMi5ydGMtaW4tZGV2Lm5hbm9jb3Ntb3MuZGUvcC93ZWJydGMifQ%3D%3D>
+The *main sample* can be pre-configured through the `webcasterconfig` URL query parameter.<br/>
+Please see this example link:
+
+   <https://nanocosmos.github.io/webcaster/samples/index.html?webcasterconfig=eyJpbnB1dENmZyI6eyJtZWRpYVN0cmVhbUNmZyI6eyJtYXhGcmFtZXJhdGUiOjMwLCJyZXNvbHV0aW9uIjpbNjQwLDQ4MF0sImF1ZGlvQ29uc3RyYWludHMiOnsiYXV0b0dhaW5Db250cm9sIjp0cnVlLCJjaGFubmVsQ291bnQiOjIsImVjaG9DYW5jZWxsYXRpb24iOnRydWUsIm5vaXNlU3VwcHJlc3Npb24iOnRydWV9fSwiYnJvYWRjYXN0Q2ZnIjp7InRyYW5zY29kZUF1ZGlvQml0cmF0ZUJwcyI6MTI4MDAwLCJtYXhBdWRpb0JpdHJhdGVCcHMiOjEyODAwMCwibWF4VmlkZW9CaXRyYXRlQnBzIjo1MDAwMDAsIm1heEVuY29kaW5nRnJhbWVyYXRlIjozMH19LCJwcmV2aWV3VmlkZW9FbElkIjoicHJldmlldyIsInN0cmVhbU5hbWUiOiJbU1RSRUFNLU5BTUVdIiwic2VydmVyVXJsIjoiaHR0cHM6Ly9iaW50dS13ZWJydGMubmFub2Nvc21vcy5kZS9wL3dlYnJ0YyJ9>
+   
+   - In this example `webcasterconfig` encodes the following payload:
+ 
+ ```json
+{"inputCfg":{"mediaStreamCfg":{"maxFramerate":30,"resolution":[640,480],"audioConstraints":{"autoGainControl":true,"channelCount":2,"echoCancellation":true,"noiseSuppression":true}},"broadcastCfg":{"transcodeAudioBitrateBps":128000,"maxAudioBitrateBps":128000,"maxVideoBitrateBps":500000,"maxEncodingFramerate":30}},"previewVideoElId":"preview","streamName":"[STREAM-NAME]","serverUrl":"https://bintu-webrtc.nanocosmos.de/p/webrtc"}
+ ```
+ 
 
 Configuration can be changed in the JSON editor under the **WebcasterApiV6.Config** section.<br/>
 Changes to this config will be reflected into the location bar of the browser.
@@ -93,15 +102,15 @@ This means:
 - you can change the settings, like resolution, bitrates, streamName etc
 - you can then:
   - reload the window and changes will be persisted
-  - or share your config by copying the url from the location bar
+  - or share your config by copying the URL from the location bar
 
 ### Playback
 
 You can play back your Webcaster ingests with our **H5Live Player**.
 
-The main sample from above includes a side-by-side player for your convencience when testing.
+The main sample from preceding includes a side-by-side player for your convenience when testing.
 To create a shareable player link, append the stream name to our player demo URL:
-- Player url: https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?entry.rtmp.streamname=[stream-name]
+- Player URL: https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?entry.rtmp.streamname=[stream-name]
 
 
 
