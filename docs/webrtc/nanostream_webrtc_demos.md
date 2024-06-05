@@ -83,7 +83,8 @@ For explanation of the configuration options, please see the definition of the [
 #### Main Sample
 
 The `main sample` can be pre-configure through the `webcasterconfig` url parameter.<br/>
-Please see this link: [TODO AFTER MERGE TO GITHUB]
+Please see this link 
+<https://nanocosmos.github.io/webcaster/samples/index.html?webcasterconfig=eyJpbnB1dENmZyI6eyJtZWRpYVN0cmVhbUNmZyI6eyJtYXhGcmFtZXJhdGUiOjMwLCJyZXNvbHV0aW9uIjpbNjQwLDQ4MF0sImF1ZGlvQ29uc3RyYWludHMiOnsiYXV0b0dhaW5Db250cm9sIjp0cnVlLCJjaGFubmVsQ291bnQiOjIsImVjaG9DYW5jZWxsYXRpb24iOnRydWUsIm5vaXNlU3VwcHJlc3Npb24iOnRydWV9fSwiYnJvYWRjYXN0Q2ZnIjp7InRyYW5zY29kZUF1ZGlvQml0cmF0ZUJwcyI6MTI4MDAwLCJtYXhBdWRpb0JpdHJhdGVCcHMiOjEyODAwMCwibWF4VmlkZW9CaXRyYXRlQnBzIjo1MDAwMDAsIm1heEVuY29kaW5nRnJhbWVyYXRlIjozMH19LCJwcmV2aWV3VmlkZW9FbElkIjoicHJldmlldyIsInN0cmVhbU5hbWUiOiJbU1RSRUFNLU5BTUVdIiwic2VydmVyVXJsIjoiaHR0cHM6Ly90M2Rldi1ydGMtZXUtaGMtbmJnMS0wMi5ydGMtaW4tZGV2Lm5hbm9jb3Ntb3MuZGUvcC93ZWJydGMifQ%3D%3D>
 
 Configuration can be changed in the JSON editor under the **WebcasterApiV6.Config** section.<br/>
 Changes to this config will be reflected into the location bar of the browser.
