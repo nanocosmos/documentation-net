@@ -46,6 +46,13 @@ This is indicating a special condition on mobile devices when the playback has b
 This is a non critical error.
 :::
 
+:::info
+This error should not be handled by immediate replay, 
+instead the web application should monitor the document visibility state 
+and initiate a replay via `player.play()`, once it became `visible` again. 
+https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState
+:::
+
 This includes:
 
 * Player tab going to background after a tab switch
@@ -59,6 +66,13 @@ An unexpected error occurred during playback on iOS. This error is recoverable. 
 ### 1009 Playback failed because the player was in visibility state 'hidden' at load start
 
 This is related to a policy in some browsers, e.g. Chrome, Chromium based and Safari preventing media playback start in a background tab, a tab that did not have focus/visibility yet.
+
+:::info
+This error should not be handled by immediate replay, 
+instead the web application should monitor the document visibility state 
+and initiate a replay via `player.play()`, once it became `visible` again. 
+https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState
+:::
 
 ## Stream Errors
 
