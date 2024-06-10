@@ -197,7 +197,15 @@ Percentage distribution of playbacks on operating systems (OS).
 
 #### H5Live play count per browser
 
-Percentage distribution of playbacks in Browsers.
+Percentage distribution of playbacks in browsers.
+
+#### H5Live playtime per os
+
+Percentage distribution of playtime on operating systems (OS).
+
+#### H5Live playtime per browser
+
+Percentage distribution of playtime in browsers.
 
 #### Reasons for stopping
 
