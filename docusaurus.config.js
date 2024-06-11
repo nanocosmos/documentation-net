@@ -245,6 +245,20 @@ const config = {
       // },
       metadata: [{ name: 'keywords', content: 'live streaming, video live streaming, streaming, docs, developer docs' }],
     }),
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          // Define your redirects here
+          {
+            to: '/docs/analytics/alerting', // New URI
+            from: ['/docs/cloud/alerting'], // Old URIs to be redirected
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 module.exports = config;

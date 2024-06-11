@@ -188,7 +188,7 @@ These guidelines can be used to get an idea about **what** the problem is, **why
         <tr>
             <td>23001</td>
             <td>Suboptimal Performance</td>
-            <td>The ingest streaming is not optimal; ultra-low latency reliant apps may be affected..</td>
+            <td>The ingest streaming is not optimal; ultra-low latency reliant apps may be affected.</td>
             <td rowSpan="2">Restart the stream and do a bandwith speedtest afterwards.</td>
         </tr>
         <tr>
