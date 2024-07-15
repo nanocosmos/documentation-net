@@ -6,6 +6,18 @@ sidebar_label: History
 
 # **NanoPlayer - Release History**
 
+## **[4.25.1]**
+
+### **Release Notes**
+
+In this patch release we enhanced the observability of player metrics to better monitor and ensure quality of service when using the Bintu configuration.
+
+### **Changelog**
+
+### Improved
+
+- observability in player metrics for quality of service in case of bintu configuration being used
+
 ## **[4.25.0]**
 
 ### **Release Notes**
