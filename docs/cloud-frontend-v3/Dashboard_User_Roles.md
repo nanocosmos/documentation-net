@@ -26,6 +26,14 @@ Clicking on a user expands their details, allowing for the choice between three 
 
 ### 1. Edit a User's Role
 
+:::warning Up- / Downgrading an User
+Changing a user's role will invalidate any existing tokens for that user. 
+> For example, if a user is downgraded from <span className="role role-admin">nanoAdmin</span> to <span className="role role-readonly">nanoReadOnly</span>, they will immediately lose Admin rights, even if still logged in, and will only have the user-role related rights. Consequently, all previous Bintu tokens will become invalid.
+
+#### Secure Organisations
+Playback tokens issued by this user remain valid until they reach their expiration date.
+:::
+
 After selecting "Edit User" the user's role can be adjusted to one of the three roles: <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span>, and <span className="role role-readonly">nanoReadOnly</span>.
 
 :::info Good to know
