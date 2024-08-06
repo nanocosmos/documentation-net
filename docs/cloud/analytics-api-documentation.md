@@ -9,6 +9,23 @@ sidebar_label: Documentation
 
 For API route specifications please refer to our <a className="badge-inText" href="https://metrics.nanocosmos.de/api/doc/v2/">technical API documentation. ⚙️</a>
 
+## General Details
+
+### Rate Limits
+As soon as a user exceeds 1 of the following request rate conditions, every follow-up request will be rejected with a **429 error code** for a specific time frame.
+
+#### Regular Limit
+:::info Recommended request rate
+The regular allowed interval is **1 request per second**. Exceeding this limit will once permit to apply the **burst limit** for a short time period instead. If this limit also exceeds after burst limit was reached, any further request will be rejected.
+:::
+
+#### Burst Limit
+:::warning Temporary request rate
+If a user sends more than 1 request per second, burst mode will be triggered, which allows up to **30 requests per second**. Exceeding this limit will immediately enforce the regular rate limit for the next second and will reject any further requests in the current second.
+:::
+
+## API Categories
+
 ### Usage Metrics
 
 These routes provide a detailed overview of your organisation's traffic volume in a specified time frame.
