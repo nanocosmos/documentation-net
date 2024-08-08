@@ -12,13 +12,17 @@ For API route specifications please refer to our <a className="badge-inText" hre
 ## General Details
 
 ### Rate Limits
+
 This API limits requests to 1 per second but allows short bursts of up to 30 additional requests to be processed immediately without delay. If the rate limit is exceeded, you will receive a 502 (Bad Gateway) or 504 (Gateway Timeout) HTTP error code from Nginx.
 
 #### Regular Limit
+
 :::info Recommended request rate
 The regular allowed interval is **1 request per second**. Exceeding this limit will temporary apply the **burst limit** for a short time period instead.
+:::
 
 #### Burst Limit
+
 :::warning Temporary request rate
 If a user sends more than 1 request per second, burst mode will be triggered, which allows up to **30 requests per second**. Exceeding this limit will reject any further requests in the current second. In the following second after the burst limit was triggered, **requests will be rejected by 1 second for each request send within the burst period**. (e.g.: Sending 20 requests within 1 second enables burst mode once and will reject requests for a duration of 20 seconds afterwards.)
 :::
