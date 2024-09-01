@@ -24,14 +24,12 @@ Clicking on a user expands their details, allowing for the choice between three 
 ![cf-user-expanded.jpeg](../assets/cloud-frontend/cf-user-expanded.jpg)
 *Screenshot: Expanded User in User Overview*
 
-### 1. Edit a User's Role
+### 1. Editing a User's Role
 
-:::warning Up- / Downgrading an User
-Changing a user's role will invalidate any existing tokens for that user. 
+:::warning Up- / Downgrading a User
+Changing a user's role will invalidate any existing API tokens for that user.
+Secure playback tokens will not be affected and remain valid until they reach their expiration date.
 > For example, if a user is downgraded from <span className="role role-admin">nanoAdmin</span> to <span className="role role-readonly">nanoReadOnly</span>, they will immediately lose Admin rights, even if still logged in, and will only have the user-role related rights. Consequently, all previous Bintu tokens will become invalid.
-
-#### Secure Organisations
-Playback tokens issued by this user remain valid until they reach their expiration date.
 :::
 
 After selecting "Edit User" the user's role can be adjusted to one of the three roles: <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span>, and <span className="role role-readonly">nanoReadOnly</span>.
@@ -53,20 +51,21 @@ The dialog provides an overview of the options that each role entails. After sel
 Once the selection is confirmed, the user's role will be updated, and they will have the respective rights.
 
 :::warning important to know
-Due to caching, it may happen that the dashboard and its user interface is not updated immediately after the change. Nevertheless, the user right level is displayed directly. 
+Due to caching, it may happen that the dashboard and its user interface is not updated immediately after the change. Nevertheless, the user right level is displayed directly.
 
 However, it is important to note that **it is not possible to perform actions outside the assigned authorization class**. Despite the delay with which the user interface reflects the changes, the system enforces the updated authorizations and ensures that users cannot exceed the rights assigned to them.
 :::
 
-### 2. Delete a User
+### 2. Deleting a User
 
 An admin can delete a user at any time. This action requires double confirmation to ensure it is intentional.
 
 
-### 3. Renew a Token
+### 3. Resetting a User's API Tokens
 
 Accidental exposure of valid JWT access tokens can give unauthorized individuals access to the organization's resources. To prevent this security risk, a mechanism for *tokenKey* rotation is offered. In the event that a user's JWT access token is exposed or compromised, a <span className="role role-admin">nanoAdmin</span> (or an individual with API Key access) can renew the corresponding user's *tokenKey*.
 
-This action effectively invalidates all existing tokens associated with the user's account, preventing further unauthorized access.
+This action will invalidate all existing tokens associated with the user's account.
+Secure playback tokens will not be affected and remain valid until they reach their expiration date.
 
 After selecting the renew token option, double confirmation is required. A warning will inform of the consequences of this change. If these consequences are accepted, the changes can be committed by hitting the refresh button.
