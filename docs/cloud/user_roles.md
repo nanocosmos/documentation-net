@@ -21,11 +21,11 @@ sidebar_label: Role-Based Access Control (RBAC)
 ## User Roles in nanoStream Cloud
 
 :::caution Bintu API v1.23.0.0
-With the `Bintu API v1.23.0.0` we introduced a role-based access control system.
+With the `Bintu API v1.23.0.0` we introduced a role-based access control system in Q3/2024.
 :::
 
 :::info
-With the introduction of user roles all users keep their previous permission level which is equivalent to the <span className="role role-admin">nanoAdmin</span> role. Therefore NO immediate action is required by organizations.
+With the introduction of user roles, all users maintain their previous permission level which is equivalent to the <span className="role role-admin">nanoAdmin</span> role. Therefore NO immediate action is required to be taken by organizations.
 :::
 
 :::info
@@ -43,5 +43,41 @@ Three predefined roles are available to manage user permissions within an organi
 ## Getting started
 
 :::info
-With the introduction of user roles all users keep their previous permission level which is equivalent to the <span className="role role-admin">nanoAdmin</span> role. Therefore NO immediate action is required by organizations.
+With the introduction of user roles, all users maintain their previous permission level which is equivalent to the <span className="role role-admin">nanoAdmin</span> role. Therefore NO immediate action is required to be taken by organizations.
 :::
+
+Steps to apply user roles for your organization:
+1. Assess required permissions and role for each user
+2. Apply user role changes via [Dashboard](../cloud-frontend-v3/Dashboard_User_Roles.md) or [Bintu API]()
+3. Evaluate the current usage of API Keys and the possible replacement with user-bound and expiring API tokens
+
+## High-level Permission Overview
+
+| Capability | nanoAdmin | nanoUser | nanoReadOnly |
+|---|---|---|---|
+| Get API Key | ✓ |  |  |
+| Get Player Key | ✓ | ✓ | ✓ |
+|  |  |  |  |
+| Edit Custom Webhook | ✓ |  |  |
+|  |  |  |  |
+| Get Users | ✓ | ✓ |  |
+| Create User | ✓ |  |  |
+| Invite User | ✓ |  |  |
+| Edit User | ✓ |  |  |
+| Reset User Tokens | ✓ |  |  |
+| Delete User | ✓ |  |  |
+|  |  |  |  |
+| Get Streams | ✓ | ✓ | ✓ |
+| Create Stream | ✓ | ✓ |  |
+| Stop stream | ✓ |  |  |
+| Lock stream | ✓ |  |  |
+| Unlock stream | ✓ |  |  |
+| Delete stream | ✓ |  |  |
+|  |  |  |  |
+| Get Tags | ✓ | ✓ | ✓ |
+| Create Tag | ✓ | ✓ |  |
+| Edit Tag | ✓ | ✓ |  |
+| Delete Tag | ✓ |  |  |
+|  |  |  |  |
+| Create Playback Token | ✓ | ✓ |  |
+| Get Metrics and Alerts | ✓ | ✓ | ✓ |
