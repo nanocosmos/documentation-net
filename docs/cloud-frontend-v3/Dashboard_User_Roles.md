@@ -35,7 +35,7 @@ Secure playback tokens will not be affected and remain valid until they reach th
 After selecting "Edit User" the user's role can be adjusted to one of the three roles: <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span>, and <span className="role role-readonly">nanoReadOnly</span>.
 
 :::info Good to know
-Learn more about Role-Based Access Control (RBAC) in our [documentation](../cloud/user_roles.md). It covers important [security risks](../cloud/user_roles.md#security-risks) associated with improper role assignments and access control, as well as a [detailed descriptions of each user role](../cloud/user_roles.md#user-roles).
+Learn more about Role-Based Access Control (RBAC) in our [documentation](../cloud/user_roles.md). It covers important [aspects and benefits](../cloud/user_roles.md#concept-and-benefits) associated with role assignments and access control, as well as a [detailed descriptions of each user role](../cloud/user_roles.md#user-roles-in-nanostream-cloud).
 
 It is possible to expand the respective role in the corresponding dialog to get a quick overview of the associated permissions.
 
