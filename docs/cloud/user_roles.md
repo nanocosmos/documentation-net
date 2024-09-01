@@ -5,21 +5,23 @@ title: Role-Based Access Control (RBAC)
 sidebar_label: Role-Based Access Control (RBAC)
 ---
 
-## Security Risks
+## Concept and Benefits
 
-API keys grant access to your organization's resources, including sensitive data and critical functionalities. While essential for developers and integrations, sharing a single key across your organization creates a major security risk. It's like opening Pandora's box – a single compromised key can expose your entire system to potential hazards:
+1. **Enhanced Security**:
+   - **Ensuring Appropriate Permissions**: RBAC ensures that users and API access tokens are granted only the permissions needed for their tasks, minimizing potential security risks. This improves your account security and protects your organization's operations.
 
-1. **Unauthorized Access**: Sharing an all-access API key increases the risk of unintended users, either accidentally or intentionally, gaining access to sensitive data and functionalities.
+2. **Easy to Administer**:
+   - **Simplified User Management**: RBAC allows administrators to assign roles to users rather than managing individual permissions. By assigning predefined roles based on job functions, tasks, or responsibilities, administrators can easily grant access to resources by simply choosing the appropriate role for a user.
+   - **Centralized Permission Management**: By managing permissions at the role level, rather than at the individual user level, RBAC reduces the number of decisions and changes an administrator must make. This centralized approach minimizes errors and inconsistencies in access controls.
 
-2. **Misconfiguration Mayhem**: If multiple developers share the same API key, they might accidentally expose it during development or testing, creating security vulnerabilities that attackers can easily exploit.
+3. **Improved Visibility/Overview of User Permissions**:
+   - **Clear Permission Structures**: RBAC provides a clear structure of roles and their associated permissions. This makes it easier for administrators to understand who has access to what resources and why, facilitating audits and compliance checks.
+   - **Simplified Reporting and Auditing**: Since roles aggregate multiple permissions, generating reports on user access becomes more straightforward. This visibility is crucial for maintaining security, identifying potential issues, and demonstrating compliance with regulations.
 
-3. **Lack of Transparency and Accountability**: Using a single API key makes it difficult to identify which team member was responsible for a specific API request, complicating issue resolution and accountability.
-
-
-## User Roles
+## User Roles in nanoStream Cloud
 
 :::caution Bintu API v1.23.0.0
-With the `Bintu API v1.23.0.0` we introduced a robust role-based access control system to improve your account security and protect your organization's operations. This system ensures that each user only possesses the permissions necessary for their tasks, minimizing potential risks.
+With the `Bintu API v1.23.0.0` we introduced a role-based access control system.
 :::
 
 :::info
@@ -28,10 +30,8 @@ To learn more about user management using the dashboard, [click here](../cloud-f
 
 Three predefined roles are available to manage user permissions within an organization: <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> and <span className="role role-readonly">nanoReadOnly</span>. Each role grants specific access rights tailored to different needs.
 
-| Role | Access Level  | Permissions | 
-|---|---|---|
-| <span className="role role-admin">nanoAdmin</span> | Highest       | Has full control over all functions within the organization, including managing user roles and issuing new tokens to disable existing ones. **Is the *only* role with access to the API Key.** |
-| <span className="role role-user">nanoUser</span>    | Intermediate  | Can perform tasks within the organization but can't take actions that could disrupt operations, such as deleting or stopping streams or changing important settings. |                
-| <span className="role role-readonly">nanoReadOnly</span>| Limited       | Has read-only access to basic information and can't view sensitive data or make changes to the organization or stream settings. |
-
-
+| User Role | Responsibility | Access Level | Permissions |
+|---|---|---|---|
+| <span className="role role-admin">nanoAdmin</span> | The Administrator  | Highest  | Has full control over all functions within the organization, including managing user roles and issuing new tokens to disable existing ones. **Is the *only* role with access to user management and the API Key.** |
+| <span className="role role-user">nanoUser</span>    | The Operator  | High  | Can perform all tasks related to stream management and operations. |                
+| <span className="role role-readonly">nanoReadOnly</span>| The Observer  | Low  | Has read-only access to basic information. Can't view sensitive data nor take actions that could disrupt operations, such as deleting or stopping streams or changing settings.. |
