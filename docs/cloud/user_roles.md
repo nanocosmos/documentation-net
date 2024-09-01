@@ -33,5 +33,5 @@ Three predefined roles are available to manage user permissions within an organi
 | User Role | Responsibility | Access Level | Permissions |
 |---|---|---|---|
 | <span className="role role-admin">nanoAdmin</span> | The Administrator  | Highest  | Has full control over all functions within the organization, including managing user roles and issuing new tokens to disable existing ones. **Is the *only* role with access to user management and the API Key.** |
-| <span className="role role-user">nanoUser</span>    | The Operator  | High  | Can perform all tasks related to stream management and operations. |                
-| <span className="role role-readonly">nanoReadOnly</span>| The Observer  | Low  | Has read-only access to basic information. Can't view sensitive data nor take actions that could disrupt operations, such as deleting or stopping streams or changing settings.. |
+| <span className="role role-user">nanoUser</span>    | The Operator  | High  | Can perform all tasks related to stream management and operations, expect for changes that could disrupt operations, such as deleting or stopping streams or changing critical settings. |
+| <span className="role role-readonly">nanoReadOnly</span>| The Observer  | Low  | Has read-only access to basic information such as stream configuration, stream states, metrics and alerts. |
