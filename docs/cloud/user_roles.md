@@ -36,9 +36,9 @@ Three predefined roles are available to manage user permissions within an organi
 
 | User Role | Responsibility | Access Level | Permissions |
 |---|---|---|---|
-| <span className="role role-admin">nanoAdmin</span> | The Administrator  | Highest  | Has full control over all functions within the organization, including managing user roles and issuing new tokens to disable existing ones. **Is the *only* role with access to user management and the API Key.** |
-| <span className="role role-user">nanoUser</span>    | The Operator  | High  | Can perform all tasks related to stream management and operations, expect for changes that could disrupt operations, such as deleting or stopping streams or changing critical settings. |
-| <span className="role role-readonly">nanoReadOnly</span>| The Observer  | Low  | Has read-only access to basic information such as stream configuration, stream states, metrics and alerts. |
+| <span className="role role-admin">nanoAdmin</span> | The Administrator  | Highest  | Has full control over all functions within the organization, including managing user roles and issuing new tokens to disable existing ones. **Is the *only* role with access to user management and the API Key.** [more info](./user_roles.md#high-level-permission-overview) |
+| <span className="role role-user">nanoUser</span>    | The Operator  | High  | Can perform all tasks related to stream management and operations, expect for changes that could disrupt operations, such as deleting or stopping streams or changing critical settings. [more info](./user_roles.md#high-level-permission-overview) |
+| <span className="role role-readonly">nanoReadOnly</span>| The Observer  | Low  | Has read-only access to basic information such as stream configuration, stream states, metrics and alerts. [more info](./user_roles.md#high-level-permission-overview) |
 
 ## Getting started
 
@@ -48,7 +48,7 @@ With the introduction of user roles, all users maintain their previous permissio
 
 Steps to apply user roles for your organization:
 1. Assess required permissions and role for each user
-2. Apply user role changes via [Dashboard](../cloud-frontend-v3/Dashboard_User_Roles.md) or [Bintu API]()
+2. Apply user role changes via [Dashboard](../cloud-frontend-v3/Dashboard_User_Roles.md) or [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs)
 3. Evaluate the current usage of API Keys and the possible replacement with user-bound and expiring API tokens
 
 ## High-level Permission Overview
