@@ -25,6 +25,10 @@ With the `Bintu API v1.23.0.0` we introduced a role-based access control system.
 :::
 
 :::info
+With the introduction of user roles all users keep their previous permission level which is equivalent to the <span className="role role-admin">nanoAdmin</span> role. Therefore NO immediate action is required by organizations.
+:::
+
+:::info
 To learn more about user management using the dashboard, [click here](../cloud-frontend-v3/Dashboard_User_Roles.md).
 :::
 
@@ -35,3 +39,9 @@ Three predefined roles are available to manage user permissions within an organi
 | <span className="role role-admin">nanoAdmin</span> | The Administrator  | Highest  | Has full control over all functions within the organization, including managing user roles and issuing new tokens to disable existing ones. **Is the *only* role with access to user management and the API Key.** |
 | <span className="role role-user">nanoUser</span>    | The Operator  | High  | Can perform all tasks related to stream management and operations, expect for changes that could disrupt operations, such as deleting or stopping streams or changing critical settings. |
 | <span className="role role-readonly">nanoReadOnly</span>| The Observer  | Low  | Has read-only access to basic information such as stream configuration, stream states, metrics and alerts. |
+
+## Getting started
+
+:::info
+With the introduction of user roles all users keep their previous permission level which is equivalent to the <span className="role role-admin">nanoAdmin</span> role. Therefore NO immediate action is required by organizations.
+:::
