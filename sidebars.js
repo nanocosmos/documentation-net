@@ -30,7 +30,6 @@ const sidebars = {
       "items": [
         "cloud/security",
         "cloud/guardian",
-        "cloud/userroles",
       ]
     },
     {
@@ -52,8 +51,7 @@ const sidebars = {
             "cloud-frontend-v3/Dashboard_ABR_Transcoding",
             "cloud-frontend-v3/Dashboard_Thumbnail",
             "cloud-frontend-v3/Dashboard_Secure",
-            "cloud-frontend-v3/Dashboard_nanoPlayer",
-            "cloud-frontend-v3/Dashboard_User_Roles"
+            "cloud-frontend-v3/Dashboard_nanoPlayer"
           ]
         },
         {
