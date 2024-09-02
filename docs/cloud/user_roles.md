@@ -68,6 +68,13 @@ Three predefined roles are available to manage user permissions within an organi
 For a detailed overview of each role's permissions, refer to the [High-level Permission Overview](#high-level-permission-overview).
 :::
 
+## API Endpoints
+
+- PUT /user/permission - [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1permission/put) -  Update the user role of a user of your organization
+- PUT /user/tokenkey - [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1tokenkey/put) - Renew a user `tokenkey` to invalidate previously created API tokens
+- GET /permission - [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/getPermissionProfileByName) - Get the available endpoint valids for given permission (by name)
+- GET /permission/list - [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Permission%20List) - List available roles and the associated permissions for your organization
+- GET /user -[More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/User%20Info) - This already existing endpoint now displays the permission of the users and an internal identifier
 
 ## High-level Permission Overview
 
