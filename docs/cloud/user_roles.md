@@ -30,21 +30,24 @@ With the **`Bintu API v1.23.0.0`** release introducing user roles, all users wil
 
 Implementing Role-Based Access Control (RBAC) in your organization is a straightforward process that enhances security and simplifies user management. The following guide will walk you through the initial steps to configure user roles and manage permissions effectively.
 
-### 1. Understanding User Roles
-Before assigning roles, familiarize yourself with the [predefined roles available in nanoStream Cloud](#user-roles-in-nanostream-cloud). For a detailed overview of each role's permissions, refer to the [High-level Permission Overview](#high-level-permission-overview).
+### 1. Understanding Role Assignments
+Before assigning roles, familiarize yourself with:
+
+1. Begin by reviewing the [predefined roles in nanoStream Cloud](#user-roles-in-nanostream-cloud) to understand the basic access levels and permissions available. For an in-depth look at the permissions associated with each role, check out the [High-level Permission Overview](#high-level-permission-overview).
+2. Learn how to manage roles within the dashboard by following the dedicated Features & Function [User Management](./cloud-frontend-v3/Dashboard_User_Roles) page.
 
 ### 2. Evaluate and Assign Roles
 
 Assess the responsibilities of each user within your organization and assign the appropriate role:
 
-- **Identify Required Permissions**: Determine the level of access each user needs based on their job functions.
-- **Assign Roles**: Use the [nanoStream Cloud Dashboard](../cloud-frontend-v3/Dashboard_User_Roles) or the [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs) to assign roles to users.
+- Determine the level of access each user needs based on their job functions.
+- Use the [nanoStream Cloud Dashboard](../cloud-frontend-v3/Dashboard_User_Roles) or the [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs) to assign roles to users.
 
 ### 3. Monitor and Enforce Access Control
 It’s important to monitor user access and enforce RBAC policies consistently:
 
-- **Review Existing API Key Usage**: Consider replacing static API keys with user-bound and expiring API tokens for enhanced security.
-- **Audit Access**: Regularly review the permissions and roles assigned to users to ensure they align with current responsibilities and security requirements.
+- Consider replacing static API keys with user-bound and expiring API tokens for enhanced security.
+- Regularly review the permissions and roles assigned to users to ensure they align with current responsibilities and security requirements.
 
 ## User Roles in nanoStream Cloud
 
@@ -52,7 +55,7 @@ It’s important to monitor user access and enforce RBAC policies consistently:
 With the **`Bintu API v1.23.0.0`** release introducing user roles, all users will retain their current permissions, now equivalent to the <span className="role role-admin">nanoAdmin</span> role. Therefore, **no immediate action is required** from organizations.
 :::
 
-:::note
+:::info nanoStream Cloud Dashboard Instructions
 To learn more about user management using the dashboard, [click here](../cloud-frontend-v3/Dashboard_User_Roles.md).
 :::
 
