@@ -49,7 +49,7 @@ With the introduction of user roles, all users maintain their previous permissio
 Steps to apply user roles for your organization:
 1. Assess required permissions and role for each user
 2. Apply user role changes via [Dashboard](../cloud-frontend-v3/Dashboard_User_Roles.md) or [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs)
-3. Evaluate the current usage of API Keys and the possible replacement with user-bound and expiring API tokens
+3. Review your current usage of the API key and possible replacements with user-bound and expiring API tokens
 
 ## High-level Permission Overview
 
@@ -57,14 +57,15 @@ Steps to apply user roles for your organization:
 |---|---|---|---|
 | Get API Key | ✓ |  |  |
 | Get Player Key | ✓ | ✓ | ✓ |
+| Get User API Token | ✓ | ✓ | ✓ |
 |  |  |  |  |
-| Edit Custom Webhook | ✓ |  |  |
+| Set Custom Webhook | ✓ |  |  |
 |  |  |  |  |
 | Get Users | ✓ | ✓ |  |
 | Create User | ✓ |  |  |
 | Invite User | ✓ |  |  |
 | Edit User | ✓ |  |  |
-| Reset User Tokens | ✓ |  |  |
+| Reset User API Tokens | ✓ |  |  |
 | Delete User | ✓ |  |  |
 |  |  |  |  |
 | Get Streams | ✓ | ✓ | ✓ |
