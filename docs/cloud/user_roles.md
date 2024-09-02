@@ -73,45 +73,69 @@ For a detailed overview of each role's permissions, refer to the [High-level Per
 
 ## Bintu API Endpoints
 
-- PUT /user/permission - [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1permission/put) -  Update the user role of a user of your organization
-- PUT /user/tokenkey - [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1tokenkey/put) - Renew a user `tokenkey` to invalidate previously created API tokens
-- GET /permission - [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/getPermissionProfileByName) - Get the available endpoint valids for given permission (by name)
-- GET /permission/list - [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Permission%20List) - List available roles and the associated permissions for your organization
-- GET /user -[More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/User%20Info) - This already existing endpoint now displays the permission of the users and an internal identifier
+| **Operation** | **Route** | **Description** | **Access Level** | **Dedicated docs** |
+|---|---|---|---|---|
+| **PUT** | `/user/permission`      | Update the user role of a user in your organization | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1permission/put)              |
+| **PUT** | `/user/tokenkey`        | Renew a user `tokenkey` to invalidate previously created API tokens | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1tokenkey/put) |
+| **GET** | `/permission` | Get the available endpoint valids for a given permission (by name) | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/getPermissionProfileByName) |
+| **GET** | `/permission/list` | List available roles and the associated permissions for your organization | <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Permission%20List) |
+| **GET** | `/user` | Displays the permission of users and an internal identifier (enhanced existing endpoint) | <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/User%20Info) |
 
 ## Token API Endpoints
 
-- POST /bintu/token - [More info](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20bintu%20services) - Create an API token for the Bintu services
-
+| **Operation** | **Route** | **Description** | **Access Level** | **Dedicated docs** |
+|---|---|---|---|---|
+| **POST** | `/bintu/token` | Create an API token for the Bintu services | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20bintu%20services) |
 ## High-level Permission Overview
+
+### API Access
 
 | Capability | <span className="role role-admin">nanoAdmin</span> | <span className="role role-user">nanoUser</span> | <span className="role role-readonly">nanoReadOnly</span> |
 |---|---|---|---|
-|**API Access** | | | |
-| Get API Key | ✓ |  |  |
-| Get Player Key | ✓ | ✓ | ✓ |
-| Get User API Token | ✓ | ✓ | ✓ |
-| **Webhook Management**   |  |  |  |
-| Set Custom Webhook | ✓ |  |  |
-| **User Management** |  |  |  |
-| Get Users | ✓ | ✓ |  |
-| Create User | ✓ |  |  |
-| Invite User | ✓ |  |  |
-| Edit User | ✓ |  |  |
-| Reset User API Tokens | ✓ |  |  |
-| Delete User | ✓ |  |  |
-| **Stream Management** |  |  |  |
-| Get Streams | ✓ | ✓ | ✓ |
-| Create Stream | ✓ | ✓ |  |
-| Stop stream | ✓ |  |  |
-| Lock stream | ✓ |  |  |
-| Unlock stream | ✓ |  |  |
-| Delete stream | ✓ |  |  |
-| **Tag Management** |  |  |  |
-| Get Tags | ✓ | ✓ | ✓ |
-| Create Tag | ✓ | ✓ |  |
-| Edit Tag | ✓ | ✓ |  |
-| Delete Tag | ✓ |  |  |
-| **Playback & Monitoring** |  |  |  |
-| Create Playback Token | ✓ | ✓ |  |
-| Get Metrics and Alerts | ✓ | ✓ | ✓ |
+| Get API Key | <span class="role-admin">✓</span> | — | — |
+| Get Player Key | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | <span class="role-readonly">✓</span> |
+| Get User API Token | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | <span class="role-readonly">✓</span> |
+
+### Webhook Management
+
+| Capability | <span className="role role-admin">nanoAdmin</span> | <span className="role role-user">nanoUser</span> | <span className="role role-readonly">nanoReadOnly</span> |
+|---|---|---|---|
+| Set Custom Webhook | <span class="role-admin">✓</span> | — | — |
+
+### User Management
+
+| Capability | <span className="role role-admin">nanoAdmin</span> | <span className="role role-user">nanoUser</span> | <span className="role role-readonly">nanoReadOnly</span> |
+|---|---|---|---|
+| Get Users | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | — |
+| Create User | <span class="role-admin">✓</span> | — | — |
+| Invite User | <span class="role-admin">✓</span> | — | — |
+| Edit User | <span class="role-admin">✓</span> | — | — |
+| Reset User API Tokens | <span class="role-admin">✓</span> | — | — |
+| Delete User | <span class="role-admin">✓</span> | — | — |
+
+### Stream Management
+
+| Capability | <span className="role role-admin">nanoAdmin</span> | <span className="role role-user">nanoUser</span> | <span className="role role-readonly">nanoReadOnly</span> |
+|---|---|---|---|
+| Get Streams | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | <span class="role-readonly">✓</span> |
+| Create Stream | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | — |
+| Stop stream | <span class="role-admin">✓</span> | — | — |
+| Lock stream | <span class="role-admin">✓</span> | — | — |
+| Unlock stream | <span class="role-admin">✓</span> | — | — |
+| Delete stream | <span class="role-admin">✓</span> | — | — |
+
+### Tag Management
+
+| Capability | <span className="role role-admin">nanoAdmin</span> | <span className="role role-user">nanoUser</span> | <span className="role role-readonly">nanoReadOnly</span> |
+|---|---|---|---|
+| Get Tags | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | <span class="role-readonly">✓</span> |
+| Create Tag | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | — |
+| Edit Tag | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | — |
+| Delete Tag | <span class="role-admin">✓</span> | — | — |
+
+### Playback & Monitoring
+
+| Capability | <span className="role role-admin">nanoAdmin</span> | <span className="role role-user">nanoUser</span> | <span className="role role-readonly">nanoReadOnly</span> |
+|---|---|---|---|
+| Create Playback Token | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | — |
+| Get Metrics and Alerts | <span class="role-admin">✓</span> | <span class="role-user">✓</span> | <span class="role-readonly">✓</span> |
