@@ -71,7 +71,9 @@ Three predefined roles are available to manage user permissions within an organi
 For a detailed overview of each role's permissions, refer to the [High-level Permission Overview](#high-level-permission-overview).
 :::
 
-## Bintu API Endpoints
+## API Endpoints
+
+### Bintu API Endpoints
 
 | **Operation** | **Route** | **Description** | **Access Level** | **Dedicated docs** |
 |---|---|---|---|---|
@@ -81,7 +83,7 @@ For a detailed overview of each role's permissions, refer to the [High-level Per
 | **GET** | `/permission/list` | List available roles and the associated permissions for your organization | <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Permission%20List) |
 | **GET** | `/user` | Displays the permission of users and an internal identifier (enhanced existing endpoint) | <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/User%20Info) |
 
-## Token API Endpoints
+### Token API Endpoints
 
 | **Operation** | **Route** | **Description** | **Access Level** | **Dedicated docs** |
 |---|---|---|---|---|
