@@ -68,4 +68,7 @@ Accidental exposure of valid JWT access tokens can give unauthorized individuals
 This action will invalidate all existing tokens associated with the user's account.
 Secure playback tokens will not be affected and remain valid until they reach their expiration date.
 
+![cf-reset-user-token.png](../assets/cloud-frontend/cf-reset-user-token.png)
+*Screenshot: Reset User Token confirmation modal*
+
 After selecting the renew token option, double confirmation is required. A warning will inform of the consequences of this change. If these consequences are accepted, the changes can be committed by hitting the refresh button.
