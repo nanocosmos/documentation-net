@@ -9,14 +9,6 @@ sidebar_label: Documentation
 
 For API route specifications please refer to our <a className="badge-inText" href="https://metrics.nanocosmos.de/api/doc/v2/">technical API documentation. ⚙️</a>
 
-## General Details
-
-### Rate Limit
-
-This API limits the number of requests to **1 request per second** but allows a temporary **burst rate of up to 30 requests per second** to be processed immediately without delay. If the rate limit is exceeded, you will receive a 502 (Bad Gateway) or 504 (Gateway Timeout) HTTP error code from Nginx.
-
-## API Categories
-
 ### Usage Metrics
 
 These routes provide a detailed overview of your organisation's traffic volume in a specified time frame.
