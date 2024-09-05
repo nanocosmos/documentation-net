@@ -41,7 +41,7 @@ Before assigning roles, familiarize yourself with:
 Assess the responsibilities of each user within your organization and assign the appropriate role:
 
 - Determine the level of access each user needs based on their job functions.
-- Use the [nanoStream Cloud Dashboard](../cloud-frontend-v3/Dashboard_User_Roles) or the [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs) to assign roles to users.
+- Use the [nanoStream Cloud Dashboard](./cloud-frontend-v3/Dashboard_User_Roles) or the [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs) to assign roles to users.
 
 ### 3. Monitor and Enforce Access Control
 It’s important to monitor user access and enforce RBAC policies consistently:
