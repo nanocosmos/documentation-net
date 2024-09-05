@@ -15,7 +15,7 @@ const ItemList = [
     title: 'Webcaster API',
     Svg: require('@site/static/img/webcaster-api.svg').default,
     description: ("Browse the documentation and learn how to embed the Webcaster on any web page."),
-    link: 'https://nanocosmos.github.io/webcaster/docs',
+    link: 'https://webrtc.pages.nanocosmos.de/webcaster-api/docs/',
     button: 'Read documentation'
   },
 ];
