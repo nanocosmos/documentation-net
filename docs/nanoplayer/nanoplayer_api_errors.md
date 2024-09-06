@@ -208,18 +208,21 @@ There are 3 available scenarios depending on the error type:
 1. Errors covered by internal recovery or reconnect workflow
 
 a) Media element errors with available configuration for automatic recovery
+
 * error codes: `1008`, `3003`, `3005`, `3100`, `3101`;
 
 Those are media errors which have an automatic recovery workflow. In case of an error, the recovery will be triggered. The amount of recoveries is set within a time frame of 60 seconds and can be adjusted via player configuration. Read more about [Media Error Recovery](./nanoplayer_feature_media_error_recovery).
 
 b) Network connection errors with available configuration for reconnection
+
 * error codes: `4102`, `4103`, `4105`, `4106`, `4107`, `4108`, `4109`, `4111`, `4115`, `4500`, `4503`;
 
 In case of initial connection failure or connection break up during streaming, there is an internal network reconnection workflow supported on all platforms except iOS. Read more about [Reconnect and Timeouts](./nanoplayer_feature_reconnect_timeouts).
 
 2. Shouldn't be attempted to recover by retry
 
-- error codes related to autoplay policies: `1005`, `1007`, `1009`;
+* error codes related to autoplay policies: `1005`, `1007`, `1009`;
+
 * error codes related to network security: `49xx`-`4999`;
 * error codes related to setup: `5001`-`5010`;
 
@@ -272,9 +275,9 @@ Based on the last error code (stored in `onError` handler), the replay decision 
         var player;
         var config = {
             "source": {
-       "defaults": {
-           "service": "bintu"
-    },
+                "defaults": {
+                    "service": "bintu"
+                },
                 "entries": [
                     {
                         "index": 0,
@@ -286,11 +289,11 @@ Based on the last error code (stored in `onError` handler), the replay decision 
                             "height": 720,
                             "framerate": 30
                         },
-      "h5live": {
-       "rtmp": {
-        "streamname": "XXXXX-YYYYY" // Enter your stream name
-       }
-      }
+                        "h5live": {
+                            "rtmp": {
+                                "streamname": "XXXXX-YYYYY" // Enter your stream name
+                            }
+                        }
                     }
                 ],
                 "options": {
