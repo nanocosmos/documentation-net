@@ -20,7 +20,7 @@ Following some of the most frequent errors will be described.<br /> To see all e
 
 ## Player Errors
 
-:::info 
+:::info
 These errors have codes in a **range from 1000 to 1999**.
 :::
 
@@ -47,10 +47,10 @@ This is a non critical error.
 :::
 
 :::info
-This error should not be handled by immediate replay, 
-instead the web application should monitor the document visibility state 
-and initiate a replay via `player.play()`, once it became `visible` again. 
-https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState
+This error should not be handled by immediate replay,
+instead the web application should monitor the document visibility state
+and initiate a replay via `player.play()`, once it became `visible` again.
+<https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState>
 :::
 
 This includes:
@@ -59,7 +59,7 @@ This includes:
 * Browser application being minimized or closed
 * Browser application being interrupted by the system, e.g. in case of an incoming call or device being locked
 
-### 1008 Playback error. Only on iOS.
+### 1008 Playback error. Only on iOS
 
 An unexpected error occurred during playback on iOS. This error is recoverable. Read more about [Media Error Recovery](./nanoplayer_feature_media_error_recovery).
 
@@ -68,15 +68,15 @@ An unexpected error occurred during playback on iOS. This error is recoverable. 
 This is related to a policy in some browsers, e.g. Chrome, Chromium based and Safari preventing media playback start in a background tab, a tab that did not have focus/visibility yet.
 
 :::info
-This error should not be handled by immediate replay, 
-instead the web application should monitor the document visibility state 
-and initiate a replay via `player.play()`, once it became `visible` again. 
-https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState
+This error should not be handled by immediate replay,
+instead the web application should monitor the document visibility state
+and initiate a replay via `player.play()`, once it became `visible` again.
+<https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState>
 :::
 
 ## Stream Errors
 
-:::info 
+:::info
 These errors have codes in a **range from 2000 to 2999**.
 :::
 
@@ -104,7 +104,7 @@ The stream was already playing, but the stream was unpublished.
 
 ## Media Errors
 
-:::info 
+:::info
 These errors have codes in a **range from 3000 to 3999**.
 :::
 
@@ -131,7 +131,7 @@ The hls playback was interupted during media data buffering.
 
 ## Network Errors
 
-:::info 
+:::info
 These errors have codes in a **range from 4000 to 4899**.
 :::
 
@@ -147,7 +147,7 @@ The websocket server is not available or not present, a timeout for establishing
 
 An [`updateSource`](./nanoplayer_api#NanoPlayer+updateSource) or a [`switchStream`](./nanoplayer_api#NanoPlayer+switchStream) request was run into a timeout.
 
-### 4106 Maybe no network, wrong url or server down. Reconnect possible.
+### 4106 Maybe no network, wrong url or server down. Reconnect possible
 
 The websocket server is not available or not present, establishing new connection is possible.
 
@@ -157,11 +157,11 @@ The websocket server is not available or not present, establishing new connectio
 These errors have codes in a **range from 4900 to 4999**.
 :::
 
-### 4901 The security service denied access. The authentication token is invalid.
+### 4901 The security service denied access. The authentication token is invalid
 
 Unsuccesful authentication due to invalid token. Read more about [Secure playback with H5Live](./nanoplayer_token_security).
 
-### 4903 The security service denied access. The url is expired or a token parameter is missing (expires, token, or options).
+### 4903 The security service denied access. The url is expired or a token parameter is missing (expires, token, or options)
 
 Unsuccesful authentication due to expired token or a missing token parameter. Read more about [Secure playback with H5Live](./nanoplayer_token_security).
 
@@ -194,41 +194,44 @@ Supported browsers are:
 * Microsoft Internet Explorer 11 (at least Windows 8)
 * Safari (MacOSX & at least iOS 10)
 
-### 5004 The players source configuration is malformed or missing.
+### 5004 The players source configuration is malformed or missing
 
 This setup error occurres when one of the key parameters (ie `source` object, `group.id` or `rtmp.streamname`) in the config object is malformed, therefore not readable for config parsing, or missing.
 Proper configuration examples can be found in [Getting started](./nanoplayer_getting_started).
 
 ## Error handling
 
-In case of an error, the following choice is to either try to replay/reconnect, or do nothing. 
+In case of an error, the following choice is to either try to replay/reconnect, or do nothing.
 
 There are 3 available scenarios depending on the error type:
+
 1. Errors covered by internal recovery or reconnect workflow
 
 a) Media element errors with available configuration for automatic recovery
-- error codes: `1008`, `3003`, `3005`, `3100`, `3101`;
+* error codes: `1008`, `3003`, `3005`, `3100`, `3101`;
 
 Those are media errors which have an automatic recovery workflow. In case of an error, the recovery will be triggered. The amount of recoveries is set within a time frame of 60 seconds and can be adjusted via player configuration. Read more about [Media Error Recovery](./nanoplayer_feature_media_error_recovery).
 
 b) Network connection errors with available configuration for reconnection
-- error codes: `4102`, `4103`, `4105`, `4106`, `4107`, `4108`, `4109`, `4111`, `4115`, `4500`, `4503`;
+* error codes: `4102`, `4103`, `4105`, `4106`, `4107`, `4108`, `4109`, `4111`, `4115`, `4500`, `4503`;
 
 In case of initial connection failure or connection break up during streaming, there is an internal network reconnection workflow supported on all platforms except iOS. Read more about [Reconnect and Timeouts](./nanoplayer_feature_reconnect_timeouts).
 
 2. Shouldn't be attempted to recover by retry
+
 - error codes related to autoplay policies: `1005`, `1007`, `1009`;
-- error codes related to network security: `49xx`-`4999`;
-- error codes related to setup: `5001`-`5010`;
+* error codes related to network security: `49xx`-`4999`;
+* error codes related to setup: `5001`-`5010`;
 
 There are errors which should not be attempted to recover as it would be mutually exclusive with the fundation of particular errors. Most errors in this category are directly linked with the mobile usage (autoplay policies, low power mode, tab switching), as well as security errors group (error codes: `49xx`-`4999`) and setup errors (error codes: `5001`-`5010`).
 
-Example 1: user is switching tabs on the phone and the application with running player is going to the background for a moment. In this situation, no one wants to have a running playback in the background tab. As a result the `1007` error (`Playback suspended by external reason`) is thrown and the playback should not be recovered while in the background tab. Therefore, the error recovery is not recommended for this error. 
+Example 1: user is switching tabs on the phone and the application with running player is going to the background for a moment. In this situation, no one wants to have a running playback in the background tab. As a result the `1007` error (`Playback suspended by external reason`) is thrown and the playback should not be recovered while in the background tab. Therefore, the error recovery is not recommended for this error.
 
 3. Errors for which replay can be attempted
 
-Errors which are not a part of the internal automatic recovery or reconnect worfklow mentioned above (#1), nor are not suitable for the retry (#2) fall under the replay/reconnect attempt category. 
+Errors which are not a part of the internal automatic recovery or reconnect worfklow mentioned above (#1), nor are not suitable for the retry (#2) fall under the replay/reconnect attempt category.
 However, it is strongly recommended that in this scenario:
+
 * the number of consecutive replay attempts is limited and/or
 * the time/interval between consecutive replay attempts is increasing with the number of attempts
 
@@ -250,10 +253,10 @@ However, it is strongly recommended that in this scenario:
 
 ### Reconnect/replay event flow
 
-For errors that meet the conditions of replay/reconnection, there is a recommended workflow. 
-Based on the last error code (stored in `onError` handler), the replay decision and following execution will take place (in `onPause` handler). The number of consecutive replay attempts should be limited. 
+For errors that meet the conditions of replay/reconnection, there is a recommended workflow.
+Based on the last error code (stored in `onError` handler), the replay decision and following execution will take place (in `onPause` handler). The number of consecutive replay attempts should be limited.
 
-## Example code snippet 
+## Example code snippet
 
 ```html
 <!DOCTYPE html>
@@ -261,14 +264,17 @@ Based on the last error code (stored in `onError` handler), the replay decision 
 <body>
     <div id="playerDiv"></div>
     <p>
-        <input type="checkbox" id="allowReplay">
-        <label for="replay">allow replay</label>
+        <input type="checkbox" id="enableReplay" checked>
+        <label for="replay">enable replay</label>
     </p>
-    <script src="http://demo.nanocosmos.de/nanoplayer/api/release/nanoplayer.4.min.js"></script>
+    <script src="https://demo.nanocosmos.de/nanoplayer/api/release/nanoplayer.4.min.js"></script>
     <script>
         var player;
         var config = {
             "source": {
+       "defaults": {
+           "service": "bintu"
+    },
                 "entries": [
                     {
                         "index": 0,
@@ -280,18 +286,17 @@ Based on the last error code (stored in `onError` handler), the replay decision 
                             "height": 720,
                             "framerate": 30
                         },
-                            "rtmp": {
-                                "streamname": "XXXXX-YYYYY" // Enter your stream name
-                            }
-                        },
-                        "bintu": {}
-                    },
+      "h5live": {
+       "rtmp": {
+        "streamname": "XXXXX-YYYYY" // Enter your stream name
+       }
+      }
+                    }
                 ],
                 "options": {
                     "adaption": {
                         "rule": "none"
-                    },
-                    "switch": {}
+                    }
                 },
                 "startIndex": 0
             },
@@ -314,7 +319,7 @@ Based on the last error code (stored in `onError` handler), the replay decision 
             }
         };
 
-        var allowReplayCheckBox = document.getElementById("allowReplay");
+        var enableReplayCheckBox = document.getElementById("enableReplay");
         // last error
         var error = null;
         // current and maximum consecutive replay attempts 
@@ -357,7 +362,7 @@ Based on the last error code (stored in `onError` handler), the replay decision 
             if (error !== null && e.reason !== 'normal') {
                 console.log("paused after error " + error.code.toString());
 
-                if (allowReplayCheckBox.checked) {
+                if (enableReplayCheckBox.checked) {
                     // shouldn't replay when error from errorCodesNotReplay occur or error from range: 4001-4999, 5001-5010
                     if (errorCodesNotReplay.indexOf(error.code) !== -1 || ((error.code >= 4001 && error.code <= 4999) || (error.code >= 5001 && error.code <= 5010))) {
                         doNotReplay();
