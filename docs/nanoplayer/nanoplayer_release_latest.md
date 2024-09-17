@@ -4,20 +4,20 @@ title: Latest Release
 sidebar_label: Latest
 ---
 
-## **[4.25.1]**
+## **[4.26.1]**
 
 ### **Release Notes**
 
-In this patch release we enhanced the observability of player metrics to better monitor and ensure quality of service when using the Bintu configuration.
+With this patch version, we resolved an issue during `player.setup` that could cause an unhandled exception.
 
 ### **Changelog**
 
-### Improved
+### Fixed
 
-- observability in player metrics for quality of service in case of bintu configuration being used
+- error condition during `player.setup` that could result in an unhandled exception
 
 ### **Release Package**
 
-- [4.25.1](https://files.nanocosmos.de/index.php/s/2twpnqK4RtZdq7s)
+- [4.26.1](https://files.nanocosmos.de/index.php/s/kR4GfDzsXbtt9db)
 - [latest 4.x](https://files.nanocosmos.de/index.php/s/4nndC45mcB6oSa6)
 - [latest](https://files.nanocosmos.de/index.php/s/2tpCzgRjNEZDzeP)
