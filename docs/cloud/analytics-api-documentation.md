@@ -39,7 +39,7 @@ Being able to monitor your live streams is a great idea to observe live performa
 
 ### Alerting
 
-The alerting routes provide an overview of either your current and historical alerts, recommended actions and their potential causes. For more details about Alerting, please refer to our [Stream Health Monitoring Guide](https://docs.nanocosmos.de/docs/analytics/features/monitoring).
+The alerting routes provide an overview of either your current and historical alerts, recommended actions and their potential causes. For more details about Alerting, please refer to our [Stream Health Monitoring Guide](https://docs.nanocosmos.de/docs/analytics/monitoring).
 
 ### Successful Playback Start Ratio
 
