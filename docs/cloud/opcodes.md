@@ -1,7 +1,8 @@
 ---
 id: opcodes
+slug: live_processing
 title: Live Processing
-sidebar_label: Live Processing (Opcodes)
+sidebar_label: Live Processing
 ---
 
 Live Processing opcodes allow users to enhance the playback experience and manage stream content more effectively. 
