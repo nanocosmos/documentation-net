@@ -72,7 +72,7 @@ const config = {
             protocol: "https"
           }],
           /**  readonly public key */
-          apiKey: "0brcisZMeHpqT0S27Wcp2994pYazzw00"
+          apiKey: "0vXAHCOuFxBJeQqiY6ZJwomakn7VpRs8"
         },
       },
       // Social Card
