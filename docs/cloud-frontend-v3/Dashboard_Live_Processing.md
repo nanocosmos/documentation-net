@@ -8,7 +8,7 @@ Live streaming goes beyond simply delivering video and audio to viewers. **Live 
 
 :::info  Prerequisites
 Before you get started, make sure you have an active bintu account, whether it's part of a trial or a paid plan. <br/>
-To use the **`opcodes`** feature, ensure it is enabled for your account. You can verify this by checking your [Organisation Overview](https://dashboard.nanostream.cloud/organisation).
+To use the **`live processing`** feature, ensure it is enabled for your account. You can verify this by checking your [Organisation Overview](https://dashboard.nanostream.cloud/organisation).
 
 If you have not created an account or enabled the feature yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 

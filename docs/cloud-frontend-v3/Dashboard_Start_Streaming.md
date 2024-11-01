@@ -56,18 +56,18 @@ As your streaming requirements evolve, you may find the need to revise your tran
 
 You can enable various processing options for each stream in a stream group, including Thumbnail, Motion Clip, Recording, and Replay.
 
-- Applying [**Thumbnail**](../cloud/opcodes#thumbnail) allows you to capture snapshots at specified intervals and use them as previews or posters. The interval can be set between 10 and 60 seconds, with the default set to 10 seconds.
-- [**Motion Clip**](../cloud/opcodes#motion-clip) generate short, dynamic video clips continuously as stream previews. You can set the interval between 10 and 60 seconds, and the clip duration can range from 1 to 60 seconds.
-- Enable the option[ **Recording**](../cloud/opcodes#recording) of the entire stream or parts of it, with video-on-demand (VOD) available after the session. If no duration is specified, the entire stream will be recorded. The minimum recording time is 1 second.
-- [**Replay**](../cloud/opcodes#replay) allows you to rewind and share key moments from the live stream. You can set the replay duration with a minimum of 1 second. If no duration is set, the entire stream will be replayed.
+- Applying [**Thumbnail**](../cloud/live_processing#thumbnail) allows you to capture snapshots at specified intervals and use them as previews or posters. The interval can be set between 10 and 60 seconds, with the default set to 10 seconds.
+- [**Motion Clip**](../cloud/live_processing#motion-clip) generate short, dynamic video clips continuously as stream previews. You can set the interval between 10 and 60 seconds, and the clip duration can range from 1 to 60 seconds.
+- Enable the option[ **Recording**](../cloud/live_processing#recording) of the entire stream or parts of it, with video-on-demand (VOD) available after the session. If no duration is specified, the entire stream will be recorded. The minimum recording time is 1 second.
+- [**Replay**](../cloud/live_processing#replay) allows you to rewind and share key moments from the live stream. You can set the replay duration with a minimum of 1 second. If no duration is set, the entire stream will be replayed.
 
 
 ![Screenshot: Live Processing Activation during Stream Creation](../assets/cloud-frontend/cf-add-processes.png)
 *Screenshot: Live Processing Activation during Stream Creation*
 
 :::tip Learn more
-- [Live Processing (Opcodes)](../cloud/opcodes)
-- [Example Use Cases](../cloud/opcodes#example-use-cases)
+- [Live Processing](../cloud/live_processing)
+- [Example Use Cases](../cloud/live_processing#example-use-cases)
 - [Updating options after stream creation](Dashboard_Live_Processing#modifying-live-processing-options)
 :::
 
