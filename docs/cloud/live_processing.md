@@ -48,7 +48,7 @@ For more details, visit our [Homepage: Overview and Plans](https://info.nanocosm
 
 ### Thumbnail
 
-The thumbnail opcode captures snapshots of the stream at defined intervals. These snapshots allow quick and easy visual review of key moments, making it an essential tool for content managers looking to enhance stream previews and navigation.
+The thumbnail option captures snapshots of the stream at defined intervals. These snapshots allow quick and easy visual review of key moments, making it an essential tool for content managers looking to enhance stream previews and navigation.
 
 :::tip Key benefits
 - Enables fast review of important moments without watching the full stream.
@@ -95,6 +95,7 @@ Replay enables users to rewind and view previous sections of the live stream, of
 
 :::tip Key benefits
 - Allows users to revisit earlier moments in the stream without interrupting the ongoing broadcast.
+- Predefined replay clippings of the stream that users can instantly share
 - Improves the viewer experience by adding on-the-fly rewatchability.
 :::
 
