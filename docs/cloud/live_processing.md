@@ -95,7 +95,7 @@ Replay enables users to rewind and view previous sections of the live stream, of
 
 :::tip Key benefits
 - Allows users to revisit earlier moments in the stream without interrupting the ongoing broadcast.
-- Predefined replay clippings of the stream that users can instantly share
+- Predefined replay clippings of the stream that users can instantly share.
 - Improves the viewer experience by adding on-the-fly rewatchability.
 :::
 
