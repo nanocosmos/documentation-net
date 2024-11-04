@@ -249,7 +249,7 @@ However, it is strongly recommended that in this scenario:
             3003, // An error occurred when decoding media.
             3004, // The received audio/video is not supported.
             3005, // The receiving media data of the hls stream couldn't be decoded.
-            3100, // The media source extension changed the state to 'ended'. NOT AVAILABLE FOR IOS.
+            3100, // The media source extension changed the state to 'ended'. NOT AVAILABLE FOR HLS PLAYBACK.
             3101, // An error occurred while buffering on hls playback
             3200, // An unspecific media error occurred.
             4003  // Maximum number of reconnection tries reached.
@@ -337,7 +337,7 @@ Based on the last error code (stored in `onError` handler), the replay decision 
             3003, // An error occurred when decoding media.
             3004, // The received audio/video is not supported.
             3005, // The receiving media data of the hls stream couldn't be decoded.
-            3100, // The media source extension changed the state to 'ended'. NOT AVAILABLE FOR IOS.
+            3100, // The media source extension changed the state to 'ended'. NOT AVAILABLE FOR HLS PLAYBACK.
             3101, // An error occurred while buffering on hls playback
             3200, // An unspecific media error occurred.
             4003  // Maximum number of reconnection tries reached.

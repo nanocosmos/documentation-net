@@ -6,10 +6,10 @@ sidebar_label: NanoPlayer
 
 ## NanoPlayer {#NanoPlayer}
 
-NanoPlayer (H5Live) Public API Class 4.26.1
+NanoPlayer (H5Live) Public API Class 4.27.0
 
 **Kind**: global class
-**Version**: 4.26.1
+**Version**: 4.27.0
 
 ### new NanoPlayer(playerDivId) {#new_NanoPlayer_new}
 
@@ -77,7 +77,7 @@ The constructor. The source can be loaded via script tag, AMD (requirejs) or Com
 <!-- Example: load player with existing html video element -->
 <div id="playerDiv">
     <video id="myPlayer"></video>
-    <!-- iOS ONLY uses 2 video elements for playback if more than one stream is configured, required for seamless stream switching -->
+    <!-- HLS PLAYBACK ONLY uses 2 video elements for playback if more than one stream is configured, required for seamless stream switching -->
     <video id="myPlayer2"></video>
 </div>
 <script>
@@ -277,7 +277,7 @@ player.unmute();
 
 Sets the volume of the player.
 
-:::caution NOT AVAILABLE FOR IOS
+:::caution NOT AVAILABLE FOR HLS PLAYBACK
 See **[here](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/Device-SpecificConsiderations/Device-SpecificConsiderations.html#volume-control-in-javascript/)** for more informations.
 :::
 
@@ -1150,31 +1150,31 @@ The stats event to pass in the 'config.events' object at the setup call. Fires i
     <td>data.stats.bitrate</td><td><code>object</code></td><td><p>The bitrate object.</p>
 </td>
     </tr><tr>
-    <td>data.stats.bitrate.current</td><td><code>number</code></td><td><p>The current bitrate in Bit/s. Is &#39;0&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.stats.bitrate.current</td><td><code>number</code></td><td><p>The current bitrate in Bit/s. Is &#39;0&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.stats.bitrate.avg</td><td><code>number</code></td><td><p>The average bitrate in Bit/s over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.stats.bitrate.avg</td><td><code>number</code></td><td><p>The average bitrate in Bit/s over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.stats.bitrate.min</td><td><code>number</code></td><td><p>The minimum bitrate in Bit/s over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.stats.bitrate.min</td><td><code>number</code></td><td><p>The minimum bitrate in Bit/s over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.stats.bitrate.max</td><td><code>number</code></td><td><p>The maximum bitrate in Bit/s over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.stats.bitrate.max</td><td><code>number</code></td><td><p>The maximum bitrate in Bit/s over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
     <td>data.stats.framerate</td><td><code>object</code></td><td><p>The framerate object.</p>
 </td>
     </tr><tr>
-    <td>data.stats.framerate.current</td><td><code>number</code></td><td><p>The current network framerate. Is &#39;0&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.stats.framerate.current</td><td><code>number</code></td><td><p>The current network framerate. Is &#39;0&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.stats.framerate.avg</td><td><code>number</code></td><td><p>The average network framerate over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.stats.framerate.avg</td><td><code>number</code></td><td><p>The average network framerate over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.stats.framerate.min</td><td><code>number</code></td><td><p>The minimum network framerate over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.stats.framerate.min</td><td><code>number</code></td><td><p>The minimum network framerate over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.stats.framerate.max</td><td><code>number</code></td><td><p>The maximum network framerate over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.stats.framerate.max</td><td><code>number</code></td><td><p>The maximum network framerate over the last 10 seconds. Is &#39;0&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
     <td>data.stats.playbackrate</td><td><code>object</code></td><td><p>The playbackrate object. (since 4.14.1)</p>
@@ -1515,13 +1515,13 @@ The stream info event to pass in the 'config.events' object at the setup call. F
     <td>data.streamInfo.audioInfo</td><td><code>object</code> | <code>null</code></td><td><p>The audio info object. Is &#39;null&#39; if the stream contains no audio.</p>
 </td>
     </tr><tr>
-    <td>data.streamInfo.audioInfo.bitsPerSample</td><td><code>number</code> | <code>null</code></td><td><p>The bits per sample. Is &#39;null&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.streamInfo.audioInfo.bitsPerSample</td><td><code>number</code> | <code>null</code></td><td><p>The bits per sample. Is &#39;null&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.streamInfo.audioInfo.sampleRate</td><td><code>number</code> | <code>null</code></td><td><p>The audio sample rate. Is &#39;null&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.streamInfo.audioInfo.sampleRate</td><td><code>number</code> | <code>null</code></td><td><p>The audio sample rate. Is &#39;null&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.streamInfo.audioInfo.channels</td><td><code>number</code> | <code>null</code></td><td><p>The number of audio channels. Is &#39;null&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.streamInfo.audioInfo.channels</td><td><code>number</code> | <code>null</code></td><td><p>The number of audio channels. Is &#39;null&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
     <td>data.streamInfo.videoInfo</td><td><code>object</code> | <code>null</code></td><td><p>The stream info object. Is &#39;null&#39; if the stream contains no video.</p>
@@ -1533,7 +1533,7 @@ The stream info event to pass in the 'config.events' object at the setup call. F
     <td>data.streamInfo.videoInfo.height</td><td><code>number</code> | <code>null</code></td><td><p>The height of the video. Is &#39;null&#39; if not available.</p>
 </td>
     </tr><tr>
-    <td>data.streamInfo.videoInfo.frameRate</td><td><code>number</code> | <code>null</code></td><td><p>The video frame rate. Is &#39;null&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.streamInfo.videoInfo.frameRate</td><td><code>number</code> | <code>null</code></td><td><p>The video frame rate. Is &#39;null&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr>  </tbody>
 </table>
@@ -1600,13 +1600,13 @@ The stream info event to pass in the 'config.events' object at the setup call. F
     <td>data.streamInfo.audioInfo</td><td><code>object</code> | <code>null</code></td><td><p>The audio info object. Is &#39;null&#39; if the stream contains no audio.</p>
 </td>
     </tr><tr>
-    <td>data.streamInfo.audioInfo.bitsPerSample</td><td><code>number</code> | <code>null</code></td><td><p>The bits per sample. Is &#39;null&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.streamInfo.audioInfo.bitsPerSample</td><td><code>number</code> | <code>null</code></td><td><p>The bits per sample. Is &#39;null&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.streamInfo.audioInfo.sampleRate</td><td><code>number</code> | <code>null</code></td><td><p>The audio sample rate. Is &#39;null&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.streamInfo.audioInfo.sampleRate</td><td><code>number</code> | <code>null</code></td><td><p>The audio sample rate. Is &#39;null&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
-    <td>data.streamInfo.audioInfo.channels</td><td><code>number</code> | <code>null</code></td><td><p>The number of audio channels. Is &#39;null&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.streamInfo.audioInfo.channels</td><td><code>number</code> | <code>null</code></td><td><p>The number of audio channels. Is &#39;null&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
     <td>data.streamInfo.videoInfo</td><td><code>object</code> | <code>null</code></td><td><p>The stream info object. Is &#39;null&#39; if the stream contains no video.</p>
@@ -1618,7 +1618,7 @@ The stream info event to pass in the 'config.events' object at the setup call. F
     <td>data.streamInfo.videoInfo.height</td><td><code>number</code> | <code>null</code></td><td><p>The height of the video. Is &#39;null&#39; if not available.</p>
 </td>
     </tr><tr>
-    <td>data.streamInfo.videoInfo.frameRate</td><td><code>number</code> | <code>null</code></td><td><p>The video frame rate. Is &#39;null&#39; if not available. NOT AVAILABLE FOR IOS.</p>
+    <td>data.streamInfo.videoInfo.frameRate</td><td><code>number</code> | <code>null</code></td><td><p>The video frame rate. Is &#39;null&#39; if not available. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr>  </tbody>
 </table>
@@ -2712,7 +2712,7 @@ The config object to pass as param for the 'setup' call.
     <td>[playback.flashplayer]</td><td><code>string</code></td><td></td><td><p>A absolute or relative path to the &quot;nano.player.swf&quot;. If not set the player will be required from the base path.</p>
 </td>
     </tr><tr>
-    <td>[playback.videoId]</td><td><code>string</code> | <code>Array.string</code></td><td></td><td><p>One or two element ids of existing video tags that should be used for playback. No new element(s) will be created and after destroy it/they will be kept. Can be a string (old, only one element) or a string array with one or two (iOS ONLY!) element ids. Two video elements are required only for stream switching on iOS, MSE playback uses only one video tag. If only one element id is given on iOS the second video tag will be created by the player.</p>
+    <td>[playback.videoId]</td><td><code>string</code> | <code>Array.string</code></td><td></td><td><p>One or two element ids of existing video tags that should be used for playback. No new element(s) will be created and after destroy it/they will be kept. Can be a string (old, only one element) or a string array with one or two (HLS PLAYBACK ONLY!) element ids. Two video elements are required only for stream switching on iOS, MSE playback uses only one video tag. If only one element id is given on iOS the second video tag will be created by the player.</p>
 </td>
     </tr><tr>
     <td>[playback.keepConnection]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>If enabled the player will have always a connection to the h5live server. NOTE: not recommended for general use</p>
@@ -2727,7 +2727,7 @@ The config object to pass as param for the 'setup' call.
     <td>[playback.mediaErrorRecoveries]</td><td><code>number</code></td><td><code>3</code></td><td><p>The number of allowed media error recoveries within a minute. If threshold is reached the last error will be thrown and playback pauses. Possible recoverable error codes are 3003 (decode error), 3100 (media source ended) and 1008 (hls playback error). See <a href="#NanoPlayer..errorcode">errorcodes</a>.</p>
 </td>
     </tr><tr>
-    <td>[playback.metadataLowDelay]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>If enabled this mode for metadata processing is preventing occasionally delayed metadata on iOS. To use legacy mode set to false. The setting <code>playback.metadata</code> has to be enabled. IOS ONLY</p>
+    <td>[playback.metadataLowDelay]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>If enabled this mode for metadata processing is preventing occasionally delayed metadata on iOS. To use legacy mode set to false. The setting <code>playback.metadata</code> has to be enabled. HLS PLAYBACK ONLY</p>
 </td>
     </tr><tr>
     <td>[playback.faststart]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>If enabled the fast start mode is reducing the time to first frame and the playback start time.</p>
@@ -2757,7 +2757,7 @@ The config object to pass as param for the 'setup' call.
     <td>playback.timeouts.buffering</td><td><code>number</code></td><td><code>20</code></td><td><p>The timeout for the buffering state in seconds, range from 10 - 60 seconds. If reached the player will be stopped with reason &#39;buffer&#39; and error 2002 will be thrown. Will be cleared if player goes to playing state again.</p>
 </td>
     </tr><tr>
-    <td>playback.timeouts.connecting</td><td><code>number</code></td><td><code>5</code></td><td><p>The timeout for establishing the websocket connection, range from 5 - 30 seconds. If reached the player will be stopped with reason &#39;connectionclose&#39; and error 4106 will be thrown. WEBSOCKET ONLY, FOR IOS ONLY IF METADATA IS ENABLED</p>
+    <td>playback.timeouts.connecting</td><td><code>number</code></td><td><code>5</code></td><td><p>The timeout for establishing the websocket connection, range from 5 - 30 seconds. If reached the player will be stopped with reason &#39;connectionclose&#39; and error 4106 will be thrown. WEBSOCKET ONLY, FOR HLS PLAYBACK ONLY IF METADATA IS ENABLED</p>
 </td>
     </tr><tr>
     <td>[style]</td><td><code>object</code></td><td></td><td><p>The object to configure the style of the player.</p>
@@ -3625,7 +3625,7 @@ The possible error codes in a onError event.
     <td>3005</td><td></td><td><p>An error occurred while hls playback when decoding video.</p>
 </td>
     </tr><tr>
-    <td>3100</td><td></td><td><p>The media source extension changed the state to &#39;ended&#39;. NOT AVAILABLE FOR IOS.</p>
+    <td>3100</td><td></td><td><p>The media source extension changed the state to &#39;ended&#39;. NOT AVAILABLE FOR HLS PLAYBACK.</p>
 </td>
     </tr><tr>
     <td>3101</td><td></td><td><p>An error occurred while buffering on hls playback.</p>
