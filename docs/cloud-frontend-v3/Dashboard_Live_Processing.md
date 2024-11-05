@@ -40,10 +40,14 @@ The Live Processing feature has its own section in the **Stream Overview**. This
 
 By clicking on the button "Edit Options" next to the title you can [edit your selections](#modifying-live-processing-after-stream-creation). It also allows you to review the current settings. The listed options show whether each option is active, the configured **interval** (in seconds), the **duration** (in seconds), and the number of available resource links.
 
+## Output Links and Assets
+
+When expanding the links for active processes, you will see the URLs for each resource. 
+
 ![Screenshot: Expanded Live Processing Table showing the available resources for each option](../assets/cloud-frontend/cf-opcodes-collapsed-links.png)
 *Screenshot: Expanded Live Processing Table showing the available resources for each option*
 
-When expanding the links for active processes, you will see the URLs for each resource. 
+- For **motion clips** and **thumbnails** you can find generic URLs that lead to the corresponding files.
 - For **recordings**, you’ll also find the date and time of each session next to the resource link. 
 - For **replay**, three different links are provided, directing you to demo tools:
     - **Latest Live Session**: Clicking "Clip & Share Latest Live Session" leads you to the demo page, where, in addition to viewing the live stream, you can use the **Clipping Tool** to create live clips.
