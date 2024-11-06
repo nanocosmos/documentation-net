@@ -38,7 +38,7 @@ The Live Processing feature has its own section in the **Stream Overview**. This
 ![Screenshot: Live Processing Overview, including Thumbnail, Motionclip and a resource table](../assets/cloud-frontend/cf-opcodes-section.png)
 *Screenshot: Live Processing Overview, including Thumbnail, Motionclip and a resource table*
 
-By clicking on the button "Edit Options" next to the title you can [edit your selections](#modifying-live-processing-after-stream-creation). It also allows you to review the current settings. The listed options show whether each option is active, the configured **interval** (in seconds), the **duration** (in seconds), and the number of available resource links.
+By clicking on the button "Edit Options" next to the title you can [edit your selections](#modifying-live-processing-options). It also allows you to review the current settings. The listed options show whether each option is active, the configured **interval** (in seconds), the **duration** (in seconds), and the number of available resource links.
 
 ## Output Links and Assets
 
@@ -59,7 +59,7 @@ When expanding the links for active processes, you will see the URLs for each re
 
 ## Modifying Live Processing Options
 
-You can modify live processing settings at any time. However, it’s important to note that the stream must be **re-ingested** for the changes to take effect.
+You can modify live processing settings at any time. **However, it’s important to note that the stream must be re-ingested for the changes to take effect.**
 
 Through separate tabs, you can select the stream you want to modify and update the live processing values.
 

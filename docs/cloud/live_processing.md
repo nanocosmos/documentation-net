@@ -55,10 +55,9 @@ The thumbnail option captures snapshots of the stream at defined intervals. Thes
 - Ideal for creating visual highlights or navigating to specific segments of the stream.
 :::
 
-| Setting | Description | Min | Max |
-|-|-|-|-|
-| `interval`  | Time between each snapshot. | 10s  | 60s |
-
+| Setting    | Description                 | Min | Max   |
+| ---------- | --------------------------- | --- | ----- |
+| `interval` | Time between each snapshot. | 10s | 3600s |
 
 ### Motion Clip
 
@@ -69,11 +68,10 @@ Motion clip generates short sequences of snapshots, offering a more dynamic way 
 - Helps users quickly assess key moments with a moving snapshot sequence.
 :::
 
-| Setting | Description | Min | Max |
-|-|-|-|-|
-| `duration`  | Length of each generated clip.  | 1s | 60s |
-| `interval`  | Time between each snapshot.  | 10s | 60s |
-
+| Setting    | Description                    | Min | Max   |
+| ---------- | ------------------------------ | --- | ----- |
+| `duration` | Length of each generated clip. | 1s  | 60s   |
+| `interval` | Time between each snapshot.    | 10s | 3600s |
 
 ### Recording
 
@@ -84,10 +82,9 @@ The recording option allows parts or the entire stream to be recorded for later 
 - Facilitates video archiving and on-demand access for viewers.
 :::
 
-| Setting | Description | Min | Max |
-|-|-|-|-|
-| `duration` | Length of the recorded segment. |  1s | Entire stream |
-
+| Setting    | Description                     | Min | Max           |
+| ---------- | ------------------------------- | --- | ------------- |
+| `duration` | Length of the recorded segment. | 1s  | Entire stream |
 
 ### Replay
 
@@ -99,7 +96,6 @@ Replay enables users to rewind and view previous sections of the live stream, of
 - Improves the viewer experience by adding on-the-fly rewatchability.
 :::
 
-
-| Setting | Description | Min | Max |
-|-|-|-|-|
-| `duration` | Length of the replay buffer. |  1s | Entire stream |
+| Setting    | Description                  | Min | Max           |
+| ---------- | ---------------------------- | --- | ------------- |
+| `duration` | Length of the replay buffer. | 1s  | Entire stream |
