@@ -24,10 +24,9 @@ You can access the stream creation page using the menu on the left. You can tell
 ### Add Tags
 
 In the "Add Tags" section you can add tag(s) to identify your stream more easily in the future. 
-1. You can enter in the text field a tag that you want to add. 
-2. By hitting "Enter" they will be added to the list above the text field and are added to the stream you are about to create.
-3. From the 3rd letter in the text field, it will be checked if you have used such a series of characters in the past and all tags that contain these three letters will be suggested to you. By clicking on them, they will also be added to the list (see 2).
-4. Independently if you have already typed something, you can press "Show all tags" and see the last tags you have used in the organization. You can scroll through them all using the menu at the bottom right. By clicking on them you can add them to the list of your tags (see 2).
+1. You can enter in the text field a tag that you want to add. By hitting "Enter" they will be added to the list above the text field and are added to the stream you are about to create.
+2. From the 3rd letter in the text field, it will be checked if you have used such a series of characters in the past and all tags that contain these three letters will be suggested to you. By clicking on them, they will also be added to the list (see 2).
+3. Independently if you have already typed something, you can press "Show all tags" and see the last tags you have used in the organization. You can scroll through them all using the menu at the bottom right. By clicking on them you can add them to the list of your tags (see 2).
 
 ![Screenshot: Addition of Tags during Stream Creation](../assets/cloud-frontend/cf-add-tags-steps.jpg)
 *Screenshot: Addition of Tags during Stream Creation*
@@ -53,16 +52,23 @@ As your streaming requirements evolve, you may find the need to revise your tran
 - [Edit profiles](Dashboard_ABR_Transcoding#edit-profiles) or [Delete profiles](Dashboard_ABR_Transcoding#delete-profiles)
 :::
 
-### Add thumbnail
+### Add live processing
 
-By clicking on "Add thumbnail" you can enable the thumbnail generation and select an interval for the creation. This can range from 10 to 3600 seconds. The default is set to 30s. The thumbnail will be generated based on the selected interval.
+You can enable various processing options for each stream in a stream group, including Thumbnail, Motion Clip, Recording, and Replay.
 
-![Screenshot: Thumbnail Activation during Stream Creation](../assets/cloud-frontend/cf-add-thumbnail.png)
-*Screenshot: Thumbnail Activation during Stream Creation*
+- Applying [**Thumbnail**](../cloud/live_processing#thumbnail) allows you to capture snapshots at specified intervals and use them as previews or posters. The interval can be set between 10 and 3600 seconds, with the default set to 30 seconds.
+- [**Motion Clip**](../cloud/live_processing#motion-clip) generate short, dynamic video clips continuously as stream previews. You can set the interval between 10 and 3600 seconds, and the clip duration can range from 1 to 60 seconds.
+- Enable the option[ **Recording**](../cloud/live_processing#recording) of the entire stream or parts of it, with video-on-demand (VOD) available after the session. If no duration is specified, the entire stream will be recorded. The minimum recording time is 1 second.
+- [**Replay**](../cloud/live_processing#replay) allows you to rewind and share key moments from the live stream. You can set the replay duration with a minimum of 1 second. If no duration is set, the entire stream will be replayed.
+
+
+![Screenshot: Live Processing Activation during Stream Creation](../assets/cloud-frontend/cf-add-processes.png)
+*Screenshot: Live Processing Activation during Stream Creation*
 
 :::tip Learn more
-- [Setting up thumbnails after stream creation](Dashboard_Thumbnail#setting-up-thumbnails)
-- [Updating thumbnail settings after stream creation](Dashboard_Thumbnail#updating-settings)
+- [Live Processing](../cloud/live_processing)
+- [Example Use Cases](../cloud/live_processing#example-use-cases)
+- [Updating options after stream creation](Dashboard_Live_Processing#modifying-live-processing-options)
 :::
 
 ### Add timecode injection

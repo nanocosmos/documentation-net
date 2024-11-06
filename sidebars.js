@@ -22,6 +22,7 @@ const sidebars = {
     "cloud/live_encoding",
     "cloud/srt_ingest",
     "cloud/live-recording-vod",
+    "cloud/live_processing",
     {
       "type": "category",
       "label": "Security Features",
@@ -50,7 +51,7 @@ const sidebars = {
             "cloud-frontend-v3/Dashboard_Start_Streaming",
             "cloud-frontend-v3/Dashboard_Stream_Overview",
             "cloud-frontend-v3/Dashboard_ABR_Transcoding",
-            "cloud-frontend-v3/Dashboard_Thumbnail",
+            "cloud-frontend-v3/Dashboard_Live_Processing",
             "cloud-frontend-v3/Dashboard_Secure",
             "cloud-frontend-v3/Dashboard_nanoPlayer",
             "cloud-frontend-v3/Dashboard_User_Roles"
@@ -157,11 +158,12 @@ const sidebars = {
     }
   ],
   "nanoStream Webcaster": [
-    { "type": "category",
+    {
+      "type": "category",
       "label": "nanoStream Webcaster",
       "collapsible": false,
       "collapsed": false,
-      "link": {"type": "doc", "id": "webrtc/nanostream_webrtc_introduction",},
+      "link": { "type": "doc", "id": "webrtc/nanostream_webrtc_introduction", },
       "items": [
         "webrtc/nanostream_webrtc_getting_started",
         "webrtc/nanostream_webrtc_demos",
@@ -309,7 +311,7 @@ const sidebars = {
       "label": "nanoStream Analytics",
       "collapsible": false,
       "collapsed": false,
-      "link": {"type": "doc", "id": "cloud/analytics-introduction"},
+      "link": { "type": "doc", "id": "cloud/analytics-introduction" },
       "items": [
         {
           "type": "category",
