@@ -23,6 +23,10 @@ Starting from version `3.7.1.0` onwards, beside the Analytics Dashboard, the nan
 
 ### How to use
 
+#### via nanoStream Analytics Dashboard
+
+> You can search for **Alerts** of your organization directly on the [nanoStream Analytics Dashboard](https://metrics.nanocosmos.de/troubleshooting?orgHash=&orgName=&countries=&tags=&streamNames=&timeShortcutId=12&timeInterval=day&timeStart=&timeEnd=&worldmapMetric=pi~Playout%20%2F%20Ingest&piWorldSubSwitch=both&abrWorldSubSwitch=chart&cdnWorldSwitch=allCdns&worldView=country&worldRegionZoom=&troubleStart=&troubleEnd=&troubleInterval=second&troubleMode=ingest&troubleIngestInput=&troubleIngestStream=&troublePublishStart=&troublePublishEnd=&troublePublishFineStart=&troublePublishFineEnd=&troublePlayoutInput=&troublePlayoutStream=&troublePlayerId=&troublePlayoutFineStart=&troublePlayoutFineEnd=&ipFilteringStart=&ipFilteringEnd=&ipFilteringStreams=&ipFilteringTags=&alertId=&alertFineStart=&alertFineEnd=&troubleIngestMode=alert) (Troubleshooting).
+
 #### via nanoStream Analytics API
 
 Our Analytics API provides 2 different alerting routes:
