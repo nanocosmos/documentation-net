@@ -18,7 +18,7 @@ The connection to nanoStream Cloud is the RTMP protocol, with the H264/AAC video
 
 Most live encoder hard- and software support this protocol.
 
-nanoStream Webcaster and nanoMeet use the browser-builtin architecture to connect a camera and encoder,
+nanoStream Webcaster uses the browser-builtin architecture to connect a camera and encoder,
 based on HTML technologies and WebRTC. If your camera works with the browser, it should also work with nanoStream Cloud.
 
 There is a range of cameras which are tested in our lab and verified.
