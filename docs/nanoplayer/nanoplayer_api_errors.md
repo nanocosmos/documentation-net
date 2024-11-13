@@ -199,6 +199,71 @@ Supported browsers are:
 This setup error occurres when one of the key parameters (ie `source` object, `group.id` or `rtmp.streamname`) in the config object is malformed, therefore not readable for config parsing, or missing.
 Proper configuration examples can be found in [Getting started](./nanoplayer_getting_started).
 
+## Startup Error
+
+Since nanoPlayer 4.28.0, a Startup Error is any error that occurs on a playback attempt within the initial loading phase including the first 30 seconds of playback.
+
+Tracking these errors helps identify potential issues that occur during the critical loading and startup phase, which are essential for user engagement and retention.
+
+---
+
+## Example
+
+```javascript
+{
+  "name": "Error",
+  "data": {
+    "code": 3100,
+    "message": "The media source extension changed the state to 'ended'.",
+    "playback": {
+      "bufferDelayCurrent": 0.62, 
+      "bitrateCurrent": 1791984,
+      "framerateCurrent": 28 
+    },
+    "state": {
+      "connected": 339, // optional value
+      "firstFragmentReceived": 339, // optional value
+      "firstFrameRendered": 352, // optional value
+      "playable": 352, // optional value
+      "playing": 496, // optional value
+      "error": 23973
+    }
+  },
+  "player": "playerDiv",
+  "id":  "your_player_id",
+  "version": "your_player_version",
+  "state": 5
+}
+
+```
+
+## Example 2
+
+Some Startup Error values are optional - depending on which state the player was in when error appeared. Example without optional values:
+
+```javascript
+{
+  "name": "Error",
+  "data": {
+    "code": 3100,
+    "message": "The media source extension changed the state to 'ended'.",
+    "playback": {
+      "bufferDelayCurrent": 0.62, 
+      "bitrateCurrent": 1791984,
+      "framerateCurrent": 28 
+    },
+    "state": {
+      "error": 23973
+    }
+  },
+  "player": "playerDiv",
+  "id":  "your_player_id",
+  "version": "your_player_version",
+  "state": 5
+}
+
+```
+
 ## Error handling
 
 In case of an error, the following choice is to either try to replay/reconnect, or do nothing.
