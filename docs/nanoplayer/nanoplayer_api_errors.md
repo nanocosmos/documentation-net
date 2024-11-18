@@ -259,7 +259,7 @@ However, it is strongly recommended that in this scenario:
 For errors that meet the conditions of replay/reconnection, there is a recommended workflow.
 Based on the last error code (stored in `onError` handler), the replay decision and following execution will take place (in `onPause` handler). The number of consecutive replay attempts should be limited.
 
-## Example code snippet
+### Example code snippet
 
 ```html
 <!DOCTYPE html>
@@ -420,4 +420,116 @@ Based on the last error code (stored in `onError` handler), the replay decision 
 </body>
 
 </html>
+```
+
+## Startup Errors
+
+#### since 4.28.0
+
+These errors are not limited to specific error codes. Defined as "Startup Error" is any error that occures on a playback attempt within the initial loading phase including the first 30 seconds of playback. Tracking these errors helps identify potential issues that occur during the critical loading and startup phase, which are essential for user engagement and retention.
+
+In addition to `data.code` and `data.message` the event object of a startup error event provides more detailed information about the loading and startup phase.
+
+    // The playback object includes the current playback stats as the error occured.
+    data.playback = {
+        bufferDelayCurrent: 'number', // seconds, always
+        bitrateCurrent:     'number', // milliseconds, always
+        framerateCurrent:   'number'  // milliseconds, always
+    }
+
+    // The state object includes all timestamps of the startup phase that have been reached before and as the error occurred.
+    // The time values are relative to load start at a playback attempt.
+    data.state  = {
+        connected:             'number', // milliseconds, optional
+        firstFragmentReceived: 'number', // milliseconds, optional
+        firstFrameRendered:    'number', // milliseconds, optional
+        playable:              'number', // milliseconds, optional
+        playing:               'number', // milliseconds, optional
+        error:                 'number'  // milliseconds, always
+    }
+
+ Errors which occure after at least 30 seconds of playback won't have these two additional subobject in their `event.data` object.
+
+### Event Object Examples
+
+* 2003 error occured after loading timeout fired. There was no media data received but the connection was healty.
+
+``` javascript
+{
+  "name": "Error",
+  "data": {
+    "code": 2003,
+    "message": "Not enough media data received.",
+    "playback": {
+      "bufferDelayCurrent": 0,
+      "bitrateCurrent": 0,
+      "framerateCurrent": 0
+    },
+    "state": {
+      "connected": 392,
+      "error": 10004
+    }
+  },
+  "player": "playerDiv",
+  "id": "69537640939",
+  "version": "4.28.0",
+  "state": 4
+}
+```
+
+* 1005 error occured immediately before playing. Media has already received and start buffer was reached.
+
+``` javascript
+{
+  "name": "Error",
+  "data": {
+    "code": 1005,
+    "message": "Playback must be initialized by user gesture.",
+    "playback": {
+      "bufferDelayCurrent": 1.6,
+      "bitrateCurrent": 2781280,
+      "framerateCurrent": 49
+    },
+    "state": {
+      "connected": 430,
+      "firstFragmentReceived": 461,
+      "firstFrameRendered": 493,
+      "playable": 493,
+      "error": 682
+    }
+  },
+  "player": "playerDiv",
+  "id": "69537640939",
+  "version": "4.28.0",
+  "state": 4
+}
+```
+
+* 3100 error occured after a successful playback start but within the first 30 seconds of playback. Every timestamp is present.
+
+``` javascript
+{
+  "name": "Error",
+  "data": {
+    "code": 3100,
+    "message": "The media source extension changed the state to 'ended'.",
+    "playback": {
+      "bufferDelayCurrent": 0.62,
+      "bitrateCurrent": 1791984,
+      "framerateCurrent": 28
+    },
+    "state": {
+      "connected": 303,
+      "firstFragmentReceived": 339,
+      "firstFrameRendered": 352,
+      "playable": 382,
+      "playing": 496,
+      "error": 23973
+    }
+  },
+  "player": "playerDiv",
+  "id": "69537640939",
+  "version": "4.28.0",
+  "state": 5
+}
 ```
