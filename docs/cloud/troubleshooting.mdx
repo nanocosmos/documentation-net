@@ -148,10 +148,10 @@ All events that occurred in the selected playout.
 
 ### Publishes
 
-The **Ingest/Publishes** tab selects the ingest data group with all items described in detail next. Whether you have synchronized a corresponding playout or entered a valid, in the time period available stream name yourself, you will have access to ingest specific data, depending on the used protocol WebRTC or RTMP. You can see which protocol was used after entering a stream name right below the selection. We also implemented support for current running ingests.
+The **Ingest/Publishes** tab selects the ingest data group with all items described in detail next. By either synchronizing the ingest stream from a corresponding playout or entering a valid stream name/tag manually, you will get access to ingest specific data, depending on the used protocol WebRTC or RTMP. You can see which protocol was used in the meta-information section after selecting a publish. Currently running ingests are also supported in this overview and are indicated by `(ongoing)` status within the `End` column.
 
-![Screenshot: Troubleshoot Ingest](../assets/analytics/analytics-publish-table-comparison.png)
-*Screenshot: Troubleshoot Ingest*
+![Screenshot: Publish Table](../assets/analytics/analytics-publish-table-comparison.png)
+*Screenshot: Publish Table Pre- & Post- Publish Selection*
 
 (A) `Publish search input field` to enter stream name or stream tag
 
@@ -181,12 +181,6 @@ The **Ingest/Publishes** tab selects the ingest data group with all items descri
 (G) `Fine interval slider` can be used to define the time interval, allowing to zoom into streams with a longer duration or to focus on specific parts of the stream.
 
 <br/>
-
-#### Stream Ingest Information
-The list of ingests for the selected stream name contains both successful ingest tries and ingest failures within the chosen time range. You can click on a specific ingest to get more details, regarding error message, error codes or additional meta information.
-
-![Screenshot: Troubleshoot Ingest Status](../assets/analytics/tp-ingest-status.png)
-*Screenshot: Troubleshoot Ingest Status*
 
 #### Stream Time Ratio
 
