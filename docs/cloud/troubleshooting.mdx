@@ -150,21 +150,19 @@ All events that occurred in the selected playout.
 
 The **Ingest/Publishes** tab selects the ingest data group with all items described in detail next. Whether you have synchronized a corresponding playout or entered a valid, in the time period available stream name yourself, you will have access to ingest specific data, depending on the used protocol WebRTC or RTMP. You can see which protocol was used after entering a stream name right below the selection. We also implemented support for current running ingests.
 
-![Screenshot: Troubleshoot Ingest](../assets/analytics/tp-ingest.png)
+![Screenshot: Troubleshoot Ingest](../assets/analytics/analytics-publish-table-comparison.png)
 *Screenshot: Troubleshoot Ingest*
 
-(A) `Stream name` indicates the stream name of interest.
+(A) `Publish search input field` to enter stream name or stream tag
 
-(B)
-- `Status` shows if the ingest was successful or failed due to an error.
+(B) `Publish table header`
 - `Start` indicates the ingest start time.
 - `End` indicates the ingest end time.
 - `Duration` indicates ingest duration.
-- `Drops` indicates if the ingest was interrupted.
+- `Has drops` indicates if the ingest was interrupted.
 
-(C)
-Groups of meta-data information are shown related to the stream. The meta-data includes :
--`Protocol` - streaming protocol used.
+(C) `General stream details` show meta-data information related to the stream
+- `Protocol` - streaming protocol used.
 - `Data center` - specific data center used for this ingest.
 - `Server` - specific server in the data center used.
 - `IP` - client IP from which the stream was ingested.
@@ -174,11 +172,15 @@ Groups of meta-data information are shown related to the stream. The meta-data i
 - `Resolution height` - height of video stream in pixels.
 - `webcaster ID` - ID of corresponding webcaster instance.
 
-(D) This tab shows which group of meta-data information is being shown at the moment and how many groups are available.
+(D) These dot indicators show which group of meta-data information is displayed at the moment and how many groups are available.
 
-(E) (F) Click to switch between meta-data information.
+(E) Click to switch between meta-data information.
 
-(G) This time slider can be used to define the time interval, allowing to zoom into streams with a longer duration or to focus on specific parts of the stream.
+(F) `Ingest tabs` - Choose between alerts & publishes to search for
+
+(G) `Fine interval slider` can be used to define the time interval, allowing to zoom into streams with a longer duration or to focus on specific parts of the stream.
+
+<br/>
 
 #### Stream Ingest Information
 The list of ingests for the selected stream name contains both successful ingest tries and ingest failures within the chosen time range. You can click on a specific ingest to get more details, regarding error message, error codes or additional meta information.
@@ -312,11 +314,11 @@ Via **Ingests/Alerts** tab you can examine alerted streams and make potential is
 - `Video Width` - The video resolution width
 - `Video Height` - The video resolution height
 
-(D) This tab shows which group of meta-data information is being shown at the moment and how many groups are available.
+(D) These dot indicators show which group of meta-data information is displayed at the moment and how many groups are available.
 
 (E) Click to switch between meta-data information.
 
-(F) `Ingest Tabs` - Choose between alerts & publishes to search for
+(F) `Ingest tabs` - Choose between alerts & publishes to search for
 
 (G) `Alerts per page settings`
 
