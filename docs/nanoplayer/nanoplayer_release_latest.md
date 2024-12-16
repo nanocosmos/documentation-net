@@ -4,6 +4,9 @@ title: Latest Release
 sidebar_label: Latest
 ---
 
+## Please find more about the **stream switching and abr** feature in our [documentation](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_stream_switching/)
+
+## **[4.29.0]**
 
 ### **Release Notes**  
 
