@@ -590,6 +590,99 @@ To choose the right quality to start with highly depends on the available qualit
 This happens **only** on the initialization of the player and won't happen if you chose to start with the highest quality (index 0) by default.
 :::
 
+### Advanced ABR settings
+
+#### Quality Omission
+
+The ABR Stream Omission allows users to:
+
+- Specify an arbitrary subset of streams to be omitted from automatic bitrate adaptation
+- Maintain full flexibility in manual stream selection
+- Provide precise control over stream quality ranges
+
+Potential use case:
+
+- omit high or low quality depending on expected bandwith conditions e.g. mobile vs desktop
+
+Configuration:
+
+- **`source.options.adaption.omitRenditions`**
+
+  - **Type**: Array of strings or numbers
+  - **Possible Values**:
+    - Quality strings
+      - `"high"`
+      - `"medium-high"`
+      - `"medium"`
+      - `"medium-low"`
+      - `"low"`
+    - Numeric Indices:
+      - integer between `0` (typically corresponds to highest quality) and `config.source.entries.length - 1`
+
+Index Mapping:
+
+- The stream index mapping ensures consistent and predictable stream selection across different stream configurations
+
+| Number of Streams | high | medium-high | medium | medium-low | low |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| 2 | 0 | 0 | 1 | 1 | 1 |
+| 3 | 0 | 1 | 1 | 1 | 2 |
+| 4 | 0 | 1 | 2 | 2 | 3 |
+| 5 | 0 | 1 | 2 | 3 | 4 |
+
+Examples:
+
+- qualities
+
+```javascript
+var config = {
+    "source": {
+        "group": {
+            "id": 'xxxxxxxx-zzzz-yyy-aaaa-aaabbbcccddd',
+            "startQuality": 'low'
+        },
+        "options": {
+            "adaption": {
+                // Omit highest quality from ABR
+                "omitRenditions": ["high"]
+            }
+        }
+    }
+};
+```
+
+- indexes
+
+```javascript
+var config = {
+    "source": {
+        "entries": [
+            ...
+        ],
+        "options": {
+            "adaption": {
+                "rule": "deviationOfMean2"
+                // Omit highest rendition (highest quality, "high")
+                "omitRenditions": [0]
+            }
+        },
+        "startIndex" : 2
+    }
+};
+```
+
+#### Quality Down Switch Adjustment
+
+The `downStep` parameter specifies the minimum number of quality steps included in an ABR (Adaptive Bitrate) down switch, applicable only when the `adaption.rule` is set to `'deviationOfMean'` or `'deviationOfMean2'`.
+
+Configuration:
+
+- **`source.options.adaption.downStep`**
+
+  - **Type**: Number
+  - **Possible Values**:
+    - integer between `1` (default) and `config.source.entries.length - 1`
+
 ### Example multi stream configuration (with ABR)
 
 ```js showLineNumbers
