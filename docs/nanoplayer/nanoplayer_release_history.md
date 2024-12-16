@@ -1522,7 +1522,7 @@ In addition we improved the h5live support detection and fixed with the behaviou
   - 1009: Playback failed because the player was in visibility state 'hidden' at load start.
   - 2003: Not enough media data received. The stream was already connected and the stream info event was fired.
   - 2004: The source stream has been stopped.
-  - 3100: The media source extension changed the state to 'ended'. NOT AVAILABLE FOR IOS.
+  - 3100: The media source extension changed the state to 'ended'. NOT AVAILABLE FOR HLS PLAYBACK.
 - new pause reasons:
   - 'visibilityhidden': Paused because the player was not visible at load start.
   - 'notenoughdata': Paused by loading timeout. The stream was alive and connected but not enough data was received to start playback.
@@ -2172,7 +2172,7 @@ nanoStream Mobile Apps. Its enabled if 'playback.metadata' is set to true.
 
 ### Added
 
-- new stats objects 'bitrate' and 'framerate' (network framerate) in 'onStats' event (NOT AVAILABLE FOR IOS)
+- new stats objects 'bitrate' and 'framerate' (network framerate) in 'onStats' event (NOT AVAILABLE FOR HLS PLAYBACK)
 - auto rotation for mobile streams from nanoStream Mobile Apps if 'playback.metadata=true'
 
 ### Fixed
