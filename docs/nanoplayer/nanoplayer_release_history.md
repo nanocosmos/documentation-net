@@ -6,6 +6,35 @@ sidebar_label: History
 
 # **NanoPlayer - Release History**
 
+## Please find more about the **stream switching and abr** feature in our [documentation](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_stream_switching/)
+
+## **[4.29.0]**
+
+### **Release Notes**  
+
+This release introduces a new configuration option for adaptive bitrate (ABR) setups.
+
+You can now omit specific renditions in ABR configurations using the new `config.source.options.adaption.omitRenditions` parameter. This parameter accepts an `array` of predefined quality identifiers (e.g., `"high"`, `"medium"`, `"low"`) or stream entry indexes (e.g., `0`, `1`, `2`, etc.), providing greater flexibility in tailoring adaptive bitrate playback.
+
+Additionally, an issue affecting the `config.source.options.adaption.downStep` value in group configurations has been resolved, ensuring proper functionality.
+
+These updates enhance flexibility and reliability in ABR setups.
+
+### **Changelog**
+
+### **Added**
+
+- introduced an option to omit specific renditions in ABR multi-stream configurations via Bintu stream group or entries:
+  - new parameter: `config.source.options.adaption.omitRenditions` (type: `array`)
+  - accepted values include predefined quality identifiers (type: `string`) or stream entry indexes (type: `number`):
+    - qualities: `"high"`, `"medium-high"`, `"medium"`, `"medium-low"`, `"low"`
+    - indexes: `0`, `1`, `2`, etc.
+  - see the [feature description](https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_feature_stream_switching#advanced-abr-settings) for more details
+
+### **Fixed**
+
+- resolved an issue where the `config.source.options.adaption.downStep` value was not applied correctly when using group configurations
+
 ## **[4.28.0]**
 
 ### **Release Notes**  
@@ -1493,7 +1522,7 @@ In addition we improved the h5live support detection and fixed with the behaviou
   - 1009: Playback failed because the player was in visibility state 'hidden' at load start.
   - 2003: Not enough media data received. The stream was already connected and the stream info event was fired.
   - 2004: The source stream has been stopped.
-  - 3100: The media source extension changed the state to 'ended'. NOT AVAILABLE FOR HLS PLAYBACK.
+  - 3100: The media source extension changed the state to 'ended'. NOT AVAILABLE FOR IOS.
 - new pause reasons:
   - 'visibilityhidden': Paused because the player was not visible at load start.
   - 'notenoughdata': Paused by loading timeout. The stream was alive and connected but not enough data was received to start playback.
@@ -2143,7 +2172,7 @@ nanoStream Mobile Apps. Its enabled if 'playback.metadata' is set to true.
 
 ### Added
 
-- new stats objects 'bitrate' and 'framerate' (network framerate) in 'onStats' event (NOT AVAILABLE FOR HLS PLAYBACK)
+- new stats objects 'bitrate' and 'framerate' (network framerate) in 'onStats' event (NOT AVAILABLE FOR IOS)
 - auto rotation for mobile streams from nanoStream Mobile Apps if 'playback.metadata=true'
 
 ### Fixed

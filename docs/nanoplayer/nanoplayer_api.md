@@ -6,10 +6,10 @@ sidebar_label: NanoPlayer
 
 ## NanoPlayer {#NanoPlayer}
 
-NanoPlayer (H5Live) Public API Class 4.28.0
+NanoPlayer (H5Live) Public API Class 4.29.0
 
 **Kind**: global class
-**Version**: 4.28.0
+**Version**: 4.29.0
 
 ### new NanoPlayer(playerDivId) {#new_NanoPlayer_new}
 
@@ -2667,6 +2667,9 @@ The config object to pass as param for the 'setup' call.
 </td>
     </tr><tr>
     <td>[source.options.adaption.downStep]</td><td><code>number</code></td><td><code>1</code></td><td><p>The minimum number of steps during a ABR down switch (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only).</p>
+</td>
+    </tr><tr>
+    <td>[source.options.adaption.omitRenditions]</td><td><code>Array.&lt;string|number&gt;</code></td><td></td><td><p>The renditions to omit if ABR enabled (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only). This parameter accepts an `array` of valid stream group qualities (e.g., <code>&#39;high&#39;</code>, <code>&#39;medium&#39;</code>, <code>&#39;low&#39;</code>) or stream entry indexes (e.g., <code>0</code>, <code>1</code>, <code>2</code>, etc.).</p>
 </td>
     </tr><tr>
     <td>[source.h5live]</td><td><code>object</code></td><td></td><td><p>DEPRECATED. PLEASE USE ENTRIES!!! WILL BE OVERWRITTEN IN CASE AT LEAST ONE &#39;ENTRY&#39; IS DEFINED IN &#39;ENTRIES&#39; ARRAY. The h5live object to configure the h5live connection.</p>
