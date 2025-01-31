@@ -46,7 +46,7 @@ export default function Player() {
     <span className={styles.playerWrapper}>
       <div className="text--center padding-horiz--md">
         <h1>H5Live Player</h1>
-        <body>The right technology for interactive live streaming use cases.</body>
+        <p>The right technology for interactive live streaming use cases.</p>
       </div>
       <section className={styles.features}>
         <div className="container">

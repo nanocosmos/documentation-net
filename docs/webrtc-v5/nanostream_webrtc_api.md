@@ -51,6 +51,7 @@ Parameters in braces "[ ]" are optional.
 
 **Kind**: instance method of [<code>RtcUser</code>](#RtcUser)  
 **Emits**: [<code>SignInSuccess</code>](#RtcUser+event_SignInSuccess), [<code>SignInError</code>](#RtcUser+event_SignInError)  
+
 <table>
   <thead>
     <tr>
@@ -59,20 +60,15 @@ Parameters in braces "[ ]" are optional.
   </thead>
   <tbody>
 <tr>
-    <td>options</td><td><code>object</code></td><td><p>The options object.</p>
-</td>
+    <td>options</td><td><code>object</code></td><td><p>The options object.</p> </td>
     </tr><tr>
-    <td>options.server</td><td><code>string</code></td><td><p>The URL to the Webcaster server.</p>
-</td>
+    <td>options.server</td><td><code>string</code></td><td><p>The URL to the Webcaster server.</p> </td>
     </tr><tr>
-    <td>[options.jwt]</td><td><code>string</code></td><td><p>The JWT access token for authentication. The JWT contains the ingest information, please also pass it in <a href="#RtcUser+startBroadcast">startBroadcast</a></p>
-</td>
+    <td>[options.jwt]</td><td><code>string</code></td><td><p>The JWT access token for authentication. The JWT contains the ingest information, please also pass it in <a href="#RtcUser+startBroadcast">startBroadcast</a></p> </td>
     </tr><tr>
-    <td>[options.bintuApiKey]</td><td><code>string</code></td><td><p>The bintu API key for authentication.</p>
-</td>
+    <td>[options.bintuApiKey]</td><td><code>string</code></td><td><p>The bintu API key for authentication.</p> </td>
     </tr><tr>
-    <td>[options.token]</td><td><code>string</code></td><td><p>The access token for authentication - Deprecated: Please migrate to use JWT for authentication.</p>
-</td>
+    <td>[options.token]</td><td><code>string</code></td><td><p>The access token for authentication - Deprecated: Please migrate to use JWT for authentication.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -142,53 +138,37 @@ Parameters in braces "[ ]" are optional.
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td></td><td><p>The config object.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td></td><td><p>The config object.</p></td>
     </tr><tr>
-    <td>[config.logLevel]</td><td><code>0</code> | <code>1</code> | <code>2</code> | <code>3</code> | <code>4</code></td><td></td><td><p>Verbosity of console logging. Allowed values: 0 (minimum verbosity) - 4 (maximum verbosity).</p>
-</td>
+    <td>[config.logLevel]</td><td><code>0</code> | <code>1</code> | <code>2</code> | <code>3</code> | <code>4</code></td><td></td><td><p>Verbosity of console logging. Allowed values: 0 (minimum verbosity) - 4 (maximum verbosity).</p></td>
     </tr><tr>
-    <td>[config.metrics]</td><td><code>object</code></td><td></td><td><p>The metrics configuration object.</p>
-</td>
+    <td>[config.metrics]</td><td><code>object</code></td><td></td><td><p>The metrics configuration object.</p> </td>
     </tr><tr>
-    <td>[config.metrics.accountId]</td><td><code>string</code></td><td></td><td><p>An account id provided to you.</p>
-</td>
+    <td>[config.metrics.accountId]</td><td><code>string</code></td><td></td><td><p>An account id provided to you.</p> </td>
     </tr><tr>
-    <td>[config.metrics.accountKey]</td><td><code>string</code></td><td></td><td><p>An account key provided to you.</p>
-</td>
+    <td>[config.metrics.accountKey]</td><td><code>string</code></td><td></td><td><p>An account key provided to you.</p> </td>
     </tr><tr>
-    <td>[config.metrics.eventId]</td><td><code>string</code></td><td></td><td><p>An id of an event a stream is related to.</p>
-</td>
+    <td>[config.metrics.eventId]</td><td><code>string</code></td><td></td><td><p>An id of an event a stream is related to.</p> </td>
     </tr><tr>
-    <td>[config.metrics.statsInterval]</td><td><code>number</code></td><td><code>10</code></td><td><p>The interval how often the stats should be collected in seconds. Allowed values: 5 - 10 second(s).</p>
-</td>
+    <td>[config.metrics.statsInterval]</td><td><code>number</code></td><td><code>10</code></td><td><p>The interval how often the stats should be collected in seconds. Allowed values: 5 - 10 second(s).</p> </td>
     </tr><tr>
-    <td>[config.metrics.customField*]</td><td><code>string</code></td><td></td><td><p>A custom field. * can be replaced with 1 - 10 e.g. &#39;customField3&#39;. Possible from &#39;customField1&#39; to &#39;customField10&#39;.</p>
-</td>
+    <td>[config.metrics.customField*]</td><td><code>string</code></td><td></td><td><p>A custom field. * can be replaced with 1 - 10 e.g. &#39;customField3&#39;. Possible from &#39;customField1&#39; to &#39;customField10&#39;.</p> </td>
     </tr><tr>
-    <td>[config.reconnect]</td><td><code>object</code></td><td></td><td><p>The reconnect configuration object.</p>
-</td>
+    <td>[config.reconnect]</td><td><code>object</code></td><td></td><td><p>The reconnect configuration object.</p> </td>
     </tr><tr>
-    <td>[config.reconnect.minDelay]</td><td><code>number</code></td><td><code>1</code></td><td><p>Minimum delay for a reconnect attempt in seconds. Minimum value: 1.</p>
-</td>
+    <td>[config.reconnect.minDelay]</td><td><code>number</code></td><td><code>1</code></td><td><p>Minimum delay for a reconnect attempt in seconds. Minimum value: 1.</p> </td>
     </tr><tr>
-    <td>[config.reconnect.maxDelay]</td><td><code>number</code></td><td><code>8</code></td><td><p>Maximum delay for a reconnect attempt in seconds. Minimum value: 1.</p>
-</td>
+    <td>[config.reconnect.maxDelay]</td><td><code>number</code></td><td><code>8</code></td><td><p>Maximum delay for a reconnect attempt in seconds. Minimum value: 1.</p> </td>
     </tr><tr>
-    <td>[config.reconnect.maxRetries]</td><td><code>number</code></td><td><code>10</code></td><td><p>Maximum amount of successive attempts to reconnect a broken webcast before failure. Setting this to 0 will disable reconnection.</p>
-</td>
+    <td>[config.reconnect.maxRetries]</td><td><code>number</code></td><td><code>10</code></td><td><p>Maximum amount of successive attempts to reconnect a broken webcast before failure. Setting this to 0 will disable reconnection.</p> </td>
     </tr><tr>
-    <td>[config.bitrates]</td><td><code>object</code></td><td></td><td><p>The codec configuration object.</p>
-</td>
+    <td>[config.bitrates]</td><td><code>object</code></td><td></td><td><p>The codec configuration object.</p> </td>
     </tr><tr>
-    <td>[config.bitrates.videoSendInitialBitrate]</td><td><code>number</code></td><td><code>0</code></td><td><p>The minimum video upstream bitrate in kbps (lower bound, does not work in Firefox). Allowed values: 0 - 34000 kbps.</p>
-</td>
+    <td>[config.bitrates.videoSendInitialBitrate]</td><td><code>number</code></td><td><code>0</code></td><td><p>The minimum video upstream bitrate in kbps (lower bound, does not work in Firefox). Allowed values: 0 - 34000 kbps.</p> </td>
     </tr><tr>
-    <td>[config.bitrates.videoSendBitrate]</td><td><code>number</code></td><td><code>0</code></td><td><p>The maximum video upstream bitrate in kbps. Allowed values: 0 - 34000 kbps.</p>
-</td>
+    <td>[config.bitrates.videoSendBitrate]</td><td><code>number</code></td><td><code>0</code></td><td><p>The maximum video upstream bitrate in kbps. Allowed values: 0 - 34000 kbps.</p> </td>
     </tr><tr>
-    <td>[config.bitrates.audioSendBitrate]</td><td><code>number</code></td><td><code>0</code></td><td><p>The maximum audio upstream bitrate in kbps (does not work in Firefox). Allowed values: 0 - 510 kbps.</p>
-</td>
+    <td>[config.bitrates.audioSendBitrate]</td><td><code>number</code></td><td><code>0</code></td><td><p>The maximum audio upstream bitrate in kbps (does not work in Firefox). Allowed values: 0 - 510 kbps.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -233,17 +213,13 @@ Parameters in braces "[ ]" are optional.
   </thead>
   <tbody>
 <tr>
-    <td>iceServers</td><td><code>Array.&lt;object&gt;</code></td><td><p>The ice servers object.</p>
-</td>
+    <td>iceServers</td><td><code>Array.&lt;object&gt;</code></td><td><p>The ice servers object.</p> </td>
     </tr><tr>
-    <td>iceServers[].urls</td><td><code>Array.&lt;string&gt;</code></td><td><p>An array of URLs.</p>
-</td>
+    <td>iceServers[].urls</td><td><code>Array.&lt;string&gt;</code></td><td><p>An array of URLs.</p> </td>
     </tr><tr>
-    <td>[iceServers[].username]</td><td><code>string</code></td><td><p>The username for the ice servers if required.</p>
-</td>
+    <td>[iceServers[].username]</td><td><code>string</code></td><td><p>The username for the ice servers if required.</p> </td>
     </tr><tr>
-    <td>[iceServers[].credential]</td><td><code>string</code></td><td><p>The password for the ice servers if required.</p>
-</td>
+    <td>[iceServers[].credential]</td><td><code>string</code></td><td><p>The password for the ice servers if required.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -292,11 +268,9 @@ Parameters in braces "[ ]" are optional.
   </thead>
   <tbody>
 <tr>
-    <td>[enable]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>A flag to enable WebRTC stats.</p>
-</td>
+    <td>[enable]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>A flag to enable WebRTC stats.</p> </td>
     </tr><tr>
-    <td>[interval]</td><td><code>number</code></td><td><code>1000</code></td><td><p>The interval time in milliseconds. The minimum value: 1 second.</p>
-</td>
+    <td>[interval]</td><td><code>number</code></td><td><code>1000</code></td><td><p>The interval time in milliseconds. The minimum value: 1 second.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -325,32 +299,23 @@ Parameters in braces "[ ]" are optional.
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td></td><td><p>The config object.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td></td><td><p>The config object.</p> </td>
     </tr><tr>
-    <td>config.transcodingTargets</td><td><code>object</code></td><td></td><td><p>The transcoding config object.</p>
-</td>
+    <td>config.transcodingTargets</td><td><code>object</code></td><td></td><td><p>The transcoding config object.</p> </td>
     </tr><tr>
-    <td>config.transcodingTargets.output</td><td><code>string</code></td><td></td><td><p>The RTMP ingest URL.</p>
-</td>
+    <td>config.transcodingTargets.output</td><td><code>string</code></td><td></td><td><p>The RTMP ingest URL.</p> </td>
     </tr><tr>
-    <td>config.transcodingTargets.streamname</td><td><code>string</code></td><td><code>null</code></td><td><p>The RTMP streamname.</p>
-</td>
+    <td>config.transcodingTargets.streamname</td><td><code>string</code></td><td><code>null</code></td><td><p>The RTMP streamname.</p> </td>
     </tr><tr>
-    <td>[config.transcodingTargets.audiobitrate]</td><td><code>number</code></td><td><code>0</code></td><td><p>The RTMP audio transcoded bitrate in bps, eg 64000.</p>
-</td>
+    <td>[config.transcodingTargets.audiobitrate]</td><td><code>number</code></td><td><code>0</code></td><td><p>The RTMP audio transcoded bitrate in bps, eg 64000.</p> </td>
     </tr><tr>
-    <td>[config.transcodingTargets.rtmpconnectinfo]</td><td><code>object</code></td><td><code></code></td><td><p>Data to be send with the RTMP streams &quot;onconnect&quot;. Pass flat object with key value pairs, hierarchies are not supported.</p>
-</td>
+    <td>[config.transcodingTargets.rtmpconnectinfo]</td><td><code>object</code></td><td><code></code></td><td><p>Data to be send with the RTMP streams &quot;onconnect&quot;. Pass flat object with key value pairs, hierarchies are not supported.</p> </td>
     </tr><tr>
-    <td>[config.encoding]</td><td><code>object</code></td><td></td><td><p>The encoding config object.</p>
-</td>
+    <td>[config.encoding]</td><td><code>object</code></td><td></td><td><p>The encoding config object.</p> </td>
     </tr><tr>
-    <td>[config.encoding.h264Profile]</td><td><code>&#x27;cbp&#x27;</code></td><td></td><td><p>The H264 profile. Note: the H264 profile should only be set to &#39;cbp&#39; in desktop Chrome (Windows).</p>
-</td>
+    <td>[config.encoding.h264Profile]</td><td><code>&#x27;cbp&#x27;</code></td><td></td><td><p>The H264 profile. Note: the H264 profile should only be set to &#39;cbp&#39; in desktop Chrome (Windows).</p> </td>
     </tr><tr>
-    <td>[config.jwt]</td><td><code>string</code></td><td></td><td><p>A JWT containing ingest information can be passed. This will replace usage of transcodingTargets.streamname &amp; transcodingTargets.output. Note that the JWT can be passed in <a href="#RtcUser+signIn">signIn</a> as authorization method.</p>
-</td>
+    <td>[config.jwt]</td><td><code>string</code></td><td></td><td><p>A JWT containing ingest information can be passed. This will replace usage of transcodingTargets.streamname &amp; transcodingTargets.output. Note that the JWT can be passed in <a href="#RtcUser+signIn">signIn</a> as authorization method.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -408,11 +373,9 @@ Adds live meta data to a broadcast stream.
   </thead>
   <tbody>
 <tr>
-    <td>handlerName</td><td><code>&#x27;onMetaData&#x27;</code> | <code>&#x27;onCuePoint&#x27;</code></td><td><p>Name of the meta data handler. Other types are not supported.</p>
-</td>
+    <td>handlerName</td><td><code>&#x27;onMetaData&#x27;</code> | <code>&#x27;onCuePoint&#x27;</code></td><td><p>Name of the meta data handler. Other types are not supported.</p> </td>
     </tr><tr>
-    <td>jsonValues</td><td><code>object</code></td><td><p>The data to be sent. The parameter can contain a maximum object depth of 6.</p>
-</td>
+    <td>jsonValues</td><td><code>object</code></td><td><p>The data to be sent. The parameter can contain a maximum object depth of 6.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -440,8 +403,7 @@ Adds a Screen Capture Extension to the RtcUser for Chrome. Only needed in Chrome
   </thead>
   <tbody>
 <tr>
-    <td>name</td><td><code>string</code></td><td><p>The name of the screen capture extension.</p>
-</td>
+    <td>name</td><td><code>string</code></td><td><p>The name of the screen capture extension.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -499,20 +461,15 @@ Parameters in braces "[ ]" are optional.
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td><p>The config object.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td><p>The config object.</p> </td>
     </tr><tr>
-    <td>config.device</td><td><code>boolean</code> | <code>number</code></td><td><p>The value of the video device, possible values: true (auto device), false (no video), number (index of the video device).</p>
-</td>
+    <td>config.device</td><td><code>boolean</code> | <code>number</code></td><td><p>The value of the video device, possible values: true (auto device), false (no video), number (index of the video device).</p> </td>
     </tr><tr>
-    <td>[config.width]</td><td><code>number</code></td><td><p>The input width (only if device will be set by index).</p>
-</td>
+    <td>[config.width]</td><td><code>number</code></td><td><p>The input width (only if device will be set by index).</p> </td>
     </tr><tr>
-    <td>[config.height]</td><td><code>number</code></td><td><p>The input height (only if device will be set by index).</p>
-</td>
+    <td>[config.height]</td><td><code>number</code></td><td><p>The input height (only if device will be set by index).</p> </td>
     </tr><tr>
-    <td>[config.framerate]</td><td><code>number</code></td><td><p>The input framerate (only if device will be set by index).</p>
-</td>
+    <td>[config.framerate]</td><td><code>number</code></td><td><p>The input framerate (only if device will be set by index).</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -570,11 +527,9 @@ Sets the input audio device.
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td><p>The config object.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td><p>The config object.</p> </td>
     </tr><tr>
-    <td>config.device</td><td><code>boolean</code> | <code>number</code></td><td><p>The value of the audio device, possible values: true (auto device), false (no audio), number (index of the audio device).</p>
-</td>
+    <td>config.device</td><td><code>boolean</code> | <code>number</code></td><td><p>The value of the audio device, possible values: true (auto device), false (no audio), number (index of the audio device).</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -657,11 +612,9 @@ Gets the current input video/audio device.
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td><p>The config object.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td><p>The config object.</p> </td>
     </tr><tr>
-    <td>config.kind</td><td><code>&#x27;videoinput&#x27;</code> | <code>&#x27;audioinput&#x27;</code></td><td><p>The device kind.</p>
-</td>
+    <td>config.kind</td><td><code>&#x27;videoinput&#x27;</code> | <code>&#x27;audioinput&#x27;</code></td><td><p>The device kind.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -689,47 +642,33 @@ Parameters in braces "[ ]" are optional.
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td></td><td><p>The config object.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td></td><td><p>The config object.</p> </td>
     </tr><tr>
-    <td>config.videoDeviceConfig</td><td><code>object</code></td><td></td><td><p>The video config object.</p>
-</td>
+    <td>config.videoDeviceConfig</td><td><code>object</code></td><td></td><td><p>The video config object.</p> </td>
     </tr><tr>
-    <td>config.videoDeviceConfig.device</td><td><code>boolean</code> | <code>number</code></td><td></td><td><p>The device id to use. Allowed values: 0...n - specific device, true - auto device, false - no video.</p>
-</td>
+    <td>config.videoDeviceConfig.device</td><td><code>boolean</code> | <code>number</code></td><td></td><td><p>The device id to use. Allowed values: 0...n - specific device, true - auto device, false - no video.</p> </td>
     </tr><tr>
-    <td>[config.videoDeviceConfig.width]</td><td><code>number</code></td><td></td><td><p>The video width. Allowed values: 320 - 3840(4K).</p>
-</td>
+    <td>[config.videoDeviceConfig.width]</td><td><code>number</code></td><td></td><td><p>The video width. Allowed values: 320 - 3840(4K).</p> </td>
     </tr><tr>
-    <td>[config.videoDeviceConfig.height]</td><td><code>number</code></td><td></td><td><p>The video height. Allowed values: 240 - 2160(4K).</p>
-</td>
+    <td>[config.videoDeviceConfig.height]</td><td><code>number</code></td><td></td><td><p>The video height. Allowed values: 240 - 2160(4K).</p> </td>
     </tr><tr>
-    <td>[config.videoDeviceConfig.framerate]</td><td><code>number</code></td><td></td><td><p>The video framerate. Allowed values: 0 - 60 fps.</p>
-</td>
+    <td>[config.videoDeviceConfig.framerate]</td><td><code>number</code></td><td></td><td><p>The video framerate. Allowed values: 0 - 60 fps.</p> </td>
     </tr><tr>
-    <td>videoDeviceConfig.source</td><td><code>&#x27;camera&#x27;</code> | <code>&#x27;screen&#x27;</code></td><td></td><td><p>The video source to be requested.</p>
-</td>
+    <td>videoDeviceConfig.source</td><td><code>&#x27;camera&#x27;</code> | <code>&#x27;screen&#x27;</code></td><td></td><td><p>The video source to be requested.</p> </td>
     </tr><tr>
-    <td>config.audioDeviceConfig</td><td><code>object</code></td><td></td><td><p>The audio config object.</p>
-</td>
+    <td>config.audioDeviceConfig</td><td><code>object</code></td><td></td><td><p>The audio config object.</p> </td>
     </tr><tr>
-    <td>config.audioDeviceConfig.device</td><td><code>boolean</code> | <code>number</code></td><td></td><td><p>The device id to use. Allowed values: 0...n - specific device, true - auto device, false - no audio.</p>
-</td>
+    <td>config.audioDeviceConfig.device</td><td><code>boolean</code> | <code>number</code></td><td></td><td><p>The device id to use. Allowed values: 0...n - specific device, true - auto device, false - no audio.</p> </td>
     </tr><tr>
-    <td>[config.audioDeviceConfig.autoGainControl]</td><td><code>boolean</code></td><td></td><td><p>Automatic gain control attempts to automatically maintain a steady overall volume level.</p>
-</td>
+    <td>[config.audioDeviceConfig.autoGainControl]</td><td><code>boolean</code></td><td></td><td><p>Automatic gain control attempts to automatically maintain a steady overall volume level.</p> </td>
     </tr><tr>
-    <td>[config.audioDeviceConfig.echoCancellation]</td><td><code>boolean</code></td><td></td><td><p>Echo cancellation attempts to prevent echo effects.</p>
-</td>
+    <td>[config.audioDeviceConfig.echoCancellation]</td><td><code>boolean</code></td><td></td><td><p>Echo cancellation attempts to prevent echo effects.</p> </td>
     </tr><tr>
-    <td>[config.audioDeviceConfig.noiseSuppression]</td><td><code>boolean</code></td><td></td><td><p>Noise suppression automatically filters the audio to remove background noise.</p>
-</td>
+    <td>[config.audioDeviceConfig.noiseSuppression]</td><td><code>boolean</code></td><td></td><td><p>Noise suppression automatically filters the audio to remove background noise.</p> </td>
     </tr><tr>
-    <td>config.elementId</td><td><code>string</code></td><td></td><td><p>The id of a video element to pass in the requested stream directly.</p>
-</td>
+    <td>config.elementId</td><td><code>string</code></td><td></td><td><p>The id of a video element to pass in the requested stream directly.</p> </td>
     </tr><tr>
-    <td>[config.useWebView]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>A flag to indicate that a WebView is used.</p>
-</td>
+    <td>[config.useWebView]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>A flag to indicate that a WebView is used.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -853,8 +792,7 @@ Mutes/unmutes the video.
   </thead>
   <tbody>
 <tr>
-    <td>mute</td><td><code>boolean</code></td><td><p>Mute/unmute.</p>
-</td>
+    <td>mute</td><td><code>boolean</code></td><td><p>Mute/unmute.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -884,8 +822,7 @@ Mutes/unmutes the audio.
   </thead>
   <tbody>
 <tr>
-    <td>mute</td><td><code>boolean</code></td><td><p>Mute/unmute.</p>
-</td>
+    <td>mute</td><td><code>boolean</code></td><td><p>Mute/unmute.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -910,14 +847,11 @@ Mutes/unmutes a video/audio device.
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td><p>The config object.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td><p>The config object.</p> </td>
     </tr><tr>
-    <td>config.kind</td><td><code>&#x27;videoinput&#x27;</code> | <code>&#x27;audioinput&#x27;</code></td><td><p>The device kind to mute.</p>
-</td>
+    <td>config.kind</td><td><code>&#x27;videoinput&#x27;</code> | <code>&#x27;audioinput&#x27;</code></td><td><p>The device kind to mute.</p> </td>
     </tr><tr>
-    <td>config.mute</td><td><code>boolean</code></td><td><p>A flag to mute/unmute the device.</p>
-</td>
+    <td>config.mute</td><td><code>boolean</code></td><td><p>A flag to mute/unmute the device.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -944,14 +878,11 @@ Mixes tracks (currently only audio) of an external MediaStream into the currentl
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td><p>Config object with info on what to mix in.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td><p>Config object with info on what to mix in.</p> </td>
     </tr><tr>
-    <td>config.stream</td><td><code>MediaStream</code></td><td><p>the MediaStream containing the track(s) to mix in.</p>
-</td>
+    <td>config.stream</td><td><code>MediaStream</code></td><td><p>the MediaStream containing the track(s) to mix in.</p> </td>
     </tr><tr>
-    <td>config.tracks</td><td><code>Array.&lt;string&gt;</code></td><td><p>Array with the types of tracks which should be injected (only &#39;audio&#39; is supported at the moment).</p>
-</td>
+    <td>config.tracks</td><td><code>Array.&lt;string&gt;</code></td><td><p>Array with the types of tracks which should be injected (only &#39;audio&#39; is supported at the moment).</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1004,20 +935,15 @@ When utilizing this API call, application developers are responsible for the ext
   </thead>
   <tbody>
 <tr>
-    <td>config</td><td><code>object</code></td><td><p>The config object.</p>
-</td>
+    <td>config</td><td><code>object</code></td><td><p>The config object.</p> </td>
     </tr><tr>
-    <td>config.stream</td><td><code>number</code></td><td><p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream">MediaStream</a>.</p>
-</td>
+    <td>config.stream</td><td><code>number</code></td><td><p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream">MediaStream</a>.</p> </td>
     </tr><tr>
-    <td>[config.width]</td><td><code>number</code></td><td><p>The video width. Allowed values: 320 - 3840(4K).</p>
-</td>
+    <td>[config.width]</td><td><code>number</code></td><td><p>The video width. Allowed values: 320 - 3840(4K).</p> </td>
     </tr><tr>
-    <td>[config.height]</td><td><code>number</code></td><td><p>The video height. Allowed values: 240 - 2160(4K).</p>
-</td>
+    <td>[config.height]</td><td><code>number</code></td><td><p>The video height. Allowed values: 240 - 2160(4K).</p> </td>
     </tr><tr>
-    <td>[config.framerate]</td><td><code>number</code></td><td><p>The target video framerate. Allowed values: 0 - 60 fps.</p>
-</td>
+    <td>[config.framerate]</td><td><code>number</code></td><td><p>The target video framerate. Allowed values: 0 - 60 fps.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1230,65 +1156,45 @@ MuteDeviceError event. The event is fired if a video/audio device mute/unmute fa
   </thead>
   <tbody>
 <tr>
-    <td>data</td><td><code>object</code></td><td><p>The data object - Deprecated: will be removed in nanoStream Webcaster v.6; please use the &quot;error&quot; object instead.</p>
-</td>
+    <td>data</td><td><code>object</code></td><td><p>The data object - Deprecated: will be removed in nanoStream Webcaster v.6; please use the &quot;error&quot; object instead.</p> </td> 
     </tr><tr>
-    <td>error</td><td><code>object</code></td><td><p>The error object.</p>
-</td>
+    <td>error</td><td><code>object</code></td><td><p>The error object.</p> </td>
     </tr><tr>
-    <td>error.code</td><td><code><a href="#ErrorCode">ErrorCode</a></code></td><td><p>The code of the error.</p>
-</td>
+    <td>error.code</td><td><code><a href="#ErrorCode">ErrorCode</a></code></td><td><p>The code of the error.</p> </td> 
     </tr><tr>
-    <td>error.message</td><td><code>string</code></td><td><p>Human readable message of the error.</p>
-</td>
+    <td>error.message</td><td><code>string</code></td><td><p>Human readable message of the error.</p> </td>
     </tr><tr>
-    <td>error.name</td><td><code>string</code></td><td><p>The name of the error.</p>
-</td>
+    <td>error.name</td><td><code>string</code></td><td><p>The name of the error.</p> </td>
     </tr><tr>
-    <td>error.text</td><td><code>string</code></td><td><p>The text of the error - Deprecated: will be removed in nanoStream Webcaster v.6; please use the &quot;error.message&quot; property instead.</p>
-</td>
+    <td>error.text</td><td><code>string</code></td><td><p>The text of the error - Deprecated: will be removed in nanoStream Webcaster v.6; please use the &quot;error.message&quot; property instead.</p> </td>
     </tr><tr>
-    <td>error.type</td><td><code>string</code></td><td><p>The type of the error.</p>
-</td>
+    <td>error.type</td><td><code>string</code></td><td><p>The type of the error.</p> </td>
     </tr><tr>
-    <td>error.userinfo</td><td><code>object</code></td><td><p>The user info associated with the error.</p>
-</td>
+    <td>error.userinfo</td><td><code>object</code></td><td><p>The user info associated with the error.</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata]</td><td><code>object</code></td><td><p>Metadata with additional state information.</p>
-</td>
+    <td>[error.userinfo.metadata]</td><td><code>object</code></td><td><p>Metadata with additional state information.</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.sessionId]</td><td><code>object</code></td><td><p>Session id (defined only if signed in).</p>
-</td>
+    <td>[error.userinfo.metadata.sessionId]</td><td><code>object</code></td><td><p>Session id (defined only if signed in).</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.isSignedIn]</td><td><code>object</code></td><td><p>Wether a session to the server was established successfully.</p>
-</td>
+    <td>[error.userinfo.metadata.isSignedIn]</td><td><code>object</code></td><td><p>Wether a session to the server was established successfully.</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.server]</td><td><code>object</code></td><td><p>Server url (defined only if a connection to the server was made).</p>
-</td>
+    <td>[error.userinfo.metadata.server]</td><td><code>object</code></td><td><p>Server url (defined only if a connection to the server was made).</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.streamname]</td><td><code>object</code></td><td><p>RTMP stream name (defined only if a broadcast was started).</p>
-</td>
+    <td>[error.userinfo.metadata.streamname]</td><td><code>object</code></td><td><p>RTMP stream name (defined only if a broadcast was started).</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.hasAudio]</td><td><code>object</code></td><td><p>Wether the current stream has an audio track.</p>
-</td>
+    <td>[error.userinfo.metadata.hasAudio]</td><td><code>object</code></td><td><p>Wether the current stream has an audio track.</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.hasVideo]</td><td><code>object</code></td><td><p>Wether the current stream has an video track.</p>
-</td>
+    <td>[error.userinfo.metadata.hasVideo]</td><td><code>object</code></td><td><p>Wether the current stream has an video track.</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.isMobile]</td><td><code>object</code></td><td><p>Wether the current device is a mobile device.</p>
-</td>
+    <td>[error.userinfo.metadata.isMobile]</td><td><code>object</code></td><td><p>Wether the current device is a mobile device.</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.browser]</td><td><code>object</code></td><td><p>Currently used browser.</p>
-</td>
+    <td>[error.userinfo.metadata.browser]</td><td><code>object</code></td><td><p>Currently used browser.</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.browserVersion]</td><td><code>object</code></td><td><p>Currently used browser version.</p>
-</td>
+    <td>[error.userinfo.metadata.browserVersion]</td><td><code>object</code></td><td><p>Currently used browser version.</p> </td>
     </tr><tr>
-    <td>[error.userinfo.metadata.os]</td><td><code>object</code></td><td><p>Current operating system.</p>
-</td>
+    <td>[error.userinfo.metadata.os]</td><td><code>object</code></td><td><p>Current operating system.</p> </td>
     </tr><tr>
-    <td>name</td><td><code>string</code></td><td><p>The name of the event.</p>
-</td>
+    <td>name</td><td><code>string</code></td><td><p>The name of the event.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1306,17 +1212,13 @@ MuteDeviceError event. The event is fired if a video/audio device mute/unmute fa
   </thead>
   <tbody>
 <tr>
-    <td>[data]</td><td><code>object</code></td><td><p>The data object. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data]</td><td><code>object</code></td><td><p>The data object. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>[data.output]</td><td><code>string</code></td><td><p>The RTMP ingest URL. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.output]</td><td><code>string</code></td><td><p>The RTMP ingest URL. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>[data.streamname]</td><td><code>string</code></td><td><p>The RTMP ingest streamname. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.streamname]</td><td><code>string</code></td><td><p>The RTMP ingest streamname. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>[data.stream]</td><td><code>object</code></td><td><p>The stream object. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.stream]</td><td><code>object</code></td><td><p>The stream object. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1334,29 +1236,21 @@ MuteDeviceError event. The event is fired if a video/audio device mute/unmute fa
   </thead>
   <tbody>
 <tr>
-    <td>data</td><td><code>object</code></td><td><p>The data object.</p>
-</td>
+    <td>data</td><td><code>object</code></td><td><p>The data object.</p> </td>
     </tr><tr>
-    <td>data.message</td><td><code>&#x27;signalling&#x27;</code> | <code>&#x27;connected&#x27;</code> | <code>&#x27;reconnecting&#x27;</code> | <code>&#x27;broadcasting&#x27;</code> | <code>&#x27;reconnecting_broadcast&#x27;</code></td><td><p>The connection state. Note that &#39;reconnecting&#39; implies an RTMP reconnect on server side and &#39;reconnecting_broadcast&#39; means a client side reconnect.</p>
-</td>
+    <td>data.message</td><td><code>&#x27;signalling&#x27;</code> | <code>&#x27;connected&#x27;</code> | <code>&#x27;reconnecting&#x27;</code> | <code>&#x27;broadcasting&#x27;</code> | <code>&#x27;reconnecting_broadcast&#x27;</code></td><td><p>The connection state. Note that &#39;reconnecting&#39; implies an RTMP reconnect on server side and &#39;reconnecting_broadcast&#39; means a client side reconnect.</p> </td>
     </tr><tr>
-    <td>[data.number]</td><td><code>object</code></td><td><p>Reserverd for internal developer&#39;s use. Note: the property is optional, therefore, its presence is not guaranteed - Deprecated: will be removed in nanoStream Webcaster v.6.</p>
-</td>
+    <td>[data.number]</td><td><code>object</code></td><td><p>Reserverd for internal developer&#39;s use. Note: the property is optional, therefore, its presence is not guaranteed - Deprecated: will be removed in nanoStream Webcaster v.6.</p> </td>
     </tr><tr>
-    <td>[data.rtmp]</td><td><code>object</code></td><td><p>Reserved for internal developer&#39;s use. Note: the property is optional, therefore, its presence is not guaranteed - Deprecated: will be removed in nanoStream Webcaster v.6.</p>
-</td>
+    <td>[data.rtmp]</td><td><code>object</code></td><td><p>Reserved for internal developer&#39;s use. Note: the property is optional, therefore, its presence is not guaranteed - Deprecated: will be removed in nanoStream Webcaster v.6.</p> </td>
     </tr><tr>
-    <td>data.state</td><td><code>4</code> | <code>5</code> | <code>6</code> | <code>7</code></td><td><p>The connection state. Possible values: 4 = &#39;signalling&#39;, 5 = &#39;connected&#39;, 6 = &#39;broadcasting&#39;, 7 = &#39;reconnecting&#39;.</p>
-</td>
+    <td>data.state</td><td><code>4</code> | <code>5</code> | <code>6</code> | <code>7</code></td><td><p>The connection state. Possible values: 4 = &#39;signalling&#39;, 5 = &#39;connected&#39;, 6 = &#39;broadcasting&#39;, 7 = &#39;reconnecting&#39;.</p> </td>
     </tr><tr>
-    <td>data.streamname</td><td><code>object</code></td><td><p>The RTMP ingest streamname.</p>
-</td>
+    <td>data.streamname</td><td><code>object</code></td><td><p>The RTMP ingest streamname.</p> </td>
     </tr><tr>
-    <td>[name]</td><td><code>object</code></td><td><p>The name of the event. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[name]</td><td><code>object</code></td><td><p>The name of the event. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>[target]</td><td><code>object</code></td><td><p>Reserved for internal developer&#39;s use. Note: the property is optional, therefore, its presence is not guaranteed - Deprecated: will be removed in nanoStream Webcaster v.6.</p>
-</td>
+    <td>[target]</td><td><code>object</code></td><td><p>Reserved for internal developer&#39;s use. Note: the property is optional, therefore, its presence is not guaranteed - Deprecated: will be removed in nanoStream Webcaster v.6.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1374,32 +1268,23 @@ MuteDeviceError event. The event is fired if a video/audio device mute/unmute fa
   </thead>
   <tbody>
 <tr>
-    <td>data</td><td><code>object</code></td><td><p>The data object.</p>
-</td>
+    <td>data</td><td><code>object</code></td><td><p>The data object.</p> </td>
     </tr><tr>
-    <td>data.devices</td><td><code>object</code></td><td><p>The audio and video devices object.</p>
-</td>
+    <td>data.devices</td><td><code>object</code></td><td><p>The audio and video devices object.</p> </td>
     </tr><tr>
-    <td>[data.devices.audiodevices]</td><td><code>Array.&lt;object&gt;</code></td><td><p>An array of connected input audio devices. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.devices.audiodevices]</td><td><code>Array.&lt;object&gt;</code></td><td><p>An array of connected input audio devices. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>data.devices.audiodevices.id</td><td><code>string</code></td><td><p>The id of an audio device.</p>
-</td>
+    <td>data.devices.audiodevices.id</td><td><code>string</code></td><td><p>The id of an audio device.</p> </td>
     </tr><tr>
-    <td>data.devices.audiodevices.index</td><td><code>number</code></td><td><p>The index of an audio device. Note: indices start from 0.</p>
-</td>
+    <td>data.devices.audiodevices.index</td><td><code>number</code></td><td><p>The index of an audio device. Note: indices start from 0.</p> </td>
     </tr><tr>
-    <td>[data.devices.videodevices]</td><td><code>Array.&lt;object&gt;</code></td><td><p>An array of connected input video devices. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.devices.videodevices]</td><td><code>Array.&lt;object&gt;</code></td><td><p>An array of connected input video devices. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>data.devices.videodevices.id</td><td><code>string</code></td><td><p>The id of a video device.</p>
-</td>
+    <td>data.devices.videodevices.id</td><td><code>string</code></td><td><p>The id of a video device.</p> </td>
     </tr><tr>
-    <td>data.devices.videodevices.index</td><td><code>number</code></td><td><p>The index of a video device. Note: indices start from 0.</p>
-</td>
+    <td>data.devices.videodevices.index</td><td><code>number</code></td><td><p>The index of a video device. Note: indices start from 0.</p> </td>
     </tr><tr>
-    <td>data.updated</td><td><code>boolean</code></td><td><p>Reserved for internal developer&#39;s use - Deprecated: will be removed in nanoStream Webcaster v.6.</p>
-</td>
+    <td>data.updated</td><td><code>boolean</code></td><td><p>Reserved for internal developer&#39;s use - Deprecated: will be removed in nanoStream Webcaster v.6.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1417,62 +1302,43 @@ MuteDeviceError event. The event is fired if a video/audio device mute/unmute fa
   </thead>
   <tbody>
 <tr>
-    <td>data</td><td><code>object</code></td><td><p>The data object.</p>
-</td>
+    <td>data</td><td><code>object</code></td><td><p>The data object.</p> </td>
     </tr><tr>
-    <td>data.constraints</td><td><code>object</code></td><td><p>The constraints object.</p>
-</td>
+    <td>data.constraints</td><td><code>object</code></td><td><p>The constraints object.</p> </td>
     </tr><tr>
-    <td>[data.constraints.audio]</td><td><code>object</code></td><td><p>The audio constraints object. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.constraints.audio]</td><td><code>object</code></td><td><p>The audio constraints object. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>data.constraints.audio.deviceId</td><td><code>object</code></td><td><p>The id of an audio device.</p>
-</td>
+    <td>data.constraints.audio.deviceId</td><td><code>object</code></td><td><p>The id of an audio device.</p> </td>
     </tr><tr>
-    <td>[data.constraints.video]</td><td><code>object</code></td><td><p>The video constraints object. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.constraints.video]</td><td><code>object</code></td><td><p>The video constraints object. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>data.constraints.video.deviceId</td><td><code>object</code></td><td><p>The id of a video device.</p>
-</td>
+    <td>data.constraints.video.deviceId</td><td><code>object</code></td><td><p>The id of a video device.</p> </td>
     </tr><tr>
-    <td>[data.constraints.video.framerate]</td><td><code>object</code></td><td><p>The video framerate. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.constraints.video.framerate]</td><td><code>object</code></td><td><p>The video framerate. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>[data.constraints.video.height]</td><td><code>object</code></td><td><p>The video height. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.constraints.video.height]</td><td><code>object</code></td><td><p>The video height. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>data.constraints.video.source</td><td><code>string</code></td><td><p>The video source.</p>
-</td>
+    <td>data.constraints.video.source</td><td><code>string</code></td><td><p>The video source.</p> </td>
     </tr><tr>
-    <td>[data.constraints.video.width]</td><td><code>object</code></td><td><p>The video width. Note: the property is optional, therefore, its presence is not guaranteed.</p>
-</td>
+    <td>[data.constraints.video.width]</td><td><code>object</code></td><td><p>The video width. Note: the property is optional, therefore, its presence is not guaranteed.</p> </td>
     </tr><tr>
-    <td>data.metadata</td><td><code>object</code></td><td><p>The metadata object.</p>
-</td>
+    <td>data.metadata</td><td><code>object</code></td><td><p>The metadata object.</p> </td>
     </tr><tr>
-    <td>data.metadata.framerate</td><td><code>number</code></td><td><p>The video framerate set in metdata.</p>
-</td>
+    <td>data.metadata.framerate</td><td><code>number</code></td><td><p>The video framerate set in metdata.</p> </td>
     </tr><tr>
-    <td>data.metadata.hasAudio</td><td><code>number</code></td><td><p>A flag to indicate that audio is present.</p>
-</td>
+    <td>data.metadata.hasAudio</td><td><code>number</code></td><td><p>A flag to indicate that audio is present.</p> </td>
     </tr><tr>
-    <td>data.metadata.hasVideo</td><td><code>number</code></td><td><p>A flag to indicate that video is present.</p>
-</td>
+    <td>data.metadata.hasVideo</td><td><code>number</code></td><td><p>A flag to indicate that video is present.</p> </td>
     </tr><tr>
-    <td>data.metadata.height</td><td><code>number</code></td><td><p>The video height set in metadata.</p>
-</td>
+    <td>data.metadata.height</td><td><code>number</code></td><td><p>The video height set in metadata.</p> </td>
     </tr><tr>
-    <td>data.metadata.width</td><td><code>number</code></td><td><p>The video width set in metadata.</p>
-</td>
+    <td>data.metadata.width</td><td><code>number</code></td><td><p>The video width set in metadata.</p> </td>
     </tr><tr>
-    <td>data.stream</td><td><code>object</code></td><td><p>The stream object.</p>
-</td>
+    <td>data.stream</td><td><code>object</code></td><td><p>The stream object.</p> </td>
     </tr><tr>
-    <td>data.stream.active</td><td><code>boolean</code></td><td><p>A flag to indicate that a stream is active.</p>
-</td>
+    <td>data.stream.active</td><td><code>boolean</code></td><td><p>A flag to indicate that a stream is active.</p> </td>
     </tr><tr>
-    <td>data.stream.id</td><td><code>string</code></td><td><p>The stream id.</p>
-</td>
+    <td>data.stream.id</td><td><code>string</code></td><td><p>The stream id.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1490,14 +1356,11 @@ MuteDeviceError event. The event is fired if a video/audio device mute/unmute fa
   </thead>
   <tbody>
 <tr>
-    <td>data</td><td><code>object</code></td><td><p>The data object.</p>
-</td>
+    <td>data</td><td><code>object</code></td><td><p>The data object.</p> </td>
     </tr><tr>
-    <td>data.server</td><td><code>string</code></td><td><p>The URL of the Webcaster server</p>
-</td>
+    <td>data.server</td><td><code>string</code></td><td><p>The URL of the Webcaster server</p> </td>
     </tr><tr>
-    <td>data.userId</td><td><code>string</code></td><td><p>The user id of the Webcaster server.</p>
-</td>
+    <td>data.userId</td><td><code>string</code></td><td><p>The user id of the Webcaster server.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1515,68 +1378,47 @@ MuteDeviceError event. The event is fired if a video/audio device mute/unmute fa
   </thead>
   <tbody>
 <tr>
-    <td>data</td><td><code>object</code></td><td><p>The data object.</p>
-</td>
+    <td>data</td><td><code>object</code></td><td><p>The data object.</p> </td>
     </tr><tr>
-    <td>data.stats</td><td><code>object</code></td><td><p>The stats object.</p>
-</td>
+    <td>data.stats</td><td><code>object</code></td><td><p>The stats object.</p> </td>
     </tr><tr>
-    <td>data.stats.active_connections</td><td><code>number</code></td><td><p>The total number of active connections to the Webcaster server.</p>
-</td>
+    <td>data.stats.active_connections</td><td><code>number</code></td><td><p>The total number of active connections to the Webcaster server.</p> </td>
     </tr><tr>
-    <td>data.stats.active_passthroughs</td><td><code>number</code></td><td><p>The number of active connections with passthrough enabled to the Webcaster server.</p>
-</td>
+    <td>data.stats.active_passthroughs</td><td><code>number</code></td><td><p>The number of active connections with passthrough enabled to the Webcaster server.</p> </td>
     </tr><tr>
-    <td>data.stats.active_transcoders</td><td><code>number</code></td><td><p>The number of active connections with transcoding enabled to the Webcaster server.</p>
-</td>
+    <td>data.stats.active_transcoders</td><td><code>number</code></td><td><p>The number of active connections with transcoding enabled to the Webcaster server.</p> </td>
     </tr><tr>
-    <td>data.stats.cpu_load</td><td><code>number</code></td><td><p>Server CPU load.</p>
-</td>
+    <td>data.stats.cpu_load</td><td><code>number</code></td><td><p>Server CPU load.</p> </td>
     </tr><tr>
-    <td>data.stats.disk_space</td><td><code>number</code></td><td><p>Server disk space.</p>
-</td>
+    <td>data.stats.disk_space</td><td><code>number</code></td><td><p>Server disk space.</p> </td>
     </tr><tr>
-    <td>data.stats.domainname</td><td><code>string</code></td><td><p>Server domain name.</p>
-</td>
+    <td>data.stats.domainname</td><td><code>string</code></td><td><p>Server domain name.</p> </td>
     </tr><tr>
-    <td>data.stats.hostname</td><td><code>string</code></td><td><p>Server host name.</p>
-</td>
+    <td>data.stats.hostname</td><td><code>string</code></td><td><p>Server host name.</p> </td>
     </tr><tr>
-    <td>data.stats.license</td><td><code>object</code></td><td><p>Server license.</p>
-</td>
+    <td>data.stats.license</td><td><code>object</code></td><td><p>Server license.</p> </td>
     </tr><tr>
-    <td>data.stats.license.end</td><td><code>string</code></td><td><p>The license expiration date.</p>
-</td>
+    <td>data.stats.license.end</td><td><code>string</code></td><td><p>The license expiration date.</p> </td>
     </tr><tr>
-    <td>data.stats.license.expired</td><td><code>boolean</code></td><td><p>A flag to indicate that the license has expired.</p>
-</td>
+    <td>data.stats.license.expired</td><td><code>boolean</code></td><td><p>A flag to indicate that the license has expired.</p> </td>
     </tr><tr>
-    <td>data.stats.license.expiring</td><td><code>boolean</code></td><td><p>A flag to indicate if the license has an end date or not.</p>
-</td>
+    <td>data.stats.license.expiring</td><td><code>boolean</code></td><td><p>A flag to indicate if the license has an end date or not.</p> </td>
     </tr><tr>
-    <td>data.stats.license.start</td><td><code>string</code></td><td><p>The license issue date.</p>
-</td>
+    <td>data.stats.license.start</td><td><code>string</code></td><td><p>The license issue date.</p> </td>
     </tr><tr>
-    <td>data.stats.license.valid</td><td><code>boolean</code></td><td><p>A flag to indicate that the license is valid.</p>
-</td>
+    <td>data.stats.license.valid</td><td><code>boolean</code></td><td><p>A flag to indicate that the license is valid.</p> </td>
     </tr><tr>
-    <td>data.stats.max_cpu_load</td><td><code>number</code></td><td><p>Server maximum CPU load.</p>
-</td>
+    <td>data.stats.max_cpu_load</td><td><code>number</code></td><td><p>Server maximum CPU load.</p> </td>
     </tr><tr>
-    <td>data.stats.max_transcoders</td><td><code>number</code></td><td><p>Server maximum number of transcoders.</p>
-</td>
+    <td>data.stats.max_transcoders</td><td><code>number</code></td><td><p>Server maximum number of transcoders.</p> </td>
     </tr><tr>
-    <td>data.stats.server_version</td><td><code>string</code></td><td><p>The version of the Webcaster server.</p>
-</td>
+    <td>data.stats.server_version</td><td><code>string</code></td><td><p>The version of the Webcaster server.</p> </td>
     </tr><tr>
-    <td>data.stats.transcoder_version</td><td><code>string</code></td><td><p>The version of the transcoder.</p>
-</td>
+    <td>data.stats.transcoder_version</td><td><code>string</code></td><td><p>The version of the transcoder.</p> </td>
     </tr><tr>
-    <td>name</td><td><code>string</code></td><td><p>The name of the event.</p>
-</td>
+    <td>name</td><td><code>string</code></td><td><p>The name of the event.</p> </td>
     </tr><tr>
-    <td>target</td><td><code>string</code></td><td><p>Reserved for internal developer&#39;s use - Deprecated: will be removed in nanoStream Webcaster v.6.</p>
-</td>
+    <td>target</td><td><code>string</code></td><td><p>Reserved for internal developer&#39;s use - Deprecated: will be removed in nanoStream Webcaster v.6.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1594,92 +1436,63 @@ MuteDeviceError event. The event is fired if a video/audio device mute/unmute fa
   </thead>
   <tbody>
 <tr>
-    <td>data</td><td><code>object</code></td><td><p>The data object.</p>
-</td>
+    <td>data</td><td><code>object</code></td><td><p>The data object.</p> </td>
     </tr><tr>
-    <td>data.message</td><td><code>string</code></td><td><p>The connection state message (expected value: &#39;broadcasting&#39;).</p>
-</td>
+    <td>data.message</td><td><code>string</code></td><td><p>The connection state message (expected value: &#39;broadcasting&#39;).</p> </td>
     </tr><tr>
-    <td>data.stats.results</td><td><code>object</code></td><td><p>The results object. It contains the stats key/value pairs. All stats in the result object are optional and are present based on the capabilities of the currently used browser.</p>
-</td>
+    <td>data.stats.results</td><td><code>object</code></td><td><p>The results object. It contains the stats key/value pairs. All stats in the result object are optional and are present based on the capabilities of the currently used browser.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.audioBitrate]</td><td><code>number</code></td><td><p>The audio bitrate in kbps.</p>
-</td>
+    <td>[data.stats.results.audioBitrate]</td><td><code>number</code></td><td><p>The audio bitrate in kbps.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.audioBitrateMin]</td><td><code>number</code></td><td><p>Minimum &#39;audioBitrate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.audioBitrateMin]</td><td><code>number</code></td><td><p>Minimum &#39;audioBitrate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.audioBitrateMax]</td><td><code>number</code></td><td><p>Maximum &#39;audioBitrate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.audioBitrateMax]</td><td><code>number</code></td><td><p>Maximum &#39;audioBitrate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.audioBitrateAverage]</td><td><code>number</code></td><td><p>Average &#39;audioBitrate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.audioBitrateAverage]</td><td><code>number</code></td><td><p>Average &#39;audioBitrate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.audioCodec]</td><td><code>string</code></td><td><p>The audio codec.</p>
-</td>
+    <td>[data.stats.results.audioCodec]</td><td><code>string</code></td><td><p>The audio codec.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.frameHeight]</td><td><code>number</code></td><td><p>The video frame height  in pixels.</p>
-</td>
+    <td>[data.stats.results.frameHeight]</td><td><code>number</code></td><td><p>The video frame height  in pixels.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.frameWidth]</td><td><code>number</code></td><td><p>The video frame width in pixels.</p>
-</td>
+    <td>[data.stats.results.frameWidth]</td><td><code>number</code></td><td><p>The video frame width in pixels.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.framerate]</td><td><code>number</code></td><td><p>The video frame rate in frames per second.</p>
-</td>
+    <td>[data.stats.results.framerate]</td><td><code>number</code></td><td><p>The video frame rate in frames per second.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.framerateMin]</td><td><code>number</code></td><td><p>Minimum &#39;framerate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.framerateMin]</td><td><code>number</code></td><td><p>Minimum &#39;framerate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.framerateMax]</td><td><code>number</code></td><td><p>Maximum &#39;framerate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.framerateMax]</td><td><code>number</code></td><td><p>Maximum &#39;framerate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.framerateAverage]</td><td><code>number</code></td><td><p>Average &#39;framerate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.framerateAverage]</td><td><code>number</code></td><td><p>Average &#39;framerate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.videoBitrate]</td><td><code>number</code></td><td><p>The video bitrate in kbps.</p>
-</td>
+    <td>[data.stats.results.videoBitrate]</td><td><code>number</code></td><td><p>The video bitrate in kbps.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.videoBitrateMin]</td><td><code>number</code></td><td><p>Minimum &#39;videoBitrate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.videoBitrateMin]</td><td><code>number</code></td><td><p>Minimum &#39;videoBitrate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.videoBitrateMax]</td><td><code>number</code></td><td><p>Maximum &#39;videoBitrate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.videoBitrateMax]</td><td><code>number</code></td><td><p>Maximum &#39;videoBitrate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.videoBitrateAverage]</td><td><code>number</code></td><td><p>Average &#39;videoBitrate&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.videoBitrateAverage]</td><td><code>number</code></td><td><p>Average &#39;videoBitrate&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.videoCodec]</td><td><code>string</code></td><td><p>The video codec.</p>
-</td>
+    <td>[data.stats.results.videoCodec]</td><td><code>string</code></td><td><p>The video codec.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.videoSendDelay]</td><td><code>number</code></td><td><p>An indication for video packet delay, before packets are send to the server.</p>
-</td>
+    <td>[data.stats.results.videoSendDelay]</td><td><code>number</code></td><td><p>An indication for video packet delay, before packets are send to the server.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.videoSendDelayMax]</td><td><code>number</code></td><td><p>Maximum &#39;videoSendDelay&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.videoSendDelayMax]</td><td><code>number</code></td><td><p>Maximum &#39;videoSendDelay&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.videoSendDelayAverage]</td><td><code>number</code></td><td><p>Average &#39;videoSendDelay&#39; during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.videoSendDelayAverage]</td><td><code>number</code></td><td><p>Average &#39;videoSendDelay&#39; during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.packetLoss]</td><td><code>number</code></td><td><p>Percentage of packets lost during past 10 seconds.</p>
-</td>
+    <td>[data.stats.results.packetLoss]</td><td><code>number</code></td><td><p>Percentage of packets lost during past 10 seconds.</p> </td>
     </tr><tr>
-    <td>[data.stats.results.roundTripTime]</td><td><code>number</code></td><td><p>Current time in milliseconds that data takes from the client to the webcaster server and back.</p>
-</td>
+    <td>[data.stats.results.roundTripTime]</td><td><code>number</code></td><td><p>Current time in milliseconds that data takes from the client to the webcaster server and back.</p> </td>
     </tr><tr>
-    <td>data.stats.state</td><td><code>number</code></td><td><p>The connection state. The expected value: 6 = &#39;broadcasting&#39;.</p>
-</td>
+    <td>data.stats.state</td><td><code>number</code></td><td><p>The connection state. The expected value: 6 = &#39;broadcasting&#39;.</p> </td>
     </tr><tr>
-    <td>data.stats.streamname</td><td><code>string</code></td><td><p>The RTMP ingest streamname.</p>
-</td>
+    <td>data.stats.streamname</td><td><code>string</code></td><td><p>The RTMP ingest streamname.</p> </td>
     </tr><tr>
-    <td>data.stats.text</td><td><code>string</code></td><td><p>The connection state text. The expected value: &#39;broadcasting&#39;.</p>
-</td>
+    <td>data.stats.text</td><td><code>string</code></td><td><p>The connection state text. The expected value: &#39;broadcasting&#39;.</p> </td>
     </tr><tr>
-    <td>name</td><td><code>string</code></td><td><p>The name of the event.</p>
-</td>
+    <td>name</td><td><code>string</code></td><td><p>The name of the event.</p> </td>
     </tr><tr>
-    <td>target</td><td><code>string</code></td><td><p>Reserved for internal developer&#39;s use - Deprecated: will be removed in nanoStream Webcaster v.6.</p>
-</td>
+    <td>target</td><td><code>string</code></td><td><p>Reserved for internal developer&#39;s use - Deprecated: will be removed in nanoStream Webcaster v.6.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -1702,161 +1515,113 @@ The possible client error codes in an ErrorEvent event.
 <tr>
     <td>1000-1999</td><td><code>GeneralError</code></td><td></td>
     </tr><tr>
-    <td>1000</td><td></td><td><p>A general error returned by any nanoStream Webcaster component (see the error message for more informaiton).</p>
-</td>
+    <td>1000</td><td></td><td><p>A general error returned by any nanoStream Webcaster component (see the error message for more informaiton).</p> </td>
     </tr><tr>
-    <td>1001</td><td></td><td><p>A type is not valid.</p>
-</td>
+    <td>1001</td><td></td><td><p>A type is not valid.</p> </td> 
     </tr><tr>
-    <td>1002</td><td></td><td><p>A value is not valid.</p>
-</td>
+    <td>1002</td><td></td><td><p>A value is not valid.</p> </td>
     </tr><tr>
-    <td>1003</td><td></td><td><p>An enum value is not valid.</p>
-</td>
+    <td>1003</td><td></td><td><p>An enum value is not valid.</p> </td>
     </tr><tr>
-    <td>1004</td><td></td><td><p>An object does not exist.</p>
-</td>
+    <td>1004</td><td></td><td><p>An object does not exist.</p> </td>
     </tr><tr>
-    <td>1005</td><td></td><td><p>A function is not defined.</p>
-</td>
+    <td>1005</td><td></td><td><p>A function is not defined.</p> </td>
     </tr><tr>
-    <td>1006</td><td></td><td><p>An operation is not allowed to be executed.</p>
-</td>
+    <td>1006</td><td></td><td><p>An operation is not allowed to be executed.</p> </td>
     </tr><tr>
-    <td>2000-2999</td><td><code>RequestError</code></td><td></td>
-    </tr><tr>
-    <td>2000</td><td></td><td><p>A general request error - Deprecated: will be removed in nanoStream Webcaster v.6.</p>
-</td>
+    <td>2000-2999</td><td><code>RequestError</code></td><td></td> 
+    </tr><tr> 
+    <td>2000</td><td></td><td><p>A general request error - Deprecated: will be removed in nanoStream Webcaster v.6.</p> </td>
     </tr><tr>
     <td>3000-3999</td><td><code>WebSocketError</code></td><td></td>
     </tr><tr>
-    <td>3000</td><td></td><td><p>A general WebSocket error (see the error message for more information).</p>
-</td>
+    <td>3000</td><td></td><td><p>A general WebSocket error (see the error message for more information).</p> </td>
     </tr><tr>
-    <td>3001</td><td></td><td><p>A WebSocket state is wrong (see an error message for more information).</p>
-</td>
+    <td>3001</td><td></td><td><p>A WebSocket state is wrong (see an error message for more information).</p> </td>
     </tr><tr>
-    <td>3002</td><td></td><td><p>An error occurred when creating a WebSocket.</p>
-</td>
+    <td>3002</td><td></td><td><p>An error occurred when creating a WebSocket.</p> </td>
     </tr><tr>
-    <td>4000-4999</td><td><code>SessionError</code></td><td></td>
+    <td>4000-4999</td><td><code>SessionError</code></td><td></td> 
+    </tr><tr> 
+    <td>4000</td><td></td><td><p>Sign in failed.</p> </td>
     </tr><tr>
-    <td>4000</td><td></td><td><p>Sign in failed.</p>
-</td>
-    </tr><tr>
-    <td>4001</td><td></td><td><p>A session is not signed in.</p>
-</td>
+    <td>4001</td><td></td><td><p>A session is not signed in.</p> </td>
     </tr><tr>
     <td>5000-5999</td><td><code>BroadcastError</code></td><td></td>
     </tr><tr>
-    <td>5001</td><td></td><td><p>A broadcast failed to start.</p>
-</td>
+    <td>5001</td><td></td><td><p>A broadcast failed to start.</p> </td> 
     </tr><tr>
-    <td>5002</td><td></td><td><p>A Broadcast failed after it was started (see the error message for more information).</p>
-</td>
+    <td>5002</td><td></td><td><p>A Broadcast failed after it was started (see the error message for more information).</p> </td> 
     </tr><tr>
-    <td>5003</td><td></td><td><p>Stopping broadcast caused an error. Either no broadcast is runnung or an active broadcast is currently shutting down.</p>
-</td>
+    <td>5003</td><td></td><td><p>Stopping broadcast caused an error. Either no broadcast is runnung or an active broadcast is currently shutting down.</p>  </td>
+ </tr><tr>
+    <td>6000-6999</td><td><code>WebRTCError</code></td><td></td> 
+    </tr><tr> 
+    <td>6000</td><td></td><td><p>A media stream was received, but no video/audio data is coming from a device. The device could be in use from another application.</p> </td>
     </tr><tr>
-    <td>6000-6999</td><td><code>WebRTCError</code></td><td></td>
+    <td>6001</td><td></td><td><p>A media stream was received, but it contains no tracks.</p> </td> 
+    </tr><tr> 
+    <td>6002</td><td></td><td><p>A media stream was not found.</p> </td>
     </tr><tr>
-    <td>6000</td><td></td><td><p>A media stream was received, but no video/audio data is coming from a device. The device could be in use from another application.</p>
-</td>
+    <td>6003</td><td></td><td><p>A media stream was not removed.</p> </td> 
+    </tr><tr> 
+    <td>6004</td><td></td><td><p>No devices are available for &quot;getUserMedia&quot;.</p> </td>
     </tr><tr>
-    <td>6001</td><td></td><td><p>A media stream was received, but it contains no tracks.</p>
-</td>
+    <td>6005</td><td></td><td><p>A general &quot;getUserMedia&quot; error (may include: &#39;PermissionDenied&#39;, &#39;NotAllowedError&#39;, &#39;NotReadableError&#39;, &#39;NotFoundError&#39;, &#39;OverconstrainedError&#39;, &#39;AbortError&#39;, &#39;GetMediaError&#39;, &#39;NoDeviceError&#39;, &#39;NoStreamError&#39;).</p>  </td>
+ </tr><tr>
+    <td>6006</td><td></td><td><p>Devices failed to get enumerated.</p>  </td>
+ </tr><tr>
+    <td>6008</td><td></td><td><p>A general &quot;getDisplayMedia&quot; error (may include: &#39;PermissionDenied&#39;, &#39;NotAllowedError&#39;).</p>  </td>
+ </tr><tr>
+    <td>101000-109999</td><td><code>ServerError</code></td><td><p>Server-side errors start with 10xxxx.</p>  </td>
+ </tr><tr>
+    <td>101000-101999</td><td><code>GeneralError</code></td><td><p>Server-side general errors.</p>  </td>
+ </tr><tr>
+    <td>101001</td><td></td><td><p>An internal server error.</p>  </td>
+ </tr><tr>
+    <td>101002</td><td></td><td><p>A parameter is required.</p>  </td>
+ </tr><tr>
+    <td>101003</td><td></td><td><p>A data type is wrong.</p>  </td>
+ </tr><tr>
+    <td>102000-102999</td><td><code>AccessError</code></td><td><p>Server-side access errors.</p>  </td>
+ </tr><tr>
+    <td>102001</td><td></td><td><p>Access is denied.</p>  </td>
+ </tr><tr>
+    <td>103000-103999</td><td><code>AuthenticationError</code></td><td><p>Server-side authentication errors.</p>  </td>
+ </tr><tr>
+    <td>103000</td><td></td><td><p>The server could not initialize authentication.</p>  </td>
+ </tr><tr>
+    <td>103001</td><td></td><td><p>Wrong authentification data. A valid token, or username and password is/are required.</p>  </td>
+ </tr><tr>
+    <td>103002</td><td></td><td><p>Access to a feature is forbidden (features: &#39;webrtc&#39;).</p>  </td>
+ </tr><tr>
+    <td>103003</td><td></td><td><p>JWT authentication failed.</p>  </td>
+ </tr><tr>
+    <td>103004</td><td></td><td><p>JWT contains an invalid stream.</p>  </td>
+ </tr><tr>
+    <td>104000-104999</td><td><code>BintuError</code></td><td><p>Server-side bintu related errors.</p>  </td>
+ </tr><tr>
+    <td>104001</td><td></td><td><p>A stream option is not allowed (options: &#39;webrtc&#39;, &#39;transcoding&#39;).</p>  </td>
+ </tr><tr>
+    <td>104002</td><td></td><td><p>A bintu API key is invalid.</p>  </td>
+ </tr><tr>
+    <td>105000-105999</td><td><code>TranscoderError</code></td><td><p>Server-side configuration errors.</p>  </td>
+ </tr><tr>
+    <td>106000-106999</td><td><code>SystemMonitorError</code></td><td><p>Server-side monitoring errors.</p>  </td>
+ </tr><tr>
+    <td>106001</td><td></td><td><p>An error occured while retrieving system info.</p>  </td>
+ </tr><tr>
+    <td>107000-107999</td><td><code>SessionError</code></td><td></td> 
     </tr><tr>
-    <td>6002</td><td></td><td><p>A media stream was not found.</p>
-</td>
+    <td>107001</td><td></td><td><p>A configuration is malformed.</p> </td>
     </tr><tr>
-    <td>6003</td><td></td><td><p>A media stream was not removed.</p>
-</td>
+    <td>107002</td><td></td><td><p>A session is invalid.</p> </td> 
     </tr><tr>
-    <td>6004</td><td></td><td><p>No devices are available for &quot;getUserMedia&quot;.</p>
-</td>
+    <td>108000-108999</td><td><code>ChatError</code></td><td><p>Deprecated.</p> </td>
     </tr><tr>
-    <td>6005</td><td></td><td><p>A general &quot;getUserMedia&quot; error (may include: &#39;PermissionDenied&#39;, &#39;NotAllowedError&#39;, &#39;NotReadableError&#39;, &#39;NotFoundError&#39;,
-&#39;OverconstrainedError&#39;, &#39;AbortError&#39;, &#39;GetMediaError&#39;, &#39;NoDeviceError&#39;, &#39;NoStreamError&#39;).</p>
-</td>
+    <td>109000-109999</td><td><code>RTMPError</code></td><td></td> 
     </tr><tr>
-    <td>6006</td><td></td><td><p>Devices failed to get enumerated.</p>
-</td>
-    </tr><tr>
-    <td>6008</td><td></td><td><p>A general &quot;getDisplayMedia&quot; error (may include: &#39;PermissionDenied&#39;, &#39;NotAllowedError&#39;).</p>
-</td>
-    </tr><tr>
-    <td>101000-109999</td><td><code>ServerError</code></td><td><p>Server-side errors start with 10xxxx.</p>
-</td>
-    </tr><tr>
-    <td>101000-101999</td><td><code>GeneralError</code></td><td><p>Server-side general errors.</p>
-</td>
-    </tr><tr>
-    <td>101001</td><td></td><td><p>An internal server error.</p>
-</td>
-    </tr><tr>
-    <td>101002</td><td></td><td><p>A parameter is required.</p>
-</td>
-    </tr><tr>
-    <td>101003</td><td></td><td><p>A data type is wrong.</p>
-</td>
-    </tr><tr>
-    <td>102000-102999</td><td><code>AccessError</code></td><td><p>Server-side access errors.</p>
-</td>
-    </tr><tr>
-    <td>102001</td><td></td><td><p>Access is denied.</p>
-</td>
-    </tr><tr>
-    <td>103000-103999</td><td><code>AuthenticationError</code></td><td><p>Server-side authentication errors.</p>
-</td>
-    </tr><tr>
-    <td>103000</td><td></td><td><p>The server could not initialize authentication.</p>
-</td>
-    </tr><tr>
-    <td>103001</td><td></td><td><p>Wrong authentification data. A valid token, or username and password is/are required.</p>
-</td>
-    </tr><tr>
-    <td>103002</td><td></td><td><p>Access to a feature is forbidden (features: &#39;webrtc&#39;).</p>
-</td>
-    </tr><tr>
-    <td>103003</td><td></td><td><p>JWT authentication failed.</p>
-</td>
-    </tr><tr>
-    <td>103004</td><td></td><td><p>JWT contains an invalid stream.</p>
-</td>
-    </tr><tr>
-    <td>104000-104999</td><td><code>BintuError</code></td><td><p>Server-side bintu related errors.</p>
-</td>
-    </tr><tr>
-    <td>104001</td><td></td><td><p>A stream option is not allowed (options: &#39;webrtc&#39;, &#39;transcoding&#39;).</p>
-</td>
-    </tr><tr>
-    <td>104002</td><td></td><td><p>A bintu API key is invalid.</p>
-</td>
-    </tr><tr>
-    <td>105000-105999</td><td><code>TranscoderError</code></td><td><p>Server-side configuration errors.</p>
-</td>
-    </tr><tr>
-    <td>106000-106999</td><td><code>SystemMonitorError</code></td><td><p>Server-side monitoring errors.</p>
-</td>
-    </tr><tr>
-    <td>106001</td><td></td><td><p>An error occured while retrieving system info.</p>
-</td>
-    </tr><tr>
-    <td>107000-107999</td><td><code>SessionError</code></td><td></td>
-    </tr><tr>
-    <td>107001</td><td></td><td><p>A configuration is malformed.</p>
-</td>
-    </tr><tr>
-    <td>107002</td><td></td><td><p>A session is invalid.</p>
-</td>
-    </tr><tr>
-    <td>108000-108999</td><td><code>ChatError</code></td><td><p>Deprecated.</p>
-</td>
-    </tr><tr>
-    <td>109000-109999</td><td><code>RTMPError</code></td><td></td>
-    </tr><tr>
-    <td>109000</td><td></td><td><p>The RTMP connection has failed.</p>
-</td>
+    <td>109000</td><td></td><td><p>The RTMP connection has failed.</p> </td>
     </tr>  </tbody>
 </table>
 
