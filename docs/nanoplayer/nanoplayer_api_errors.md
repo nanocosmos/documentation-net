@@ -50,7 +50,7 @@ This is a non critical error.
 This error should not be handled by immediate replay,
 instead the web application should monitor the document visibility state
 and initiate a replay via `player.play()`, once it became `visible` again.
-<https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState>
+[https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState](https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState)
 :::
 
 This includes:
@@ -71,7 +71,7 @@ This is related to a policy in some browsers, e.g. Chrome, Chromium based and Sa
 This error should not be handled by immediate replay,
 instead the web application should monitor the document visibility state
 and initiate a replay via `player.play()`, once it became `visible` again.
-<https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState>
+[https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState](https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState)
 :::
 
 ## Stream Errors

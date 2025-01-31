@@ -45,7 +45,7 @@ The alerting routes provide an overview of either your current and historical al
 
 This ratio determines the relation between all occuring playback initializations that **DO NOT** terminate with an error **within the first 30 seconds** after the playback starts and the total number of playback initializations. Terminations after pausing or subsequently restarting the playback are not taken into account.
 
-<div style={{display: "flex", justifyContent: "center"}} className="inline-math">SPSR = (100 - failed playback starts) * 100 / all playbacks</div>
+<div style="display: flex; justify-content: center" className="inline-math">SPSR = (100 - failed playback starts) * 100 / all playbacks</div>
 <br/>
 <br/>
 

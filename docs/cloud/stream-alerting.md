@@ -177,8 +177,6 @@ These guidelines can be used to get an idea about **what** the problem is, **why
 
 ### [23000 - 23999]<span className="analytics-alertHeading-performance" />
 
-<!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
-
 <table>
     <thead>
         <tr>
@@ -207,7 +205,6 @@ These guidelines can be used to get an idea about **what** the problem is, **why
 
 ### [24000 - 24999]<span className="analytics-alertHeading-infrastructure" />
 
-<!--> Unfortunately DocoSaurus does not support table cell merging in plain markdown language. Therefore this table is written in html. <-->
 
 <table>
     <thead>

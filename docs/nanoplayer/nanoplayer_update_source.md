@@ -207,7 +207,7 @@ With the release of the `updateSource` method there are also **4** events you sh
 - **[onUpdateSourceInit](./nanoplayer_api#NanoPlayer..event_onUpdateSourceInit)**: This event signals an initialized update source request. This always **only** a start event! Another completion event will follow.
 
 ### Completion Events
-- **[onUpdateSourceSuccess](nanoplayer_api.md#onupdatesourcesuccess)**: This event signals a successful update source request and fires if the source is updated. 
+- **[onUpdateSourceSuccess](./nanoplayer_api#onupdatesourcesuccess)**: This event signals a successful update source request and fires if the source is updated. 
 - **[onUpdateSourceFail](./nanoplayer_api#NanoPlayer..event_onUpdateSourceSuccess)**: This event signals a failed update source request. Fired if an error occurs during the source update.
 - **[onUpdateSourceAbort](./nanoplayer_api#NanoPlayer..event_onUpdateSourceAbort)**: This event signals an aborted update source request. Possible reasons are an equal source (**'equalsource'**), a superseding (**'superseded'**) or the time difference between two following `updateSource` calls that is too small  (**'frequency'**). 
 

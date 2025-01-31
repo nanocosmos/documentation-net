@@ -11,7 +11,7 @@ export default function Analytics() {
     <span className={styles.playerWrapper}>
       <div className="text--center padding-horiz--md">
         <h1>Analytics</h1>
-        <body>A great way to monitor and analyze the performance and quality of service of your live streams.</body>
+        <p>A great way to monitor and analyze the performance and quality of service of your live streams.</p>
       </div>
       <section className={styles.features}>
         <div className="container">

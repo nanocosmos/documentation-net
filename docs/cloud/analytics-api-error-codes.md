@@ -13,7 +13,7 @@ The following error codes will be send as a response to faulty request configura
 
 | Error Code | Short Name | Description | HTTP Code |
 |------------|------------|-------------|-----------|
-| 10**1001** | Endpoint not found | The requested URL was not found on this server. This may happen if you are trying to access a wrong/unavailable URI endpoint. Please verify, that your request will be send to **metrics.nanocosmos.de/api/v2/<path-of-your-desired-endpoint\>**. | 404 | 
+| 10**1001** | Endpoint not found | The requested URL was not found on this server. This may happen if you are trying to access a wrong/unavailable URI endpoint. Please verify, that your request will be send to `https://metrics.nanocosmos.de/api/v2/<path-of-your-desired-endpoint>`. | 404 | 
 | 10**1002** | Param required | A parameter is required, but is missing in the request. The response body should contain more information about which parameter is missing. | 400 | 
 | 10**1003** | Wrong data type | Your request contains a value with an unexpected data type. Make sure you define the correct data type (e.g. numbers with/without quotes). | 400 |
 | 10**1004** | Invalid value | 1 or more parameters you sent, have not passed validation. This happens, if you try to filter for non-existing countries or faulty time range references. | 400 |
