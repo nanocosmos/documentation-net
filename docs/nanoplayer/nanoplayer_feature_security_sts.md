@@ -13,7 +13,7 @@ title: Secure playback with STS tokens
   - Sample use case: track which tokens were generated for a customer ID
 - `Bintu stream name`: The stream name, which is managed by [Bintu](../cloud/bintu_api).
 - `Bintu orga hash`: The hash of your [Bintu](../cloud/bintu_api) organization. It is possible to generate a token which is valid for all streams of an organization.
-- `ip`: An IPv4 address to restrict token usage to a specific client IP, e.g., `192.168.1.1`.
+- `ip`: An IPv4 address to restrict token usage to a specific client IP, e.g., `101.0.123.45`.
 
 ### Generate a token ...
 
@@ -77,6 +77,10 @@ curl -X POST https://bintu-splay.nanocosmos.de/secure/token -H "Content-Type: ap
 
 ### (c) ...with a client IP
 
+Adding IP restrictions to STS tokens:
+
+* IP **[The ip parameter restricts the usage of the token to a specific IPv4 address. This is useful when you want to limit access to a token from a known client IP only.]**
+
 *Request:*
 
 ```bash
@@ -92,8 +96,7 @@ curl -X POST https://bintu-splay.nanocosmos.de/secure/token -H "Content-Type: ap
             "expires": "",
             "tag": "",
             "token": "[your token will be here]",
-            "options": "2",
-            "ip": "[your client ip]"
+            "options": "2"
         }
     }
 }
