@@ -13,6 +13,7 @@ title: Secure playback with STS tokens
   - Sample use case: track which tokens were generated for a customer ID
 - `Bintu stream name`: The stream name, which is managed by [Bintu](../cloud/bintu_api).
 - `Bintu orga hash`: The hash of your [Bintu](../cloud/bintu_api) organization. It is possible to generate a token which is valid for all streams of an organization.
+- `ip`: An IPv4 address to restrict token usage to a specific client IP, e.g., `192.168.1.1`.
 
 ### Generate a token ...
 
@@ -91,7 +92,8 @@ curl -X POST https://bintu-splay.nanocosmos.de/secure/token -H "Content-Type: ap
             "expires": "",
             "tag": "",
             "token": "[your token will be here]",
-            "options": "2"
+            "options": "2",
+            "ip": "[your client ip]"
         }
     }
 }
