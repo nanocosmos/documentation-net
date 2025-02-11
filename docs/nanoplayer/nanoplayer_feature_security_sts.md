@@ -79,7 +79,7 @@ curl -X POST https://bintu-splay.nanocosmos.de/secure/token -H "Content-Type: ap
 
 Adding IP restrictions to STS tokens:
 
-* IP **[The ip parameter restricts the usage of the token to a specific IPv4 address. This is useful when you want to limit access to a token from a known client IP only.]**
+* ip **[The ip parameter restricts the usage of the token to a specific IPv4 address. This is useful when you want to limit access to a token from a known client IP only.]**
 
 *Request:*
 
