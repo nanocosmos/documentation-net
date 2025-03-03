@@ -1,83 +1,20 @@
 ---
-slug: /analytics/api-releases/history
-id: analytics-api-releases-history
-title: API Release - History
+slug: /analytics/dashboard-releases/history
+id: analytics-dashboard-releases-history
+title: Dashboard Release - History
 sidebar_label: History
 ---
 
 # Changelog
 
-## 2.28 - General performance improvements & internal adjustments
-
-- minor improvements and internal changes were made regarding system perfromance and stability  
-
-## 2.27 - World map API routes
-- added **world map metric** routes to Analytics API:
-   - **Playout/Ingest:** `/api/v2/world/playoutIngest`
-   - **Buffering ratio:** `/api/v2/world/buffering/ratio`
-   - **Latency:** `/api/v2/world/latency`
-   - **Playtime:** `/api/v2/world/playtime`
-   - **Usage:** `/api/v2/world/usage`
-   - **ABR playtime:** `/api/v2/world/abr/playtime`
-   - **ABR viewer:** `/api/v2/world/abr/viewer`
-   - **ABR switches:** `/api/v2/world/abr/switches`
-- added API routes for **H5Live playtime broken down by browser/os**:
-   - **browser:** `/api/v2/h5live/playtime/browser`
-   - **os:** `/api/v2/h5live/playtime/os`
-
-## 2.26 - Successful playback start / playback start failure API routes 
-
-- added the following API routes for successful playback start ratio (SPSR) to Analytics API:
-   - `/api/v2/playback/start/success/ratio/timeseries`
-   - `/api/v2/playback/start/success/ratio/streams/timeseries`
-   - `/api/v2/playback/start/success/ratio/tags/timeseries`
-   - `/api/v2/playback/start/success/ratio/countries/timeseries`
-   - `/api/v2/playback/start/success/ratio/world`
-   - `/api/v2/playback/start/success/ratio/{breakdownTerm}`
-   - `/api/v2/playback/start/success/ratio/streams/{breakdownTerm}`
-   - `/api/v2/playback/start/success/ratio/tags/{breakdownTerm}`
-   - `/api/v2/playback/start/success/ratio/countries/{breakdownTerm}`
-   - `/api/v2/playback/start/errors`
-   - `/api/v2/playback/start/errors/streams`
-   - `/api/v2/playback/start/errors/tags`
-   - `/api/v2/playback/start/errors/world`
-   - `/api/v2/playback/start/errors/{breakdown}`
-   - `/api/v2/playback/start/errors/streams/{breakdown}`
-   - `/api/v2/playback/start/errors/tags/{breakdown}`
-   - `/api/v2/playback/start/errors/countries/{breakdown}`
-   - `/api/v2/playback/start/success/ratio/organizations (admin route)`
-   - `/api/v2/playback/start/errors/organizations (admin route)`
-
-## 2.25 - SRT metrics monitoring API route
+## 2.24 - Alerting service & Error response improvement
 
 :::info Release Version Differentiation
 With the introduction of version 2.25 we made versioning of our API and the Analytics Dashboard independant from each other. This release contained no changes for the Analytics Dashboard service and as a consequence this service remains at version 2.24 for now.
 :::
 
-- added API route for SRT ingest metrics monitoring `/api/v2/monitoring/ingest/srt/timeseries` to Analytics API:
-   - bitrate (combined video/audio)
-   - round trip time
-   - packets lost
-   - packets dropped
-
-## 2.24 - Alerting service & Error response improvement
-
--  added timestamp as a human readable date string (in addition to the existing UNIX seconds timestamp) to all API route responses containing a timestamp (property name: `timestampAsString`)
--  added additional fields to detected alerts/advices via `/api/v2/alerting/ingest/`:
-   -  **id** : every alert/advice has now an unique id, that stays the same until the alert/advice will no longer be detected
-   -  **firstDetection** : the minute the alert/advice has been detected for the first time
-   -  **elapsedTime** : minute of the current detection cycle minus `firstDetection` timestamp in seconds
-   -  **countryName** : replaced the existing property `country`
-   -  **countryCode** : 2 letter country code
--  improved error responses:
-   -  now each error has a certain error code (starting with `10` followed by a 4 digit error code)
-   -  **error.message**: general error message
-   -  **error.errorCode**: 6 digit long error code
-   -  **error.userInfo**: more specific details to the error
-   -  **error.summary**: short summary of the error
--  added API route for H5Live playback counts broken down by:
-   -  **browser** `/api/v2/h5live/views/browser`
-   -  **operation system** `/api/v2/h5live/views/os`
+-  use toasts for error messages
+-  improved troubleshooting fine time range slider to automatically keep the maximal selected time range duration at 12 hours
 
 ## 2.23 - CSV export
 
