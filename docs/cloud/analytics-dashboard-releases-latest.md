@@ -1,27 +1,21 @@
 ---
-slug: /analytics/api-releases/latest
-id: analytics-api-releases-latest
-title: Latest Releases
+slug: /analytics/dasgboard-releases/latest
+id: analytics-dashboard-releases-latest
+title: Latest Dashboard Release
 sidebar_label: Latest
 ---
 
-## API
+# Latest Analytics Dashboard Release Notes
 
-### 2.25 - Successful playback service & SRT metrics monitoring API route
+## 2.27 - Alerting Adjustments & Authentication Improvement
 
-:::info Release Version Differentiation
-With the introduction of version 2.25 we made versioning of our API and the Analytics Dashboard independant from each other. This release contained no changes for the Analytics Dashboard service and as a consequence this service remains at version 2.24 for now.
-:::
+- Adjustments to Troubleshooting/Alerting Section:
+    - fixed an issue when switching between a Stream Time Ratio - alert and a Continuous Restart - alert and no data was shown in the charts   
+    - general ingest stream information in the alert table now supports multiple ingest connection details to provide more insights of stream behavior 
+    - new details "country name" and "connection ID" are available for alerts
+    - new performance intervals were added to the graph for "Stream Time Ratio" alerts, supporting issues with ratios constantly above 1
+    - improved "Stream Time Ratio" graph annotations, which now indicate whether the alert ended due to stream termination or stream recovery
 
-- added API route for SRT ingest metrics monitoring `/api/v2/monitoring/ingest/srt/timeseries`:
-   - bitrate (combined video/audio)
-   - round trip time
-   - packets lost
-   - packets dropped
-
-## Analytics Dashboard
-
-### 2.24 - Alerting service & Error response improvement
-
--  use toasts for error messages
--  improved troubleshooting fine time range slider to automatically keep the maximal selected time range duration at 12 hours
+- Improvements regarding Login process:
+    - users do not need to re-authenticate via login credentials each time the Analytics Dashboard tab is closed anymore
+    - (e.g.: opening the Analytics Dashboard within a new tab while authentication took place recently, no extra manual login is required) 

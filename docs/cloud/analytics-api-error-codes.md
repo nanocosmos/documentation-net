@@ -5,7 +5,7 @@ title: Analytics API Error Codes
 sidebar_label: Error Code Definitions
 ---
 
-In this table we provide an overview about all possible error codes that you could encounter using the nanoStream Analytics API.
+In this table we provide an overview about all possible error codes that you could encounter using the nanoStream Analytics API. For general status code details please refer to the [General Details](/docs/analytics/api-docs#general-details) section.
 
 ## Request Configuration Errors
 

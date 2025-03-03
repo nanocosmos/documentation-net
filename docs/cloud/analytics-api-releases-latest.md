@@ -1,7 +1,7 @@
 ---
 slug: /analytics/api-releases/latest
 id: analytics-api-releases-latest
-title: Latest Releases
+title: Latest API Release
 sidebar_label: Latest
 ---
 
