@@ -22,7 +22,7 @@ The API responses always contain one of these general status codes to provide ad
 | 2001 | NO ALERTS | Request was successful, but no alerts were found. This is used for requests regarding alert information retrieval. |
 
 :::tip
-Receiving one of these status codes implies that the request was technically successful. Should a response contain an error code instead, please refer to the [Error Code Definitions](/docs/analytics/api-error-codes) section to .
+Receiving one of these status codes implies that the request was technically successful. Should a response contain an error code instead, please refer to the [Error Code Definitions](/docs/analytics/api-error-codes) section.
 :::
 
 ### Rate Limit
