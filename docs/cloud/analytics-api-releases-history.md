@@ -108,7 +108,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
    -  time series of byte usage for playout and ingest traffic with a maximum temporal resolution of an hour
    -  no support for stream filtering
    -  start and end date have to point to a full hour e.g. 2021-01-14T15:00
-   -  accesses low resolution data -> longer time ranges requestable / historical data / low response time
+   -  accesses low resolution data enables longer time ranges requestable / historical data / low response time
 -  added IP/referrer blocking either via `Breakdown` or `Guardian` view
 
 ## 2.20.0 - new API routes
