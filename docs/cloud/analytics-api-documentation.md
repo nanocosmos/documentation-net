@@ -70,10 +70,6 @@ This ratio determines the relation between all occuring playback initializations
 
 #### How To Use
 
-
-
-#### General Details
-
 The services of nanoStream Analytics determine the **SPSR** and **PSE** based on the player metrics data for every minute with a **5 minute delay** to the current minute.
 Either the calculated **ratios and errors** are based on your **organisation**, **stream**, **tag** or **country** of choice and offer different **breakdown terms**:
 

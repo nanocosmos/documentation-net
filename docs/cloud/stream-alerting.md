@@ -114,12 +114,12 @@ Either bandwidth issues or insufficient encoder/computing performances of the in
 
 #### Stream Time Ratio (STR)
 <details>
-    <summary>Classifications by <span style="font-weight: bold">Stream Time Ratio (STR)</span> Metric</summary>
+    <summary>Classifications by <span className="text-bold">Stream Time Ratio (STR)</span> Metric</summary>
     <details>
         <summary>
             Suboptimal Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
         </summary>
-        <span>For the minimum of <span style="font-weight: bold">5 STR values</span> within the same <span style="font-weight: bold">5 minutes interval</span> applies:</span>
+        <span>For the minimum of <span className="text-bold">5 STR values</span> within the same <span className="text-bold">5 minutes interval</span> applies:</span>
         <div className="inline-math">
             0.93 &ge; STR Value > 0.86 OR 1.14 > STR Value >= 1.07
         </div>
@@ -128,7 +128,7 @@ Either bandwidth issues or insufficient encoder/computing performances of the in
         <summary>
             Poor Performance &nbsp; (<a href="./troubleshooting#stream-time-ratio">Troubleshooting Example</a>)
         </summary>
-        <span>For the minimum of <span style="font-weight: bold">5 STR values</span> within the same <span style="font-weight: bold">5 minutes interval</span> applies:</span>
+        <span>For the minimum of <span className="text-bold">5 STR values</span> within the same <span className="text-bold">5 minutes interval</span> applies:</span>
         <div className="inline-math">
             STR Value &le; 0.86 OR STR Value &ge; 1.14
         </div>

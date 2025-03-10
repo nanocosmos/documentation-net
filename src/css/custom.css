@@ -178,6 +178,10 @@
   font-size: 12px;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 /* END GENERAL */
 
 /* BEGINNING OF CLOUD CSS EXTRA */
