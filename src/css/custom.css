@@ -164,7 +164,7 @@
 }
 
 /* same as above but with centering */
-.inline-math {
+.inline-math-center {
   text-align: center;
   display: flex;
   justify-content: center;
