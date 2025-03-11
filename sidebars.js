@@ -186,6 +186,16 @@ const sidebars = {
         },
         {
           "type": "category",
+          "label": "Releases",
+          "collapsible": false,
+          "collapsed": false,
+          "items": [
+            "webrtc/nanostream_webrtc_release_latest",
+            "webrtc/nanostream_webrtc_release_history"
+          ]
+        },
+        {
+          "type": "category",
           "label": "API",
           "collapsible": false,
           "collapsed": false,
