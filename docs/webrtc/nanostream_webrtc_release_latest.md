@@ -27,3 +27,9 @@ sidebar_label: Latest
 * improved metrics reporting of session lifetime
 * send metrics for status of MediaStream muted and document visibility
 
+
+## Packages
+
+ - [6.2.0](https://files.nanocosmos.de/index.php/s/7nXTy2gz9DpPrZa "nanoStream-Webcaster-6.2.0.zip")
+ - Clone the git repository at https://github.com/nanocosmos/webcaster
+ - or download a zipped archive from [nanocosmos/webcaster](https://github.com/nanocosmos/webcaster/archive/refs/heads/main.zip)
