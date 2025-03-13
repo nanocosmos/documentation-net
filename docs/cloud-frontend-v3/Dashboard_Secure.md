@@ -13,7 +13,7 @@ If you are interested in utilizing the `secure` feature offered by nanoStream Cl
 ![Screenshot: Enabled Features](../assets/cloud-frontend/cf-secure-feature.jpg)
 *Screenshot: Enabled Features*
 
-## Token Configuation
+## Token Configuration
 
 
 :::info Before starting
@@ -23,7 +23,7 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
 
 One way to create a secure token for your stream(s) or organisation is to navigate to the left-hand menu and select the lock icon. This will take you to the [page](https://dashboard.nanostream.cloud/secure/token) where you can provide the necessary information to generate the token. You can also find this dialog in different sections of the nanoStream Cloud dashboard.
 
-### Required Informations
+### Required Information
 
 1. **Token Target**: Choose the target of the token.
    - The entire stream group by providing the stream ID

@@ -4,7 +4,7 @@ title: General Questions
 sidebar_label: General
 ---
 
-## Questions Overivew
+## Questions Overview
 
 - [What is H5Live and how can it guarantee ultra-low latency live streaming and playback?](#what-is-h5live-and-how-can-it-guarantee-ultra-low-latency-live-streaming-and-playback)
 - [Which browsers/platforms does the nanoStream H5Live Player support?](#which-browsersplatforms-does-the-nanostream-h5live-player-support)
