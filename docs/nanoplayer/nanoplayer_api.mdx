@@ -955,55 +955,62 @@ The error event to pass in the 'config.events' object at the setup call. Fires i
   <tbody>
 <tr>
     <td>name</td><td><code>string</code></td><td><p>The event name.</p> </td>
-    </tr><tr>
+</tr>
+<tr>
     <td>player</td><td><code>string</code></td><td><p>The player name (id of the playerDiv).</p> </td>
-    </tr><tr>
+</tr>
+<tr>
     <td>id</td><td><code>string</code></td><td><p>The unique id of the player instance.</p> </td>
-    </tr><tr>
+</tr>
+<tr>
     <td>version</td><td><code>string</code></td><td><p>The version of the player.</p> </td>
-    </tr><tr>
+</tr>
+<tr>
     <td>data</td><td><code>object</code></td><td><p>The data object.</p> </td>
-    </tr><tr>
+</tr>
+<tr>
     <td>data.code</td><td><code><a href="#NanoPlayer..errorcode">errorcode</a></code></td><td><p>The error code.</p> </td>
-    </tr><tr>
+</tr>
+<tr>
     <td>data.message</td><td><code>string</code></td><td><p>The error cause as human readable string.</p> </td>
-    </tr><tr>
-    <td>[data.playback]</td><td><code>object</code></td><td><p>The optional data playback object (since 4.28.0). Includes current playback stats. Only available if error is a <a href="https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_api_errors#startup-errors">startup error</a>.</p>
-</td>
-    </tr><tr>
-    <td>data.playback.bufferDelayCurrent</td><td><code>number</code></td><td><p>Buffer delay in ms experienced at the time of the error. Always available.</p>
-</td>
-    </tr><tr>
-    <td>data.playback.bitrateCurrent</td><td><code>number</code></td><td><p>The bitrate in Bit/s of playback at the time the error occurred. Always available.</p>
-</td>
-    </tr><tr>
-    <td>data.playback.framerateCurrent</td><td><code>number</code></td><td><p>Playback framerate per second at the time of the error. Always available.</p>
-</td>
-    </tr><tr>
-    <td>[data.state]</td><td><code>object</code></td><td><p>The optional data state object (since 4.28.0). Includes all timestamps of the startup phase that have been reached before the error occurred. Only available if error is a <a href="https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_api_errors#startup-errors">startup error</a>.</p>
-</td>
-    </tr><tr>
-    <td>[data.state.connected]</td><td><code>number</code></td><td><p>Timestamp in ms indicating when the connection was established (relative to load start). Optional.</p>
-</td>
-    </tr><tr>
-    <td>[data.state.firstFragmentReceived]</td><td><code>number</code></td><td><p>Time in ms at which the first fragment of media data was received (relative to load start). Optional.</p>
-</td>
-    </tr><tr>
-    <td>[data.state.firstFrameRendered]</td><td><code>number</code></td><td><p>Time in ms when the first frame was rendered (relative to load start). Optional.</p>
-</td>
-    </tr><tr>
-    <td>[data.state.playable]</td><td><code>number</code></td><td><p>Timestamp in ms indicating when playback was ready to begin (relative to load start). Optional.</p>
-</td>
-    </tr><tr>
-    <td>[data.state.playing]</td><td><code>number</code></td><td><p>Timestamp in ms indicating when playback actually started (relative to load start). Optional.</p>
-</td>
-    </tr><tr>
-    <td>data.state.error</td><td><code>number</code></td><td><p>Timestamp in ms marking when the error occurred (relative to load start). Always available.</p>
-</td>
-    </tr><tr>
-    <td>state</td><td><code><a href="#NanoPlayer..state">state</a></code></td><td><p>The player state.</p>
-</td>
-    </tr>  </tbody>
+</tr>
+<tr>
+    <td>[data.playback]</td><td><code>object</code></td><td><p>The optional data playback object (since 4.28.0). Includes current playback stats. Only available if error is a <a href="https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_api_errors#startup-errors">startup error</a>.</p> </td>
+</tr>
+<tr>
+    <td>data.playback.bufferDelayCurrent</td><td><code>number</code></td><td><p>Buffer delay in ms experienced at the time of the error. Always available.</p> </td>
+</tr>
+<tr>
+    <td>data.playback.bitrateCurrent</td><td><code>number</code></td><td><p>The bitrate in Bit/s of playback at the time the error occurred. Always available.</p> </td>
+</tr>
+<tr>
+    <td>data.playback.framerateCurrent</td><td><code>number</code></td><td><p>Playback framerate per second at the time of the error. Always available.</p> </td>
+</tr>
+<tr>
+    <td>[data.state]</td><td><code>object</code></td><td><p>The optional data state object (since 4.28.0). Includes all timestamps of the startup phase that have been reached before the error occurred. Only available if error is a <a href="https://docs.nanocosmos.de/docs/nanoplayer/nanoplayer_api_errors#startup-errors">startup error</a>.</p> </td>
+</tr>
+<tr>
+    <td>[data.state.connected]</td><td><code>number</code></td><td><p>Timestamp in ms indicating when the connection was established (relative to load start). Optional.</p> </td>
+</tr>
+<tr>
+    <td>[data.state.firstFragmentReceived]</td><td><code>number</code></td><td><p>Time in ms at which the first fragment of media data was received (relative to load start). Optional.</p> </td>
+</tr>
+<tr>
+    <td>[data.state.firstFrameRendered]</td><td><code>number</code></td><td><p>Time in ms when the first frame was rendered (relative to load start). Optional.</p> </td>
+</tr>
+<tr>
+    <td>[data.state.playable]</td><td><code>number</code></td><td><p>Timestamp in ms indicating when playback was ready to begin (relative to load start). Optional.</p> </td>
+</tr>
+<tr>
+    <td>[data.state.playing]</td><td><code>number</code></td><td><p>Timestamp in ms indicating when playback actually started (relative to load start). Optional.</p> </td>
+</tr>
+<tr>
+    <td>data.state.error</td><td><code>number</code></td><td><p>Timestamp in ms marking when the error occurred (relative to load start). Always available.</p> </td>
+</tr>
+<tr>
+    <td>state</td><td><code><a href="#NanoPlayer..state">state</a></code></td><td><p>The player state.</p> </td>
+</tr>  
+</tbody>
 </table>
 
 #### Example
@@ -2316,11 +2323,9 @@ The config object to pass as param for the 'setup' call.
     </tr><tr>
     <td>[source.options.adaption.downStep]</td><td><code>number</code></td><td><code>1</code></td><td><p>The minimum number of steps during a ABR down switch (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only).</p> </td>
     </tr><tr>
-    <td>[source.options.adaption.omitRenditions]</td><td><code>Array.&lt;string|number&gt;</code></td><td></td><td><p>The renditions to omit if ABR enabled (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only). This parameter accepts an `array` of valid stream group qualities (e.g., <code>&#39;high&#39;</code>, <code>&#39;medium&#39;</code>, <code>&#39;low&#39;</code>) or stream entry indexes (e.g., <code>0</code>, <code>1</code>, <code>2</code>, etc.).</p>
-</td>
+    <td>[source.options.adaption.omitRenditions]</td><td><code>Array.&lt;string|number&gt;</code></td><td></td><td><p>The renditions to omit if ABR enabled (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only). This parameter accepts an `array` of valid stream group qualities (e.g., <code>&#39;high&#39;</code>, <code>&#39;medium&#39;</code>, <code>&#39;low&#39;</code>) or stream entry indexes (e.g., <code>0</code>, <code>1</code>, <code>2</code>, etc.).</p> </td>
     </tr><tr>
-    <td>[source.h5live]</td><td><code>object</code></td><td></td><td><p>DEPRECATED. PLEASE USE ENTRIES!!! WILL BE OVERWRITTEN IN CASE AT LEAST ONE &#39;ENTRY&#39; IS DEFINED IN &#39;ENTRIES&#39; ARRAY. The h5live object to configure the h5live connection.</p>
-</td>
+    <td>[source.h5live]</td><td><code>object</code></td><td></td><td><p>DEPRECATED. PLEASE USE ENTRIES!!! WILL BE OVERWRITTEN IN CASE AT LEAST ONE &#39;ENTRY&#39; IS DEFINED IN &#39;ENTRIES&#39; ARRAY. The h5live object to configure the h5live connection.</p> </td>
     </tr><tr>
     <td>source.h5live.server</td><td><code>object</code></td><td></td><td><p>The h5live server object.</p> </td>
     </tr><tr>

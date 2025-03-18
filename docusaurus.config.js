@@ -41,7 +41,7 @@ const config = {
   },
 
   markdown: {
-    format: 'md',
+    format: 'mdx',
   },
   
   presets: [

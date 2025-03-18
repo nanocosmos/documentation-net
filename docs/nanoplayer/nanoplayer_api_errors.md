@@ -429,25 +429,25 @@ Based on the last error code (stored in `onError` handler), the replay decision 
 These errors are not limited to specific error codes. Defined as "Startup Error" is any error that occures on a playback attempt within the initial loading phase including the first 30 seconds of playback. Tracking these errors helps identify potential issues that occur during the critical loading and startup phase, which are essential for user engagement and retention.
 
 In addition to `data.code` and `data.message` the event object of a startup error event provides more detailed information about the loading and startup phase.
+```js
+// The playback object includes the current playback stats as the error occured.
+data.playback = {
+    bufferDelayCurrent: 'number', // seconds, always
+    bitrateCurrent:     'number', // milliseconds, always
+    framerateCurrent:   'number'  // milliseconds, always
+}
 
-    // The playback object includes the current playback stats as the error occured.
-    data.playback = {
-        bufferDelayCurrent: 'number', // seconds, always
-        bitrateCurrent:     'number', // milliseconds, always
-        framerateCurrent:   'number'  // milliseconds, always
-    }
-
-    // The state object includes all timestamps of the startup phase that have been reached before and as the error occurred.
-    // The time values are relative to load start at a playback attempt.
-    data.state  = {
-        connected:             'number', // milliseconds, optional
-        firstFragmentReceived: 'number', // milliseconds, optional
-        firstFrameRendered:    'number', // milliseconds, optional
-        playable:              'number', // milliseconds, optional
-        playing:               'number', // milliseconds, optional
-        error:                 'number'  // milliseconds, always
-    }
-
+// The state object includes all timestamps of the startup phase that have been reached before and as the error occurred.
+// The time values are relative to load start at a playback attempt.
+data.state  = {
+    connected:             'number', // milliseconds, optional
+    firstFragmentReceived: 'number', // milliseconds, optional
+    firstFrameRendered:    'number', // milliseconds, optional
+    playable:              'number', // milliseconds, optional
+    playing:               'number', // milliseconds, optional
+    error:                 'number'  // milliseconds, always
+}
+```
  Errors which occure after at least 30 seconds of playback won't have these two additional subobject in their `event.data` object.
 
 ### Event Object Examples
