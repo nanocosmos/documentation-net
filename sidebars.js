@@ -187,7 +187,7 @@ const sidebars = {
         {
           "type": "category",
           "label": "Releases",
-          "collapsible": false,
+          "collapsible": true,
           "collapsed": false,
           "items": [
             "webrtc/nanostream_webrtc_release_latest",

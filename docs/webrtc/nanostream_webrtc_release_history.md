@@ -10,41 +10,38 @@ sidebar_label: History
 
 ## Release Notes
 
-## Changelog
-
-### Bug Fixes
-
-* address Chrome bug in main sample where requested resolutions are too low 286761c
-* assure webcasterId does not change per instance e70b0c8
-<!-- * **ci:** update_public_repo remove freshen flag 828246c -->
-* replace legacy resolution changed values with counter "resolutionChangeCount" 
-* stop tracks of temporary MediaStream after it was created for device permissions request
+This release contains enhancements and fixes aimed at making your live broadcasting smoother and more reliable than ever before.
 
 
-### Features
+### Improvements:
 
-* improve error handling
-* improved metrics reporting of session lifetime
-* send metrics for status of MediaStream muted and document visibility
+  - Enhanced Error Reporting: Additional error codes have been introduced, making it easier to diagnose and resolve issues quickly.
+  - Improved Metrics Reporting: We've enhanced the reporting of session lifetime metrics, offering us more detailed insights into your broadcasts.  Sending additional metrics will allow us to analyze issues faster and more accurate.
+
+### Bug Fixes:
+
+ - Chrome Bug Fix: We've addressed a bug in Chrome where requested resolutions were too low in our main sample.
+ - Metrics Continuity: We fixed an issue where metrics continued to be sent even after a webcast failure, now providing more accurate data.
 
 
 # 6.1.0 (2024-04-10)
 
 
-### Bug Fixes
+## Release Notes
 
-* calling dispose fails when server is not reachable 4f094b9
-* **ci:** allow subsequent stages to be run after deploy c3dbaaa
-* **ci:** make job branches coherent 3b3f7cd
-* initially disabled tracks on the incoming mediaStream are enabled automatically 004df24
-* isMuted method returns not the actual muted status, but passed isMuted config 03a557e
 
+ This latest version introduces a suite of bug fixes and new features aimed at optimizing your development process and offering your users a seamless streaming experience.
 
 ### Features
 
-* add auto-reconnection f7947b6
-* add onConnectionChange callback 7406317
-* **readme:** add CI/CD header ea2f12e
+- **Auto-Reconnection:** To ensure uninterrupted streaming, version 6 of the Webcaster now includes auto-reconnection capabilities, making your streams more resilient to network disruptions.
+
+### Bug Fixes:
+
+- We've addressed an issue where calling `dispose()` could fail and leave the client in a dirty state. 
+- Initially disabled/muted tracks of MediaStreams are no longer automatically re-enabled by the SDK.
+- The `isMuted` method now accurately reflects the actual mute status
+
 
 # v6.0.2
 
