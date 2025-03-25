@@ -44,18 +44,8 @@ This release contains enhancements and fixes aimed at making your live broadcast
 - The `isMuted` method now accurately reflects the actual mute status
 
 
-## v6.0.2
+## 6.0.2 (2023-12-04)
 
 First public release!
 
-## v6.0.1
-
-Minor improvements in documentation and samples.
-
-## v6.0.0
-
-Official release, see MIGRATION_GUIDE.md for details.
-
-## v6.0.0-beta1
-
-Our first version with the new API!
+See [Migration Guide](./migration_guide_v6)  for details.
