@@ -171,7 +171,7 @@ const sidebars = {
         {
           "type": "category",
           "label": "Features",
-          "collapsible": true,
+          "collapsible": false,
           "collapsed": false,
           "items": [
             "webrtc/nanostream_webrtc_input_sources",
@@ -182,6 +182,16 @@ const sidebars = {
             "webrtc/nanostream_webrtc_stats_and_metrics",
             "webrtc/nanostream_webrtc_speech_music",
             "webrtc/nanostream_webrtc_reconnect"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Releases",
+          "collapsible": false,
+          "collapsed": false,
+          "items": [
+            "webrtc/nanostream_webrtc_release_latest",
+            "webrtc/nanostream_webrtc_release_history"
           ]
         },
         {
