@@ -1,6 +1,18 @@
 .playerWrapper {
   padding: 3rem;
   width: 100%;
+  color: #fff;
+  background-image: linear-gradient(to top, #07456B, rgb(8, 16, 23));
+}
+
+.playerWrapper h1 {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.blue {
+  color: rgba(1, 139, 201, 1);
 }
 
 .features {

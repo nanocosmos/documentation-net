@@ -40,6 +40,7 @@ const sidebars = {
       "collapsible": true,
       "collapsed": false,
       "items": [
+        // "dashboard/overview",
         "cloud-frontend-v3/Dashboard_Overview",
         "cloud-frontend-v3/Dashboard_Getting_Started",
         {

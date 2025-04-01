@@ -150,7 +150,7 @@ const config = {
         style: 'dark',
         logo: {
           alt: 'nanocosmos Logo',
-          src: 'img/logo.svg',
+          src: 'img/nanostream.png',
           href: 'https://www.nanocosmos.de/',
           width: 160,
           target: '_self',
@@ -232,7 +232,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}. nanocosmos GmbH - Docs Version: ${new Date().toUTCString()}`,
+        copyright: `Copyright © ${new Date().getFullYear()}. nanocosmos GmbH`,
       },
       prism: {
         theme: lightCodeTheme,
