@@ -74,6 +74,7 @@ const sidebars = {
       "collapsed": false,
       "items": [
         "dashboard/start_streaming",
+        "dashboard/stream_overview",
       ]
     },
     // {

@@ -7,7 +7,7 @@ sidebar_label: Start Streaming
 :::tip Before starting
 To begin, please sign in using your nanoStream account credentials. <br/>
 If you have not created an account yet, you can [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) or reach out to our dedicated sales team via the [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.net. <br/>
-*If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
+*If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
 :::
 
 ## How to Start Streaming
@@ -81,7 +81,7 @@ By clicking on **Add timecode** you can enable this feature. It allows precise s
 
 ## Start Streaming
 
-After clicking on **Create New Stream**, you will be redirected to the easy instructions page. This page provides you with all the information required to start and share a stream, including the necessary steps and details for a seamless setup.
+After clicking on **Create New Stream**, you will be redirected to the **Easy Instructions to Your Live Stream** page. This page provides you with all the information required to start and share a stream, including the necessary steps and details for a seamless setup.
 You can also access this page later via **Stream Overview → Get Instructions**.
 
 :::info Please note
@@ -97,8 +97,6 @@ Under the Header of the page, you can see three buttons:
 - [Ingesting with the nanoStream Webcaster](#ingesting-with-the-nanostream-webcaster)
 - [Stats and Metrics: Monitor Your Webcast's Performance](../webrtc/nanostream_webrtc_stats_and_metrics.md)
 :::
-
-### Easy Instructions to your live stream
 
 1. **Start the Ingest**: This section displays the **RTMP stream name** and **RTMP URL** needed to begin your stream. To copy the details easily, click on the copy icon next to the information.
 2. **Access the Web Playout**: Here you will find the **live playout URL** for streaming your content.
