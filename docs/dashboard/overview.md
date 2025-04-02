@@ -1,12 +1,45 @@
 ---
 id: overview
-title: Dashboard Overview
+title: Overview
 sidebar_label: Overview
 ---
 
-The **nanoStream Cloud Dashboard** is a web-based tool implemented and designed to provide users with an intuitive and comprehensive overview of their streaming activities. It serves as a centralized hub to monitor and manage the users live video streaming workflow.
+The **nanoStream Dashboard** is a web-based tool implemented and designed to provide users with an intuitive and comprehensive overview of their streaming activities. It serves as a centralized hub to monitor and manage the users live video streaming workflow.
 
-The intended audience of the nanoStream Cloud Dashboard includes streaming professionals, broadcasters, content creators, and anyone involved in managing live video streaming services. It caters to both technical and non-technical users, offering a user-friendly interface with visualizations and clear introductions to start a live stream, monitor the settings and generate source codes to get the nanoPlayer work on any webpage.
+The intended audience of the nanoStream Dashboard includes streaming professionals, broadcasters, content creators, and anyone involved in managing live video streaming services. It caters to both technical and non-technical users, offering a user-friendly interface with visualizations and clear introductions to start a live stream, monitor the settings and generate source codes to get the nanoPlayer work on any webpage.
+
+This documentation explains the key features and how to use the dashboard efficiently.
+
+<article class="margin-top--lg">
+    <section class="row list_ZO3j">
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="./getting_started">
+                <h2>Getting Started</h2>
+                <p>Learn how to create a nanoStream account and manage your streams easily.</p>
+            </a>
+        </article>
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="./start_streaming.md">
+                <h2>Start Streaming</h2>
+                <p>Learn how to set up and start your live stream with nanoStream.</p>
+            </a>
+        </article>
+    </section>
+    <section class="row list_ZO3j">
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="./stream_overview.md">
+                <h2>Stream Overview</h2>
+                <p>Understand how to read stream data.</p>
+            </a>
+        </article>
+            <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="./adaptive_bitrate.md">
+                <h2>Adaptive Bitrate</h2>
+                <p>Learn how adaptive bitrate streaming works and how to configure it.</p>
+            </a>
+        </article>
+    </section>
+</article>
 
 ## Key features
 
