@@ -121,7 +121,7 @@ In the top right section, you can identify the version of the Webcaster API in u
 
 ### Toolbar
 
-The Toolbar, located below the webcaster, acts as your command center, providing quick access to essential functions (from left to right):
+The Toolbar, located below the webcaster, acts as your command center, providing quick access to essential functions (f.l.t.r.):
 
 - **Camera On/Off**: Toggle your camera.
 - **Audio On/Off**: Control your audio input.

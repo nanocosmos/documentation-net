@@ -266,9 +266,9 @@
 }
 
 .role-readonly {
-  border-color:rgb(2, 136, 209);
+  border-color: rgb(2, 136, 209);
   color: rgb(2, 136, 209);
-  
+
 }
 
 /* BEGINN ANALYTICS --> These classes were designed for the analytics sections. */
@@ -316,8 +316,8 @@
   font-size: 16px;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: lightgray;
-  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid gray;
+  color: gray;
   font-weight: 600;
 }
 
