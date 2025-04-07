@@ -75,6 +75,30 @@ const sidebars = {
       "items": [
         "dashboard/start_streaming",
         "dashboard/stream_overview",
+        "dashboard/live_processing",
+        "dashboard/code_snippets",
+        "dashboard/abr_transcoding",
+        "dashboard/secure_playback",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Organization Management",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "dashboard/organization_overview",
+        "dashboard/user_management",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Analytics",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "dashboard/analytics",
+        "dashboard/alerts_and_advices",
       ]
     },
     // {

@@ -165,7 +165,7 @@ To display them, select the desired feature from the **submenu** under the tabs.
 
 Assets for each process are displayed in a **tab-based structure**, depending on whether they belong to an **ABR stream** ( <span className="badge-streamgroup">Streamgroup (*n* Playouts)</span>) or a **single stream** (<span className="badge-noStreamgroup">Single Stream</span>). Users can switch between different quality levels for ABR streams, while single streams have only one quality level available.  
 
-### Thumbnails and/or Motion Clips 
+#### Thumbnails and/or Motion Clips 
 In the title row, you can press the **Refresh** button to update the thumbnail. Similarly, you can modify settings.¹ The refresh button is useful because the stream overview does not update dynamically. Since thumbnails or motion clips change based on the interval/duration settings, this button allows users to reload the latest updates.  
 
 Thumbnail- and motion clip-related information include:  

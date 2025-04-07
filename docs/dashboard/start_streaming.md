@@ -52,7 +52,7 @@ As your streaming requirements evolve, you may find the need to revise your tran
 
 ### Live Processing
 
-Live Processing lets you enhance your stream with additional automated features. You can either apply the same settings, by clicking on **Sync settings across profiles**, to all transcoding profiles (if using multiple) or configure them individually. <br/> Applying uniform settings is useful for **Live Replay**, while separate settings allow tailored configurations for different stream qualities.
+Live Processing lets you enhance your stream with additional automated features. You can either apply the same settings to all streams part of your ABR streamgroup by clicking on **Sync settings across profiles** or configure them individually. <br/> Applying uniform settings is useful for **Live Replay**, while separate settings allow tailored configurations for different stream qualities.
 
 :::info Enabling `live processing` features
 If you wish to utilize this feature, you would need to activate them and ensure that the corresponding pricing and payment options are set up. 
