@@ -290,12 +290,29 @@ const sidebars = {
                 "cloud/alerting",
                 "cloud/troubleshooting",
               ]
-            }
+            },
+            {
+              "type": "category",
+              "label": "Dashboard Releases",
+              "collapsible": false,
+              "collapsed": false,
+              "link": {
+                "type": 'generated-index',
+                "title": 'Dashboard Releases',
+                "description": 'Check out the latest nanoStream Analytics updates and learn more about the newest dashboard features & improvements!',
+                "slug": '/analytics/dashboard-releases',
+                "keywords": ['releases', 'version']
+              },
+              "items": [
+                "cloud/analytics-dashboard-releases-latest",
+                "cloud/analytics-dashboard-releases-history",
+              ]
+            },
           ],
         },
         {
           "type": "category",
-          "label": "API",
+          "label": "Analytics API",
           "collapsible": false,
           "collapsed": false,
           "link": {
@@ -310,13 +327,13 @@ const sidebars = {
             "cloud/analytics-api-error-codes",
             {
               "type": "category",
-              "label": "Releases",
+              "label": "API Releases",
               "collapsible": false,
               "collapsed": false,
               "link": {
                 "type": 'generated-index',
                 "title": 'API Releases',
-                "description": 'Check out the latest nanoStream Analytics updates and learn more about the newest dashboard and API features & improvements!',
+                "description": 'Check out the latest nanoStream Analytics updates and learn more about the newest API features & improvements!',
                 "slug": '/analytics/api-releases',
                 "keywords": ['releases', 'version']
               },
