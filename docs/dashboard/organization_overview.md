@@ -16,9 +16,15 @@ This page is divided into two tabs:
 
 The **Overview** tab provides insights into the current configuration of your organization.
 
+![Screenshot: Organization Overview](../assets/dashboard/orga-overview.png)
+*Screenshot: Organization Overview*
+
 ### Enabled Packages
 
 This section displays which product features are currently **enabled** for your organization. If a package is not available, its status will be shown as **Upgrade needed**.
+
+![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)
+*Screenshot: Enabled Packages*
 
 Available features include:
 
@@ -66,6 +72,9 @@ The **User Management**¹ tab lists all users associated with your organization.
 - filter users by **Role Level**
 - generate **invitation links** with specific roles
 - perform **quick actions** on users
+
+![Screenshot: User Management](../assets/dashboard/user-management.png)
+*Screenshot: User Management*
 
 The user table includes the following columns:
 

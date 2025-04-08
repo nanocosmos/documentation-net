@@ -22,6 +22,9 @@ Regardless of the method, you first need to create a stream.
 
 Navigate to [dashboard.nanostream.cloud/stream/create](https://dashboard.nanostream.cloud/stream/create).
 
+![Screenshot: Create new Stream](../assets/dashboard/create-stream.png)
+*Screenshot: Create new Stream*
+
 ### Tag(s)
 
 In the **Tag(s)** section you can add tag(s) to identify your stream more easily in the future. 
@@ -30,10 +33,15 @@ In the **Tag(s)** section you can add tag(s) to identify your stream more easily
 2. As you type (from the 3rd character), suggestions based on previously used tags will appear underneath the textfield. By clicking on a suggestion it will be added to the taglist.
 3. Click **Show all tags** to see your most recently used tags and select from them.  
 
+![Screenshot: Adding tags to a new stream](../assets/dashboard/create-stream-tags.png)
+*Screenshot: Adding tags to a new stream*
 
 ### Transcoding Profile(s)
 
 During the stream creation process live transcoding is already enabled by default. You have the option to add transcoding profiles and configure them according to your requirements. The default selection is pre-filled, but you can choose different settings. Ensure that the bitrate of each Transcoding Profile is lower than the ingest/passthrough bitrate or the profile above.
+
+![Screenshot: Adding transcoding to a new stream](../assets/dashboard/create-stream-add-abr.png)
+*Screenshot: Adding transcoding to a new stream*
 
 :::tip Adaptive Bitrate (ABR) and Live Transcoding
 To learn more about Adaptive Bitrate (ABR) and Live Transcoding, you can have a look here:
@@ -49,7 +57,6 @@ As your streaming requirements evolve, you may find the need to revise your tran
 - [Edit profiles](./abr_transcoding.md) or [Delete profiles](./abr_transcoding.md)
 :::
 
-
 ### Live Processing
 
 Live Processing lets you enhance your stream with additional automated features. You can either apply the same settings to all streams part of your ABR streamgroup by clicking on **Sync settings across profiles** or configure them individually. <br/> Applying uniform settings is useful for **Live Replay**, while separate settings allow tailored configurations for different stream qualities.
@@ -58,6 +65,9 @@ Live Processing lets you enhance your stream with additional automated features.
 If you wish to utilize this feature, you would need to activate them and ensure that the corresponding pricing and payment options are set up. 
 Contact us via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) to find the perfect solution for you!
 :::
+
+![Screenshot: Adding live processing to a new stream](../assets/dashboard/create-add-process.png)
+*Screenshot: Adding live processing to a new stream*
 
 - **Thumbnails** – Set the interval (10–3600 seconds) for capturing thumbnails. Lower values update previews more frequently.
 - **Motion Clips** – Define the clip duration (1–60 seconds) and the interval (10–3600 seconds) between clips. Shorter clips highlight key moments, while lower intervals ensure more frequent updates.
@@ -79,6 +89,9 @@ Contact us via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) to fin
 
 By clicking on **Add timecode** you can enable this feature. It allows precise synchronization or indexing of video content. You can set the time injection interval between 500 ms and 3600000 ms (1 hour), while we recommend: 1000-5000 ms. The default is 2000ms. 
 
+![Screenshot: Setting timecode injection to a new stream](../assets/dashboard/create-add-timecode.png)
+*Screenshot: Setting timecode injection to a new stream*
+
 ## Start Streaming
 
 After clicking on **Create New Stream**, you will be redirected to the **Easy Instructions to Your Live Stream** page. This page provides you with all the information required to start and share a stream, including the necessary steps and details for a seamless setup.
@@ -87,6 +100,9 @@ You can also access this page later via **Stream Overview → Get Instructions**
 :::info Please note
 All these informations are also available in the detailed **Stream Overview**.
 :::
+
+![Screenshot: New stream Overview](../assets/dashboard/new-stream.png)
+*Screenshot: New stream Overview*
 
 Under the Header of the page, you can see three buttons:
 - **Stream Overview**: Takes you to the detailed stream overview page with additional stream information.
@@ -112,12 +128,13 @@ Additionally, the dashboard offers the `secure` option (if enabled) to generate 
 
 The Webcaster interface is designed with simplicity and efficiency in mind, offering key elements that make live streaming easy.
 
+![Screenshot: nanoStream Webcaster](../assets/dashboard/webcaster.png)
+*Screenshot: nanoStream Webcaster*
+
 The Webcaster interface, shown in the screenshot, is divided into three main sections: 
 - **Top left**: The webcaster itself,
 - **Top right**: Real-time statistics *and*
 - **Bottom**: The stream details.
-
-In the top right section, you can identify the version of the Webcaster API in use.
 
 ### Toolbar
 
@@ -139,10 +156,15 @@ Tailor your streaming experience with the nanoStream Webcaster settings, accessi
 
 3. **Audio Configuration**: Select your preferred audio input device and set the maximum bitrate to ensure optimal audio quality during your stream.
 
+![Screenshot: nanoStream Webcaster Settings](../assets/dashboard/webcaster-settings.png)
+*Screenshot: nanoStream Webcaster Settings*
+
 ### Webcaster Statistics
 
 The statistics section provides crucial information, including *Packet Loss* (Packetloss) and *Round-Trip Time* (RTT). Packet Loss is a vital metric for checking stream health, while RTT offers insights into stream performance and responsiveness.
 
+![Screenshot: nanoStream Webcaster Statistics](../assets/dashboard/webcaster-stats.png)
+*Screenshot: nanoStream Webcaster Statistics*
 
 ## Ingesting with a separate live encoder software or hardware
 

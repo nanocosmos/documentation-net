@@ -6,10 +6,12 @@ sidebar_label: Secure Playback & Secure Token
 
 Secure Playback Tokens are a valuable tool that enhances the security of your streams by providing controlled access. With these tokens, you have the ability to decide who can play back your stream, ensuring that only authorized viewers can access your content. The regular playout URL alone will not grant playback privileges.
 
-
 ## Token Configuration
 
 One way to create a secure token for your stream(s) or organisation is to navigate to the left-hand menu and select the lock icon. This will take you to [dashboard.nanostream.cloud/secure/token](https://dashboard.nanostream.cloud/secure/token) where you can provide necessary information to generate the token. You can also find this dialog in different sections of the nanoStream Cloud dashboard (e.g., Code Snippets, Stream Overview).
+
+![Screenshot: Create Secure Token](../assets/dashboard/secure-token.png)
+*Screenshot: Create Secure Token*
 
 ### Required Information
 
@@ -32,6 +34,9 @@ By providing the required information and optionally configuring specific option
 ### Secure Token Overview
 
 Once you clicked on the **Create new token** button, you will be redirected to an overview page displaying the decoded details of the token you just created. This overview will include all the specifications you set up, such as the token target, expiration date, and any optional configurations you specified.
+
+![Screenshot: Secure Token Overview](../assets/dashboard/secure-token.png)
+*Screenshot: Secure Token Overview*
 
 Additionally, you will receive a security config object that you can copy. This object can be pasted into either the group object or the entries element of your player configuration.
 

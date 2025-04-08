@@ -29,6 +29,7 @@ The table below provides an overview of the key attributes in the stream list:
    - `created`: The stream has been created, but never been live
    - `live`: The stream is live right now
    - `deleted`: The stream was live and is not outputting footage anymore.
+   - `locked`: The stream was live and has been locked.
 - **Stream ID**: The column displays the unique identifier of each stream. If the stream is an [ABR](./abr_transcoding.md) stream it is also the streamgroup id.
 - **Stream name**: The streamname („XXXXX-YYYYY“) shows the organisation hash and the unique stream name assigned to each stream.
 - **Streamgroup**: Indicates whether the stream is an Adaptive Bitrate (ABR) stream. It shows the number of playouts for ABR streams, e.g. <span className="badge-streamgroup">Streamgroup (*n* Playouts)</span>, and for non-ABR streams, it displays <span className="badge-noStreamgroup">Single Stream</span>.
@@ -41,7 +42,10 @@ Wenn du bis zum Ende der Seite scrollst, dann findest Du die Pagniation. Dort ka
 
 At the top of the [dashboard.nanostream.cloud/stream](https://dashboard.nanostream.cloud/stream) page, you’ll find filters to help you quickly locate specific streams. The available filtering options include:
 
-- **State**: Filter streams by their state. This includes both standard states (`live`, `created`, `ended`) and additional states (`deleted`, `locked`) that are not visible in the regular stream list. Selecting `all` will only include `live`, `created`, and `ended`.
+![Screenshot: Streamlist Filter](../assets/dashboard/streams-filter.png)
+*Screenshot: Streamlist Filter*
+
+- **State**: Filter streams by their state. This includes both standard states (`live`, `created`, `ended`, `locked`) and additional state(s) (`deleted`) that are not visible in the regular stream list. Selecting `all` will only include `live`, `created`, `ended` and `locked`.
 - **Tags**: The tag filter allows you to look for streams based on specific tags. You can either manually type in the desired tag or choose from the existing tags that you have previously used. As you start typing at least 3 characters, the system will suggest tags that match the entered characters. To apply a tag, simply hit the "Enter" key after typing it.
 - **Date**: Filter streams by date range: Today, Yesterday, This Week, This Month, Past Month, Last 3 Months.
 - **Streamgroups**: Choose whether ABR stream groups should be displayed as a single entry or as individual streams. When this filter is enabled, all streams within a group appear separately. If disabled, they remain grouped, but each stream still shows its streamgroup id.
@@ -138,8 +142,7 @@ Each stream is listed in a details table, with an **Add Profile** button availab
 If your organization has enabled the secure streaming feature, this section displays your decoded logged-in session token information:
 
 - **JWT Token**
-- **Valid From**
-- **Valid Until**
+- **Valid From / Until**
 - **Optional Settings**
 - **Token Tag**
 

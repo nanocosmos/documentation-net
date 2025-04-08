@@ -43,6 +43,9 @@ If you have not created an account yet, you can [dashboard.nanostream.cloud/sign
 
 During the stream creation process live transcoding is already enabled by default. You have the option to add transcoding profiles and configure them according to your requirements. The default selection is pre-filled, but you can choose different settings. Ensure that the bitrate of each Transcoding Profile is lower than the ingest/passthrough bitrate or the profile above. Once you have completed the setup and created the stream, you can start broadcasting using your live encoder or the nanoStream Webcaster.
 
+![Screenshot: Adding transcoding during stream creation](../assets/dashboard/create-stream-add-abr.png)
+*Screenshot: Adding transcoding during stream creation*
+
 ## Modifying Transcoding Profiles After Stream Creation
 
 As your streaming requirements evolve, you may find the need to revise your transcoding profiles. Whether it was an oversight initially or a strategic shift, nanoStream ensures you have the tools to make post-creation adjustments effortlessly.
@@ -57,21 +60,33 @@ Beneath the **[Stream Overview](./stream_overview.md#single-stream-overview)** h
 
 At the bottom of the [stream details](./stream_overview.md#stream-overview) on the **Stream Overview** page, you'll find a button to **add a profile**. By clicking on it, a dialog will appear, allowing you to create a profile and transform your single stream into a stream group.
 
-### Integrating Additional Profiles to Your Streamgroup
+![Screenshot: Add new transcoding profile to single stream](../assets/dashboard/add-new-transcode.png)
+*Screenshot: Add new transcoding profile to single stream*
+
+### Adding Additional Profiles to Your Streamgroup
 
 Upon either initializing your stream as a streamgroup with transcoding profiles or transitioning it to one, the stream overview presents a refined interface, as illustrated in the accompanying screenshot.
 
-In the "Adaptive Bitrate (ABR) Stream Overview" section you can switch between various tabs to explore the passthrough and the associated transcoding profiles. On the bottom of this section, the **Add Profile** button stands ready. By clicking on it, you can effortlessly incorporate additional profiles to the streamgroup. Each added profile seamlessly integrates and becomes a cohesive part of the overarching streamgroup.
+In the **Adaptive Bitrate (ABR) Stream Overview** section you can switch between various tabs to explore the passthrough and the associated transcoding profiles. On the bottom of this section, the **Add Profile** button stands ready. By clicking on it, you can effortlessly incorporate additional profiles to the streamgroup. Each added profile seamlessly integrates and becomes a cohesive part of the overarching streamgroup.
 
-### Edit profiles
+![Screenshot: Adaptive Bitrate (ABR) Stream Overview](../assets/dashboard/abr-overview.png)
+*Screenshot: Adaptive Bitrate (ABR) Stream Overview*
+
+### Edit Transcoding Profiles
 
 Within the streamgroup, each profile is designed for adaptability. As you navigate, options to edit or remove specific profiles become apparent. Opting to **Edit profile** brings forth a the option to update the transcoding profile. 
 
-Upon selection, a side-by-side comparison layout emerges. On the left, you're presented with "Existing profile: settings for profile 1", showcasing the current configurations. In contrast, the right side displays "Proposed profile: new settings for profile 1", revealing potential modifications. Before any changes take effect, a confirmation is required, ensuring intentional adjustments. Nevertheless, if uncertainty strikes, the option to cancel remains readily available, providing flexibility in decision-making.
+![Screenshot: Edit Transcoding Profile](../assets/dashboard/edit-abr.png)
+*Screenshot: Edit Transcoding Profile*
 
-### Delete profiles
+Upon selection, a side-by-side comparison layout emerges. On the left, you're presented with **Current Transcoding Profile**, showcasing the current configurations. In contrast, the right side displays **New Transcoding Profile**, revealing potential modifications. Before any changes take effect, a confirmation is required, ensuring intentional adjustments. Nevertheless, if uncertainty strikes, the option to cancel remains readily available, providing flexibility in decision-making.
+
+### Delete Transcoding Profiles
 
 Alongside the edit function, the **Remove Profile** option is present for every transcoding profile. Initiating the removal action triggers a modal window, necessitating your confirmation for the deletion.
+
+![Screenshot: Delete Transcoding Profile](../assets/dashboard/remove-abr.png)
+*Screenshot: Delete Transcoding Profile*
 
 It's worth noting that post-deletion, the system intuitively restructures the extant profiles within the streamgroup. This automatic reorganization ensures that the streaming quality remains at its optimal level, even in the absence of the deleted profile.
 
@@ -93,6 +108,12 @@ On the playout page, you have the ability to adjust the stream quality manually 
 
 When in manual mode, you can switch between the stream qualities, including resolution, bitrate, and framerate, along with their corresponding streamnames. This gives you greater control over the playback experience and allows you to choose a specific quality that suits your preferences or requirements.
 
+![Screenshot: Switch Stream Quality](../assets/dashboard/switch-stream.png)
+*Screenshot: Switch Stream Quality*
+
 ## Setup Start Quality for code snippets
 
 In the Code Snippets section or page, you can adjust the start quality for a specific stream. Per default, the adaptation is set to **Auto**, which allows the player to dynamically adjust the stream quality based on the viewer's network conditions. However, you can choose to switch to manual mode and/or your desired quality.
+
+![Screenshot: Start Quality (ABR) for Code Snippets](../assets/dashboard/abr-startindex.png)
+*Screenshot: Start Quality (ABR) for Code Snippets *

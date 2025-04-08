@@ -24,6 +24,9 @@ To log into the nanoStream Dashboard:
 2. Enter your registered email and password.
 3. Click **Sign In** to access your dashboard and manage your live streaming workflow.
 
+![Screenshot: Sign in to nanoStream](../assets/dashboard/auth-signin.png)
+*Screenshot: Sign in to nanoStream*
+
 ### Invite 
 
 Users can also be invited to an existing organization within the nanoStream. This allows them to collaborate with team members and share streaming resources efficiently.
@@ -37,8 +40,10 @@ Learn more about roles and permissions in the [User Management](./user-managemen
 2. Enter your **Email**, and **Password**.
 3. Accept the terms and conditions before proceeding and click on **Start Streaming** to create your account.
 4. Verify your account by entering the verification code sent to your email.
-5. After logging in, you will automatically become part of the inviting organization with the assigned role set by the inviter.
+5. After logging in and verifying your account, you will automatically become part of the inviting organization with the assigned role set by the inviter.
 
+![Screenshot: Invitation to existing organization in nanoStream](../assets/dashboard/auth-invite.png)
+*Screenshot: Invitation to existing organization in nanoStream*
 
 ### Sign Up
 
@@ -51,11 +56,18 @@ If you are new to nanoStream, you need to create an account:
 6. Click the link or enter the verification code to confirm your account.
 7. Once verified, log in to start using the dashboard.
 
+![Screenshot: Signup to nanoStream](../assets/dashboard/auth-signup.png)
+*Screenshot: Signup to nanoStream*
+
 ### Upgrade to Premium
 
 Upon signing up, you may notice a **Trial Flag** in the dashboard appbar. This indicates that your account is currently in trial mode, which comes with certain limitations.
 
-To unlock the full potential of nanoStream, consider upgrading to a premium plan. Simply click the **"Upgrade to Premium"** button within the dashboard menu on the top right.
+
+![Screenshot: Upgrade from trial to premium](../assets/dashboard/trial-orga.png)
+*Screenshot: Upgrade from trial to premium*
+
+To unlock the full potential of nanoStream, consider upgrading to a premium plan. Simply click the blue **Upgrade to Premium** button within the dashboard menu on the top right.
 
 :::info Contact Us
 [Click here](https://www.nanocosmos.de/contact) to reach out to our team and gain access to the full range of nanoStream services.

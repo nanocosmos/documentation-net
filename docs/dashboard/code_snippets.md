@@ -6,6 +6,9 @@ sidebar_label: Code Snippets
 
 Embedding a live stream into your own website is incredibly simple with nanoStream. Each stream has a unique code snippet that is automatically updated to your setup, requiring you to only copy and paste it into the right place.
 
+![Screenshot: Code Snippets](../assets/dashboard/code-snippets.png)
+*Screenshot: Code Snippets*
+
 You can choose between two types of code snippets for embedding:
 
 - **iFrame Embed Tag** (recommended for quick integration)
@@ -24,6 +27,9 @@ You can find these snippets in multiple locations within the dashboard:
 
 For adaptive bitrate (ABR) playback, you can configure the **initial stream quality** that the player should start with.
 
+![Screenshot: Start Quality (ABR) for Code Snippets](../assets/dashboard/abr-startindex.png)
+*Screenshot: Start Quality (ABR) for Code Snippets*
+
 Options include:
 
 - **Automatic Switch** – The player chooses the best stream quality dynamically.
@@ -41,7 +47,10 @@ This affects the following parameters in the snippet:
 
 The Latency Control Mode defines how the player handles streaming latency, balancing between stability and speed depending on your requirements and network conditions.
 
-This setting affects the playback.latencyControlMode parameter in your nanoPlayer code snippet.
+![Screenshot: Latency Control Mode](../assets/dashboard/latency-control-mode.png)
+*Screenshot: Latency Control Mode*
+
+This setting affects the `playback.latencyControlMode` parameter in your nanoPlayer code snippet.
 
 You can choose from three modes:
 
@@ -68,6 +77,9 @@ Token info includes:
 - **Valid From / Until**
 - **Optional Settings**
 - **Token Tag**
+
+![Screenshot: Token Settings](../assets/dashboard/secure-code-snippet.png)
+*Screenshot: Token Settings*
 
 ## Code Snippets
 
