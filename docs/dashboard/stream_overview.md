@@ -10,8 +10,6 @@ If you have not created an account yet, you can [dashboard.nanostream.cloud/sign
 *If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
 :::
 
-## Stream List
-
 The [dashboard.nanostream.cloud/stream](https://dashboard.nanostream.cloud/stream) page provides a comprehensive list of all your streams, displaying their state (`created`, `live`, `ended`), **stream ID**, **stream name**, whether they are part of a **streamgroup**, and their **last update timestamp (UTC)**. Additionally, the pesence of **tags** allows for easier stream identification.
 If a stream is an ABR stream, it belongs to a so-called **streamgroup**. You can collapse the row and view the individual streams within this specific streamgroup, such as passthrough, *n* transcodes.
 
@@ -36,7 +34,10 @@ The table below provides an overview of the key attributes in the stream list:
 - **Last Updated**: Timestamp of the most recent update or modification to the stream.
 - **Tags**: Assigned tags or labels for categorizing and identifying streams.
 
-Wenn du bis zum Ende der Seite scrollst, dann findest Du die Pagniation. Dort kannst Du auswählen, wie viele Streams Du aufeinmal sehen willst (25,50,100,150) und durch die Seiten scrollen.
+At the bottom of this page, you can find the pagination, where you can decide how much streams (25, 50, 100, 150) you want to see at once. 
+
+![Screenshot: Stream list](../assets/dashboard/streams.png)
+*Screenshot: Stream list*
    
 ### Filter & Search
 
@@ -62,12 +63,18 @@ If you want to search for a specific stream based on its Stream ID or streamname
 
 The Stream Overview section provides a structured, tab-based interface that consolidates all essential details about an individual stream. It offers insights into the stream's configuration, playback status, and processing options.
 
+![Screenshot: Example Stream Overview (Streamgroup)](../assets/dashboard/stream-overview.png)
+*Screenshot: Example Stream Overview (Streamgroup)*
+
 This page serves as a central hub where you can:
 - Access key metadata, including streaming URLs and (if enabled) security tokens.
 - Monitor the stream's state, creation date, and whether it belongs to a single stream or an ABR stream group.
 - Perform quick actions such as starting the nanoStream Webcaster, watching the stream, retrieving instructions, or —if permitted— stopping, locking, or deleting the stream.
 
 Each Stream Overview consists of three main elements, which ensures clarity, easy access to key actions, and a streamlined workflow for managing streams efficiently.
+
+![Screenshot: Stream Overview Header](../assets/dashboard/stream-header.png)
+*Screenshot:  Stream Overview Header*
 
 1. **Header** (Visible across all tabs, f.l.t.r.)
  - Stream State
@@ -91,14 +98,16 @@ Each Stream Overview consists of three main elements, which ensures clarity, eas
 ### Stream Overview
 
 The Stream Overview UI changes depending on the stream-type:
-- **Single Stream** → *Stream* (<span className="badge-noStreamgroup">Single Stream</span>)  
-- **Adaptive Bitrate (ABR) Stream** → *Streamgroup* (<span className="badge-streamgroup">*n* Playouts</span>)  
+- **Single Stream** → *Stream Details* (<span className="badge-noStreamgroup">Single Stream</span>)  
+ ![Screenshot: Single Stream View](../assets/dashboard/non-abr.png)
+- **Adaptive Bitrate (ABR) Stream** → *Streamgroup Details* (<span className="badge-streamgroup">Streamgroup (*n* Playouts)</span>)
+ ![Screenshot: Single Stream View](../assets/dashboard/streamgroup-overview.png)
 
 #### Stream(group) Details
 
 For streams with Adaptive Bitrate enabled, the Stream(group) details section is more compact than the single stream view.
 
-| Label         | <span className="badge-noStreamgroup">Single Stream</span> | <span className="badge-streamgroup">*n* Playouts</span> |
+| Label         | <span className="badge-noStreamgroup">Single Stream</span> | <span className="badge-streamgroup">Streamgroup (*n* Playouts)</span> |
 |--------------------|--------------|-------------------|
 | **Streamgroup ID** | ✅            | ✅               |
 | **Updated At**     | ✅            | ✅               |
@@ -118,11 +127,17 @@ These details are required to start a stream. To copy the information easily, cl
 - RTMP Ingest Streamname
 - RTMP Ingest URL 
 
+![Screenshot: Ingest Information](../assets/dashboard/ingest-infos.png)
+*Screenshot: Ingest Information*
+
 #### Adaptive Bitrate (ABR) Stream Overview  <span className="badge-streamgroup">Streamgroup (*n* Playouts)</span>
 
 For ABR-enabled streams, this additional section breaks down the streams in the stream group. The streams are categorized as:
 - Passthrough (original stream)
 - Transcoded Streams (*n* profiles)
+
+![Screenshot: Adaptive Bitrate (ABR) Stream Overview](../assets/dashboard/abr-overview.png)
+*Screenshot: Adaptive Bitrate (ABR) Stream Overview*
 
 Each stream is listed in a details table, with an **Add Profile** button available (depending on access level and organization limits).
 
@@ -147,6 +162,9 @@ If your organization has enabled the secure streaming feature, this section disp
 - **Token Tag**
 
 When sharing the live playout URL, this token is applied, ensuring transparency regarding its usage.
+
+![Screenshot: Secure Playback Token Section in Stream Overview](../assets/dashboard/secure-playback-token.png)
+*Screenshot: Secure Playback Token Section in Stream Overview*
 
 #### H5Live Playout
 View the live playout URL for real-time streaming:
@@ -181,6 +199,9 @@ Thumbnail- and motion clip-related information include:
 
 For motion clips, the **Duration** of the generated assets is also displayed.  
 
+![Screenshot: Thumbnail & Motion Clip Overview](../assets/dashboard/thumbs-motionclip.png)
+*Screenshot: Thumbnail & Motion Clip Overview*
+
 #### Live replay
 
 The **Live Replay** details includes:  
@@ -202,6 +223,9 @@ Replay files and access details are listed below and categorized as follows:
 URLs always belong to their respective streams. For **ABR streams**, the URLs are grouped accordingly and listed separately.
 :::
 
+![Screenshot: Live Replay Overview](../assets/dashboard/live-replay.png)
+*Screenshot: Live Replay Overview*
+
 #### Recording
 
 The Detail view for the **Recording** live process include:  
@@ -221,12 +245,18 @@ Files are sorted by:
 URLs always belong to their respective streams. For **ABR streams**, the URLs are grouped accordingly and listed separately.
 :::
 
+![Screenshot: Recordings Overview](../assets/dashboard/recordings.png)
+*Screenshot: Recordings Overview*
+
 ### Code Snippets
 
 The **Code Snippet** tab provides the necessary details to embed the **nanoStream H5Live Player** effortlessly into your website.  
 
 - **iFrame Code Snippet**
 - **HTML Code Snippet**
+
+![Screenshot: Code snippets with expanded settings](../assets/dashboard/code-snippets-expanded-settings.png)
+*Screenshot: Code snippets with expanded settings*
 
 Using the **Code Snippet Settings** collapsible section, users can modify these snippets. Available settings include:  
 

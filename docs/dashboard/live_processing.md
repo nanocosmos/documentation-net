@@ -40,6 +40,9 @@ If either **Thumbnails** or **Motion Clips**, or both, are enabled, they will ap
 
 ¹ You can edit settings depending on your access level.
 
+![Screenshot: Thumbnail & Motion Clip Overview](../assets/dashboard/thumbs-motionclip.png)
+*Screenshot: Thumbnail & Motion Clip Overview*
+
 ## Live Replay
 
 Live Replay allows users to access and share previously streamed content almost instantly.
@@ -55,6 +58,9 @@ Live Replay allows users to access and share previously streamed content almost 
 
 ¹ Editable based on your access level.
 
+![Screenshot: Live Replay Overview](../assets/dashboard/live-replay.png)
+*Screenshot: Live Replay Overview*
+
 ## Recording
 
 The Recording segment stores your live stream sessions for future access and distribution.
@@ -67,6 +73,9 @@ The Recording segment stores your live stream sessions for future access and dis
    - Recording File (video file of the session)
 
 ¹ Editable based on your access level.
+
+![Screenshot: Recordings Overview](../assets/dashboard/recordings.png)
+*Screenshot: Recordings Overview*
 
 ## Editing Live Processing Settings
 
