@@ -6,9 +6,20 @@ sidebar_label: Live Processing
 
 Live streaming goes beyond simply delivering video and audio to viewers. **Live Processing** adds advanced functionalities to your streams, enabling features like recording, thumbnail and motion clip generation and replay capabilities. These features enhance the viewer experience and give broadcasters greater flexibility in managing and optimizing their live content in real-time. With the **`Bintu API v1.24.1`**, we introduced several new live processing capabilities, that can be configured easily during stream setup or adjusted as the broadcasters streaming requirements evolve. 
 
+:::info Prerequisites
+To make use of `live processing`, the feature must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
+
+You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
+In the **[Enabled Packages](./organization_overview#enabled-packages)** section, locate the entry for `live processing`. If it shows **Upgrade needed**, please contact us.
+
+![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
+
+To activate this feature or learn more about available plans, feel free to reach out via [nanocosmos.de/contact](https://www.nanocosmos.de/contact). We're happy to assist you in finding the best setup for your use case.
+:::
+
 ## Configuring a Live Process
 
-You can configure Live Processing features during the [stream creation process](start_streaming#live-processing) or adjust them later from the **Stream Overview → Live Processing**.
+You can configure Live Processing features during the [stream creation process](start_streaming#live-processing) or adjust them later from the **[Stream Overview](./stream_overview) → [Live Processing](./start_streaming#live-processing)**.
 
 When **transcoding** is enabled for your stream during the stream creation, a toggle appears for each stream in the **Live Processing** section. You can:
 
@@ -21,11 +32,25 @@ When **transcoding** is enabled for your stream during the stream creation, a to
 - **Use consistent settings**: For easier management, use the **Sync settings across profiles** button if your stream uses multiple transcoding profiles.
 :::
 
+:::tip How to utilize
+We’ve outlined several [example use cases](../cloud/live_processing#example-use-cases) to demonstrate how our processes can provide solutions for various scenarios.
+:::
+
 ## Overview of Live Processing Options
 
 The Live Processing feature has its own tab named **[Live Processing](start_streaming#live-processing)** in the **[Stream Overview](start_streaming)**. This tab displays all enabled live processes, incdicating whether they are active or not and its setup and assets.
 
 If you have omitted live processes during your stream's setup, they can always be integrated later through the stream overview. You can add, remove and modify live processing settings at any time.
+
+:::info Learn More About Live Processing Features
+To get a deeper understanding of how Live Processing can enhance your streaming experience, explore the **technical documentation** on each process below.
+
+- **[Recording](../cloud/live_processing#recording)**: Capture and store your streams for later access.
+- **[Thumbnail](../cloud/live_processing#thumbnail)**: Generate visual previews at specified intervals.
+- **[Replay](../cloud/live_processing#replay)**: Enable instant replays for a better viewer experience.
+- **[Motion Clip](../cloud/live_processing#motion-clip)**: Create dynamic clips of important moments in your stream.
+:::
+
 
 ## Thumbnails and/or Motion Clips 
 

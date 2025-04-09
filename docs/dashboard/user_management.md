@@ -6,6 +6,17 @@ sidebar_label: User Management
 
 The **User Management** tab of the nanoStream Dashboard allows organization administrators to manage user access and their roles. You can access the **My Organisation** view via the user icon in the top right (desktop) or through the **Account** section in the mobile menu, or by navigating directly to: [dashboard.nanostream.cloud/organisation/users](https://dashboard.nanostream.cloud/organisation/users).
 
+:::info Role-Based Access Control (RBAC)
+Role-Based Access Control (RBAC) in **nanoStream** enables efficient management of user roles and permissions, ensuring secure and controlled access to streams.
+
+- [Concept and Benefits](../cloud/user_roles#concept-and-benefits): Understand the advantages of RBAC for security and user management.
+- [User Roles](../cloud/user_roles#user-roles-in-nanostream-cloud): Learn about the predefined user roles and their associated responsibilities.
+- [High-level Permission Overview](../cloud/user_roles#high-level-permission-overview): Explore the permissions available for each user role and how they control access.
+
+👉 Dive into the technical details in the [User Management](../cloud/user_roles) documentation.
+:::
+
+
 ![Screenshot: User Management](../assets/dashboard/user-management.png)
 *Screenshot: User Management*
 

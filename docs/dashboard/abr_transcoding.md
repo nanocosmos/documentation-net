@@ -113,7 +113,7 @@ When in manual mode, you can switch between the stream qualities, including reso
 
 ## Setup Start Quality for code snippets
 
-In the Code Snippets section or page, you can adjust the start quality for a specific stream. Per default, the adaptation is set to **Auto**, which allows the player to dynamically adjust the stream quality based on the viewer's network conditions. However, you can choose to switch to manual mode and/or your desired quality.
+In the [**Code Snippets section**](./code_snippets) page, you can adjust the start quality for a specific stream. Per default, the adaptation is set to **Auto**, which allows the player to dynamically adjust the stream quality based on the viewer's network conditions. However, you can choose to switch to manual mode and/or your desired quality.
 
 ![Screenshot: Start Quality (ABR) for Code Snippets](../assets/dashboard/abr-startindex.png)
 *Screenshot: Start Quality (ABR) for Code Snippets *

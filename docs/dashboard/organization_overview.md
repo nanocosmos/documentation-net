@@ -4,13 +4,13 @@ title: Organization Overview
 sidebar_label: Organization Overview
 ---
 
-The **Organization Overview** page provides a detailed breakdown of your organization’s configuration and user management.  
-It can be accessed on desktop devices via the profile icon in the top right corner or on mobile devices through the menu under the **Account** section. At the top of the page, you’ll see the **Organization Name** and two chips indicating the **Support Level** and **Analytics Level**.
+The **Organization Overview** page provides a detailed breakdown of your organization’s configuration and user management. Simply navigate to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation)
+It can be accessed manually on desktop devices via the profile icon in the top right corner or on mobile devices through the menu under the **Account** section. At the top of the page, you’ll see the **Organization Name** and two chips indicating the **Support Level** and **Analytics Level**.
 
 This page is divided into two tabs:
 
-- **Overview** – Displays settings, access, and configuration  
-- **User Management** – Manages users and their permissions
+- **Overview** ([dashboard.nanostream.cloud/organisation/overview](https://dashboard.nanostream.cloud/organisation/overview)) – Displays settings, access, and configuration  
+- **User Management** ([dashboard.nanostream.cloud/organisation/users](https://dashboard.nanostream.cloud/organisation/users)) – Manages users and their permissions
 
 ## Overview
 
@@ -40,15 +40,16 @@ Available features include:
 
 ### API Access
 
-Depending on your permissions, you will see relevant security tokens and keys for API access:
+Depending on your permissions, you will see relevant security tokens and keys for API access.
+
+:::danger Security Disclaimer
+API keys are sensitive credentials. Do not share them in public environments (e.g., GitHub, client-side JavaScript, forums). Always follow best practices and limit access scopes where possible.
+:::
 
 - **Bintu Token** – A session-based token automatically generated upon login. Required for most nanoStream dashboard actions.
 - **API Key** – A master key with access to all API features. Handle with extreme care.
 - **Player Key** – Used for embedding and controlling the nanoPlayer securely.
 
-:::warning Security Disclaimer
-API keys are sensitive credentials. Do not share them in public environments (e.g., GitHub, client-side JavaScript, forums). Always follow best practices and limit access scopes where possible.
-:::
 
 ### Webhook Config
 
@@ -73,9 +74,6 @@ The **User Management**¹ tab lists all users associated with your organization.
 - generate **invitation links** with specific roles
 - perform **quick actions** on users
 
-![Screenshot: User Management](../assets/dashboard/user-management.png)
-*Screenshot: User Management*
-
 The user table includes the following columns:
 
 - **Permission Level**
@@ -85,3 +83,12 @@ The user table includes the following columns:
 - **Quick actions** (Reset User Token, Delete User)
 
 ¹Accessible depending on access level
+
+:::info Learn More About User Management in nanoStream
+User Management in nanoStream allows you to efficiently manage user roles and permissions, ensuring secure and controlled access to streams.
+
+👉 Explore the full [User Management](./user_management) documentation for in-depth guidance and best practices.
+:::
+
+![Screenshot: User Management](../assets/dashboard/user-management.png)
+*Screenshot: User Management*

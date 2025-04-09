@@ -4,7 +4,13 @@ title: Analytics
 sidebar_label: Analytics
 ---
 
-As the digital landscape progresses, real-time monitoring and analytics play a crucial role in ensuring the efficiency and performance of live streams. Integrating nanoStream Analytics API with the nanoStream Cloud Customer Dashboard enhances your ability to monitor and analyze live streams in terms of performance and the quality of service.
+As the digital landscape progresses, real-time monitoring and analytics play a crucial role in ensuring the efficiency and performance of live streams. Integrating nanoStream Analytics API with the nanoStream Dashboard enhances your ability to monitor and analyze live streams in terms of performance and the quality of service.
+
+:::tip Before starting
+To begin, please sign in using your nanoStream account credentials. <br/>
+If you have not created an account yet, you can [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) or reach out to our dedicated sales team via the [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.net. <br/>
+*If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
+:::
 
 ## Getting Started
 
@@ -70,6 +76,10 @@ This table and its data is ideal for:
 This section provides a time series visualization of the **maximum number of concurrent H5Live viewers** for your organization's streams. This chart gives you a clear view of viewer engagement over a selected time frame.
 The data is displayed in an interactive line chart.
 
+:::tip your benefit
+This feature helps in understanding your audience's behavior, peak viewing times, and helps in forecasting future trends based on past data.
+:::
+
 Hovering over the chart will display tooltip data, revealing exact numbers of concurrent viewers and the corresponding time stamp. <br/>
 You can filter the time series based on three presets on the top right:
 
@@ -85,6 +95,11 @@ You can filter the time series based on three presets on the top right:
 The **Byte Usage** section offers a detailed breakdown of the data usage patterns, focusing specifically on ingest (data being sent to the server) and playout (data being broadcasted to viewers) traffic.
 
 The chart provides a dual-layered visual comparison, with separate lines depicting the byte usage for both ingest and playout. This allows you to quickly discern which aspect of your streaming operation is consuming more bandwidth at any given time.
+
+:::info your Benefit
+This metric provides a comprehensive look at your streaming infrastructure's efficiency, helping identify potential bottlenecks or areas for optimization in your data handling process.
+:::
+
 
 By hovering over the chart, users can see tooltip data, pinpointing exact byte usage values and their respective timestamps. <br/>
 You can filter the time series based on three presets on the top right:

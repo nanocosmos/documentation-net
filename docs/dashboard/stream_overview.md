@@ -4,19 +4,13 @@ title: Stream Overview
 sidebar_label: Stream Overview
 ---
 
+The [dashboard.nanostream.cloud/stream](https://dashboard.nanostream.cloud/stream) page provides a comprehensive list of all your streams, displaying their state (`created`, `live`, `ended`), **stream ID**, **stream name**, whether they are part of a **streamgroup**, and their **last update timestamp (UTC)**. Additionally, the pesence of **tags** allows for easier stream identification.    
+If a stream is an ABR stream, it belongs to a so-called **streamgroup**. You can collapse the row and view the individual streams within this specific streamgroup, such as passthrough, *n* transcodes.
+
 :::tip Before starting
 To begin, please sign in using your nanoStream account credentials. <br/>
 If you have not created an account yet, you can [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) or reach out to our dedicated sales team via the [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.net. <br/>
 *If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
-:::
-
-The [dashboard.nanostream.cloud/stream](https://dashboard.nanostream.cloud/stream) page provides a comprehensive list of all your streams, displaying their state (`created`, `live`, `ended`), **stream ID**, **stream name**, whether they are part of a **streamgroup**, and their **last update timestamp (UTC)**. Additionally, the pesence of **tags** allows for easier stream identification.
-If a stream is an ABR stream, it belongs to a so-called **streamgroup**. You can collapse the row and view the individual streams within this specific streamgroup, such as passthrough, *n* transcodes.
-
-:::tip Adaptive Bitrate (ABR) and Live Transcoding
-To learn more about Adaptive Bitrate (ABR) and Live Transcoding, you can have a look here:
-- [What is Adaptive Bitrate Playback?](./abr_transcoding.md)
-- [What is Live Transcoding?](./abr_transcoding.md)
 :::
 
 ### Stream List Overview
@@ -34,7 +28,7 @@ The table below provides an overview of the key attributes in the stream list:
 - **Last Updated**: Timestamp of the most recent update or modification to the stream.
 - **Tags**: Assigned tags or labels for categorizing and identifying streams.
 
-At the bottom of this page, you can find the pagination, where you can decide how much streams (25, 50, 100, 150) you want to see at once. 
+At the bottom of this page, you can find the pagination, where you can decide how many streams (25, 50, 100, 150) you want to per page.
 
 ![Screenshot: Stream list](../assets/dashboard/streams.png)
 *Screenshot: Stream list*
@@ -51,7 +45,7 @@ At the top of the [dashboard.nanostream.cloud/stream](https://dashboard.nanostre
 - **Date**: Filter streams by date range: Today, Yesterday, This Week, This Month, Past Month, Last 3 Months.
 - **Streamgroups**: Choose whether ABR stream groups should be displayed as a single entry or as individual streams. When this filter is enabled, all streams within a group appear separately. If disabled, they remain grouped, but each stream still shows its streamgroup id.
 
-:::info Search Streams
+:::tip Search Streams
 If you want to search for a specific stream based on its Stream ID or streamname, you can use the search field in the top app bar that is available on every page. Please note the following:
 
 - A valid nanoStream Stream ID or streamname is required. There are no suggestions made.
@@ -69,7 +63,7 @@ The Stream Overview section provides a structured, tab-based interface that cons
 This page serves as a central hub where you can:
 - Access key metadata, including streaming URLs and (if enabled) security tokens.
 - Monitor the stream's state, creation date, and whether it belongs to a single stream or an ABR stream group.
-- Perform quick actions such as starting the nanoStream Webcaster, watching the stream, retrieving instructions, or —if permitted— stopping, locking, or deleting the stream.
+- Perform quick actions such as starting the [nanoStream Webcaster](./start_streaming#ingesting-with-the-nanostream-webcaster), watching the stream, retrieving instructions, or —if permitted— stopping, locking, or deleting the stream.
 
 Each Stream Overview consists of three main elements, which ensures clarity, easy access to key actions, and a streamlined workflow for managing streams efficiently.
 
@@ -84,16 +78,16 @@ Each Stream Overview consists of three main elements, which ensures clarity, eas
  - Stream ID
 
 2. **Quick Action Buttons** (Visible across all tabs, f.l.t.r.)
- - Start nanoStream Webcaster
+ - Start [nanoStream Webcaster](./start_streaming#ingesting-with-the-nanostream-webcaster)
  - Watch Stream
- - [Get Instructions](./start_streaming.md#start-streaming)
+ - [Get Instructions](./start_streaming#start-streaming)
  - Stop & Lock Stream (only if the stream is live and the user has the necessary permissions)
  - Delete Stream (only if the user has the necessary permissions)
 
 3. **Tabs for Detailed Management**
- - **Stream Overview** – General information about the stream
- - **Live Processing** – Configuration of live processing features
- - **Code Snippets** – Ready-to-use implementation snippets
+ - **[Stream Overview](#stream-overview)** – General information about the stream
+ - **[Live Processing](#live-processing)** – Configuration of live processing features
+ - **[Code Snippets](#code-snippets)** – Ready-to-use implementation snippets
 
 ### Stream Overview
 
@@ -102,6 +96,12 @@ The Stream Overview UI changes depending on the stream-type:
  ![Screenshot: Single Stream View](../assets/dashboard/non-abr.png)
 - **Adaptive Bitrate (ABR) Stream** → *Streamgroup Details* (<span className="badge-streamgroup">Streamgroup (*n* Playouts)</span>)
  ![Screenshot: Single Stream View](../assets/dashboard/streamgroup-overview.png)
+
+:::info Learn more about Adaptive Bitrate
+Adaptive Bitrate (ABR) ensures seamless playback quality, even under unstable network conditions. It switches between multiple stream qualities depending on the viewer’s bandwidth.
+
+👉 Dive into the [Adaptive Bitrate and Transcoding section](./abr_transcoding) to understand how it works and when to use it.
+:::
 
 #### Stream(group) Details
 
@@ -116,7 +116,7 @@ For streams with Adaptive Bitrate enabled, the Stream(group) details section is 
 | **Tags**¹  | ✅ | ❌² |
 | **Push URL**¹  | ✅ | ❌² | 
 
-¹Editable depending on access level <br/>
+¹Editable depending on access level    
 ²Information can be found in the [Streamgroup Details](#streamgroup-details-streamgroup-n-playouts) section
 
 
@@ -163,6 +163,11 @@ If your organization has enabled the secure streaming feature, this section disp
 
 When sharing the live playout URL, this token is applied, ensuring transparency regarding its usage.
 
+:::info Enable secure playback
+**nanoStream** provides a `secure` feature to enable secure playback. This feature lets you customize token with settings like expiration date, not-before date, client IP, domain, user ID, or a tag for enhanced security.   
+You can verify whether this feature is available for your organization by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard. *To enable this feature for your organization, contact us via [nanocosmos.de/contact](https://www.nanocosmos.de/contact)*.
+:::
+
 ![Screenshot: Secure Playback Token Section in Stream Overview](../assets/dashboard/secure-playback-token.png)
 *Screenshot: Secure Playback Token Section in Stream Overview*
 
@@ -184,10 +189,21 @@ If your organization has enabled the `vod` feature, VOD recordings will be liste
 If your organization has enabled `live processing` features, their assets will be listed here.  
 To display them, select the desired feature from the **submenu** under the tabs. As shown in the screenshot, the currently selected process is highlighted in light orange. Clicking on a process reveals its associated details below.  
 
+:::info Prerequisites
+To make use of `live processing`, the feature must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
+
+You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
+In the **[Enabled Packages](./organization_overview#enabled-packages)** section, locate the entry for `live processing`. If it shows **Upgrade needed**, please contact us.
+
+![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
+
+To activate this feature or learn more about available plans, feel free to reach out via [nanocosmos.de/contact](https://www.nanocosmos.de/contact). We're happy to assist you in finding the best setup for your use case.
+:::
+
 Assets for each process are displayed in a **tab-based structure**, depending on whether they belong to an **ABR stream** ( <span className="badge-streamgroup">Streamgroup (*n* Playouts)</span>) or a **single stream** (<span className="badge-noStreamgroup">Single Stream</span>). Users can switch between different quality levels for ABR streams, while single streams have only one quality level available.  
 
 #### Thumbnails and/or Motion Clips 
-In the title row, you can press the **Refresh** button to update the thumbnail. Similarly, you can modify settings.¹ The refresh button is useful because the stream overview does not update dynamically. Since thumbnails or motion clips change based on the interval/duration settings, this button allows users to reload the latest updates.  
+In the title row, you can press the **Refresh** button to update the thumbnail. Similarly, you can modify settings, depending on access level. The refresh button is useful because the stream overview does not update dynamically. Since thumbnails or motion clips change based on the interval/duration settings, this button allows users to reload the latest updates.  
 
 Thumbnail- and motion clip-related information include:  
 
@@ -255,12 +271,17 @@ The **Code Snippet** tab provides the necessary details to embed the **nanoStrea
 - **iFrame Code Snippet**
 - **HTML Code Snippet**
 
-![Screenshot: Code snippets with expanded settings](../assets/dashboard/code-snippets-expanded-settings.png)
-*Screenshot: Code snippets with expanded settings*
-
 Using the **Code Snippet Settings** collapsible section, users can modify these snippets. Available settings include:  
 
 - **Start Quality** (for ABR streams)  
 - **Latency Control Mode**  
 
 If your organization is part of a `secure` setup, an additional **Token Settings** section is available. Here, users can generate a custom token, which is displayed in a structured format. When sharing the **live playout URL**, this token is automatically applied, ensuring transparency regarding its usage.  
+
+:::tip Learn more about embedding nanoPlayer
+👉 Dive into the [Code Snippets page](./code_snippets) for detailed instructions on how to integrate nanoPlayer into your website.
+:::
+
+
+![Screenshot: Code snippets with expanded settings](../assets/dashboard/code-snippets-expanded-settings.png)
+*Screenshot: Code snippets with expanded settings*

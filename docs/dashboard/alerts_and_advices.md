@@ -6,8 +6,16 @@ sidebar_label: Alert and Advices
 
 Alerts and advices are tools provided by nanoStream to give you real-time feedback and recommendations about your live streams. They provide invaluable insights into the performance of your live streams, potential issues, and even suggestions on how to enhance the viewer experience.
 
+To start, please navigate to [dashboard.nanostream.cloud/alerts](https://dashboard.nanostream.cloud/alerts).
+
 ![Screenshot: Notifications Overview](../assets/dashboard/alerts-overview.png)
 *Screenshot: Notifications Overview*
+
+:::tip Before starting
+To begin, please sign in using your nanoStream account credentials. <br/>
+If you have not created an account yet, you can [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) or reach out to our dedicated sales team via the [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.net. <br/>
+*If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
+:::
 
 ## Alerts
 
@@ -132,5 +140,7 @@ Clicking on the bell reveals a list of recent alerts, displaying the following i
 Clicking on an item of this list opens the **Alert Overview** panel.
 
 The alert list displays alerts from the **last 15 minutes**. To view **all alerts and advices**, click the expand arrow at the top right of the container.  
-**Note:** Advices are not shown in this container - to see them, go to [nanostream.cloud/alerts](https://nanostream.cloud/alerts).
 
+:::note
+Advices are not shown in this container - to see them, go to [nanostream.cloud/alerts](https://nanostream.cloud/alerts).
+:::

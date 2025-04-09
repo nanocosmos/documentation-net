@@ -19,7 +19,7 @@ This documentation explains the key features and how to use the dashboard effici
             </a>
         </article>
         <article class="col col--6 margin-bottom--lg">
-            <a class="card padding--lg cardContainer_Uewx" href="./start_streaming.md">
+            <a class="card padding--lg cardContainer_Uewx" href="./start_streaming">
                 <h2>Start Streaming</h2>
                 <p>Learn how to set up and start your live stream with nanoStream.</p>
             </a>
@@ -27,13 +27,13 @@ This documentation explains the key features and how to use the dashboard effici
     </section>
     <section class="row list_ZO3j">
         <article class="col col--6 margin-bottom--lg">
-            <a class="card padding--lg cardContainer_Uewx" href="./stream_overview.md">
+            <a class="card padding--lg cardContainer_Uewx" href="./stream_overview">
                 <h2>Stream Overview</h2>
                 <p>Understand how to read stream data.</p>
             </a>
         </article>
             <article class="col col--6 margin-bottom--lg">
-            <a class="card padding--lg cardContainer_Uewx" href="./adaptive_bitrate.md">
+            <a class="card padding--lg cardContainer_Uewx" href="./abr_transcoding">
                 <h2>Adaptive Bitrate</h2>
                 <p>Learn how adaptive bitrate streaming works and how to configure it.</p>
             </a>

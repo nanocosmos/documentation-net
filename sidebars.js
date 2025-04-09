@@ -101,31 +101,6 @@ const sidebars = {
         "dashboard/alerts_and_advices",
       ]
     },
-    // {
-    //   "type": "category",
-    //   "label": "Features & Functions",
-    //   "collapsible": true,
-    //   "collapsed": false,
-    //   "items": [
-    //     "cloud-frontend-v3/Dashboard_Start_Streaming",
-    //     "cloud-frontend-v3/Dashboard_Stream_Overview",
-    //     "cloud-frontend-v3/Dashboard_ABR_Transcoding",
-    //     "cloud-frontend-v3/Dashboard_Live_Processing",
-    //     "cloud-frontend-v3/Dashboard_Secure",
-    //     "cloud-frontend-v3/Dashboard_nanoPlayer",
-    //     "cloud-frontend-v3/Dashboard_User_Roles"
-    //   ]
-    // },
-    // {
-    //   "type": "category",
-    //   "label": "Analytics",
-    //   "collapsible": true,
-    //   "collapsed": false,
-    //   "items": [
-    //     "cloud-frontend-v3/Dashboard_Metrics",
-    //     "cloud-frontend-v3/Dashboard_Alerting",
-    //   ]
-    // },
   ],
   "H5Live Player": [
     {
