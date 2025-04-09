@@ -21,7 +21,7 @@ To activate this feature or learn more about available plans, feel free to reach
 <article class="margin-top--lg">
     <section class="row list_ZO3j">
         <article class="col col--6 margin-bottom--lg">
-            <a class="card padding--lg cardContainer_Uewx" href="../cloud-frontend-v3/Dashboard_Live_Processing">
+            <a class="card padding--lg cardContainer_Uewx" href="../dashboard/live_processing">
                 <h2 class="text--truncate cardTitle_dwRT" title="Installation">Dashboard</h2>
                 <p class="text--truncate cardDescription_mCBT">
                     To configure the live processing options, follow the steps during the stream creation.

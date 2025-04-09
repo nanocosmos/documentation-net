@@ -15,7 +15,7 @@ This section provides a straightforward guide to initiate your journey with Webc
 
 ## Prerequisites
 - [Download](https://github.com/nanocosmos/webcaster/) and include the Webcaster JavaScript file in your project.
-- Create a new stream. Read about stream creation via the nanoStream Cloud dashboard [here](../cloud-frontend-v3/Dashboard_Start_Streaming).
+- Create a new stream. Read about stream creation via the nanoStream Cloud dashboard [here](../dashboard/start_streaming).
 - Basic understanding of TypeScript or JavaScript is advantageous.
 
 ## Implementation
