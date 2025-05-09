@@ -98,7 +98,7 @@ Stream Management is done with our bintu dashboard and API. You will obtain and 
 <article class="margin-top--lg">
     <section class="row list_ZO3j">
         <article class="col col--6 margin-bottom--lg">
-            <a class="card padding--lg cardContainer_Uewx" href="/docs/cloud-frontend-v3/Dashboard_Overview">
+            <a class="card padding--lg cardContainer_Uewx" href="/docs/dashboard/overview">
                 <h2 class="text--truncate cardTitle_dwRT" title="Installation">Dashboard</h2>
                 <p class="text--truncate cardDescription_mCBT">
                     The nanoStream Cloud Dashboard is a web-based tool implemented and designed to provide users with an intuitive and comprehensive overview of their streaming activities.

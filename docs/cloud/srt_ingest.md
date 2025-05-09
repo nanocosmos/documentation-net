@@ -163,7 +163,7 @@ For ABR playback, you can setup a stream group on the latest dashboard v3.
 Find more information following the video guide in the link: 
 
 :::tip usage of streamgroups
-- [Dashboard: Set up streamgroups](../cloud-frontend-v3/Dashboard_Start_Streaming).
+- [Dashboard: Set up streamgroups](../dashboard/start_streaming).
 - [nanoPlayer: Streamgroup configuration](../nanoplayer/nanoplayer_feature_stream_group_configuration).
 
 *If you are on a secure Bintu organization account, you will find information on playback with secure parameters [click here](../nanoplayer/nanoplayer_token_security).*

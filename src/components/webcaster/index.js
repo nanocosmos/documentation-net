@@ -43,7 +43,7 @@ function Item({ Svg, title, description, link, button }) {
 
 export default function Webcaster() {
   return (
-    <span className={styles.playerWrapper}>
+    <div className={styles.playerWrapper}>
       <div className="text--center padding-horiz--md">
         <h1>Webcaster</h1>
         <p>The right technology for interactive live streaming use cases.</p>
@@ -57,6 +57,6 @@ export default function Webcaster() {
           </div>
         </div>
       </section>
-    </span>
+    </div>
   );
 }
