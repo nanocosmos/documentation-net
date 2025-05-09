@@ -21,6 +21,7 @@ To begin, please sign in using your nanoStream Cloud/Bintu account credentials. 
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 :::
 
+
 ![Screenshot: Alerts and Advices](../assets/cloud-frontend/cf-alerts-page.png)
 *Screenshot: Alerts and Advices*
 

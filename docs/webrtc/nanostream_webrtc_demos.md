@@ -9,7 +9,7 @@ sidebar_label: Browser Demos
 Below you can find links to our Webcaster demo applications.
 These samples are designed to showcase the broad capabilities of our Webcaster technology, providing you with practical experience and insight into its features. Explore our sample code to see how nanoStream Webcaster can enhance your webcasting projects.
 
-To fully utilize these samples, please ensure you have a bintu account.<br/> [Create a stream in the nanoStream Cloud Dashboard](../dashboard/start_streaming), then create a stream and append the stream name to the sample pages' URLs using the `streamName` URL parameter.
+To fully utilize these samples, please ensure you have a bintu account.<br/> [Create a stream in the nanoStream Cloud Dashboard](../cloud-frontend-v3/Dashboard_Start_Streaming), then create a stream and append the stream name to the sample pages' URLs using the `streamName` URL parameter.
 
 **Please Note Before starting:**
 
@@ -19,7 +19,7 @@ To begin, please sign in using your nanoStream Cloud/Bintu account credentials. 
 :::
 
 :::info[Live Transcoding]
-Currently, the nanoStream Webcaster does not support [live transcoding](../dashboard/abr_transcoding).
+Currently, the nanoStream Webcaster does not support [live transcoding](../cloud-frontend-v3/Dashboard_ABR_Transcoding).
 :::
 
 
@@ -33,7 +33,7 @@ Currently, the nanoStream Webcaster does not support [live transcoding](../dashb
                 </p>
             </a></article>
         <article class="col col--6 margin-bottom--lg">
-            <a class="card padding--lg cardContainer_Uewx" href="../dashboard/start_streaming#ingesting-with-the-nanostream-webcaster">
+            <a class="card padding--lg cardContainer_Uewx" href="../cloud-frontend-v3/Dashboard_Start_Streaming#option-1-use-the-nanostream-webcaster">
                 <h2 class="text--truncate cardTitle_dwRT" title="Configuration">Dashboard Integration</h2>
                 <p class="text--truncate cardDescription_mCBT">
                     Use the Webcaster directly in the Cloud Dashboard.

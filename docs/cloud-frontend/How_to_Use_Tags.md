@@ -7,7 +7,7 @@ sidebar_label: nanoStream Cloud Tags
 :::caution We upgraded to V3
 With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams! <br/>
 
-**Find the documentation of V3 [here](../dashboard/overview).**
+**Find the documentation of V3 [here](../cloud-frontend-v3/Dashboard_Overview).**
 :::
 
 Tags are a helpful tool to organize your streams. They can be used to search for specific streams in your stream list.

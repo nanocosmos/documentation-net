@@ -12,6 +12,7 @@ To use the **`live processing`** feature, ensure it is enabled for your account.
 
 If you have not created an account or enabled the feature yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 
+
 For more details, visit our [Homepage: Overview and Plans](https://info.nanocosmos.de/)
 :::
 

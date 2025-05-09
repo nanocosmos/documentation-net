@@ -15,6 +15,7 @@ If you are interested in utilizing the `secure` feature offered by nanoStream Cl
 
 ## Token Configuration
 
+
 :::info Before starting
 To begin, please sign in using your nanoStream Cloud/Bintu account credentials. <br/>
 If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.

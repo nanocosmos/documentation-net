@@ -7,7 +7,7 @@ sidebar_label: Cloud Dashboard Overview
 :::caution We upgraded to V3
 With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams! <br/>
 
-**Find the documentation of V3 [here](../dashboard/overview).**
+**Find the documentation of V3 [here](../cloud-frontend-v3/Dashboard_Overview).**
 :::
 
 ## What is the nanoStream Cloud/Bintu Dashboard?
@@ -49,7 +49,7 @@ The nanoStream Dashboard can be found at
 
 :::caution
 This documentation still partly points to the old dashboard V2. The new dashboard V3 works accordingly.
-**Find the documentation of V3 [here](../dashboard/overview).**
+**Find the documentation of V3 [here](../cloud-frontend-v3/Dashboard_Overview).**
 :::
 
 ## Authentication

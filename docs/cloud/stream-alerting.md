@@ -42,12 +42,31 @@ Our Analytics API provides 2 different alerting routes:
 
 :::info Analytics Enhancement from Version `3.7.1.0`
 With the release of version `3.7.1.0`, the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/) has enhanced its user interface in addition to the [Analytics Dashboard](https://metrics.nanocosmos.de). <br/>
-For a detailed guide and additional insights in regards of the **Alerts and Advices** feature, please refer to the cloud [dashboard's documentation page](../dashboard/alerts_and_advices). This resource offers explanations to ensure you make the most out of the features available.
+For a detailed guide and additional insights in regards of the **Alerts and Advices** feature, please refer to the cloud [dashboard's documentation page](../cloud-frontend-v3/Dashboard_Alerting). This resource offers explanations to ensure you make the most out of the features available.
 :::
 
 
 ![Screenshot: Alerts and Advices](../assets/cloud-frontend/cf-critical-alerts.png)
 *Screenshot: Alerts and Advices*
+
+<!-- <article class="margin-top--lg">
+    <section class="row list_ZO3j">
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="https://dashboard.nanostream.cloud/alerts">
+                <h2 class="text--truncate cardTitle_dwRT" title="Playground">Dashboard</h2>
+                <p class="text--truncate cardDescription_mCBT">
+                  The nanoStream Cloud Dashboard is a web-based tool implemented and designed to provide users with an intuitive and comprehensive overview of their streaming activities.
+                </p>
+            </a></article>
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="../cloud-frontend-v3/Dashboard_Alerting">
+                <h2 class="text--truncate cardTitle_dwRT" title="TypeScript Support">Dashboard Docs</h2>
+                <p class="text--truncate cardDescription_mCBT">
+                    The dashboard docs offer explanations to ensure you make the most out of the features available.
+                </p>
+            </a></article>
+    </section>
+</article> -->
 
 ## Severity Levels
 
@@ -60,7 +79,7 @@ Alerts are categorized in multiple **severity levels**, that should help to prio
 | <span className="badge badge-minorAlert">Minor</span>         | low       | The corresponding issue might partially affecting the stream quality. |
 | <span className="badge badge-adviceAlert">Advices</span>      | info      | This can be seen as a general info about unused streaming potential. Please consider reading the advice message or refer to the [advice codes in the table below.](#advices)|
 
-Lastly we fire an **<u>Advice</u>** for non-ABR streams with a higher bitrate than 4 MBit on every RTMP stat event. If you encounter such an advice, please consider using transcoding profiles ([Activating ABR](../dashboard/abr_transcoding)) to insure a better streaming experience for clients located in lower bandwith regions.
+Lastly we fire an **<u>Advice</u>** for non-ABR streams with a higher bitrate than 4 MBit on every RTMP stat event. If you encounter such an advice, please consider using transcoding profiles ([Activating ABR](../cloud-frontend-v3/Dashboard_ABR_Transcoding)) to insure a better streaming experience for clients located in lower bandwith regions.
 
 ## Alert Definitions
 

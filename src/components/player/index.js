@@ -34,7 +34,7 @@ function Item({ Svg, title, description, link, button }) {
         <Link
           className="button button--primary button--md"
           to={link}>
-          {button} →
+            {button} →
         </Link>
       </div>
     </div>
@@ -43,9 +43,9 @@ function Item({ Svg, title, description, link, button }) {
 
 export default function Player() {
   return (
-    <div className={styles.playerWrapper}>
+    <span className={styles.playerWrapper}>
       <div className="text--center padding-horiz--md">
-        <h1>H5Live <span className={styles.blue}>Player</span></h1>
+        <h1>H5Live Player</h1>
         <p>The right technology for interactive live streaming use cases.</p>
       </div>
       <section className={styles.features}>
@@ -57,6 +57,6 @@ export default function Player() {
           </div>
         </div>
       </section>
-    </div>
+    </span>
   );
 }
