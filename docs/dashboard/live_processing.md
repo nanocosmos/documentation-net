@@ -71,9 +71,11 @@ If either **Thumbnails** or **Motion Clips**, or both, are enabled, they will ap
 ## Live Replay
 
 Live Replay allows users to access and share previously streamed content almost instantly. \
-When there is at least 1 transcode stream being available in a stream group, **adaptive bitrate replay (ABR)** becomes possible with
-automatic playback stream selection depending on the available streaming bandwidth. The recommended setup is to have the `Passthrough`
-and `Transcode` streams configured with the same `Live Replay Duration`.
+If at least one **transcoded stream** is available in a stream group, **Adaptive Bitrate Replay (ABR)** is enabled. This feature automatically selects the best playback stream based on the viewer’s available bandwidth.
+
+:::tip Recommendation for Adaptive Bitrate Streams 
+To ensure optimal performance, it is recommended to configure both the **Passthrough** and **Transcode streams** with the same **Live Replay Duration**. 
+:::
 
 1. **Tabs**: If you have a stream group (multiple related streams), you can switch between them using tabs. If not, no tabs will be shown.
 2. **Header Row**: Displays the section title, a **Refresh** icon button to update assets and data, and an **Edit** button¹.
