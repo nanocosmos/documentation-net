@@ -52,7 +52,7 @@ export default function Cloud() {
   return (
     <span className={styles.playerWrapper}>
       <div className="text--center padding-horiz--md">
-        <h1>nanoStream <span className={styles.blue}>Cloud</span></h1>
+        <h1>nanoStream Cloud</h1>
         <p>A unique live streaming platform based on different components for ultra low latency live streaming.</p>
       </div>
       <section className={styles.features}>

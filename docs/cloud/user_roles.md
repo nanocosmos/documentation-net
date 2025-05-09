@@ -34,14 +34,14 @@ Implementing Role-Based Access Control (RBAC) in your organization is a straight
 Before assigning roles, familiarize yourself with:
 
 1. Begin by reviewing the [predefined roles in nanoStream Cloud](#user-roles-in-nanostream-cloud) to understand the basic access levels and permissions available. For an in-depth look at the permissions associated with each role, check out the [High-level Permission Overview](#high-level-permission-overview).
-2. Learn how to manage roles within the dashboard by following the dedicated Features & Function [User Management](../dashboard/user_management) page.
+2. Learn how to manage roles within the dashboard by following the dedicated Features & Function [User Management](./cloud-frontend-v3/Dashboard_User_Roles) page.
 
 ### 2. Evaluate and Assign Roles
 
 Assess the responsibilities of each user within your organization and assign the appropriate role:
 
 - Determine the level of access each user needs based on their job functions.
-- Use the [nanoStream Dashboard](../dashboard/user_management) or the [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs) to assign roles to users.
+- Use the [nanoStream Cloud Dashboard](./cloud-frontend-v3/Dashboard_User_Roles) or the [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs) to assign roles to users.
 
 ### 3. Monitor and Enforce Access Control
 It’s important to monitor user access and enforce RBAC policies consistently:
@@ -56,7 +56,7 @@ With the **`Bintu API v1.23.0.0`** release introducing user roles, all users wil
 :::
 
 :::info nanoStream Cloud Dashboard Instructions
-To learn more about user management using the dashboard, [click here](../dashboard/user_management).
+To learn more about user management using the dashboard, [click here](../cloud-frontend-v3/Dashboard_User_Roles.md).
 :::
 
 Three predefined roles are available to manage user permissions within an organization: <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> and <span className="role role-readonly">nanoReadOnly</span>. Each role grants specific access rights tailored to different needs.

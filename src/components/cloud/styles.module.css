@@ -1,23 +1,12 @@
 .playerWrapper {
   padding: 3rem;
   width: 100%;
-  color: rgba(112, 111, 111, 1);
-}
-
-.playerWrapper h1 {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  font-weight: 800;
 }
 
 .features {
   display: flex;
   align-items: center;
   width: 100%;
-}
-
-.blue {
-  color: rgba(1, 139, 201, 1);
 }
 
 .featureSvg {

@@ -5,7 +5,6 @@
  */
 
 /* You can override the default Infima variables here. */
-
 /* source-sans-pro-200 - latin */
 @font-face {
   font-family: 'Source Sans Pro';
@@ -14,7 +13,9 @@
   src: local('Source Sans Pro'),
     url('../../static/fonts/source-sans-pro-v21-latin-200.ttf') format('truetype'),
     url('../../static/fonts/source-sans-pro-v21-latin-200.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../../static/fonts/source-sans-pro-v21-latin-200.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* source-sans-pro-300 - latin */
@@ -25,7 +26,9 @@
   src: local('Source Sans Pro'),
     url('../../static/fonts/source-sans-pro-v21-latin-300.ttf') format('truetype'),
     url('../../static/fonts/source-sans-pro-v21-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../../static/fonts/source-sans-pro-v21-latin-300.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* source-sans-pro-regular - latin */
@@ -36,7 +39,9 @@
   src: local('Source Sans Pro'),
     url('../../static/fonts/source-sans-pro-v21-latin-regular.ttf') format('truetype'),
     url('../../static/fonts/source-sans-pro-v21-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../../static/fonts/source-sans-pro-v21-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* source-sans-pro-600 - latin */
@@ -47,7 +52,9 @@
   src: local('Source Sans Pro'),
     url('../../static/fonts/source-sans-pro-v21-latin-600.ttf') format('truetype'),
     url('../../static/fonts/source-sans-pro-v21-latin-600.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../../static/fonts/source-sans-pro-v21-latin-600.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* source-sans-pro-700 - latin */
@@ -58,7 +65,9 @@
   src: local('Source Sans Pro'),
     url('../../static/fonts/source-sans-pro-v21-latin-700.ttf') format('truetype'),
     url('../../static/fonts/source-sans-pro-v21-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../../static/fonts/source-sans-pro-v21-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* source-sans-pro-900 - latin */
@@ -69,79 +78,9 @@
   src: local('Source Sans Pro'),
     url('../../static/fonts/source-sans-pro-v21-latin-900.ttf') format('truetype'),
     url('../../static/fonts/source-sans-pro-v21-latin-900.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../../static/fonts/source-sans-pro-v21-latin-900.woff') format('woff');
-}
-
-/* Montserrat Thin */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-/* Montserrat ExtraLight */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-/* Montserrat Light */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-/* Montserrat Regular */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Montserrat Medium */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-/* Montserrat SemiBold */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-/* Montserrat Bold */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Montserrat ExtraBold */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-/* Montserrat Black */
-@font-face {
-  font-family: "Montserrat";
-  src: url('../../static/fonts/Montserrat-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
@@ -157,7 +96,6 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: "Source Sans Pro", sans-serif;
-  --ifm-font-family-heading: 'Montserrat', sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -270,9 +208,9 @@
 }
 
 .role-readonly {
-  border-color: rgb(2, 136, 209);
+  border-color:rgb(2, 136, 209);
   color: rgb(2, 136, 209);
-
+  
 }
 
 /* BEGINN ANALYTICS --> These classes were designed for the analytics sections. */
@@ -320,8 +258,8 @@
   font-size: 16px;
   margin-left: 5px;
   margin-right: 5px;
-  border: 1px solid gray;
-  color: gray;
+  background-color: lightgray;
+  color: rgba(0, 0, 0, 0.87);
   font-weight: 600;
 }
 

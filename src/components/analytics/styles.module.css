@@ -1,7 +1,6 @@
 .playerWrapper {
   padding: 3rem;
   width: 100%;
-  color: rgba(112, 111, 111, 1);
 }
 
 .features {
@@ -17,11 +16,8 @@
 }
 
 .playerWrapper h1 {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  color: #ed7d0e;
   margin-bottom: 0;
-  font-weight: 800;
+  color: #ed7d0e;
 }
 
 .buttons {
