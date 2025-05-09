@@ -42,25 +42,40 @@ or just your browser which directly can be used to send a live stream to your au
 See our introduction videos and tutorials for step-by-step instructions!
 
 - [Videos](https://www.nanocosmos.de/blog/videos)
-
 - [Getting started with the OBS Software](https://www.nanocosmos.de/blog/2020/01/how-to-use-obs-as-a-live-encoder-for-your-nanostream/)
-
 - [Getting started with nanoStream Webcaster from the browser](https://www.nanocosmos.de/blog/2019/09/how-to-create-a-livestream-with-our-nanostream-webrtc-application-demo-version/)
 
-### Create a nanoStream Cloud account (bintu.live)
+### Create a nanoStream account (bintu.live)
 
-If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
-
-[Click here](../cloud-frontend-v3/Dashboard_Overview#authentication) to see how you can authenticate to the nanoStream Cloud/Bintu Dashboard.
+:::tip Before starting
+To begin, please sign in using your nanoStream account credentials. <br/>
+If you have not created an account yet, you can [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) or reach out to our dedicated sales team via the [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.net. <br/>
+*If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
+:::
 
 ### Create a new live stream
 
-To learn how to create your first stream with our nanoStream Cloud/Bintu dashboard, [click here](../cloud-frontend-v3/Dashboard_Start_Streaming).
+<article class="margin-top--lg">
+    <section class="row list_ZO3j">
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="../dashboard/start_streaming">
+                <h2>Create a new stream</h2>
+                <p>Learn how to set up and start your live stream with nanoStream.</p>
+            </a>
+        </article>
+        <article class="col col--6 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="../dashboard/stream_overview">
+                <h2>Stream Overview</h2>
+                <p>Understand how to read stream data.</p>
+            </a>
+        </article>
+    </section>
+</article>
 
 
 ## Start a live stream broadcast
 
-Once you created a stream via the dashboard, you will see stream instructions to start your stream. [Click here](../cloud-frontend-v3/Dashboard_Overview#instructions-to-start-a-stream) to learn more about it.
+Once you created a stream via the dashboard, you will see stream instructions to start your stream. Read more in the dashboard docs about the [Instructions page](../dashboard/start_streaming#start-streaming).
 
 To start a live stream broadcast, you need a live encoder software, either based on an `RTMP Live Encoder application`, or the browser-based [nanoStream Webcaster broadcaster](../webrtc/nanostream_webrtc_getting_started).
 
@@ -74,7 +89,7 @@ The primary ingest protocol is RTMP.
 
 Copy/paste the ingest URL to use it with your live encoder software.
 
-If you are not sure, where you can find these informations, [click here](../cloud-frontend-v3/Dashboard_Stream_Overview) to learn more about the stream overview of the nanoStream Cloud/bintu Dashboard.
+If you are not sure, where you can find these informations, see the [Stream Overview](../dashboard/stream_overview) to learn more about the stream overview of the nanoStream Cloud/bintu Dashboard.
 
 :::tip Example
 rtmp://bintu-stream.nanocosmos.de/live/XXXXX-YYYYY
@@ -115,7 +130,6 @@ The player URL is different from the Ingest URL! This is to adjust to world regi
 
 The H5Live player is running on a sample page which also shows an embed code to copy to your own web page.
 
-[Click here](../cloud-frontend-v3/Dashboard_Overview#nanoplayer) to learn more about the nanoPlayer within the nanoStream Cloud/Bintu dashboard.
 If you want to learn more about the usage of the nanoPlayer, [click here](../nanoplayer/nanoplayer_introduction) to dive into our developer documentation.
 
 
@@ -128,7 +142,7 @@ nanoStream Cloud and the unique nanoStream H5Live Player have been designed as a
 nanoStream Cloud Analytics offers a great way to monitor and analyze the performance and quality of service of your live streams. 
 
 :::info Getting started
-If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
+If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
 :::
 
 ### API Access
@@ -150,7 +164,7 @@ For encrypted ingest with rtmps, you can use port 1937 instead 1935.
 
 For secure playback with the nanoStream H5Live Player you need to have your account enabled for playback security. See the h5live secure playback documentation.
 
-[Learn more about Secure Playback & Secure Token](../cloud-frontend-v3/Dashboard_Secure).
+[Learn more about Secure Playback & Secure Token](../dashboard/secure_playback).
 
 ## More information
 

@@ -1,13 +1,24 @@
 .footerExtensionWrapper {
-  background-color: #303846;
+  background: url('/static/img/cheetha-bg.jpg') no-repeat center center;
+  background-color: #07456B;
   padding: 3rem 0;
   width: 100%;
 }
 
-.footerExtensionWrapper h2 {
+.footerExtensionWrapper h1 {
   color: rgba(15, 141, 201, 1);
-  font-weight: 300;
+  font-weight: 800;
+  font-family: var(--ifm-font-family-heading);
   text-transform: uppercase;
+  color: #fff;
+}
+
+.orange {
+  color: var(--ifm-color-primary);
+}
+
+.feature {
+  padding: 2em;
 }
 
 .footerExtensionSection {
@@ -15,6 +26,12 @@
   align-items: center;
   padding: 2rem 0;
   color: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .footerExtensionSection {
+    padding: 0
+  }
 }
 
 .footerExtensionSection h3 {
@@ -26,6 +43,10 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+}
+
+.feature h3 {
+  color: #fff;
 }
 
 .featureSvg {

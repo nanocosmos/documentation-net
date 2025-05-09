@@ -7,7 +7,7 @@ sidebar_label: Stream List
 :::caution We upgraded to V3
 With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams! <br/>
 
-**Find the documentation of V3 [here](../cloud-frontend-v3/Dashboard_Overview).**
+**Find the documentation of V3 [here](../dashboard/overview).**
 :::
 
 The [stream list](https://bintu-cloud-frontend.nanocosmos.de/stream) displays all of your streams. It includes streams that are live, created and expired.

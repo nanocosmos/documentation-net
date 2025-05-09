@@ -7,7 +7,7 @@ sidebar_label: Getting started
 :::caution We upgraded to V3
 With the release of nanoStream Cloud 2022, it is now even easier to create and manage live streams, especially for Adaptive Bitrate and secure streams! <br/>
 
-**Find the documentation of V3 [here](../cloud-frontend-v3/Dashboard_Overview).**
+**Find the documentation of V3 [here](../dashboard/overview).**
 :::
 
 The nanoStream Cloud/Bintu dashboard is the frontend that mirrors all features and functions of the [bintu API](../cloud/bintu_api), the stream management backend of nanoStream Cloud. 

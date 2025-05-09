@@ -7,19 +7,21 @@ sidebar_label: Live Processing
 Live Processing options allow users to enhance the playback experience and manage stream content more effectively. 
 These features can be applied to all streams, providing flexibility and customization in how content is processed and presented to viewers.
 
-:::info  Prerequisites
-Before you get started, make sure you have an active bintu account, whether it's part of a trial or a paid plan. <br/>
-To use the **`live processing`** feature, ensure it is enabled for your account. You can verify this by checking your [Organisation Overview](https://dashboard.nanostream.cloud/organisation).
+:::info Prerequisites
+To make use of `live processing`, the feature must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
 
-If you have not created an account or enabled the feature yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
+You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation/overview](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
+In the **[Enabled Packages](./organization_overview#enabled-packages)** section, locate the entry for `live processing`. If it shows **Upgrade needed**, please contact us.
 
-For more details, visit our [Homepage: Overview and Plans](https://info.nanocosmos.de/)
+![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
+
+To activate this feature or learn more about available plans, feel free to reach out via [nanocosmos.de/contact](https://www.nanocosmos.de/contact). We're happy to assist you in finding the best setup for your use case.
 :::
 
 <article class="margin-top--lg">
     <section class="row list_ZO3j">
         <article class="col col--6 margin-bottom--lg">
-            <a class="card padding--lg cardContainer_Uewx" href="../cloud-frontend-v3/Dashboard_Live_Processing">
+            <a class="card padding--lg cardContainer_Uewx" href="../dashboard/live_processing">
                 <h2 class="text--truncate cardTitle_dwRT" title="Installation">Dashboard</h2>
                 <p class="text--truncate cardDescription_mCBT">
                     To configure the live processing options, follow the steps during the stream creation.

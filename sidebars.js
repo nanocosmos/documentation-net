@@ -36,41 +36,6 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "Cloud Dashboard",
-      "collapsible": true,
-      "collapsed": false,
-      "items": [
-        "cloud-frontend-v3/Dashboard_Overview",
-        "cloud-frontend-v3/Dashboard_Getting_Started",
-        {
-          "type": "category",
-          "label": "Features & Functions",
-          "collapsible": true,
-          "collapsed": false,
-          "items": [
-            "cloud-frontend-v3/Dashboard_Start_Streaming",
-            "cloud-frontend-v3/Dashboard_Stream_Overview",
-            "cloud-frontend-v3/Dashboard_ABR_Transcoding",
-            "cloud-frontend-v3/Dashboard_Live_Processing",
-            "cloud-frontend-v3/Dashboard_Secure",
-            "cloud-frontend-v3/Dashboard_nanoPlayer",
-            "cloud-frontend-v3/Dashboard_User_Roles"
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Analytics",
-          "collapsible": true,
-          "collapsed": false,
-          "items": [
-            "cloud-frontend-v3/Dashboard_Metrics",
-            "cloud-frontend-v3/Dashboard_Alerting",
-          ]
-        },
-      ]
-    },
-    {
-      "type": "category",
       "label": "REST API",
       "collapsible": false,
       "collapsed": false,
@@ -88,6 +53,52 @@ const sidebars = {
       "items": [
         "cloud/network-diagnostics",
         "cloud/support",
+      ]
+    },
+  ],
+  "nanoStream Cloud Dashboard": [
+    {
+      "type": "category",
+      "label": "Overview",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "dashboard/overview",
+        "dashboard/getting_started",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Streaming & Playback",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "dashboard/start_streaming",
+        "dashboard/stream_overview",
+        "dashboard/live_processing",
+        "dashboard/code_snippets",
+        "dashboard/abr_transcoding",
+        "dashboard/secure_playback",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Organization Management",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "dashboard/organization_overview",
+        "dashboard/user_management",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Analytics",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "dashboard/analytics",
+        "dashboard/alerts_and_advices",
       ]
     },
   ],
