@@ -64,6 +64,7 @@ const sidebars = {
       "collapsed": false,
       "items": [
         "dashboard/overview",
+        "dashboard/migration_v4_v5",
         "dashboard/getting_started",
       ]
     },
