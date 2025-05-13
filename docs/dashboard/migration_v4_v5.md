@@ -10,6 +10,14 @@ The **nanoStream Cloud Dashboard** has received a visual and structural refresh 
 
 We encourage you to check the updated views and explore the changes in your own dashboard. Below, we outline some of the major changes.
 
+:::info Before starting
+To get started with the **nanoStream Dashboard**, sign in with your existing *nanoStream account*.  
+If you don’t have an account yet, you can [sign up](https://dashboard.nanostream.cloud/signup), or get in touch with our sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by email at sales(at)nanocosmos.net.
+
+*Need help accessing an existing organization or unsure how to proceed?* <br/>
+Check the [Authentication section](./getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
+:::
+
 ## Dashboard
 
 We redesigned the main dashboard view for a cleaner, more modern appearance. The updated UI improves visual hierarchy and makes key metrics easier to scan.
@@ -70,3 +78,31 @@ In version 4, user management was part of the organization overview. In version 
 :::tip Learn more about User Management  
 - [User Management Guide](./user_management)  
 :::
+
+## Next steps
+
+To make the most of the nanoStream Cloud Dashboard and explore all its features and capabilities, we recommend diving into our documentation. You can start with the links below or follow the guides step by step — whatever suits your workflow best. Each section is designed to help you unlock the full potential of your streaming setup.
+
+
+<article class="margin-top--lg">
+    <section class="row list_ZO3j">
+        <article class="col col--4 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="./stream_overview">
+                <h2>Stream Overview</h2>
+                <p>Understanding and Interpreting Your Stream Data</p>
+            </a>
+        </article>
+        <article class="col col--4 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="./user_management">
+                <h2>User Management</h2>
+                <p>Manage Access to Your Organization</p>
+            </a>
+        </article>
+        <article class="col col--4 margin-bottom--lg">
+            <a class="card padding--lg cardContainer_Uewx" href="./alerts_and_advices">
+                <h2>Alerts & Advices</h2>
+                <p>Gaining Insights into the Performance of Your Live Streams</p>
+            </a>
+        </article>
+    </section>
+</article>
