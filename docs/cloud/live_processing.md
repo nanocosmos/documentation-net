@@ -7,7 +7,7 @@ sidebar_label: Live Processing
 Live Processing options allow users to enhance the playback experience and manage stream content more effectively. 
 These features can be applied to all streams, providing flexibility and customization in how content is processed and presented to viewers.
 
-:::info Prerequisites
+:::tip Prerequisites
 To make use of `live processing`, the feature must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
 
 You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation/overview](https://dashboard.nanostream.cloud/organisation) in your dashboard.  

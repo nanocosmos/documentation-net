@@ -11,10 +11,12 @@ To start, please navigate to [dashboard.nanostream.cloud/alerts](https://dashboa
 ![Screenshot: Notifications Overview](../assets/dashboard/alerts-overview.png)
 *Screenshot: Notifications Overview*
 
-:::tip Before starting
-To begin, please sign in using your nanoStream account credentials. <br/>
-If you have not created an account yet, you can [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) or reach out to our dedicated sales team via the [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.net. <br/>
-*If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
+:::info Before starting
+To get started with the **nanoStream Dashboard**, sign in with your existing *nanoStream account*.  
+If you don’t have an account yet, you can [sign up](https://dashboard.nanostream.cloud/signup), or get in touch with our sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by email at sales(at)nanocosmos.net.
+
+*Need help accessing an existing organization or unsure how to proceed?* <br/>
+👉  Check the [Authentication section](./getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
 :::
 
 ## Alerts

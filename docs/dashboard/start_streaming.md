@@ -10,12 +10,12 @@ nanoStream offers two ways to start streaming:
 
 Regardless of the method, you first need to create a stream.
 
-:::tip Before starting
+:::info Before starting
 To get started, sign in with your existing *nanoStream account*.  
 If you don’t have an account yet, you can [sign up](https://dashboard.nanostream.cloud/signup), or get in touch with our sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by email at sales(at)nanocosmos.net.
 
 *Need help accessing an existing organization or unsure how to proceed?* <br/>
-Check the [Authentication section](./getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
+👉  Check the [Authentication section](./getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
 :::
 
 ## Create Stream
@@ -58,7 +58,7 @@ Check [**Modifying Transcoding Profiles After Stream Creation**](./abr_transcodi
 
 ### Live Processing
 
-:::info Prerequisites
+:::tip Prerequisites
 To utilize the `live processing` feature, you need to enable it and ensure the corresponding pricing and payment options are set up.    
 Contact us via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) to find the perfect solution for you!  
 :::
@@ -78,7 +78,7 @@ Live Processing lets you enhance your stream with additional automated features.
 
 ### Timecode
 
-:::info Prerequisites
+:::tip Prerequisites
 To utilize the `timecode` feature, you need to enable it and ensure the corresponding pricing and payment options are set up.   
 Contact us via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) to find the perfect solution for you!  
 :::

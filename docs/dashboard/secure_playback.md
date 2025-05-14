@@ -6,7 +6,7 @@ sidebar_label: Secure Playback & Secure Token
 
 Secure Playback Tokens are a valuable tool that enhances the security of your streams by providing controlled access. With these tokens, you have the ability to decide who can play back your stream, ensuring that only authorized viewers can access your content. The regular playout URL alone will not grant playback privileges.
 
-:::info Prerequisites
+:::tip Prerequisites
 To make use of the `secure` feature, it must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
 
 You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
@@ -17,12 +17,13 @@ In the **[Enabled Packages](./organization_overview#enabled-packages)** section,
 To activate this feature or learn more about available plans, feel free to reach out via [nanocosmos.de/contact](https://www.nanocosmos.de/contact). We're happy to assist you in finding the best setup for your use case.
 :::
 
-:::tip Before starting
-To begin, please sign in using your nanoStream account credentials. <br/>
-If you have not created an account yet, you can [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) or reach out to our dedicated sales team via the [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.net. <br/>
-*If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
-:::
+:::info Before starting
+To get started with the **nanoStream Dashboard**, sign in with your existing *nanoStream account*.  
+If you don’t have an account yet, you can [sign up](https://dashboard.nanostream.cloud/signup), or get in touch with our sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by email at sales(at)nanocosmos.net.
 
+*Need help accessing an existing organization or unsure how to proceed?* <br/>
+👉  Check the [Authentication section](./getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
+:::
 
 ## Token Configuration
 

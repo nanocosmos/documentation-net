@@ -3,20 +3,26 @@ id: nanostream_webrtc_getting_started
 title: Getting started
 sidebar_label: Getting started
 ---
-
-:::info Before starting
-If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
-:::
-
-
 ## Overview
 
 This section provides a straightforward guide to initiate your journey with Webcaster. The provided snippet exemplifies the elementary steps to set up and start a live stream using Webcaster.
 
+:::info Before starting
+To get started with the **nanoStream Dashboard**, sign in with your existing *nanoStream account*.  
+If you don’t have an account yet, you can [sign up](https://dashboard.nanostream.cloud/signup), or get in touch with our sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by email at sales(at)nanocosmos.net.
+
+*Need help accessing an existing organization or unsure how to proceed?* <br/>
+👉  Check the [Authentication section](../dashboard/getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
+:::
+
+
 ## Prerequisites
-- [Download](https://github.com/nanocosmos/webcaster/) and include the Webcaster JavaScript file in your project.
-- Create a new stream. Read about stream creation via the nanoStream Cloud dashboard [here](../dashboard/start_streaming).
-- Basic understanding of TypeScript or JavaScript is advantageous.
+- Download the nanoStream Webcaster package from [github.com/nanocosmos/webcaster](https://github.com/nanocosmos/webcaster/)
+- Include the Webcaster JavaScript file in your project
+- [Create a new stream](../dashboard/start_streaming)
+:::tip
+Basic understanding of TypeScript or JavaScript is advantageous.
+:::
 
 ## Implementation
 

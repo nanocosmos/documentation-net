@@ -15,7 +15,7 @@ To get started with the **nanoStream Dashboard**, sign in with your existing *na
 If you don’t have an account yet, you can [sign up](https://dashboard.nanostream.cloud/signup), or get in touch with our sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by email at sales(at)nanocosmos.net.
 
 *Need help accessing an existing organization or unsure how to proceed?* <br/>
-Check the [Authentication section](./getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
+👉  Check the [Authentication section](./getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
 :::
 
 ## Dashboard
@@ -72,12 +72,12 @@ This separation allows faster access to user management while keeping the overvi
 |--------------|--------------|
 | ![Screenshot: Stream Overview Dashboard 4](../assets/cloud-frontend/cf-orga.jpg) *Screenshot: Stream Overview Dashboard 4*| ![Screenshot: Stream Overview Version 5](../assets/dashboard/orga-overview.png) *Screenshot: Organization Overview Version 5*|
 
-
+:::tip Mange your organization
 In version 4, user management was part of the organization overview. In version 5, it’s now accessed through its own tab for easier navigation. Users can be filtered, edited, and removed more efficiently.  
 
-:::tip Learn more about User Management  
-- [User Management Guide](./user_management)  
+👉 Explore the full [User Management Guide](./user_management) for in-depth guidance and best practices. To get an overall overview of the organization page and its content, check our [Organization Overview](./organization_overview) docs
 :::
+
 
 ## Next steps
 

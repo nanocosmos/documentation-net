@@ -73,14 +73,13 @@ Contact our team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) 
 
 ## Next steps
 
-:::tip Before starting
+:::info Before starting
 To get started with the **nanoStream Dashboard**, sign in with your existing *nanoStream account*.  
 If you don’t have an account yet, you can [sign up](https://dashboard.nanostream.cloud/signup), or get in touch with our sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by email at sales(at)nanocosmos.net.
 
 *Need help accessing an existing organization or unsure how to proceed?* <br/>
-Check the [Authentication section](#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
+👉  Check the [Authentication section](#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
 :::
-
 
 <article class="margin-top--lg">
     <section class="row list_ZO3j">

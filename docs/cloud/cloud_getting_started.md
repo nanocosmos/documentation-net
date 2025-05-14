@@ -4,14 +4,18 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-:::info Before starting
-To begin, please sign in to your nanoStream Cloud/Bintu account and copy your API key [here](https://dashboard.nanostream.cloud/organisation). <br/>
-If you have not created an account yet, you can [sign up](https://dashboard.nanostream.cloud/auth?signup) or reach out to our dedicated sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
-:::
-
 ## Using bintu.live
 
 bintu.live is the API for nanoStream Cloud. You can use it via the nanoStream Cloud Dashboard or the API.
+
+:::info Before starting
+To get started with the **nanoStream Dashboard**, sign in with your existing *nanoStream account*.  
+If you don’t have an account yet, you can [sign up](https://dashboard.nanostream.cloud/signup), or get in touch with our sales team via [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by email at sales(at)nanocosmos.net.
+
+*Need help accessing an existing organization or unsure how to proceed?* <br/>
+👉  Check the [Authentication section](../dashboard/getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
+:::
+
 
 <article class="margin-top--lg">
     <section class="row list_ZO3j">
@@ -47,10 +51,8 @@ See our introduction videos and tutorials for step-by-step instructions!
 
 ### Create a nanoStream account (bintu.live)
 
-:::tip Before starting
-To begin, please sign in using your nanoStream account credentials. <br/>
-If you have not created an account yet, you can [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) or reach out to our dedicated sales team via the [nanocosmos.de/contact](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.net. <br/>
-*If you are unsure how to create an account or need access to an existing organization, please refer to the [Authentication section](./getting_started.md#authentication). There, you will find instructions on signing up, logging in, or requesting an invitation from your system administrator.*
+:::tip Signing Up to nanoStream
+👉 Visit the [Getting started section](../dashboard/getting_started#authentication) of the nanoStream dashboard to get guidance on [creating an account](..//dashboard/getting_started#sign-up), [logging in](../dashboard/getting_started#sign-in), and [requesting access from your system administrator](../dashboard/getting_started#invite).
 :::
 
 ### Create a new live stream

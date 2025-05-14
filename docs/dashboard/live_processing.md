@@ -6,7 +6,7 @@ sidebar_label: Live Processing
 
 Live streaming goes beyond simply delivering video and audio to viewers. **Live Processing** adds advanced functionalities to your streams, enabling features like recording, thumbnail and motion clip generation and replay capabilities. These features enhance the viewer experience and give broadcasters greater flexibility in managing and optimizing their live content in real-time. With the **`Bintu API v1.24.1`**, we introduced several new live processing capabilities, that can be configured easily during stream setup or adjusted as the broadcasters streaming requirements evolve. 
 
-:::info Prerequisites
+:::tip Prerequisites
 To make use of `live processing`, the feature must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
 
 You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
