@@ -4,9 +4,9 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-## Using bintu.live
+## Using bintu
 
-bintu.live is the API for nanoStream Cloud. You can use it via the nanoStream Cloud Dashboard or the API.
+**bintu** is the API for **nanoStream Cloud**. You can use it via the nanoStream Cloud Dashboard or the API.
 
 :::info Before starting
 To get started with the **nanoStream Dashboard**, sign in with your existing *nanoStream account*.  
@@ -15,7 +15,6 @@ If you don’t have an account yet, you can [sign up](https://dashboard.nanostre
 *Need help accessing an existing organization or unsure how to proceed?* <br/>
 👉  Check the [Authentication section](../dashboard/getting_started#authentication) for step-by-step guidance on creating an account, logging in, and requesting access from your system administrator.
 :::
-
 
 <article class="margin-top--lg">
     <section class="row list_ZO3j">
@@ -49,7 +48,7 @@ See our introduction videos and tutorials for step-by-step instructions!
 - [Getting started with the OBS Software](https://www.nanocosmos.de/blog/2020/01/how-to-use-obs-as-a-live-encoder-for-your-nanostream/)
 - [Getting started with nanoStream Webcaster from the browser](https://www.nanocosmos.de/blog/2019/09/how-to-create-a-livestream-with-our-nanostream-webrtc-application-demo-version/)
 
-### Create a nanoStream account (bintu.live)
+### Create a nanoStream account (bintu)
 
 :::tip Signing Up to nanoStream
 👉 Visit the [Getting started section](../dashboard/getting_started#authentication) of the nanoStream dashboard to get guidance on [creating an account](..//dashboard/getting_started#sign-up), [logging in](../dashboard/getting_started#sign-in), and [requesting access from your system administrator](../dashboard/getting_started#invite).
@@ -74,16 +73,20 @@ See our introduction videos and tutorials for step-by-step instructions!
     </section>
 </article>
 
-
 ## Start a live stream broadcast
 
-Once you created a stream via the dashboard, you will see stream instructions to start your stream. Read more in the dashboard docs about the [Instructions page](../dashboard/start_streaming#start-streaming).
+Once you created a stream via the dashboard, you will see stream instructions to start your stream. 
+
+:::tip Understanding the Instructions
+Learn more in the dashboard docs about the [Instructions page](../dashboard/start_streaming#start-streaming).
+:::
+
 
 To start a live stream broadcast, you need a live encoder software, either based on an `RTMP Live Encoder application`, or the browser-based [nanoStream Webcaster broadcaster](../webrtc/nanostream_webrtc_getting_started).
 
 You can use 3rd part software like [OBS (Open Broadcaster)](https://obsproject.com/) or professional Live Encoders like [Elemental Live](https://www.elemental.com/products/aws-elemental-live).
 
-:::info 
+:::info please note
 The primary ingest protocol is RTMP.
 :::
 
