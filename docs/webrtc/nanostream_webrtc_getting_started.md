@@ -3,7 +3,6 @@ id: nanostream_webrtc_getting_started
 title: Getting started
 sidebar_label: Getting started
 ---
-## Overview
 
 This section provides a straightforward guide to initiate your journey with Webcaster. The provided snippet exemplifies the elementary steps to set up and start a live stream using Webcaster.
 
