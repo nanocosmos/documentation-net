@@ -36,9 +36,9 @@ const config = {
 
   staticDirectories: ['static', 'docs/assets/analytics/public'],
 
-  future: {
-    experimental_faster: true,
-  },
+//  future: {
+//    experimental_faster: true,
+//  },
 
   markdown: {
     format: 'mdx',
