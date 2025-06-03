@@ -102,7 +102,7 @@ General alerts include basic issues related to unexpected ingest behavior.
 
 ### Stability Alerts
 
-Stream issues that may appear as a consequence of irregular communication problems with the nanoStream Cloud can be identified through stability alerts. Therefore the stream restart attempts are getting analysed. Meeting the condition of having at least **6 restarts** within the 5 minute range fires a **Continuous Restarts Alert**.
+Stream issues that may appear as a consequence of irregular communication problems with the nanoStream Cloud can be identified through stability alerts. Therefore the stream restart attempts are getting analysed. Meeting the condition of having at least **3 restarts** within the 5 minute range fires a **Continuous Restarts Alert**.
 
 - [**Stability** alert codes](#22000---22999) are ranging from **22000** to **22999**
 
