@@ -1,7 +1,7 @@
 ---
-id: migration_v4_v5
-title: Migration Guide (v4 → v5)
-sidebar_label: Migration Guide (v4 → v5)
+id: changes_v4_v5
+title: Changes Guide (v4 → v5)
+sidebar_label: Changes Guide (v4 → v5)
 ---
 
 # Changes from Dashboard v4 to v5
