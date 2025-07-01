@@ -7,7 +7,7 @@ sidebar_label: Troubleshooting
 
 import { ScaledImage } from '../../src/components/global/ScaledImage.js';
 
-The troubleshooting page helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. With this feature you have a complete transparent view at your streams, which helps you to find potential problems and be more capable of solving them faster.
+The trouble shooting page helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. With this feature you have a complete transparent view at your streams, which helps you to find potential problems and be more capable of solving them faster.
 
 :::info Before starting
 To begin, please sign in to the [Analytics Dashboard](https://metrics.nanocosmos.de/login) using your nanoStream Cloud/Bintu account credentials. <br/>
@@ -184,7 +184,7 @@ The **Ingest/Publishes** tab selects the ingest data group with all items descri
 
 #### Stream Time Ratio
 
-The stream time ratio (STR) represents the relation between the elapsed real time and the stream time within an interval of 15 seconds. A constant ratio value of 1 would be ideal - but a small fluctuation is expected. A big fluctuation or deviation from the value 1 indicates issues on the ingest side, for instance caused by a limited bandwidth or high CPU load. The higher the deviation from the value 1, the higher the probability for an increased latency on the playback/viewer side.
+The stream time ratio (STR) represents the relation between the elapsed real time and the stream time within a window of 15 seconds. A constant ratio value of 1 would be ideal - but a small fluctuation is expected. A big fluctuation or deviation from the value 1 indicates issues on the ingest side, for instance caused by a limited bandwidth or high CPU load. The higher the deviation from the value 1, the higher the probability for an increased latency on the playback/viewer side.
 
 <ScaledImage image="str_normal.png" alt="Normal STR Example" widthScaling="50" title="Regular Stream Time Ratio" 
     description="In this example you can see a regular course of the STR metric. If you take a closer look at the beginning of the stream, you will notice an increasement in the first 30 seconds, which is intended behavior and does not generate an alert. Sometimes the ingest stream takes a bit to run stable and little fluctuations are considered as regular conditions." />
@@ -320,9 +320,7 @@ Via **Ingests/Alerts** tab you can examine alerted streams and make potential is
 
 <br/>
 
-<h3>Alert Types</h3>
-
-#### Stream Time Ratio Issue
+#### Alerts of Type - Stream Time Ratio Issue
 
 If a performance alert is selected in the alert table, which is **less than 2 weeks old**, the corresponding performance widget is shown below the alert table, providing crucial insights of the stream time ratio (STR) metric. Depending on how good/bad the values are this widget will show a **suboptimal** or **poor** performance. There is an example of **suboptimal performance on the left** and **poor performance on the right** below.
 
@@ -351,7 +349,7 @@ If a performance alert is selected in the alert table, which is **less than 2 we
 
 <br/>
 
-#### Continuous Restarts
+#### Alerts of Type - Continuous Restarts
 
 In case a *Continuous Restarts* alert is selected in the alert table, this widget will be shown. It shows the analyzed information that lead to this alert notification.
 
@@ -378,7 +376,7 @@ In case a *Continuous Restarts* alert is selected in the alert table, this widge
 
 <br/>
 
-#### Duplicated Ingests
+#### Alerts of Type - Duplicated Ingests
 
 **Duplicated Ingests** alert details are shown within the duplicated ingests widget when such an alert type is selected above. Depending on the determined reason this widget will provide information about different locations, IPv4 addresses, or infrastructures. In the following example multiple ingest connections were found for different locations at the same time for the chosen stream.
 

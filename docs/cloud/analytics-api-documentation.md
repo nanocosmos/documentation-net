@@ -11,20 +11,6 @@ For API route specifications please refer to our <a className="badge-inText" hre
 
 ## General Details
 
-### API Status Codes
-
-The API responses always contain one of these general status codes to provide additional information about the requested data:
-
-| Status Code | Label | Description |
-| ----------- | ----- | ----------- |
-| 1000 | OK | Success, related data was found. |
-| 2000 | NO DATA | Request was successful, but no related data was found. |
-| 2001 | NO ALERTS | Request was successful, but no alerts were found. This is used for requests regarding alert information retrieval. |
-
-:::tip
-Receiving one of these status codes implies that the request was technically successful. Should a response contain an error code instead, please refer to the [Error Code Definitions](/docs/analytics/api-error-codes) section.
-:::
-
 ### Rate Limit
 
 This API limits the number of requests to **1 request per second** but allows a temporary **burst rate of up to 30 requests per second** to be processed immediately without delay. If the rate limit is exceeded, you will receive a 502 (Bad Gateway) or 504 (Gateway Timeout) HTTP error code from Nginx.
@@ -69,6 +55,10 @@ This ratio determines the relation between all occuring playback initializations
 :::
 
 #### How To Use
+
+
+
+#### General Details
 
 The services of nanoStream Analytics determine the **SPSR** and **PSE** based on the player metrics data for every minute with a **5 minute delay** to the current minute.
 Either the calculated **ratios and errors** are based on your **organisation**, **stream**, **tag** or **country** of choice and offer different **breakdown terms**:

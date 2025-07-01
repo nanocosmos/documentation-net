@@ -4,8 +4,7 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-nanoStream Cloud is a unique live streaming platform based on different components for ultra low latency live streaming.
-
+nanoStream Cloud is a unique live streaming platform based on different components for ultra low latency live streaming. \
 This section is about bintu, the stream management dashboard and api.
 
 :::info Before starting
@@ -32,26 +31,28 @@ If you have not created an account yet, you can [sign up](https://dashboard.nano
     </section>
 </article>
 
-## What is bintu.live?
+## What is bintu?
 
-The bintu.live stream management software is part of the nanoStream Cloud an enables easy management of low-latency live video streams with nanoStream Live Encoders and Players or any other encoder or playback software.
+The bintu stream management software is part of the **nanoStream Cloud** an enables easy management of low-latency live video streams with nanoStream Live Encoders and Players or any other encoder or playback software.
 
 :::tip Start streaming!
 It is easy to setup and manage your live streams without additional server software. Leverage proven software know-how and quality with nanoStream Cloud live streaming services for low-latency live streaming for your own brand. Start streaming immediately!
 :::
 
-## bintu.live Concepts
+## bintu Concepts
 
 Generally, you can either use the bintu.live system with 2 ways:
 
-1. Dashboard / manual access in the web browser to create and manage live streams.
+1. **Dashboard** access in the web browser to create and manage live streams.
+2. **REST API** for development purposes. 
 
-2. REST API for development purposesIf you use the REST API, you need to obtain your unique secret API Key from the dashboard.
-
+:::info Please note
+If you use the REST API, you need to obtain your unique secret API Key from the dashboard.
+:::
 
 ### Bintu streams
 
-Every “bintu stream” has a unique ID and contains of:
+Every **bintu stream** has a unique ID and contains of:
 
 - stream URL for ingest (live encoding) with RTMP
 - playback URL for in different formats (H5Live for Web, RTMP, HLS, …).
@@ -64,10 +65,8 @@ Stream information can be obtained by dashboard or API with
 
 ### Ingest and Playback
 
-Every bintu stream has an ingest URL and a playback URL. Both are based on a basic URL like rtmp://bintu-stream.nanocosmos.de/live and a stream name like XXXX-YYYY.
-
-The ingest URL needs to be used for your Live Encoder, the player URL on your player web page.
-
+Every bintu stream has an ingest URL and a playback URL. Both are based on a basic URL e.g. *rtmp://bintu-stream.nanocosmos.de/live* and a stream name e.g. *XXXX-YYYY*. \
+The ingest URL needs to be used for your Live Encoder, the player URL on your player web page. \
 You can instantly start any number of ingest streams and players, dependent on your booked package and agreement.
 
 ### nanoStream CDN

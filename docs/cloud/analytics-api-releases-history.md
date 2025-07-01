@@ -7,60 +7,14 @@ sidebar_label: History
 
 # Changelog
 
-## 2.28 - General performance improvements & internal adjustments
-
-- minor improvements and internal changes were made regarding system perfromance and stability  
-
-## 2.27 - World map API routes
-- added **world map metric** routes to Analytics API:
-   - **Playout/Ingest:** `/api/v2/world/playoutIngest`
-   - **Buffering ratio:** `/api/v2/world/buffering/ratio`
-   - **Latency:** `/api/v2/world/latency`
-   - **Playtime:** `/api/v2/world/playtime`
-   - **Usage:** `/api/v2/world/usage`
-   - **ABR playtime:** `/api/v2/world/abr/playtime`
-   - **ABR viewer:** `/api/v2/world/abr/viewer`
-   - **ABR switches:** `/api/v2/world/abr/switches`
-- added API routes for **H5Live playtime broken down by browser/os**:
-   - **browser:** `/api/v2/h5live/playtime/browser`
-   - **os:** `/api/v2/h5live/playtime/os`
-
-## 2.26 - Successful playback start / playback start failure API routes 
-
-- added the following API routes for successful playback start ratio (SPSR) to Analytics API:
-   - `/api/v2/playback/start/success/ratio/timeseries`
-   - `/api/v2/playback/start/success/ratio/streams/timeseries`
-   - `/api/v2/playback/start/success/ratio/tags/timeseries`
-   - `/api/v2/playback/start/success/ratio/countries/timeseries`
-   - `/api/v2/playback/start/success/ratio/world`
-   - `/api/v2/playback/start/success/ratio/{breakdownTerm}`
-   - `/api/v2/playback/start/success/ratio/streams/{breakdownTerm}`
-   - `/api/v2/playback/start/success/ratio/tags/{breakdownTerm}`
-   - `/api/v2/playback/start/success/ratio/countries/{breakdownTerm}`
-   - `/api/v2/playback/start/errors`
-   - `/api/v2/playback/start/errors/streams`
-   - `/api/v2/playback/start/errors/tags`
-   - `/api/v2/playback/start/errors/world`
-   - `/api/v2/playback/start/errors/{breakdown}`
-   - `/api/v2/playback/start/errors/streams/{breakdown}`
-   - `/api/v2/playback/start/errors/tags/{breakdown}`
-   - `/api/v2/playback/start/errors/countries/{breakdown}`
-   - `/api/v2/playback/start/success/ratio/organizations (admin route)`
-   - `/api/v2/playback/start/errors/organizations (admin route)`
-
-## 2.25 - SRT metrics monitoring API route
-
-:::info Release Version Differentiation
-With the introduction of version 2.25 we made versioning of our API and the Analytics Dashboard independant from each other. This release contained no changes for the Analytics Dashboard service and as a consequence this service remains at version 2.24 for now.
-:::
-
-- added API route for SRT ingest metrics monitoring `/api/v2/monitoring/ingest/srt/timeseries` to Analytics API:
-   - bitrate (combined video/audio)
-   - round trip time
-   - packets lost
-   - packets dropped
-
 ## 2.24 - Alerting service & Error response improvement
+
+### Analytics Dashboard
+
+-  use toasts for error messages
+-  improved troubleshooting fine time range slider to automatically keep the maximal selected time range duration at 12 hours
+
+### API
 
 -  added timestamp as a human readable date string (in addition to the existing UNIX seconds timestamp) to all API route responses containing a timestamp (property name: `timestampAsString`)
 -  added additional fields to detected alerts/advices via `/api/v2/alerting/ingest/`:
@@ -108,7 +62,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
    -  time series of byte usage for playout and ingest traffic with a maximum temporal resolution of an hour
    -  no support for stream filtering
    -  start and end date have to point to a full hour e.g. 2021-01-14T15:00
-   -  accesses low resolution data enables longer time ranges requestable / historical data / low response time
+   -  accesses low resolution data -> longer time ranges requestable / historical data / low response time
 -  added IP/referrer blocking either via `Breakdown` or `Guardian` view
 
 ## 2.20.0 - new API routes

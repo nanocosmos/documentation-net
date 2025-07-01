@@ -7,7 +7,7 @@ sidebar_label: Thumbnails
 :::caution Bintu API v1.x.x
 With the **`Bintu API v1.24.1`**, we introduced several new live processing options in Q3/2024. These options enhance stream management and playback features, providing more control and flexibility for stream processing. Learn more about live processing:
 * [Bintu: Live Processing](../cloud/live_processing.md)
-* [Dashboard: How to utilize live processing](../cloud-frontend-v3/Dashboard_Live_Processing.md)
+* [Dashboard: How to utilize live processing](../dashboard/live_processing)
 :::
 
 Thumbnails are small-sized preview images used to give viewers a quick snapshot of the content they represent. They open up new use-cases including and not limited to, e.g snapshots of content of interest or poster images for streams. By providing a visual summary, thumbnails enhance user experience and navigation efficiency. 

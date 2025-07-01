@@ -79,7 +79,7 @@ It is possible to use the following filter options to get a more fine-grained ov
 
 - **Country**: let you select one or more countries
 - **Tag**: can be used to filter for specifc stream names
-  - you need to assign [tags in Bintu](../cloud-frontend-v3/Dashboard_Stream_Overview#tags) to your stream(s) to be able to use them for filtering, this is described in our [Blog post about Analytics](https://www.nanocosmos.de/blog/2019/09/nanostream-analytics-get-insights-in-your-nanostream-cloud-service-and-h5live-player-performance/) (search for "Tagging").
+  - you need to assign [tags in Bintu](../dashboard/start_streaming#tags) to your stream(s) to be able to use them for filtering, this is described in our [Blog post about Analytics](https://www.nanocosmos.de/blog/2019/09/nanostream-analytics-get-insights-in-your-nanostream-cloud-service-and-h5live-player-performance/) (search for "Tagging").
 :::tip Good to know
 Tag selection works like an `AND` filter, only metrics for streams are shown, which have all of the selected tags assigned
 :::

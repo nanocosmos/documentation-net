@@ -8,7 +8,7 @@ import AnalyticsImg from '@site/static/img/analytics.svg';
 export default function Analytics() {
 
   return (
-    <span className={styles.playerWrapper}>
+    <div className={styles.playerWrapper}>
       <div className="text--center padding-horiz--md">
         <h1>Analytics</h1>
         <p>A great way to monitor and analyze the performance and quality of service of your live streams.</p>
@@ -43,6 +43,6 @@ export default function Analytics() {
           </div>
         </div>
       </section>
-    </span>
+    </div>
   );
 }

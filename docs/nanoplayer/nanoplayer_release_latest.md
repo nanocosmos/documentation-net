@@ -12,7 +12,6 @@ This update resolves an issue on iOS 18.4+ that prevented video playback from st
 
 ### **Changelog**
 
-
 ### Fixed
 
 - resolved an issue on iOS 18.4+ that prevented video playback from starting when using HLS fallback mode
