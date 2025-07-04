@@ -70,7 +70,12 @@ If either **Thumbnails** or **Motion Clips**, or both, are enabled, they will ap
 
 ## Live Replay
 
-Live Replay allows users to access and share previously streamed content almost instantly.
+Live Replay allows users to access and share previously streamed content almost instantly. \
+If at least one **transcoded stream** is available in a stream group, **Adaptive Bitrate Replay (ABR)** is enabled. This feature automatically selects the best playback stream based on the viewer’s available bandwidth.
+
+:::tip Recommendation for Adaptive Bitrate Streams 
+To ensure optimal performance, it is recommended to configure both the **Passthrough** and **Transcode streams** with the same **Live Replay Duration**. 
+:::
 
 1. **Tabs**: If you have a stream group (multiple related streams), you can switch between them using tabs. If not, no tabs will be shown.
 2. **Header Row**: Displays the section title, a **Refresh** icon button to update assets and data, and an **Edit** button¹.
@@ -78,6 +83,11 @@ Live Replay allows users to access and share previously streamed content almost 
 4. **Assets Section**:
    - Session Date (UTC)
    - HLS File (streamed video in .m3u8 format)
+      - **Latest Single Stream Session**: This session replays the passthrough stream or ABR stream (if it is a stream group) starting
+      from a time position as close to the live stream as possible.
+      - **Single Stream Session**: This session replays the passthrough stream starting from the time stamp indicated on the filename.
+      - **ABR Session**: This session references all streams from the stream group and you can replay any selected stream or set `Auto` for
+      ABR feature to work. 
    - **Rewatch** button (allows you to replay the selected session.)
    - **Clip & Share** button (to generate shareable segments)
 
