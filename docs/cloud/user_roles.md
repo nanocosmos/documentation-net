@@ -84,7 +84,7 @@ For a detailed overview of each role's permissions, refer to the [High-level Per
 
 | **Operation** | **Route** | **Description** | **Access Level** | **Dedicated docs** |
 |---|---|---|---|---|
-| **POST** | `/bintu/token` | Create an API token for the Bintu services | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20bintu%20services) |
+| **POST** | `/bintu/token` | Create an API token for the Bintu services | <span className="role role-admin">nanoAdmin</span> | [More info](https://api.nanostream.cloud/docs/token/#operation/Create%20a%20token%20for%20the%20bintu%20services) |
 ## High-level Permission Overview
 
 ### API Access
