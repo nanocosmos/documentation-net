@@ -10,25 +10,20 @@ sidebar_label: Latest
 
 ## For easy-to-use migration follow our [guide](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_v5_migration_guide)
 
-## **[5.0.9]**
+## **[5.0.10]**
 
 ### **Release Notes**
 
-This release focuses on stability improvements and fixes for iOS playback behavior and stream quality handling.
-The playback resume behavior after background suspension has been improved for MSE playback, fixing an issue where playback could get stuck when resuming in muted mode if the session was never unmuted, particularly on iOS 26.4.
-In addition, HLS playback in iOS WebViews has been improved to ensure fallback playback when MSE/MOQ playback is not possible.
-This release also fixes an issue with incorrect `group.startQuality` selection when the configured quality was not available in the active rendition set.
+This release improves MOQ playback compatibility with H.264 streams encoded using "High 10" or "High 4:2:2" profiles across Safari MacOS and iOS.
 
 ### **Changelog**
 
-### **Fixed**
+### Improved
 
-- issue in MSE playback where playback could get stuck when resuming in muted mode if the session was never unmuted, after being suspended in background state, particularly on iOS 26.4
-- ensured HLS playback in iOS WebViews as fallback when MSE/MOQ playback is not possible
-- incorrect `group.startQuality` matching when the configured quality was not included in the available group renditions
+- MOQ playback compatibility with H.264 video "High 10" & "High 4:2:2" profiles in Safari MacOS and iOS
 
-### **Release Package 5.0.9**
+### **Release Package 5.0.10**
 
-- [5.0.9](https://files.nanocosmos.de/index.php/s/PCgA6oTnQnb4ake)
+- [5.0.10](https://files.nanocosmos.de/index.php/s/ryq8QHpZxo3jrAq)
 - [latest 5.x](https://files.nanocosmos.de/index.php/s/y4e2axW7s8qEtJb)
 - [latest](https://files.nanocosmos.de/index.php/s/2tpCzgRjNEZDzeP)
