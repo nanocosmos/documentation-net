@@ -7,6 +7,40 @@ sidebar_label: History
 
 # Changelog
 
+## 2.35.0 - OTel Observability / Faster usage queries / Live Captions Concurrency
+
+#### World Map
+
+-  fixed an issue where a country with no traffic (e.g. US) could appear as a zero-value row in the Playout + Ingest view's Top 10 table; entries with a total of 0 are now filtered out at the API level
+
+#### Usage History
+
+-  the usage history timeseries no longer returns periods that are not yet fully aggregated, so an incomplete most-recent month is no longer reported as if it were a complete one
+
+#### Usage & World Map Performance
+
+-  usage and world map byte-usage queries are now served from pre-aggregated hourly data wherever it is safely available, reducing query latency for wide time ranges (no change to the available time range or to result values)
+
+## 2.34.2 - Domain Migration & API Endpoint Update
+
+#### New Base URLs
+
+-  **Analytics API:** `https://metrics-api.nanostream.cloud` (without `/api` at the end)
+   -  the domain has changed from `metrics.nanocosmos.de` to `metrics-api.nanostream.cloud`
+   -  all endpoint paths now start directly with `/v2/` instead of `/api/v2/`
+   -  example: `https://metrics.nanocosmos.de/api/v2/h5live/playtime/timeseries` is now `https://metrics-api.nanostream.cloud/v2/h5live/playtime/timeseries`
+
+-  **Analytics Dashboard:** `https://metrics.nanostream.cloud`
+   -  the domain has changed from `metrics.nanocosmos.de` to `metrics.nanostream.cloud`
+
+-  **Support for `https://metrics.nanocosmos.de`**
+   -  the URL `https://metrics.nanocosmos.de` (using `/api/v2/...`) is still supported, but is now deprecated
+
+#### API Documentation
+
+-  API documentation is now available at: `https://api.nanostream.cloud/docs/analytics/v2/`
+-  the previous URL `https://metrics.nanocosmos.de/api/doc/v2/` redirects to the new location
+
 ## 2.34.0 - Live Captions & Inactive Ingest Alerts
 
 #### ABR switches
