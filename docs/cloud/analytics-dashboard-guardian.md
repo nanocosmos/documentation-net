@@ -96,6 +96,10 @@ When choosing to search based on **Playback Tokens**, a breakdown of this can be
 
 (C) `Revocation Status` shows whether the playback token is blocked or not
 
+:::note Expired tokens
+An expired playback token can still be revoked for a **24-hour grace period** after its expiration, so operators can terminate ongoing playback sessions running on a technically-expired token. The **Expired** label appears as soon as the token's `exp` is in the past, but the **Revoke** action stays available throughout the grace period.
+:::
+
 (D) `IP Block Button` that blocks the corresponding IP that used the selected token
 
 (E) `Most Popular Metrics` section displays the most important metrics ranked by appearences
