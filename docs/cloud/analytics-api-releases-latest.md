@@ -7,7 +7,7 @@ sidebar_label: Latest
 
 # Changelog
 
-## 2.35.0 - OTel Observability / Faster usage queries / Live Captions Concurrency
+## 2.35.0 - OTel Observability / Faster usage queries
 
 #### World Map
 
