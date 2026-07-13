@@ -6,13 +6,13 @@ description: Learn how to configure and use custom webhooks in Bintu to protect 
 ---
 
 Custom webhooks in **Bintu** allow you to integrate your own backend logic directly into the ingest workflow of nanoStream Cloud.  
-Instead of using fixed access rules, you can forward every **publish** and **play** attempt to your own server for validation. Your service decides, in real time, whether a stream may start, continue, or end.
+Instead of using fixed access rules, you can forward every **publish** attempt to a configurable API endpoint for validation. This endpoint can decide, at runtime, whether a stream is allowed to be published.
 
 This mechanism enables advanced use cases such as:
 - custom authentication and authorization
 - per-stream access control
 - event-driven backend integration
-- logging and auditing of ingest/play events
+- logging and auditing of publish events
 - enforcing business rules before a stream goes live
 
 Bintu webhooks are **synchronous and blocking**: Bintu will *wait* for your server's response. If your server responds with `200 OK`, the action proceeds. If it responds with `403`, the action is rejected.
@@ -58,8 +58,8 @@ Your server must **always** return a valid HTTP response:
 
 | HTTP response | Description |
 |---------------|-------------|
-| `200 OK` | Allow play/ingest |
-| `403 Forbidden` | Deny play/ingest |
+| `200 OK` | Allow publish |
+| `403 Forbidden` | Deny publish |
 | any other status | Request is rejected |
 
 :::tip Performance note
@@ -115,9 +115,9 @@ Below are the unified parameters followed by per-event parameter tables.
 
 | Parameter | Description | Example | 
 |-----------|-------------|---------|
-| **call** | Webhook event type | `publish`, `play`, `publish_done`, `play_done`, `update_publish` |
-| **name** | Bintu streamname | 'YYstV-BVPq4' |
-| **app** | Application |  `live` or `play` |
+| **call** | Webhook event type | `publish`, `update_publish`, `publish_done` |
+| **name** | Bintu streamname | 'XXXXX-YYYYY' |
+| **app** | Application |  e.g. `live` |
 | **addr** | Client IP address | `xxx.yyy.zzz.aaa` |
 | **clientid** | Internal client identifier | `123456`|
 
@@ -161,66 +161,27 @@ As stated above, the request body also contains the keys bytes\_in and bytes\_ou
 | **addr** | Client IP |
 | **clientid** | Client ID |
 
-### on_play
-
-| Parameter | Description |
-|----------|-------------|
-| **call** | `play` |
-| **name** | Stream name |
-| **start** | Playback start position (0 for live) |
-| **duration** | Requested playback duration |
-| **app** | Application (`play`) |
-| **addr** | Viewer IP address |
-| **clientid** | Unique viewer session ID |
-
-
-### on_play_done
-
-| Parameter | Description |
-|----------|-------------|
-| **call** | `play_done` |
-| **name** | Stream name |
-| **bytes_in** | Bytes received |
-| **bytes_out** | Bytes delivered |
-| **app** | Application |
-| **addr** | Viewer IP |
-| **clientid** | Viewer session ID |
-
-
 ## Custom Data With Query Parameters
 
-You can append your own custom metadata to the stream name when publishing or playing a stream. These custom fields are included in the webhook POST body exactly as they appear in the URL. This allows you to pass e.g. application-specific metadata or any custom parameters relevant to your backend logic. *Bintu will **not modify or interpret** your parameters. They are simply forwarded to your webhook.* You can add **n* query parameters**.
+You can append your own custom parameters to the stream name when publishing a stream. These custom fields are included in the webhook POST body exactly as they appear in the URL. *Bintu will **not modify or interpret** your parameters. They are simply forwarded to the configured webhook endpoint.* You can add **n* parameters**.
 
-### Custom Data on Publish
+### Custom publish parameters
 
-1. Your encoder publishes to:
+Generally publish parameters are appended to the streamname, NOT the stream URL.
+
+1. Broadcasters that require separate configuration of stream URL and stream name 
+
+Example: 
+- RTMP URL: `rtmp://bintu-vtrans.nanocosmos.de/live` 
+- Stream name: `XXXXX-YYYYY?passcode=your_passcode`
+
+2. Broadcasters that require combined configuration of stream URL and stream name 
+
+Example: 
+- RTMP URL and stream name: `rtmp://bintu-vtrans.nanocosmos.de/live/XXXXX-YYYYY?passcode=your_passcode`
+
+3. Bintu sends *on_publish* the following POST body to your webhook: 
+
 ```bash
-rtmp://bintu-stream.nanocosmos.de/live/STREAMID123?foo=bar&batz=12345&custom_data=[YOUR_CUSTOMDATA]
+passcode=your_passcode&call=publish&name=XXXXX-YYYYY&app=live&addr=xxx.xxx.xxx.xxx&clientid=123456
 ```
-2. Bintu sends *on_publish* the following POST body to your webhook:
-```bash
-foo=bar&batz=12345&custom_data=[YOUR_CUSTOMDATA]&call=publish&name=STREAMID123&app=live&addr=xxx.xxx.xxx.xxx&clientid=123456
-```
-
-
-### Custom Data on Playack
-
-You can also attach parameters to your playback request.  
-1. You are requesting a playback as:
-```bash
-http://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?h5live.server=bintu-play.nanocosmos.de&h5live.rtmp.url=rtmp://bintu-play.nanocosmos.de/play&h5live.rtmp.streamname=CD6xx-123456?test%3D123
-```
-2. Bintu sends *on_play* the following POST body to your webhook:
-```shell
-test=123&call=play&name=CD6xx-123456&start=0&duration=0&reset=0&app=play&addr=xxx.yyy.zzz.aaa&clientid=123456    
-```  
-
-:::warning URL Encoding Requirements
-When sending custom parameters, they must be URL-encoded. Otherwise your player may interpret the parameter incorrectly.
-
-| Character | Must be encoded as | Example |
-|-----------|--------------------|---------|
-| `=` | `%3D` | token=abc=123 → token=abc%3D123 |
-| `&` | `%26` | user=tom&jerry → user=tom%26jerry |
-| `?` within values | `%3F` | meta=a?b?c → meta=a%3Fb%3Fc |
-:::
