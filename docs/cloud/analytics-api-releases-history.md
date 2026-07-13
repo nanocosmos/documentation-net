@@ -7,47 +7,33 @@ sidebar_label: History
 
 # Changelog
 
-## 2.35.0 - OTel Observability / Faster usage queries
+## 2.34.2 - Domain migration & API endpoint update
 
-#### World Map
+### New Base URLs
 
--  fixed an issue where a country with no traffic (e.g. US) could appear as a zero-value row in the Playout + Ingest view's Top 10 table; entries with a total of 0 are now filtered out at the API level
-
-#### Usage History
-
--  the usage history timeseries no longer returns periods that are not yet fully aggregated, so an incomplete most-recent month is no longer reported as if it were a complete one
-
-#### Usage & World Map Performance
-
--  usage and world map byte-usage queries are now served from pre-aggregated hourly data wherever it is safely available, reducing query latency for wide time ranges (no change to the available time range or to result values)
-
-## 2.34.2 - Domain Migration & API Endpoint Update
-
-#### New Base URLs
-
--  **Analytics API:** `https://metrics-api.nanostream.cloud` (without `/api` at the end)
+#### **Analytics API:** `https://metrics-api.nanostream.cloud` (without `/api` at the end)
    -  the domain has changed from `metrics.nanocosmos.de` to `metrics-api.nanostream.cloud`
    -  all endpoint paths now start directly with `/v2/` instead of `/api/v2/`
    -  example: `https://metrics.nanocosmos.de/api/v2/h5live/playtime/timeseries` is now `https://metrics-api.nanostream.cloud/v2/h5live/playtime/timeseries`
 
--  **Analytics Dashboard:** `https://metrics.nanostream.cloud`
+#### **Analytics Dashboard:** `https://metrics.nanostream.cloud`
    -  the domain has changed from `metrics.nanocosmos.de` to `metrics.nanostream.cloud`
 
--  **Support for `https://metrics.nanocosmos.de`**
+#### **Support for `https://metrics.nanocosmos.de`**
    -  the URL `https://metrics.nanocosmos.de` (using `/api/v2/...`) is still supported, but is now deprecated
 
-#### API Documentation
+### API Documentation
 
 -  API documentation is now available at: `https://api.nanostream.cloud/docs/analytics/v2/`
 -  the previous URL `https://metrics.nanocosmos.de/api/doc/v2/` redirects to the new location
 
-## 2.34.0 - Live Captions & Inactive Ingest Alerts
+## 2.34.0 - Live captions & inactive ingest alerts
 
-#### ABR switches
+### ABR switches
 
 -  API route for worldmap's ABR switches metric now reports breakdown by correct quality levels
 
-#### Added API routes for live caption usage
+### Added API routes for live caption usage
 
 -  added API routes for live captions analytics:
    -  `/v2/captions/usage/stream/uptime` (GET) -> uptime usage breakdown by stream name with CSV export
@@ -55,16 +41,16 @@ sidebar_label: History
    -  `/v2/captions/usage/language/target` (GET) -> target language breakdown with CSV export
    -  `/v2/captions/usage/timeseries` (GET) -> uptime usage timeseries with CSV export
 
-#### Misuse Detection — MOQ Support
+### Misuse detection — MOQ support
 
 -  added MOQ protocol support to IP misuse and JWT misuse detection controllers
 
-## 2.33.0 - Playback Token Revocation API & JTI Lookup
+## 2.33.0 - Playback token revocation API & JTI lookup
 
 -  added support for Playback Token Revocation through Analytics Dashboard
 -  fixed a bug, where MoQ ingest/playout counts were not added to Worldmap > ingest/playout counts metric
 
-## 2.32.0 - Webhook API & WebRTC v6 Support & H5Live Controller Update & JWT Misuse
+## 2.32.0 - Webhook API & WebRTC v6 support & H5Live controller update & JWT misuse
 
 -  added API routes for alert manager / mimir API:
    -  `/v2/alerting/config/webhook` (GET) -> get configured webhook receiver
@@ -85,11 +71,11 @@ sidebar_label: History
 
 - added MoQ protocol traffic insights to playout traffic
 
-## 2.31 - Cloud Optimizations
+## 2.31 - Cloud optimizations
 
 - internal system optimizations
 
-## 2.30 - Alerts via Email Notification
+## 2.30 - Alerts via email notification
 
 -  added API routes for alert manager:
    -  `/v2/alerting/config/email` -> get all configured email receivers
@@ -97,7 +83,7 @@ sidebar_label: History
    -  `/v2/alerting/config/email/delete` -> delete email receiver from config
 -  added max time offset (aka max frame delay) metric to troubleshooting ingest
 
-## 2.29 - Alerting data adpation / Use protocol tags
+## 2.29 - Alerting data adaptation / use protocol tags
 
 -  added API routes for successful playback start ratio (**SPSR**) to get TOP 100 for streams:
    -  `/v2/playback/start/success/ratio/streams/top100` (ascending order)
@@ -112,7 +98,7 @@ sidebar_label: History
    -  `CONTINUOUS_RESTARTS` with code 22001 is now code 22000
    -  new alert: `CONTINUOUS_RESTARTS_POOR_PERFORMANCE` (code: 22001), this alert indicates continuous restarts where the stream time ratio reflects a poor performance
 
-## 2.28 - Alert Guiding & Publishes Search Optimization
+## 2.28 - Alert guiding & publishes search optimization
 
 - improved alert analysis and enriched details about alert handling
 - optimized publish search algorithm for faster and more accurate results  
@@ -170,7 +156,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
    -  packet lost
    -  packet dropped
 
-## 2.24 - Alerting service & Error response improvement
+## 2.24 - Alerting service & error response improvement
 
 -  added timestamp as a human readable date string (in addition to the existing UNIX seconds timestamp) to all API route responses containing a timestamp (property name: `timestampAsString`)
 -  added additional fields to detected alerts/advices via `/v2/alerting/ingest/`:
@@ -212,7 +198,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
    -  countries: `api/v2/filters/countries`
    -  events: `api/v2/filters/events`
 
-## 2.20.1 - new API routes part 2
+## 2.20.1 - New API routes part 2
 
 -  new API route: `/v2/usage/hourly/bytes/timeseries`:
    -  time series of byte usage for playout and ingest traffic with a maximum temporal resolution of an hour
@@ -221,7 +207,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
    -  accesses low resolution data -> longer time ranges requestable / historical data / low response time
 -  added IP/referrer blocking either via `Breakdown` or `Guardian` view
 
-## 2.20.0 - new API routes
+## 2.20.0 - New API routes
 
 -  new API routes to request monitoring metrics
 
@@ -247,11 +233,11 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  improved: standardized public API route naming (v2)
 -  fixed: minor bugfixes
 
-## 2.18.1 - Block/Unblock IPs and referrers
+## 2.18.1 - Block / unblock IPs and referrers
 
 -  enabled functionality to block/unblocking of certain IPs or referrers on 'Breakdown' view
 
-## 2.18 - More WebRTC metrics/details
+## 2.18 - More WebRTC metrics / details
 
 -  new API routes to request ingest counts broken down to browsers and operating systems
    -  `/api/v1/stats/webrtc/ingest/count/browser`
@@ -320,7 +306,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed frontend crash when a playback with a short duration is selected on the troubleshooting page
 -  fixed minor issue with time range validation
 
-## 2.14 - public API: ingest video and audio bitrate
+## 2.14 - Public API: ingest video and audio bitrate
 
 -  added API route for monitoring ingest audio and video bitrate
 -  improved StreamGuard: accuracy of values have been increased, particularly for concurrency metric
@@ -347,7 +333,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed: when changing to a different view it was possible that loading indications did not work anymore
 -  fixed wrong UTC dates on time axes in the troubleshooting view
 
-## 2.12 - public API: concurrent viewer
+## 2.12 - Public API: concurrent viewer
 
 -  added API route for concurrent viewers
 -  added boundaries to US regions
@@ -362,12 +348,12 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed: in rare cases it was possible that the query for the world map category latency timed out
 -  removed unused setting "start of week"
 
-## 2.11 - public API
+## 2.11 - Public API
 
 -  added direct API access: accounting data for last month can be queried
 -  created API documentation: https://api.nanostream.cloud/docs/analytics/v2/
 
-## 2.10 - troubleshooting
+## 2.10 - Troubleshooting
 
 -  added troubleshooting view to investigate stream issues based on ingest and playout client metrics
 -  added world map regions like Europe, North America, etc.
@@ -378,7 +364,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  improved: centralized chart.js options
 -  changed: maximum concurrent viewers moved from "H5Live" to "Home" view
 
-## 2.9 - world map improvement
+## 2.9 - World map improvement
 
 -  added zoom for every category on the world map
    -  users can now click on a point in the world map to get top 10 values for different fields, like IP, stream name, city, referrer, etc.
@@ -411,7 +397,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed: PDF export was not working anymore
 -  fixed rare error "Converting circular structure to JSON"
 
-## 2.7 - Zoom/Filter
+## 2.7 - Zoom / filter
 
 -  added "zoom" overlay to show top 10 of IPs, stream names, countries or cities for a selected interval bar of a histogram
    -  currently available for "Usage Playout/Ingest", "Usage Playout" and "Usage Ingest"
@@ -422,7 +408,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed: country usage pie chart only considered playout, not ingest
 -  fixed: tag filtering did not work for concurrent viewers
 
-## 2.6 - initial QoE metrics
+## 2.6 - Initial QoE metrics
 
 -  added QoE score to world map
 -  added new view for QoE metrics
@@ -431,7 +417,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed: webcaster traffic which is ingested locally on rtc servers was not considered
 -  fixed: playout count on world map did not consider H5Live pull token playbacks
 
-## 2.5 - initial ABR metrics
+## 2.5 - Initial ABR metrics
 
 -  added ABR overview to world map:
    -  play time in hours for desktop and mobile
@@ -443,7 +429,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
    -  comparison of playouts with ABR available and ABR not available
 -  added metric for client versions for H5live and Webcaster
 
-## 2.4 - initial webcaster metrics
+## 2.4 - Initial webcaster metrics
 
 -  added webcaster client metrics:
    -  ingests per OS and Browser
@@ -454,14 +440,14 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  added metric to show usage per h5live pull token
    -  unknown/unauthorized tokens are shown as well
 
-## 2.3 - world map as entry point
+## 2.3 - World map as entry point
 
 -  added further metrics and top 10 list of countries to world map
 -  added hidden option to select a country directly from the country pie chart
 -  improved display of world map: flatter world map and highlight top 10 points
 -  improved month to date widget: user can compare current month with same period of previous month
 
-## 2.2 - internal cleanup and refactoring
+## 2.2 - Internal cleanup and refactoring
 
 -  added new H5Live metric: average and median of played time
 -  added server/player ratio for H5live metrics to admin organisation list
@@ -470,7 +456,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed unrealistically high playback counts on world map
 -  fixed: widgets were not loaded when switching views (home to h5live or vice versa) and an absolute time span was selected
 
-## 2.1 - added tags filter and extended world map
+## 2.1 - Added tags filter and extended world map
 
 -  added new filter to select one or multiple tags, metrics will then only show data for the selected tags
    -  sample use cases: tag one or more streams for one event, or use tag(s) to identify an iGaming table
@@ -483,7 +469,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed unexpected spikes for play/buffer ratio
 -  fixed: drop down menus like the data picker or the tag filter were partly hidden beneath other widgets
 
-## 2.0 - added country filters and caching
+## 2.0 - Added country filters and caching
 
 -  added new filter to select single or multiple countries, metrics will then only show data for the selected countries
 -  changed: query for calculating the ingest traffic now uses ingest rtmp applications of the ingest servers instead of the play rtmp application
@@ -505,7 +491,7 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  added option to filter list of stream names in "GBytes per Streamname" by using tags
 -  improved understandability of H5Live metrics
 
-## 1.7 - added H5Live metrics and world map
+## 1.7 - Added H5Live metrics and world map
 
 -  added initial version of worldmap widget
 -  added new H5Live metrics: error/status codes, reasons for stopping, play buffering ratio, player loading count, percentiles of average player buffer length in seconds, median play start time in seconds
@@ -553,11 +539,11 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  fixed: customer name was missing in PDF
 -  fixed: wrong total values for custom selected time span
 
-## 1.0 - initial release
+## 1.0 - Initial release
 
 -  bug fixes
 
-## 0.1 - beta version
+## 0.1 - Beta version
 
 -  customers can login with Bintu account
 -  basic usage metrics, like general usage (sent/received), H5Live usage, countries and Gbytes per stream name, client and IP
