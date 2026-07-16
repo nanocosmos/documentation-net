@@ -7,17 +7,12 @@ sidebar_label: Latest
 
 # Changelog
 
-## 2.32.0 - Live Captions & Inactive Ingest Alerts
+## 2.33.0 - Expired token revocation & buffering ratio
 
--  added **Live Captions** analytics page (`/liveCaptions`) with the following widgets
--  uptime usage (timeseries + CSV export)
--  uptime per source language (zoom + CSV export)
--  uptime per target language (zoom + CSV export)
--  uptime usage per stream name (zoom + CSV export)
+### **Guardian — Token Revocation**
+   -  **expired playback tokens** can now be revoked for a **24-hour grace period** after expiration, so operators can still terminate ongoing playback sessions running on a technically-expired token
+   -  the **Expired** label is decoupled from the Revoke action: the label appears as soon as the token's `exp` is in the past, but the Revoke button stays available during the grace period
 
--  added **Inactive Ingest** alert to the Troubleshooting section
--  new dedicated widget shows the timeline of inactive ingest occurrences with legend visibility toggling
-
--  worldmap ABR switch metric improvements
-   -  ABR profile switch now displays the correct quality levels where a stream switched into
-   -  simplified worldmap's ABR switches hover tooltip to display aggregated total counts
+### **H5Live**
+   -  the **Buffering Ratio** widget no longer fills future timestamps with zero values; the chart now ends at the last bucket with real data
+   -  buckets with no active streams are shown as a gap ("nothing to measure") instead of 0% ("measured, no buffering"); empty ranges show *No data available*

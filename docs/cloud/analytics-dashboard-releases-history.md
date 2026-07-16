@@ -7,7 +7,7 @@ sidebar_label: History
 
 # Changelog
 
-## 2.32.0 - Live Captions & Inactive Ingest Alerts
+## 2.32.0 - Live captions & inactive ingest alerts
 
 -  added **Live Captions** analytics page (`/liveCaptions`) with the following widgets
 -  uptime usage (timeseries + CSV export)
@@ -22,7 +22,7 @@ sidebar_label: History
    -  ABR profile switch now displays the correct quality levels where a stream switched into
    -  simplified worldmap's ABR switches hover tooltip to display aggregated total counts
 
-## 2.31.0 - Guardian View & Token Revocation
+## 2.31.0 - Guardian view & token revocation
 
 -  added playback token revocation to Guardian View for misuse detection
    -  the JWT Misuse table now displays a **"revoked"** status column, showing at a glance whether each token has been revoked
@@ -31,14 +31,14 @@ sidebar_label: History
    -  expired tokens are clearly indicated as **"Expired"** and cannot be revoked
 -  renamed "Concurrency" to "Max Concurrency" in the JWT misuse table and descriptions for clarity
 
-## 2.30.0 - Webcaster v6 Support & JWT Misuse Table & H5Live StopReasons/ErrorCodes Update
+## 2.30.0 - Webcaster v6 support & JWT misuse table & H5Live StopReasons / ErrorCodes update
 
 -  added misuse analysis via JWT to Guardian View
 -  webcaster widgets now support webcaster version 5 and version 6 metrics
-   -  included buttons on UI to switch between version 5 and version 6 on the 'Status/Error Codes' widget on the Webcaster tab
+   -  included buttons on UI to switch between version 5 and version 6 on the 'Status / Error Codes' widget on the Webcaster tab
    -  added 'BROADCAST_STOPPED' for v6 as a new stop reason category for 'Stop reasons' widget
 
-## 2.29 Cloud Optimizations
+## 2.29 Cloud optimizations
 
 - internal system optimizations
 
@@ -47,7 +47,7 @@ sidebar_label: History
 -  added `max frame delay` metric to troubleshooting :arrow_right: ingest
 -  added an error notification via Toast for issues that occur while parsing app states from a URL
 
-## 2.27 - Alerting Adjustments & Authentication Improvement
+## 2.27 - Alerting adjustments & authentication improvement
 
 -  Adjustments to Troubleshooting/Alerting Section:
 
@@ -61,7 +61,7 @@ sidebar_label: History
    -  users do not need to re-authenticate via login credentials each time the Analytics Dashboard tab is closed anymore
    -  (e.g.: opening the Analytics Dashboard within a new tab while authentication took place recently, no extra manual login is required)
 
-## 2.26 - Alert Guiding / Publishes finding
+## 2.26 - Alert guiding / publishes finding
 
 -  added new alert guide feature for troubleshooting, which provides a way to find more details about past & current alerts for ingest specific issues
    -  Troubleshooting ingest section has now 2 tabs (publishes / alerts)
@@ -76,7 +76,7 @@ sidebar_label: History
    -  H5Live playtime per browser
    -  H5Live playtime per os
 
-## 2.24 - Alerting service & Error response improvement
+## 2.24 - Alerting service & error response improvement
 
 :::info Release Version Differentiation
 With the introduction of version 2.25 we made versioning of our API and the Analytics Dashboard independant from each other. This release contained no changes for the Analytics Dashboard service and as a consequence this service remains at version 2.24 for now.
