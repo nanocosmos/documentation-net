@@ -354,7 +354,7 @@ Example ingest comparison:
 :::tip Security Features
 
 - Read more on how to block specific IP addresses and referrers and even entire CIDR masks from accessing your stream with the [nanoStream Guardian](/docs/cloud/guardian)
-- Learn how nanoStream Cloud protects your account and organiation's operations with [Role-Based Access Control (RBAC)](http://localhost:3000/docs/user_roles)
+- Learn how nanoStream Cloud protects your account and organiation's operations with [Role-Based Access Control (RBAC)](/docs/cloud/user_roles)
 :::
 
 
