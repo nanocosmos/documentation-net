@@ -28,7 +28,7 @@ This release focuses on improvements for MoQ playback mode, enabling unmuted aud
 
 - faster initial ABR switch-up in MoQ mode
 
-### **Release Package 5.0.10**
+### **Release Package 5.0.11**
 
 - [5.0.11](https://files.nanocosmos.de/index.php/s/nWyiEetsrrZ6LKF)
 - [latest 5.x](https://files.nanocosmos.de/index.php/s/y4e2axW7s8qEtJb)
