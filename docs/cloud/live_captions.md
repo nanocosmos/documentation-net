@@ -228,9 +228,10 @@ curl --request POST \
   --data '{"name":"captions","options":{"engine":"deepgram","sourceLanguage":"en"}}'
 ```
 
-:::note Advanced Developer bintu API docs
-For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: [doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs). \
-The API reference provides full details on all available endpoints and workflows for managing stream options, including the topic discussed in this section.
+:::note Live Captions API-First Guide & Advanced bintu API docs
+For a complete end-to-end API walkthrough (including authentication, stream creation, caption option configuration, live monitoring, and CDN transcript downloads), see the [**Live Captions API Guide**](/docs/cloud/live_captions_api_guide).
+
+For additional languages, advanced configuration options, and complete request/response schemas, please refer to the official **bintu API documentation**: [doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs).
 :::
 
 ## Need assistance?

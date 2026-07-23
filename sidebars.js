@@ -30,6 +30,7 @@ const sidebars = {
         "cloud/live-recording-vod",
         "cloud/live_processing",
         "cloud/live_captions",
+        "cloud/live_captions_api_guide",
       ]
     },
     {
