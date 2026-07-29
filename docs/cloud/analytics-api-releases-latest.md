@@ -11,4 +11,4 @@ sidebar_label: Latest
 
 ### Troubleshooting
 
--   WebRTC troubleshooting now supports **Webcaster v6** in the publish list and error detection 
+-   WebRTC troubleshooting now supports **Webcaster v6**
