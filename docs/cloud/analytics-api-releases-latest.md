@@ -11,6 +11,4 @@ sidebar_label: Latest
 
 ### Troubleshooting
 
--  WebRTC troubleshooting now recognizes **Webcaster v6**: v6 publish sessions appear in the **publish list** and are covered by error detection, so v6 broadcasts are no longer missing from the **Troubleshooting** page
--  a normal end of a broadcast (`BROADCAST_STOPPED`) is no longer treated as a publish error, so cleanly stopped streams no longer show up as failed publishes
--  WebRTC **bitrate** values are no longer re-scaled on read: the underlying field is already in kBit/s, so publish bitrates are reported at the correct magnitude
+-   WebRTC troubleshooting now supports **Webcaster v6** in the publish list and error detection 
