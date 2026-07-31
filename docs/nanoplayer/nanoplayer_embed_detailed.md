@@ -98,7 +98,7 @@ Values: `"classic"`, `"balancedadaptive"`, `"fastadaptive"`.
   * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&playback.latencyControlMode=balancedadaptive
 
 * abr/multi stream:
-  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&entry.info.bitrate=1500&entry2.rtmp.streamname=HX26g-uVn3M&entry2.info.bitrate=800&entry3.rtmp.streamname=HX26g-VbAxm&entry3.info.bitrate=200&options.rule=deviationOfMean2&startIndex=2
+  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&entry.info.bitrate=1500&entry2.rtmp.streamname=HX26g-uVn3M&entry2.info.bitrate=800&entry3.rtmp.streamname=HX26g-VbAxm&entry3.info.bitrate=200&options.adaption.rule=deviationOfMean2&startIndex=2
 
 * autoplay/mute setting:
   * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&playback.autoplay=true&playback.automute=true&playback.muted=false
