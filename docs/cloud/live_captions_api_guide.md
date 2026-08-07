@@ -181,7 +181,7 @@ For a stream named `XXXXX-12345` with `en` source and `de` translation:
 :::info Availability & Environment
 - Files become available **1 to 2 minutes** after the recorded stream ends. A `404` means the recording is not ready yet, or the stream name or language pair does not match.
 - `production` in the path is a fixed literal for production streams.
-- This format applies to stable recordings (transcript-storage v0.9.3+).
+- This URL format applies to current recordings; very old recordings may use a different layout.
 :::
 
 ---
