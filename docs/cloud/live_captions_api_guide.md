@@ -129,7 +129,11 @@ curl -X POST https://bintu.nanocosmos.de/stream/YOUR_STREAM_ID/options \
 | --- | :---: | :---: | :---: |
 | Stream Info (poll) | ✓ | ✓ | ✓ |
 
-Once the encoder is pushing to the `ingest.rtmp` target from step 2, poll **Stream Info** (`GET /stream/{id}`) and watch the `state` field to detect when it starts (`live`) or stops (`created` / `ended`). There is no push notification for this, and no separate "go live" call to make.
+Once the encoder is pushing to the `ingest.rtmp` target from step 2, poll **Stream Info** (`GET /stream/{id}`) and watch the `state` field to detect when it starts (`live`) or stops (`created` / `ended`). There is no separate "go live" call to make.
+
+:::tip Prefer a push notification over polling?
+Bintu also supports organisation-level [**Custom Webhooks**](/docs/cloud/bintu_custom_webhooks): `on_publish` fires when a stream starts ingesting and `on_publish_done` fires when it ends, so you don't have to poll. A webhook applies to every stream in the organisation, not just the one you're tracking, so filter on the `name` parameter in the payload. Configuring one requires a publicly reachable HTTPS endpoint and is <span className="role role-admin">nanoAdmin</span>-only.
+:::
 
 To end the broadcast, stop the encoder (e.g. click "Stop Streaming" in OBS). The stream's state becomes `ended` and it is immediately ready to accept a new ingest session, no API call required. To watch the stream with captions rendered, use the nanoStream web player.
 
