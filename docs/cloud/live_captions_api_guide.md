@@ -129,10 +129,15 @@ curl -X POST https://bintu.nanocosmos.de/stream/YOUR_STREAM_ID/options \
 | --- | :---: | :---: | :---: |
 | Stream Info (poll) | ✓ | ✓ | ✓ |
 | Stop Stream | ✓ | ✗ | ✗ |
+| Unlock Stream | ✓ | ✗ | ✗ |
 
 Once the encoder is pushing to the `ingest.rtmp` target from step 2, poll **Stream Info** (`GET /stream/{id}`) and watch the `state` field to detect when it starts (`live`) or stops (`created` / `ended`). There is no push notification for this, and no separate "go live" call to make.
 
 A stream ends when the encoder disconnects; it can also be stopped from the API with **Stop Stream** (`PUT /stream/{id}/stop`). To watch the stream with captions rendered, use the nanoStream web player.
+
+:::warning Stop Stream locks the stream
+**Stop Stream** does more than end the current session: it sets the stream's state to **`locked`** to prevent an accidental encoder reconnect. While locked, any further RTMP ingest attempt is rejected with `RtmpIngestLockedError`. To allow ingesting again, call **Unlock Stream** (`PUT /stream/{id}/unlock`) — both operations are restricted to <span className="role role-admin">nanoAdmin</span>.
+:::
 
 :::note Polling Best Practice
 Poll authenticated with a valid `X-BINTU-APIKEY` or bearer token. Depending on the stream security configuration, anonymous requests can be rejected with `403`. Back off your polling interval on repeated failures rather than retrying at a fixed rate.
