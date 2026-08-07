@@ -128,18 +128,10 @@ curl -X POST https://bintu.nanocosmos.de/stream/YOUR_STREAM_ID/options \
 | Operation | <span className="role role-admin">nanoAdmin</span> | <span className="role role-user">nanoUser</span> | <span className="role role-readonly">nanoReadOnly</span> |
 | --- | :---: | :---: | :---: |
 | Stream Info (poll) | ✓ | ✓ | ✓ |
-| Stop Stream | ✓ | ✗ | ✗ |
-| Unlock Stream | ✓ | ✗ | ✗ |
 
 Once the encoder is pushing to the `ingest.rtmp` target from step 2, poll **Stream Info** (`GET /stream/{id}`) and watch the `state` field to detect when it starts (`live`) or stops (`created` / `ended`). There is no push notification for this, and no separate "go live" call to make.
 
-A stream ends when the encoder disconnects — no API call needed for a normal end of broadcast. The stream's state simply becomes `ended` and it is immediately ready to accept a new ingest session. To watch the stream with captions rendered, use the nanoStream web player.
-
-:::warning Stop Stream is for deliberately blocking reconnects, not for ending a normal broadcast
-**Stop Stream** (`PUT /stream/{id}/stop`) is a separate, deliberate action: it sets the stream's state to **`locked`** to prevent *any* further encoder reconnect, accidental or otherwise. While locked, an RTMP ingest attempt is rejected with `RtmpIngestLockedError`. To allow ingesting again, call **Unlock Stream** (`PUT /stream/{id}/unlock`) — both operations are restricted to <span className="role role-admin">nanoAdmin</span>.
-
-Use Stop Stream only when you actually want to hard-block the stream (e.g. decommissioning a stream key, a security/compliance stop). For the common case — the broadcaster just finishes and disconnects — don't call it; the stream ends on its own without locking.
-:::
+To end the broadcast, stop the encoder (e.g. click "Stop Streaming" in OBS). The stream's state becomes `ended` and it is immediately ready to accept a new ingest session, no API call required. To watch the stream with captions rendered, use the nanoStream web player.
 
 :::note Polling Best Practice
 Poll authenticated with a valid `X-BINTU-APIKEY` or bearer token. Depending on the stream security configuration, anonymous requests can be rejected with `403`. Back off your polling interval on repeated failures rather than retrying at a fixed rate.
