@@ -133,10 +133,12 @@ curl -X POST https://bintu.nanocosmos.de/stream/YOUR_STREAM_ID/options \
 
 Once the encoder is pushing to the `ingest.rtmp` target from step 2, poll **Stream Info** (`GET /stream/{id}`) and watch the `state` field to detect when it starts (`live`) or stops (`created` / `ended`). There is no push notification for this, and no separate "go live" call to make.
 
-A stream ends when the encoder disconnects; it can also be stopped from the API with **Stop Stream** (`PUT /stream/{id}/stop`). To watch the stream with captions rendered, use the nanoStream web player.
+A stream ends when the encoder disconnects — no API call needed for a normal end of broadcast. The stream's state simply becomes `ended` and it is immediately ready to accept a new ingest session. To watch the stream with captions rendered, use the nanoStream web player.
 
-:::warning Stop Stream locks the stream
-**Stop Stream** does more than end the current session: it sets the stream's state to **`locked`** to prevent an accidental encoder reconnect. While locked, any further RTMP ingest attempt is rejected with `RtmpIngestLockedError`. To allow ingesting again, call **Unlock Stream** (`PUT /stream/{id}/unlock`) — both operations are restricted to <span className="role role-admin">nanoAdmin</span>.
+:::warning Stop Stream is for deliberately blocking reconnects, not for ending a normal broadcast
+**Stop Stream** (`PUT /stream/{id}/stop`) is a separate, deliberate action: it sets the stream's state to **`locked`** to prevent *any* further encoder reconnect, accidental or otherwise. While locked, an RTMP ingest attempt is rejected with `RtmpIngestLockedError`. To allow ingesting again, call **Unlock Stream** (`PUT /stream/{id}/unlock`) — both operations are restricted to <span className="role role-admin">nanoAdmin</span>.
+
+Use Stop Stream only when you actually want to hard-block the stream (e.g. decommissioning a stream key, a security/compliance stop). For the common case — the broadcaster just finishes and disconnects — don't call it; the stream ends on its own without locking.
 :::
 
 :::note Polling Best Practice
