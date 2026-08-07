@@ -183,4 +183,4 @@ For a stream named `XXXXX-12345` with `en` source and `de` translation:
 
 A complete, guided implementation of every step in this walkthrough is live at **[captions-workflow](https://web.pages.gitlab.nanocosmos.cloud/captions-workflow/)**: sign in, create or load a stream, configure live captions, monitor the live state, and download the replay/transcript once the stream ends — the full five-station journey described above, running against the real bintu API.
 
-Each station in the app includes a "Show code" panel with the exact API call for that step in TypeScript, cURL, JavaScript, Python, Go, and PHP, pre-filled with your current session's real values (API key, stream name, selected languages) so you can copy a call that already matches what you configured in the UI.
+Each station in the app includes an "API request" panel (visible via the Developer view switch) with the exact API call for that step in TypeScript, cURL, JavaScript, Python, Go, and PHP, pre-filled with your current session's real values (API key, stream name, selected languages) so you can copy a call that already matches what you configured in the UI.
