@@ -114,10 +114,14 @@ curl -X POST https://bintu.nanocosmos.de/stream/YOUR_STREAM_ID/options \
     "options": {
       "engine": "deepgram",
       "sourceLanguage": "en",
-      "targetLanguages": ["en", "de"]
+      "targetLanguages": ["de"]
     }
   }'
 ```
+
+:::info Transcription in the source language is automatic
+`targetLanguages` cannot include the same language as `sourceLanguage` (or one of its localized variants) — the API rejects that combination. A transcript in the source language is generated automatically regardless of what you put in `targetLanguages`, so if that's all you want, leave `targetLanguages` empty. Use `targetLanguages` only for languages you want translated *in addition to* the automatic source transcript.
+:::
 
 ---
 
@@ -160,7 +164,7 @@ https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/{orgHash}/{streamName}/p
 
 * **`{orgHash}`:** The first `-`-delimited segment of the stream name (e.g., for a stream name like `XXXXX-12345`, `orgHash` is `XXXXX`).
 * **`{streamName}`:** The full stream name (e.g., `XXXXX-12345`).
-* **`{langPair}`:** `{sourceLanguage}-{targetLanguage}`, dash-joined. A stream with `sourceLanguage: en` and `targetLanguages: ["en", "de"]` produces one transcript file per pair, including the source-to-source pair: `en-en` (the plain transcript) and `en-de` (the translation). A bare language code on its own does not exist.
+* **`{langPair}`:** `{sourceLanguage}-{targetLanguage}`, dash-joined. A stream with `sourceLanguage: en` and `targetLanguages: ["de"]` produces one transcript file per pair: `en-en` (the automatic plain transcript in the source language, generated regardless of `targetLanguages`) and `en-de` (the requested translation). A bare language code on its own does not exist.
 * **`{format}`:** `vtt`, `srt`, or `txt`. All three formats exist side by side for every language pair. No separate lookup is needed.
 
 ### Example CDN Transcript Download URLs
