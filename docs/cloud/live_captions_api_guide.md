@@ -157,7 +157,7 @@ Once recording is enabled on a stream (step 2), the resulting replay and caption
 
 ```
 https://bintu-vod-eu-02-ak-amd.nanocosmos.de/replay/{orgHash}/{streamName}/{streamName}.m3u8
-https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/{orgHash}/{streamName}/production/{streamName}.{langPair}.{format}
+https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/{orgHash}/{streamName}/{streamName}.{langPair}.{format}
 ```
 
 ### URL Parameter Breakdown
@@ -172,16 +172,15 @@ https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/{orgHash}/{streamName}/p
 For a stream named `XXXXX-12345` with `en` source and `de` translation:
 
 - **WebVTT format:**  
-  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/production/XXXXX-12345.en-de.vtt`
+  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.vtt`
 - **SubRip (SRT) format:**  
-  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/production/XXXXX-12345.en-de.srt`
+  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.srt`
 - **Plain Text (TXT) format:**  
-  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/production/XXXXX-12345.en-de.txt`
+  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.txt`
 
 :::info Availability & Environment
 - Files become available **1 to 2 minutes** after the recorded stream ends. A `404` means the recording is not ready yet, or the stream name or language pair does not match.
-- `production` in the path is a fixed literal for production streams.
-- This URL format applies to current recordings; very old recordings may use a different layout.
+- This URL format applies to current recordings; older recordings may use a different layout. The replay player linked from [captions-workflow](https://web.pages.gitlab.nanocosmos.cloud/captions-workflow/) resolves those automatically.
 :::
 
 ---
