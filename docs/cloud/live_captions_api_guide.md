@@ -150,19 +150,19 @@ Poll authenticated with a valid `X-BINTU-APIKEY` or bearer token. Depending on t
 ## 5. Replay and transcript downloads
 
 :::info Public CDN Access (No Authentication / Roles Required)
-Replay files (`.m3u8`) and transcript files (`.vtt`, `.srt`, `.txt`) are static assets served directly from the **VOD CDN**, bypassing the bintu REST API. Replay (HLS) assets are served from `bintu-vod-eu-02-ak-amd.nanocosmos.de`; transcript file downloads are served from `bintu-vod-eu-02-ak.nanocosmos.de`. Because no authentication headers or API keys are required to fetch these files, Role-Based Access Control (RBAC) permissions do not apply to CDN downloads.
+Replay files (`.m3u8`) and transcript files (`.vtt`, `.srt`, `.txt`) are static assets served from the **VOD CDN**, bypassing the bintu REST API. Replay (HLS) playback goes through the VOD host `bintu-vod.nanocosmos.de`; transcript file downloads are served from the CDN host `bintu-vod-eu-02-ak.nanocosmos.de`. Because no authentication headers or API keys are required to fetch these files, Role-Based Access Control (RBAC) permissions do not apply to CDN downloads.
 :::
 
 Once recording is enabled on a stream (step 2), the resulting replay and caption files are served directly from the CDN:
 
 ```
-https://bintu-vod-eu-02-ak-amd.nanocosmos.de/replay/{orgHash}/{streamName}/{streamName}.m3u8
+https://bintu-vod.nanocosmos.de/vod/replay/{streamName}.m3u8
 https://bintu-vod-eu-02-ak.nanocosmos.de/transcript/{orgHash}/{streamName}/{streamName}.{langPair}.{format}
 ```
 
 ### URL Parameter Breakdown
 
-* **`{orgHash}`:** The first `-`-delimited segment of the stream name (e.g., for a stream name like `XXXXX-12345`, `orgHash` is `XXXXX`).
+* **`{orgHash}`:** The first `-`-delimited segment of the stream name (e.g., for a stream name like `XXXXX-12345`, `orgHash` is `XXXXX`). Only the transcript URL needs it — the replay URL takes the stream name alone.
 * **`{streamName}`:** The full stream name (e.g., `XXXXX-12345`).
 * **`{langPair}`:** `{sourceLanguage}-{targetLanguage}`, dash-joined. A stream with `sourceLanguage: en` and `targetLanguages: ["de"]` produces one transcript file per pair: `en-en` (the automatic plain transcript in the source language, generated regardless of `targetLanguages`) and `en-de` (the requested translation). A bare language code on its own does not exist.
 * **`{format}`:** `vtt`, `srt`, or `txt`. All three formats exist side by side for every language pair. No separate lookup is needed.
