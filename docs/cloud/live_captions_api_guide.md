@@ -150,14 +150,14 @@ Poll authenticated with a valid `X-BINTU-APIKEY` or bearer token. Depending on t
 ## 5. Replay and transcript downloads
 
 :::info Public CDN Access (No Authentication / Roles Required)
-Replay files (`.m3u8`) and transcript files (`.vtt`, `.srt`, `.txt`) are static assets served directly from the **VOD CDN host** (`bintu-vod-eu-02-ak-amd.nanocosmos.de`), bypassing the bintu REST API. Because no authentication headers or API keys are required to fetch these files, Role-Based Access Control (RBAC) permissions do not apply to CDN downloads.
+Replay files (`.m3u8`) and transcript files (`.vtt`, `.srt`, `.txt`) are static assets served directly from the **VOD CDN**, bypassing the bintu REST API. Replay (HLS) assets are served from `bintu-vod-eu-02-ak-amd.nanocosmos.de`; transcript file downloads are served from `bintu-vod-eu-02-ak.nanocosmos.de`. Because no authentication headers or API keys are required to fetch these files, Role-Based Access Control (RBAC) permissions do not apply to CDN downloads.
 :::
 
 Once recording is enabled on a stream (step 2), the resulting replay and caption files are served directly from the CDN:
 
 ```
 https://bintu-vod-eu-02-ak-amd.nanocosmos.de/replay/{orgHash}/{streamName}/{streamName}.m3u8
-https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/{orgHash}/{streamName}/{streamName}.{langPair}.{format}
+https://bintu-vod-eu-02-ak.nanocosmos.de/transcript/{orgHash}/{streamName}/{streamName}.{langPair}.{format}
 ```
 
 ### URL Parameter Breakdown
@@ -172,11 +172,11 @@ https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/{orgHash}/{streamName}/{
 For a stream named `XXXXX-12345` with `en` source and `de` translation:
 
 - **WebVTT format:**  
-  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.vtt`
+  `https://bintu-vod-eu-02-ak.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.vtt`
 - **SubRip (SRT) format:**  
-  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.srt`
+  `https://bintu-vod-eu-02-ak.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.srt`
 - **Plain Text (TXT) format:**  
-  `https://bintu-vod-eu-02-ak-amd.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.txt`
+  `https://bintu-vod-eu-02-ak.nanocosmos.de/transcript/XXXXX/XXXXX-12345/XXXXX-12345.en-de.txt`
 
 :::info Availability & Environment
 - Files become available **1 to 2 minutes** after the recorded stream ends. A `404` means the recording is not ready yet, or the stream name or language pair does not match.
