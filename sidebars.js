@@ -29,7 +29,16 @@ const sidebars = {
         "cloud/srt_ingest",
         "cloud/live-recording-vod",
         "cloud/live_processing",
-        "cloud/live_captions",
+        {
+          "type": "category",
+          "label": "Live Captions",
+          "collapsible": true,
+          "collapsed": true,
+          "link": { "type": "doc", "id": "cloud/live_captions" },
+          "items": [
+            "cloud/live_captions_api_guide",
+          ]
+        },
       ]
     },
     {
