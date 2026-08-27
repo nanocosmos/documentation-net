@@ -180,7 +180,11 @@ Example:
 Example: 
 - RTMP URL and stream name: `rtmp://bintu-vtrans.nanocosmos.de/live/XXXXX-YYYYY?passcode=your_passcode`
 
-3. Bintu sends *on_publish* the following POST body to your webhook: 
+3. Broadcasters using WHIP ingest or the Webcaster SDK
+
+   The arguments must be URL-encoded, see [Custom Publish Parameters](/docs/webrtc/nanostream_webrtc_whip_ingest#custom-publish-parameters).
+
+4. Bintu sends *on_publish* the following POST body to your webhook: 
 
 ```bash
 passcode=your_passcode&call=publish&name=XXXXX-YYYYY&app=live&addr=xxx.xxx.xxx.xxx&clientid=123456

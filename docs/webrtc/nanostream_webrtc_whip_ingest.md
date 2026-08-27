@@ -58,6 +58,28 @@ POST https://bintu-webrtc.nanocosmos.de/p/webrtc?stream_name=<example-stream>&st
 [sdp body]
 ```
 
+### Custom Publish Parameters
+
+You can append your own arguments to the stream name, for example `?passcode=abc&tenant=42`. nanoStream Cloud forwards them unchanged to your configured publish webhook — see [Custom Data With Query Parameters](../cloud/bintu_custom_webhooks#custom-data-with-query-parameters).
+
+Because the stream name is itself a query parameter of the WHIP request, the arguments have to arrive **URL-encoded** at the WHIP endpoint:
+
+```
+https://bintu-webrtc.nanocosmos.de/p/webrtc?stream_name=XXXXX-YYYYY%3Fpasscode%3Dabc%26tenant%3D42&stream_url=rtmp://bintu-stream.nanocosmos.de/live
+```
+
+The Webcaster SDK publishes through this same WHIP endpoint, so the arguments have to be encoded there as well.
+
+:::caution The Webcaster SDK does not encode for you
+The SDK passes `streamName` on unchanged, so encode the arguments yourself before you set it:
+
+```js
+streamName: 'XXXXX-YYYYY' + encodeURIComponent('?passcode=abc&tenant=42')
+```
+
+Unencoded arguments become separate query parameters of the WHIP request and never reach your webhook.
+:::
+
 
 
 ### WHIP Ingest Quick Guide
