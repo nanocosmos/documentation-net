@@ -60,7 +60,7 @@ POST https://bintu-webrtc.nanocosmos.de/p/webrtc?stream_name=<example-stream>&st
 
 ### Custom Publish Parameters
 
-You can append your own arguments to the stream name, for example `?passcode=abc&tenant=42`. nanoStream Cloud forwards them unchanged to your configured publish webhook — see [Custom Data With Query Parameters](../cloud/bintu_custom_webhooks#custom-data-with-query-parameters).
+You can append your own arguments to the stream name, for example `?passcode=abc&tenant=42`. The Bintu service passes these arguments unchanged to your configured publish webhook — see [Custom Data With Query Parameters](../cloud/bintu_custom_webhooks#custom-data-with-query-parameters).
 
 Because the stream name is itself a query parameter of the WHIP request, the arguments have to arrive **URL-encoded** at the WHIP endpoint:
 
