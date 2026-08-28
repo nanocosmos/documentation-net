@@ -30,6 +30,7 @@ Basic understanding of TypeScript or JavaScript is advantageous.
 2. **Configure Webcaster**: Create a configuration object with essential properties, notably the bintu stream name.
 
    - Find the Webcaster Client API docs [here](../webrtc/nanostream_webrtc_api).
+   - To send custom publish parameters with the stream name, URL-encode them first — the SDK does not do it for you. See [Custom Publish Parameters](../webrtc/nanostream_webrtc_whip_ingest#custom-publish-parameters).
 
 3. **Instantiate Webcaster**: Initialize a `Webcaster` instance with your configuration.
 
