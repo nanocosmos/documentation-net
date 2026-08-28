@@ -68,16 +68,16 @@ Since the stream name is itself a query parameter in the WHIP request, these arg
 https://bintu-webrtc.nanocosmos.de/p/webrtc?stream_name=XXXXX-YYYYY%3Fpasscode%3Dabc%26tenant%3D42&stream_url=rtmp://bintu-stream.nanocosmos.de/live
 ```
 
-The Webcaster SDK publishes through this same WHIP endpoint, so the arguments have to be encoded there as well.
+The Webcaster SDK uses the same WHIP endpoint, so the same encoding rule applies.
 
-:::caution The Webcaster SDK does not encode for you
-The SDK passes `streamName` on unchanged, so encode the arguments yourself before you set it:
+:::caution The SDK does not encode arguments for you
+`streamName` is passed through as-is, so encode your arguments before setting it:
 
-```js
+```
 streamName: 'XXXXX-YYYYY' + encodeURIComponent('?passcode=abc&tenant=42')
 ```
 
-Unencoded arguments become separate query parameters of the WHIP request and never reach your webhook.
+Unencoded arguments will be treated as separate WHIP query parameters and won't reach your webhook.
 :::
 
 
