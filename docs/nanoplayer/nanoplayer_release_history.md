@@ -14,7 +14,7 @@ sidebar_label: History
 
 ### **Release Notes**
 
-This release fixes an issue in MSE playback where specific `SourceBuffer` error conditions could cause playback to stall. These conditions are now handled to prevent playback from staying stalled.
+This release fixes an issue in MSE playback where specific `SourceBuffer` error conditions could cause playback to stall. Media error recovery will restore playback automatically.
 
 ### **Changelog**
 
