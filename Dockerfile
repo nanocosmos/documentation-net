@@ -1,5 +1,5 @@
 # stage1 - build react app first 
-FROM node:lts-bookworm as build
+FROM node:24-bookworm as build
 ARG NODE_ENV_EXT
 ENV NODE_ENV=${NODE_ENV_EXT}
 WORKDIR /app
