@@ -10,20 +10,27 @@ on:
 
 jobs:
   scrape:
+    # - workflow_run fires on every completed deploy, including failed ones;
+    #   only reindex after a successful deploy, otherwise we index the stale site.
+    # - run only on the nanocosmos/documentation mirror: documentation-net has no
+    #   TYPESENSE_* secrets and would write the same collection anyway.
+    if: >-
+      (github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success')
+      && github.repository == 'nanocosmos/documentation'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
       - name: Get DocSearch configuration
         id: docsearch-config
-        run: echo "::set-output name=json::$(cat typesense-setup/config.json | jq -r tostring)"
+        run: echo "json=$(cat typesense-setup/config.json | jq -r tostring)" >> "$GITHUB_OUTPUT"
       - name: Get docsearch scraper docker image
-        run: docker pull typesense/docsearch-scraper:latest
+        run: docker pull typesense/docsearch-scraper:0.12.2
       - name: Run DocSearch Scraper
         run: |
           docker run -e CONFIG -e TZ \
           -e TYPESENSE_HOST -e TYPESENSE_API_KEY \
           -e TYPESENSE_PORT -e TYPESENSE_PROTOCOL \
-          typesense/docsearch-scraper
+          typesense/docsearch-scraper:0.12.2
         env:
           TZ: UTC
           TYPESENSE_API_KEY: ${{ secrets.TYPESENSE_API_KEY }}
@@ -31,4 +38,3 @@ jobs:
           TYPESENSE_PROTOCOL: https
           TYPESENSE_PORT: 443
           CONFIG: ${{ steps.docsearch-config.outputs.json }}
-          
