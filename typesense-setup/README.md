@@ -10,7 +10,7 @@ https://typesense.org/docs/guide/docsearch.html
 
 ## running the scraper via docker
 
- - Replace in .env var `TYPESENSE_API_KEY=TYPESENSE-ADMIN-KEY`` with a proper key
+ - Replace in .env var `TYPESENSE_API_KEY=TYPESENSE-ADMIN-KEY` with a proper key
 
 
  - config.json should have start_urls set to target website, 
@@ -20,7 +20,7 @@ https://typesense.org/docs/guide/docsearch.html
  - run docker:
 
 ```shell
- docker run -ti --rm --env-file=.env -e "CONFIG=$(cat config.json | jq -r tostring)" typesense/docsearch-scraper:0.7.0
+ docker run -ti --rm --env-file=.env -e "CONFIG=$(cat config.json | jq -r tostring)" typesense/docsearch-scraper:0.12.2
 
 ```
 
