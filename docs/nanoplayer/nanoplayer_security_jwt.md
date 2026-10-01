@@ -5,6 +5,13 @@ title: Secure playback with JSON Web Token (JWT)
 
 Since **nanoStream H5Live Player Version 4.18.0** it is possible to use JSON Web Token (JWT) for a secure playback for all use cases. It can be applied with the `entries` configuration and with the `group` configuration. Contrary to the STS secure configuration, there can be single JWT token for all streams within the stream group. It is now easier than ever to use live transcoding and ABR with ultra-low-latency live streaming.
 
+## Latest additions
+
+### IP restriction: multiple addresses and CIDR ranges
+
+Token IP restriction now accepts up to **10 entries** per token. Each entry can be either a single IPv4 address or an IPv4 CIDR range, and you can mix both kinds.
+see [IP address restriction](#ip-address-restriction)
+
 ## How to create a JSON Web Token for secure playback in the Cloud Dashboard
 
 Since version 3 of the nanoStream Cloud Dashboard it is supported to create JSON Web Token for secure playback.  
@@ -99,8 +106,10 @@ There are 2 locations in the dashboard where tokens can be created
 * IP address
   * optional 
   * Key: `ip`
-  * Value: string, IP address 
-  * Example: `"ip": "123.45.67.89"` 
+  * Value: i) string, single IP address or CIDR
+  * Examples: `"ip": "123.45.67.89"`, `"ip": "198.51.100.0/24"`  
+  * Value: ii) array of strings, up to 10 IP addresses or CIDRs
+  * Example: `"ip": ["123.45.67.89","198.51.100.0/24"]` 
 
 #### **Tag** 
 
