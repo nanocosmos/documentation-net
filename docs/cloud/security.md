@@ -11,6 +11,11 @@ As part of [**nanoStream Control — the security and intelligence layer of the 
 
 In 2026, several enhancements were introduced to strengthen playback security and access control:
 
+### Secure Playback Token IP restriction: Multiple addresses and CIDR ranges
+
+Secure Playback Token IP restriction now accepts up to **10 entries** per token. Each entry can be either a single IPv4 address or an IPv4 CIDR range, and you can mix both kinds.
+[Learn more about IP restriction](/docs/nanoplayer/nanoplayer_security_jwt#ip-address-restriction)
+
 ### Revocation of Secure Playback Tokens (JWT)
 
 Secure Playback Tokens (JWTs) can now be revoked to immediately invalidate playback credentials when needed. This prevents unauthorized use of compromised tokens.  
