@@ -93,7 +93,7 @@ All requests require your **bintu API key** in the `X-BINTU-APIKEY` header. This
 
 For full endpoint details, request/response schemas, and error codes, see the **Real-Time API Reference**:
 
-👉 [Real-Time API Reference (Scalar)](#)
+👉 [Real-Time API Reference](https://real-time-api.nanostream.cloud/docs)
 
 :::info Business Feature
 On-Demand Recording requires a business upgrade. Please reach out to our sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.

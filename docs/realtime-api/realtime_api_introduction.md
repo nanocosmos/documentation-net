@@ -44,7 +44,7 @@ You authenticate using your **bintu API token** — the same token you already u
 
 For full endpoint details, request/response schemas, and error codes, see the **Real-Time API Reference**:
 
-👉 [Real-Time API Reference (Scalar)](#)
+👉 [Real-Time API Reference](https://real-time-api.nanostream.cloud/docs)
 
 :::info Business Feature
 The Real-Time API requires a business upgrade. Please reach out to our sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.

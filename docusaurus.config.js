@@ -145,6 +145,12 @@ const config = {
             label: "Analytics",
           }, {
             type: 'doc',
+            docId: 'realtime-api/realtime_api_introduction',
+            sidebarid: "nanoStream Real-Time API",
+            position: 'left',
+            label: "Real-Time API",
+          }, {
+            type: 'doc',
             docId: 'faq/faq',
             sidebarid: "FAQ",
             position: 'left',
