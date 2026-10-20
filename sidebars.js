@@ -412,6 +412,19 @@ const sidebars = {
       ]
     },
   ],
+  "nanoStream Real-Time API": [
+    {
+      "type": "category",
+      "label": "nanoStream Real-Time API",
+      "collapsible": false,
+      "collapsed": false,
+      "link": { "type": "doc", "id": "realtime-api/realtime_api_introduction" },
+      "items": [
+        "realtime-api/realtime_api_recording",
+        "realtime-api/realtime_api_switching"
+      ]
+    }
+  ],
   "FAQ": [
     "faq/faq",
     // "faq/faq_devices_support",
