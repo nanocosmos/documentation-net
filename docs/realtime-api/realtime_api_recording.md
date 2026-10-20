@@ -38,7 +38,7 @@ You can also check which recording sessions are currently active on a stream.
 
 ## Prerequisites
 
-- A **nanoStream Cloud** account with a valid **bintu API key**
+- A **nanoStream Cloud** account with a valid **bintu token**
 - A live stream that is currently ingesting
 - The **Real-Time API** enabled for your organisation
 
@@ -54,7 +54,7 @@ Send a request to the Real-Time API with your **stream name** and a **filename**
 
 ```bash
 curl -X POST https://realtime-api.nanocosmos.de/stream/{streamname}/rec/start \
-  -H "X-BINTU-APIKEY: YOUR_API_KEY" \
+  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{ "filename": "my-recording-001" }'
 ```
@@ -67,7 +67,7 @@ When you are done, stop the recording session.
 
 ```bash
 curl -X POST https://realtime-api.nanocosmos.de/stream/{streamname}/rec/stop \
-  -H "X-BINTU-APIKEY: YOUR_API_KEY" \
+  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{ "filename": "my-recording-001" }'
 ```
@@ -80,14 +80,14 @@ To see which recording sessions are currently running on a stream:
 
 ```bash
 curl -X GET https://realtime-api.nanocosmos.de/stream/{streamname}/rec \
-  -H "X-BINTU-APIKEY: YOUR_API_KEY"
+  -H "Authorization: Bearer YOUR_BINTU_TOKEN"
 ```
 
 This returns a list of all active recording sessions.
 
 ## Authentication
 
-All requests require your **bintu API key** in the `X-BINTU-APIKEY` header. This is the same API key you use with other nanoStream Cloud APIs.
+All requests require your **bintu token** in the `Authorization` header as a Bearer token. You can obtain a token from the [nanoStream Cloud Dashboard](/docs/dashboard/getting_started) or the [bintu API](/docs/cloud/bintu_api).
 
 ## API Reference
 

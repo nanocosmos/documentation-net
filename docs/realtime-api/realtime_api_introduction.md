@@ -34,7 +34,7 @@ You authenticate using your **bintu API token** — the same token you already u
 
 ## Getting Started
 
-1. Make sure you have a **nanoStream Cloud** account with a valid **bintu API key**.
+1. Make sure you have a **nanoStream Cloud** account with a valid **bintu token**.
 2. Set up one or more live streams using the [nanoStream Cloud Dashboard](/docs/dashboard/getting_started) or the [bintu API](/docs/cloud/bintu_api).
 3. Follow the guide for the feature you need:
    - [On-Demand Recording](./realtime_api_recording)

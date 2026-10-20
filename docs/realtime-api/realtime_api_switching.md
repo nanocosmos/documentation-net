@@ -52,7 +52,7 @@ Your Application                    Viewers
 
 ## Prerequisites
 
-- A **nanoStream Cloud** account with a valid **bintu API key**
+- A **nanoStream Cloud** account with a valid **bintu token**
 - Two or more live streams running (one per camera angle)
 - The **Real-Time API** enabled for your organisation
 
@@ -76,7 +76,7 @@ Send a setup request with your camera angles. Mark one angle as the starting vie
 
 ```bash
 curl -X POST https://realtime-api.nanocosmos.de/rooms/setup \
-  -H "X-BINTU-APIKEY: YOUR_API_KEY" \
+  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
     "angles": {
@@ -117,7 +117,7 @@ When your application needs to change the active camera, send a switch request:
 
 ```bash
 curl -X PUT https://realtime-api.nanocosmos.de/rooms/table-42/switch \
-  -H "X-BINTU-APIKEY: YOUR_API_KEY" \
+  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
     "active": "wheel",
@@ -143,7 +143,7 @@ Include the token in your setup request:
 
 ```bash
 curl -X POST https://realtime-api.nanocosmos.de/rooms/setup \
-  -H "X-BINTU-APIKEY: YOUR_API_KEY" \
+  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
     "angles": {
@@ -169,7 +169,7 @@ The system is designed to keep video playing, even when something unexpected hap
 
 ## Authentication
 
-All requests require your **bintu API key** in the `X-BINTU-APIKEY` header. This is the same API key you use with other nanoStream Cloud APIs.
+All requests require your **bintu token** in the `Authorization` header as a Bearer token. You can obtain a token from the [nanoStream Cloud Dashboard](/docs/dashboard/getting_started) or the [bintu API](/docs/cloud/bintu_api).
 
 ## API Reference
 
