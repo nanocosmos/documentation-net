@@ -412,6 +412,21 @@ const sidebars = {
       ]
     },
   ],
+  "nanoStudio": [
+    "nanostudio/nanostudio_overview",
+    {
+      "type": "category",
+      "label": "Chroma Key",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "nanostudio/chroma_key_getting_started",
+        "nanostudio/chroma_key_outputs",
+        "nanostudio/chroma_key_tuning",
+        "nanostudio/chroma_key_troubleshooting"
+      ]
+    }
+  ],
   "nanoStream Real-Time API": [
     {
       "type": "category",
@@ -421,7 +436,16 @@ const sidebars = {
       "link": { "type": "doc", "id": "realtime-api/realtime_api_introduction" },
       "items": [
         "realtime-api/realtime_api_recording",
-        "realtime-api/realtime_api_switching"
+        {
+          "type": "category",
+          "label": "Multi-Camera Switching",
+          "collapsible": true,
+          "collapsed": false,
+          "items": [
+            "realtime-api/realtime_api_switching",
+            "realtime-api/realtime_api_switching_reference"
+          ]
+        }
       ]
     }
   ],

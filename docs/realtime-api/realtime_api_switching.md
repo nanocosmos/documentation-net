@@ -1,182 +1,223 @@
 ---
 id: realtime_api_switching
-title: Multi-Camera Switching
-sidebar_label: Multi-Camera Switching
-description: Switch between multiple camera angles in real time. Viewers see one continuous video stream while your application controls which camera is active.
+title: "Multi-Camera Switching"
+sidebar_label: Getting Started
+description: Cut between camera angles live while your viewers watch one continuous video. Set up a stream group, embed the hosted player, and switch with one API call.
 ---
 
-## Overview
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-Multi-Camera Switching lets you switch between multiple camera angles during a live broadcast. The viewer sees one continuous video stream — they never know that multiple cameras are behind it.
+# Multi-Camera Switching
 
-Your application controls which camera is active. When you trigger a switch, all connected viewers move to the new camera angle within seconds.
+**Multi-camera stream switching** lets you cut between several camera angles, such as a wide shot, a close-up of the roulette wheel and the dealer, while your viewers watch **one continuous video**. Each angle is a normal nanoStream live stream. You decide which angle is on air, and every connected player follows within a moment.
 
-## Use Cases
+There's no video mixer or production software involved. Switching is driven by the nanoStream **Real-Time API** and the hosted **Switch Player**.
 
-- **Live casino / iGaming** — A game table has 3–4 cameras (wide shot, wheel, dealer, table layout). The game software switches cameras based on game events.
-- **Sports** — Cut between different camera positions during a match.
-- **Live events** — Switch between stage, audience, and backstage cameras.
-- **Surveillance / monitoring** — Rotate between camera feeds on demand.
+**Use cases**
 
-## How It Works
+- **Live casino / iGaming:** a table has 3–4 cameras (wide shot, wheel, dealer, table layout), and the game software cuts based on game events.
+- **Sports:** cut between camera positions during a match.
+- **Live events:** switch between stage, audience and backstage cameras.
 
-The switching flow has three parts: **setup**, **switching**, and **viewing**.
+:::tip Try it first
+Open the [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switch-player/demo.html), sign in with your Dashboard account, and set up a group of angles in a few minutes. The demo shows every API call it makes, so you can copy them into your own integration.
+:::
 
-### 1. Setup — Define the room
+## How it works
 
-A **room** represents a set of camera angles. Each angle is a separate live stream with a label you choose (e.g. "wide", "wheel", "dealer").
+1. **Set up a stream group** (the API calls it a *room*). Send the list of camera angles to `POST /rooms/setup`. The API checks each stream and returns a ready-to-embed **player URL**.
+2. **Embed the player.** Put the player URL in an iframe on your page. Viewers start watching the default angle straight away.
+3. **Switch angles.** When you want to cut, your backend calls `PUT /rooms/{roomId}/switch` with the angle to put on air.
+4. **Players follow.** The API pushes the change to every connected player, and each one switches to the new angle without a gap.
 
-You send a setup request with your camera angles. The API validates the streams and returns a **player URL** that you give to your viewers.
+**Built-in reliability**
 
-### 2. Switch — Change the active camera
+- **Never a black screen.** If a switch fails, the player retries and keeps playing the last good angle.
+- **Instant start.** Viewers see video as soon as the player loads. There's no waiting screen.
+- **Late joiners are in sync.** A viewer who joins or reconnects gets the angle that's on air right now.
+- **Order is guaranteed.** Every switch has a sequence number, so an old event can never overwrite a newer one.
 
-When your application needs to switch cameras, it sends a switch request with the label of the new active angle. All connected viewers receive the update.
+## Try it in the demo (no code)
 
-### 3. View — Viewers watch a single player
+The [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switch-player/demo.html) walks through the same steps as the API, in four stations. Use it to try switching before you write any code, or to show it to your team.
 
-Viewers open the player URL from step 1. They see whichever camera angle is currently active. When a switch happens, the player moves to the new angle automatically. The viewer does not need to do anything.
+**1. Connect.** Choose the environment and sign in with your Dashboard email and password, or with an API key.
 
-```
-Your Application                    Viewers
-      │                                │
-      ├─▶ POST /rooms/setup            │
-      │   (define angles, get URL) ────┼──▶ Open player URL
-      │                                │
-      ├─▶ PUT /rooms/:id/switch        │
-      │   (activate "wheel") ──────────┼──▶ Player switches to "wheel"
-      │                                │
-      ├─▶ PUT /rooms/:id/switch        │
-      │   (activate "dealer") ─────────┼──▶ Player switches to "dealer"
-      │                                │
-```
+![Connect station: environment set to Production, email and password entered, Sign in button](../assets/realtime-api/switch-ui-connect.webp)
 
-## Prerequisites
+_Sign in with the same account you use for the Dashboard._
 
-- A **nanoStream Cloud** account with a valid **bintu token**
-- Two or more live streams running (one per camera angle)
-- The **Real-Time API** enabled for your organisation
+**2. Camera Angles.** Choose how many angles you need (2–6). **Create new** makes a fresh stream for each angle, with optional tags and transcodes. **Use existing** lets you pick streams your organisation already has.
 
-## Getting Started
+![Camera Angles in Create new mode: two angles named wide and close, tagged multicam, with transcode chips](../assets/realtime-api/switch-ui-angles-create.webp)
 
-### Step 1: Start your camera streams
+_Create new: each angle gets a name, tags and an optional transcoding ladder._
 
-Start a separate live stream for each camera angle. You can use the [nanoStream Cloud Dashboard](/docs/dashboard/start_streaming) or any supported encoder.
+![Camera Angles in Use existing mode: three angles, wide, wheel and dealer, each matched to a live stream](../assets/realtime-api/switch-ui-angles-existing.webp)
 
-For example, for a live casino table you might have:
+_Use existing: match each angle name to one of your streams. Live streams are marked._
 
-| Label | Stream | Description |
-|-------|--------|-------------|
-| wide  | Stream A | Wide shot of the table |
-| wheel | Stream B | Close-up of the wheel |
-| dealer | Stream C | Dealer camera |
+**3. Stream Group.** Give the group a name, or leave it blank to generate one, and click **Create Stream Group**. This calls `POST /rooms/setup`.
 
-### Step 2: Set up a room
+![Stream Group station with the group name roulette-7 and the Create Stream Group button](../assets/realtime-api/switch-ui-stream-group.webp)
 
-Send a setup request with your camera angles. Mark one angle as the starting view.
+_The stream group is what the API calls a room._
+
+**4. Control.** The player shows what viewers see. Click a camera (or press **1**–**6**) to cut. The on-air angle is green, and the others are on standby.
+
+![Control station: the player showing the wheel angle, with camera buttons wide (standby), wheel (on air) and dealer (standby)](../assets/realtime-api/switch-ui-control.webp)
+
+_Cut to wheel: the player follows, and the status line shows the sequence number of the switch._
+
+**Copy player link** gives you the URL to embed, and **How it works & API** shows the ingest details and the exact API calls for your group.
+
+## Before you start
+
+- A nanoStream account with Multi-Camera Stream Switching enabled (see the note below)
+- One **live stream per camera angle** (up to 10), with an encoder sending to each. See [Start Streaming](../cloud/live_encoding).
+- A **bintu token** for API calls (see [Authentication](realtime_api_switching_reference#authentication))
+
+The examples below use the production API, `https://real-time-api.nanostream.cloud`.
+
+:::info Business feature
+Multi-Camera Stream Switching requires a business upgrade. Contact our sales team through the [contact form](https://www.nanocosmos.de/contact) or by email to sales(at)nanocosmos.de.
+:::
+
+## Step 1: Set up a stream group
+
+Call `POST /rooms/setup` once per group, for example once per table or show. Give each angle a **label** of your choice and mark exactly one as `active`. That angle is what viewers see first.
+
+<Tabs groupId="lang" queryString>
+<TabItem value="curl" label="curl" default>
 
 ```bash
-curl -X POST https://realtime-api.nanocosmos.de/rooms/setup \
-  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
+curl -X POST https://real-time-api.nanostream.cloud/rooms/setup \
+  -H "Authorization: Bearer $BINTU_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
-    "angles": {
-      "wide": "STREAM_NAME_A",
-      "wheel": "STREAM_NAME_B",
-      "dealer": "STREAM_NAME_C"
-    },
-    "active": "wide",
-    "roomId": "table-42"
+    "roomId": "roulette-7",
+    "streams": [
+      { "label": "wide",   "stream": "XXXXX-AAAAA", "active": true },
+      { "label": "wheel",  "stream": "XXXXX-BBBBB" },
+      { "label": "dealer", "stream": "XXXXX-CCCCC" }
+    ]
   }'
 ```
 
-The API validates your streams and returns a **player URL**. Share this URL with your viewers.
+</TabItem>
+<TabItem value="js" label="JavaScript (Node.js)">
 
-:::tip Room ID
-The `roomId` is optional. If you don't provide one, the API generates one for you. Use your own room ID when you want to map it to your own system (e.g. a table number or event ID).
+```js
+const res = await fetch('https://real-time-api.nanostream.cloud/rooms/setup', {
+  method: 'POST',
+  headers: {
+    'Authorization': `Bearer ${process.env.BINTU_TOKEN}`,
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    roomId: 'roulette-7',
+    streams: [
+      { label: 'wide',   stream: 'XXXXX-AAAAA', active: true },
+      { label: 'wheel',  stream: 'XXXXX-BBBBB' },
+      { label: 'dealer', stream: 'XXXXX-CCCCC' },
+    ],
+  }),
+});
+const { roomId, playerUrl } = await res.json();
+```
+
+</TabItem>
+</Tabs>
+
+The response contains the `playerUrl` you embed in Step 2:
+
+```json
+{
+  "roomId": "roulette-7",
+  "playerUrl": "https://…/player.html?roomId=roulette-7&token=…",
+  "streams": [
+    { "label": "wide",   "streamId": "951dfcca-…", "streamName": "XXXXX-AAAAA", "active": true },
+    { "label": "wheel",  "streamId": "a1b2c3d4-…", "streamName": "XXXXX-BBBBB", "active": false },
+    { "label": "dealer", "streamId": "f0e1d2c3-…", "streamName": "XXXXX-CCCCC", "active": false }
+  ]
+}
+```
+
+- `stream` accepts a stream name (`XXXXX-AAAAA`) or a stream ID (UUID).
+- `roomId` is optional. If you leave it out, one is generated for you.
+- Labels must be unique within a group. You use them in every switch call.
+
+:::info Secure playback
+If your organisation uses [secure playback tokens](../cloud/security_token_best_practices), add `"security": { "jwtoken": "<playback token>" }` to the setup request. The token is built into the player URL so the player can authenticate.
 :::
 
-### Step 3: Embed the player
+## Step 2: Embed the player
 
-The player URL from the setup response is a hosted page. Embed it in your website or application using an iframe:
+Put the `playerUrl` in an iframe. Don't build the URL yourself: it contains a signed token that lets the player receive switch events for this group.
 
 ```html
 <iframe
   src="PLAYER_URL_FROM_SETUP"
-  width="640"
-  height="360"
+  width="1280"
+  height="720"
   frameborder="0"
+  allow="autoplay; fullscreen"
   allowfullscreen>
 </iframe>
 ```
 
-The player handles everything — connecting, receiving switch events, and playing the active camera angle. You do not need to manage the player yourself.
+The player starts muted with autoplay, and uses the **balancedadaptive** latency mode.
 
-### Step 4: Switch cameras
+## Step 3: Switch angles
 
-When your application needs to change the active camera, send a switch request:
+Call `PUT /rooms/{roomId}/switch` whenever you want to cut. Send the label to put on air in `active`, and the full set of angles (label → stream name) in `angles`, every time.
+
+<Tabs groupId="lang" queryString>
+<TabItem value="curl" label="curl" default>
 
 ```bash
-curl -X PUT https://realtime-api.nanocosmos.de/rooms/table-42/switch \
-  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
+curl -X PUT https://real-time-api.nanostream.cloud/rooms/roulette-7/switch \
+  -H "Authorization: Bearer $BINTU_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
     "active": "wheel",
     "angles": {
-      "wide": "STREAM_NAME_A",
-      "wheel": "STREAM_NAME_B",
-      "dealer": "STREAM_NAME_C"
+      "wide":   "XXXXX-AAAAA",
+      "wheel":  "XXXXX-BBBBB",
+      "dealer": "XXXXX-CCCCC"
     }
   }'
 ```
 
-All connected viewers switch to the "wheel" camera within seconds.
+</TabItem>
+<TabItem value="js" label="JavaScript (Node.js)">
 
-### Step 5: Repeat
-
-You can switch as often as needed. Each switch updates all connected viewers. If a viewer joins mid-session, they automatically see the current active camera.
-
-## Secure Playback
-
-If your organisation uses [secure playback tokens](/docs/cloud/security), you can pass the security token during setup. The player handles secure playback automatically — viewers don't need to know about it.
-
-Include the token in your setup request:
-
-```bash
-curl -X POST https://realtime-api.nanocosmos.de/rooms/setup \
-  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "angles": {
-      "wide": "STREAM_NAME_A",
-      "wheel": "STREAM_NAME_B"
-    },
-    "active": "wide",
-    "security": {
-      "jwtoken": "YOUR_SPLAY_JWT"
-    }
-  }'
+```js
+await fetch('https://real-time-api.nanostream.cloud/rooms/roulette-7/switch', {
+  method: 'PUT',
+  headers: {
+    'Authorization': `Bearer ${process.env.BINTU_TOKEN}`,
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    active: 'wheel',
+    angles: { wide: 'XXXXX-AAAAA', wheel: 'XXXXX-BBBBB', dealer: 'XXXXX-CCCCC' },
+  }),
+});
 ```
 
-## What Happens When Things Go Wrong
+</TabItem>
+</Tabs>
 
-The system is designed to keep video playing, even when something unexpected happens:
+```json
+{ "ok": true, "roomId": "roulette-7", "active": "wheel", "seq": 1726900749616 }
+```
 
-| Situation | What happens |
-|-----------|-------------|
-| A viewer joins after a switch | They see the current active camera immediately |
-| A switch request fails | Viewers keep watching the previous camera — no black screen |
-| The viewer's connection drops | The player reconnects and shows the current active camera |
+Every player in the group switches to the `wheel` angle.
 
-## Authentication
+## Next steps
 
-All requests require your **bintu token** in the `Authorization` header as a Bearer token. You can obtain a token from the [nanoStream Cloud Dashboard](/docs/dashboard/getting_started) or the [bintu API](/docs/cloud/bintu_api).
-
-## API Reference
-
-For full endpoint details, request/response schemas, and error codes, see the **Real-Time API Reference**:
-
-👉 [Real-Time API Reference](https://real-time-api.nanostream.cloud/docs)
-
-:::info Business Feature
-Multi-Camera Switching requires a business upgrade. Please reach out to our sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
-:::
+- [Stream Switching API Reference](realtime_api_switching_reference): every endpoint, field, event and error
+- [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switch-player/demo.html): try it in your browser
+- [Secure Playback](../cloud/security_token_best_practices): protect your streams with tokens

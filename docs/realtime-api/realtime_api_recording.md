@@ -2,99 +2,139 @@
 id: realtime_api_recording
 title: On-Demand Recording
 sidebar_label: On-Demand Recording
-description: Start and stop recording of your live streams at any time using the nanoStream Real-Time API. Each recording session creates a separate file.
+description: Start and stop recording a live stream with REST calls. Run several recording sessions on one stream, each saved as its own file.
 ---
 
-## Overview
+# On-Demand Recording
 
-On-Demand Recording lets you control exactly when a live stream is recorded. Instead of recording the entire broadcast, you choose when to start and stop. Each recording session produces its own file.
+**On-Demand Recording** lets you decide exactly when a live stream is recorded. Instead of recording the whole broadcast, you start and stop recording with REST calls, and each recording session produces its own file.
 
-This is useful when you only need to capture specific moments — a key segment of a live event, a compliance-relevant interaction, or a highlight clip.
+Use it when you only need specific moments: a key segment of a live event, a compliance-relevant interaction, or a highlight clip.
 
-:::tip How is this different from auto-recording?
-With [Live Processing Recording](/docs/cloud/live_processing#recording), every incoming stream is recorded automatically. On-Demand Recording gives you manual control — you decide when recording starts and stops, and you can run multiple recording sessions on the same stream.
+:::tip How is this different from automatic recording?
+With [Live Recording](../cloud/live-recording-vod), every incoming stream is recorded automatically. On-Demand Recording gives you manual control: you decide when recording starts and stops, and you can run several recording sessions on the same stream.
 :::
 
-## How It Works
+## How it works
 
-1. **Start streaming** — Set up and start your live stream as usual.
-2. **Start recording** — Send a REST call to begin recording. You provide a filename for the recording.
-3. **Stop recording** — Send another REST call to stop. The recorded file is saved.
-4. **Repeat** — You can start and stop multiple recording sessions on the same stream. Each session gets its own file.
+1. **Start streaming.** Set up and start your live stream as usual.
+2. **Start recording.** Send a REST call with a filename for the recording.
+3. **Stop recording.** Send another REST call. The recording is saved as a file.
+4. **Repeat.** Start and stop as many sessions as you need on the same stream. Each session gets its own file.
 
 ```
 Stream is live
     │
-    ├──▶ POST /rec/start  →  Recording begins (session 1)
-    │
-    ├──▶ POST /rec/stop   →  Recording ends, file saved
-    │
-    ├──▶ POST /rec/start  →  Recording begins (session 2)
-    │
-    └──▶ POST /rec/stop   →  Recording ends, file saved
+    ├──▶ POST /rec/start  →  recording begins (session 1)
+    ├──▶ POST /rec/stop   →  recording ends, file saved
+    ├──▶ POST /rec/start  →  recording begins (session 2)
+    └──▶ POST /rec/stop   →  recording ends, file saved
 ```
 
-You can also check which recording sessions are currently active on a stream.
+## Before you start
 
-## Prerequisites
-
-- A **nanoStream Cloud** account with a valid **bintu token**
+- A nanoStream Cloud account with a valid **bintu token** (see [Base URL and authentication](realtime_api_introduction#base-url-and-authentication))
 - A live stream that is currently ingesting
-- The **Real-Time API** enabled for your organisation
+- On-Demand Recording enabled for your organisation (see the note at the end of this page)
 
-## Getting Started
+In the examples below, `{stream}` is your stream name (for example `XXXXX-YYYYY`) or its stream ID (UUID).
 
-### Step 1: Start your live stream
+## Step 1: Start your live stream
 
-Set up and start a live stream using the [nanoStream Cloud Dashboard](/docs/dashboard/start_streaming) or any supported encoder. Make sure the stream is live before starting a recording.
+Start a live stream from the nanoStream Cloud Dashboard or any supported encoder. See [Start Streaming](../cloud/live_encoding). The stream must be live before you start a recording.
 
-### Step 2: Start a recording
+## Step 2: Start a recording
 
-Send a request to the Real-Time API with your **stream name** and a **filename** for the recording.
+Send the stream and a filename for the recording session:
 
 ```bash
-curl -X POST https://realtime-api.nanocosmos.de/stream/{streamname}/rec/start \
-  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
+curl -X POST https://real-time-api.nanostream.cloud/stream/{stream}/rec/start \
+  -H "Authorization: Bearer $BINTU_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{ "filename": "my-recording-001" }'
+  -d '{ "filename": "my_recording_001" }'
 ```
 
-The API confirms that recording has started.
+```json
+{ "recordingId": "XXXXX-YYYYY-rec-my_recording_001" }
+```
 
-### Step 3: Stop the recording
+:::note Filename rules
+Use letters, digits and underscores only, 1–64 characters, with no `-` and no file extension. For example, `round_1042` is valid, but `round-1042.mp4` is rejected with a `400` error.
+:::
 
-When you are done, stop the recording session.
+## Step 3: Stop the recording
+
+Stop the session with the same filename you started it with:
 
 ```bash
-curl -X POST https://realtime-api.nanocosmos.de/stream/{streamname}/rec/stop \
-  -H "Authorization: Bearer YOUR_BINTU_TOKEN" \
+curl -X POST https://real-time-api.nanostream.cloud/stream/{stream}/rec/stop \
+  -H "Authorization: Bearer $BINTU_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{ "filename": "my-recording-001" }'
+  -d '{ "filename": "my_recording_001" }'
 ```
 
-The recorded file is saved and can be accessed later.
+```json
+{ "streamname": "XXXXX-YYYYY", "filename": "my_recording_001", "stopped": true }
+```
 
-### Step 4: Check active recordings (optional)
+Stopping is safe to repeat. If the session was already stopped, `stopped` is `false` and nothing changes.
 
-To see which recording sessions are currently running on a stream:
+## Step 4: Check active recordings (optional)
+
+See which recording sessions are running on a stream:
 
 ```bash
-curl -X GET https://realtime-api.nanocosmos.de/stream/{streamname}/rec \
-  -H "Authorization: Bearer YOUR_BINTU_TOKEN"
+curl https://real-time-api.nanostream.cloud/stream/{stream}/rec \
+  -H "Authorization: Bearer $BINTU_TOKEN"
 ```
 
-This returns a list of all active recording sessions.
+```json
+{ "streamname": "XXXXX-YYYYY", "recordings": [{ "filename": "my_recording_001" }] }
+```
 
-## Authentication
+## Step 5: Get your recorded files
 
-All requests require your **bintu token** in the `Authorization` header as a Bearer token. You can obtain a token from the [nanoStream Cloud Dashboard](/docs/dashboard/getting_started) or the [bintu API](/docs/cloud/bintu_api).
+List the finished recordings for a stream, with a download URL for each file:
 
-## API Reference
+```bash
+curl https://real-time-api.nanostream.cloud/stream/{stream}/rec/files \
+  -H "Authorization: Bearer $BINTU_TOKEN"
+```
 
-For full endpoint details, request/response schemas, and error codes, see the **Real-Time API Reference**:
+```json
+{
+  "streamname": "XXXXX-YYYYY",
+  "files": [
+    {
+      "name": "my_recording_001.mp4",
+      "url": "https://bintu-vod.nanocosmos.de/vod/rec/my_recording_001.mp4",
+      "size": "12345678",
+      "createdAt": "2026-10-20T10:30:00Z"
+    }
+  ]
+}
+```
 
-👉 [Real-Time API Reference](https://real-time-api.nanostream.cloud/docs)
+Files usually appear within about a minute after a recording stops. `size` and `createdAt` can be `null` until the file is ready.
 
-:::info Business Feature
-On-Demand Recording requires a business upgrade. Please reach out to our sales team via the [contact form](https://www.nanocosmos.de/contact) or by sending an email to sales(at)nanocosmos.de.
+## Endpoints
+
+| Method | Path | Body | Purpose |
+|---|---|---|---|
+| `POST` | `/stream/{stream}/rec/start` | `{ "filename": "…" }` | Start a recording session |
+| `POST` | `/stream/{stream}/rec/stop` | `{ "filename": "…" }` | Stop a recording session |
+| `GET` | `/stream/{stream}/rec` | | List active recording sessions |
+| `GET` | `/stream/{stream}/rec/files` | | List finished recordings with download URLs |
+
+| Status | Meaning |
+|---|---|
+| `400` | Missing or invalid input, for example a filename with `-` |
+| `401` | Missing or invalid bintu token |
+| `403` | The stream doesn't belong to your organisation |
+| `502` / `504` | An upstream service returned an error or couldn't be reached. Try again. |
+
+For full schemas, see the interactive [Real-Time API Reference](https://real-time-api.nanostream.cloud/docs).
+
+:::info Business feature
+On-Demand Recording requires a business upgrade. Contact our sales team through the [contact form](https://www.nanocosmos.de/contact) or by email to sales(at)nanocosmos.de.
 :::
