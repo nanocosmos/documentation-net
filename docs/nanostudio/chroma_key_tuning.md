@@ -5,6 +5,8 @@ sidebar_label: Tuning the Key
 description: What each chroma key control does (key colour, similarity, blend, despill and EQ) and how to push your settings to a live output.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 # Tuning the Key
 
 A good key removes all of the screen, keeps all of the presenter, and leaves clean edges with no coloured fringe. This page explains each control in the Chroma Setup Tuner and how to get your settings onto the live stream.
@@ -16,6 +18,17 @@ Load a representative frame, click **Autotune**, then adjust **Similarity** and 
 :::info Every control works in real time
 In Live mode, changes to the key colour, similarity, blend, despill, EQ and overlay position go to the on-air output straight away, without restarting the stream. Click **Apply Now** to save them to the stream. See [Push your settings to the live stream](#push-your-settings-to-the-live-stream).
 :::
+
+
+<ThemedImage
+  alt="The order the controls are applied: camera frame, key colour, similarity, blend, despill, EQ, overlay, output"
+  sources={{
+    light: require('../assets/nanostudio/diagrams/chroma-control-order-light.webp').default,
+    dark: require('../assets/nanostudio/diagrams/chroma-control-order-dark.webp').default,
+  }}
+/>
+
+_The order the controls are applied, from the raw camera frame to the finished output._
 
 ## Preview vs Live
 

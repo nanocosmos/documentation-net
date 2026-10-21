@@ -5,6 +5,8 @@ sidebar_label: Outputs & Branding
 description: Give each chroma key output its own background, logo overlay, tags and adaptive bitrate ladder, and change them on a live stream.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 # Outputs & Branding
 
 One green-screen ingest can feed **multiple outputs** (targets), and you can add more at any time. Each output is a separate nanoStream stream with its own look. For example, the same presenter can appear in a sports studio with a sports sponsor's logo on one output, and in a news studio with a different logo on another, at the same time and from one camera.
@@ -73,6 +75,15 @@ An overlay is a PNG, usually a transparent logo, placed on top of the keyed pict
 Positions follow the real frame: the ingest's resolution, or 1920×1080 until it's known. The **Frame** label next to the presets shows which size is in use, and presets allow for the overlay's own size so it stays inside the frame.
 
 The Overlay section acts on whichever output you're currently previewing or have on-air. In Live mode, position changes go to the on-air output in real time.
+
+<ThemedImage
+  alt="Overlay position: X and Y in pixels from the top-left corner of the output frame, Scale sets the size, and five preset positions"
+  sources={{
+    light: require('../assets/nanostudio/diagrams/chroma-overlay-position-light.webp').default,
+    dark: require('../assets/nanostudio/diagrams/chroma-overlay-position-dark.webp').default,
+  }}
+/>
+
 
 <img src={require('../assets/nanostudio/ui/chroma-ui-overlay.webp').default} alt="The Overlay section: X px, Y px, Scale % and the five position presets" width="420" />
 

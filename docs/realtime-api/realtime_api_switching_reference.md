@@ -5,6 +5,8 @@ sidebar_label: API Reference
 description: Reference for the multi-camera stream switching endpoints of the nanoStream Real-Time API, plus the Switch Player URL parameters and event stream.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 # Multi-Camera Switching: API Reference
 
 Multi-camera switching uses three endpoints of the nanoStream **Real-Time API**. For a walkthrough, see [Multi-Camera Stream Switching](realtime_api_switching).
@@ -18,6 +20,17 @@ Multi-camera switching uses three endpoints of the nanoStream **Real-Time API**.
 | `GET` | [`/rooms/{roomId}/events`](#get-roomsroomidevents) | The player | Receive switch events (server-sent events) |
 
 All requests and responses use JSON, and all calls must use **HTTPS**.
+
+<ThemedImage
+  alt="Sequence of calls: set up the room, the player subscribes to events, your backend switches, the player follows"
+  sources={{
+    light: require('../assets/realtime-api/diagrams/switching-sequence-light.webp').default,
+    dark: require('../assets/realtime-api/diagrams/switching-sequence-dark.webp').default,
+  }}
+/>
+
+_Solid arrows are requests, dashed arrows are responses and events._
+
 
 ## Authentication
 
@@ -151,6 +164,17 @@ GET /rooms/roulette-7/events?token=<player token>
 event: source
 data: {"roomId":"roulette-7","active":"wheel","seq":1726900749616,"source":{"streamname":"XXXXX-BBBBB"}}
 ```
+
+
+<ThemedImage
+  alt="Timeline of one event connection: connect, waiting, a ping every 20 seconds, and a source event on each switch"
+  sources={{
+    light: require('../assets/realtime-api/diagrams/switching-event-timeline-light.webp').default,
+    dark: require('../assets/realtime-api/diagrams/switching-event-timeline-dark.webp').default,
+  }}
+/>
+
+_A source event arrives on connect if an angle is already on air, and again on every switch._
 
 The event stream only contains the angle on air. Viewers never receive the full list of angles.
 

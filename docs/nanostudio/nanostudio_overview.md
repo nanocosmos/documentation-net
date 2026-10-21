@@ -5,11 +5,24 @@ sidebar_label: Overview
 description: nanoStudio adds real-time production tools to nanoStream Cloud, starting with server-side chroma key for multi-branded live streams.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 # nanoStudio Overview
 
 **nanoStudio** is the set of real-time production tools that works on top of [nanoStream Cloud](../cloud/cloud_overview). It changes what your viewers see without extra hardware or software on set. The work happens in the cloud pipeline, and the result is delivered with the same **ultra-low latency** as every nanoStream live stream.
 
 nanoStudio uses your existing nanoStream account. You sign in with the same API key or Dashboard login, and your streams, ingest URLs and players stay the same.
+
+<ThemedImage
+  alt="Chroma Key workflow: a green-screen feed goes to nanoStream Cloud, nanoStudio Chroma keys it in the cloud, and multiple branded outputs go to viewers"
+  sources={{
+    light: require('../assets/nanostudio/diagrams/nanostudio-chroma-workflow-light.webp').default,
+    dark: require('../assets/nanostudio/diagrams/nanostudio-chroma-workflow-dark.webp').default,
+  }}
+/>
+
+_One camera feed in, multiple branded outputs out._
+
 
 :::tip New to nanoStream?
 Create a free account in the [nanoStream Cloud Dashboard](https://dashboard.nanostream.cloud/signup), then follow [Getting Started](../cloud/cloud_getting_started) to send your first live stream. Every nanoStudio tool starts from a running stream.

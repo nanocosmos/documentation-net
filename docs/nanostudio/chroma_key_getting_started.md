@@ -5,6 +5,8 @@ sidebar_label: Getting Started
 description: Set up server-side chroma key on nanoStream Cloud in five steps, from signing in to going live with keyed outputs.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 # Chroma Key: Getting Started
 
 nanoStudio **Chroma Key** removes the green or blue screen behind your presenter and replaces it with a new background. This happens in the nanoStream Cloud pipeline. You send **one** green-screen stream, and nanoStream delivers one or more finished, keyed streams to your viewers in real time.
@@ -14,6 +16,15 @@ You set everything up in the **Chroma Setup Tuner**, a browser tool that creates
 :::tip Open the tuner
 [chromakey.nanocosmos.net/chroma-setup-tuner.html](https://chromakey.nanocosmos.net/chroma-setup-tuner.html)
 :::
+
+
+<ThemedImage
+  alt="The five steps: sign in, upload, create, tune, go live"
+  sources={{
+    light: require('../assets/nanostudio/diagrams/chroma-steps-light.webp').default,
+    dark: require('../assets/nanostudio/diagrams/chroma-steps-dark.webp').default,
+  }}
+/>
 
 ## How it works
 
@@ -25,6 +36,17 @@ Each chroma key setup has one **ingest** stream and one or more **target** strea
 | **Target** | A keyed output. The presenter is cut out of the ingest and placed over this target's background, with an optional logo overlay on top. Viewers watch target streams. |
 
 One ingest can feed **multiple outputs**, and you can keep adding outputs as your production grows. Each target has its own background, overlay, tags and transcoding ladder, so a single camera can produce several differently branded shows at the same time.
+
+<ThemedImage
+  alt="An encoder sends RTMP to the ingest, keying runs in nanoStream Cloud, and each target gets its own background and logo"
+  sources={{
+    light: require('../assets/nanostudio/diagrams/chroma-ingest-to-outputs-light.webp').default,
+    dark: require('../assets/nanostudio/diagrams/chroma-ingest-to-outputs-dark.webp').default,
+  }}
+/>
+
+_One ingest, many branded outputs. Each target has its own background, overlay, tags and ABR ladder._
+
 
 Every ingest and target is a regular nanoStream Cloud stream. It shows up in the Dashboard, takes RTMP from any encoder, plays in the H5Live Player with the same low latency as your other streams, and can have its own adaptive bitrate (ABR) ladder.
 

@@ -5,6 +5,8 @@ sidebar_label: Getting Started
 description: Cut between camera angles live while your viewers watch one continuous video. Set up a stream group, embed the hosted player, and switch with one API call.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -30,6 +32,17 @@ Open the [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switc
 2. **Embed the player.** Put the player URL in an iframe on your page. Viewers start watching the default angle straight away.
 3. **Switch angles.** When you want to cut, your backend calls `PUT /rooms/{roomId}/switch` with the angle to put on air.
 4. **Players follow.** The API pushes the change to every connected player, and each one switches to the new angle without a gap.
+
+
+<ThemedImage
+  alt="Cameras send streams to nanoStream Cloud; your backend calls the Real-Time API to set up and switch; the API tells every Switch Player which angle to play"
+  sources={{
+    light: require('../assets/realtime-api/diagrams/switching-architecture-light.webp').default,
+    dark: require('../assets/realtime-api/diagrams/switching-architecture-dark.webp').default,
+  }}
+/>
+
+_Your backend decides when to cut. The Real-Time API tells every player, and each player switches to the new angle without a gap._
 
 **Built-in reliability**
 

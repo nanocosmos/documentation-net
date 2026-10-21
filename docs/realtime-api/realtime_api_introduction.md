@@ -5,6 +5,8 @@ sidebar_label: Introduction
 description: Control your live streams in real time with simple REST calls. Start and stop recordings on demand, and switch between camera angles while you're live.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 # nanoStream Real-Time API
 
 The **nanoStream Real-Time API** gives you control over your live streams while they're live. You don't configure recording or camera switching ahead of time; you trigger them on demand, from your own application, with simple REST calls.
@@ -18,10 +20,17 @@ The API supports two features:
 
 The Real-Time API sits between your application and nanoStream Cloud. Your application sends REST calls, and the API carries them out on your live streams.
 
-```
-Your application  →  Real-Time API  →  nanoStream Cloud
-  (REST calls)       (control layer)    (streaming infrastructure)
-```
+
+<ThemedImage
+  alt="Your application sends REST calls to the Real-Time API, which controls your live streams in nanoStream Cloud: on-demand recording and multi-camera switching"
+  sources={{
+    light: require('../assets/realtime-api/diagrams/realtime-api-flow-light.webp').default,
+    dark: require('../assets/realtime-api/diagrams/realtime-api-flow-dark.webp').default,
+  }}
+/>
+
+_Your application sends REST calls; the Real-Time API applies them to your live streams._
+
 
 ## Base URL and authentication
 

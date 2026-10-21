@@ -5,6 +5,8 @@ sidebar_label: On-Demand Recording
 description: Start and stop recording a live stream with REST calls. Run several recording sessions on one stream, each saved as its own file.
 ---
 
+import ThemedImage from '@theme/ThemedImage';
+
 # On-Demand Recording
 
 **On-Demand Recording** lets you decide exactly when a live stream is recorded. Instead of recording the whole broadcast, you start and stop recording with REST calls, and each recording session produces its own file.
@@ -22,14 +24,17 @@ With [Live Recording](../cloud/live-recording-vod), every incoming stream is rec
 3. **Stop recording.** Send another REST call. The recording is saved as a file.
 4. **Repeat.** Start and stop as many sessions as you need on the same stream. Each session gets its own file.
 
-```
-Stream is live
-    │
-    ├──▶ POST /rec/start  →  recording begins (session 1)
-    ├──▶ POST /rec/stop   →  recording ends, file saved
-    ├──▶ POST /rec/start  →  recording begins (session 2)
-    └──▶ POST /rec/stop   →  recording ends, file saved
-```
+
+<ThemedImage
+  alt="One live stream with two recording sessions; each start and stop pair produces its own file"
+  sources={{
+    light: require('../assets/realtime-api/diagrams/recording-sessions-light.webp').default,
+    dark: require('../assets/realtime-api/diagrams/recording-sessions-dark.webp').default,
+  }}
+/>
+
+_Each start/stop pair is its own session and produces its own file._
+
 
 ## Before you start
 
