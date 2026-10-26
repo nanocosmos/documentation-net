@@ -38,6 +38,10 @@ MOQ depends on **WebTransport** and **WebCodecs** APIs in modern browsers:
 
 Check out the [nanoplayer v5 migration guide](./nanoplayer_v5_migration_guide) for details on compatibility, fallback handling, and best practices.
 
+## MOQ in nanoStream Analytics
+
+nanoStream Analytics reports MOQ playbacks separately from WebSocket/MSE playbacks. Use the `/v2/moq/*` routes of the [Analytics API](../cloud/analytics-api-documentation.md#moq-metrics) to get MOQ views, playing time, latency, startup time, buffering ratio, error codes and stop reasons. The `/v2/h5live/*` routes do not include MOQ playbacks.
+
 ## Configuration for MOQ
 
 MOQ playback can be controlled via new configuration settings.

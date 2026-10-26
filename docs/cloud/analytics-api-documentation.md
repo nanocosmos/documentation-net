@@ -25,6 +25,12 @@ These routes provide a detailed overview of your organisation's traffic volume i
  
 H5Live metrics routes offer a wide spectrum of information about everything connected to the H5Live player. 
 
+Since API version 2.36.0, H5Live metrics cover WebSocket/MSE playbacks only. Playbacks via Media over QUIC (MoQ) are reported in the [MoQ Metrics](#moq-metrics) routes.
+
+### MoQ Metrics
+
+MoQ metrics routes report playbacks of the H5Live player that use [Media over QUIC (MoQ)](../nanoplayer/nanoplayer_feature_moq.md): views and playing time by OS and browser, plus timeseries for playing time, latency, startup time, buffering ratio, error codes and stop reasons. Playing time, latency, startup time and buffering ratio are also available for a single stream. See the [MoQ API routes](https://api.nanostream.cloud/docs/analytics/v2/#tag/MoQ-metrics) for details.
+
 ### Webcaster Metrics
 
 To get more information about the [nanoStream Webcaster](../webrtc/nanostream_webrtc_introduction) usage in practice and it's benefits regarding additional meta data for ingest metrics, consider taking a look at these routes.
