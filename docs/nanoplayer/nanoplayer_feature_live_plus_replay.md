@@ -100,7 +100,7 @@ Load nanoPlayer and hls.js, then create the player like a nanoPlayer and add a `
 ```html
 <script src="https://demo.nanocosmos.de/nanoplayer/api/release/nanoplayer.5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.7.3/dist/hls.min.js"></script>
-<script src="https://demo1.nanocosmos.de/nanoplayer/live-plus-replay/1/live-replay.min.js"></script>
+<script src="https://demo.nanocosmos.de/nanoplayer/live-plus-replay/1/live-replay.min.js"></script>
 
 <div id="player"></div>
 <script>
