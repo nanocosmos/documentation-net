@@ -153,7 +153,7 @@ Additional context helps us pinpoint the source faster. Please include if availa
 
 Use our sample player to verify playback independently from your own application:
 
-Example URL: [https://demo1.nanocosmos.de/nanoplayer/release/nanoplayer.html?h5live.server=bintu-play.nanocosmos.de&h5live.rtmp.url=rtmp://localhost/play&h5live.rtmp.streamname=XXXXX-YYYYY](https://demo1.nanocosmos.de/nanoplayer/release/nanoplayer.html?h5live.server=bintu-play.nanocosmos.de&h5live.rtmp.url=rtmp://localhost/play&h5live.rtmp.streamname=XXXXX-YYYYY)
+Example URL: [https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?group.id=XXXXX-YYYYY](https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?group.id=XXXXX-YYYYY)
 
 Replace `XXXXX-YYYYY` with your Bintu stream name.
 
@@ -165,7 +165,7 @@ You can force playback from a specific region by changing `h5live.server`.
 `bintu-play-use.nanocosmos.de`
 
 Full test URL:  
-[https://demo1.nanocosmos.de/nanoplayer/release/nanoplayer.html?h5live.server=bintu-play-use.nanocosmos.de&h5live.rtmp.url=rtmp://localhost/play&h5live.rtmp.streamname=XXXXX-YYYYY](https://demo1.nanocosmos.de/nanoplayer/release/nanoplayer.html?h5live.server=bintu-play-use.nanocosmos.de&h5live.rtmp.url=rtmp://localhost/play&h5live.rtmp.streamname=XXXXX-YYYYY)
+[https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?group.id=XXXXX-YYYYY&general.serverDomain=bintu-play-use.nanocosmos.de]([https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?group.id=XXXXX-YYYYY&general.serverDomain=bintu-play-use.nanocosmos.de)
 :::
 
 ## Geo Locations and Host Overview

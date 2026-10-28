@@ -14,21 +14,21 @@ The embed is using the latest player version, you can ready more about the lates
 #### Template example
 In the following example the `streamname` value has to be replaced:
 
-Link: `https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=XXXXX-YYYYY`
+Link: `https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=XXXXX-YYYYY`
 
 ```html
-<iframe src="https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=XXXXX-YYYYY" frameborder="0" allowfullscreen width="1280" height="720"></iframe>
+<iframe src="https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=XXXXX-YYYYY" frameborder="0" allowfullscreen width="1280" height="720"></iframe>
 ```
 
-iFrame src has to direct to the embedded player ( `https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=XXXXX-YYYYY` ). It is necessary to add the query (like `entry.rtmp` with `streamname`, else the embedded player will be set but won't run without the stream)!
+iFrame src has to direct to the embedded player ( `https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=XXXXX-YYYYY` ). It is necessary to add the query (like `entry.rtmp` with `streamname`, else the embedded player will be set but won't run without the stream)!
 
 #### Example with Nanocosmos Test Stream
-Test stream is `streamname=HX26g-NRbx9`
+Test stream is `HX26g-NRbx9`
 
-Link: `https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9`
+Link: `https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=HX26g-NRbx9`
 
 ```html
-<iframe src="https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9" frameborder="0" allowfullscreen width="1280" height="720"></iframe>
+<iframe src="https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=HX26g-NRbx9" frameborder="0" allowfullscreen width="1280" height="720"></iframe>
 ```
 ### New in v2.0.0
 
@@ -78,15 +78,6 @@ Following the nanoStream H5Live Player Version 4.14.x release where two new [lat
 
 Values: `"classic"`, `"balancedadaptive"`, `"fastadaptive"`.
 
-#### URLs with latency control modes
-
-* default mode:
-  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&playback.latencyControlMode=classic
-* latency control mode set to `"balancedadaptive"`:
-  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&playback.latencyControlMode=balancedadaptive
-* latency control mode set to `"fastadaptive"`:
-  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&playback.latencyControlMode=fastadaptive
-
 **Important:** Latency control modes are not available in Player Embed prior to v1.2.0.
 
 #### Example URLs for embed player v2.0.0
@@ -94,17 +85,20 @@ Values: `"classic"`, `"balancedadaptive"`, `"fastadaptive"`.
 * single stream minimal:
   * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9
 
-* latency control mode:
-  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&playback.latencyControlMode=balancedadaptive
+* abr/group configuration:
+  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=HX26g-NRbx9
 
-* abr/multi stream:
+* abr/multi stream configuration:
   * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&entry.info.bitrate=1500&entry2.rtmp.streamname=HX26g-uVn3M&entry2.info.bitrate=800&entry3.rtmp.streamname=HX26g-VbAxm&entry3.info.bitrate=200&options.adaption.rule=deviationOfMean2&startIndex=2
 
+* latency control mode set to `"balancedadaptive"`:
+  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=HX26g-NRbx9&playback.latencyControlMode=balancedadaptive
+
 * autoplay/mute setting:
-  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&playback.autoplay=true&playback.automute=true&playback.muted=false
+  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=HX26g-NRbx9&playback.autoplay=true&playback.automute=true&playback.muted=false
 
 * UI related: fullScreenControl, displayMutedAutoplay, backgroundColor and poster
-  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?entry.rtmp.streamname=HX26g-NRbx9&playback.autoplay=true&playback.automute=true&style.displayMutedAutoplay=false&style.fullScreenControl=true&style.backgroundColor=black&style.poster=https://demo1.nanocosmos.de/assets/around720.png
+  * https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html?group.id=HX26g-NRbx9&playback.autoplay=true&playback.automute=true&style.displayMutedAutoplay=false&style.fullScreenControl=true&style.backgroundColor=black&style.poster=https://demo.nanocosmos.de/nanoplayer/release/assets/background.jpg
 
 ### Configuration via URL parameters
 
