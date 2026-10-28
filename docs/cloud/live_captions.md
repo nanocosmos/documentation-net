@@ -5,19 +5,16 @@ sidebar_label: Live Captions
 description: nanoStream Live Captions convert spoken audio into readable text in real time. This AI-driven feature enhances accessibility and content comprehension across a wide range of live-streaming.
 ---
 
-:::warning Prerequisites
-To make use of **Live Captions**, it must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
-
-You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
-In the **[Enabled Packages](./organization_overview#enabled-packages)** section, locate the entry for `Live Captions`. If it shows **Upgrade needed**, please [contact us](https://www.nanocosmos.net/contact).
+:::info Live Captions Availability
+**Live Captions** are enabled for all organizations. You can verify the feature status by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard, under the **[Enabled Packages](./organization_overview#enabled-packages)** section.
 
 ![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
 
-To activate `Live Captions` or learn more about available plans, feel free to reach out via [nanocosmos.net/contact](https://www.nanocosmos.net/contact). We're happy to assist you in finding the best setup for your use case.
+For questions about available plans or advanced configuration, feel free to reach out via [nanocosmos.net/contact](https://www.nanocosmos.net/contact).
 :::
 
-:::info Live Caption Security Requirements
-Live captions are only available for **secure playback**. Therefore, by enabling `live captions`, you will also need to enable the `secure` feature. Please reach out to our sales team via [nanocosmos.net/contact](https://www.nanocosmos.net/contact) or by email at sales(at)nanocosmos.net if you have any questions. \
+:::info Secure Playback Support
+Live captions work with both **secure** and **non-secure** playback streams. For secure streams, a valid JWT playback token is required for both video playback and caption delivery. For non-secure streams, no token is needed. \
 To learn more about secure playback, visit the dedicated article [Secure Playback (H5Live)](/docs/cloud/security#secure-playback).
 :::
 

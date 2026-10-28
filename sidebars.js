@@ -37,6 +37,7 @@ const sidebars = {
           "link": { "type": "doc", "id": "cloud/live_captions" },
           "items": [
             "cloud/live_captions_api_guide",
+            "cloud/live_captions_retrieve",
           ]
         },
       ]

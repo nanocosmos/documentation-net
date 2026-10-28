@@ -50,7 +50,7 @@ You can find a detailed guide on how to enable, edit, and monitor live captions 
 ### Required URL + Parameters
 
 The base embed URL is: \
-`https://bintu-nmessenger.autodevops-prod.nanostream.cloud/client/embed/nanoplayer.html`
+`https://bintu-nmessenger.nanostream.cloud/client/embed/nanoplayer.html`
 
 The following table explains all parameters needed to enable live captions, including their purpose and example values:
 
@@ -59,14 +59,14 @@ The following table explains all parameters needed to enable live captions, incl
 | `group.apiurl` | Base API URL of your bintu instance | `https://bintu.nanocosmos.de` |
 | `group.id` | Stream ID or stream name of the video stream | `XXXXX-YYYYY` |
 | `caption.channel` | Caption channel identifier, assembled as `STREAMNAME-SOURCE_LANG-TARGET_LANG` | `XXXXX-YYYYY-en-en` |
-| `caption.token` | JWT token that authorizes access to the captions stream | `eyJhbGciOiJIUzI1NiIsInR5cCI6...` |
-| `group.security.jwtoken` | JWT token for secure video playback | `eyJhbGciOiJIUzI1NiIsInR5cCI6...` |
+| `caption.token` | JWT token that authorizes access to the captions stream. **Required for secure streams only.** | `eyJhbGciOiJIUzI1NiIsInR5cCI6...` |
+| `group.security.jwtoken` | JWT token for secure video playback. **Required for secure streams only.** | `eyJhbGciOiJIUzI1NiIsInR5cCI6...` |
 
-The **same JWT token is used** for both video playback (`group.security.jwtoken`) and captions delivery (`caption.token`). All restrictions configured in the token (stream name, stream group, domain, expiration time, etc.) apply to both.
+For **secure streams**, the **same JWT token is used** for both video playback (`group.security.jwtoken`) and captions delivery (`caption.token`). All restrictions configured in the token (stream name, stream group, domain, expiration time, etc.) apply to both. For **non-secure streams**, these parameters can be omitted.
 
-:::danger Security best practice
-Generate JWTs server-side and use short-lived tokens.
-Avoid hard-coding long-lived tokens in public code, your playback system.
+:::danger Security best practice (secure streams)
+When using secure playback, generate JWTs server-side and use short-lived tokens.
+Avoid hard-coding long-lived tokens in public code or your playback system.
 :::
 
 :::tip Creating and Managing Security Tokens
@@ -112,7 +112,7 @@ The code snippet below demonstrates how to embed the live captions into your web
 
 ```html
 <iframe
-  src="https://bintu-nmessenger.autodevops-prod.nanostream.cloud/client/embed/nanoplayer.html?group.id=<STREAM_ID_OR_NAME>&caption.channel=<CAPTION_CHANNEL>&caption.token=<SECURITY_TOKEN>&group.security.jwtoken=<SECURITY_TOKEN>"
+  src="https://bintu-nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=<STREAM_ID_OR_NAME>&caption.channel=<CAPTION_CHANNEL>&caption.token=<SECURITY_TOKEN>&group.security.jwtoken=<SECURITY_TOKEN>"
   width="100%"
   height="720"
   frameborder="0"
@@ -132,7 +132,7 @@ The token included in the example expires on 2026-12-08.
 
 ```html
 <iframe
-  src="https://bintu-nmessenger.autodevops-prod.nanostream.cloud/client/embed/nanoplayer.html?group.id=nNCcf-ZexY6&caption.channel=nNCcf-ZexY6-de-de&caption.token=eyJhbGciOiJFZERTQSIsImtpZCI6Im5hbm9feDI1NTE5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzcGxheSIsImV4cCI6MTc5NjczMDg0MSwiaWF0IjoxNzY1MTk4NDkzLCJpc3MiOiJuYW5vY29zbW9zIiwibmJmIjoxNzY1MTk4NDkzLCJzdHJlYW1zIjpbIm5OQ2NmLVpleFk2Il0sInN1YiI6IjU4ODYyNTFjLTJmM2UtNGQ3YS1hYWQ4LWQ3YWU1ZDBhNTdhMCJ9._EFR028lTwF2wt1F46LU4byJiWNb3qmuDJkS9Z_Yf2lEn0a9lUWXytZR05P3tbg_wtohyu9N9clTRxT8tYxqDA&group.security.jwtoken=eyJhbGciOiJFZERTQSIsImtpZCI6Im5hbm9feDI1NTE5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzcGxheSIsImV4cCI6MTc5NjczMDg0MSwiaWF0IjoxNzY1MTk4NDkzLCJpc3MiOiJuYW5vY29zbW9zIiwibmJmIjoxNzY1MTk4NDkzLCJzdHJlYW1zIjpbIm5OQ2NmLVpleFk2Il0sInN1YiI6IjU4ODYyNTFjLTJmM2UtNGQ3YS1hYWQ4LWQ3YWU1ZDBhNTdhMCJ9._EFR028lTwF2wt1F46LU4byJiWNb3qmuDJkS9Z_Yf2lEn0a9lUWXytZR05P3tbg_wtohyu9N9clTRxT8tYxqDA"
+  src="https://bintu-nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=nNCcf-ZexY6&caption.channel=nNCcf-ZexY6-de-de&caption.token=eyJhbGciOiJFZERTQSIsImtpZCI6Im5hbm9feDI1NTE5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzcGxheSIsImV4cCI6MTc5NjczMDg0MSwiaWF0IjoxNzY1MTk4NDkzLCJpc3MiOiJuYW5vY29zbW9zIiwibmJmIjoxNzY1MTk4NDkzLCJzdHJlYW1zIjpbIm5OQ2NmLVpleFk2Il0sInN1YiI6IjU4ODYyNTFjLTJmM2UtNGQ3YS1hYWQ4LWQ3YWU1ZDBhNTdhMCJ9._EFR028lTwF2wt1F46LU4byJiWNb3qmuDJkS9Z_Yf2lEn0a9lUWXytZR05P3tbg_wtohyu9N9clTRxT8tYxqDA&group.security.jwtoken=eyJhbGciOiJFZERTQSIsImtpZCI6Im5hbm9feDI1NTE5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzcGxheSIsImV4cCI6MTc5NjczMDg0MSwiaWF0IjoxNzY1MTk4NDkzLCJpc3MiOiJuYW5vY29zbW9zIiwibmJmIjoxNzY1MTk4NDkzLCJzdHJlYW1zIjpbIm5OQ2NmLVpleFk2Il0sInN1YiI6IjU4ODYyNTFjLTJmM2UtNGQ3YS1hYWQ4LWQ3YWU1ZDBhNTdhMCJ9._EFR028lTwF2wt1F46LU4byJiWNb3qmuDJkS9Z_Yf2lEn0a9lUWXytZR05P3tbg_wtohyu9N9clTRxT8tYxqDA"
   width="100%"
   height="720"
   frameborder="0"
@@ -141,6 +141,22 @@ The token included in the example expires on 2026-12-08.
 ```
 
 </details>
+
+### iframe for Non-Secure Streams
+
+For **non-secure streams**, you can omit the token parameters. Only `group.id` and `caption.channel` are required:
+
+```html
+<iframe
+  src="https://bintu-nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=<STREAM_ID_OR_NAME>&caption.channel=<CAPTION_CHANNEL>"
+  width="100%"
+  height="720"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+```
+
+Replace `<STREAM_ID_OR_NAME>` and `<CAPTION_CHANNEL>` with your actual values.
 
 ### Overview in the Dashboard
 
@@ -180,10 +196,10 @@ To integrate the captions, we'll use the **nanoStream Messenger** JavaScript lib
 
 ### 1. Load the Caption Library
 
-Include the [nanoStream Messenger](https://bintu-nmessenger.autodevops-prod.nanostream.cloud/nmessenger.js) JavaScript library in your HTML page or application:
+Include the [nanoStream Messenger](https://bintu-nmessenger.nanostream.cloud/nmessenger.js) JavaScript library in your HTML page or application:
 
 ```html
-<script src="https://bintu-nmessenger.autodevops-prod.nanostream.cloud/client/nmessenger.js"></script>
+<script src="https://bintu-nmessenger.nanostream.cloud/client/nmessenger.js"></script>
 ```
 
 :::warning Initialization order
@@ -251,14 +267,18 @@ After loading the library and defining the overlay element, create a new `NanoMe
 document.addEventListener("DOMContentLoaded", function() {
   // Step 1: Create the messenger client
   const messenger = new NanoMessenger(
-    "bintu-nmessenger.autodevops-prod.nanostream.cloud", // server
+    "bintu-nmessenger.nanostream.cloud", // server
     443,                                                 // port
     { overlayDiv: "caption-text" }                       // options
   );
 
   // Step 2: Connect to your caption channel
+  // For secure streams, pass your JWT token.
+  // For non-secure streams, pass null.
+  const captionToken = "your-caption-token"; // or null for non-secure streams
+
   messenger.connect(
-    "your-caption-token",      // authentication token (JWT)
+    captionToken,              // authentication token (JWT or null)
     null,                      // user (optional)
     "your-caption-channel",    // caption channel ID
     () => {                    // on success callback
@@ -280,7 +300,7 @@ The following table explains all values used when initializing the NanoMessenger
 | Server | `new NanoMessenger(server, port, options)` | Hostname of the caption delivery service | `bintu-nmessenger.autodevops-prod.nanostream.cloud` |
 | Port | `new NanoMessenger(server, port, options)` | Secure WebSocket port (always HTTPS/WSS) | `443` |
 | overlayDiv | `options.overlayDiv` | ID of the HTML element that will receive and display the captions, as initialized [here](#2-create-a-caption-overlay). **Make sure they match**. | `"caption-text"` |
-| your-caption-token | `messenger.connect(token, ...)` | Secure JWT token authorizing access to the caption stream | `eyJhbGciOiJIUzI1NiIsInR5cCI6...` |
+| your-caption-token | `messenger.connect(token, ...)` | JWT token authorizing access to the caption stream. **Required for secure streams.** Pass `null` for non-secure streams. | `eyJhbGciOiJIUzI1NiIsInR5cCI6...` |
 | user | `messenger.connect(token, ...)` | Optional user identifier (not required for captions) | `null` |
 | your-caption-channel | `messenger.connect(token, ...)` | Caption channel identifier (`STREAMNAME-SOURCE_LANG-TARGET_LANG`) | `XXXXX-YYYYY-en-en` |
 
@@ -289,9 +309,9 @@ The overlay element must already exist in the DOM before the `NanoMessenger` cli
 If the ID does not match, captions will be received but not displayed.
 :::
 
-:::danger Security best practice
-Generate JWTs server-side and use short-lived tokens.
-Avoid hard-coding long-lived tokens in public code, your playback system.
+:::danger Security best practice (secure streams)
+When using secure playback, generate JWTs server-side and use short-lived tokens.
+Avoid hard-coding long-lived tokens in public code or your playback system.
 :::
 
 ### 4. Display Captions
@@ -321,7 +341,7 @@ If you prefer a ready-to-use solution:
 - Use the iframe caption player provided as a reference implementation or embed the example HTML snippet in your system.
 - If you want a custom UI, you can still use the same Messenger library &mdash; just style the overlay `<div>` as you like.
 
-That’s it &mdash; load the library, create an overlay, initialize Messenger with channel, token and captions will appear.
+That’s it &mdash; load the library, create an overlay, initialize Messenger with channel and token (or `null` for non-secure streams), and captions will appear.
 
 The `receive-captions.html` example below demonstrates how to use the reference implementation. It uses the same URL query parameters as the iframe caption player described in the [Embed player with captions](#embed-player-with-captions) section.
 
@@ -339,7 +359,7 @@ The `receive-captions.html` example below demonstrates how to use the reference 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Your player</title>
-    <link rel="stylesheet" href="https://bintu-nmessenger.autodevops-prod.nanostream.cloud/client/nmessenger.css" />
+    <link rel="stylesheet" href="https://bintu-nmessenger.nanostream.cloud/client/nmessenger.css" />
     <style>
       html,
       body {
@@ -377,7 +397,7 @@ The `receive-captions.html` example below demonstrates how to use the reference 
         <div id="captionText" aria-live="polite" role="log"></div>
       </div>
     </div>
-    <script src="https://bintu-nmessenger.autodevops-prod.nanostream.cloud/client/nmessenger.js"></script>
+    <script src="https://bintu-nmessenger.nanostream.cloud/client/nmessenger.js"></script>
     <script>
       function nmessengerMain(options = {}) {
         const CAPTION_SERVER = "bintu-nmessenger.autodevops-prod.nanostream.cloud";
@@ -430,10 +450,11 @@ If captions do not appear in the player or custom overlay, check the following:
    :::tip Learn more
    Learn more how the Caption Channel is assembled here: [Caption Channel Format](#caption-channel-format).
    :::
-2. **Is the token valid?**
+2. **Is the token valid? (secure streams only)**
+   - If you are using **non-secure streams**, tokens are not required — you can skip this step
    - JWT tokens expire &mdash; check if your token is still valid
    - Tokens are case-sensitive
-   - In case of [Embed player method](#embed-player-with-captions): check if the token is passed in both `caption.token` and `group.security.jwtoken` (and are matchting)
+   - In case of [Embed player method](#embed-player-with-captions): check if the token is passed in both `caption.token` and `group.security.jwtoken` (and are matching)
    :::tip Creating and Managing Security Tokens
    Security tokens can be generated either programmatically or directly in the Dashboard. In the Dashboard, each stream provides **inline token creation dialogs**, allowing you to quickly generate and apply secure tokens without leaving the UI.
    
