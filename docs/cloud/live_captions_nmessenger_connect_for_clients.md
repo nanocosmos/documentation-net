@@ -42,7 +42,7 @@ Assemble the iframe URL manually using the parameters described below. This appr
 ### Required URL + Parameters
 
 The base embed URL is: \
-`https://bintu-nmessenger.nanostream.cloud/client/embed/nanoplayer.html`
+`https://nmessenger.nanostream.cloud/client/embed/nanoplayer.html`
 
 The following table explains all parameters needed to enable live captions, including their purpose and example values:
 
@@ -92,7 +92,7 @@ The code snippet below demonstrates how to embed the live captions into your web
 
 ```html
 <iframe
-  src="https://bintu-nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=<STREAM_ID_OR_NAME>&caption.channel=<CAPTION_CHANNEL>&caption.token=<SECURITY_TOKEN>&group.security.jwtoken=<SECURITY_TOKEN>"
+  src="https://nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=<STREAM_ID_OR_NAME>&caption.channel=<CAPTION_CHANNEL>&caption.token=<SECURITY_TOKEN>&group.security.jwtoken=<SECURITY_TOKEN>"
   width="100%"
   height="720"
   frameborder="0"
@@ -112,7 +112,7 @@ The token included in the example expires on 2026-12-08.
 
 ```html
 <iframe
-  src="https://bintu-nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=nNCcf-ZexY6&caption.channel=nNCcf-ZexY6-de-de&caption.token=eyJhbGciOiJFZERTQSIsImtpZCI6Im5hbm9feDI1NTE5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzcGxheSIsImV4cCI6MTc5NjczMDg0MSwiaWF0IjoxNzY1MTk4NDkzLCJpc3MiOiJuYW5vY29zbW9zIiwibmJmIjoxNzY1MTk4NDkzLCJzdHJlYW1zIjpbIm5OQ2NmLVpleFk2Il0sInN1YiI6IjU4ODYyNTFjLTJmM2UtNGQ3YS1hYWQ4LWQ3YWU1ZDBhNTdhMCJ9._EFR028lTwF2wt1F46LU4byJiWNb3qmuDJkS9Z_Yf2lEn0a9lUWXytZR05P3tbg_wtohyu9N9clTRxT8tYxqDA&group.security.jwtoken=eyJhbGciOiJFZERTQSIsImtpZCI6Im5hbm9feDI1NTE5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzcGxheSIsImV4cCI6MTc5NjczMDg0MSwiaWF0IjoxNzY1MTk4NDkzLCJpc3MiOiJuYW5vY29zbW9zIiwibmJmIjoxNzY1MTk4NDkzLCJzdHJlYW1zIjpbIm5OQ2NmLVpleFk2Il0sInN1YiI6IjU4ODYyNTFjLTJmM2UtNGQ3YS1hYWQ4LWQ3YWU1ZDBhNTdhMCJ9._EFR028lTwF2wt1F46LU4byJiWNb3qmuDJkS9Z_Yf2lEn0a9lUWXytZR05P3tbg_wtohyu9N9clTRxT8tYxqDA"
+  src="https://nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=nNCcf-ZexY6&caption.channel=nNCcf-ZexY6-de-de&caption.token=eyJhbGciOiJFZERTQSIsImtpZCI6Im5hbm9feDI1NTE5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzcGxheSIsImV4cCI6MTc5NjczMDg0MSwiaWF0IjoxNzY1MTk4NDkzLCJpc3MiOiJuYW5vY29zbW9zIiwibmJmIjoxNzY1MTk4NDkzLCJzdHJlYW1zIjpbIm5OQ2NmLVpleFk2Il0sInN1YiI6IjU4ODYyNTFjLTJmM2UtNGQ3YS1hYWQ4LWQ3YWU1ZDBhNTdhMCJ9._EFR028lTwF2wt1F46LU4byJiWNb3qmuDJkS9Z_Yf2lEn0a9lUWXytZR05P3tbg_wtohyu9N9clTRxT8tYxqDA&group.security.jwtoken=eyJhbGciOiJFZERTQSIsImtpZCI6Im5hbm9feDI1NTE5IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzcGxheSIsImV4cCI6MTc5NjczMDg0MSwiaWF0IjoxNzY1MTk4NDkzLCJpc3MiOiJuYW5vY29zbW9zIiwibmJmIjoxNzY1MTk4NDkzLCJzdHJlYW1zIjpbIm5OQ2NmLVpleFk2Il0sInN1YiI6IjU4ODYyNTFjLTJmM2UtNGQ3YS1hYWQ4LWQ3YWU1ZDBhNTdhMCJ9._EFR028lTwF2wt1F46LU4byJiWNb3qmuDJkS9Z_Yf2lEn0a9lUWXytZR05P3tbg_wtohyu9N9clTRxT8tYxqDA"
   width="100%"
   height="720"
   frameborder="0"
@@ -128,7 +128,7 @@ For **non-secure streams**, you can omit the token parameters. Only `group.id` a
 
 ```html
 <iframe
-  src="https://bintu-nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=<STREAM_ID_OR_NAME>&caption.channel=<CAPTION_CHANNEL>"
+  src="https://nmessenger.nanostream.cloud/client/embed/nanoplayer.html?group.id=<STREAM_ID_OR_NAME>&caption.channel=<CAPTION_CHANNEL>"
   width="100%"
   height="720"
   frameborder="0"
@@ -155,10 +155,10 @@ To integrate the captions, we'll use the **nanoStream Messenger** JavaScript lib
 
 ### 1. Load the Caption Library
 
-Include the [nanoStream Messenger](https://bintu-nmessenger.nanostream.cloud/nmessenger.js) JavaScript library in your HTML page or application:
+Include the [nanoStream Messenger](https://nmessenger.nanostream.cloud/nmessenger.js) JavaScript library in your HTML page or application:
 
 ```html
-<script src="https://bintu-nmessenger.nanostream.cloud/client/nmessenger.js"></script>
+<script src="https://nmessenger.nanostream.cloud/client/nmessenger.js"></script>
 ```
 
 :::warning Initialization order
@@ -318,7 +318,7 @@ The `receive-captions.html` example below demonstrates how to use the reference 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Your player</title>
-    <link rel="stylesheet" href="https://bintu-nmessenger.nanostream.cloud/client/nmessenger.css" />
+    <link rel="stylesheet" href="https://nmessenger.nanostream.cloud/client/nmessenger.css" />
     <style>
       html,
       body {
@@ -356,7 +356,7 @@ The `receive-captions.html` example below demonstrates how to use the reference 
         <div id="captionText" aria-live="polite" role="log"></div>
       </div>
     </div>
-    <script src="https://bintu-nmessenger.nanostream.cloud/client/nmessenger.js"></script>
+    <script src="https://nmessenger.nanostream.cloud/client/nmessenger.js"></script>
     <script>
       function nmessengerMain(options = {}) {
         const CAPTION_SERVER = "bintu-nmessenger.autodevops-prod.nanostream.cloud";
