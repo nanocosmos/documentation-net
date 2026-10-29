@@ -10,7 +10,7 @@ description: Your first visit to the Builders Hub, step by step, from the front 
 This page walks through a first visit to the Builders Hub: describing what you want to build, choosing how to come in, and finding your way around **Home**, your streams and the tools.
 
 :::tip Open the Builders Hub
-[web.pages.gitlab.nanocosmos.cloud/builder-hub/](https://web.pages.gitlab.nanocosmos.cloud/builder-hub/)
+[builder.nanocosmos.net](https://builder.nanocosmos.net)
 :::
 
 ## Before you start

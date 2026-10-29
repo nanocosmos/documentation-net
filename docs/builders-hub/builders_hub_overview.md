@@ -10,7 +10,7 @@ description: Create streams, go live and try every nanocosmos tool in one place,
 The **Builders Hub** is where you create streams, go live and try every tool in the nanocosmos platform without leaving the page. You can add captions, branding, analytics and security to your own streams, or watch each feature first on sample content we stream for you.
 
 :::tip Open the Builders Hub
-[web.pages.gitlab.nanocosmos.cloud/builder-hub/](https://web.pages.gitlab.nanocosmos.cloud/builder-hub/)
+[builder.nanocosmos.net](https://builder.nanocosmos.net)
 :::
 
 ![The Builders Hub entry page: "Build real-time video, AI powered", the "What do you want to build with real-time video?" box, and the menu on the left](../assets/builders-hub/ui/overview-entry.webp)
