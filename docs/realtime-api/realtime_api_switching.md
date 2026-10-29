@@ -25,7 +25,7 @@ There's no video mixer or production software involved. Switching is driven by t
 :::tip Try it first
 Open the [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switch-player/demo.html), sign in with your Dashboard account, and set up a group of angles in a few minutes. The demo shows every API call it makes, so you can copy them into your own integration.
 
-You can also set up and switch camera angles in the Builders Hub, under **Build › Stream › Set up multi-camera**. See [Builders Hub: Set up Multi-Camera](../builders-hub/builders_hub_multicamera).
+You can also set up and switch camera angles in the Builder Hub, under **Build › Stream › Set up multi-camera**. See [Builder Hub: Set up Multi-Camera](../builder-hub/builder_hub_multicamera).
 :::
 
 ## How it works
@@ -235,5 +235,5 @@ Every player in the group switches to the `wheel` angle.
 
 - [Multi-Camera Switching: API Reference](realtime_api_switching_reference): every endpoint, field, event and error
 - [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switch-player/demo.html): try it in your browser
-- [Builders Hub: Set up Multi-Camera](../builders-hub/builders_hub_multicamera): the same flow in the Builders Hub
+- [Builder Hub: Set up Multi-Camera](../builder-hub/builder_hub_multicamera): the same flow in the Builder Hub
 - [Secure Playback](../dashboard/secure_playback): protect your streams with tokens

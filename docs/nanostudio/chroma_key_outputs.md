@@ -114,4 +114,4 @@ Key, despill, EQ and overlay position changes go to the running stream in real t
 
 ## Watch every output at once
 
-In the [Builders Hub](../builders-hub/builders_hub_overview), **Build › Multi-Brand › Watch branded outputs** plays your green-screen input and every branded output side by side, so you can check each background and overlay in one place. See [Watch branded outputs](../builders-hub/builders_hub_chroma_key#watch-branded-outputs).
+In the [Builder Hub](../builder-hub/builder_hub_overview), **Build › Multi-Brand › Watch branded outputs** plays your green-screen input and every branded output side by side, so you can check each background and overlay in one place. See [Watch branded outputs](../builder-hub/builder_hub_chroma_key#watch-branded-outputs).

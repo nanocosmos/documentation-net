@@ -17,8 +17,8 @@ You set everything up in the **Chroma Setup Tuner**, a browser tool that creates
 [chromakey.nanocosmos.net/chroma-setup-tuner.html](https://chromakey.nanocosmos.net/chroma-setup-tuner.html)
 :::
 
-:::info Also in the Builders Hub
-The same tool runs inside the [Builders Hub](../builders-hub/builders_hub_overview) under **Build › Multi-Brand › Set up chroma key**, next to a player that shows every branded output side by side. You can also try chroma key there on our sample content. See [Builders Hub: Chroma Key and Branded Outputs](../builders-hub/builders_hub_chroma_key).
+:::info Also in the Builder Hub
+The same tool runs inside the [Builder Hub](../builder-hub/builder_hub_overview) under **Build › Multi-Brand › Set up chroma key**, next to a player that shows every branded output side by side. You can also try chroma key there on our sample content. See [Builder Hub: Chroma Key and Branded Outputs](../builder-hub/builder_hub_chroma_key).
 :::
 
 
@@ -250,4 +250,4 @@ To hand a setup to someone else, click **Copy setup link** on the ingest card. T
 - [Outputs & Branding](chroma_key_outputs): backgrounds, overlays, tags and transcodes per output
 - [Tuning the Key](chroma_key_tuning): what every control does
 - [Troubleshooting & FAQ](chroma_key_troubleshooting)
-- [Builders Hub: Chroma Key and Branded Outputs](../builders-hub/builders_hub_chroma_key): the same tool inside the Builders Hub
+- [Builder Hub: Chroma Key and Branded Outputs](../builder-hub/builder_hub_chroma_key): the same tool inside the Builder Hub

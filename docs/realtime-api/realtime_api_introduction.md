@@ -17,7 +17,7 @@ The API supports two features:
 - **[Multi-Camera Switching](realtime_api_switching):** switch between camera angles in real time. Viewers watch one continuous video while you decide which camera is on air.
 
 :::tip Try it without code
-Both features have a tool in the [Builders Hub](../builders-hub/builders_hub_overview) that runs them on your own streams: [Record on demand](../builders-hub/builders_hub_recording) and [Set up multi-camera](../builders-hub/builders_hub_multicamera).
+Both features have a tool in the [Builder Hub](../builder-hub/builder_hub_overview) that runs them on your own streams: [Record on demand](../builder-hub/builder_hub_recording) and [Set up multi-camera](../builder-hub/builder_hub_multicamera).
 :::
 
 ## How it works

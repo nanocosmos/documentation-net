@@ -18,7 +18,7 @@ With [Live Recording](../cloud/live-recording-vod), every incoming stream is rec
 :::
 
 :::tip Try it without code
-The [Builders Hub](../builders-hub/builders_hub_overview) has a **Record on demand** tool that starts and stops recordings on your own stream and plays each file back. In the hub, each recording stops after 30 seconds. See [Builders Hub: Record on Demand](../builders-hub/builders_hub_recording).
+The [Builder Hub](../builder-hub/builder_hub_overview) has a **Record on demand** tool that starts and stops recordings on your own stream and plays each file back. In the hub, each recording stops after 30 seconds. See [Builder Hub: Record on Demand](../builder-hub/builder_hub_recording).
 :::
 
 ## How it works
