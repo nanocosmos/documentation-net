@@ -13,6 +13,13 @@ description: Record a live session in the Builders Hub with On-Demand Recording,
 In the Builders Hub menu, open **Build › Stream › Record on demand**.
 :::
 
+:::tip Detailed On-Demand Recording documentation
+This page covers the tool inside the Builders Hub. To start and stop recordings from your own application, see the **Real-Time API** docs:
+
+- [On-Demand Recording](../realtime-api/realtime_api_recording): start and stop recordings with REST calls, with code examples
+- [Real-Time API](../realtime-api/realtime_api_introduction): base URL and authentication
+:::
+
 ## Before you start
 
 | You need | Details |

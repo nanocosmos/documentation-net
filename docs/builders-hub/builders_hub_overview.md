@@ -68,6 +68,16 @@ See [Demos](builders_hub_demos) for what each one shows.
 
 _The menu, with Build and Demos open. Tools marked **Sign in** need an account._
 
+## Detailed product documentation
+
+Some Builders Hub tools have their own detailed documentation, for the full setup or to build the feature into your own application:
+
+| Builders Hub tool | Detailed documentation |
+|---|---|
+| [Set up chroma key](builders_hub_chroma_key) and **Watch branded outputs** | [Chroma Key](../nanostudio/chroma_key_getting_started): setup, tuning, outputs and troubleshooting |
+| [Set up multi-camera](builders_hub_multicamera) | [Multi-Camera Switching](../realtime-api/realtime_api_switching) with the Real-Time API |
+| [Record on demand](builders_hub_recording) | [On-Demand Recording](../realtime-api/realtime_api_recording) with the Real-Time API |
+
 ## Next steps
 
 - [Getting Started](builders_hub_getting_started): your first visit, step by step

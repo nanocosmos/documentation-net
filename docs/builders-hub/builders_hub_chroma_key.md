@@ -20,6 +20,15 @@ One green-screen ingest feeds **multiple branded outputs**. Each output has its 
 Both tools work on your own streams, so they need an account. A free account includes nanoStudio. As a guest you see the same tools with our sample content (see [As a guest](#as-a-guest)).
 :::
 
+:::tip Detailed chroma key documentation
+This page covers the chroma key tools inside the Builders Hub. For the full setup, every control and fixes for common problems, see the **Chroma Key** docs:
+
+- [Getting Started](../nanostudio/chroma_key_getting_started): the five setup steps, from sign-in to going live
+- [Tuning the Key](../nanostudio/chroma_key_tuning): what every control does, and how to check your key
+- [Outputs & Branding](../nanostudio/chroma_key_outputs): backgrounds, overlays, tags and transcodes per output
+- [Troubleshooting & FAQ](../nanostudio/chroma_key_troubleshooting): fixes for common problems
+:::
+
 ## Before you start
 
 | You need | Details |
@@ -136,5 +145,7 @@ _On a production account without nanoStudio, every chroma page offers Upgrade._
 
 - [Chroma Key: Getting Started](../nanostudio/chroma_key_getting_started): every step in the Chroma Key Setup tool
 - [Outputs & Branding](../nanostudio/chroma_key_outputs): backgrounds, overlays, tags and transcodes per output
+- [Tuning the Key](../nanostudio/chroma_key_tuning): what every control does
+- [Troubleshooting & FAQ](../nanostudio/chroma_key_troubleshooting): fixes for common problems
 - [Demos](builders_hub_demos): the Multi-Branding samples
 - [Developer mode](builders_hub_developer_mode): the API calls behind each page

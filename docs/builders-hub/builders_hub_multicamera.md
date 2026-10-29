@@ -18,6 +18,14 @@ The page has two sides:
 In the Builders Hub menu, open **Build › Stream › Set up multi-camera**.
 :::
 
+:::tip Detailed Multi-Camera Switching documentation
+This page covers the tool inside the Builders Hub. To build multi-camera switching into your own application, see the **Real-Time API** docs:
+
+- [Multi-Camera Switching](../realtime-api/realtime_api_switching): how it works, step by step, with code examples
+- [Multi-Camera Switching: API Reference](../realtime-api/realtime_api_switching_reference): every endpoint, field, event and error
+- [Real-Time API](../realtime-api/realtime_api_introduction): base URL and authentication
+:::
+
 ## Before you start
 
 | You need | Details |
@@ -80,5 +88,6 @@ Everything the tool does is available through the **Real-Time API**: create a st
 ## Next steps
 
 - [Multi-Camera Switching](../realtime-api/realtime_api_switching): the API behind the tool
+- [Multi-Camera Switching: API Reference](../realtime-api/realtime_api_switching_reference): every endpoint, field, event and error
 - [Demos](builders_hub_demos): the Multi-Camera Preview and the other samples
 - [Accounts & Access](builders_hub_accounts): what each account type gets
