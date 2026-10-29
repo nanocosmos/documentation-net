@@ -493,6 +493,48 @@ const sidebars = {
   // "Samples": [
   //   "samples/samples",
   // ],
+  "Builder Hub": [
+    "builder-hub/builder_hub_overview",
+    "builder-hub/builder_hub_getting_started",
+    "builder-hub/builder_hub_accounts",
+    {
+      "type": "category",
+      "label": "Build: Stream",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "builder-hub/builder_hub_create_stream",
+        "builder-hub/builder_hub_adaptive_bitrate",
+        "builder-hub/builder_hub_multicamera",
+        "builder-hub/builder_hub_recording",
+        "builder-hub/builder_hub_live_captions"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Build: Analytics & Security",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "builder-hub/builder_hub_analytics",
+        "builder-hub/builder_hub_analytics_boards",
+        "builder-hub/builder_hub_tokens"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Build: Multi-Brand",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "builder-hub/builder_hub_chroma_key"
+      ]
+    },
+    "builder-hub/builder_hub_demos",
+    "builder-hub/builder_hub_pricing",
+    "builder-hub/builder_hub_ai_helper",
+    "builder-hub/builder_hub_developer_mode"
+  ]
 };
 
 module.exports = sidebars;

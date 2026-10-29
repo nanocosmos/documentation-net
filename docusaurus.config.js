@@ -157,6 +157,12 @@ const config = {
             label: "Real-Time API",
           }, {
             type: 'doc',
+            docId: 'builder-hub/builder_hub_overview',
+            sidebarid: "Builder Hub",
+            position: 'left',
+            label: "Builder Hub",
+          }, {
+            type: 'doc',
             docId: 'faq/faq',
             sidebarid: "FAQ",
             position: 'left',
