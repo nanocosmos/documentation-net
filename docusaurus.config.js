@@ -145,6 +145,12 @@ const config = {
             label: "Analytics",
           }, {
             type: 'doc',
+            docId: 'builders-hub/builders_hub_overview',
+            sidebarid: "Builders Hub",
+            position: 'left',
+            label: "Builders Hub",
+          }, {
+            type: 'doc',
             docId: 'faq/faq',
             sidebarid: "FAQ",
             position: 'left',
