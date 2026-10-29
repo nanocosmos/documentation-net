@@ -11,10 +11,10 @@ Before integrating Live Captions, we recommend reviewing the main **Live Caption
 - **[Overview](/docs/cloud/live_captions#overview)**; What Live Captions are and typical use cases
 - **[How It Works](/docs/cloud/live_captions#how-it-works)**
 - **[ASR Engines and Languages](/docs/cloud/live_captions#asr-engines-and-langauges)**: Available engines, supported languages, and translation options
-- **[Managing Live Captions](/docs/cloud/live_captions#managing-live-captions)**: How to configure captions via Dashboard or API
-- **[Live Captions in the Dashboard](/docs/dashboard/live_captions)**: Screenshots and workflows that break down the configuration and management in the dashboard in detail. 
+- **[Managing Live Captions via API](/docs/cloud/live_captions#api-integration)**: How to configure captions programmatically
+- **[Live Captions API Guide](/docs/cloud/live_captions_api_guide)**: Complete end-to-end API walkthrough
 
-These sections explain prerequisites, security requirements, language setup, and stream configuration needed before retrieving and displaying live captions in your player.
+These sections explain prerequisites, language setup, and stream configuration needed before retrieving and displaying live captions in your player.
 :::
 
 
@@ -37,15 +37,7 @@ These sections explain prerequisites, security requirements, language setup, and
 
 To embed a player with Live Captions into your website or application, nanoStream provides a ready-to-use **iframe-based player**, which you can use as a starting point before reaching for your own custom implementation. Live Captions are enabled by passing specific parameters in the player URL.
 
-You can either **assemble these parameters manually** (for API-driven or custom workflows) or **retrieve them directly from the Dashboard**, where all required values and ready-to-use code snippets are available.
-
-| Manual / API-based Setup | Dashboard-assisted Setup |
-|--------------------------|--------------------------|
-**This approach is recommended if you**:<br/>- Generate streams dynamically via API<br/>- Build your own embedding logic<br/>In this case, you manually assemble the iframe URL using the parameters described below. | **The Dashboard provides full visual access to all required information**:<br/>- Create and configure streams<br/>- Enable and preview Live Captions<br/>- Switch caption languages<br/>- Generate secure tokens<br/>- Copy ready-to-use iframe and HTML snippets<br/>This allows you to embed Live Captions without manually constructing any parameters. |
-
-:::tip Live Captions in the nanoStream Dashboard
-You can find a detailed guide on how to enable, edit, and monitor live captions in the nanoStream dashboard here: [Live Captions](/docs/dashboard/live_captions)
-:::
+Assemble the iframe URL manually using the parameters described below. This approach is suited for API-driven or custom workflows where you generate streams dynamically and build your own embedding logic.
 
 ### Required URL + Parameters
 
@@ -64,20 +56,8 @@ The following table explains all parameters needed to enable live captions, incl
 
 For **secure streams**, the **same JWT token is used** for both video playback (`group.security.jwtoken`) and captions delivery (`caption.token`). All restrictions configured in the token (stream name, stream group, domain, expiration time, etc.) apply to both. For **non-secure streams**, these parameters can be omitted.
 
-:::danger Security best practice (secure streams)
-When using secure playback, generate JWTs server-side and use short-lived tokens.
-Avoid hard-coding long-lived tokens in public code or your playback system.
-:::
-
-:::tip Creating and Managing Security Tokens
-Security tokens can be generated either programmatically or directly in the Dashboard. In the Dashboard, each stream provides **inline token creation dialogs**, allowing you to quickly generate and apply secure tokens without leaving the UI.
-
-You can access the inline token creation dialog in the dashboard under the Live Captions Player: [`dashboard.nanostream.cloud/stream/YOUR-STREAM-ID/live-captions`](https://dashboard.nanostream.cloud/stream/YOUR-STREAM-ID//live-captions)
-
-![Screenshot: Secure Token Creation Dialog in Live Captions Overview](../assets/dashboard/secure-token-dialog-live-captions.png)
-*Screenshot: Secure Token Creation Dialog in Live Captions Overview*
-
-Find more information about the security token and how to generate it here: [Secure Playback & Secure Token](../dashboard/secure_playback)
+:::tip Security tokens
+For secure streams, generate JWTs server-side and use short-lived tokens. Learn more about token creation and best practices here: [Secure Playback (H5Live)](/docs/cloud/security#secure-playback).
 :::
 
 ### Caption Channel Format
@@ -157,27 +137,6 @@ For **non-secure streams**, you can omit the token parameters. Only `group.id` a
 ```
 
 Replace `<STREAM_ID_OR_NAME>` and `<CAPTION_CHANNEL>` with your actual values.
-
-### Overview in the Dashboard
-
-You can access **Live Captions** playout URLs and code snippets in several dashboard locations:
-
-- **Stream Overview:** [dashboard.nanostream.cloud/stream/YOUR-STREAM-ID](https://dashboard.nanostream.cloud/stream/YOUR-STREAM-ID)
-- **New Stream Instructions:** [dashboard.nanostream.cloud/stream/new/YOUR-STREAM-ID](https://dashboard.nanostream.cloud/stream/new/YOUR-STREAM-ID)
-- **Playout Overview:** [dashboard.nanostream.cloud/playout/YOUR-STREAM-ID](https://dashboard.nanostream.cloud/playout/YOUR-STREAM-ID)
-- **Webcaster Overview:** [dashboard.nanostream.cloud/webcaster/YOUR-STREAM-ID](https://dashboard.nanostream.cloud/webcaster/YOUR-STREAM-ID)
-
-In all these areas (except **New Stream Instructions**), you’ll find a dedicated **Live Captions tab**, which includes:
-
-- **Live Captions Player**.
-- **Language selector** below the player to switch between enabled target languages.
-- Current **engine**, **source language**, and **target language(s)**.
-- Options to **add**, **edit**, or **remove** captions.
-- **Secure Playback Token** with decoded informations.
-- **Captions Playout** URLs for each target language.
-
-![Screenshot: Live Captions Overview Tab](../assets/dashboard/live-captions-tab.png)
-*Screenshot: Live Captions Overview Tab*
 
 ### What happens automatically
 
@@ -309,10 +268,6 @@ The overlay element must already exist in the DOM before the `NanoMessenger` cli
 If the ID does not match, captions will be received but not displayed.
 :::
 
-:::danger Security best practice (secure streams)
-When using secure playback, generate JWTs server-side and use short-lived tokens.
-Avoid hard-coding long-lived tokens in public code or your playback system.
-:::
 
 ### 4. Display Captions
 Once connected, the Messenger library automatically writes incoming captions into the target element.
@@ -347,6 +302,10 @@ The `receive-captions.html` example below demonstrates how to use the reference 
 
  :::tip
  For a complete end-to-end example, see this [interactive CodePen](https://codepen.io/pen?template=jEqXyrN) that integrates our [nanoStream H5Live Player (nanoPlayer)](../nanoplayer/nanoplayer_introduction) with live stream captions delivered via NanoMessenger.
+ :::
+
+ :::info Non-Secure Streams
+ The CodePen example above uses a secure playback token. For non-secure streams, you can omit the `caption.token` and `group.security.jwtoken` parameters, or pass `null` for the caption token when using the NanoMessenger library directly.
  :::
 
 <details>
@@ -455,17 +414,6 @@ If captions do not appear in the player or custom overlay, check the following:
    - JWT tokens expire &mdash; check if your token is still valid
    - Tokens are case-sensitive
    - In case of [Embed player method](#embed-player-with-captions): check if the token is passed in both `caption.token` and `group.security.jwtoken` (and are matching)
-   :::tip Creating and Managing Security Tokens
-   Security tokens can be generated either programmatically or directly in the Dashboard. In the Dashboard, each stream provides **inline token creation dialogs**, allowing you to quickly generate and apply secure tokens without leaving the UI.
-   
-   You can access the inline token creation dialog in the dashboard under the Live Captions Player: [`dashboard.nanostream.cloud/stream/YOUR-STREAM-ID/live-captions`](https://dashboard.nanostream.cloud/stream/YOUR-STREAM-ID//live-captions)
-   
-   ![Screenshot: Secure Token Creation Dialog in Live Captions Overview](../assets/dashboard/secure-token-dialog-live-captions.png)
-   *Screenshot: Secure Token Creation Dialog in Live Captions Overview*
-   
-   Find more information about the security token and how to generate it here: [Secure Playback & Secure Token](../dashboard/secure_playback)
-   :::
-
 3. **Is the overlay element present?**
    - For custom integration: Verify the element with ID `caption-text` (or your custom ID) exists in your HTML (Read more about the creation [here](#2-create-a-caption-overlay).)
 
