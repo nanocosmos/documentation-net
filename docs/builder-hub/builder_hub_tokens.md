@@ -1,11 +1,11 @@
 ---
-id: builders_hub_tokens
-title: "Builders Hub: Manage Tokens"
+id: builder_hub_tokens
+title: "Builder Hub: Manage Tokens"
 sidebar_label: Manage Tokens
-description: Create a playback token, watch the player start with it, and revoke it to cut access instantly. Plus how the Builders Hub plays your streams when secure playback is on.
+description: Create a playback token, watch the player start with it, and revoke it to cut access instantly. Plus how the Builder Hub plays your streams when secure playback is on.
 ---
 
-# Builders Hub: Manage Tokens
+# Builder Hub: Manage Tokens
 
 **Manage tokens** lets you create a playback token and revoke it instantly if a stream turns up somewhere it shouldn't.
 
@@ -13,7 +13,7 @@ A playback token is a signed key (a JWT) that lets a player watch one stream gro
 
 You find it in the sidebar under **Build › Security › Manage tokens**.
 
-![Manage tokens in the Builders Hub: the Player Preview on the left, and Configuration, Create Token and Revoke Token on the right](../assets/builders-hub/ui/tokens-overview.webp)
+![Manage tokens in the Builder Hub: the Player Preview on the left, and Configuration, Create Token and Revoke Token on the right](../assets/builder-hub/ui/tokens-overview.webp)
 
 _Manage tokens before a token exists. The player waits for one._
 
@@ -31,7 +31,7 @@ Click **Learn how it works** in the toolbar above the tool for a short summary o
 
 The page opens with a sample **Stream Group** and a demo **API Key or API Token** already filled in, so you can start straight away.
 
-![The control rail: Configuration with Stream Group, API Key or API Token and the Token API, then the two steps and the Create Token and Revoke Token buttons](../assets/builders-hub/ui/tokens-configuration.webp)
+![The control rail: Configuration with Stream Group, API Key or API Token and the Token API, then the two steps and the Create Token and Revoke Token buttons](../assets/builder-hub/ui/tokens-configuration.webp)
 
 _The Configuration section and the two steps: create a token, then revoke it._
 
@@ -42,7 +42,7 @@ _The Configuration section and the two steps: create a token, then revoke it._
 3. Open **Playback Token (JWT)** to see the token itself, and click **Copy** to copy it.
 4. Open **Token Claims** to inspect what's inside it: the stream group it's for, when it expires, and whether it can be revoked.
 
-![The Player Preview playing the stream, with the token shown under Playback Token (JWT) and its claims under Token Claims](../assets/builders-hub/ui/tokens-created.webp)
+![The Player Preview playing the stream, with the token shown under Playback Token (JWT) and its claims under Token Claims](../assets/builder-hub/ui/tokens-created.webp)
 
 _A token was created and the player started with it. The token and its claims are ready to inspect._
 
@@ -57,7 +57,7 @@ Open the copied player link in another browser or on your phone before you revok
 1. Click **Revoke Token**. The status reads **Revoking token...**.
 2. Every player using the token disconnects. In place of the player you see **Token revoked. The player was disconnected.** and **Create a new token to watch again.**
 
-![The Player Preview after revoking: Token revoked. The player was disconnected.](../assets/builders-hub/ui/tokens-revoked.webp)
+![The Player Preview after revoking: Token revoked. The player was disconnected.](../assets/builder-hub/ui/tokens-revoked.webp)
 
 _After Revoke Token, the player loses access right away._
 
@@ -86,7 +86,7 @@ Your stream must be live for the player to show a picture. You'll find your stre
 
 Signed in with a production account, the account menu lists your account's features, including **Secure playback** as **On** or **Off**.
 
-When secure playback is on for your organisation, or a stream is set to require a token, every player the hub draws for you gets a playback token automatically: the stream preview on **Home**, the **Live wall**, and the [branded outputs player](builders_hub_chroma_key). While the token is created, the player reads **Starting secure playback…**.
+When secure playback is on for your organisation, or a stream is set to require a token, every player the hub draws for you gets a playback token automatically: the stream preview on **Home**, the **Live wall**, and the [branded outputs player](builder_hub_chroma_key). While the token is created, the player reads **Starting secure playback…**.
 
 If no token can be created, the player says so instead of staying black: **Secure playback is on, and no playback token could be created.** When that happens, sign out and sign in again with an admin login, so the hub can create tokens for your organisation.
 
@@ -96,12 +96,12 @@ If your account doesn't have secure playback yet, the account menu and the Manag
 
 ## In your own application
 
-Switch on **Developer mode** at the top right of the page to see **Playback tokens**: the API call that creates a token on your server, in the language of your choice, and **Play it with the token**, the player code that hands the token to the H5Live Player. Keep your API key on your server and create tokens there; never put the key in a web page. See [Developer Mode](builders_hub_developer_mode).
+Switch on **Developer mode** at the top right of the page to see **Playback tokens**: the API call that creates a token on your server, in the language of your choice, and **Play it with the token**, the player code that hands the token to the H5Live Player. Keep your API key on your server and create tokens there; never put the key in a web page. See [Developer Mode](builder_hub_developer_mode).
 
 For every token option, see [Secure Playback](../dashboard/secure_playback).
 
 ## Next steps
 
-- [View analytics](builders_hub_analytics): see where your streams are watched
-- [Create a stream](builders_hub_create_stream)
-- [Accounts & Access](builders_hub_accounts): what guests, free and production accounts see
+- [View analytics](builder_hub_analytics): see where your streams are watched
+- [Create a stream](builder_hub_create_stream)
+- [Accounts & Access](builder_hub_accounts): what guests, free and production accounts see

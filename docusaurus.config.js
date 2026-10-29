@@ -145,10 +145,10 @@ const config = {
             label: "Analytics",
           }, {
             type: 'doc',
-            docId: 'builders-hub/builders_hub_overview',
-            sidebarid: "Builders Hub",
+            docId: 'builder-hub/builder_hub_overview',
+            sidebarid: "Builder Hub",
             position: 'left',
-            label: "Builders Hub",
+            label: "Builder Hub",
           }, {
             type: 'doc',
             docId: 'faq/faq',

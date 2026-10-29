@@ -1,11 +1,11 @@
 ---
-id: builders_hub_live_captions
-title: "Builders Hub: Add AI Live Captions"
+id: builder_hub_live_captions
+title: "Builder Hub: Add AI Live Captions"
 sidebar_label: AI Live Captions
-description: Turn on AI Live Captions and translations for your live stream in the Builders Hub, then replay it with captions and download the caption files.
+description: Turn on AI Live Captions and translations for your live stream in the Builder Hub, then replay it with captions and download the caption files.
 ---
 
-# Builders Hub: Add AI Live Captions
+# Builder Hub: Add AI Live Captions
 
 **AI Live Captions** adds real-time captions to your live stream, in its spoken language and in as many translations as you choose. After the stream, you can replay it with captions and download the caption files as VTT, SRT or TXT.
 
@@ -15,7 +15,7 @@ The page has two sides:
 - **See it on a sample stream** plays a recorded stream of ours with captions in several languages. Anyone can open it, guests included.
 
 :::tip Open it
-In the Builders Hub menu, open **Build › Stream › Add AI Live Captions**.
+In the Builder Hub menu, open **Build › Stream › Add AI Live Captions**.
 :::
 
 ## Before you start
@@ -35,7 +35,7 @@ In the Builders Hub menu, open **Build › Stream › Add AI Live Captions**.
 | **Production account, Live Captions on** | Both sides. |
 | **Production account, Live Captions off** | The menu item is marked **off**, and the bar above the page reads *Live Captions is not on your account yet.* with an **Upgrade** button. **Upgrade** opens an email to sales@nanocosmos.net asking for an offer, with your organisation filled in. The Live Captions demo stays under **Demos** for you to try. |
 
-![Add AI Live Captions on a production account without Live Captions: the bar reads Live Captions is not on your account yet, with the Upgrade button](../assets/builders-hub/ui/captions-upgrade.webp)
+![Add AI Live Captions on a production account without Live Captions: the bar reads Live Captions is not on your account yet, with the Upgrade button](../assets/builder-hub/ui/captions-upgrade.webp)
 
 _On a production account without Live Captions, Upgrade asks us for an offer._
 
@@ -45,7 +45,7 @@ The page opens the **Live Captions Setup**, a guided setup in five steps. **Lear
 
 ### Step 1: Login
 
-Your Builders Hub sign-in carries over, so the step is already done and shows who is signed in.
+Your Builder Hub sign-in carries over, so the step is already done and shows who is signed in.
 
 ### Step 2: Your stream
 
@@ -71,7 +71,7 @@ To switch to another stream later, click **Change** on the step.
 3. Optionally open **Advanced options** to choose the **AI engine** and **Model**.
 4. Click **Enable Live Captions**.
 
-![The Live Captions step: English as the source language, German and Spanish as target languages, and the Enable Live Captions button](../assets/builders-hub/ui/captions-languages.webp)
+![The Live Captions step: English as the source language, German and Spanish as target languages, and the Enable Live Captions button](../assets/builder-hub/ui/captions-languages.webp)
 
 _The spoken language, plus the translations your viewers can switch to._
 
@@ -88,7 +88,7 @@ The page waits for your stream and updates by itself. Once it arrives, it reads 
 
 To end the session, stop the stream in your encoder. Live Captions stop automatically.
 
-![The Go Live step with the stream connected: the player with captions on screen and a tab for each caption language](../assets/builders-hub/ui/captions-live.webp)
+![The Go Live step with the stream connected: the player with captions on screen and a tab for each caption language](../assets/builder-hub/ui/captions-live.webp)
 
 _Your stream live with captions. Each language has its own tab._
 
@@ -114,7 +114,7 @@ Here you can see:
 - a language picker under the player to switch the captions
 - the caption files, ready to download as VTT, SRT or TXT
 
-![The Live Captions demo: a recorded stream with captions, the caption language picker under the player and the VTT, SRT and TXT downloads](../assets/builders-hub/ui/captions-demo.webp)
+![The Live Captions demo: a recorded stream with captions, the caption language picker under the player and the VTT, SRT and TXT downloads](../assets/builder-hub/ui/captions-demo.webp)
 
 _The sample: one of our recorded streams with captions in several languages._
 
@@ -122,6 +122,6 @@ To go back, click **Back to create captions**. As a guest, the link reads **Try 
 
 ## Next steps
 
-- [Demos](builders_hub_demos): the Live Captions demo and the other samples
-- [Accounts & Access](builders_hub_accounts): what each account type gets
-- [Developer Mode](builders_hub_developer_mode): the API calls behind each page
+- [Demos](builder_hub_demos): the Live Captions demo and the other samples
+- [Accounts & Access](builder_hub_accounts): what each account type gets
+- [Developer Mode](builder_hub_developer_mode): the API calls behind each page

@@ -456,21 +456,21 @@ const sidebars = {
   // "Samples": [
   //   "samples/samples",
   // ],
-  "Builders Hub": [
-    "builders-hub/builders_hub_overview",
-    "builders-hub/builders_hub_getting_started",
-    "builders-hub/builders_hub_accounts",
+  "Builder Hub": [
+    "builder-hub/builder_hub_overview",
+    "builder-hub/builder_hub_getting_started",
+    "builder-hub/builder_hub_accounts",
     {
       "type": "category",
       "label": "Build: Stream",
       "collapsible": true,
       "collapsed": false,
       "items": [
-        "builders-hub/builders_hub_create_stream",
-        "builders-hub/builders_hub_adaptive_bitrate",
-        "builders-hub/builders_hub_multicamera",
-        "builders-hub/builders_hub_recording",
-        "builders-hub/builders_hub_live_captions"
+        "builder-hub/builder_hub_create_stream",
+        "builder-hub/builder_hub_adaptive_bitrate",
+        "builder-hub/builder_hub_multicamera",
+        "builder-hub/builder_hub_recording",
+        "builder-hub/builder_hub_live_captions"
       ]
     },
     {
@@ -479,9 +479,9 @@ const sidebars = {
       "collapsible": true,
       "collapsed": false,
       "items": [
-        "builders-hub/builders_hub_analytics",
-        "builders-hub/builders_hub_analytics_boards",
-        "builders-hub/builders_hub_tokens"
+        "builder-hub/builder_hub_analytics",
+        "builder-hub/builder_hub_analytics_boards",
+        "builder-hub/builder_hub_tokens"
       ]
     },
     {
@@ -490,13 +490,13 @@ const sidebars = {
       "collapsible": true,
       "collapsed": false,
       "items": [
-        "builders-hub/builders_hub_chroma_key"
+        "builder-hub/builder_hub_chroma_key"
       ]
     },
-    "builders-hub/builders_hub_demos",
-    "builders-hub/builders_hub_pricing",
-    "builders-hub/builders_hub_ai_helper",
-    "builders-hub/builders_hub_developer_mode"
+    "builder-hub/builder_hub_demos",
+    "builder-hub/builder_hub_pricing",
+    "builder-hub/builder_hub_ai_helper",
+    "builder-hub/builder_hub_developer_mode"
   ]
 };
 

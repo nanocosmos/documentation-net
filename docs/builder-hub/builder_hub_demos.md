@@ -1,11 +1,11 @@
 ---
-id: builders_hub_demos
-title: "Builders Hub: Demos"
+id: builder_hub_demos
+title: "Builder Hub: Demos"
 sidebar_label: Demos
-description: The Builders Hub demos play our sample content, so you can see each nanocosmos feature working before you use it on your own streams.
+description: The Builder Hub demos play our sample content, so you can see each nanocosmos feature working before you use it on your own streams.
 ---
 
-# Builders Hub: Demos
+# Builder Hub: Demos
 
 The **Demos** section of the menu plays our own sample content: live streams, camera angles and green-screen feeds that we run for the hub. You don't need a stream, an encoder or an account to watch them, and nothing in a demo touches your account.
 
@@ -20,7 +20,7 @@ Open **Demos** in the menu. The demos are grouped like the tools:
 | **Stream** | Live Captions demo, Live & Replay Player, Multi-Camera Preview, Multi-Player |
 | **Multi-Brand** | Chroma key with sample content, Multi-Branding for Live Dealers, Multi-Branding for Influencers, Multi-Branding for Commentators |
 
-![The Demos section of the Builders Hub menu, open, with the Stream and Multi-Brand groups](../assets/builders-hub/ui/demos-menu.webp)
+![The Demos section of the Builder Hub menu, open, with the Stream and Multi-Brand groups](../assets/builder-hub/ui/demos-menu.webp)
 
 _Demos sit in their own section of the menu, folded by group._
 
@@ -32,7 +32,7 @@ Which demos you see depends on your account:
 | **Free account** | Every demo |
 | **Production account** | The demos for features your account doesn't have yet, so you can see what they do |
 
-See [Accounts & Access](builders_hub_accounts) for more on what each account sees.
+See [Accounts & Access](builder_hub_accounts) for more on what each account sees.
 
 ## How a demo page works
 
@@ -42,7 +42,7 @@ Every demo page has the same parts:
 2. **The demo itself**, playing our sample content.
 3. **The line at the top of the page**, which says that this is sample content and leads to the next step.
 
-![A demo page: the toolbar with Learn how it works, the demo playing sample content, and Try it with your own content at the top right](../assets/builders-hub/ui/demos-page.webp)
+![A demo page: the toolbar with Learn how it works, the demo playing sample content, and Try it with your own content at the top right](../assets/builder-hub/ui/demos-page.webp)
 
 _Every demo page starts with the toolbar and plays our sample content._
 
@@ -57,7 +57,7 @@ _Every demo page starts with the toolbar and plays our sample content._
 
 Close it with **✕** or by clicking outside the card.
 
-![The Learn how it works summary for Multi-Camera Preview, starting with Here you can see:](../assets/builders-hub/ui/demos-learn-how.webp)
+![The Learn how it works summary for Multi-Camera Preview, starting with Here you can see:](../assets/builder-hub/ui/demos-learn-how.webp)
 
 _The summary lists what the demo shows and ends with the next step._
 
@@ -81,7 +81,7 @@ Here you can see:
 
 Pick a language under the player to switch the captions.
 
-**On your own streams:** [Add AI Live Captions](builders_hub_live_captions). A guest who opens Add AI Live Captions lands on this demo.
+**On your own streams:** [Add AI Live Captions](builder_hub_live_captions). A guest who opens Add AI Live Captions lands on this demo.
 
 ### Live & Replay Player
 
@@ -95,7 +95,7 @@ Here you can see:
 
 Drag the timeline back to rewind, then jump back to live.
 
-**On your own streams:** [Record on demand](builders_hub_recording).
+**On your own streams:** [Record on demand](builder_hub_recording).
 
 ### Multi-Camera Preview
 
@@ -109,7 +109,7 @@ Here you can see:
 
 Click an input, press a number key from 1 to 4, or use **Take Next** to cut to another angle.
 
-**On your own streams:** [Set up multi-camera](builders_hub_multicamera). Signed in, **See it with sample cameras** on that page opens this demo.
+**On your own streams:** [Set up multi-camera](builder_hub_multicamera). Signed in, **See it with sample cameras** on that page opens this demo.
 
 ### Multi-Player
 
@@ -123,7 +123,7 @@ Here you can see:
 
 Switch between the tabs, or pick a layout to watch every stream at once.
 
-**On your own streams:** the **Live wall**, under your streams in the menu, plays every live stream of your account at once. See [Getting Started](builders_hub_getting_started).
+**On your own streams:** the **Live wall**, under your streams in the menu, plays every live stream of your account at once. See [Getting Started](builder_hub_getting_started).
 
 ## Multi-Brand demos
 
@@ -141,11 +141,11 @@ Here you can see:
 
 This is the workbench of the Chroma Key Setup tool, signed in to our demo account. Move the sliders to see the key change.
 
-![Chroma key with sample content: the Chroma Key Setup workbench on our demo green-screen stream](../assets/builders-hub/ui/demos-chroma-sample.webp)
+![Chroma key with sample content: the Chroma Key Setup workbench on our demo green-screen stream](../assets/builder-hub/ui/demos-chroma-sample.webp)
 
 _The workbench on our demo stream. Changes go to our demo outputs only._
 
-**On your own streams:** [Set up chroma key](builders_hub_chroma_key). A guest who opens Set up chroma key lands on this demo.
+**On your own streams:** [Set up chroma key](builder_hub_chroma_key). A guest who opens Set up chroma key lands on this demo.
 
 ### Multi-Branding for Live Dealers
 
@@ -157,11 +157,11 @@ Here you can see:
 - each brand with its own background, from the same table feed
 - all four side by side in the 2×2 layout, in sync
 
-![Multi-Branding for Live Dealers: one live dealer table in the green-screen original and its branded versions, in the 2×2 layout](../assets/builders-hub/ui/demos-live-dealers.webp)
+![Multi-Branding for Live Dealers: one live dealer table in the green-screen original and its branded versions, in the 2×2 layout](../assets/builder-hub/ui/demos-live-dealers.webp)
 
 _One table feed, four casino outputs side by side._
 
-**On your own streams:** [Watch branded outputs](builders_hub_chroma_key#watch-branded-outputs). A guest who opens Watch branded outputs lands on this demo. Signed in, **Back to your outputs** at the top opens it.
+**On your own streams:** [Watch branded outputs](builder_hub_chroma_key#watch-branded-outputs). A guest who opens Watch branded outputs lands on this demo. Signed in, **Back to your outputs** at the top opens it.
 
 ### Multi-Branding for Influencers
 
@@ -173,7 +173,7 @@ Here you can see:
 - each operator with its own branding, from the same stream
 - all four side by side in the 2×2 layout, in sync
 
-**On your own streams:** [Watch branded outputs](builders_hub_chroma_key#watch-branded-outputs).
+**On your own streams:** [Watch branded outputs](builder_hub_chroma_key#watch-branded-outputs).
 
 ### Multi-Branding for Commentators
 
@@ -185,25 +185,25 @@ Here you can see:
 - each operator with its own branded overlay, from the same stream
 - all four side by side in the 2×2 layout, in sync
 
-**On your own streams:** [Watch branded outputs](builders_hub_chroma_key#watch-branded-outputs).
+**On your own streams:** [Watch branded outputs](builder_hub_chroma_key#watch-branded-outputs).
 
 :::note Production accounts without nanoStudio
-The Multi-Brand demos stay in the menu, and the line at the top of each one reads *nanoStudio is not on your account yet.* with an **Upgrade** button. See [When nanoStudio isn't on your account](builders_hub_chroma_key#when-nanostudio-isnt-on-your-account).
+The Multi-Brand demos stay in the menu, and the line at the top of each one reads *nanoStudio is not on your account yet.* with an **Upgrade** button. See [When nanoStudio isn't on your account](builder_hub_chroma_key#when-nanostudio-isnt-on-your-account).
 :::
 
 ## Demos and their tools
 
 | Demo | Does the same on your own streams |
 |---|---|
-| Live Captions demo | [Add AI Live Captions](builders_hub_live_captions) |
-| Live & Replay Player | [Record on demand](builders_hub_recording) |
-| Multi-Camera Preview | [Set up multi-camera](builders_hub_multicamera) |
-| Multi-Player | Live wall ([Getting Started](builders_hub_getting_started)) |
-| Chroma key with sample content | [Set up chroma key](builders_hub_chroma_key) |
-| Multi-Branding for Live Dealers, Influencers, Commentators | [Watch branded outputs](builders_hub_chroma_key#watch-branded-outputs) |
+| Live Captions demo | [Add AI Live Captions](builder_hub_live_captions) |
+| Live & Replay Player | [Record on demand](builder_hub_recording) |
+| Multi-Camera Preview | [Set up multi-camera](builder_hub_multicamera) |
+| Multi-Player | Live wall ([Getting Started](builder_hub_getting_started)) |
+| Chroma key with sample content | [Set up chroma key](builder_hub_chroma_key) |
+| Multi-Branding for Live Dealers, Influencers, Commentators | [Watch branded outputs](builder_hub_chroma_key#watch-branded-outputs) |
 
 ## Next steps
 
-- [Create a stream](builders_hub_create_stream): go live on your own stream
-- [Accounts & Access](builders_hub_accounts): what a free account adds
-- [Pricing & Packages](builders_hub_pricing): packages for a real audience
+- [Create a stream](builder_hub_create_stream): go live on your own stream
+- [Accounts & Access](builder_hub_accounts): what a free account adds
+- [Pricing & Packages](builder_hub_pricing): packages for a real audience

@@ -1,13 +1,13 @@
 ---
-id: builders_hub_accounts
-title: "Builders Hub: Accounts & Access"
+id: builder_hub_accounts
+title: "Builder Hub: Accounts & Access"
 sidebar_label: Accounts & Access
-description: What guests, free accounts and production accounts see in the Builders Hub, which tools need an account, and how to ask for features your account doesn't have yet.
+description: What guests, free accounts and production accounts see in the Builder Hub, which tools need an account, and how to ask for features your account doesn't have yet.
 ---
 
-# Builders Hub: Accounts & Access
+# Builder Hub: Accounts & Access
 
-The Builders Hub works for three kinds of visitor: **guests**, **free accounts** and **production accounts**. The menu looks the same for everyone, but what each tool does, and what Home shows, depends on which one you are.
+The Builder Hub works for three kinds of visitor: **guests**, **free accounts** and **production accounts**. The menu looks the same for everyone, but what each tool does, and what Home shows, depends on which one you are.
 
 ## Account types at a glance
 
@@ -16,7 +16,7 @@ The Builders Hub works for three kinds of visitor: **guests**, **free accounts**
 | **How you get in** | **Just have a look**, or **I don't want to write, I just want to start streaming** | **No, create a free account** | **Yes, sign me in** with your existing login |
 | **Your streams** | Test streams on a shared demo account | Your own streams | Your own streams |
 | **Features** | Every demo, plus the tools that don't need an account | Every feature in the platform | The features on your contract |
-| **Traffic** | Shared demo account | 50 GB free every month | Your contract, no Builders Hub limits |
+| **Traffic** | Shared demo account | 50 GB free every month | Your contract, no Builder Hub limits |
 | **Pricing in the menu** | Yes | Yes | No |
 | **Support** | **Contact us** in the account menu | **Contact us** in the account menu | **Contact support** in the account menu |
 
@@ -53,7 +53,7 @@ As a guest you can try the hub without an account.
 
 Tools that work on your own streams carry a **Sign in** tag in the menu. A line at the top of **Build** explains: *Tools marked **Sign in** run on your own streams.* Click one of these tools to open the sign-in form, which also links to the free sign-up.
 
-![The Build menu for a guest: tools marked Sign in, and the line explaining them](../assets/builders-hub/ui/accounts-guest-menu.webp)
+![The Build menu for a guest: tools marked Sign in, and the line explaining them](../assets/builder-hub/ui/accounts-guest-menu.webp)
 
 _As a guest, tools that need an account are marked **Sign in**._
 
@@ -81,21 +81,21 @@ A free account has **every feature in the platform** on your own streams, with *
 
 On Home, the **Traffic this month** tile shows how much you've used, with a bar against the 50 GB. The bar changes colour at 80 %. The same figure is in the plan line at the top of Home: **Free plan · 12.4 GB of 50 GB this month**.
 
-![The Traffic this month tile on a free account, with the usage bar and See packages](../assets/builders-hub/ui/accounts-free-traffic.webp)
+![The Traffic this month tile on a free account, with the usage bar and See packages](../assets/builder-hub/ui/accounts-free-traffic.webp)
 
 _Traffic counts data delivered to viewers and data ingested._
 
 ### Your plan
 
-The plan line at the top of Home reads **Free plan · … of 50 GB this month**, with **See packages**. The account menu says *Free account: every feature, with 50 GB of traffic free every month. Packages add more.* and offers **Upgrade: see packages**. See [Pricing & Packages](builders_hub_pricing).
+The plan line at the top of Home reads **Free plan · … of 50 GB this month**, with **See packages**. The account menu says *Free account: every feature, with 50 GB of traffic free every month. Packages add more.* and offers **Upgrade: see packages**. See [Pricing & Packages](builder_hub_pricing).
 
 ## Production accounts
 
-Sign in with your existing nanocosmos login and the hub shows your own account. Your contract applies, with no Builders Hub limits, no traffic bar and no Pricing section.
+Sign in with your existing nanocosmos login and the hub shows your own account. Your contract applies, with no Builder Hub limits, no traffic bar and no Pricing section.
 
 ### Your account menu
 
-Home shows a **Production** badge in the plan line. Open the account menu (your organisation's name in the header): it reads *Production account. Your contract applies here, with no Builders Hub limits.* and lists your account's features, each **On** or **Off**:
+Home shows a **Production** badge in the plan line. Open the account menu (your organisation's name in the header): it reads *Production account. Your contract applies here, with no Builder Hub limits.* and lists your account's features, each **On** or **Off**:
 
 | Feature | |
 |---|---|
@@ -109,7 +109,7 @@ Home shows a **Production** badge in the plan line. Open the account menu (your 
 
 Need a feature switched on? Click **Contact support** in the same menu.
 
-![The account menu on a production account: the feature list with On and Off, and Upgrade beside Live Captions and nanoStudio](../assets/builders-hub/ui/accounts-production-card.webp)
+![The account menu on a production account: the feature list with On and Off, and Upgrade beside Live Captions and nanoStudio](../assets/builder-hub/ui/accounts-production-card.webp)
 
 _A production account with Live Captions and nanoStudio not yet on the account._
 
@@ -122,7 +122,7 @@ When a feature is off on your account:
 - On Manage tokens (Secure playback) and the Live Captions and nanoStudio tool pages, the bar at the top reads *&lt;Feature&gt; is not on your account yet.* with **Upgrade**.
 - Set up Adaptive Bitrate says *Adaptive Bitrate Streaming is not on your account yet. Your account team can switch it on: contact support.*
 
-![A tool page on a production account: "Live Captions is not on your account yet." with an Upgrade button](../assets/builders-hub/ui/accounts-upgrade-bar.webp)
+![A tool page on a production account: "Live Captions is not on your account yet." with an Upgrade button](../assets/builder-hub/ui/accounts-upgrade-bar.webp)
 
 _The bar on a tool page whose feature is not on the account._
 
@@ -136,7 +136,7 @@ If your account has secure playback switched on, or a stream is protected with a
 
 If no token can be created, the player says *Secure playback is on, and no playback token could be created.* Sign out and sign in again with an admin login of your organisation.
 
-To create and revoke tokens for your own players, see [Manage tokens](builders_hub_tokens).
+To create and revoke tokens for your own players, see [Manage tokens](builder_hub_tokens).
 
 ## Disabled accounts
 
@@ -149,6 +149,6 @@ If your account is disabled, the account menu says *This account is disabled. Co
 
 ## Next steps
 
-- [Getting Started](builders_hub_getting_started): your first visit, step by step
-- [Pricing & Packages](builders_hub_pricing): when you need more than the free account
-- [Developer Mode](builders_hub_developer_mode): the API calls behind every page
+- [Getting Started](builder_hub_getting_started): your first visit, step by step
+- [Pricing & Packages](builder_hub_pricing): when you need more than the free account
+- [Developer Mode](builder_hub_developer_mode): the API calls behind every page

@@ -1,11 +1,11 @@
 ---
-id: builders_hub_ai_helper
-title: "Builders Hub: AI Helper and AI Skills"
+id: builder_hub_ai_helper
+title: "Builder Hub: AI Helper and AI Skills"
 sidebar_label: AI Helper & AI Skills
-description: Find any tool or docs page from the AI helper box in the Builders Hub, read the docs next to the tool that does it, and add the nanocosmos Agent Skills to your AI assistant.
+description: Find any tool or docs page from the AI helper box in the Builder Hub, read the docs next to the tool that does it, and add the nanocosmos Agent Skills to your AI assistant.
 ---
 
-# Builders Hub: AI Helper and AI Skills
+# Builder Hub: AI Helper and AI Skills
 
 **AI helper**, at the bottom of the menu, has two parts:
 
@@ -20,7 +20,7 @@ description: Find any tool or docs page from the AI helper box in the Builders H
 2. Results appear under the box as you type.
 3. Click a result, or press **Enter** to open the first one. Press **Esc** to clear the box.
 
-![The AI helper box at the bottom of the menu, with results From the docs and In the hub for a question](../assets/builders-hub/ui/ai-helper-results.webp)
+![The AI helper box at the bottom of the menu, with results From the docs and In the hub for a question](../assets/builder-hub/ui/ai-helper-results.webp)
 
 _A how-to question: docs pages first, then the hub tool that does it._
 
@@ -38,7 +38,7 @@ Some results do something other than open a tool:
 
 | Result | What it does |
 |---|---|
-| **Embed the player on your website**, **API examples (Developer mode)** | Switches on [Developer mode](builders_hub_developer_mode) for the page you're on |
+| **Embed the player on your website**, **API examples (Developer mode)** | Switches on [Developer mode](builder_hub_developer_mode) for the page you're on |
 | **Change your industry** | Opens the industry picker |
 | **Contact support** | Opens the nanocosmos contact page |
 
@@ -50,7 +50,7 @@ Release notes and changelogs only show when you ask for them, for example with *
 
 A result **From the docs** opens the docs page inside the hub, so you don't leave your work.
 
-![The docs reader: a docs page on the left, scrolled to the matching section, and Try it in the hub with the matching tool on the right](../assets/builders-hub/ui/ai-docs-reader.webp)
+![The docs reader: a docs page on the left, scrolled to the matching section, and Try it in the hub with the matching tool on the right](../assets/builder-hub/ui/ai-docs-reader.webp)
 
 _The docs page on the left, the hub tool that does it on the right._
 
@@ -73,7 +73,7 @@ If the page doesn't load in the hub, you see the search snippet and *The full pa
 
 **AI Skills** opens **Build with AI**. Our Agent Skills teach your AI assistant the nanocosmos platform. They use the open Agent Skills format, so they work with Claude Code, Cursor, Copilot, Codex, Windsurf and any assistant that reads it. Add them once and ask in plain words: create a stream, read your numbers, find out why a stream will not play, set up branded outputs.
 
-![Build with AI: a card per skill with Try asking, Made for and View on GitHub, then How to add the skills](../assets/builders-hub/ui/ai-skills.webp)
+![Build with AI: a card per skill with Try asking, Made for and View on GitHub, then How to add the skills](../assets/builder-hub/ui/ai-skills.webp)
 
 _One card per skill, with an example question and who it's made for._
 
@@ -122,6 +122,6 @@ Every route and the full instructions are in [the repository README](https://git
 
 ## Next steps
 
-- [Developer mode](builders_hub_developer_mode): the API calls behind each page
-- [Getting Started](builders_hub_getting_started): find your way around the hub
-- [Demos](builders_hub_demos): see each feature working on our sample content
+- [Developer mode](builder_hub_developer_mode): the API calls behind each page
+- [Getting Started](builder_hub_getting_started): find your way around the hub
+- [Demos](builder_hub_demos): see each feature working on our sample content

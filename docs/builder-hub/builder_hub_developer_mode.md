@@ -1,13 +1,13 @@
 ---
-id: builders_hub_developer_mode
-title: "Builders Hub: Developer Mode"
+id: builder_hub_developer_mode
+title: "Builder Hub: Developer Mode"
 sidebar_label: Developer Mode
-description: Show the API calls behind any Builders Hub page, with the roles that may make each call, ready-to-copy code in six languages, example responses and player code.
+description: Show the API calls behind any Builder Hub page, with the roles that may make each call, ready-to-copy code in six languages, example responses and player code.
 ---
 
-# Builders Hub: Developer Mode
+# Builder Hub: Developer Mode
 
-Everything the Builders Hub does goes through the same public APIs you can use from your own application. **Developer mode** shows you those calls on every tool and demo page, in order, so you can build the same thing yourself.
+Everything the Builder Hub does goes through the same public APIs you can use from your own application. **Developer mode** shows you those calls on every tool and demo page, in order, so you can build the same thing yourself.
 
 ## Turn it on
 
@@ -16,7 +16,7 @@ Everything the Builders Hub does goes through the same public APIs you can use f
 
 The developer panel opens above the page. It stays on as you move between pages, and the next time you visit, until you switch it off.
 
-![The Developer mode switch at the right of the bar above a tool page](../assets/builders-hub/ui/dev-mode-toggle.webp)
+![The Developer mode switch at the right of the bar above a tool page](../assets/builder-hub/ui/dev-mode-toggle.webp)
 
 _The switch sits at the top right of every tool page._
 
@@ -24,7 +24,7 @@ _The switch sits at the top right of every tool page._
 
 The panel is headed **Developer · &lt;what the page does&gt;**, for example **Developer · Adaptive Bitrate Streaming**, with one line on how the page works in API terms. Then come the calls behind the page, numbered in the order the page makes them.
 
-![The developer panel on Set up Adaptive Bitrate: three numbered calls, the role row on each, the language switch, and the player code at the end](../assets/builders-hub/ui/dev-mode-panel.webp)
+![The developer panel on Set up Adaptive Bitrate: three numbered calls, the role row on each, the language switch, and the player code at the end](../assets/builder-hub/ui/dev-mode-panel.webp)
 
 _Set up Adaptive Bitrate in Developer mode: read the qualities, create the stream, read the group, then play it._
 
@@ -49,7 +49,7 @@ The role row tells you which logins can make a call before you try it:
 | **nanoUser** | Creates and changes streams, but can't create playback tokens with the Cloud Token Service |
 | **nanoReadOnly** | Reads streams and settings only |
 
-![A call in the developer panel with the role row showing ✓ nanoAdmin, ✓ nanoUser and ✗ nanoReadOnly](../assets/builders-hub/ui/dev-mode-roles.webp)
+![A call in the developer panel with the role row showing ✓ nanoAdmin, ✓ nanoUser and ✗ nanoReadOnly](../assets/builder-hub/ui/dev-mode-roles.webp)
 
 _Creating a stream needs nanoAdmin or nanoUser._
 
@@ -57,7 +57,7 @@ _Creating a stream needs nanoAdmin or nanoUser._
 
 Pick a language at the top of the panel: **TypeScript**, **cURL**, **JavaScript**, **Python**, **Go** or **PHP**. Every call on the page switches together, and the hub remembers your choice for the next page. Example responses you've opened stay open when you switch.
 
-![The language switch with Python selected, and a call written in Python](../assets/builders-hub/ui/dev-mode-languages.webp)
+![The language switch with Python selected, and a call written in Python](../assets/builder-hub/ui/dev-mode-languages.webp)
 
 _The same call in Python. Every language makes exactly the same request._
 
@@ -91,5 +91,5 @@ For some features, for example revoking tokens or the nanoStudio API, the panel 
 
 ## Next steps
 
-- [Create a stream](builders_hub_create_stream): the simplest page to start with
-- [Getting Started](builders_hub_getting_started): your first visit, step by step
+- [Create a stream](builder_hub_create_stream): the simplest page to start with
+- [Getting Started](builder_hub_getting_started): your first visit, step by step

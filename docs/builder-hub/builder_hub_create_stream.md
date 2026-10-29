@@ -1,18 +1,18 @@
 ---
-id: builders_hub_create_stream
-title: "Builders Hub: Create a Stream"
+id: builder_hub_create_stream
+title: "Builder Hub: Create a Stream"
 sidebar_label: Create a Stream
-description: Go live in the Builders Hub from your browser or your own encoder, and watch your stream play with its latency and bitrate measured live.
+description: Go live in the Builder Hub from your browser or your own encoder, and watch your stream play with its latency and bitrate measured live.
 ---
 
-# Builders Hub: Create a Stream
+# Builder Hub: Create a Stream
 
 **Create a stream** is the quickest way to see nanoStream working. Go live from your camera, right in the browser, or send your own encoder to the ingest address shown. Your stream then plays next to it, the way your viewers see it, with its latency and bitrate measured live.
 
 It works the same way for everyone: guests, free accounts and production accounts.
 
 :::tip Open it
-In the Builders Hub menu, open **Build › Stream › Create a stream**.
+In the Builder Hub menu, open **Build › Stream › Create a stream**.
 :::
 
 ## Before you start
@@ -50,7 +50,7 @@ The page opens on **Seeing Is Believing: Choose where your video comes from.**
 
 A new test stream is created as soon as you choose.
 
-![The Create a stream page with the two paths, This browser and Your own encoder, and the Live Processing: replay switch](../assets/builders-hub/ui/create-choose-input.webp)
+![The Create a stream page with the two paths, This browser and Your own encoder, and the Live Processing: replay switch](../assets/builder-hub/ui/create-choose-input.webp)
 
 _Pick a path. Live Processing: replay is on by default._
 
@@ -70,7 +70,7 @@ To switch paths later, click **Change input**. You're taken back to the choice, 
 2. Pick your **Camera** and **Microphone** from the lists if you have more than one.
 3. Click **Start Streaming**. The button changes to **Stop Streaming** while you're live.
 
-![Step 1 Broadcast with the camera preview, the Camera and Microphone lists and Stop Streaming, next to step 2 Watch live playing the stream](../assets/builders-hub/ui/create-browser-live.webp)
+![Step 1 Broadcast with the camera preview, the Camera and Microphone lists and Stop Streaming, next to step 2 Watch live playing the stream](../assets/builder-hub/ui/create-browser-live.webp)
 
 _Your camera on the left, what your viewers see on the right._
 
@@ -89,7 +89,7 @@ Step 1 becomes **Connect your encoder**, with a status badge that reads **Waitin
 2. Copy the **Server** and the **Stream key** into it. Each has a **Copy** button.
 3. Start streaming. The badge changes to **Receiving stream** and your stream plays in step 2.
 
-![Connect your encoder: the three instructions, the Server and Stream key with Copy buttons, and the Waiting for encoder badge](../assets/builders-hub/ui/create-encoder-settings.webp)
+![Connect your encoder: the three instructions, the Server and Stream key with Copy buttons, and the Waiting for encoder badge](../assets/builder-hub/ui/create-encoder-settings.webp)
 
 _Paste the server and stream key into your encoder, then start streaming._
 
@@ -114,19 +114,19 @@ To stop, click **Stop Streaming** (browser) or stop the stream in your encoder.
 
 Create a stream makes a **test stream** every time, whether you're a guest or signed in. It's the place to try going live and see the latency for yourself.
 
-To go live on a stream of your own account, use **Home**: your stream's card shows its **Stream name**, **RTMP server** and **Stream key**, each with **Copy**. *Paste the server and key into OBS, or go live right here from your browser.* The preview on the card starts by itself once the stream is live. See [Getting Started](builders_hub_getting_started).
+To go live on a stream of your own account, use **Home**: your stream's card shows its **Stream name**, **RTMP server** and **Stream key**, each with **Copy**. *Paste the server and key into OBS, or go live right here from your browser.* The preview on the card starts by itself once the stream is live. See [Getting Started](builder_hub_getting_started).
 
 :::note Guests
-As a guest, your test streams run on a shared demo account, so anyone with their name can watch. A free account gives you your own streams. See [Accounts & Access](builders_hub_accounts).
+As a guest, your test streams run on a shared demo account, so anyone with their name can watch. A free account gives you your own streams. See [Accounts & Access](builder_hub_accounts).
 :::
 
 ## See the API behind it
 
-Switch on **Developer mode** at the top right of the page to see the API calls behind it, in six languages. See [Developer Mode](builders_hub_developer_mode).
+Switch on **Developer mode** at the top right of the page to see the API calls behind it, in six languages. See [Developer Mode](builder_hub_developer_mode).
 
 ## Next steps
 
-- [Set up Adaptive Bitrate](builders_hub_adaptive_bitrate): your stream in extra qualities for every connection
-- [Record on demand](builders_hub_recording): record a live session and play it back
-- [Add AI Live Captions](builders_hub_live_captions): captions and translations on your stream
-- [View analytics](builders_hub_analytics): see how your streams are doing
+- [Set up Adaptive Bitrate](builder_hub_adaptive_bitrate): your stream in extra qualities for every connection
+- [Record on demand](builder_hub_recording): record a live session and play it back
+- [Add AI Live Captions](builder_hub_live_captions): captions and translations on your stream
+- [View analytics](builder_hub_analytics): see how your streams are doing

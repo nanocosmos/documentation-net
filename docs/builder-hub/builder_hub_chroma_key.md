@@ -1,11 +1,11 @@
 ---
-id: builders_hub_chroma_key
-title: "Builders Hub: Chroma Key and Branded Outputs"
+id: builder_hub_chroma_key
+title: "Builder Hub: Chroma Key and Branded Outputs"
 sidebar_label: Chroma Key & Branded Outputs
-description: Key a green-screen stream with nanoStudio Chroma in the Builders Hub, then watch the input and every branded output side by side.
+description: Key a green-screen stream with nanoStudio Chroma in the Builder Hub, then watch the input and every branded output side by side.
 ---
 
-# Builders Hub: Chroma Key and Branded Outputs
+# Builder Hub: Chroma Key and Branded Outputs
 
 The **Multi-Brand** group under **Build** holds the two tools for nanoStudio Chroma:
 
@@ -21,7 +21,7 @@ Both tools work on your own streams, so they need an account. A free account inc
 :::
 
 :::tip Detailed chroma key documentation
-This page covers the chroma key tools inside the Builders Hub. For the full setup, every control and fixes for common problems, see the **Chroma Key** docs:
+This page covers the chroma key tools inside the Builder Hub. For the full setup, every control and fixes for common problems, see the **Chroma Key** docs:
 
 - [Getting Started](../nanostudio/chroma_key_getting_started): the five setup steps, from sign-in to going live
 - [Tuning the Key](../nanostudio/chroma_key_tuning): what every control does, and how to check your key
@@ -33,7 +33,7 @@ This page covers the chroma key tools inside the Builders Hub. For the full setu
 
 | You need | Details |
 |---|---|
-| **An account** | A free account or a production account, signed in to the hub. See [Getting Started](builders_hub_getting_started). |
+| **An account** | A free account or a production account, signed in to the hub. See [Getting Started](builder_hub_getting_started). |
 | **Green or blue screen** | Evenly lit |
 | **Encoder** | OBS, vMix, ffmpeg or a hardware encoder that can send RTMP |
 | **Backgrounds** | MP4 video, PNG or JPG at the same resolution as your camera |
@@ -46,7 +46,7 @@ This page covers the chroma key tools inside the Builders Hub. For the full setu
 
    Point your encoder at `rtmp://bintu-studio.nanocosmos.de/live` with the ingest's **Stream Key**. Publishing to this server is what starts the chroma key; see [Getting Started](../nanostudio/chroma_key_getting_started).
 
-![Set up chroma key in the Builders Hub: the Chroma Key Setup tool inside the hub, with the toolbar above it](../assets/builders-hub/ui/chroma-setup-tool.webp)
+![Set up chroma key in the Builder Hub: the Chroma Key Setup tool inside the hub, with the toolbar above it](../assets/builder-hub/ui/chroma-setup-tool.webp)
 
 _The Chroma Key Setup tool runs inside the hub. The toolbar above it links to your branded outputs._
 
@@ -72,7 +72,7 @@ The **Branded outputs player** plays one chroma key setup at a time: the green-s
 3. To watch another setup, pick it in **Setup**. Setups that are live are marked **· live**.
 4. If a setup isn't in the list, paste its **Ingest stream ID** into the box next to it and click **Load**.
 
-![The Branded outputs player: the Setup picker, the ingest stream ID box, Refresh and Tune the key, then the green-screen input and three branded outputs side by side](../assets/builders-hub/ui/chroma-branded-outputs.webp)
+![The Branded outputs player: the Setup picker, the ingest stream ID box, Refresh and Tune the key, then the green-screen input and three branded outputs side by side](../assets/builder-hub/ui/chroma-branded-outputs.webp)
 
 _The green-screen input and every branded output play side by side. Each tile shows its stream name and background._
 
@@ -125,7 +125,7 @@ A guest who opens one of these tools from a link sees our sample content instead
 | **Set up chroma key** | **Chroma Key Setup with sample content**: the workbench on our demo green-screen stream and its branded outputs |
 | **Watch branded outputs** | **Multi-Branding for Live Dealers**: one live dealer table of ours, branded for four casinos |
 
-At the top right, **Try it with your own content** opens the free sign-up. For both samples, see [Demos](builders_hub_demos).
+At the top right, **Try it with your own content** opens the free sign-up. For both samples, see [Demos](builder_hub_demos).
 
 ## When nanoStudio isn't on your account
 
@@ -135,7 +135,7 @@ On a production account without nanoStudio, the hub says so and offers to ask fo
 - In the menu, **Set up chroma key** and **Watch branded outputs** carry an **off** tag.
 - On the Chroma Key pages and the Multi-Branding demos, the line at the top reads *nanoStudio is not on your account yet.*, followed by **Upgrade**.
 
-![The line at the top of Chroma Key Setup on a production account without nanoStudio, with the Upgrade link](../assets/builders-hub/ui/chroma-upgrade.webp)
+![The line at the top of Chroma Key Setup on a production account without nanoStudio, with the Upgrade link](../assets/builder-hub/ui/chroma-upgrade.webp)
 
 _On a production account without nanoStudio, every chroma page offers Upgrade._
 
@@ -147,5 +147,5 @@ _On a production account without nanoStudio, every chroma page offers Upgrade._
 - [Outputs & Branding](../nanostudio/chroma_key_outputs): backgrounds, overlays, tags and transcodes per output
 - [Tuning the Key](../nanostudio/chroma_key_tuning): what every control does
 - [Troubleshooting & FAQ](../nanostudio/chroma_key_troubleshooting): fixes for common problems
-- [Demos](builders_hub_demos): the Multi-Branding samples
-- [Developer mode](builders_hub_developer_mode): the API calls behind each page
+- [Demos](builder_hub_demos): the Multi-Branding samples
+- [Developer mode](builder_hub_developer_mode): the API calls behind each page

@@ -1,17 +1,17 @@
 ---
-id: builders_hub_analytics
-title: "Builders Hub: View Analytics"
+id: builder_hub_analytics
+title: "Builder Hub: View Analytics"
 sidebar_label: View Analytics
-description: See your viewers, traffic, latency and playback quality in the Builders Hub, on ready-made boards that share one time range and one set of filters.
+description: See your viewers, traffic, latency and playback quality in the Builder Hub, on ready-made boards that share one time range and one set of filters.
 ---
 
-# Builders Hub: View Analytics
+# Builder Hub: View Analytics
 
-**View analytics** opens **nanoStream Analytics** inside the Builders Hub: viewers, usage, latency and quality, plus boards you set up your way. Every number comes from the [nanoStream Analytics API v2](https://api.nanostream.cloud/docs/analytics/v2/), the same API your own applications can call.
+**View analytics** opens **nanoStream Analytics** inside the Builder Hub: viewers, usage, latency and quality, plus boards you set up your way. Every number comes from the [nanoStream Analytics API v2](https://api.nanostream.cloud/docs/analytics/v2/), the same API your own applications can call.
 
 You find it in the sidebar under **Build › Analytics › View analytics**.
 
-![The Analytics tool in the Builders Hub: the board tabs at the top, the Filters bar, and a grid of chart panels](../assets/builders-hub/ui/analytics-overview.webp)
+![The Analytics tool in the Builder Hub: the board tabs at the top, the Filters bar, and a grid of chart panels](../assets/builder-hub/ui/analytics-overview.webp)
 
 _The Analytics tool on My Page, with the board tabs, the Filters bar and the panels below._
 
@@ -33,7 +33,7 @@ The footer of the tool also says which data it's using: **nanoStream Analytics, 
 
 As a guest, the bar above the page also offers **Try it with your own content**, which opens the free sign-up.
 
-![The live-data line above the boards, naming the signed-in organisation](../assets/builders-hub/ui/analytics-live-note.webp)
+![The live-data line above the boards, naming the signed-in organisation](../assets/builder-hub/ui/analytics-live-note.webp)
 
 _Signed in, the boards read your own account._
 
@@ -54,7 +54,7 @@ You don't need to open Analytics to see how your account is doing. **Home** show
 | **Playback start success** | The share of plays that started, over the last 24 hours, with the number of plays |
 | **Latency** | Median latency over the last 24 hours |
 
-![The four Key numbers tiles on Home for a free account, with the traffic bar](../assets/builders-hub/ui/analytics-home-key-numbers.webp)
+![The four Key numbers tiles on Home for a free account, with the traffic bar](../assets/builder-hub/ui/analytics-home-key-numbers.webp)
 
 _Key numbers on Home. On a free account, Traffic this month shows how much of the free 50 GB is used._
 
@@ -75,10 +75,10 @@ Analytics opens on a row of tabs. Five are boards that come ready-made; two are 
 | **Performance** | How playback felt: latency, startup time, buffering and watch time, with the country and per-stream views for finding where it got worse. |
 | **Health** | What needs attention: playback start success over time, the errors and stop reasons behind a dip, player error codes, ingest alerts, and the bitrate feeding it all. |
 | **Audience** | Who watched and from where: peak concurrent viewers, playtime by country, the browser and OS mix, the sites that drove delivery, and the caption languages in use. |
-| **Custom query** | Every metric the API exposes. Build a request yourself and add it to any board. See [Boards & Custom Query](builders_hub_analytics_boards#custom-query). |
+| **Custom query** | Every metric the API exposes. Build a request yourself and add it to any board. See [Boards & Custom Query](builder_hub_analytics_boards#custom-query). |
 | **API reference** | Every route in the API version the tool uses, with the parameters, response fields and limits the API's own documentation declares. |
 
-You can also make tabs of your own with **New tab**. See [Make your own tab](builders_hub_analytics_boards#make-your-own-tab).
+You can also make tabs of your own with **New tab**. See [Make your own tab](builder_hub_analytics_boards#make-your-own-tab).
 
 ### What's on each board
 
@@ -92,19 +92,19 @@ You can also make tabs of your own with **New tab**. See [Make your own tab](bui
 
 The panels on **Usage**, **Performance**, **Health** and **Audience** stay put, because they are that board's answer to the question its name asks. They have no **✕**. Anything you add alongside them can be removed again. On **My Page** every panel can be removed.
 
-![The Health board: start success over time, start errors, stop reasons, error codes, ingest alerts and ingest bitrate](../assets/builders-hub/ui/analytics-health-board.webp)
+![The Health board: start success over time, start errors, stop reasons, error codes, ingest alerts and ingest bitrate](../assets/builder-hub/ui/analytics-health-board.webp)
 
 _The Health board. Its six panels are fixed; panels you add next to them can be removed._
 
 :::info Usage is volume, not money
-Usage shows the bytes your streams delivered and ingested. The Analytics API carries no prices or invoice amounts. For what's included in your package, see [Pricing & Packages](builders_hub_pricing).
+Usage shows the bytes your streams delivered and ingested. The Analytics API carries no prices or invoice amounts. For what's included in your package, see [Pricing & Packages](builder_hub_pricing).
 :::
 
 ## Filters and time range
 
 Every board has a **Filters** bar, *applied to every panel that takes them*.
 
-![The Filters bar: Time range with Quick and Custom, Interval, and the Streams and Tags pickers, with Add a widget, Auto-refresh, Refresh and Reset board on the right](../assets/builders-hub/ui/analytics-filters.webp)
+![The Filters bar: Time range with Quick and Custom, Interval, and the Streams and Tags pickers, with Add a widget, Auto-refresh, Refresh and Reset board on the right](../assets/builder-hub/ui/analytics-filters.webp)
 
 _The Filters bar. The stream and tag pickers appear because panels on this board accept them._
 
@@ -124,7 +124,7 @@ On the right of the bar:
 
 | Control | What it does |
 |---|---|
-| **Add a widget** | Adds a metric to the board on screen. See [Add a panel](builders_hub_analytics_boards#add-a-panel). |
+| **Add a widget** | Adds a metric to the board on screen. See [Add a panel](builder_hub_analytics_boards#add-a-panel). |
 | **Auto-refresh** | Reloads every panel every **30s**, **1m** or **5m**, or **Off** |
 | **Refresh** | Reloads every panel now |
 | **Reset board** | Restores the board's default panels. It only resets the board on screen. On your own tab this button reads **Clear tab**. |
@@ -137,11 +137,11 @@ The board on screen is part of the hub's address. Share that link and it opens o
 
 ## Developer mode
 
-Switch on **Developer mode** at the top right of the page to see the API calls behind the boards (the viewer count and byte usage routes), in the language of your choice. See [Developer Mode](builders_hub_developer_mode).
+Switch on **Developer mode** at the top right of the page to see the API calls behind the boards (the viewer count and byte usage routes), in the language of your choice. See [Developer Mode](builder_hub_developer_mode).
 
 ## Next steps
 
-- [Boards & Custom Query](builders_hub_analytics_boards): add panels, make your own tabs, read a metric, drill down and export
-- [Manage tokens](builders_hub_tokens): protect your streams with playback tokens
+- [Boards & Custom Query](builder_hub_analytics_boards): add panels, make your own tabs, read a metric, drill down and export
+- [Manage tokens](builder_hub_tokens): protect your streams with playback tokens
 - [Analytics API v2 reference](https://api.nanostream.cloud/docs/analytics/v2/)
 - [nanoStream Analytics documentation](../cloud/analytics)

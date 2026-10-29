@@ -1,20 +1,20 @@
 ---
-id: builders_hub_recording
-title: "Builders Hub: Record on Demand"
+id: builder_hub_recording
+title: "Builder Hub: Record on Demand"
 sidebar_label: Record on Demand
-description: Record a live session in the Builders Hub with On-Demand Recording, then play the file back or copy its link.
+description: Record a live session in the Builder Hub with On-Demand Recording, then play the file back or copy its link.
 ---
 
-# Builders Hub: Record on Demand
+# Builder Hub: Record on Demand
 
 **On-Demand Recording** records a live session while you're live, and plays it back on demand. You start and stop each recording yourself, and each recording produces its own file.
 
 :::tip Open it
-In the Builders Hub menu, open **Build › Stream › Record on demand**.
+In the Builder Hub menu, open **Build › Stream › Record on demand**.
 :::
 
 :::tip Detailed On-Demand Recording documentation
-This page covers the tool inside the Builders Hub. To start and stop recordings from your own application, see the **Real-Time API** docs:
+This page covers the tool inside the Builder Hub. To start and stop recordings from your own application, see the **Real-Time API** docs:
 
 - [On-Demand Recording](../realtime-api/realtime_api_recording): start and stop recordings with REST calls, with code examples
 - [Real-Time API](../realtime-api/realtime_api_introduction): base URL and authentication
@@ -32,7 +32,7 @@ This page covers the tool inside the Builders Hub. To start and stop recordings 
 
 | Account | What happens |
 |---|---|
-| **Guest** | **Record on demand** is marked **Sign in** in the menu, and clicking it opens the sign-in form. A link straight to the page opens the free sign-up. To see a recording played back without an account, open the [Live & Replay Player](builders_hub_demos) demo. |
+| **Guest** | **Record on demand** is marked **Sign in** in the menu, and clicking it opens the sign-in form. A link straight to the page opens the free sign-up. To see a recording played back without an account, open the [Live & Replay Player](builder_hub_demos) demo. |
 | **Free account** | Works. |
 | **Production account** | Works when recording is on for your organisation. If it isn't, the menu item is marked **off**. |
 
@@ -40,7 +40,7 @@ This page covers the tool inside the Builders Hub. To start and stop recordings 
 
 ## Step 1: Sign in
 
-The page opens the **On Demand Recording** tool. Your Builders Hub sign-in carries over, so **Sign in** shows *Signed in as …* and is already done.
+The page opens the **On Demand Recording** tool. Your Builder Hub sign-in carries over, so **Sign in** shows *Signed in as …* and is already done.
 
 ## Step 2: Your stream
 
@@ -68,11 +68,11 @@ Under the player:
 2. Click **Start recording**. The recording shows with a running clock.
 3. Click **Stop recording** when you're done.
 
-:::note Recordings in the Builders Hub are short
-In the Builders Hub, each recording stops after **30 seconds**, and the file then appears under On Demand Recording. To record for as long as you need, use the [On-Demand Recording API](../realtime-api/realtime_api_recording).
+:::note Recordings in the Builder Hub are short
+In the Builder Hub, each recording stops after **30 seconds**, and the file then appears under On Demand Recording. To record for as long as you need, use the [On-Demand Recording API](../realtime-api/realtime_api_recording).
 :::
 
-![The On Demand Recording tool in the Builders Hub: the stream ready with its ingest URL and stream key, the live player with the Rec tag, and the recording controls](../assets/builders-hub/ui/recording-live.webp)
+![The On Demand Recording tool in the Builder Hub: the stream ready with its ingest URL and stream key, the live player with the Rec tag, and the recording controls](../assets/builder-hub/ui/recording-live.webp)
 
 _Your stream playing live while a recording runs._
 
@@ -87,7 +87,7 @@ _Your stream playing live while a recording runs._
 
 A new file shows *Processing recording: the file appears shortly.* About a minute after you stop, it's ready. Click **Play** to watch it, or **Copy link** to share it.
 
-![Recorded files: two finished recordings, each with Play and Copy link, under the full-session row](../assets/builders-hub/ui/recording-files.webp)
+![Recorded files: two finished recordings, each with Play and Copy link, under the full-session row](../assets/builder-hub/ui/recording-files.webp)
 
 _Every recording is its own file, ready to play or share._
 
@@ -98,5 +98,5 @@ Start and stop recordings from your own application with the **Real-Time API**. 
 ## Next steps
 
 - [On-Demand Recording API](../realtime-api/realtime_api_recording): the API behind the tool
-- [Demos](builders_hub_demos): the Live & Replay Player
-- [Create a stream](builders_hub_create_stream): go live from your browser
+- [Demos](builder_hub_demos): the Live & Replay Player
+- [Create a stream](builder_hub_create_stream): go live from your browser

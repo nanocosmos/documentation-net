@@ -1,13 +1,13 @@
 ---
-id: builders_hub_analytics_boards
-title: "Builders Hub: Boards & Custom Query"
+id: builder_hub_analytics_boards
+title: "Builder Hub: Boards & Custom Query"
 sidebar_label: Boards & Custom Query
-description: Add metrics to a board, make tabs of your own, read what a metric means, drill into a point and export the data, all in the Builders Hub Analytics tool.
+description: Add metrics to a board, make tabs of your own, read what a metric means, drill into a point and export the data, all in the Builder Hub Analytics tool.
 ---
 
-# Builders Hub: Boards & Custom Query
+# Builder Hub: Boards & Custom Query
 
-This page covers working with the panels in **View analytics**: adding them, arranging them, reading them and taking the data out. For the boards themselves, sample data and the filters, see [View analytics](builders_hub_analytics).
+This page covers working with the panels in **View analytics**: adding them, arranging them, reading them and taking the data out. For the boards themselves, sample data and the filters, see [View analytics](builder_hub_analytics).
 
 Everything here works the same with sample data and with your own account. Your boards and tabs are saved in your browser.
 
@@ -15,7 +15,7 @@ Everything here works the same with sample data and with your own account. Your 
 
 Each metric on a board is a panel.
 
-![A panel: the title with a drag handle, the Table, Refresh and CSV buttons and the Board range picker, the chart, and the ? button at the bottom](../assets/builders-hub/ui/analytics-panel.webp)
+![A panel: the title with a drag handle, the Table, Refresh and CSV buttons and the Board range picker, the chart, and the ? button at the bottom](../assets/builder-hub/ui/analytics-panel.webp)
 
 _One panel. The controls sit in its header; the **?** at the bottom explains the metric._
 
@@ -59,7 +59,7 @@ To start over, click **Reset board**. It only resets the board on screen.
 2. In **Create a new tab**, type a **Tab name** (up to 28 characters; the hub suggests *My tab 1*), then click **Create tab**.
 3. The new tab joins the tab bar after **Audience** and opens empty. Pick metrics from **Add a widget**, or build one on **Custom query** and add it here.
 
-![Create a new tab: the Tab name field with My tab 1 and the Create tab button](../assets/builders-hub/ui/analytics-new-tab.webp)
+![Create a new tab: the Tab name field with My tab 1 and the Create tab button](../assets/builder-hub/ui/analytics-new-tab.webp)
 
 _Your own tab starts empty and shares the time range and filters with every other tab._
 
@@ -77,7 +77,7 @@ You can have up to 12 tabs of your own. If two tabs would get the same name, the
 
 **Custom query** shows every metric the API exposes. You build the request yourself, preview it, then **Add to** any board with the query attached.
 
-![Custom query: the Query rail with Category, Metric, Time range, Interval and View / chart type, and the rendered chart with the Add to button](../assets/builders-hub/ui/analytics-custom-query.webp)
+![Custom query: the Query rail with Category, Metric, Time range, Interval and View / chart type, and the rendered chart with the Add to button](../assets/builder-hub/ui/analytics-custom-query.webp)
 
 _Custom query: choose a metric and its parameters on the right, render it, then add it to a board._
 
@@ -111,7 +111,7 @@ Click **?** at the bottom of any panel, or next to the metric in Custom query. T
 - **About this metric**: **What it measures**, **Potential use cases** and **How to read it**, written for people rather than machines. Where a metric is rated, a **Reference** block explains the bands.
 - **API reference**: the route behind the panel, with **What it does**, **Limitations & caveats**, **Parameters**, **Response structure**, an **Example response (from the spec)** and the **Rate limit**.
 
-![The ? window for H5Live · Latency: About this metric with What it measures, Potential use cases and How to read it](../assets/builders-hub/ui/analytics-about-metric.webp)
+![The ? window for H5Live · Latency: About this metric with What it measures, Potential use cases and How to read it](../assets/builder-hub/ui/analytics-about-metric.webp)
 
 _The ? window. About this metric explains the number; API reference documents the route._
 
@@ -126,7 +126,7 @@ The window that opens shows:
 - **By stream**: the same request, narrowed to each stream in the query, as a table you can download with **CSV**. For a metric that adds up across streams (bytes, views), the rows sum to the value you clicked. For an average, a ratio or a duration, each row is that stream's own figure.
 - **Records behind this point** (or **Record for this bucket**): the API's raw record for what you clicked, with the request that returned it.
 
-![The drill-down window for one point: the By stream table with share percentages and the record behind the point](../assets/builders-hub/ui/analytics-drilldown.webp)
+![The drill-down window for one point: the By stream table with share percentages and the record behind the point](../assets/builder-hub/ui/analytics-drilldown.webp)
 
 _Drilling into one bucket of Usage · Bytes: each stream's share of the total._
 
@@ -140,12 +140,12 @@ Panels such as **World · Playtime by country**, **World · Latency by country**
 - Hover over a country for its value, and click it to drill down.
 - Switch to **Table** for the same numbers per country.
 
-![World · Playtime by country on the map, with the zoom controls](../assets/builders-hub/ui/analytics-world-map.webp)
+![World · Playtime by country on the map, with the zoom controls](../assets/builder-hub/ui/analytics-world-map.webp)
 
 _The world map. Click a country to see the streams behind its number._
 
 ## Next steps
 
-- [View analytics](builders_hub_analytics): the boards, sample and live data, filters and Key numbers on Home
-- [Developer Mode](builders_hub_developer_mode): the API calls behind each page
+- [View analytics](builder_hub_analytics): the boards, sample and live data, filters and Key numbers on Home
+- [Developer Mode](builder_hub_developer_mode): the API calls behind each page
 - [Analytics API v2 reference](https://api.nanostream.cloud/docs/analytics/v2/)

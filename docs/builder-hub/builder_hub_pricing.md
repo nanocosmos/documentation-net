@@ -1,13 +1,13 @@
 ---
-id: builders_hub_pricing
-title: "Builders Hub: Pricing and Packages"
+id: builder_hub_pricing
+title: "Builder Hub: Pricing and Packages"
 sidebar_label: Pricing & Packages
-description: Compare the nanocosmos packages side by side in the Builders Hub, switch between monthly and yearly billing, and book a package from the hub.
+description: Compare the nanocosmos packages side by side in the Builder Hub, switch between monthly and yearly billing, and book a package from the hub.
 ---
 
-# Builders Hub: Pricing and Packages
+# Builder Hub: Pricing and Packages
 
-The free account gives you every feature, with 50 GB of traffic free every month. When you're ready for a real audience, **Packages** in the Builders Hub compares what each package adds and lets you book one from the same page.
+The free account gives you every feature, with 50 GB of traffic free every month. When you're ready for a real audience, **Packages** in the Builder Hub compares what each package adds and lets you book one from the same page.
 
 :::tip Current prices
 The hub always shows the current prices. You can also find them on [nanocosmos.net/pricing](https://www.nanocosmos.net/pricing).
@@ -45,7 +45,7 @@ Packages shows one table with a column per package:
 
 Click or hover over the **ⓘ** next to a package name to see who it's best for.
 
-![The Packages comparison table: the Monthly and Yearly switch, one column per package with its price and Book button, and a row for each feature](../assets/builders-hub/ui/pricing-packages.webp)
+![The Packages comparison table: the Monthly and Yearly switch, one column per package with its price and Book button, and a row for each feature](../assets/builder-hub/ui/pricing-packages.webp)
 
 _One column per package. The Book button closes each column._
 
@@ -66,7 +66,7 @@ Each column shows the package's price and the rows that differ between packages:
 
 Use the **Monthly** / **Yearly** switch above the table. With **Yearly**, the table shows the price per year. The corner of the table shows which billing you're looking at, and that prices exclude VAT.
 
-![The Packages table with Yearly selected, showing prices per year](../assets/builders-hub/ui/pricing-yearly.webp)
+![The Packages table with Yearly selected, showing prices per year](../assets/builder-hub/ui/pricing-yearly.webp)
 
 _Yearly billing: the table shows the price per year._
 
@@ -94,7 +94,7 @@ Write to us and we move your account to the new package. Your streams and settin
 
 Under the table, **Questions about packages** answers the common questions. Click a question to open it.
 
-![Questions about packages under the table, with What is included in every package? open](../assets/builders-hub/ui/pricing-faq.webp)
+![Questions about packages under the table, with What is included in every package? open](../assets/builder-hub/ui/pricing-faq.webp)
 
 _The FAQ answers what every package includes and which add-ons you can book._
 
@@ -121,6 +121,6 @@ The other questions cover which package you need, yearly billing, extra traffic,
 
 ## Next steps
 
-- [Accounts & Access](builders_hub_accounts): what guests, free accounts and production accounts see
-- [View analytics](builders_hub_analytics): check your traffic and peak viewers before you pick a package
+- [Accounts & Access](builder_hub_accounts): what guests, free accounts and production accounts see
+- [View analytics](builder_hub_analytics): check your traffic and peak viewers before you pick a package
 - [nanocosmos.net/pricing](https://www.nanocosmos.net/pricing)
