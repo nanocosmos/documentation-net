@@ -11,12 +11,12 @@ description: Fixes for common chroma key problems such as leftover green, holes,
 
 | What you see | Likely cause | Fix |
 |---|---|---|
-| **Patches of green or blue stay in the background** | Similarity is too low | Raise **Similarity** in steps of 0.05. Check that the key colour matches the real screen colour (use **Pick Color** or **Autotune**). Check the screen lighting. |
+| **Patches of green or blue stay in the background** | Similarity is too low | Raise **Similarity** in small steps (about 0.005–0.01). Check that the key colour matches the real screen colour (use **Pick Color** or **Autotune**). Check the screen lighting. |
 | **Holes or see-through areas in the presenter** | Similarity is too high, so parts of the skin or clothing match the key colour | Lower **Similarity** step by step. Make sure the presenter isn't wearing anything in the key colour. |
-| **Jagged, hard edges** | Blend is too low | Raise **Blend** to 0.08–0.15. |
-| **A see-through halo around the presenter** | Blend is too high | Lower **Blend** to 0.05–0.08. |
-| **Green or blue tint on skin, hair and edges** | Spill: screen light reflecting onto the presenter | Turn on **Despill**, set the type to match the screen, and raise **Mix** to 0.40–0.60. Try **Green kit** or **Blue kit**. On set, move the presenter further from the screen and add a rim light. |
-| **Skin looks pink or magenta** | Despill is too strong | Lower **Mix** to 0.25–0.35. A little green on the edges looks better than magenta skin. |
+| **Jagged, hard edges** | Blend is too low | Raise **Blend** slightly, in small steps. |
+| **A see-through halo around the presenter** | Blend is too high | Lower **Blend** in small steps. |
+| **Green or blue tint on skin, hair and edges** | Spill: screen light reflecting onto the presenter | Turn on **Despill**, set the type to match the screen, and raise **Mix**, or start from **Green kit** / **Blue kit**. On set, move the presenter further from the screen and add a rim light. |
+| **Skin looks pink or magenta** | Despill is too strong | Lower **Mix** in small steps. A little green on the edges looks better than magenta skin. |
 | **Edges flicker during movement** | Similarity is right at the border, so edge pixels switch between visible and removed | Move Similarity clearly up or down, and raise Blend slightly. |
 
 ## Stream not updating after Apply
@@ -27,15 +27,16 @@ description: Fixes for common chroma key problems such as leftover green, holes,
 
 **Fix:**
 
-1. Check that you're in **Live** mode and the right target is on-air (red tally). **Apply** only changes the on-air output.
+1. Check the output's card: **● Needs Apply** means the change hasn't been saved yet. **Apply** saves the key settings and every output's background and overlay, whichever output is on-air.
 2. Check that **Stop & unlock after Apply** is on (it is by default), then apply again. Or click **Bounce**.
-3. If the output still doesn't update, restart the broadcast from your encoder.
+3. If the output still doesn't update, stop and restart the broadcast in your encoder.
 
 Stop & unlock and Bounce restart the ingest and briefly interrupt the stream. Key, despill, EQ and overlay position changes don't need a restart: in Live mode they apply in real time.
 
 ## Player shows a black screen
 
 - Look at the signal strip on the ingest card. **Waiting for signal** (red) means nothing is arriving: check that your encoder uses the **Server** and **Stream Key** from the ingest card. **Where do I publish? →** takes you there.
+- Check the server in your encoder: it must be `rtmp://bintu-studio.nanocosmos.de/live`. Another RTMP server can accept your stream without starting the chroma key, so the outputs stay black even though the ingest is live.
 - Make sure your encoder publishes to the ingest, not to an output. An output's **Output name** isn't a publish target.
 - Check that playback isn't paused (click **Start playback**).
 - In **Live**, click **Ingest**. If the raw feed doesn't play, the problem is the encoder or ingest, not the chroma key.
@@ -84,7 +85,7 @@ Yes. Each output has its own background, overlay, tags and transcodes. Overlays 
 
 ### Can I use a live stream as a background?
 
-Yes. Type the stream name of another nanoStream stream in the **Background** field. That stream must be live on the **Production** environment.
+Yes. Type the stream name or stream ID of another nanoStream stream in the **Background** field. That stream must be live.
 
 ### Can I reuse a setup instead of configuring everything again?
 

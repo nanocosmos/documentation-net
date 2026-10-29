@@ -41,11 +41,7 @@ Each output has one background. In the **Background** field you can:
 
 - pick an uploaded **MP4**, **PNG** or **JPG** from the ▾ list (videos loop)
 - type a filename
-- type the **stream name** of another live nanoStream stream, to use live video as the background
-
-:::warning Live-stream backgrounds must run on Production
-If you use another live stream as a background, that stream must be live on the **Production** environment. This applies even if you tune your chroma setup on another environment.
-:::
+- type the **stream name** or **stream ID** of another live nanoStream stream, to use live video as the background
 
 Use the same resolution as your camera (1280×720 or 1920×1080) so the background isn't stretched or letterboxed.
 
@@ -66,15 +62,15 @@ Hover over a flagged field to see the warning. For the recommended export settin
 An overlay is a PNG, usually a transparent logo, placed on top of the keyed picture.
 
 1. Upload the PNG in **Backgrounds** (overlays and backgrounds share one uploader).
-2. Choose it in the output's **Overlay** field. To turn the overlay off, choose **— none —**.
+2. Choose it in the output's **Overlay** field. To turn the overlay off, choose **none**.
 3. Set the position and size in the **Overlay** section under the key controls:
    - **X / Y**: position in pixels from the top-left corner of the frame
    - **Scale %**: size compared with the original PNG (1–500%, where 100% is the original size)
    - **Presets**: one click to place it top-left, top-right, bottom-left, bottom-right or centre
 
-Positions follow the real frame: the ingest's resolution, or 1920×1080 until it's known. The **Frame** label next to the presets shows which size is in use, and presets allow for the overlay's own size so it stays inside the frame.
+Positions follow the real frame: the ingest's resolution, or 1920×1080 until it's known. The **Frame** label below the presets shows which size is in use, and presets allow for the overlay's own size so it stays inside the frame.
 
-The Overlay section acts on whichever output you're currently previewing or have on-air. In Live mode, position changes go to the on-air output in real time.
+The Overlay section acts on whichever output you're currently previewing or have on-air. In Live mode, position changes go to the on-air output in real time. A new **Scale** needs **Apply**.
 
 <ThemedImage
   alt="Overlay position: X and Y in pixels from the top-left corner of the output frame, Scale sets the size, and five preset positions"
@@ -90,7 +86,7 @@ The Overlay section acts on whichever output you're currently previewing or have
 _The Overlay section shows which PNG and target it is editing (here logo_sponsorA.png · Target 1)._
 
 :::info Overlays are all or none
-An overlay only appears if **every** output has one. Each output can use a different PNG. When you pick an overlay for one output, the tuner fills in the others for you, and choosing **— none —** clears them all.
+An overlay only appears if **every** output has one. Each output can use a different PNG. When you pick an overlay for one output, the tuner fills in the others for you, and choosing **none** clears them all.
 :::
 
 ## Tags
@@ -114,4 +110,8 @@ To delete an output, click **✕** on its card. The **↗** icon opens that stre
 
 ## Applying changes to a live output
 
-Key, despill, EQ and overlay position changes go to the on-air output in real time in Live mode. A new background or overlay needs **Apply**: the card shows **● Needs Apply** until you click it. With **Stop & unlock after Apply** on (the default), the ingest restarts after Apply so the change takes effect straight away. If an output still shows the old background after you apply, see [Stream not updating after Apply](chroma_key_troubleshooting#stream-not-updating-after-apply).
+Key, despill, EQ and overlay position changes go to the running stream in real time in Live mode. A new background or overlay needs **Apply**: the card shows **● Needs Apply** until you click it. With **Stop & unlock after Apply** on (the default), the ingest restarts after Apply so the change takes effect straight away. If an output still shows the old background after you apply, see [Stream not updating after Apply](chroma_key_troubleshooting#stream-not-updating-after-apply).
+
+## Watch every output at once
+
+In the [Builders Hub](../builders-hub/builders_hub_overview), **Build › Multi-Brand › Watch branded outputs** plays your green-screen input and every branded output side by side, so you can check each background and overlay in one place. See [Watch branded outputs](../builders-hub/builders_hub_chroma_key#watch-branded-outputs).

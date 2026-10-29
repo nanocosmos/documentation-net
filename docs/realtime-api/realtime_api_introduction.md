@@ -16,6 +16,10 @@ The API supports two features:
 - **[On-Demand Recording](realtime_api_recording):** start and stop recording a live stream at any time. Each recording session produces its own file.
 - **[Multi-Camera Switching](realtime_api_switching):** switch between camera angles in real time. Viewers watch one continuous video while you decide which camera is on air.
 
+:::tip Try it without code
+Both features have a tool in the [Builders Hub](../builders-hub/builders_hub_overview) that runs them on your own streams: [Record on demand](../builders-hub/builders_hub_recording) and [Set up multi-camera](../builders-hub/builders_hub_multicamera).
+:::
+
 ## How it works
 
 The Real-Time API sits between your application and nanoStream Cloud. Your application sends REST calls, and the API carries them out on your live streams.
@@ -34,7 +38,7 @@ _Your application sends REST calls; the Real-Time API applies them to your live 
 
 ## Base URL and authentication
 
-All requests go to the production API:
+All requests go to:
 
 ```
 https://real-time-api.nanostream.cloud

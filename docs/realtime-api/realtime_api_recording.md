@@ -17,6 +17,10 @@ Use it when you only need specific moments: a key segment of a live event, a com
 With [Live Recording](../cloud/live-recording-vod), every incoming stream is recorded automatically. On-Demand Recording gives you manual control: you decide when recording starts and stops, and you can run several recording sessions on the same stream.
 :::
 
+:::tip Try it without code
+The [Builders Hub](../builders-hub/builders_hub_overview) has a **Record on demand** tool that starts and stops recordings on your own stream and plays each file back. In the hub, each recording stops after 30 seconds. See [Builders Hub: Record on Demand](../builders-hub/builders_hub_recording).
+:::
+
 ## How it works
 
 1. **Start streaming.** Set up and start your live stream as usual.
@@ -46,7 +50,7 @@ In the examples below, `{stream}` is your stream name (for example `XXXXX-YYYYY`
 
 ## Step 1: Start your live stream
 
-Start a live stream from the nanoStream Cloud Dashboard or any supported encoder. See [Start Streaming](../cloud/live_encoding). The stream must be live before you start a recording.
+Start a live stream from the nanoStream Cloud Dashboard or any supported encoder. See [Live Encoding](../cloud/live_encoding). The stream must be live before you start a recording.
 
 ## Step 2: Start a recording
 
@@ -120,7 +124,7 @@ curl https://real-time-api.nanostream.cloud/stream/{stream}/rec/files \
 }
 ```
 
-Files usually appear within about a minute after a recording stops. `size` and `createdAt` can be `null` until the file is ready.
+Files usually appear within about a minute after a recording stops. `size` and `createdAt` can be `null` until the file is ready. The list also includes files from automatic Live Recording, newest first.
 
 ## Endpoints
 
@@ -136,6 +140,7 @@ Files usually appear within about a minute after a recording stops. `size` and `
 | `400` | Missing or invalid input, for example a filename with `-` |
 | `401` | Missing or invalid bintu token |
 | `403` | The stream doesn't belong to your organisation |
+| `404` | The stream wasn't found |
 | `502` / `504` | An upstream service returned an error or couldn't be reached. Try again. |
 
 For full schemas, see the interactive [Real-Time API Reference](https://real-time-api.nanostream.cloud/docs).

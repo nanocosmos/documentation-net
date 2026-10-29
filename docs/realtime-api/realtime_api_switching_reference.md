@@ -9,7 +9,7 @@ import ThemedImage from '@theme/ThemedImage';
 
 # Multi-Camera Switching: API Reference
 
-Multi-camera switching uses three endpoints of the nanoStream **Real-Time API**. For a walkthrough, see [Multi-Camera Stream Switching](realtime_api_switching).
+Multi-camera switching uses three endpoints of the nanoStream **Real-Time API**. For a walkthrough, see [Multi-Camera Switching](realtime_api_switching).
 
 **Base URL:** `https://real-time-api.nanostream.cloud`
 
@@ -55,12 +55,12 @@ Sets up a stream group (room) and returns a ready-to-embed player URL. Call it o
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| `roomId` | string | No | Your name for the group, for example `roulette-7`. If you leave it out, one is generated. |
+| `roomId` | string | No | Your name for the group, for example `roulette-7`. If you leave it out, one is generated from your organisation and the default angle's label, so set your own `roomId` when you run more than one group. |
 | `streams` | array | Yes | 1–10 camera angles. Exactly one must have `active: true`. |
-| `streams[].label` | string | Yes | Your name for the angle, for example `wide`. Must be unique within the group. Used in switch calls. |
+| `streams[].label` | string | Yes | Your name for the angle, for example `wide`. Must be unique within the group. Labels are compared case-insensitively. Used in switch calls. |
 | `streams[].stream` | string | Yes | Stream name (`XXXXX-YYYYY`) or stream ID (UUID) |
 | `streams[].active` | boolean | No | `true` for the angle viewers see first. Default `false`. |
-| `security.jwtoken` | string | No | Playback token for organisations with [secure playback](../cloud/security_token_best_practices). Built into the player URL. |
+| `security.jwtoken` | string | No | Playback token for organisations with [Secure Playback](../dashboard/secure_playback). Built into the player URL. |
 
 ```json
 {
@@ -87,7 +87,9 @@ Sets up a stream group (room) and returns a ready-to-embed player URL. Call it o
 |---|---|
 | `400` | Missing or invalid input, for example no `active` angle, or more than one |
 | `401` | Missing or invalid bintu token |
+| `403` | A stream doesn't belong to your organisation |
 | `404` | A stream wasn't found in your account |
+| `502` | An upstream service returned an error. Try again. |
 | `504` | An upstream service couldn't be reached. Try again. |
 
 ## PUT /rooms/\{roomId\}/switch
@@ -137,6 +139,7 @@ Changes the angle that's on air. All connected players switch to it.
 |---|---|
 | `400` | Missing or invalid input, for example `active` isn't in `angles` |
 | `401` | Missing or invalid bintu token |
+| `502` | An upstream service returned an error. Try again. |
 | `504` | An upstream service couldn't be reached. Try again. |
 
 ## GET /rooms/\{roomId\}/events
@@ -176,7 +179,7 @@ data: {"roomId":"roulette-7","active":"wheel","seq":1726900749616,"source":{"str
 
 _A source event arrives on connect if an angle is already on air, and again on every switch._
 
-The event stream only contains the angle on air. Viewers never receive the full list of angles.
+Viewers never receive the full list of angles.
 
 ## Player URL parameters
 
@@ -184,7 +187,7 @@ The `playerUrl` from `/rooms/setup` already contains everything the player needs
 
 | Parameter | Description |
 |---|---|
-| `security.jwtoken` | Playback token for secure playback, if you didn't pass one to `/rooms/setup` |
+| `group.security.jwtoken` | Playback token for secure playback, if you didn't pass one to `/rooms/setup` |
 
 **Defaults:** autoplay on, starts muted (`automute`), fast start on, `latencyControlMode=balancedadaptive`.
 
@@ -208,7 +211,8 @@ All errors use the same JSON shape:
 | `forbidden` | 403 |
 | `stream_not_found` | 404 |
 | `internal_error` | 500 |
-| `upstream_error` | 502 |
+| `bintu_error` | 502 |
+| `vtrans_error` | 502 |
 | `upstream_unavailable` | 504 |
 
 ## Interactive reference

@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 
 # Multi-Camera Switching
 
-**Multi-camera stream switching** lets you cut between several camera angles, such as a wide shot, a close-up of the roulette wheel and the dealer, while your viewers watch **one continuous video**. Each angle is a normal nanoStream live stream. You decide which angle is on air, and every connected player follows within a moment.
+**Multi-camera switching** lets you cut between several camera angles, such as a wide shot, a close-up of the roulette wheel and the dealer, while your viewers watch **one continuous video**. Each angle is a normal nanoStream live stream. You decide which angle is on air, and every connected player follows within a moment.
 
 There's no video mixer or production software involved. Switching is driven by the nanoStream **Real-Time API** and the hosted **Switch Player**.
 
@@ -24,6 +24,8 @@ There's no video mixer or production software involved. Switching is driven by t
 
 :::tip Try it first
 Open the [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switch-player/demo.html), sign in with your Dashboard account, and set up a group of angles in a few minutes. The demo shows every API call it makes, so you can copy them into your own integration.
+
+You can also set up and switch camera angles in the Builders Hub, under **Build › Stream › Set up multi-camera**. See [Builders Hub: Set up Multi-Camera](../builders-hub/builders_hub_multicamera).
 :::
 
 ## How it works
@@ -55,13 +57,13 @@ _Your backend decides when to cut. The Real-Time API tells every player, and eac
 
 The [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switch-player/demo.html) walks through the same steps as the API, in four stations. Use it to try switching before you write any code, or to show it to your team.
 
-**1. Connect.** Choose the environment and sign in with your Dashboard email and password, or with an API key.
+**1. Connect.** Sign in with your Dashboard email and password, or with an API key.
 
-![Connect station: environment set to Production, email and password entered, Sign in button](../assets/realtime-api/switch-ui-connect.webp)
+![Connect station: email and password entered, Sign in button](../assets/realtime-api/switch-ui-connect.webp)
 
 _Sign in with the same account you use for the Dashboard._
 
-**2. Camera Angles.** Choose how many angles you need (2–6). **Create new** makes a fresh stream for each angle, with optional tags and transcodes. **Use existing** lets you pick streams your organisation already has.
+**2. Camera Angles.** Choose how many angles you need (2–6). **Create new** makes a fresh stream for each angle, with optional tags and transcodes. **Use existing** lets you pick streams your organisation already has. Then click **Configure Streams**.
 
 ![Camera Angles in Create new mode: two angles named wide and close, tagged multicam, with transcode chips](../assets/realtime-api/switch-ui-angles-create.webp)
 
@@ -87,14 +89,14 @@ _Cut to wheel: the player follows, and the status line shows the sequence number
 
 ## Before you start
 
-- A nanoStream account with Multi-Camera Stream Switching enabled (see the note below)
-- One **live stream per camera angle** (up to 10), with an encoder sending to each. See [Start Streaming](../cloud/live_encoding).
+- A nanoStream account with Multi-Camera Switching enabled (see the note below)
+- One **live stream per camera angle** (up to 10), with an encoder sending to each. See [Live Encoding](../cloud/live_encoding).
 - A **bintu token** for API calls (see [Authentication](realtime_api_switching_reference#authentication))
 
-The examples below use the production API, `https://real-time-api.nanostream.cloud`.
+The examples below call `https://real-time-api.nanostream.cloud`.
 
 :::info Business feature
-Multi-Camera Stream Switching requires a business upgrade. Contact our sales team through the [contact form](https://www.nanocosmos.de/contact) or by email to sales(at)nanocosmos.de.
+Multi-Camera Switching requires a business upgrade. Contact our sales team through the [contact form](https://www.nanocosmos.de/contact) or by email to sales(at)nanocosmos.de.
 :::
 
 ## Step 1: Set up a stream group
@@ -158,8 +160,8 @@ The response contains the `playerUrl` you embed in Step 2:
 ```
 
 - `stream` accepts a stream name (`XXXXX-AAAAA`) or a stream ID (UUID).
-- `roomId` is optional. If you leave it out, one is generated for you.
-- Labels must be unique within a group. You use them in every switch call.
+- `roomId` is optional. If you leave it out, one is generated from your organisation and the default angle's label, so set your own `roomId` when you run more than one group.
+- Labels must be unique within a group. Labels are compared case-insensitively. You use them in every switch call.
 
 :::info Secure playback
 If your organisation uses [secure playback tokens](../cloud/security_token_best_practices), add `"security": { "jwtoken": "<playback token>" }` to the setup request. The token is built into the player URL so the player can authenticate.
@@ -231,6 +233,7 @@ Every player in the group switches to the `wheel` angle.
 
 ## Next steps
 
-- [Stream Switching API Reference](realtime_api_switching_reference): every endpoint, field, event and error
+- [Multi-Camera Switching: API Reference](realtime_api_switching_reference): every endpoint, field, event and error
 - [Stream Switching demo](https://web.pages.gitlab.nanocosmos.cloud/switch-player/demo.html): try it in your browser
-- [Secure Playback](../cloud/security_token_best_practices): protect your streams with tokens
+- [Builders Hub: Set up Multi-Camera](../builders-hub/builders_hub_multicamera): the same flow in the Builders Hub
+- [Secure Playback](../dashboard/secure_playback): protect your streams with tokens

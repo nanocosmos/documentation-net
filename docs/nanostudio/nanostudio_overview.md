@@ -51,6 +51,7 @@ nanoStudio features are enabled per organisation. To enable Chroma Key on your a
 ## Resources
 
 - [Chroma Setup Tuner](https://chromakey.nanocosmos.net/chroma-setup-tuner.html): set up and tune chroma key
+- [Builders Hub: Chroma Key and Branded Outputs](../builders-hub/builders_hub_chroma_key): set up chroma key and watch every branded output in the Builders Hub
 - [nanoStream Real-Time API](../realtime-api/realtime_api_introduction): on-demand recording and multi-camera switching
 - [bintu API](../cloud/bintu_api): create and manage streams programmatically
 - [Support](../cloud/support)

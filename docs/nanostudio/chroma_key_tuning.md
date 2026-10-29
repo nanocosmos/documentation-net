@@ -16,7 +16,7 @@ Load a representative frame, click **Autotune**, then adjust **Similarity** and 
 :::
 
 :::info Every control works in real time
-In Live mode, changes to the key colour, similarity, blend, despill, EQ and overlay position go to the on-air output straight away, without restarting the stream. Click **Apply Now** to save them to the stream. See [Push your settings to the live stream](#push-your-settings-to-the-live-stream).
+In Live mode, changes to the key colour, similarity, blend, despill, EQ and overlay position go to the running stream straight away, without restarting it. Click **Apply Now** to save them to the stream. See [Push your settings to the live stream](#push-your-settings-to-the-live-stream).
 :::
 
 
@@ -45,7 +45,7 @@ _Live: the on-air target has a red tally._
 | Mode | Clicking a source tab… | Tally |
 |---|---|---|
 | **Preview** | shows that source in a local preview, so you can experiment without touching the live stream | Amber |
-| **Live** | puts that source **on-air** and makes it the output your changes go to, in real time | Red |
+| **Live** | puts that source **on-air**. Key changes apply to all outputs in real time; you watch them on the on-air output. | Red |
 
 ### Preview sources
 
@@ -59,7 +59,7 @@ _The key controls column, top to bottom: key colour, Similarity, Blend, Autotune
 
 ## Key colour
 
-The colour to remove. Choose **Green** or **Blue**, or use **Pick Color** to sample the actual screen colour from the frame.
+The colour to remove. Choose **Green** or **Blue**, enter a **Custom Color** (hex or RGB), or use **Pick Color** to sample the actual screen colour from the frame.
 
 Don't assume your screen is pure `#00FF00`. Lighting and camera settings change the real colour, and sampling it (or running Autotune) gives a cleaner key.
 
@@ -81,7 +81,7 @@ Always check the result against your picture, especially hair and hands, and fin
 | **Similarity** | How much of the colour range around the key colour is removed | Patches of screen stay visible | Holes appear in the presenter. Fine detail such as hair and fingers is lost. |
 | **Blend** | How softly the edge fades between presenter and background | Hard, jagged edges | A see-through halo around the presenter |
 
-The tuner starts at **Similarity 0.25** and **Blend 0.10**. Change Similarity in steps of about **0.05**. Most setups end up with Blend between **0.05** and **0.15**.
+The tuner starts at **Similarity 0.25** and **Blend 0.10**; Autotune usually lands much lower (around 0.03–0.12 Similarity, 0.02–0.06 Blend). Change values in small steps of about **0.005–0.01**.
 
 ## Despill
 
@@ -90,13 +90,13 @@ Light from the screen reflects onto the presenter, leaving a green or blue tint 
 Turn Despill on with its switch, then set:
 
 - **Type**: **Green** or **Blue**, matching your screen
-- **Mix**: how strongly the spill is removed. **0.40–0.60** suits most setups.
-- **Green kit / Blue kit**: one-click presets that set both
+- **Mix**: how strongly the spill is removed (default 0.50).
+- **Green kit / Blue kit**: one-click presets that set the type, Mix and the advanced despill values (Mix 0.85 green, 0.75 blue)
 
 If skin starts to look pink or magenta, the despill is too strong. Lower the **Mix**.
 
 :::note Advanced despill controls
-**Expand**, **Red**, **Green**, **Blue**, **Brightness** and **Alpha** fine-tune the despill. Start with a kit, then adjust them if you need to. Like every control, they apply to the on-air output in real time in Live mode.
+**Expand**, **Red**, **Green**, **Blue**, **Brightness** and **Alpha** fine-tune the despill. Start with a kit, then adjust them if you need to. Like every control, they apply to the running stream in real time in Live mode.
 :::
 
 ## EQ
@@ -115,7 +115,7 @@ Hover over, click or tap the **ⓘ** icon next to any control, or move to it wit
 ## Push your settings to the live stream
 
 1. Switch to **Live** and click the target you want to change, so it's on-air.
-2. Adjust the controls. Your changes go to the on-air output in real time, and the status line reads *Applied to running process — not saved yet*.
+2. Adjust the controls. Your changes go to the running stream in real time, and the status line tells you they're applied to the running process but not saved yet.
 3. Click **Apply Now** to save them to the stream, so they're kept when the stream restarts.
 
 | Option | What it does |
@@ -125,10 +125,10 @@ Hover over, click or tap the **ⓘ** icon next to any control, or move to it wit
 | **Stop & unlock after Apply** | On by default. Restarts the ingest after Apply, so the saved configuration, including new backgrounds and overlays, takes effect straight away. |
 | **Stop / Unlock / Bounce** | Manual ingest controls. **Bounce** does Stop and Unlock in one click. |
 
-To tune several outputs, put the first one on-air, tune it and click **Apply Now**, then click the next one. Switching between sources doesn't restart the stream.
+The key, despill and EQ settings are shared by all outputs, so tune once. Put each output on-air to check its background and overlay. Switching between sources doesn't restart the stream.
 
 :::warning Restarting interrupts the stream
-**Stop & unlock after Apply** and **Bounce** briefly interrupt the ingest while your encoder reconnects. Tuning in Live mode doesn't need them, because key, despill, EQ and overlay position changes apply without a restart. If you only want to save tuned values during a show, turn the toggle off before you click **Apply Now**.
+**Stop & unlock after Apply** and **Bounce** briefly interrupt the ingest while your encoder reconnects. Tuning in Live mode doesn't need them, because key, despill, EQ and overlay position changes apply without a restart. If you only want to save tuned values during a show, turn the toggle off before you click **Apply Now**. Make sure your encoder's automatic reconnect is on (in OBS: **Settings → Advanced → Automatically Reconnect**).
 :::
 
 ## Check your key

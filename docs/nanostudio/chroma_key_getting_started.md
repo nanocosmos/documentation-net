@@ -17,6 +17,10 @@ You set everything up in the **Chroma Setup Tuner**, a browser tool that creates
 [chromakey.nanocosmos.net/chroma-setup-tuner.html](https://chromakey.nanocosmos.net/chroma-setup-tuner.html)
 :::
 
+:::info Also in the Builders Hub
+The same tool runs inside the [Builders Hub](../builders-hub/builders_hub_overview) under **Build › Multi-Brand › Set up chroma key**, next to a player that shows every branded output side by side. You can also try chroma key there on our sample content. See [Builders Hub: Chroma Key and Branded Outputs](../builders-hub/builders_hub_chroma_key).
+:::
+
 
 <ThemedImage
   alt="The five steps: sign in, upload, create, tune, go live"
@@ -56,13 +60,13 @@ Every ingest and target is a regular nanoStream Cloud stream. It shows up in the
 |---|---|
 | **nanoStream account** | An API key from the [Dashboard](https://dashboard.nanostream.cloud), or your Dashboard email and password |
 | **Green or blue screen** | Evenly lit |
-| **Encoder** | OBS, vMix, ffmpeg or a hardware encoder that can send RTMP. See [Start Streaming](../cloud/live_encoding). |
+| **Encoder** | OBS, vMix, ffmpeg or a hardware encoder that can send RTMP. See [Live Encoding](../cloud/live_encoding). |
 | **Backgrounds** | MP4 video, PNG or JPG at the same resolution as your camera (1280×720 or 1920×1080) |
 | **Browser** | A current version of Chrome, Firefox, Edge or Safari |
 
 ## Step 1: Sign in
 
-1. Open the [Chroma Setup Tuner](https://chromakey.nanocosmos.net/chroma-setup-tuner.html). It opens on the **Production** environment.
+1. Open the [Chroma Setup Tuner](https://chromakey.nanocosmos.net/chroma-setup-tuner.html).
 2. Sign in with one of these:
    - **API Key**: paste your bintu API key from the Dashboard.
    - **Email & Password**: use your Dashboard login.
@@ -77,10 +81,6 @@ After you sign in, the panel collapses to a summary line:
 ![The collapsed Authenticate panel showing Authenticated and the Org Hash](../assets/nanostudio/ui/chroma-ui-signed-in.webp)
 
 _The summary shows your sign-in status and your Org Hash._
-
-:::note Other environments
-To use another environment, add `?env=staging`, `?env=dev` or `?env=custom` to the tuner URL. A coloured badge in the header, and a prefix in the browser tab title, shows when you're not on Production.
-:::
 
 ## Step 2: Upload backgrounds and overlays
 
@@ -125,8 +125,8 @@ Open **Stream Setup** and choose one of these:
 
 To create new streams:
 
-1. Set **Targets** to the number of outputs you need. Each output gets its own row.
-2. For each row, choose a **Background**. You can pick an uploaded file, type a filename or URL, or enter the stream name of another live stream to use it as the background.
+1. Set **Targets** to the number of outputs you need. Each output gets its own row. Optionally add **Ingest tags** for the ingest stream, or turn on **Add timecode** to add timecode metadata to the new streams.
+2. For each row, choose a **Background**. You can pick an uploaded file, type a filename or URL, or enter the stream name or stream ID of another live stream to use it as the background.
 3. Optionally choose an **Overlay** PNG, add **Tags** (for example `sponsorA, studio1`), and tap the **Transcodes** you want for adaptive bitrate playback.
 4. Click **Create Chroma Key Streams**.
 
@@ -136,12 +136,24 @@ _Three targets, each with its own background, tags, overlay and 1080p + 720p ren
 
 The tuner creates the ingest and all targets and shows them under **Stream Information**. The ingest card scrolls into view and pulses once.
 
-- **① Point your encoder here** (the ingest card) shows the **Server** and **Stream Key** to enter in your encoder, each with a **Copy** button. **Copy full URL** copies both in one go (`server/key`) for single-field encoders such as ffmpeg, vMix and Larix. A tag shows which environment and ingest host the server belongs to, for example *Production · bintu-studio*.
+- **① Point your encoder here** (the ingest card) shows the **Server** and **Stream Key** to enter in your encoder, each with a **Copy** button. **Copy full URL** copies both in one go (`server/key`) for single-field encoders such as ffmpeg, vMix and Larix.
+
+  The **Server** for a chroma key ingest is always:
+
+  ```
+  rtmp://bintu-studio.nanocosmos.de/live
+  ```
+
+  Publishing to this server is what starts the chroma key for your outputs.
 - **② Keyed outputs** has one card per target. A target's **Output name** is not something you publish to. Your encoder only ever sends to the ingest.
 
-![Stream Information: the ingest card with the Receiving signal strip, Server and Stream Key with Copy buttons and the environment tag, followed by the keyed output cards](../assets/nanostudio/ui/chroma-ui-stream-cards.webp)
+![Stream Information: the ingest card with the Receiving signal strip, Server and Stream Key with Copy buttons, followed by the keyed output cards](../assets/nanostudio/ui/chroma-ui-stream-cards.webp)
 
 _The ingest card shows exactly what to enter in your encoder. Each output card can be edited while live._
+
+:::warning Use the chroma key server
+Send your camera to `rtmp://bintu-studio.nanocosmos.de/live` with the ingest's **Stream Key**. If your encoder sends the same stream key to another RTMP server, for example one copied from the Dashboard or an older setup, the stream can arrive but the chroma key doesn't start, and your outputs stay black.
+:::
 
 For details on each field, see [Outputs & Branding](chroma_key_outputs).
 
@@ -186,25 +198,25 @@ For what each control does, see [Tuning the Key](chroma_key_tuning).
 ## Step 5: Go live
 
 1. Switch to **Live**.
-2. Click a target tab to put it **on-air**. The red tally shows which output your changes go to. Switching between sources only changes the player and doesn't restart the stream.
-3. Adjust the controls. In Live mode **every chroma control works in real time**: key colour, similarity, blend, despill, EQ and overlay position go to the on-air output straight away, without restarting the stream. The status line reads *Applied to running process — not saved yet*.
+2. Click a target tab to put it **on-air**. The red tally shows which output is on air. Key, despill and EQ settings apply to all outputs; overlay position applies to the output you've selected. Switching between sources only changes the player and doesn't restart the stream.
+3. Adjust the controls. In Live mode **every chroma control works in real time**: key colour, similarity, blend, despill, EQ and overlay position go to the running stream straight away, without restarting it. The status line tells you the change is applied to the running process but not saved yet.
 4. Click **Apply Now** to save your settings to the stream, so they're kept when the stream restarts. New backgrounds and overlays also need Apply: an output card shows **● Needs Apply** until you do.
 
    <img src={require('../assets/nanostudio/ui/chroma-ui-apply-panel.webp').default} alt="The Apply panel: the Apply button, Reset Defaults, the Stop & unlock after Apply toggle switched on, and the Stop, Unlock and Bounce ingest controls" width="420" />
 
-   **Stop & unlock after Apply** is on by default. After every Apply, the tuner **stops the ingest stream and then unlocks it**, so the running stream restarts with the saved configuration and new backgrounds and overlays take effect straight away. Each restart briefly interrupts the stream while your encoder reconnects. **Bounce** does the same stop and unlock once, when you click it. If the output still doesn't update, restart the broadcast from your encoder.
-5. Click the next target to put it on-air and tune it the same way.
+   **Stop & unlock after Apply** is on by default. After every Apply, the tuner **stops the ingest stream and then unlocks it**, so the running stream restarts with the saved configuration and new backgrounds and overlays take effect straight away. Each restart briefly interrupts the stream while your encoder reconnects. **Bounce** does the same stop and unlock once, when you click it. Make sure your encoder's automatic reconnect is on (in OBS: **Settings → Advanced → Automatically Reconnect**).
+5. Click the next target to put it on-air and check it. Key settings are shared, so you only need to adjust its overlay and background.
 
 The Apply button reads **Apply Now** in Live mode and **Apply to Stream** in Preview mode.
 
 ![The workbench in Live mode with target 1 on-air, shown by a red tally and a red border around the player](../assets/nanostudio/ui/chroma-ui-workbench-live.webp)
 
-_Live mode: the red tally and border show the on-air target. Your changes go to this output in real time._
+_Live mode: the red tally and border show the on-air target. You see your changes on it in real time._
 
 **Player ↗** opens the outputs in a standalone player, and **Multiplayer ↗** shows the ingest and all targets side by side.
 
 :::tip Key sequence
-Tune in **Preview** → **Apply to Stream** → switch to **Live** → restart your broadcast if the output doesn't update.
+Tune in **Preview** → **Apply to Stream** → switch to **Live**.
 :::
 
 Your chroma configuration is saved with the ingest stream. You can close the tuner while you're live, and open the setup again at any time with [Reuse an existing setup](#reuse-an-existing-setup).
@@ -238,3 +250,4 @@ To hand a setup to someone else, click **Copy setup link** on the ingest card. T
 - [Outputs & Branding](chroma_key_outputs): backgrounds, overlays, tags and transcodes per output
 - [Tuning the Key](chroma_key_tuning): what every control does
 - [Troubleshooting & FAQ](chroma_key_troubleshooting)
+- [Builders Hub: Chroma Key and Branded Outputs](../builders-hub/builders_hub_chroma_key): the same tool inside the Builders Hub
