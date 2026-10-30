@@ -47,12 +47,12 @@ config.source.metrics.serverDomain: 'telemetry.example.com'
 config.source.group.apiurl: 'https://api.example.com'  
 ```
 
-The exception is 'nanocosmos.de' which will result in the standard default values.
+The exception is `nanocosmos.de` which will result in the standard default values.
 
 Combining the baseDomain setting with the lower level serverDomain or apiurl settings is not recommended.
 In this case the lower level setting will take precedence over the baseDomain setting for the particular setting.  
 Example:  
-`config.source.general.baseDomain: 'example.com'` combined with 
+`config.source.general.baseDomain: 'example.com'` combined with  
 `config.source.general.serverDomain: 'play.custom.com'` will result in  
 ```
 config.source.general.serverDomain: 'play.custom.com'  
@@ -60,7 +60,9 @@ config.source.metrics.serverDomain: 'telemetry.example.com'
 config.source.group.apiurl: 'https://api.example.com'  
 ```
 
-### Configuration of a non-default streaming server domain via config.source.general.serverDomain
+### Direct configuration of a non-default streaming server domain
+
+`config.source.general.serverDomain`
 
 Introduced in **nanoStream H5Live Player Version 4.16.0** the general server domain makes the `source.defaults` and `bintu.streamid` configuration more flexible. These configurations use standard geo-load-balanced domains by default. Because the general server domain has the highest priority, it will override (modify) all streaming server domains. To use it, it is necessary to add `config.source.general.serverDomain` with its value, e.g. `bintu-play-eu.nanocosmos.de`. Please find the list here: [nanoStream Cloud Public Standard and geo-loadbalanced URLs](../cloud/support#geo-region-override).
 This requires a fully qualified domain name (FQDN).
@@ -78,7 +80,9 @@ var config = {
     };
 ```
 
-### Configuration of a non-default metrics server domain via config.source.metrics.serverDomain
+### Direct configuration of a non-default metrics server domain
+
+`config.source.metrics.serverDomain`
 
 Introduced in **nanoStream H5Live Player Version 4.31.0** the metrics server domain allows to apply non-default values for the player metrics endpoint.
 This requires a fully qualified domain name (FQDN).
