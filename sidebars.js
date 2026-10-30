@@ -175,6 +175,7 @@ const sidebars = {
             "nanoplayer/nanoplayer_feature_fast_start",
             "nanoplayer/nanoplayer_feature_latency_control_modes",
             "nanoplayer/nanoplayer_feature_stream_group_configuration",
+            "nanoplayer/nanoplayer_feature_domain_configuration",
             "nanoplayer/nanoplayer_token_security",
             "nanoplayer/nanoplayer_feature_stream_switching",
             "nanoplayer/nanoplayer_feature_fullscreen_api",
