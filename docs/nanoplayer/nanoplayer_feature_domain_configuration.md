@@ -51,9 +51,9 @@ The exception is 'nanocosmos.de' which will result in the standard default value
 
 Combining the baseDomain setting with the lower level serverDomain or apiurl settings is not recommended.
 In this case the lower level setting will take precedence over the baseDomain setting for the particular setting.  
-
-Example: 
-config.source.general.baseDomain: 'example.com' combined with config.source.general.serverDomain: 'play.custom.com' will result in  
+Example:  
+`config.source.general.baseDomain: 'example.com'` combined with 
+`config.source.general.serverDomain: 'play.custom.com'` will result in  
 ```
 config.source.general.serverDomain: 'play.custom.com'  
 config.source.metrics.serverDomain: 'telemetry.example.com'  
