@@ -125,7 +125,7 @@ This release fixes an fullscreen issue with MOQ playback on iOS 26.4 and higher 
 
 ### **Release Notes**
 
-This update resolves a slight audio delay in MOQ playback that could gradually become noticeable after repeated stream switches and improves the robustness of `config.general.serverDomain` parsing for edge cases. In addition, `onReady` metrics have been improved, and an inconsistency in error emission for malformed or missing source configurations has been fixed.
+This update resolves a slight audio delay in MOQ playback that could gradually become noticeable after repeated stream switches and improves the robustness of `config.source.general.serverDomain` parsing for edge cases. In addition, `onReady` metrics have been improved, and an inconsistency in error emission for malformed or missing source configurations has been fixed.
 
 ### **Changelog**
 
@@ -137,7 +137,7 @@ This update resolves a slight audio delay in MOQ playback that could gradually b
 ### Improved
 
 - metrics for the `onReady` event
-- robustness of `config.general.serverDomain` parsing for edge cases
+- robustness of `config.source.general.serverDomain` parsing for edge cases
 
 ## **[5.0.4]**
 

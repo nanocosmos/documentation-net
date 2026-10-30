@@ -18,7 +18,7 @@ All domain settings are optional and only required if applying non-default value
 
 Introduced in **nanoStream Player Version 5.1.0** the `config.source.general.baseDomain` setting allows for simpler configuration of non-default domains/FQDNs via a single value instead of setting each value individually.
 
-**The value is expected to be a basic first plus second level domain such as `example.com`, NOT a URL and NOT a fully qualified domain name (FQDN).**
+**The value is expected to be a root domain such as `example.com`, NOT a URL and NOT a fully qualified domain name (FQDN).**
 
 When it is set, the player derives the following values from it:
 - `config.source.general.serverDomain`
