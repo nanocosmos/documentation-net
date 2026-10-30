@@ -1,21 +1,20 @@
 ---
 id: nanoplayer_feature_domain_configuration
-title: Domain Configuration
+title: Configuration of non-default streaming server, API and metrics domains
 sidebar_label: Domain Configuration
 ---
 
-### Configuration of non-default streaming server, API and metrics domains
-
-All domain settings are optional and only required for applying non-default values.
+All domain settings are optional and only required if applying non-default values.
 
 ### Overview of domain settings
 
 - `config.source.general.baseDomain` added in v5.1.0
 - `config.source.general.serverDomain` added in v4.16.0
-- `config.source.metrics.serverDomain` added in v4.31.0
 - `config.source.group.apiurl` added in v4.18.0
+- `config.metrics.serverDomain` added in v4.31.0
 
-### New: Configuration of non-default domains via config.source.general.baseDomain
+
+### Configuration of non-default domains via config.source.general.baseDomain
 
 Introduced in **nanoStream Player Version 5.1.0** the `config.source.general.baseDomain` setting allows for simpler configuration of non-default domains/FQDNs via a single value instead of setting each value individually.
 
@@ -23,8 +22,9 @@ Introduced in **nanoStream Player Version 5.1.0** the `config.source.general.bas
 
 When it is set, the player derives the following values from it:
 - `config.source.general.serverDomain`
-- `config.source.metrics.serverDomain`
 - `config.source.group.apiurl`
+- `config.metrics.serverDomain`
+
 
 Example:
 
@@ -43,7 +43,7 @@ var config = {
 will result in  
 ```
 config.source.general.serverDomain: 'play.example.com'  
-config.source.metrics.serverDomain: 'telemetry.example.com'  
+config.metrics.serverDomain: 'telemetry.example.com'  
 config.source.group.apiurl: 'https://api.example.com'  
 ```
 
@@ -56,7 +56,7 @@ Example:
 `config.source.general.serverDomain: 'play.custom.com'` will result in  
 ```
 config.source.general.serverDomain: 'play.custom.com'  
-config.source.metrics.serverDomain: 'telemetry.example.com'  
+config.metrics.serverDomain: 'telemetry.example.com'  
 config.source.group.apiurl: 'https://api.example.com'  
 ```
 
@@ -82,7 +82,7 @@ var config = {
 
 ### Direct configuration of a non-default metrics server domain
 
-`config.source.metrics.serverDomain`
+`config.metrics.serverDomain`
 
 Introduced in **nanoStream H5Live Player Version 4.31.0** the metrics server domain allows to apply non-default values for the player metrics endpoint.
 This requires a fully qualified domain name (FQDN).
