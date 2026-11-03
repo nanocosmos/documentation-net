@@ -7,7 +7,7 @@ sidebar_label: MoQ
 
 # MoQ
 
-The MoQ page shows metrics for playbacks of the H5Live player that use [Media over QUIC (MoQ)](../nanoplayer/nanoplayer_feature_moq.md).
+The MoQ page shows metrics for playbacks of the player that use [Media over QUIC (MoQ)](../nanoplayer/nanoplayer_feature_moq.md).
 The selected filter options affect all available metrics.
 
 ![Screenshot: MoQ Charts](../assets/analytics/analytics-moq.png)
