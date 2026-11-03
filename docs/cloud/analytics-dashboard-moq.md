@@ -8,35 +8,37 @@ sidebar_label: MoQ
 # MoQ
 
 The MoQ page shows metrics for playbacks of the Player that use [Media over QUIC (MoQ)](../nanoplayer/nanoplayer_feature_moq.md).
+These playbacks are shown here and not on the [H5Live](./h5live) page.
+Most of the metrics are only available with [H5Live metrics](./analytics-introduction.md) enabled.
 The selected filter options affect all available metrics.
 
 ![Screenshot: MoQ Charts](../assets/analytics/analytics-moq.png)
 *Screenshot: MoQ Charts*
 
-### MoQ playback count per os
+### MoQ playback count per OS
 
-Distribution of MoQ playbacks on operating systems (OS), as a percentage and as a count.
+Percentage distribution of MoQ playbacks on operating systems (OS), with the playback count.
 
-![Screenshot: MoQ playback count per os](../assets/analytics/analytics-moq-playback-count-os.png)
-*Screenshot: MoQ playback count per os*
+![Screenshot: MoQ playback count per OS](../assets/analytics/analytics-moq-playback-count-os.png)
+*Screenshot: MoQ playback count per OS*
 
 ### MoQ playback count per browser
 
-Distribution of MoQ playbacks in browsers, as a percentage and as a count.
+Percentage distribution of MoQ playbacks in browsers, with the playback count.
 
 ![Screenshot: MoQ playback count per browser](../assets/analytics/analytics-moq-playback-count-browser.png)
 *Screenshot: MoQ playback count per browser*
 
-### MoQ playtime per os
+### MoQ playtime per OS
 
-Distribution of MoQ playtime on operating systems (OS), as a percentage and as total playtime.
+Percentage distribution of MoQ playtime on operating systems (OS), with the total playtime.
 
-![Screenshot: MoQ playtime per os](../assets/analytics/analytics-moq-playtime-os.png)
-*Screenshot: MoQ playtime per os*
+![Screenshot: MoQ playtime per OS](../assets/analytics/analytics-moq-playtime-os.png)
+*Screenshot: MoQ playtime per OS*
 
 ### MoQ playtime per browser
 
-Distribution of MoQ playtime in browsers, as a percentage and as total playtime.
+Percentage distribution of MoQ playtime in browsers, with the total playtime.
 
 ![Screenshot: MoQ playtime per browser](../assets/analytics/analytics-moq-playtime-browser.png)
 *Screenshot: MoQ playtime per browser*
@@ -102,10 +104,3 @@ The number and types of reasons why MoQ playbacks were stopped or interrupted.
 
 ![Screenshot: Stop reasons](../assets/analytics/analytics-moq-stop-reasons.png)
 *Screenshot: Stop reasons*
-
-### Percentiles of average player latency in seconds
-
-The distribution of the average player latency of MoQ playbacks, shown as the 10th, 25th, 50th, 75th, 85th, 90th and 95th percentile.
-
-![Screenshot: Percentiles of average player latency in seconds](../assets/analytics/analytics-moq-latency-percentiles.png)
-*Screenshot: Percentiles of average player latency in seconds*

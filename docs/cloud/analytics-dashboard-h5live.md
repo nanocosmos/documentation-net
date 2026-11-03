@@ -10,6 +10,12 @@ sidebar_label: H5Live
 Most of the metrics are only available with [H5Live metrics](#h5live) enabled.
 The selected filter options affect all availabe metrics.
 
+:::info
+Since Dashboard version 2.34.0, the H5Live page no longer includes playbacks via [Media over QUIC (MoQ)](../nanoplayer/nanoplayer_feature_moq.md). These playbacks are shown on the [MoQ](./moq) page.
+
+In the [Analytics API](./analytics-api-documentation.md#moq-metrics), the `/v2/h5live/*` routes exclude MoQ playbacks, and the `/v2/moq/*` routes report them separately.
+:::
+
 ![Screenshot: H5Live Charts](../assets/analytics/analytics-h5live.png)
 *Screenshot: H5Live Charts*
 

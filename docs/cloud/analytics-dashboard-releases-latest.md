@@ -7,12 +7,21 @@ sidebar_label: Latest
 
 # Changelog
 
-## 2.33.0 - Expired token revocation & buffering ratio
+## 2.34.0 - MoQ playback statistics
 
-### **Guardian — Token Revocation**
-   -  **expired playback tokens** can now be revoked for a **24-hour grace period** after expiration, so operators can still terminate ongoing playback sessions running on a technically-expired token
-   -  the **Expired** label is decoupled from the Revoke action: the label appears as soon as the token's `exp` is in the past, but the Revoke button stays available during the grace period
+### **MoQ**
+   -  added a new [**MoQ**](./analytics-dashboard-moq.md) page (`/moq`) below **H5Live**. It shows the playback metrics of the [Media over QUIC (MoQ)](../nanoplayer/nanoplayer_feature_moq.md) player with the following widgets
+      -  playback count per OS and per browser (zoom + CSV export)
+      -  playtime per OS and per browser (zoom + CSV export)
+      -  average and median playing time in seconds (zoom + CSV export)
+      -  play buffering ratio in percent (zoom + CSV export)
+      -  player loading count per country (zoom + CSV export)
+      -  used player versions (zoom + CSV export)
+      -  average and median player latency in seconds (zoom + CSV export)
+      -  median play startup time in seconds (zoom + CSV export)
+      -  status/error codes (zoom + CSV export)
+      -  stop reasons (zoom + CSV export)
 
 ### **H5Live**
-   -  the **Buffering Ratio** widget no longer fills future timestamps with zero values; the chart now ends at the last bucket with real data
-   -  buckets with no active streams are shown as a gap ("nothing to measure") instead of 0% ("measured, no buffering"); empty ranges show *No data available*
+   -  the H5Live page no longer includes playbacks via [Media over QUIC (MoQ)](../nanoplayer/nanoplayer_feature_moq.md); these playbacks are now shown on the [**MoQ**](./analytics-dashboard-moq.md) page
+   -  in the [Analytics API](./analytics-api-documentation.md#moq-metrics), the `/v2/h5live/*` routes exclude MoQ playbacks, and the `/v2/moq/*` routes report them separately
