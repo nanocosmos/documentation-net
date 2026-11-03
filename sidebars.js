@@ -413,6 +413,43 @@ const sidebars = {
       ]
     },
   ],
+  "nanoStudio": [
+    "nanostudio/nanostudio_overview",
+    {
+      "type": "category",
+      "label": "Chroma Key",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "nanostudio/chroma_key_getting_started",
+        "nanostudio/chroma_key_outputs",
+        "nanostudio/chroma_key_tuning",
+        "nanostudio/chroma_key_troubleshooting"
+      ]
+    }
+  ],
+  "nanoStream Real-Time API": [
+    {
+      "type": "category",
+      "label": "nanoStream Real-Time API",
+      "collapsible": false,
+      "collapsed": false,
+      "link": { "type": "doc", "id": "realtime-api/realtime_api_introduction" },
+      "items": [
+        "realtime-api/realtime_api_recording",
+        {
+          "type": "category",
+          "label": "Multi-Camera Switching",
+          "collapsible": true,
+          "collapsed": false,
+          "items": [
+            "realtime-api/realtime_api_switching",
+            "realtime-api/realtime_api_switching_reference"
+          ]
+        }
+      ]
+    }
+  ],
   "FAQ": [
     "faq/faq",
     // "faq/faq_devices_support",
@@ -457,6 +494,48 @@ const sidebars = {
   // "Samples": [
   //   "samples/samples",
   // ],
+  "Builder Hub": [
+    "builder-hub/builder_hub_overview",
+    "builder-hub/builder_hub_getting_started",
+    "builder-hub/builder_hub_accounts",
+    {
+      "type": "category",
+      "label": "Build: Stream",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "builder-hub/builder_hub_create_stream",
+        "builder-hub/builder_hub_adaptive_bitrate",
+        "builder-hub/builder_hub_multicamera",
+        "builder-hub/builder_hub_recording",
+        "builder-hub/builder_hub_live_captions"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Build: Analytics & Security",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "builder-hub/builder_hub_analytics",
+        "builder-hub/builder_hub_analytics_boards",
+        "builder-hub/builder_hub_tokens"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Build: Multi-Brand",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "builder-hub/builder_hub_chroma_key"
+      ]
+    },
+    "builder-hub/builder_hub_demos",
+    "builder-hub/builder_hub_pricing",
+    "builder-hub/builder_hub_ai_helper",
+    "builder-hub/builder_hub_developer_mode"
+  ]
 };
 
 module.exports = sidebars;
