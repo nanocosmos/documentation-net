@@ -26,8 +26,6 @@ Through the **nanoStream Cloud Dashboard**, you can easily set up, manage, and i
 </article>
 
 :::warning Prerequisites
-To make use of **Live Captions**, it must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
-
 You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
 In the **[Enabled Packages](./organization_overview#enabled-packages)** section, locate the entry for `Live Captions`. If it shows **Upgrade needed**, please contact us.
 
