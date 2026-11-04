@@ -7,6 +7,12 @@ sidebar_label: History
 
 # Changelog
 
+## 2.35.1 - WebRTC v6 troubleshooting
+
+### Troubleshooting
+
+-   WebRTC troubleshooting now supports **Webcaster v6**
+
 ## 2.35.0 - Faster usage queries
 
 ### World Map

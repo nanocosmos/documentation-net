@@ -337,6 +337,7 @@ const sidebars = {
             "cloud/analytics-dashboard-live-captions",
             "cloud/analytics-dashboard-worldmap",
             "cloud/analytics-dashboard-h5live",
+            "cloud/analytics-dashboard-moq",
             "cloud/analytics-dashboard-adaptive-bitrate",
             "cloud/analytics-dashboard-webcaster",
             {
