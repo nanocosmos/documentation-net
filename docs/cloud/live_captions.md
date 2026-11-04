@@ -32,9 +32,7 @@ This provides dynamic, accurate, and easy-to-follow text output that helps viewe
 To ensure low-latency and reliable delivery, all captions are produced and transmitted through a **dedicated real-time output channel**, separate from the video stream.
 
 :::warning Please note  
-Live Captions and the caption switcher are **not included in the default H5Live Player UI**. This means: they are **not embedded automatically**.
-To allow viewers to enable, disable, or style captions, your playback environment must integrate caption handling explicitly.
-For implementation guidance or UI integration examples, please contact our support team via [nanocosmos.net/support](https://www.nanocosmos.net/support)
+Live Captions and translations are based on a separate text stream separate to the audio/video track. This enables a flexible way to handle the text display anywhere in your workflow and web page. To allow viewers to enable, disable, or style captions, your playback environment must integrate caption handling by either using a nanoPlayer IFRAME embed code, or subscribing to the text stream messages directly. For implementation guidance or UI integration examples, please checkout our sample implementation in our builder hub, see our separate documentation or contact our support team via [nanocosmos.net/support](https://www.nanocosmos.net/support)
 :::
 
 ## How It Works
@@ -42,8 +40,7 @@ For implementation guidance or UI integration examples, please contact our suppo
 During an active stream, the audio is forwarded to the selected **Automatic Speech Recognition (ASR) engine**. The engine converts speech into text and outputs a continuous caption stream. The H5Live Player synchronizes to this caption feed and displays it to viewers in real-time.
 
 :::info Custom set-up for the ASR service
-Some of our ASR services require a 24-hour advance notice.
-Please contact our sales team via [nanocosmos.net/contact](https://www.nanocosmos.net/contact) to find the best configuration for your business. They will also be happy to give you in-depth advice and recommendations on the ASR types for your use case.
+Separate to our standard self-configurations we can enable additional speech services. For further information please contact our support at [nanocosmos.net/support](https://www.nanocosmos.net/support).
 :::
 
 ## ASR Engines And Langauges
@@ -59,15 +56,15 @@ import TabItem from '@theme/TabItem';
   defaultValue="deepgram"
   values={[
     {label: 'Deepgram', value: 'deepgram'},
+    {label: 'Other (upon request)', value: 'other'},
   ]}>
   <TabItem className="tab-item" value="deepgram">
   
   **Deepgram** is an enterprise-grade ASR engine designed for high accuracy and very low latency in real-time captioning. It uses neural-network models optimized for live audio and supports multiple languages for both transcription and live translation.
   </TabItem>
-    <TabItem className="tab-item" value="whisper">
+  <TabItem className="tab-item" value="other">
 
-    **Whisper** is an open-source ASR system developed by OpenAI.
-    It offers robust multilingual speech recognition and performs well across diverse audio conditions.
+  Additional ASR engines can be enabled upon request. Please contact our support at [nanocosmos.net/support](https://www.nanocosmos.net/support) to discuss options for your use case.
   </TabItem>
 </Tabs>
 
