@@ -6,7 +6,7 @@ description: nanoStream Live Captions convert spoken audio into readable text in
 ---
 
 :::info Live Captions Availability
-**Live Captions** are enabled for all organizations. You can verify the feature status by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard, under the **[Enabled Packages](./organization_overview#enabled-packages)** section.
+**Live Captions** are enabled for all organizations. You can verify the feature status by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard, under the **[Enabled Packages](https://dashboard.nanostream.cloud/organisation/organization_overview#enabled-packages)** section.
 
 ![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
 
