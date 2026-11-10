@@ -183,7 +183,8 @@ const sidebars = {
             "nanoplayer/nanoplayer_feature_reconnect_timeouts",
             "nanoplayer/nanoplayer_feature_media_error_recovery",
             "nanoplayer/nanoplayer_feature_source_defaults",
-            "nanoplayer/nanoplayer_feature_video_access_and_processing"
+            "nanoplayer/nanoplayer_feature_video_access_and_processing",
+            "nanoplayer/nanoplayer_feature_audio_session_handling"
           ]
         },
         {
