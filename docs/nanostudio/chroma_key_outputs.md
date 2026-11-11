@@ -29,7 +29,7 @@ Each output card also shows:
 | On the card | What it means |
 |---|---|
 | **Thumbnail** | A preview of the background: the image, a video frame, a **LIVE** tile for a stream background, or **BG** if it can't load |
-| **In preview** / **On air** | This output is the one selected in the workbench, in Preview (amber) or Live (red) mode |
+| **In preview** / **On air** | This output is the one selected in the workbench. **In preview** is an outlined tag; **On air** is a solid orange tag with an orange frame around the card. |
 | **▷ Preview** | Selects this output in the workbench |
 | **● Needs Apply** | The background or overlay has changed but hasn't been applied yet |
 | **Output name** | The output's stream name. Don't publish to it: your encoder only sends to the ingest. |
@@ -51,11 +51,11 @@ All outputs share one processing job, so one heavy MP4 background can affect **e
 
 | Marker | Meaning |
 |---|---|
-| ⚠ badge in the list, **amber** border on the Background field | Above 8 Mbps: it works, but re-encode it if you can |
-| ✕ badge in the list, **red** border on the Background field | Above 15 Mbps: re-encode it before you use it |
+| ⚠ badge in the file list and the background picker | Above 8 Mbps: it works, but re-encode it if you can |
+| ✕ badge in the file list and the background picker | Above 15 Mbps: re-encode it before you use it |
 | **? bitrate** badge | The bitrate couldn't be read. Click **Refresh** in Backgrounds to check again. |
 
-Hover over a flagged field to see the warning. For the recommended export settings, see [Prepare MP4 backgrounds](chroma_key_getting_started#prepare-mp4-backgrounds).
+Hover over a Background field set to a flagged file to see the warning. For the recommended export settings, see [Prepare MP4 backgrounds](chroma_key_getting_started#prepare-mp4-backgrounds).
 
 ## Overlay
 

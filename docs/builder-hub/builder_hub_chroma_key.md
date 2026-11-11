@@ -42,7 +42,7 @@ This page covers the chroma key tools inside the Builder Hub. For the full setup
 
 1. In the menu, open **Build › Multi-Brand › Set up chroma key**.
 2. The **Chroma Key Setup** tool opens inside the hub. When you're signed in to the hub, it opens signed in with the same account.
-3. Follow the five steps in the tool: upload backgrounds, create your streams, point your encoder at the ingest, tune the key, and go live.
+3. The tool opens as the **guided setup**, so you work through it step by step: upload backgrounds, create your streams, point your encoder at the ingest, then tune the key and go live. You're already signed in through the hub. See [Guided setup](../nanostudio/chroma_key_getting_started#guided-setup).
 
    Point your encoder at `rtmp://bintu-studio.nanocosmos.de/live` with the ingest's **Stream Key**. Publishing to this server is what starts the chroma key; see [Getting Started](../nanostudio/chroma_key_getting_started).
 
