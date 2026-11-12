@@ -13,7 +13,7 @@ This section describes the Guardian features which can be accessed within the [A
 Further details and general information about the **nanoStream Guardian** features can be found [here](./guardian).
 :::
 
-The Guardian in the Analytics dashboard is a tool used to monitor stream access and quickly block suspicious clients. It allows operators to analyze viewer activity (such as IP addresses or referrers) and block specific IPs or referrers that attempt to access a stream in an unauthorized or suspicious way. In addition, Guardian enables token revocation, allowing operators to invalidate compromised or misused playback tokens to immediately stop unauthorized access. This helps protect live streams from misuse and ensures controlled and secure distribution of streaming content.
+The Guardian in the Analytics dashboard is a tool used to monitor stream access and quickly block suspicious clients. It allows operators to analyze viewer activity (such as IP addresses, playback tokens, user IDs or referrers) and block specific IPs or referrers that attempt to access a stream in an unauthorized or suspicious way. In addition, Guardian enables token revocation, allowing operators to invalidate compromised or misused playback tokens to immediately stop unauthorized access. This helps protect live streams from misuse and ensures controlled and secure distribution of streaming content.
 
 ## Guardian Table
 
@@ -46,7 +46,7 @@ Filters that are pasted from clipboard get automatically applied after short del
 
 (C) `Calculation Switch` that decides whether to add **max concurrency metric** to the analysis (Calculation can lead to extended response times)
 
-(D) `IP & Playback Token Switch` to choose what the analysis should be based on
+(D) `IP / Playback Token / User Id Switch` to choose what the analysis should be based on. The table shows up to 100 entries, sorted by total playback duration
 
 (E) `Table columns descriptions overview` can be used to get additional information about what is shown in each column
 
@@ -56,7 +56,7 @@ Filters that are pasted from clipboard get automatically applied after short del
 Insights of each entry can be viewed by left-clicking the row. This will open the breakdown view of the selected entry.
 :::
 
-(G) `State of IP / Token` showing whether this entry's IP/Token is blocked/revoked or not
+(G) `State of IP / Token` showing whether this entry's IP/Token is blocked/revoked or not (not shown in the User Id table, see [User Id Breakdown](#guardian---user-id-breakdown))
 
 (H) `Search Input` to search for specific entries in the table
 
@@ -81,6 +81,10 @@ When choosing to search based on **IPs**, a breakdown of this can be opened by s
 - Top Browser Agent IDs
 
 (D) `Most Popular Streams` that were accesed, by the selected IP and their activity metrics  
+
+:::note
+The IP table shows one row per IP address, with the data of all sessions that used this IP.
+:::
 
 
 ### Guardian - Playback Token Breakdown
@@ -111,6 +115,30 @@ An expired playback token can still be revoked for a **24-hour grace period** af
 
 (F) `Most Popular Streams` that were accesed, using the selected playback token and their activity metrics
 
+
+### Guardian - User Id Breakdown
+
+When choosing to search based on **User Ids**, the table shows one row per user ID with the combined data of all playback tokens and IPs of that user. This lets you analyze an end user's activity even if they use several playback tokens or IP addresses.
+
+:::info Requirement
+The User Id table is based on the optional `user` claim of the [playback token](./security_token_best_practices#restrict-every-token-as-tightly-as-possible). Playback sessions with a token that has no `user` claim are not shown in this table.
+:::
+
+A breakdown of a user can be opened by selecting a row in the [guardian table](https://metrics.nanostream.cloud/streamGuard). It contains:
+
+- `Top Playback Tokens (JTI)` of the selected user, each with its revocation status and a **Revoke** action
+- `Most Popular Metrics` ranked by appearances:
+  - Top IPs
+  - Top Providers
+  - Top Countries
+  - Top Referrers
+  - Top Browser Agent IDs
+
+:::note
+A user ID itself cannot be blocked. To stop a user's playback, revoke their [revocable playback tokens](./security_token_revocation) or block the IPs they use.
+:::
+
+To check a single user, add the user ID as **User** filter or type it in the search input. The CSV export of the User Id table downloads the currently displayed data.
 
 ## IP & Referrer Blocking in Breakdown View
 

@@ -7,26 +7,26 @@ sidebar_label: Latest
 
 # Changelog
 
-## 2.36.0 - MoQ playback statistics
+## 2.36.4 - Guardian misuse breakdown by user
 
-### MoQ Playback Metrics
+### Usage Details by User
 
--  added API routes for [Media over QUIC (MoQ)](../nanoplayer/nanoplayer_feature_moq.md) playback statistics ([API reference](https://api.nanostream.cloud/docs/analytics/v2/#tag/MoQ-metrics)):
-   -  `/v2/moq/views/os` (GET) -> MoQ views by operating system
-   -  `/v2/moq/views/browser` (GET) -> MoQ views by browser
-   -  `/v2/moq/playtime/os` (GET) -> MoQ playing time by operating system
-   -  `/v2/moq/playtime/browser` (GET) -> MoQ playing time by browser
-   -  `/v2/moq/playtime/timeseries` (GET) -> average / median MoQ playing time timeseries
-   -  `/v2/moq/playtime/streams/timeseries` (GET) -> MoQ playing time timeseries for a single stream
-   -  `/v2/moq/latency/timeseries` (GET) -> average / median MoQ latency timeseries
-   -  `/v2/moq/latency/streams/timeseries` (GET) -> MoQ latency timeseries for a single stream
-   -  `/v2/moq/startuptime/timeseries` (GET) -> MoQ startup time timeseries
-   -  `/v2/moq/startuptime/streams/timeseries` (GET) -> MoQ startup time timeseries for a single stream
-   -  `/v2/moq/bufferingratio/timeseries` (GET) -> MoQ buffering ratio timeseries
-   -  `/v2/moq/bufferingratio/streams/timeseries` (GET) -> MoQ buffering ratio timeseries for a single stream
-   -  `/v2/moq/errorcodes/timeseries` (GET) -> MoQ error codes timeseries
-   -  `/v2/moq/stopReasons/timeseries` (GET) -> MoQ stop reasons timeseries
+-  added a misuse breakdown by the optional JWT `user` claim, independent of IP and playback token ([API reference](https://api.nanostream.cloud/docs/analytics/v2/)):
+   -  `/api/v2/usage/user/details` (POST) -> usage details per user, with a token (JTI) and IP breakdown
+-  sessions without a `user` claim are not part of the result
 
-### H5Live Metrics
+### Misuse Breakdown Endpoints - Breaking
 
--  **H5Live metrics no longer include MoQ playbacks.** The H5Live Player reports both playback paths, WebSocket/MSE and MoQ. Until now, the `/v2/h5live/*` routes counted both together. From this release, `/v2/h5live/*` covers WebSocket/MSE playbacks only, and MoQ playbacks are reported separately under `/v2/moq/*`
+-  `/api/v2/usage/ip/details` returns **one row per IP**, not one row per IP and organization. New fields: `topOrgas` (at most 10) and `orgaCount`. `orgaHash` shows the organization with the most documents
+-  all three `/details` routes validate the input: an unknown alpha-2 code in the `countries` query parameter returns **400**, and the parameter now filters. A body filter that is not an array of strings also returns **400**
+
+### Misuse Breakdown Accuracy
+
+-  the results include **H5Live and MoQ** playbacks together: rankings, breakdown lists (`topIPs`, `topTokens`, …) and `concurrency` (sum of both peaks)
+-  `streamCount`, `ipCount` and `tokenCount` are exact. Each route returns **up to 100 entries** instead of 20
+-  ranking and metrics use the same play duration window (`>= 1 s`, `< 90 s`) and the same excluded abuse IP list. An admin request without an organization filter does not merge two organizations with the same key value
+
+### Filters & CSV Export
+
+-  the `countries` body filter takes an alpha-2 code or a country name. A two-letter value is always treated as a code; an unknown code returns **400**
+-  the CSV export lists the body filters in its header rows, so a filtered export can be told apart from an unfiltered one
