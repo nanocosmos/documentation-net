@@ -15,6 +15,8 @@ You set everything up in the **Chroma Setup Tuner**, a browser tool that creates
 
 :::tip Open the tuner
 [chromakey.nanocosmos.net/chroma-setup-tuner.html](https://chromakey.nanocosmos.net/chroma-setup-tuner.html)
+
+Prefer to be guided? The [guided setup](https://chromakey.nanocosmos.net/chroma-setup-tuner-steps.html) shows the same tool as four numbered steps. See [Guided setup](#guided-setup).
 :::
 
 :::info Also in the Builder Hub
@@ -63,6 +65,20 @@ Every ingest and target is a regular nanoStream Cloud stream. It shows up in the
 | **Encoder** | OBS, vMix, ffmpeg or a hardware encoder that can send RTMP. See [Live Encoding](../cloud/live_encoding). |
 | **Backgrounds** | MP4 video, PNG or JPG at the same resolution as your camera (1280×720 or 1920×1080) |
 | **Browser** | A current version of Chrome, Firefox, Edge or Safari |
+
+## Guided setup
+
+The guided setup page shows the same tool as four numbered steps: **Sign in**, **Backgrounds**, **Streams** and **Tune & apply**.
+
+- Each step unlocks when the one before it is done, then collapses to a one-line summary with a tick. **Change** reopens it.
+- **Backgrounds** is optional. Click **Continue** when your files are uploaded, or **Skip** if they already are.
+- **Tune & apply** has two phases: **Preview tuning**, then **Live Apply**. Live Apply shows *Changes not applied yet* until you apply, and *Outputs in sync* afterwards.
+
+![The guided setup: Sign in, Backgrounds and Streams done with a tick and a summary each, and Tune & apply open with its Preview tuning and Live Apply phases](../assets/nanostudio/ui/chroma-ui-steps-journey.webp)
+
+_The guided setup with the first three steps done and Tune & apply open._
+
+Inside each step you use the same controls as on the standard tuner page, so the steps below apply to both pages.
 
 ## Step 1: Sign in
 
@@ -126,7 +142,7 @@ Open **Stream Setup** and choose one of these:
 To create new streams:
 
 1. Set **Targets** to the number of outputs you need. Each output gets its own row. Optionally add **Ingest tags** for the ingest stream, or turn on **Add timecode** to add timecode metadata to the new streams.
-2. For each row, choose a **Background**. You can pick an uploaded file, type a filename or URL, or enter the stream name or stream ID of another live stream to use it as the background.
+2. For each row, choose a **Background**. Required fields are outlined in orange until you fill them. You can pick an uploaded file, type a filename or URL, or enter the stream name or stream ID of another live stream to use it as the background.
 3. Optionally choose an **Overlay** PNG, add **Tags** (for example `sponsorA, studio1`), and tap the **Transcodes** you want for adaptive bitrate playback.
 4. Click **Create Chroma Key Streams**.
 
@@ -170,8 +186,8 @@ The signal strip checks the ingest every 5 seconds and shows when it last checke
 
 | Strip | Meaning |
 |---|---|
-| **Receiving** (green, moving bars) | Your encoder is publishing to the ingest. The card's accent turns green. |
-| **Waiting for signal** (red, pulsing) | Nothing is arriving yet. Check the Server and Stream Key in your encoder. |
+| **Receiving** (blue, moving bars) | Your encoder is publishing to the ingest. The card calms to a plain blue frame. |
+| **Waiting for signal** (orange, pulsing) | Nothing is arriving yet, and the whole card lights up orange. Check the Server and Stream Key in your encoder. |
 | **Status unknown** (grey) | The check failed. It keeps retrying. |
 
 If the Live player or the foreground says the stream isn't live, click **Where do I publish? →** to jump back to the ingest card.
@@ -191,14 +207,14 @@ The **Live composite** workbench shows a preview on the left and the key control
 
 ![The Live composite workbench in Preview mode: a keyed presenter over a casino background with a sponsor logo, and the key controls on the right](../assets/nanostudio/ui/chroma-ui-workbench-preview.webp)
 
-_Preview mode after Autotune. The preview shows the target that is selected (amber), with its background and overlay._
+_Preview mode after Autotune. The selected target and the preview frame are blue, and the preview shows that target's background and overlay._
 
 For what each control does, see [Tuning the Key](chroma_key_tuning).
 
 ## Step 5: Go live
 
 1. Switch to **Live**.
-2. Click a target tab to put it **on-air**. The red tally shows which output is on air. Key, despill and EQ settings apply to all outputs; overlay position applies to the output you've selected. Switching between sources only changes the player and doesn't restart the stream.
+2. Click a target tab to put it **on-air**. The orange tally shows which output is on air. Key, despill and EQ settings apply to all outputs; overlay position applies to the output you've selected. Switching between sources only changes the player and doesn't restart the stream.
 3. Adjust the controls. In Live mode **every chroma control works in real time**: key colour, similarity, blend, despill, EQ and overlay position go to the running stream straight away, without restarting it. The status line tells you the change is applied to the running process but not saved yet.
 4. Click **Apply Now** to save your settings to the stream, so they're kept when the stream restarts. New backgrounds and overlays also need Apply: an output card shows **● Needs Apply** until you do.
 
@@ -209,9 +225,9 @@ For what each control does, see [Tuning the Key](chroma_key_tuning).
 
 The Apply button reads **Apply Now** in Live mode and **Apply to Stream** in Preview mode.
 
-![The workbench in Live mode with target 1 on-air, shown by a red tally and a red border around the player](../assets/nanostudio/ui/chroma-ui-workbench-live.webp)
+![The workbench in Live mode with target 1 on-air, shown by an orange Live switch, an orange source tab and an orange frame around the player](../assets/nanostudio/ui/chroma-ui-workbench-live.webp)
 
-_Live mode: the red tally and border show the on-air target. You see your changes on it in real time._
+_Live mode: the orange tally and frame show the on-air target. You see your changes on it in real time._
 
 **Player ↗** opens the outputs in a standalone player, and **Multiplayer ↗** shows the ingest and all targets side by side.
 
@@ -244,6 +260,8 @@ The tuner restores the key settings, targets, backgrounds and overlays. On a loa
 - click **+ Add output** to add a new target without touching the others
 
 To hand a setup to someone else, click **Copy setup link** on the ingest card. The link reopens this setup and never contains your API key. When they open it, the setup ID is filled in and the setup loads as soon as they sign in.
+
+To open a setup straight on the Live player, add `&mode=live` to the link, for example `chroma-setup-tuner.html?stream=<ingest ID>&mode=live`. After sign-in, the setup loads and goes on air with its first target instead of opening in Preview.
 
 ## Next steps
 

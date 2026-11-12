@@ -35,7 +35,7 @@ Stop & unlock and Bounce restart the ingest and briefly interrupt the stream. Ke
 
 ## Player shows a black screen
 
-- Look at the signal strip on the ingest card. **Waiting for signal** (red) means nothing is arriving: check that your encoder uses the **Server** and **Stream Key** from the ingest card. **Where do I publish? →** takes you there.
+- Look at the signal strip on the ingest card. **Waiting for signal** (the card lights up orange) means nothing is arriving: check that your encoder uses the **Server** and **Stream Key** from the ingest card. **Where do I publish? →** takes you there.
 - Check the server in your encoder: it must be `rtmp://bintu-studio.nanocosmos.de/live`. Another RTMP server can accept your stream without starting the chroma key, so the outputs stay black even though the ingest is live.
 - Make sure your encoder publishes to the ingest, not to an output. An output's **Output name** isn't a publish target.
 - Check that playback isn't paused (click **Start playback**).
@@ -63,7 +63,7 @@ The uploader checks each MP4's average bitrate. Files above **8 Mbps** get a ⚠
 
 ### All my outputs went offline or started stuttering after I changed a background
 
-A background with a very high bitrate can overload the processing job that renders **all** your outputs. Check whether the background has a ⚠ or ✕ badge in **Backgrounds**, or an amber or red border on its Background field. If it does, switch that output back to a lighter background, re-encode the heavy file (see [Prepare MP4 backgrounds](chroma_key_getting_started#prepare-mp4-backgrounds)) and apply again.
+A background with a very high bitrate can overload the processing job that renders **all** your outputs. Check whether the background has a ⚠ or ✕ badge in **Backgrounds** or in the background picker. If it does, switch that output back to a lighter background, re-encode the heavy file (see [Prepare MP4 backgrounds](chroma_key_getting_started#prepare-mp4-backgrounds)) and apply again.
 
 ### I uploaded a file but it isn't in the background list
 

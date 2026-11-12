@@ -34,18 +34,18 @@ _The order the controls are applied, from the raw camera frame to the finished o
 
 Above the preview there's a **Preview | Live** switch and a row of source tabs: **Ingest**, then one tab per target, labelled with its number and background (for example **1 · studio_casino_1080**).
 
-![The switcher in Preview mode: target 1 selected with an amber tally](../assets/nanostudio/ui/chroma-ui-switcher-preview.webp)
+![The switcher in Preview mode: the Preview segment and target 1 highlighted in blue](../assets/nanostudio/ui/chroma-ui-switcher-preview.webp)
 
-_Preview: the selected target has an amber tally._
+_Preview: the switch and the selected target are blue._
 
-![The switcher in Live mode: target 1 on-air with a red tally](../assets/nanostudio/ui/chroma-ui-switcher-live.webp)
+![The switcher in Live mode: a solid orange Live segment and target 1 outlined in orange](../assets/nanostudio/ui/chroma-ui-switcher-live.webp)
 
-_Live: the on-air target has a red tally._
+_Live: the switch and the on-air target are orange._
 
 | Mode | Clicking a source tab… | Tally |
 |---|---|---|
-| **Preview** | shows that source in a local preview, so you can experiment without touching the live stream | Amber |
-| **Live** | puts that source **on-air**. Key changes apply to all outputs in real time; you watch them on the on-air output. | Red |
+| **Preview** | shows that source in a local preview, so you can experiment without touching the live stream | Blue |
+| **Live** | puts that source **on-air**. Key changes apply to all outputs in real time; you watch them on the on-air output. | Orange |
 
 ### Preview sources
 
