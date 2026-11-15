@@ -417,7 +417,7 @@
 /* END ANALYTICS */
 
 /* Navbar: keep multi-word labels ("nanoStream Cloud", "Real-Time API", ...) on one line.
-   With 10 top-level items the bar wraps between the mobile breakpoint (996px) and ~1300px,
+   With 10 top-level items the bar wraps between the mobile breakpoint (996px) and ~1200px,
    so tighten spacing and type progressively in that range. */
 .navbar__item.navbar__link {
   white-space: nowrap;
@@ -437,9 +437,9 @@
   }
 }
 
-@media (min-width: 997px) and (max-width: 1320px) {
+@media (min-width: 997px) and (max-width: 1200px) {
   .navbar__item.navbar__link {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
   .navbar__item {
     padding-left: 0.35rem;
