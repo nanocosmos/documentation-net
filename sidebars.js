@@ -460,7 +460,7 @@ const sidebars = {
     // "faq/faq_purchase_and_license",
     {
       "type": "category",
-      "label": "H5Live Player",
+      "label": "Player",
       "collapsible": true,
       "collapsed": false,
       "items": [
