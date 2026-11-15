@@ -11,7 +11,7 @@ sidebar_label: FAQ
       <Card.Body className="padding-vert--md">The nanoStream Dashboard is a web-based tool implemented and designed to provide users with an intuitive and comprehensive overview of their streaming activities.</Card.Body>
     </Card>
     <Card className="col col--6 margin-horiz--md" href="/docs/nanoplayer/nanoplayer_getting_started">
-      <Card.Header title="Configuration">H5Live Player</Card.Header>
+      <Card.Header title="Configuration">Player</Card.Header>
       <Card.Body className="padding-vert--md"> nanoStream H5Live is a client-server technology based on nanoStream Cloud and nanoStream H5Live Player (aka nanoPlayer).</Card.Body>
     </Card>
   </Columns>

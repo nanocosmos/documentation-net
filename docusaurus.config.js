@@ -130,7 +130,7 @@ const config = {
             docId: 'nanoplayer/nanoplayer_introduction',
             sidebarid: "H5Live Player",
             position: 'left',
-            label: "H5Live Player",
+            label: "Player",
           }, {
             type: 'doc',
             docId: 'webrtc/nanostream_webrtc_introduction',

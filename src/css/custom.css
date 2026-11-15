@@ -415,3 +415,39 @@
 }
 
 /* END ANALYTICS */
+
+/* Navbar: keep multi-word labels ("nanoStream Cloud", "Real-Time API", ...) on one line.
+   With 10 top-level items the bar wraps between the mobile breakpoint (996px) and ~1300px,
+   so tighten spacing and type progressively in that range. */
+.navbar__item.navbar__link {
+  white-space: nowrap;
+}
+
+.navbar__brand {
+  flex-shrink: 0;
+}
+
+@media (min-width: 997px) and (max-width: 1400px) {
+  .navbar__item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .navbar__brand {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1320px) {
+  .navbar__item.navbar__link {
+    font-size: 0.875rem;
+  }
+  .navbar__item {
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+  /* icon-only search button to free up room */
+  .navbar .DocSearch-Button-Placeholder,
+  .navbar .DocSearch-Button-Keys {
+    display: none;
+  }
+}
