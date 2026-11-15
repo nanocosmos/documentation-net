@@ -22,8 +22,9 @@ The table below provides an overview of the key attributes in the stream list:
 - **Stream State**: This column indicates the current state of each stream.
    - `created`: The stream has been created, but never been live
    - `live`: The stream is live right now
-   - `deleted`: The stream was live and is not outputting footage anymore.
+   - `ended`: The stream was live and is not outputting footage anymore.
    - `locked`: The stream was live and has been locked.
+   - `deleted`: The stream has been deleted. Deleted streams are not shown in the regular stream list; use the **State** filter to see them.
 - **Stream ID**: The column displays the unique identifier of each stream. If the stream is an [ABR](./abr_transcoding.md) stream it is also the streamgroup id.
 - **Stream name**: The streamname („XXXXX-YYYYY“) shows the organisation hash and the unique stream name assigned to each stream.
 - **Options**: Indicates whether a stream is a **Visual Enhancement stream**.

@@ -21,7 +21,9 @@ Not all tokens can be revoked. Revocation must be opted into at token creation t
 | **Default expiration** | 24 hours | 24 hours |
 | **Can be revoked** | Yes | No |
 
-The shorter maximum expiration for revocable tokens is a deliberate design choice — tokens that can be revoked are intended for short-lived, high-security use cases.
+The shorter maximum expiration for revocable tokens is a deliberate design choice — tokens that can be revoked are intended for short-lived, high-security use cases. The 24-hour maximum may change in the future.
+
+In general we recommend an expiration of 24 hours or less. Use shorter tokens for high-security use cases; longer non-revocable tokens can be acceptable for test pages and environments with lower security requirements. See [Token Best Practices](./security_token_best_practices#keep-tokens-short-lived).
 
 ## Creating Revocable Tokens {#creating}
 

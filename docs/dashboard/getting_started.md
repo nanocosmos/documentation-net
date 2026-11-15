@@ -46,7 +46,7 @@ Learn more about roles and permissions in the [User Management](./user_managemen
 ### Sign Up
 
 If you are new to nanoStream, you need to create an account:
-1. Visit the [dashboard.nanocosmos.cloud/signup](https://dashboard.nanocosmos.cloud/signup) page.
+1. Visit the [dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup) page.
     ![Screenshot: Signup to nanoStream](../assets/dashboard/auth-signup.png)
 2. Enter your **Company Name**, **Email**, **Password** and **accept the terms and conditions**.
 3. Click **Start Streaming** to create your account.

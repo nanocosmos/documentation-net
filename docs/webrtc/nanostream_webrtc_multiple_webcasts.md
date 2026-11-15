@@ -28,7 +28,7 @@ In this example, we'll demonstrate how to:
 ```js
 // First, create an instance for broadcasting a camera stream
 // The media stream will be created internally with default constraints
-const camWebcaster = new window.WebcasterApiV6({
+const camWebcaster = new window.WebcasterApiV6.Webcaster({
   serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
   ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
   streamName: '<STREAM-NAME-1>'
@@ -39,7 +39,7 @@ const screenMediaStream = await navigator.mediaDevices.getDisplayMedia({ video: 
 
 // Create a second instance for broadcasting the screen share
 // Pass the screenMediaStream as a part of config object
-const screenWebcaster = new window.WebcasterApiV6({
+const screenWebcaster = new window.WebcasterApiV6.Webcaster({
   inputCfg: {
     mediaStream: screenMediaStream
   },
@@ -54,9 +54,10 @@ const screenWebcaster = new window.WebcasterApiV6({
 Before using the API further, make sure to set up the instances. This step includes creating a media stream if it's not passed and configuring other internal settings. Feel free to run these calls in parallel.
 
 ```js
-await camWebcaster.setup(),
-
-await screenWebcaster.setup()
+await Promise.all([
+  camWebcaster.setup(),
+  screenWebcaster.setup()
+]);
 ```
 
 #### 3. Optional: Start previews

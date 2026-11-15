@@ -250,7 +250,7 @@ This method is ideal when you already have an ongoing issue or need fast assista
 If your outputs are long or include logs from multiple commands, paste them into a public paste service and send us the link:
 
 - **[paste.ubuntu.com](https://paste.ubuntu.com)**
-- **[https://gist.github.com](gist.github.com)**
+- **[https://gist.github.com](https://gist.github.com)**
 
 These services make your logs easy to read, retain formatting, and prevent long messages from being truncated.
 

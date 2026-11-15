@@ -6,7 +6,7 @@ description: nanoStream Live Captions convert spoken audio into readable text in
 ---
 
 :::info Live Captions Availability
-**Live Captions** are enabled for all organizations. You can verify the feature status by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard, under the **[Enabled Packages](https://dashboard.nanostream.cloud/organisation/organization_overview#enabled-packages)** section.
+Since November 2026, **Live Captions** are enabled for all organizations. You can verify the feature status by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard, under the **[Enabled Packages](/docs/dashboard/organization_overview#enabled-packages)** section.
 
 ![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
 
@@ -60,7 +60,7 @@ import TabItem from '@theme/TabItem';
   ]}>
   <TabItem className="tab-item" value="deepgram">
   
-  **Deepgram** is an enterprise-grade ASR engine designed for high accuracy and very low latency in real-time captioning. It uses neural-network models optimized for live audio and supports multiple languages for both transcription and live translation.
+  **Deepgram** is the default ASR engine (this may change in the future). It is an enterprise-grade ASR engine designed for high accuracy and very low latency in real-time captioning. It uses neural-network models optimized for live audio and supports multiple languages for both transcription and live translation.
   </TabItem>
   <TabItem className="tab-item" value="other">
 

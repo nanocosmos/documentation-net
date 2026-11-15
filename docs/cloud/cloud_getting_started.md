@@ -126,7 +126,7 @@ Please note that for organisations that have `secure` option enabled, you either
 
 ### Permission Overview
 
-If the account that created the stream is enabled for playback token security, a secure token is required in order to play it back. The token can only be created in the dashboard or API by an <span className="role role-admin">nanoAdmin</span>.
+If the account that created the stream is enabled for playback token security, a secure token is required in order to play it back. The token can be created in the dashboard or API by a <span className="role role-admin">nanoAdmin</span> or <span className="role role-user">nanoUser</span>.
 
 |<span className="role role-admin">nanoAdmin</span>|<span className="role role-user">nanoUser</span>|<span className="role role-readonly">nanoReadOnly</span>| Non-logged-in Person |
 |---|---|---|---|
@@ -197,7 +197,7 @@ The nanoStream Platform offers several features that can boost your use case, li
 To make use of the additional features mentioned below, it must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
 
 You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
-In the **[Enabled Packages](./organization_overview#enabled-packages)** section, locate the entry for the feature you are looking for. If it shows **Upgrade needed**, please contact us.
+In the **[Enabled Packages](/docs/dashboard/organization_overview#enabled-packages)** section, locate the entry for the feature you are looking for. If it shows **Upgrade needed**, please contact us.
 
 ![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
 

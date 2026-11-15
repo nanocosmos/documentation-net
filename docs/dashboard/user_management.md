@@ -9,9 +9,9 @@ The **User Management** tab of the nanoStream Dashboard allows organization admi
 :::tip Role-Based Access Control (RBAC)
 Role-Based Access Control (RBAC) in **nanoStream** enables efficient management of user roles and permissions, ensuring secure and controlled access to streams.
 
-- [Concept and Benefits](/docs/user_roles#concept-and-benefits): Understand the advantages of RBAC for security and user management.
-- [User Roles](/docs/user_roles#user-roles-in-nanostream-cloud): Learn about the predefined user roles and their associated responsibilities.
-- [High-level Permission Overview](/docs/user_roles#high-level-permission-overview): Explore the permissions available for each user role and how they control access.
+- [Concept and Benefits](/docs/cloud/user_roles#concept-and-benefits): Understand the advantages of RBAC for security and user management.
+- [User Roles](/docs/cloud/user_roles#user-roles-in-nanostream-cloud): Learn about the predefined user roles and their associated responsibilities.
+- [High-level Permission Overview](/docs/cloud/user_roles#high-level-permission-overview): Explore the permissions available for each user role and how they control access.
 
 👉 Dive into the technical details in the [User Management](../cloud/user_roles) documentation.
 :::

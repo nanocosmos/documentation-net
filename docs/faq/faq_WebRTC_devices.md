@@ -27,13 +27,13 @@ You can not switch cameras/devices while a broadcast is active. Please stop the 
 ```js
 user.on("StartPreviewError", function(evt) {
   // handle error
-console.log((event.data.text);
+console.log(evt.data.text);
 });
 ```
 
 ```js
 user.on("StartBroadcastError", function(evt){
 // handle error
-console.log((event.data.text);
+console.log(evt.data.text);
 });
 ```

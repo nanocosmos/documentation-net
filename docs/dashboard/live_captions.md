@@ -25,13 +25,12 @@ Through the **nanoStream Cloud Dashboard**, you can easily set up, manage, and i
   </Columns>
 </article>
 
-:::warning Prerequisites
-You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
-In the **[Enabled Packages](./organization_overview#enabled-packages)** section, locate the entry for `Live Captions`. If it shows **Upgrade needed**, please contact us.
+:::info Availability
+Since November 2026, Live Captions are enabled for all organizations. You can verify this by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard, in the **[Enabled Packages](./organization_overview#enabled-packages)** section.
 
 ![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
 
-To activate `Live Captions` or learn more about available plans, feel free to reach out via [nanocosmos.net/contact](https://www.nanocosmos.net/contact). We're happy to assist you in finding the best setup for your use case.
+To learn more about available plans, feel free to reach out via [nanocosmos.net/contact](https://www.nanocosmos.net/contact). We're happy to assist you in finding the best setup for your use case.
 :::
 
 :::info Live Caption Security Requirements

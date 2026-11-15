@@ -68,7 +68,7 @@ This section displays relevant technical data related to the alert. For example,
 
 #### Responding to Alerts
 
-Je nach Alert Code, werden in diesem Accordion Actionen vorgeschlagen, die dabei helfen sollen, den Alert zu beheben.
+Depending on the alert code, this accordion suggests actions that help you resolve the alert.
 
 **1. Understand the Message**:
 Determine if the alert message is self-explanatory. Often, the alert might provide clear insights into the issue and potential remedies.
@@ -144,5 +144,5 @@ Clicking on an item of this list opens the **Alert Overview** panel.
 The alert list displays alerts from the **last 15 minutes**. To view **all alerts and advices**, click the expand arrow at the top right of the container.  
 
 :::note
-Advices are not shown in this container - to see them, go to [nanostream.cloud/alerts](https://nanostream.cloud/alerts).
+Advices are not shown in this container - to see them, go to [dashboard.nanostream.cloud/alerts](https://dashboard.nanostream.cloud/alerts).
 :::
