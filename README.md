@@ -109,3 +109,40 @@ $ npm build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+# 🚢 CI/CD & deployment
+
+The repository lives on two GitLab servers, and both run `.gitlab-ci.yml` (Auto-DevOps):
+
+| Remote | Project | Image build |
+|---|---|---|
+| git.nanocosmos.de | `doc/nano-docs` | Auto-DevOps `build` job (docker-in-docker) |
+| gitlab.nanocosmos.cloud | `web/nano-docs` | `build_kaniko` job. The runners there have no Docker daemon, so the docker-in-docker build fails with *Cannot connect to the Docker daemon at tcp://localhost:2375* |
+
+The image is tagged `$CI_REGISTRY_IMAGE/<branch-slug>:<commit-sha>` on both, which is what the deploy jobs expect.
+Feature branches get a manual `review` job (deploy to a review environment).
+
+## ⚠️ Open decision: staging & canary deploys (as of 2026-11-17)
+
+`.gitlab-ci.yml` sets `STAGING_ENABLED: "false"` and `CANARY_ENABLED: "false"`. Auto-DevOps only checks
+whether these variables are *set*, not their value, so `"false"` turns staging and canary **on**.
+
+What this did: the first successful `main` pipeline on gitlab.nanocosmos.cloud (pipeline 29510, commit `e2715ff`)
+deployed automatically to **staging**:
+
+- Kubernetes namespace `nano-docs-1086` (created by the job)
+- http://web-nano-docs-staging.autodevops-prod.nanostream.cloud/
+- `canary` and `production_manual` are then offered as manual jobs. Nothing was deployed to production.
+
+The same applies on git.nanocosmos.de whenever a cluster is connected there. Before the kaniko fix, the build
+failed on gitlab.nanocosmos.cloud, so the deploy step was never reached.
+
+To decide:
+
+1. **Keep or remove the staging deployment on gitlab.nanocosmos.cloud?** Removing it means stopping the `staging`
+   environment in GitLab (deletes the deployment); the namespace stays unless someone removes it on the cluster.
+2. **Fix the variables?** Deleting the two lines turns staging and canary off for real, on both servers; merges to
+   `main` then only offer the manual production deploy. If the staging step on git.nanocosmos.de is wanted, limit
+   the change to gitlab.nanocosmos.cloud with a `$CI_SERVER_HOST` rule, like `build_kaniko`.
+
+Until decided, every merge to `main` on gitlab.nanocosmos.cloud redeploys staging.

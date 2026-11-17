@@ -12,6 +12,8 @@ variables:
   DEPENDENCY_SCANNING_DISABLED: "true"
   LICENSE_MANAGEMENT_DISABLED: "true"
   SECRET_DETECTION_DISABLED: "false"
+  # NOTE: Auto-DevOps treats any non-empty value as "enabled", so "false" turns
+  # staging and canary ON. Open decision, see README.md "CI/CD & deployment".
   STAGING_ENABLED: "false"
   CANARY_ENABLED: "false"
 
