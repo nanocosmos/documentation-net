@@ -41,6 +41,19 @@ function getEnvironmentConfig() {
     cname = targetUrlMap[deployTarget].replace(/^https?:\/\//, '');
   }
 
+  // docs.nanocosmos.de serves a full copy of the docs (GitHub repo nanocosmos/documentation). Google
+  // indexes it as a separate site: most docs search traffic and most GitHub links go to .de. Its canonical
+  // tags, sitemap and og:url point to docs.nanocosmos.net, so Google merges the two hosts into .net before
+  // the docs relaunch changes URLs (one move at a time). The .de custom domain (CNAME) stays.
+  if (deployTarget === 'gh-pages-de') {
+    return {
+      targetUrl: targetUrlMap['gh-pages-net'],
+      baseUrl: baseUrlMap[deployTarget],
+      projectName,
+      cname
+    };
+  }
+
   return {
     targetUrl: targetUrlMap[deployTarget],
     baseUrl: baseUrlMap[deployTarget],
