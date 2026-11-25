@@ -335,17 +335,17 @@ Updates the source of the player.
     </tr><tr>
     <td>[source.options.switch.forcePlay]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>If set the player starts playback in case the player is paused. Default is true.</p> </td>
     </tr><tr>
-    <td>[source.options.switch.fastStart]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>DEPRECATED. Only if method is &#39;server&#39;. Tries to accelerate the startup time of the new source. Default is false.</p> </td>
+    <td>[source.options.switch.fastStart]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>DEPRECATED. Only if method is &#39;server&#39;. Tries to accelerate the startup time of the new source. Default is true.</p> </td>
     </tr><tr>
-    <td>[source.options.switch.timeout]</td><td><code>number</code></td><td><code>20</code></td><td><p>The timeout for the update source request in seconds. If reached the error 4006 will thrown in the <a href="#NanoPlayer..event_onUpdateSourceFail">&#39;onUpdateSourceFail&#39;</a> event. Default is 10 seconds, valid range is between 5 and 30.</p> </td>
+    <td>[source.options.switch.timeout]</td><td><code>number</code></td><td><code>20</code></td><td><p>The timeout for the update source request in seconds. If reached the error 4006 will thrown in the <a href="#NanoPlayer..event_onUpdateSourceFail">&#39;onUpdateSourceFail&#39;</a> event. Default is 20 seconds, valid range is between 5 and 30.</p> </td>
     </tr><tr>
     <td>[source.options.switch.tag]</td><td><code>string</code></td><td></td><td><p>A custom field that can be any string like &#39;stream-800k&#39; or &#39;720p&#39;. This tag will be returned in any completion event of the &#39;updateSource&#39; request like &#39;onUpdateSourceSuccess&#39;, &#39;onUpdateSourceFail&#39; and &#39;onUpdateSourceAbort&#39;.</p> </td>
     </tr><tr>
     <td>[source.options.adaption]</td><td><code>object</code></td><td></td><td><p>The object to set an adaption for switching.</p> </td>
     </tr><tr>
-    <td>[source.options.adaption.rule]</td><td><code>string</code></td><td><code>&quot;deviationOfMean2&quot;</code></td><td><p>The switch rule if multiple entries are defined. Possible values are &#39;deviationOfMean&#39; (ABR automatic), &#39;deviationOfMean2&#39; (ABR automatic) and &#39;none&#39; (default, means only manual stream switch via &#39;switchStream&#39; possible).</p> </td>
+    <td>[source.options.adaption.rule]</td><td><code>string</code></td><td><code>&quot;deviationOfMean2&quot;</code></td><td><p>The switch rule if multiple entries are defined. Possible values are &#39;deviationOfMean&#39; (ABR automatic), &#39;deviationOfMean2&#39; (ABR automatic) and &#39;none&#39; (means only manual stream switch via &#39;switchStream&#39; possible). The default depends on the source: with 3 or more entries and with a bintu stream group (<code>source.group</code>) the default is &#39;deviationOfMean2&#39;; with 1 or 2 entries the default is &#39;none&#39; (ABR off).</p> </td>
     </tr><tr>
-    <td>[source.options.adaption.downStep]</td><td><code>number</code></td><td><code>1</code></td><td><p>The minimum number of steps during a ABR down switch (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only).</p> </td>
+    <td>[source.options.adaption.downStep]</td><td><code>number</code></td><td><code>2</code></td><td><p>The minimum number of steps during a ABR down switch (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only). The default is 2 with 3 or more entries and 1 otherwise.</p> </td>
     </tr>  </tbody>
 </table>
 
@@ -2261,7 +2261,7 @@ The config object to pass as param for the 'setup' call.
     </tr><tr>
     <td>[source.group.apiurl]</td><td><code>string</code></td><td></td><td><p>The bintu apiurl.</p> </td>
     </tr><tr>
-    <td>[source.group.startQuality]</td><td><code>string</code></td><td><code>low</code></td><td><p>The start quality. Will be mapped to a valid <code>startIndex</code>. Possible values are: <code>&#39;high&#39;</code>, <code>&#39;medium-high&#39;</code>, <code>&#39;medium&#39;</code>, <code>&#39;medium-low&#39;</code>, <code>&#39;low&#39;</code>. If not set the general <code>startIndex</code> of the source will be used (default: <code>0</code> ~ <code>&#39;high&#39;</code>)</p> </td>
+    <td>[source.group.startQuality]</td><td><code>string</code></td><td><code>low</code></td><td><p>The start quality. Will be mapped to a valid <code>startIndex</code>. Possible values are: <code>&#39;high&#39;</code>, <code>&#39;medium-high&#39;</code>, <code>&#39;medium&#39;</code>, <code>&#39;medium-low&#39;</code>, <code>&#39;low&#39;</code>. If not set, the player starts with the lowest rendition (<code>&#39;low&#39;</code>).</p> </td>
     </tr><tr>
     <td>[source.group.security]</td><td><code>object</code></td><td></td><td><p>The security object of the group.</p> </td>
     </tr><tr>
@@ -2283,7 +2283,7 @@ The config object to pass as param for the 'setup' call.
     </tr><tr>
     <td>[source.options.switch.forcePlay]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>If set the player starts playback in case the player is paused. Default is true.</p> </td>
     </tr><tr>
-    <td>[source.options.switch.fastStart]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>DEPRECATED. Only if method is &#39;server&#39;. Tries to accelerate the startup time of the new source. Default is false.</p> </td>
+    <td>[source.options.switch.fastStart]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>DEPRECATED. Only if method is &#39;server&#39;. Tries to accelerate the startup time of the new source. Default is true.</p> </td>
     </tr><tr>
     <td>[source.options.switch.timeout]</td><td><code>number</code></td><td><code>20</code></td><td><p>The timeout for the update source request in seconds. If reached the error 4006 will thrown in the <a href="#NanoPlayer..event_onUpdateSourceFail">&#39;onUpdateSourceFail&#39;</a> and the <a href="#NanoPlayer..event_onSwitchStreamFail">&#39;onSwitchStreamFail&#39;</a> event. Default is 20 seconds, valid range is between 5 and 30.</p> </td>
     </tr><tr>
@@ -2291,9 +2291,9 @@ The config object to pass as param for the 'setup' call.
     </tr><tr>
     <td>[source.options.adaption]</td><td><code>object</code></td><td></td><td><p>The object to set an adaption for switching.</p> </td>
     </tr><tr>
-    <td>[source.options.adaption.rule]</td><td><code>string</code></td><td><code>&quot;deviationOfMean2&quot;</code></td><td><p>The switch rule if multiple entries are defined. Possible values are &#39;deviationOfMean&#39; (ABR automatic), &#39;deviationOfMean2&#39; (ABR automatic) and &#39;none&#39; (default, means only manual stream switch via &#39;switchStream&#39; possible).</p> </td>
+    <td>[source.options.adaption.rule]</td><td><code>string</code></td><td><code>&quot;deviationOfMean2&quot;</code></td><td><p>The switch rule if multiple entries are defined. Possible values are &#39;deviationOfMean&#39; (ABR automatic), &#39;deviationOfMean2&#39; (ABR automatic) and &#39;none&#39; (means only manual stream switch via &#39;switchStream&#39; possible). The default depends on the source: with 3 or more entries and with a bintu stream group (<code>source.group</code>) the default is &#39;deviationOfMean2&#39;; with 1 or 2 entries the default is &#39;none&#39; (ABR off).</p> </td>
     </tr><tr>
-    <td>[source.options.adaption.downStep]</td><td><code>number</code></td><td><code>1</code></td><td><p>The minimum number of steps during a ABR down switch (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only).</p> </td>
+    <td>[source.options.adaption.downStep]</td><td><code>number</code></td><td><code>2</code></td><td><p>The minimum number of steps during a ABR down switch (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only). The default is 2 with 3 or more entries and 1 otherwise.</p> </td>
     </tr><tr>
     <td>[source.options.adaption.omitRenditions]</td><td><code>Array.&lt;string|number&gt;</code></td><td></td><td><p>The renditions to omit if ABR enabled (&#39;deviationOfMean&#39; and &#39;deviationOfMean2&#39; only). This parameter accepts an `array` of valid stream group qualities (e.g., <code>&#39;high&#39;</code>, <code>&#39;medium&#39;</code>, <code>&#39;low&#39;</code>) or stream entry indexes (e.g., <code>0</code>, <code>1</code>, <code>2</code>, etc.).</p> </td>
     </tr><tr>
@@ -2301,7 +2301,7 @@ The config object to pass as param for the 'setup' call.
     </tr><tr>
     <td>[playback.autoplay]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>Enable/disable autoplay (default: true). <br/><b>IMPORTANT</b>: Browsers (mostly mobile) with stricter autoplay policy only allow autoplay with muted audio or within a user interaction (tap, click etc.). To allow autoplay in this case set the &#39;muted&#39; property to &#39;true&#39;. See our <a href="https://www.nanocosmos.de/blog/2018/03/autoplay-on-web-pages-with-h5live-player-for-ultra-low-latency-live-streams/"><b>nanocosmos-blog</b></a> for more informations.</p> </td>
     </tr><tr>
-    <td>[playback.automute]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>Enable/disable automute (default: false). <br/><b>IMPORTANT</b>: Browsers (mostly mobile) with stricter autoplay policy only allow autoplay with muted audio or within a user interaction (tap, click etc.). With &#39;autoplay = true&#39; and this option enabled the player will be muted to allow autoplay in case the browsers policy restricted autoplay.</p> </td>
+    <td>[playback.automute]</td><td><code>boolean</code></td><td><code>true</code></td><td><p>Enable/disable automute (default: true). <br/><b>IMPORTANT</b>: Browsers (mostly mobile) with stricter autoplay policy only allow autoplay with muted audio or within a user interaction (tap, click etc.). With &#39;autoplay = true&#39; and this option enabled the player will be muted to allow autoplay in case the browsers policy restricted autoplay.</p> </td>
     </tr><tr>
     <td>[playback.muted]</td><td><code>boolean</code></td><td><code>false</code></td><td><p>Mute/unmute the player (default: false). <br/><b>IMPORTANT</b>: Browsers (mostly mobile) with stricter autoplay policy only allow autoplay with muted audio. To allow autoplay set the &#39;muted&#39; property to &#39;true&#39;. See property &#39;autoplay&#39; for more informations.</p> </td>
     </tr><tr>
@@ -3189,7 +3189,7 @@ The possible error codes in a onError event.
     </tr><tr>
     <td>5001</td><td></td><td><p>An exception was thrown during setup.</p> </td>
     </tr><tr>
-    <td>5002</td><td></td><td><p>This browser does not fully support HTML5 and H5Live. Supported are: Chrome &gt;=54 (Windows, MacOSX, Android), Firefox &gt;=48 (Windows, MacOSX, Android), Microsoft Edge (Windows), Microsoft Internet Explorer 11 (at least Windows 8), Safari (MacOSX &amp; at least iOS 10).</p> </td>
+    <td>5002</td><td></td><td><p>This browser does not fully support HTML5 and H5Live. Supported are (nanoPlayer version 5): Chromium-based browsers &gt;=60, Firefox &gt;=55, Safari &gt;=11 (macOS, iOS, iPadOS), Microsoft Edge &gt;=15. Internet Explorer is not supported.</p> </td>
     </tr><tr>
     <td>5003</td><td></td><td><p>A forced tech is not supported by your browser.</p> </td>
     </tr><tr>

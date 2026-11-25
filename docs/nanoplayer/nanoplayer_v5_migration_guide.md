@@ -80,8 +80,12 @@ In case of bintu configuration being set via **group** or **entries** or the **s
 
 #### `config.source.options.adaption.rule`
 
-- from `"none"` to `"deviationOfMean2"`
-- enabling ABR playback if more than one stream/entry is available
+- from `"none"` to `"deviationOfMean2"` with 3 or more streams/entries and with a bintu stream group (`source.group`)
+- ABR playback is enabled with 3 or more entries; with 1 or 2 entries the default stays `"none"` (ABR off)
+
+#### `config.source.options.adaption.downStep`
+
+- from `1` to `2` with 3 or more entries (stays `1` otherwise)
 
 ### 3. Canvas vs Video Element
 

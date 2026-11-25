@@ -45,6 +45,6 @@ Open a separate browser tab and open the URL `chrome://webrtc-internals` click `
 
 :::caution Remote support session
 Any potential issues might be best resolved based on a remote support session, dependent on your support level.
-**Please [contact](mailto:support@nanocosmos.de) us to arrange an online meeting.**
+**Please [contact](mailto:support@nanocosmos.net) us to arrange an online meeting.**
 :::
 

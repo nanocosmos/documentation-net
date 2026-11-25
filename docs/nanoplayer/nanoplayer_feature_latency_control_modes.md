@@ -14,8 +14,8 @@ sidebar_label: Latency control modes
 
 Introduced in **nanoStream H5Live Player Version 4.14.x**, two new latency control modes have been added, targeting especially lowest latency use cases like live auctioning.
 The latency control mode can be selected via the added `playback.latencyControlMode` configuration parameter.
-The established latency control mode is available as the `'classic'` option which remains to be the default mode.
-In addition the new latency control modes `'balancedadaptive'` and `'fastadaptive'` have been added. According to the current stream and network conditions they can adjust the latency adaptively. This allows to achieve a lower latency while keeping the playback experience smooth.
+The established latency control mode is available as the `'classic'` option.
+In addition the new latency control modes `'balancedadaptive'` and `'fastadaptive'` have been added. Since nanoPlayer version 5, `'balancedadaptive'` is the default mode (in version 4.x the default was `'classic'`). According to the current stream and network conditions they can adjust the latency adaptively. This allows to achieve a lower latency while keeping the playback experience smooth.
 
 ## Supported platforms and browsers
 
@@ -83,13 +83,14 @@ var config = {
 
 ### `'classic'` mode
 
-* default mode
+* default mode in version 4.x (since version 5 the default is `'balancedadaptive'`)
 * well-established and reliable option for a variety of use cases
 * based on threshold values that can be customized via [`tweaks.buffer`](#buffer-tweaks) configuration
 
 ### `'balancedadaptive'` mode
 
 * added in version 4.14.x, iOS support added in 4.23.x
+* default mode since version 5
 * latency control adapting to current stream and network conditions
 * capable of achieving and maintaining lower playback latency
 * lower operating points compared to `classic` mode

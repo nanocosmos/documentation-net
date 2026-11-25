@@ -116,7 +116,7 @@ The `allowfullscreen` attribute is required if your site supports fullscreen pla
     allowfullscreen 
     width="1280" 
     height="720" 
-    src="https://demo.nanocosmos.de/nanoplayer/embed/1.3.3/nanoplayer.html
+    src="https://demo.nanocosmos.de/nanoplayer/embed/2.0.0/nanoplayer.html
         ?group.id=YOUR_STREAM_ID
         &group.security.jwtoken=eyJhb....
         &options.adaption.rule=deviationOfMean2

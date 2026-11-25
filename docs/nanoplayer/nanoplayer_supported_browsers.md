@@ -4,15 +4,14 @@ title: Support Browsers
 sidebar_label: Supported Browsers
 ---
 
-The low-latency nanoStream h5Live Player **runs on all full-featured HTML5 browsers** including
+The low-latency nanoStream H5Live Player (version 5) **runs on all full-featured HTML5 browsers** including
 
-- Safari 10 and higher on iOS, iPadOS and macOS
-- Chrome 54 and higher on desktop and mobile
-- Firefox 48 and higher
-- Edge
-- Internet Explorer 11 (starting Windows 8.1)
+- Chromium-based browsers 60 and higher (Chrome, Opera, Samsung Internet and others) on desktop and mobile
+- Firefox 55 and higher
+- Safari 11 and higher on iOS, iPadOS and macOS
+- Microsoft Edge 15 and higher
 
-For Internet Explorer 11 on Windows 7, H5Live player contains a `Flash` player fallback for `RTMP`.
+Internet Explorer is not supported.
 
 ### Browser emulations
 
@@ -30,7 +29,7 @@ For Windows, macOS and Android:
 - Media Source Extensions
 - Support for `fMP4`, `H.264` Video, `AAC` Audio
 
-On iOS, nanoStream H5Live uses a unique version of `HLS` which works plugin-free on all Safari versions starting iOS 10.
+On iOS, nanoStream H5Live uses a unique version of `HLS` which works plugin-free on all supported Safari versions (iOS 11 and higher).
 
 On some Android-based mobile devices, the default browser is a stripped-down version not featuring all HTML5 elements. For example, the Samsung Internet browser is rather based on Chromium than Chrome.
 This results in differences regarding the support of certain technologies, codecs and formats.
@@ -49,11 +48,13 @@ The nanoPlayer setup call is returning a specific error message in case that the
 
 :::danger Setup Error
 **Setup Error:** "This browser does not fully support HTML5 and H5Live. <br/>
-Supported are:
-- Chrome >=54 (Windows, macOS, Android)
-- Firefox >=48 (Windows, macOS, Android)
-- Microsoft Edge (Windows), Microsoft Internet Explorer 11 (at least Windows 8)
-- Safari (macOS & at least iOS 10)."
+Supported are (nanoPlayer version 5):
+- Chromium-based browsers >=60 (Windows, macOS, Linux, Android)
+- Firefox >=55 (Windows, macOS, Linux, Android)
+- Safari >=11 (macOS, iOS, iPadOS)
+- Microsoft Edge >=15 (Windows)
+
+Internet Explorer is not supported."
 :::
 
 ```js

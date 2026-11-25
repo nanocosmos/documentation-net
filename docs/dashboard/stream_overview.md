@@ -290,7 +290,7 @@ On the right-hand side, the **Live Captions setup panel** displays the current c
 - the configured **target language(s)**, and
 - the **Edit** and **Remove** buttons.
 
-Below the setup panel, the **decoded caption token** is shown. This token is appended to the **Captions Playout URL** and controls access to the live captions stream. If required, you can generate a customized token by clicking **Create new token**.
+Below the setup panel, the **decoded caption token** is shown. This token is appended to the **Captions Playout URL** and controls access to the live captions stream. The token is only needed for secure streams; for non-secure streams the captions can be played without a token. If required, you can generate a customized token by clicking **Create new token**.
 
 The corresponding **Code Snippet** for embedding the Live Captions Player is available in the **Code Snippets** tab, together with all other playout and embedding examples.
 

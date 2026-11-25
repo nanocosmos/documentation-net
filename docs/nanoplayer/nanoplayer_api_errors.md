@@ -186,13 +186,14 @@ Example:
 
 The used browser does not fully support HTML5 and H5Live.<br />
 
-Supported browsers are:
+Supported browsers are (nanoPlayer version 5):
 
-* Chrome >=54 (Windows, MacOSX, Android)
-* Firefox >=48 (Windows, MacOSX, Android)
-* Microsoft Edge (Windows)
-* Microsoft Internet Explorer 11 (at least Windows 8)
-* Safari (MacOSX & at least iOS 10)
+* Chromium-based browsers >=60 (Windows, macOS, Linux, Android)
+* Firefox >=55 (Windows, macOS, Linux, Android)
+* Safari >=11 (macOS, iOS, iPadOS)
+* Microsoft Edge >=15 (Windows)
+
+Internet Explorer is not supported.
 
 ### 5004 The players source configuration is malformed or missing
 

@@ -26,15 +26,14 @@ See the separate [H5Live section  in our docs](../nanoplayer/nanoplayer_introduc
 
 ### Browser support
 
-The low-latency nanoStream h5Live Player runs on all full-featured HTML5 browsers including
+The low-latency nanoStream H5Live Player (version 5) runs on all full-featured HTML5 browsers including
 
-- Safari 10 and higher on iOS, iPadOS and macOS
-- Chrome 54 and higher on desktop and mobile
-- Firefox 48 and higher
-- MS Edge (all versions)
-- Internet Explorer 11 (starting Windows 8.1)
+- Chromium-based browsers 60 and higher (Chrome, Opera, Samsung Internet and others) on desktop and mobile
+- Firefox 55 and higher
+- Safari 11 and higher on iOS, iPadOS and macOS
+- Microsoft Edge 15 and higher
 
-For Internet Explorer 11 on Windows 7, H5Live player contains a Flash player fallback for RTMP.
+Internet Explorer is not supported.
 
 ### Browser emulations
 
@@ -52,7 +51,7 @@ For Windows, macOS and Android:
 - Media Source Extensions
 - Support for fMP4, H.264 Video, AAC Audio
 
-On iOS, nanoStream H5Live uses a unique version of HLS which works plugin-free on all Safari versions starting iOS 10.
+On iOS, nanoStream H5Live uses a unique version of HLS which works plugin-free on all supported Safari versions (iOS 11 and higher).
 
 On some Android-based mobile devices, the default browser is a stripped-down version not featuring all HTML5 elements.
 For example, the Samsung Internet browser is rather based on Chromium than Chrome.
@@ -77,9 +76,8 @@ player.setup(config).then(function (config) {
 
 :::warning Setup Error
 *This browser does not fully support HTML5 and H5Live.
-Supported are: Chrome >=54 (Windows, macOS, Android), Firefox >=48 (Windows, macOS, Android),
-Microsoft Edge (Windows), Microsoft Internet Explorer 11 (at least Windows 8),
-Safari (macOS & at least iOS 10).*
+Supported are (nanoPlayer version 5): Chromium-based browsers >=60, Firefox >=55,
+Safari >=11 (macOS, iOS, iPadOS), Microsoft Edge >=15. Internet Explorer is not supported.*
 :::
 
 ## How can I check browser support?

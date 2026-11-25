@@ -38,7 +38,7 @@ Click on dump, download the data, and send it to us.
 
 :::danger Remote Support Session
 For expedited issue resolution, consider a remote support session and 
-[reach out](mailto:support@nanocosmos.de) to us to arrange an online meeting.
+[reach out](mailto:support@nanocosmos.net) to us to arrange an online meeting.
 
 **Please be aware that this option is contingent upon your support level and may offer the most effective solution to production critical issues.**
 :::

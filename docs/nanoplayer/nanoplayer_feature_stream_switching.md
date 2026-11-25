@@ -250,8 +250,8 @@ var config = {
 ```
 
 :::info Note
- In case you either provide an invalid `startIndex` or don't provide one at all the player starts the stream with index 0. <br/>
-The player will set the default adaption rule none if no adaption rule is passed. You can still switch between your pre-configured entries manually with the switchStream API.
+ In case you either provide an invalid `startIndex` or don't provide one at all, nanoPlayer 5 starts the stream with the lowest rendition (the last entry, index n-1). <br/>
+If no adaption rule is passed, the player uses `deviationOfMean2` (ABR on) with 3 or more entries and `none` (ABR off) with 1 or 2 entries. You can always switch between your pre-configured entries manually with the switchStream API.
 :::
 
 #### Example multi stream configuration (with ABR) and playback security
@@ -821,8 +821,8 @@ var config = {
 ```
 
 :::info
-In case you either provide an invalid `startIndex` or don't provide one at all the player starts the stream with index 0. <br/>
-The player will set the default adaption rule none if no adaption rule is passed. You can still switch between your pre-configured entries manually with the switchStream API.
+In case you either provide an invalid `startIndex` or don't provide one at all, nanoPlayer 5 starts the stream with the lowest rendition (the last entry, index n-1). <br/>
+If no adaption rule is passed, the player uses `deviationOfMean2` (ABR on) with 3 or more entries and `none` (ABR off) with 1 or 2 entries. You can always switch between your pre-configured entries manually with the switchStream API.
 :::
 
 ## switchStream API

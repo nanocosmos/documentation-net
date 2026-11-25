@@ -7,8 +7,8 @@ sidebar_label: Fast playback start
 ## Using the fast playback start feature with nanoStream Cloud
 
 Introduced in **nanoStream H5Live Player Version 4.22.0**, the fast start mode is improving the time to first frame and the playback start time with nanoStream Cloud.
-To enable it, developers need to set the boolean value `config.playback.faststart` to true.
-By default, the fast start mode is disabled in v4.22.0.
+It is controlled by the boolean value `config.playback.faststart`.
+Since nanoPlayer version 5 the fast start mode is enabled by default (`true`). In version 4.x it was disabled by default and had to be enabled explicitly; set it to `false` to disable it.
 
 ### Configuration with fast playback start enabled
 

@@ -28,16 +28,16 @@ After creating a stream, you can access the visual enhancements in the dedicated
 
 The Overlay stream option adds a watermark image to the source stream. When enabled, a new streamgroup is created where the overlay and optional delay are applied.
 
-### Upload and Manage Watermarks in nanoStream Studio
+### Upload and Manage Watermarks in nanoStudio
 
-Watermark images used for overlays are managed in **nanoStream Studio**.
+Watermark images used for overlays are managed in **nanoStudio**.
 
-:::info Uploading assets to nanoStream Studio
+:::info Uploading assets to nanoStudio
 Open **https://studio.nanostream.cloud/** and sign in using your regular **nanoStream dashboard credentials**.
 :::
 
-![Screenshot: nanoStream Studio Menu](../assets/dashboard/nanostream-studio-dialog.png)
-*Screenshot: nanoStream Studio Menu*
+![Screenshot: nanoStudio Menu](../assets/dashboard/nanostream-studio-dialog.png)
+*Screenshot: nanoStudio Menu*
 
 After logging in, open the **Watermark Manager** from the menu. There you can review all watermark images currently available for your streams.
 To upload a new watermark, click **Upload Watermarks to your storage** and select the image file you want to use. Once uploaded, you can select the watermark to preview it and optionally set it as the **default watermark**. Setting a default watermark means this image will automatically be used whenever the overlay configuration does not specify a particular file. This corresponds to the **Set Default Image** option in the "Enable Overlay Dialog".
@@ -50,7 +50,7 @@ To configure an overlay, open the Visual Enhancements tab of your desired stream
 ![Screenshot: Adding stream option overlay to a stream](../assets/dashboard/add-overlay.png)
 *Screenshot: Adding stream option overlay to a stream*
 
-1. **File Upload**: [Upload and Manage Watermarks in nanoStream Studio](#upload-and-manage-watermarks-in-nanostream-studio)
+1. **File Upload**: [Upload and Manage Watermarks in nanoStudio](#upload-and-manage-watermarks-in-nanostudio)
 2. **Watermark**: Type in the watermark filename to use for the overlay. If no specific image is selected, the system will automatically apply the default watermark configured in the watermark manager.
     :::tip Selecting a watermark file
     - Only enter the **file name**, **without the file extension**  

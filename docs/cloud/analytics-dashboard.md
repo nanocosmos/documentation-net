@@ -12,7 +12,7 @@ Check out our dedicated dashboard features at [metrics.nanostream.cloud](https:/
 The default level allows you to access most of the metrics available on the different dashboards.
 
 :::info advanced metric widgets
-To see advanced metric widgets, e.g. for H5Live player metrics like "Buffering Play Ratio" or "Average and median of played time in seconds", you need the level "premium" for your organization.
+Advanced metric widgets, e.g. for H5Live player metrics like "Buffering Play Ratio" or "Average and median of played time in seconds", are available with the level "full". Since Analytics API 2.27 no widget or API route requires the former "premium" level.
 Please reach out to us via our [contact form](https://www.nanocosmos.de/contact) or by sending an mail to sales(at)nanocosmos.de if access to the advanced metric widgets is required.
 :::
 
