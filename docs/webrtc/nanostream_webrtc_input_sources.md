@@ -163,9 +163,10 @@ canvasStream.addTrack(myAudioTrack);
 // Simple render loop. The function calls itself 30 (framerate) times per second.
 // As an example, we simply draw the string "Hello World".
 function renderLoop() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
     context.font = '50px serif';
     context.fillText('Hello world', 50, 90);
-    setTimeout(loop, 1000 / framerate); // drawing at 30fps
+    setTimeout(renderLoop, 1000 / framerate); // drawing at 30fps
 };
 
 // Start the render loop

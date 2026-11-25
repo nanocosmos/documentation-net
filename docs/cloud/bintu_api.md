@@ -47,10 +47,10 @@ Most users combine both: Dashboard for visibility and operations, API for automa
 To use Bintu (Dashboard or API), you need a **nanoStream Cloud account**. \
 If you do not have one yet, create it here: **[dashboard.nanostream.cloud/signup](https://dashboard.nanostream.cloud/signup)**.
 
-If you need guidance regarding plans, multi-region distribution, SLA options or larger configurations, feel free to reach out via [nanocosmos.net/contact](https://www.nanocosmos.net/contact) oder per mail *sales(at)nanocosmos.net* . We're happy to assist you in finding the best setup for your use case.
+If you need guidance regarding plans, multi-region distribution, SLA options or larger configurations, feel free to reach out via [nanocosmos.net/contact](https://www.nanocosmos.net/contact) or by email at *sales(at)nanocosmos.net*. We're happy to assist you in finding the best setup for your use case.
 
 :::tip getting started
-Wir haben einen Docs Eintrag nur für die drei Wege, das nanoStream Cloud Dashboard zu accessen:
+There are three ways to access the nanoStream Dashboard:
 - **[Sign in with an existing account](/docs/dashboard/getting_started#sign-in)**
 - **[Receive an invite to an existing organization](/docs/dashboard/getting_started#invite)**
 - **[Sign up for a new account](/docs/dashboard/getting_started#sign-up)**.

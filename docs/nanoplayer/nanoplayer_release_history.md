@@ -180,7 +180,7 @@ This release includes an improvement to the overall resilience of the player’s
 
 ### **Release Notes**
 
-This release includes fixes htmlFor loading timeout behavior and fast-start buffer management, along with improved screen wake behavior on mobile devices. The loading timeout now properly resets when updating sources during the loading state. Separately, fast-start buffer requests are now prevented during playback to avoid unnecessary buffering. Additionally, mobile devices will stay active during MOQ mode playback, with screen dimming and locking disabled by default through the new playback.enableWakeLock setting.
+This release includes fixes for loading timeout behavior and fast-start buffer management, along with improved screen wake behavior on mobile devices. The loading timeout now properly resets when updating sources during the loading state. Separately, fast-start buffer requests are now prevented during playback to avoid unnecessary buffering. Additionally, mobile devices will stay active during MOQ mode playback, with screen dimming and locking disabled by default through the new playback.enableWakeLock setting.
 
 ### **Changelog**
 
@@ -253,7 +253,7 @@ Finally, we have cleaned up outdated and rarely used features. Flash player and 
 
 ### Changed
 
-- default values htmlFor improved performance and usability
+- default values for improved performance and usability
   - `config.playback.latencyControlMode`: from `"classic"` to `"balancedadaptive"`
   - `config.playback.automute`: from `false` to `true`
   - `config.playback.faststart`: from `false` to `true`
@@ -299,13 +299,13 @@ This release includes fixes for fast-start buffer management and hls playback er
 
 ### **Release Notes**  
 
-In this release, we introduce the new config option `metrics.serverDomain`, which allows you to configure a custom white-label domain htmlFor nanoStream Cloud metrics and telemetry endpoints.
+In this release, we introduce the new config option `metrics.serverDomain`, which allows you to configure a custom white-label domain for nanoStream Cloud metrics and telemetry endpoints.
 
 ### **Changelog**
 
 ### Added
 
-- option `metrics.serverDomain` enabling to configure a custom white-label domain name htmlFor nanoStream Cloud metrics/telemetry endpoints
+- option `metrics.serverDomain` enabling to configure a custom white-label domain name for nanoStream Cloud metrics/telemetry endpoints
 
 ## **[4.30.1]**
 
@@ -342,7 +342,7 @@ In this update, additional media and network capabilities are now logged in the 
 
 ### **Release Notes**  
 
-This release introduces a new configuration option htmlFor adaptive bitrate (ABR) setups.
+This release introduces a new configuration option for adaptive bitrate (ABR) setups.
 
 You can now omit specific renditions in ABR configurations using the new `config.source.options.adaption.omitRenditions` parameter. This parameter accepts an `array` of predefined quality identifiers (e.g., `"high"`, `"medium"`, `"low"`) or stream entry indexes (e.g., `0`, `1`, `2`, etc.), providing greater flexibility in tailoring adaptive bitrate playback.
 
@@ -359,7 +359,7 @@ These updates enhance flexibility and reliability in ABR setups.
   - accepted values include predefined quality identifiers (type: `string`) or stream entry indexes (type: `number`):
     - qualities: `"high"`, `"medium-high"`, `"medium"`, `"medium-low"`, `"low"`
     - indexes: `0`, `1`, `2`, etc.
-  - see the [feature description](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_stream_switching#advanced-abr-settings) htmlFor more details
+  - see the [feature description](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_stream_switching#advanced-abr-settings) for more details
 
 ### **Fixed**
 
@@ -381,7 +381,7 @@ These enhancements ensure a more reliable and user-friendly experience.
 
 - enhanced observability with additional information in the error event when identified as a startup error:
   - errors occurring during playback attempts in the initial loading phase, including the first 30 seconds of playback
-  - htmlFor details, see [Startup Errors Documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_api_errors#startup-errors)
+  - for details, see [Startup Errors Documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_api_errors#startup-errors)
 
 ### **Improved**
 
@@ -391,13 +391,13 @@ These enhancements ensure a more reliable and user-friendly experience.
 
 ### **Release Notes**
 
-This version includes a more robust conditioning htmlFor initial switch up which results in a faster up switch while using ABR. Applies to all platforms including iOS17, iOS18 and higher.
+This version includes a more robust conditioning for initial switch up which results in a faster up switch while using ABR. Applies to all platforms including iOS17, iOS18 and higher.
 
 ### **Changelog**
 
 ### Improved
 
-- initial switch up time htmlFor ABR
+- initial switch up time for ABR
 
 ## **[4.26.1]**
 
@@ -415,7 +415,7 @@ With this patch version, we resolved an issue during `player.setup` that could c
 
 ### **Release Notes**
 
-This version includes several improvements. Playback attempts on mobile devices failing due to visibility state hidden at load start will now result in a dedicated event `1009`. This allows htmlFor clearer differentiation from other startup errors, such as network or stream issues `2003 Not enough media data received`. Further we improved playback start behavior in iOS WebView apps, which require user interaction htmlFor video playback in their WebView settings. Now, if a playback attempt is rejected due to missing user interaction, the player will emit error `1005` early on, allowing the application to prompt the user htmlFor interaction more quickly. Refer to recommended settings htmlFor [iOS WebView:](./nanoplayer_webview#ios). In general find more information about error codes here:
+This version includes several improvements. Playback attempts on mobile devices failing due to visibility state hidden at load start will now result in a dedicated event `1009`. This allows for clearer differentiation from other startup errors, such as network or stream issues `2003 Not enough media data received`. Further we improved playback start behavior in iOS WebView apps, which require user interaction for video playback in their WebView settings. Now, if a playback attempt is rejected due to missing user interaction, the player will emit error `1005` early on, allowing the application to prompt the user for interaction more quickly. Refer to recommended settings for [iOS WebView:](./nanoplayer_webview#ios). In general find more information about error codes here:
 [API NanoPlayer..errorcode](./nanoplayer_api#NanoPlayer..errorcode).
 
 ### **Changelog**
@@ -427,10 +427,10 @@ This version includes several improvements. Playback attempts on mobile devices 
 
 ### Fixed
 
-- playback start behaviour in iOS WebView apps requiring user interaction htmlFor video playback `mediaTypesRequiringUserActionForPlayback`
+- playback start behaviour in iOS WebView apps requiring user interaction for video playback `mediaTypesRequiringUserActionForPlayback`
   - in case of a playback attempt rejected due to missing user interaction, the player will now emit error `1005 Playback must be initialized by user gesture.` early on
   - this enables the application to handle the condition faster by asking the user to interact
-  - see recommended settings htmlFor iOS WebView:[nanoplayer WebView iOS](./nanoplayer_webview#ios)
+  - see recommended settings for iOS WebView:[nanoplayer WebView iOS](./nanoplayer_webview#ios)
 
 ## **[4.25.1]**
 
@@ -442,13 +442,13 @@ In this patch release we enhanced the observability of player metrics to better 
 
 ### Improved
 
-- observability in player metrics htmlFor quality of service in case of bintu configuration being used
+- observability in player metrics for quality of service in case of bintu configuration being used
 
 ## **[4.25.0]**
 
 ### **Release Notes**
 
-With this release, we've implemented handling htmlFor repeated switch stream failures by introducing cooldown functionality, thereby enhancing the robustness of stream switching.
+With this release, we've implemented handling for repeated switch stream failures by introducing cooldown functionality, thereby enhancing the robustness of stream switching.
 Additionally, we've strengthened access to video elements, ensuring more reliable and stable functionality.
 Furthermore, we've resolved issues related to preventing multiple `2004` errors and event order discrepancies when a bintu stream group is not live during setup.
 Lastly, we've addressed a random playback error occurring when `keepConnection` was enabled, ensuring a smoother playback experience.
@@ -472,19 +472,19 @@ Lastly, we've addressed a random playback error occurring when `keepConnection` 
 
 ### **Release Notes**
 
-This patch release is enabling H5Live-HLS fallbacks when access to ManagedMediaSource API is denied htmlFor locally loaded webpages in iOS WKWebView.
+This patch release is enabling H5Live-HLS fallbacks when access to ManagedMediaSource API is denied for locally loaded webpages in iOS WKWebView.
 
 ### **Changelog**
 
 ### Fixed
 
-- H5Live-HLS fallback in case of a denied access to the ManagedMediaSource API htmlFor locally loaded webpages in iOS WKWebView
+- H5Live-HLS fallback in case of a denied access to the ManagedMediaSource API for locally loaded webpages in iOS WKWebView
 
 ## **[4.24.2]**
 
 ### **Release Notes**
 
-This patch release addresses an autoPlay issue occurring when the application called `player.unmute()` without user interaction context. This issue could result in black frames or errors during playback start if unmuted playback was not permitted. Further we enhanced the smoothness of stream switches specifically in H5Live-HLS mode, providing a better viewing experience htmlFor users.
+This patch release addresses an autoPlay issue occurring when the application called `player.unmute()` without user interaction context. This issue could result in black frames or errors during playback start if unmuted playback was not permitted. Further we enhanced the smoothness of stream switches specifically in H5Live-HLS mode, providing a better viewing experience for users.
 
 ### **Changelog**
 
@@ -518,23 +518,23 @@ Further we improved the latency recovery during playback on desktop platforms wh
 Moreover, we implemented measures to prevent buffering when quality adaptations occur in streams ingested via WebRTC, ensuring smoother streaming experiences.
 Additionally we improved the detection of iOS desktop mode and application of background suspension, ensuring consistent behavior across browsers and modes on iOS devices.
 Also we addressed a bug where stream switching failed while in a paused state with `keepConnection` and `forcePlay` options enabled, improving overall functionality and stability.
-We added a fix regarding the unintended fallback behavior in latency control mode `fastadaptive` to `balancedadaptive` htmlFor Safari versions 17.4 and above on MacOS Sonoma. The fallback was introduced in version 4.23.1.
-As a last point we enabled H5Live-HLS fallbacks when access to ManagedMediaSource API is denied htmlFor locally loaded webpages in iOS WKWebView.
+We added a fix regarding the unintended fallback behavior in latency control mode `fastadaptive` to `balancedadaptive` for Safari versions 17.4 and above on MacOS Sonoma. The fallback was introduced in version 4.23.1.
+As a last point we enabled H5Live-HLS fallbacks when access to ManagedMediaSource API is denied for locally loaded webpages in iOS WKWebView.
 
 ### **Changelog**
 
 ### Improved
 
-- utilizing new lean response option htmlFor configuration via bintu API htmlFor a faster response
+- utilizing new lean response option for configuration via bintu API for a faster response
 - faster latency recovery of playback via desktop when returning from hidden to visible state
 - prevent buffering in case of quality adaptions in streams ingested via webrtc
 - iOS desktop mode detection and application of background suspension to ensure consisent behaviour across browsers and modes on iOS
-- use H5Live-HLS fallback in case of a denied access to the ManagedMediaSource API htmlFor locally loaded webpages in iOS WKWebView
+- use H5Live-HLS fallback in case of a denied access to the ManagedMediaSource API for locally loaded webpages in iOS WKWebView
 
 ### Fixed
 
 - stream switch failing in paused state with `keepConnection` and `forcePlay` options enabled
-- remove unintended fallback htmlFor latency control mode `fastadaptive` to `balancedadaptive` htmlFor Safari 17.4+ on MacOS Sonoma (introduced in 4.23.1)
+- remove unintended fallback for latency control mode `fastadaptive` to `balancedadaptive` for Safari 17.4+ on MacOS Sonoma (introduced in 4.23.1)
 
 ## Please find more about the **latency control modes** feature in our [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_latency_control_modes/)
 
@@ -542,21 +542,21 @@ As a last point we enabled H5Live-HLS fallbacks when access to ManagedMediaSourc
 
 ### **Release Notes**
 
-In this latest release, we're exited to introduce enhanced playback support through the Managed Media Source API (MMSE) htmlFor iOS 17.1 and above. By default, this feature provides an upgraded media playback experience in line with desktop and Android platforms, resulting in improved latency, faster start-up times, and an overall enhanced user experience. In the event that MMSE API is unsupported or disabled, H5live-HLS will seamlessly take over on iOS.
+In this latest release, we're exited to introduce enhanced playback support through the Managed Media Source API (MMSE) for iOS 17.1 and above. By default, this feature provides an upgraded media playback experience in line with desktop and Android platforms, resulting in improved latency, faster start-up times, and an overall enhanced user experience. In the event that MMSE API is unsupported or disabled, H5live-HLS will seamlessly take over on iOS.
 
-Moreover, we've expanded support htmlFor the latency control mode `balancedadaptive` across all iOS versions. This empowers users to achieve lower latency while ensuring a smooth playback experience on iOS devices. For more detailed information, refer to our comprehensive feature description in the [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_latency_control_modes#v4231).
+Moreover, we've expanded support for the latency control mode `balancedadaptive` across all iOS versions. This empowers users to achieve lower latency while ensuring a smooth playback experience on iOS devices. For more detailed information, refer to our comprehensive feature description in the [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_latency_control_modes#v4231).
 
-Additionally, this version includes a general enhancement to buffer and latency control htmlFor H5live-HLS playback on iOS. These improvements contribute to an even more refined and optimized playback experience.
+Additionally, this version includes a general enhancement to buffer and latency control for H5live-HLS playback on iOS. These improvements contribute to an even more refined and optimized playback experience.
 
 ### **Changelog**
 
 ### Added
 
-- support htmlFor playback via Managed Media Source API (MMSE) on iOS 17.1 and higher
+- support for playback via Managed Media Source API (MMSE) on iOS 17.1 and higher
   - media playback workflow similar to desktop and Android
   - replacing h5live-HLS
   - improving: latency, start-up time, general UX
-- support htmlFor playback with latency control mode `balancedadaptive` on iOS (all versions)
+- support for playback with latency control mode `balancedadaptive` on iOS (all versions)
   - configuration fallback from `fastadaptive` to `balancedadaptive` mode
   - improving: latency (control)
 
@@ -578,13 +578,13 @@ Additionally, this version includes a general enhancement to buffer and latency 
 
 ### **Release Notes**
 
-This version is improving the detection of supported browsers htmlFor iOS WebView apps with customized user agent strings.
+This version is improving the detection of supported browsers for iOS WebView apps with customized user agent strings.
 
 ### **Changelog**
 
 ### Improved
 
-- detection of supported browsers htmlFor iOS WebView apps with customized user agent strings
+- detection of supported browsers for iOS WebView apps with customized user agent strings
 
 ## **[4.22.2]**
 
@@ -636,7 +636,7 @@ In addition, a layout issue that occurred after exiting fullscreen mode in Safar
 
 ### Added
 
-- fast start mode feature htmlFor improved playback start-up times with nanoStream Cloud
+- fast start mode feature for improved playback start-up times with nanoStream Cloud
   - can be enabled via boolean `config.playback.faststart`, disabled by default
   - fast start related values in `onStreamInfo` and `onPlay` event
 
@@ -714,10 +714,10 @@ The issue has been introduced in version 4.20.2.
 
 ### **Release Notes**
 
-This version is adding further improvements htmlFor error handling and automatic recovery on iOS.
+This version is adding further improvements for error handling and automatic recovery on iOS.
 The improvements include detection and automatic recovery in cases of stalled video playback due to
 decoding issues and in cases of buffering errors that could formerly lead to playback stopping.
-For further informations see the [feature description](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_media_error_recovery/) htmlFor media error recoveries
+For further informations see the [feature description](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_media_error_recovery/) for media error recoveries
 and the `errorcode` [definitions](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_api#nanoplayererrorcode--codenumbercode) in the documentation.
 
 Another improvement is related to `updateSource` API calls made during LOADING state.
@@ -755,10 +755,10 @@ The issue has been introduced in version 4.19.
 
 ### **Release Notes**
 
-This version is introducing improvements htmlFor error handling and automatic recovery on iOS.
+This version is introducing improvements for error handling and automatic recovery on iOS.
 Playback interruptions in context of stream switches in iOS low power mode have been fixed.
-Furthermore robustness htmlFor fullscreen handling in multi-player use cases has been increased.
-The improvement htmlFor classic playback on iOS 15 to avoid buffer impacts after adjusting latency has now been applied htmlFor iOS 16 as well.
+Furthermore robustness for fullscreen handling in multi-player use cases has been increased.
+The improvement for classic playback on iOS 15 to avoid buffer impacts after adjusting latency has now been applied for iOS 16 as well.
 This was introduced in version 4.15.0.
 
 ### **Changelog**
@@ -772,7 +772,7 @@ This was introduced in version 4.15.0.
 
 - playback interruptions in context of stream switches in iOS low power mode
 - fullscreen handling with multiple player instances
-- unreasoned configuration warnings htmlFor event handlers `onServerInfo` and `onFullscreenChange`
+- unreasoned configuration warnings for event handlers `onServerInfo` and `onFullscreenChange`
 - added fields `id`, `player`, `version`, `state` in `onFullscreenChange` event object
 
 ## Please find more about the **stream group configuration** feature in our [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_stream_group_configuration/)
@@ -787,14 +787,14 @@ This version is introducing two new features.
 
 Utilizing the new bintu stream group feature, it is now possible to configure an entire set of ABR streams
 by passing only the corresponding bintu stream group id via the player source configuration.
-This allows a much easier configuration htmlFor ABR playback.
+This allows a much easier configuration for ABR playback.
 All existing options that are part of the configuration remain unchanged.
 
 Please find more about the **stream group configuration** feature in our [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_stream_group_configuration/).
 
-Furthermore, this version is adding support htmlFor the new secure playback using JSON Web Token (JWT).
-The new token type can contain playback permissions htmlFor one or more stream names.
-This way a single token can be used htmlFor all secure use cases.
+Furthermore, this version is adding support for the new secure playback using JSON Web Token (JWT).
+The new token type can contain playback permissions for one or more stream names.
+This way a single token can be used for all secure use cases.
 It can be applied with the current `entries` configuration and with the new `group` configuration.
 
 Please find more about **secure playback with JWT** in our [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_token_security/).
@@ -809,7 +809,7 @@ This will enable the nanoStream Player to properly initialize in the setup metho
 
 - stream group configuration via `config.source.group` object
   - see [feature](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_stream_group_configuration/) description
-- support htmlFor secure playback using JSON Web Token (JWT)
+- support for secure playback using JSON Web Token (JWT)
   - see [feature](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_token_security/) description
 
 ### Improved
@@ -822,16 +822,16 @@ This will enable the nanoStream Player to properly initialize in the setup metho
 
 ### **Release Notes**
 
-This version is adding a new public event to the player. The event `onActiveVideoElementChange` is emitted when the active video element htmlFor playback has been created and if the element has been changed in case of a stream switch on iOS. The event data is providing the `activeVideoElement` and the complete `videoElementList`.
+This version is adding a new public event to the player. The event `onActiveVideoElementChange` is emitted when the active video element for playback has been created and if the element has been changed in case of a stream switch on iOS. The event data is providing the `activeVideoElement` and the complete `videoElementList`.
 Having a reference to the `activeVideoElement` simplifies use cases like drawing or rendering images to a canvas or saving snapshots from the video.
-See the [api description](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_api#onactivevideoelementchange) of the event and our [docs feature entry](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_video_access_and_processing/) htmlFor more information.
+See the [api description](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_api#onactivevideoelementchange) of the event and our [docs feature entry](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_video_access_and_processing/) for more information.
 
 ### **Changelog**
 
 ### Added
 
 - new public event `onActiveVideoElementChange`
-  - is emitted when the active video element htmlFor playback has been created and if the element has been changed in case of a stream switch on iOS
+  - is emitted when the active video element for playback has been created and if the element has been changed in case of a stream switch on iOS
   - provides the `videoElementList {Array.HTMLVideoElement}` and the `activeVideoElement {HTMLVideoElement}` in the event data
   - see the [api description](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_api#onactivevideoelementchange)
 
@@ -858,9 +858,9 @@ In addition an issue in relation to timed out stream switches has been fixed. Pr
 
 ### **Release Notes**
 
-This version is adding improvements htmlFor ABR playback. It implements a cooldown mechanism to control the next up-switch.
+This version is adding improvements for ABR playback. It implements a cooldown mechanism to control the next up-switch.
 Too frequent up- & down-switches will be prevented. This improves the user experience especially in case of slight but frequent buffer impacts e.g. in case of limited network ressources.
-Furthermore this release includes an improvement htmlFor classic playback on iOS 15 to avoid buffer impacts after adjusting latency.
+Furthermore this release includes an improvement for classic playback on iOS 15 to avoid buffer impacts after adjusting latency.
 Also the visual switching behaviour on iOS has been improved to prevent a possible black frame effect.
 
 ### **Changelog**
@@ -872,7 +872,7 @@ Also the visual switching behaviour on iOS has been improved to prevent a possib
 ### Improved
 
 - playback speed ~1.0 on iOS 15 as standard to reduce rebuffering effects after latency adjustment
-- z-index only htmlFor video element switch on iOS to avoid black frame effect
+- z-index only for video element switch on iOS to avoid black frame effect
 
 ## Please find more about the **latency control modes** feature in our [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_latency_control_modes/)
 
@@ -923,7 +923,7 @@ Please find further information in our [feature description](https://docs.nanoco
 
 ### **Release Notes**
 
-This version includes a fix htmlFor a potential CSS layout issue in iOS fullscreen mode,
+This version includes a fix for a potential CSS layout issue in iOS fullscreen mode,
 that could lead to page elements unintendedly being displayed above the video layer.
 The issue has been introduced in version 4.13.2.
 
@@ -937,10 +937,10 @@ The issue has been introduced in version 4.13.2.
 
 ### **Release Notes**
 
-This version provides an improvement htmlFor iOS metadata processing. The new mode is preventing occasionally delayed metadata on iOS and is enabled by default.
+This version provides an improvement for iOS metadata processing. The new mode is preventing occasionally delayed metadata on iOS and is enabled by default.
 To go back to legacy mode it can be disabled by setting the new parameter `config.playback.metadataLowDelay` to `false`.
 Also an issue with changing the metadata connection at stream switch on iOS with switch method `'client'` has been solved.
-Further this patch includes a fix htmlFor a potential css related layout issue in iOS fullscreen mode.
+Further this patch includes a fix for a potential css related layout issue in iOS fullscreen mode.
 
 ### **Changelog**
 
@@ -977,7 +977,7 @@ Further an issue with `updateSource` in `PAUSED` state with `source.options.swit
 
 ### **Release Notes**
 
-This version introduces the new **source defaults** feature that simplifies the source configuration by adding `defaults.service` to the `config.source` object. If a service is set, the `h5live.server` object and the `h5live.rtmp.url` in each entry can be omitted. In this case defaults will be applied internally. Values htmlFor `h5live.server` and/or `h5live.rtmp.url` that are defined explicitly in the entry have priority. The available value htmlFor `defaults.service` is `'bintu'` htmlFor using the standard **nanoStream Cloud**. See our [docs feature entry](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_source_defaults/) htmlFor more information.
+This version introduces the new **source defaults** feature that simplifies the source configuration by adding `defaults.service` to the `config.source` object. If a service is set, the `h5live.server` object and the `h5live.rtmp.url` in each entry can be omitted. In this case defaults will be applied internally. Values for `h5live.server` and/or `h5live.rtmp.url` that are defined explicitly in the entry have priority. The available value for `defaults.service` is `'bintu'` for using the standard **nanoStream Cloud**. See our [docs feature entry](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_source_defaults/) for more information.
 Furthermore this release includes improvements in preventing exceptions in case of DOM access restrictions or unreachable DOM elements.
 A last change is regarding the metrics module of the player. The minimum value of the `metrics.statsInterval` parameter has been raised to `5` seconds.
 
@@ -985,7 +985,7 @@ A last change is regarding the metrics module of the player. The minimum value o
 
 ### Added
 
-- new `config.source` parameter `defaults.service` htmlFor simplifying configuration if the standard nanoStream Cloud is used
+- new `config.source` parameter `defaults.service` for simplifying configuration if the standard nanoStream Cloud is used
 
 ### Improved
 
@@ -1013,7 +1013,7 @@ This version is fixing a layout issue in fullscreen mode on iOS that occurred if
 ### **Release Notes**
 
 This version is adding the option to configure the minimum number steps during an ABR initialized switch down via the `adaption.downStep` parameter. Potential related use case are configurations containing a higher number of qualities or configurations with rather close rendition bitrates.
-The detection of the available buffer time has been improved htmlFor iOS in general and iOS 15 in particular.
+The detection of the available buffer time has been improved for iOS in general and iOS 15 in particular.
 A timing related condition that could lead to buffering after a stream switch has been fixed.
 The start-buffer calculation in `bufferDynamic` mode has been fixed to prevent out of range values.
 Assigning `null` values to non mandatory configuration parameters will no longer lead to a setup error.
@@ -1023,7 +1023,7 @@ Assigning `null` values to non mandatory configuration parameters will no longer
 ### Added
 
 - new option `config.source.options.adaption.downStep`
-  - htmlFor ABR automatic 'deviationOfMean' and 'deviationOfMean2' only
+  - for ABR automatic 'deviationOfMean' and 'deviationOfMean2' only
   - allows to define the minimum number of steps during a ABR initialized down switch via the `adaption` object
   - if the number of remaining lower renditions is smaller than the value then the switch will be performed to the lowest rendition
   - default value is `1`
@@ -1038,7 +1038,7 @@ Assigning `null` values to non mandatory configuration parameters will no longer
 
 ### Improved
 
-- detection of the available buffer time htmlFor iOS in general and iOS 15 in particular
+- detection of the available buffer time for iOS in general and iOS 15 in particular
 - config warning message in case of wrong configured properties of an entry
 
 ### Fixed
@@ -1074,14 +1074,14 @@ Moreover an issue with poster scaling and aspect ratio changing of the player is
 ### **Release Notes**
 
 This version is adding improvements to the fullscreen mode in general
-and in particular htmlFor iOS.  
+and in particular for iOS.  
 
-The player background color can now be customized htmlFor standard and
+The player background color can now be customized for standard and
 fullscreen mode separately via the new configuration parameter
 `config.style.fullScreenBackgroundColor`. The default value
 is the standard background color `config.style.backgroundColor`.
 
-The following improvements to the fullscreen mode have been added htmlFor iOS Safari and Chrome
+The following improvements to the fullscreen mode have been added for iOS Safari and Chrome
 
 - Preventing the page body from becoming visible during orientation changes and zoom gestures
 - The fullscreen background color will be applied to the notch areas present on iPhone X/11/12
@@ -1116,7 +1116,7 @@ The following improvements to the fullscreen mode have been added htmlFor iOS Sa
 
 ### **Release Notes**
 
-This version implements a fix htmlFor an issue with the control bar appearing by tapping the player's surface on iOS.
+This version implements a fix for an issue with the control bar appearing by tapping the player's surface on iOS.
 The control bar didn't appear by tap in `PAUSED` state with `keepFrame` disabled.
 
 ### **Changelog**
@@ -1129,7 +1129,7 @@ The control bar didn't appear by tap in `PAUSED` state with `keepFrame` disabled
 
 ### **Release Notes**
 
-This version provides a fix htmlFor an error related to the player view.
+This version provides a fix for an error related to the player view.
 The issue occurred in case of a rejected setup call or if
 the `config.playback` object was not defined in the configuration.
 The player view is enabled by default (`config.style.view=true`).
@@ -1146,12 +1146,12 @@ The player view is enabled by default (`config.style.view=true`).
 
 ### **Release Notes**
 
-This version implements an automatic recovery workflow htmlFor certain media errors that can occure during playback. Recoverable errors are `3003`, `3100` and `1008`.
+This version implements an automatic recovery workflow for certain media errors that can occure during playback. Recoverable errors are `3003`, `3100` and `1008`.
 The allowed number of recoveries within 60 seconds (default: `3`) can be customized by the new config parameter `playback.mediaErrorRecoveries`.
 Further the support of the native HTMLMediaElement attribute `crossOrigin` is added and can be set via the new config parameter `playback.crossOrigin`.
 The values can be `'anonymous'`, `'use-credentials'` and `'not-set'` (default).
 
-Part of this release are minor adjustments htmlFor metrics and an improvement of the Mac OS version detection.
+Part of this release are minor adjustments for metrics and an improvement of the Mac OS version detection.
 Also an issue with the interaction of the `style.keepFrame` and the `style.poster` (since 4.9.1) functionality is fixed.
 Now after a pause the last frame will be kept instead of displaying the poster image with `keepFrame` enabled.
 
@@ -1159,7 +1159,7 @@ Now after a pause the last frame will be kept instead of displaying the poster i
 
 ### Added
 
-- automatic recovery workflow htmlFor media errors
+- automatic recovery workflow for media errors
   - recoverable error codes:
     - `3003` (media decode error)
     - `3100` (media source ended)
@@ -1171,9 +1171,9 @@ Now after a pause the last frame will be kept instead of displaying the poster i
   - if threshold reached the error will be thrown followed by a pause with reason `'playbackerror'`
   - see playback section in [config](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_api#nanoplayerconfig--codeobjectcode)
   - see [feature description](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_media_error_recovery/)
-- support of native `crossOrigin` attribute htmlFor HTMLMediaElements (applies to all player-internal video & image elements)
+- support of native `crossOrigin` attribute for HTMLMediaElements (applies to all player-internal video & image elements)
   - new config parameter (string) `playback.crossOrigin`, default: `'not-set'`
-  - sets or disables the native "crossOrigin" attribute htmlFor all internal video elements and images (poster)
+  - sets or disables the native "crossOrigin" attribute for all internal video elements and images (poster)
   - possible values are:
     - `'anonymous'`
     - `'use-credentials'`
@@ -1182,7 +1182,7 @@ Now after a pause the last frame will be kept instead of displaying the poster i
 
 ### Improved
 
-- minor adjustment htmlFor metrics
+- minor adjustment for metrics
 - Mac OS version detection
 
 ### Fixed
@@ -1193,9 +1193,9 @@ Now after a pause the last frame will be kept instead of displaying the poster i
 
 ### **Release Notes**
 
-This version comes with several small improvements and fixes. An infinite loop related to error code `1004` is now prevented. It occurred if play or pause was triggered before the player setup was finished. This non-critical error `1004` has been changed now to a warning. Further providing the correct Mac OS X version htmlFor player metrics has been improved and a wrong detection of unsupported Chromium browsers on Mac OS X has been fixed (introduced in 4.9.1). Also an error on iOS with the `keepConnection` option enabled has been fixed.
+This version comes with several small improvements and fixes. An infinite loop related to error code `1004` is now prevented. It occurred if play or pause was triggered before the player setup was finished. This non-critical error `1004` has been changed now to a warning. Further providing the correct Mac OS X version for player metrics has been improved and a wrong detection of unsupported Chromium browsers on Mac OS X has been fixed (introduced in 4.9.1). Also an error on iOS with the `keepConnection` option enabled has been fixed.
 
-For the view a small fix htmlFor the style option `config.style.audioPlayer` related to the displayed height on mobile devices has been done.
+For the view a small fix for the style option `config.style.audioPlayer` related to the displayed height on mobile devices has been done.
 
 ### **Changelog**
 
@@ -1208,7 +1208,7 @@ For the view a small fix htmlFor the style option `config.style.audioPlayer` rel
 ### Fixed
 
 - prevent infinite loop related to error code `1004` in case of play/pause before player is ready
-- unsupported browser detection htmlFor Chromium on Mac OS X if codecs not present (introduced in 4.9.1)
+- unsupported browser detection for Chromium on Mac OS X if codecs not present (introduced in 4.9.1)
 - playback starts on iOS with `config.playback.keepConnection` set to `true`
 
 ## **[4.9.1]**
@@ -1223,7 +1223,7 @@ The given color string can be a valid css (case insensitive) keyword, hex code w
 The highlighting of the clickable buttons can be disabled via `config.style.buttonHighlighting=false`. The animation of the clickable buttons can be disabled via `config.style.buttonAnimation=false`.
 Also the cursor at button mouseover (default: "pointer") can be customized over `config.style.buttonCursor` by passing a valid css cursor keyword or url.
 
-Furthermore support htmlFor poster images has been added. Poster images can be applied via the config.style.poster parameter.
+Furthermore support for poster images has been added. Poster images can be applied via the config.style.poster parameter.
 The string has to be a relative or absolute path to a valid "img" element source like "./assets/poster.png" or "https://[YOURDOMAIN]**/assets/poster.gif".
 
 ### **Changelog**
@@ -1233,7 +1233,7 @@ The string has to be a relative or absolute path to a valid "img" element source
 - redesign of the player internal icons and control bar appearance
 - customizable icon and control bar background colors and transparency
 - customizable button behaviour
-- support htmlFor poster images
+- support for poster images
 
 ### Improved
 
@@ -1281,14 +1281,14 @@ This version patches minor issues. One patch addresses a compatibility issue wit
 
 ### Improved
 
-- check htmlFor WebSocket event listener manipulation, use default 'on' syntax internally
+- check for WebSocket event listener manipulation, use default 'on' syntax internally
 - improved internal iframe handling on iOS in case of unavailibility
 
 ## **[4.7.6]**
 
 ### **Release Notes**
 
-This version implements minor internal improvements htmlFor config validation and playback start.
+This version implements minor internal improvements for config validation and playback start.
 It also contains a fix related to playback suspension on iOS devices running Safari with activated desktop mode.
 
 Furthermore, the default overlay controls are displayed properly on smaller screen widths.
@@ -1322,7 +1322,7 @@ The animations and icons in the center of the player can now be independently en
 
 ### **Release Notes**
 
-By enabling the `source.options.switch.forcePlay` config property a paused playback starts after the execution of a 'switchStream' or 'updateSource' request. This obviates the need htmlFor an additional play call.
+By enabling the `source.options.switch.forcePlay` config property a paused playback starts after the execution of a 'switchStream' or 'updateSource' request. This obviates the need for an additional play call.
 To improve the overall switching behavior paused switch completion has been added, meaning a pending 'switchStream' or 'updateSource' request will be completed as the player enters the paused state.
 The related completion event either 'switchStreamSuccess' or 'updateSourceSuccess' will be emitted to the application level.
 
@@ -1347,7 +1347,7 @@ Version 4.6.1 implements an updated version of the Bintu-Client API internally.
 
 ### **Release Notes**
 
-This version contains improvements htmlFor stream swiching, buffering metrics validation and connection flags.
+This version contains improvements for stream swiching, buffering metrics validation and connection flags.
 
 ### **Changelog**
 
@@ -1373,13 +1373,13 @@ This version contains a minor internal metrics adjustment.
 
 ### **Release Notes**
 
-This version implements seamless ABR and stream switching htmlFor iOS and iPadOS devices which works with 2 video elements internally.
-In special use cases where external video elements are used htmlFor playback an array of maximal two external video element IDs can be provided via the `playback.videoId` config property.
+This version implements seamless ABR and stream switching for iOS and iPadOS devices which works with 2 video elements internally.
+In special use cases where external video elements are used for playback an array of maximal two external video element IDs can be provided via the `playback.videoId` config property.
 **Important note:** On iOS devices the default z-index of the video layer had to be changed from 0 to 1. In case of using custom controls or overlays please make sure to use a z-index > 1.
 
-The new ABR mode, adaption rule, 'deviationOfMean2' has been added. The new rule is slightly less strict and especially recommended  htmlFor streams that are already more volatile on the source/ingest side.  
+The new ABR mode, adaption rule, 'deviationOfMean2' has been added. The new rule is slightly less strict and especially recommended  for streams that are already more volatile on the source/ingest side.  
 
-This version adjusts the default timeout htmlFor the update source request to 20 seconds to improve the overall switching behavior.
+This version adjusts the default timeout for the update source request to 20 seconds to improve the overall switching behavior.
 
 The `style.displayMutedAutoplay` config property is re-enabled which shows a muted audio symbol in case of muted autoplay.
 The `style.displayMutedAutoplay` option can be disabled to maintain the recent behaviour.
@@ -1389,15 +1389,15 @@ The handling of mute states and autoPlay has been improved.
 
 ### Added
 
-- seamless ABR and stream switching htmlFor iOS and iPadOS devices
+- seamless ABR and stream switching for iOS and iPadOS devices
 - new adaption rule 'deviationOfMean2'
 
 ### Improved
 
-- iOS & iPadOS seamless stream switching  needs 2 video elements internally. So htmlFor special use cases where existing video tags need to be used htmlFor playback an array of maximal two element Ids can be provided via the `playback.videoId` config property (NOT mandatory)
+- iOS & iPadOS seamless stream switching  needs 2 video elements internally. So for special use cases where existing video tags need to be used for playback an array of maximal two element Ids can be provided via the `playback.videoId` config property (NOT mandatory)
   - if 0 Ids are provided 2 video elements will be created internally
   - if 1 Id is provided the other video element will be created internally
-- set the default timeout htmlFor the update source request to 20 seconds to improve the overall switching behavior
+- set the default timeout for the update source request to 20 seconds to improve the overall switching behavior
   - can be configured via the `source.options.switch.timeout` config property (we advise to use default value)
 - re-enabled `style.displayMutedAutoplay` config property to show a muted audio symbol in case of muted autoPlay
 - handling of mute states and autoPlay
@@ -1407,7 +1407,7 @@ The handling of mute states and autoPlay has been improved.
 ### **Release Notes**
 
 This version introduces the 'setAdaption' API to switch between adaption rules (ex. enable/disable ABR).
-Furthermore, this version implements optimizations htmlFor the ABR feature and minor internal, config and metrics adjustments. Additionally, this version prevents non-critical console errors during initialization and fixes a timeout error during client-side switchStream/updateSource.
+Furthermore, this version implements optimizations for the ABR feature and minor internal, config and metrics adjustments. Additionally, this version prevents non-critical console errors during initialization and fixes a timeout error during client-side switchStream/updateSource.
 
 Please find more about setAdaption API in our [documentation](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#setAdaption__anchor).
 
@@ -1421,7 +1421,7 @@ Please find more about setAdaption API in our [documentation](https://demo.nanoc
 ### Improved
 
 - ABR:
-- initial switch up htmlFor oscillating source streams
+- initial switch up for oscillating source streams
 - handle continuous buffering events
 - config:
 - adjust switchStream event registration
@@ -1439,13 +1439,13 @@ Please find more about setAdaption API in our [documentation](https://demo.nanoc
 
 This version handles the usage of metrics with the old deprecated single stream configuration over 'config.source.h5live'.
 
-See our [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_stream_switching/#single-stream-configuration) htmlFor detailed information about the new stream configuration.
+See our [documentation](https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_stream_switching/#single-stream-configuration) for detailed information about the new stream configuration.
 
 ### **Changelog**
 
 ### Fixed
 
-- handle deprecated 'config.source.h5live' notation htmlFor correct metrics
+- handle deprecated 'config.source.h5live' notation for correct metrics
 
 ## **[4.2.4]**
 
@@ -1527,7 +1527,7 @@ Please find more about the stream switching & ABR feature in our [documentation]
 
 ### **Release Notes**
 
-This version contains a fix htmlFor an buffering state error on iOS if static buffer tweaks are set. Now higher 'min' values doesn't lead into unrecoverable buffering.
+This version contains a fix for an buffering state error on iOS if static buffer tweaks are set. Now higher 'min' values doesn't lead into unrecoverable buffering.
 
 ### **Changelog**
 
@@ -1539,14 +1539,14 @@ This version contains a fix htmlFor an buffering state error on iOS if static bu
 
 ### **Release Notes**
 
-This version implements a fix htmlFor an ‘Unhandled Promise Rejection’ error on iOS in the context of play/pause and updateSource/switchStream interactions. Furthermore, this version fixes a bug on MacOSX Mojave during buffer underrun where the playing state is not changed to ‘buffering’ which then breaks the playback.
+This version implements a fix for an ‘Unhandled Promise Rejection’ error on iOS in the context of play/pause and updateSource/switchStream interactions. Furthermore, this version fixes a bug on MacOSX Mojave during buffer underrun where the playing state is not changed to ‘buffering’ which then breaks the playback.
 
 ### **Changelog**
 
 ### Fixed
 
 - ‘Unhandled Promise Rejection’ error on iOS during play/pause and updateSource/switchStream interactions
-- correctly detecting buffer underrun htmlFor MacOSX Mojave bug
+- correctly detecting buffer underrun for MacOSX Mojave bug
 
 ## **[4.1.2]**
 
@@ -1578,7 +1578,7 @@ This version implements fixes to support the initial switchUp on iOS devices.
 ### **Release Notes**
 
 This version introduces adaptive bitrate (ABR) playback where the player switches between a set of streams with different qualities to accommodate challenging network situations and avoid buffering and frame drops.
-A set of stream sources (entries) is expected inside the 'entries' array of the config's 'source' object. Each entry represents an indexed quality step starting with the highest quality at index 0. The 'startIndex' property sets the entry that should be used htmlFor inializing the playback.
+A set of stream sources (entries) is expected inside the 'entries' array of the config's 'source' object. Each entry represents an indexed quality step starting with the highest quality at index 0. The 'startIndex' property sets the entry that should be used for inializing the playback.
 The config's 'source' object now holds an 'options' object to set the ABR 'rule' (algorithm) inside the 'adaption' object and the switch options inside the 'switch' object.
 To manually switch between entries the new 'switchStream' API is used which comes along with 4 new public events and error codes.
 
@@ -1593,7 +1593,7 @@ Please find more about the stream switching & ABR feature in our [documentation]
   - options:
     - adaption: set ABR rule
     - switch: set switch settings
-  - startIndex: sets the entry used htmlFor inializing the playback
+  - startIndex: sets the entry used for inializing the playback
 - 'switchStream' API:
   - use to switch between entries
   - new public events: 'onSwitchStreamInit', 'onSwitchStreamSuccess', 'onSwitchStreamAbort' and 'onSwitchStreamFail'
@@ -1622,8 +1622,8 @@ are now being prevented.
 
 ### **Release Notes**
 
-This version patches an issue with iOS 10 playing state detection and the buffer control htmlFor hls playback in general.
-Now playback stats will be correctly used htmlFor hls playback to indicate PLAYING and to control the buffer.
+This version patches an issue with iOS 10 playing state detection and the buffer control for hls playback in general.
+Now playback stats will be correctly used for hls playback to indicate PLAYING and to control the buffer.
 This issue was introduced with the major player version 4 and doesn't effect older major versions (3 or less).
 Also a duplicated module declaration is removed to ensure stable builds and a small scope issue is fixed.
 
@@ -1631,7 +1631,7 @@ Also a duplicated module declaration is removed to ensure stable builds and a sm
 
 ### Fixed
 
-- iOS 10 playing state detection and buffer control htmlFor hls in general by correct registering play stats event in buffercontrol
+- iOS 10 playing state detection and buffer control for hls in general by correct registering play stats event in buffercontrol
 - removed duplicated module declaration in mediasourcemanger
 - correct scope issue in onUpdateSourceInit in h5live.js
 
@@ -1639,9 +1639,9 @@ Also a duplicated module declaration is removed to ensure stable builds and a sm
 
 ### **Release Notes**
 
-This version contains an improvement htmlFor the detection of supported browser types and versions.
-It furthermore contains an improvement htmlFor playback in iPadOS desktop browsing mode,
-to correctly detect H5Live MSE or LL-HLS modes htmlFor playback.
+This version contains an improvement for the detection of supported browser types and versions.
+It furthermore contains an improvement for playback in iPadOS desktop browsing mode,
+to correctly detect H5Live MSE or LL-HLS modes for playback.
 
 ### **Changelog**
 
@@ -1658,7 +1658,7 @@ to correctly detect H5Live MSE or LL-HLS modes htmlFor playback.
 ### BREAKING CHANGE
 
 The new nanoStream H5Live Player version 4 brings an updated stream switch feature. We improved the old 'updateSource' functionality by the possibility to switch to another stream by server-side switch and a better client-side switch.
-Now the switch to another source is much more smoother and faster. The old behaviour with stopping the player by reason 'playbackrestart' and restart playback with the new source is removed except htmlFor iOS.
+Now the switch to another source is much more smoother and faster. The old behaviour with stopping the player by reason 'playbackrestart' and restart playback with the new source is removed except for iOS.
 
 Please find more about the new feature in our [documentation]( https://docs.nanocosmos.net/docs/nanoplayer/nanoplayer_feature_stream_switching/).
 
@@ -1666,20 +1666,20 @@ Please find more about the new feature in our [documentation]( https://docs.nano
 
 ### Improved
 
-- new 'updateSource' methods 'server' and 'client' htmlFor smoother and faster behaviour
+- new 'updateSource' methods 'server' and 'client' for smoother and faster behaviour
 - 'updateSource' options object as param
 - new public events 'onUpdateSourceInit', 'onUpdateSourceInit', 'onUpdateSourceFail' and 'onUpdateSourceAbort'
 - new error codes 4005 and 4006
 
 ### Removed
 
-- pause/play update behaviour except htmlFor iOS
+- pause/play update behaviour except for iOS
 
 ## **[3.18.7]**
 
 ### **Release Notes**
 
-This version contains an improvement htmlFor the detection of supported browser types and versions.
+This version contains an improvement for the detection of supported browser types and versions.
 
 ### **Changelog**
 
@@ -1691,8 +1691,8 @@ This version contains an improvement htmlFor the detection of supported browser 
 
 ### **Release Notes**
 
-This version contains an improvement htmlFor playback in iPadOS desktop browsing mode,
-to correctly detect H5Live MSE or LL-HLS modes htmlFor playback.
+This version contains an improvement for playback in iPadOS desktop browsing mode,
+to correctly detect H5Live MSE or LL-HLS modes for playback.
 
 ### **Changelog**
 
@@ -1710,7 +1710,7 @@ This version patches the usage of the 'params' object of the config source objec
 
 ### Fixed
 
-- remove check htmlFor rtmp queries 'url' & 'stream' in 'params' object of the source config
+- remove check for rtmp queries 'url' & 'stream' in 'params' object of the source config
 
 ## **[3.18.4]**
 
@@ -1728,7 +1728,7 @@ This version fixes a small bug with buffer config validation.
 
 ### **Release Notes**
 
-This version brings an improvement htmlFor the playback stability under higher cpu/gpu load influence like heavy load in browsers caused by complex WebGL animations.
+This version brings an improvement for the playback stability under higher cpu/gpu load influence like heavy load in browsers caused by complex WebGL animations.
 
 ### **Changelog**
 
@@ -1758,14 +1758,14 @@ config.style.fullScreenControl = true
 
 ### Improved
 
-- browser version detection htmlFor Safari macOS
+- browser version detection for Safari macOS
 
 ## **[3.18.1]**
 
 ### **Release Notes**
 
-This release brings the possibility to allow H5Live low latency HLS playback as fallback htmlFor Safari on Mac OS X. If enabled the player will decide htmlFor Safari Mac OS X the playback method and utilize H5Live low latency HLS if appropriate.
-Another feature is that we added the quality stats to the metrics stats event. Also several little patches are included in this release. Now htmlFor bintu sources without explicit 'h5live' playout object in the response the rtmp object will be choosen and a missing server object in the h5live config will be catched.
+This release brings the possibility to allow H5Live low latency HLS playback as fallback for Safari on Mac OS X. If enabled the player will decide for Safari Mac OS X the playback method and utilize H5Live low latency HLS if appropriate.
+Another feature is that we added the quality stats to the metrics stats event. Also several little patches are included in this release. Now for bintu sources without explicit 'h5live' playout object in the response the rtmp object will be choosen and a missing server object in the h5live config will be catched.
 An 'undefined' error at destroy is fixed too. Now also playback will always be recovered on Edge if frames are dropped and the player is visible.
 
 ### **Changelog**
@@ -1799,27 +1799,27 @@ Further the stats object in the flash fallback is updated with all possible prop
 ### Improved
 
 - catch errors in metrics module
-- check play event stats and playback stats in metrics module htmlFor consistancy
+- check play event stats and playback stats in metrics module for consistancy
 
 ### Fixed
 
-- update stats object htmlFor flash fallback with all possible properties
+- update stats object for flash fallback with all possible properties
 
 ## **[3.17.3]**
 
 ### **Release Notes**
 
 This release contains several patches. One patch fixes a potential problem with autoPlay policies regarding the play promise implementation of certain browsers. The main problem were side effects with the promise wrapper of the player and some third party libs which manipulate promises. In this cases the promise always resolved, also in case of an play start error.
-Another patch addresses a bug in Microsoft Edge 18. We removed the 'MediaSource.isTypeSupported' check htmlFor all Edge versions because of an inconsistancy in Edge 18.
-Further a bug in the 'updateSource' function htmlFor iOS is fixed. Also now the full screen icon on Chrome changes correctly.
+Another patch addresses a bug in Microsoft Edge 18. We removed the 'MediaSource.isTypeSupported' check for all Edge versions because of an inconsistancy in Edge 18.
+Further a bug in the 'updateSource' function for iOS is fixed. Also now the full screen icon on Chrome changes correctly.
 
 ### **Changelog**
 
 ### Fixed
 
 - change media play promise wrapping to avoid side effects of promise manipulating third party libs
-- remove 'MediaSource.isTypeSupported' check htmlFor all Microsoft Edge versions
-- fix 'type undefined' error in 'updateSource' htmlFor iOS
+- remove 'MediaSource.isTypeSupported' check for all Microsoft Edge versions
+- fix 'type undefined' error in 'updateSource' for iOS
 - fix full screen icon change on Chrome
 
 ## **[3.17.2]**
@@ -1839,10 +1839,10 @@ This release patches an issue with metrics fields type. Now the fields 'accountI
 ### **Release Notes**
 
 With this release comes a new feature. We added new error codes and pause reasons. The errors that can occure during 'loading', 'buffering' and 'playing' state are now more specific regarding the root cause.
-We added the error code 1009 htmlFor playback fail in case of visibility hidden e.g. open a link as unfocused tab (ctrl + click). In this case the pause reason is 'visibilityhidden'.
+We added the error code 1009 for playback fail in case of visibility hidden e.g. open a link as unfocused tab (ctrl + click). In this case the pause reason is 'visibilityhidden'.
 Further not only error 2001 'stream not found' can happen with the loading timeout. If the stream was already connected and the stream info event was fired but not enough data was received the new error code 2003 will be fired. The new pause reason in this case is 'notenoughdata'.
 Another new error code is 2004 that will be fired if the source stream has been stopped. This can happen during 'loading', 'buffering' and 'playing' state and results in a pause with reason 'sourcestreamstopped'. The last new error is 3100, a media error, that will be fired if the media source extension (exclude iOS) changes it's state to 'ended'. The pause reason is 'playbackerror'.
-For further informations see the definitions htmlFor 'errorcode' ([NanoPlayer API](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc21__anchor)) and 'pausereason' ([NanoPlayer API](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc22__anchor)).
+For further informations see the definitions for 'errorcode' ([NanoPlayer API](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc21__anchor)) and 'pausereason' ([NanoPlayer API](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc22__anchor)).
 In addition we improved the h5live support detection and fixed with the behaviour on error code 3003 (MEDIA_DECODE_ERROR). Now the player don't try to replay automatically.
 
 ### **Changelog**
@@ -1871,16 +1871,16 @@ In addition we improved the h5live support detection and fixed with the behaviou
 
 ### **Release Notes**
 
-This release introduces new features and several patches. Now it's possible to configure playback timeouts via the new 'config.playback.timeouts' object. You can set timeouts htmlFor 'loading' and 'buffering' in a range of 10-60 seconds (default: 20) and htmlFor 'connecting' in a range of 5-30 seconds (default: 5). If the timeouts are reached, an error will be thrown and the player stops.
+This release introduces new features and several patches. Now it's possible to configure playback timeouts via the new 'config.playback.timeouts' object. You can set timeouts for 'loading' and 'buffering' in a range of 10-60 seconds (default: 20) and for 'connecting' in a range of 5-30 seconds (default: 5). If the timeouts are reached, an error will be thrown and the player stops.
 Another feature addresses the metrics. Now also the 'LOADING' event will be sent. Furthermore if the player restarts in case of 'updateSource' while in playing state the pause event will be triggered with the new pause reason 'playbackrestart' before the replay attempt.
-The new version includes patches htmlFor the full screen functionality in general and htmlFor Internet Explorer (IE) in special. General the full screen icon changes now if exited by ESC and htmlFor IE the size is now correctly measured. Another patch fixes the volume change by the controls in IE.
-Two patches address the bintu service. The first one fixes a bug if the view is disabled and the bintu stream is not live or the services rejects. Now no view will be created in case of an bintu error. The other one enables to use 'updateSource' with a bintu source. In general now within the 'updateSource' promise the error handling is improved too. Further there are patches htmlFor displaying muted autoPlay correctly and hiding the playbutton in the middle if switching streams using 'updateSource' while playing.
+The new version includes patches for the full screen functionality in general and for Internet Explorer (IE) in special. General the full screen icon changes now if exited by ESC and for IE the size is now correctly measured. Another patch fixes the volume change by the controls in IE.
+Two patches address the bintu service. The first one fixes a bug if the view is disabled and the bintu stream is not live or the services rejects. Now no view will be created in case of an bintu error. The other one enables to use 'updateSource' with a bintu source. In general now within the 'updateSource' promise the error handling is improved too. Further there are patches for displaying muted autoPlay correctly and hiding the playbutton in the middle if switching streams using 'updateSource' while playing.
 
 ### **Changelog**
 
 ### Added
 
-- new object 'config.playback.timeouts' to configure the timeouts htmlFor 'loading', 'buffering' and 'connecting' in seconds
+- new object 'config.playback.timeouts' to configure the timeouts for 'loading', 'buffering' and 'connecting' in seconds
 
 ````javascript
 config.playback.timeouts = {
@@ -1891,7 +1891,7 @@ config.playback.timeouts = {
 ````
 
 - the LOADING event will be sent through metrics
-- new pause reason 'playbackrestart' in case of a pause htmlFor update source in playing state
+- new pause reason 'playbackrestart' in case of a pause for update source in playing state
 - updateSource error handling
 
 ### Fixed
@@ -1915,19 +1915,19 @@ This version addresses an issue with the full screen functionality on iOS Safari
 ### Fixed
 
 - enable full screen on iOS within nested iframe(s)
-- detection of IE/Edge viewport issue htmlFor stable playback
+- detection of IE/Edge viewport issue for stable playback
 
 ## **[3.15.5]**
 
 ### **Release Notes**
 
-This release patches an issue with the config handling. Now a copy of the config will be used htmlFor the setup instead of pointer.
+This release patches an issue with the config handling. Now a copy of the config will be used for the setup instead of pointer.
 
 ### **Changelog**
 
 ### Fixed
 
-- use only a copy of passed config object htmlFor setup
+- use only a copy of passed config object for setup
 
 ## **[3.15.4]**
 
@@ -1945,8 +1945,8 @@ This release patches an issue with bintu sources. Now after a successful bintu c
 
 ### **Release Notes**
 
-With this release come new features and some patches. One feature is about firing 'onError' with new error codes in case of a setup error. See the docs htmlFor more information ([https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc21__anchor](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc21__anchor)). Also a warnings will be fired if config properties are not valid or from wrong type.
-The other introduces a new metrics api which enables internal event logging and data aggregation with a nanocosmos backend. Please contact our sales team (mailto:sales@nanocosmos.de) htmlFor more information and see './js/nanoplayer-metrics-config.js' in the 'Demo Package'. This release also includes patches htmlFor IE/Edge regarding play stats and stable playback after viewport lost.
+With this release come new features and some patches. One feature is about firing 'onError' with new error codes in case of a setup error. See the docs for more information ([https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc21__anchor](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc21__anchor)). Also a warnings will be fired if config properties are not valid or from wrong type.
+The other introduces a new metrics api which enables internal event logging and data aggregation with a nanocosmos backend. Please contact our sales team (mailto:sales@nanocosmos.de) for more information and see './js/nanoplayer-metrics-config.js' in the 'Demo Package'. This release also includes patches for IE/Edge regarding play stats and stable playback after viewport lost.
 Now also 'Windows 10' will be detected correctly and on 'Destroy' pause will be fired only if playing.
 
 ### **Changelog**
@@ -1963,7 +1963,7 @@ Now also 'Windows 10' will be detected correctly and on 'Destroy' pause will be 
     - 5006: Configuration error. Could not create player, with this configuration an security token is required. Add an token to the configuration.
     - 5007: Configuration error. Could not create player, the websocket server configuration is missing.
     - 5008: Configuration error. Could not create player, the hls server configuration is missing.
-    - 5009: Configuration error. Could not create player, the websocket server configuration htmlFor metadata is missing.
+    - 5009: Configuration error. Could not create player, the websocket server configuration for metadata is missing.
     - 5010: Could not embed player.
     - 5101: Could not find bintu stream. The stream is not live.
     - 5102: No bintu stream id passed.
@@ -1983,7 +1983,7 @@ Now also 'Windows 10' will be detected correctly and on 'Destroy' pause will be 
   - enables event logging and data aggregation
   - configurable via the new 'config.metrics' object, see [https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc20__anchor](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer/NanoPlayer.html#toc20__anchor)
   - disabled by default
-  - htmlFor more information contact our sales team: mailto:sales@nanocosmos.de
+  - for more information contact our sales team: mailto:sales@nanocosmos.de
   - NOTE: don't set if you have no account!
   - NOTE: if 'Demo Package' is used see './js/nanoplayer-metrics-config.js'!
 
@@ -2003,7 +2003,7 @@ config.metrics = {
 ### Fixed
 
 - stable resume playback on IE/edge if video was out of viewport
-- calculate play stats on every 'play' htmlFor IE/Edge
+- calculate play stats on every 'play' for IE/Edge
 - detect Windows 10
 - pause on 'Destroy' only if playing
 
@@ -2044,14 +2044,14 @@ The second feature is the new public event 'onDestroy'. This event is fired when
 
 ### **Release Notes**
 
-This version improves the demo page. One part is to use 'updateSource' htmlFor bintu multistream functionality.
+This version improves the demo page. One part is to use 'updateSource' for bintu multistream functionality.
 
 ### **Changelog**
 
 ### Improved
 
 - clean up demo ui
-- use 'updateSource' htmlFor bintu multistream switch
+- use 'updateSource' for bintu multistream switch
 - update player only if streams changed
 
 ## **[3.13.3]**
@@ -2064,7 +2064,7 @@ This version addresses an issue with mimetype changes on 'updateSource'. Now it 
 
 ### Fixed
 
-- enable format (mimetype) changes htmlFor 'updateSource', e.g. switch between v/a and video only
+- enable format (mimetype) changes for 'updateSource', e.g. switch between v/a and video only
 
 ## **[3.13.2]**
 
@@ -2077,7 +2077,7 @@ This version brings a new feature. Now it's possible to change the source withou
 ### Added
 
 - add new public function 'updateSource'
-  - htmlFor changing the source at lifetime of the player without destroy/re-setup
+  - for changing the source at lifetime of the player without destroy/re-setup
   - the video element will be kept
   - pass the subobject 'source' of the config object
   - the Promise return's the new complete config
@@ -2114,7 +2114,7 @@ In this version an issue with the loading icon is handled. The loading icon didn
 
 ### Fixed
 
-- hide loading icon on play htmlFor video only streams
+- hide loading icon on play for video only streams
 
 ## **[3.12.3]**
 
@@ -2159,8 +2159,8 @@ This version fixes an issue related to repeated setup calls without destroy call
 
 ### **Release Notes**
 
-This version brings a new feature htmlFor autoplay. There is a new option 'config.playback.automute' (disabled by default) which enables muted autoPlay on browsers with autoPlay policies. In case the play call is rejected by a policy the player will be muted to autoplay.
-Another feature is the option 'config.style.displayMutedAutoplay' (enabled by default) which shows a muted symbol if playback was started with autoPlay and muted. There is also a small fix htmlFor detecting playing state on iOS.
+This version brings a new feature for autoplay. There is a new option 'config.playback.automute' (disabled by default) which enables muted autoPlay on browsers with autoPlay policies. In case the play call is rejected by a policy the player will be muted to autoplay.
+Another feature is the option 'config.style.displayMutedAutoplay' (enabled by default) which shows a muted symbol if playback was started with autoPlay and muted. There is also a small fix for detecting playing state on iOS.
 
 ### **Changelog**
 
@@ -2238,11 +2238,11 @@ config.source.h5live.params = {
 }
 ````
 
-In this example we pass directly the rtmp settings, 'url' and 'stream'. If a 'config.source.h5live.rtmp' object is declared, it will be overwritten. This will result htmlFor websocket in a connection string like this:
+In this example we pass directly the rtmp settings, 'url' and 'stream'. If a 'config.source.h5live.rtmp' object is declared, it will be overwritten. This will result for websocket in a connection string like this:
 
 `wss://bintu-play.nanocosmos.de/h5live/stream/?url=rtmp%3A%2F%2Fbintu-play.nanocosmos.de%3A80%2Fplay&stream=dtHSa-aEWRT&custom_param=very_custom&cid=405498&pid=43377944190`
 
-This version also contains fixes htmlFor a wrong buffering state detection on iOS and one htmlFor the view. In the view now a configured 'scaling' mode will be keeped over the whole lifetime of the player.
+This version also contains fixes for a wrong buffering state detection on iOS and one for the view. In the view now a configured 'scaling' mode will be keeped over the whole lifetime of the player.
 
 ### **Changelog**
 
@@ -2268,13 +2268,13 @@ config.source.h5live.params = {
 
 ### **Release Notes**
 
-This version fixes a bug htmlFor secured playback on iOS. In case of an error the pause reason now will be correct.
+This version fixes a bug for secured playback on iOS. In case of an error the pause reason now will be correct.
 
 ### **Changelog**
 
 ### Fixed
 
-- correct pause reason htmlFor secured streams on iOS
+- correct pause reason for secured streams on iOS
 
 ## **[3.9.6]**
 
@@ -2289,7 +2289,7 @@ and a wrong object path of the quality object as part of the stats event object.
 ### Improved
 
 - optimize setup error message in case that no supported tech is found
-- re-enable buffer increase automation htmlFor Firefox in case of frame drop
+- re-enable buffer increase automation for Firefox in case of frame drop
 
 ### Fixed
 
@@ -2300,13 +2300,13 @@ and a wrong object path of the quality object as part of the stats event object.
 
 ### **Release Notes**
 
-This version fixes a bug htmlFor Microsoft IE and Edge. Now connection errors will be parsed correctly.
+This version fixes a bug for Microsoft IE and Edge. Now connection errors will be parsed correctly.
 
 ### **Changelog**
 
 ### Fixed
 
-- correct connection error codes htmlFor Microsoft IE and Edge
+- correct connection error codes for Microsoft IE and Edge
 
 ## **[3.9.1]**
 
@@ -2318,7 +2318,7 @@ This version fixes a bug in Safari Mac OS X. Now black blinking on startup will 
 
 ### Fixed
 
-- prevent black blinking at playback start htmlFor Safari Mac OS X
+- prevent black blinking at playback start for Safari Mac OS X
 
 ## **[3.9.0]**
 
@@ -2332,9 +2332,9 @@ New errors will thrown if the token is invalid/mismatching (4901), the service i
 
 ### Added
 
-- enable stream security htmlFor h5live playback
-  - htmlFor playback of secured nanostream cloud streams
-  - can be set via the 'config.h5live.security' object (see doc htmlFor further info)
+- enable stream security for h5live playback
+  - for playback of secured nanostream cloud streams
+  - can be set via the 'config.h5live.security' object (see doc for further info)
   - new error codes:
     - 4900: The security service has been rejected due an internal server error.
     - 4901: The security service denied access. The authentication token is invalid.
@@ -2355,15 +2355,15 @@ security: {
 ### **Release Notes**
 
 This version brings a new feature and several patches. We now enable adaptive buffer handling. This can be enabled by setting the new 'config.tweaks.buffewrDynamic'.
-In case of short time bufferings the buffer will be stabilized. If stable playback is reached after a defined cooldown time, it will be tried to decrease the buffer till the original values. Please see documentation htmlFor further informations.
-The patches bring improvements htmlFor Microsoft Edge / IE and iOS. Also network related fixes are included.
+In case of short time bufferings the buffer will be stabilized. If stable playback is reached after a defined cooldown time, it will be tried to decrease the buffer till the original values. Please see documentation for further informations.
+The patches bring improvements for Microsoft Edge / IE and iOS. Also network related fixes are included.
 
 ### **Changelog**
 
 ### Added
 
 - enable adaptive buffer handling (iOS already has one)
-  - can be set via the 'config.tweaks.bufferDynamic' object (see doc htmlFor further info)
+  - can be set via the 'config.tweaks.bufferDynamic' object (see doc for further info)
   - disabled if no object is passed
   - detect multiple bufferings and increase buffer if necessary
   - if stable playback is detected a stepwise cooldown will be processed
@@ -2380,10 +2380,10 @@ bufferDynamic: {
 
 - reconnectable network error handling
 - buffer issue with Microsoft Surface
-- handle unexpected time jumps htmlFor hls
+- handle unexpected time jumps for hls
 - proper resuming on Microsoft Edge and Internet Explorer
 - only handle gaps in case playback is frozen
-- random access point handling htmlFor Microsoft Edge
+- random access point handling for Microsoft Edge
 - try restart on media decode error only
 - hls stats collecting and buffer controlling
 
@@ -2409,7 +2409,7 @@ This version patches a bug on iOS. It fixes the pausing in the case that the pla
 
 ### Fixed
 
-- pausing on lost focus htmlFor iOS
+- pausing on lost focus for iOS
 
 ## **[3.7.0]**
 
@@ -2435,7 +2435,7 @@ In the stream info event additionally the stream url will be passed as 'event.da
 
 ### **Release Notes**
 
-This version contains a patch htmlFor the reconnection functionality. A reconnect will be done after a calculated delay.
+This version contains a patch for the reconnection functionality. A reconnect will be done after a calculated delay.
 
 ### **Changelog**
 
@@ -2447,13 +2447,13 @@ This version contains a patch htmlFor the reconnection functionality. A reconnec
 
 ### **Release Notes**
 
-This version contains patches htmlFor mobile playback, especially htmlFor iOS.
+This version contains patches for mobile playback, especially for iOS.
 A potentially performance impairing issue in the internal processing
 on iOS has been removed.
 If config.playback.forceTech is set to 'h5live',
-h5live playback will now be forced htmlFor all platforms including iOS.
+h5live playback will now be forced for all platforms including iOS.
 The nanocosmos logo has been removed from the flash fallback module.
-Automatic pausing on lost focus has been added htmlFor Android too.
+Automatic pausing on lost focus has been added for Android too.
 
 ### **Changelog**
 
@@ -2471,15 +2471,15 @@ Automatic pausing on lost focus has been added htmlFor Android too.
 - prevent multiple event registering on iOS
 - play/pause functionality over middle play button on iOS
 - stats collection on iOS
-- add errorcode htmlFor RECONNECTION_CONFIG_INVALID
-- disable play recovering htmlFor mobile
+- add errorcode for RECONNECTION_CONFIG_INVALID
+- disable play recovering for mobile
 - fix forcing tech 'h5live' on iOS
 
 ## **[3.5.2]**
 
 ### **Release Notes**
 
-This version contains a patch htmlFor the full screen functionality.
+This version contains a patch for the full screen functionality.
 Now full screen will only be exited, if the full screen element is the player instance.
 Before it exited every full screen on destroy without a check.
 
@@ -2496,7 +2496,7 @@ Before it exited every full screen on destroy without a check.
 This release brings new features. There are new statistics available via the 'onStats' event. Now the bitrate in Bit/s will be measured and also the network framerate in fps.
 For both it will be measured the current value over one second and the minimum, maximum and average over the last 10 seconds. They are accessable over the 'event.data.stats.bitrate'
 and the 'event.data.stats.framerate' objects. This feature is not available on iOS and the values are always '0' in this case.
-Another feature is auto rotation htmlFor mobile streams from our
+Another feature is auto rotation for mobile streams from our
 nanoStream Mobile Apps. Its enabled if 'playback.metadata' is set to true.
 
 ### **Changelog**
@@ -2504,7 +2504,7 @@ nanoStream Mobile Apps. Its enabled if 'playback.metadata' is set to true.
 ### Added
 
 - new stats objects 'bitrate' and 'framerate' (network framerate) in 'onStats' event (NOT AVAILABLE FOR HLS PLAYBACK)
-- auto rotation htmlFor mobile streams from nanoStream Mobile Apps if 'playback.metadata=true'
+- auto rotation for mobile streams from nanoStream Mobile Apps if 'playback.metadata=true'
 
 ### Fixed
 
@@ -2514,7 +2514,7 @@ nanoStream Mobile Apps. Its enabled if 'playback.metadata' is set to true.
 
 ### **Release Notes**
 
-This version contains patches htmlFor iOS full screen functionality if meta tag 'viewport' is set and the autoPlay policy of Safari 11, where only muted autoPlay is allowed.
+This version contains patches for iOS full screen functionality if meta tag 'viewport' is set and the autoPlay policy of Safari 11, where only muted autoPlay is allowed.
 
 ### **Changelog**
 
@@ -2532,20 +2532,20 @@ This version contains patches htmlFor iOS full screen functionality if meta tag 
 
 ### HIGHLY RECOMMENDED
 
-This version contains improved connectivity and latency htmlFor iOS 11 compared to iOS 10, and a workaround htmlFor an internal iOS11 system issue.
-It is highly recommended to use this version to avoid potentially higher network load and degraded user experience htmlFor iOS 11 users.
+This version contains improved connectivity and latency for iOS 11 compared to iOS 10, and a workaround for an internal iOS11 system issue.
+It is highly recommended to use this version to avoid potentially higher network load and degraded user experience for iOS 11 users.
 
 ### **Changelog**
 
 ### Improved
 
-- connectivity and latency htmlFor iOS 11
+- connectivity and latency for iOS 11
 
 ## **[3.3.4]**
 
 ### **Release Notes**
 
-This version includes a fix htmlFor the muted state of the player, if the player will be set up muted. The state wasn't changed and no event was fired.
+This version includes a fix for the muted state of the player, if the player will be set up muted. The state wasn't changed and no event was fired.
 Now the 'onMuted' event fires immediately with the setuo promise.
 
 ### **Changelog**
@@ -2558,7 +2558,7 @@ Now the 'onMuted' event fires immediately with the setuo promise.
 
 ### **Release Notes**
 
-This version includes a fix htmlFor the flash fallback. It fixes an undefined error  on setuo if container div id is different than 'playerDiv'.
+This version includes a fix for the flash fallback. It fixes an undefined error  on setuo if container div id is different than 'playerDiv'.
 
 ### **Changelog**
 
@@ -2576,13 +2576,13 @@ Another main feature is the new reconnect logic. It enables reconnects to the h5
 Related to the reconnect we added the value 'connectDelay' to the event 'onLoading', that if positive and not zero indicates that a reconnect is imminent.
 Also now the network error 4503: service unavailable will be dispatched and passed through the 'onError' event.
 For diagnostics of the websocket connection we now use 'performance.mark()' to log different states of the connection with timestamps.
-In this release are also several fixes. There are fixes htmlFor the scaling functionality, the h5live source parsing with bintu rtmp playout object only and at least we removed flash test embed on player load.
+In this release are also several fixes. There are fixes for the scaling functionality, the h5live source parsing with bintu rtmp playout object only and at least we removed flash test embed on player load.
 
 ### **Changelog**
 
 ### Added
 
-- enable always keep connected htmlFor websocket to the h5live server (h5live server 1.8.0.0 and higher)
+- enable always keep connected for websocket to the h5live server (h5live server 1.8.0.0 and higher)
   - can be set via 'config.playback.keepConnection'
   - default: false
 - enable reconnect in case of recoverable network errors (see docs), not supported on iOS with metadata disabled
@@ -2603,7 +2603,7 @@ reconnect: {
   - the delay in milliseconds before start connecting to the server
   - positive if a reconnect is imminent, otherwise zero
 - dispatch network error 4503: service unavailable
-- add performance marks with timestamps (see our [documentation](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer3/global.html#performancemarks) htmlFor more information),
+- add performance marks with timestamps (see our [documentation](https://demo.nanocosmos.de/nanoplayer/docs/nanoplayer3/global.html#performancemarks) for more information),
   the middle part of the name string is the elementId of the player container (not supported on Safari 11 OSX and iOS):
   - 'nano.[playerDivId]**.connecting'
   - 'nano.[playerDivId]**.connected'
@@ -2625,7 +2625,7 @@ reconnect: {
 
 ### Improved
 
-- start logic htmlFor IE/Edge
+- start logic for IE/Edge
 
 ## **[3.2.1]**
 
@@ -2641,7 +2641,7 @@ reconnect: {
 
 In this release we added the opportunity to create an audio player without video functionality.
 This can be enabled by setting in the style object of the config the new property 'audioPlayer' to 'true',
-htmlFor example 'config.style.audioPlayer = true'.
+for example 'config.style.audioPlayer = true'.
 Controls can be enabled/disabled. The size can be customized via 'width' and 'height'. Default is 640px * 51px.
 
 ### **Changelog**
@@ -2657,13 +2657,13 @@ Controls can be enabled/disabled. The size can be customized via 'width' and 'he
 
 ### **Release Notes**
 
-With this release comes improvements htmlFor the playback on iOS devices.
+With this release comes improvements for the playback on iOS devices.
 We introduce an adaptive buffer control depending on the buffer requirements of the iOS video element
 to achieve smooth playback while attempting to keep the latency as low possible.
-The adaptive buffer control is enabled by default htmlFor iOS clients.
+The adaptive buffer control is enabled by default for iOS clients.
 There is a direct correlation between the integrity of the rtmp source stream and the buffer requirements.
 
-The second improvement is that it's now possible to configure the buffer settings also htmlFor iOS devices directly.
+The second improvement is that it's now possible to configure the buffer settings also for iOS devices directly.
 If the buffer tweaks will be set via config,
 the adaptive buffer control will be disabled and the given value will be used as discret values.
 
@@ -2672,8 +2672,8 @@ the adaptive buffer control will be disabled and the given value will be used as
 ### Added
 
 - adaptive buffer control related to the buffer requirements on iOS
-- enable setting buffer tweaks via config htmlFor iOS as discret values
-- buffering detection htmlFor iOS
+- enable setting buffer tweaks via config for iOS as discret values
+- buffering detection for iOS
 
 ## **[3.0.11]**
 
@@ -2686,7 +2686,7 @@ in play detection and pausing behaviour.
 
 ### Fixed
 
-- user gesture required detection htmlFor mobile
+- user gesture required detection for mobile
 - hide media errors if pausing/paused
 - enable usage of event handler functions without defining an event object parameter
 - video tag destroy
@@ -2698,7 +2698,7 @@ in play detection and pausing behaviour.
 ### Fixed
 
 - remove source correctly on pause to disable multiple stream connections (iOS)
-- check media source htmlFor mime type support
+- check media source for mime type support
 - fix playback suspension with video only streams in Chrome > 57 on lost page focus
 
 ## **[3.0.9]**
@@ -2706,7 +2706,7 @@ in play detection and pausing behaviour.
 ### **Release Notes**
 
 The main improvements of this release are getting more stability
-htmlFor resuming after pause.
+for resuming after pause.
 
 ### **Changelog**
 
@@ -2754,7 +2754,7 @@ For the On-Premise setup this server values have to be replaced with the own ser
 
 ### BREAKING CHANGE
 
-The separate configuration of the rtmp url htmlFor the fallback to flash player,
+The separate configuration of the rtmp url for the fallback to flash player,
 the source.rtmp object, has been removed. Instead the rtmp url and stream name
 from the source.h5live.rtmp object will be used in this case.
 
@@ -2762,7 +2762,7 @@ Since this version the last video frame can be kept displayed after pausing the 
 instead of displaying a black frame. The related configuration option is
 'style.keepFrame' = [true/false]**, which is enabled by default.
 
-Support htmlFor playback of audio only streams has been added (at least server version 1.7 required).
+Support for playback of audio only streams has been added (at least server version 1.7 required).
 An audio symbol can be displayed during the playback of an audio only stream.
 The related configuration option is
 'style.displayAudioOnly' = [true/false]**, which is enabled by default.
@@ -2782,27 +2782,27 @@ The related configuration option is
 ### Removed
 
 - removed external code from source code incl. config etc.
-- removed rtmp source htmlFor flash, instead use the rtmp object from h5live source as fallback
+- removed rtmp source for flash, instead use the rtmp object from h5live source as fallback
 - removed nanocosmos server defaults
 
 ### Fixed
 
-- adjusted minimum buffer htmlFor ie/edge
+- adjusted minimum buffer for ie/edge
 - more stable start behaviour
-- frame drop handling only htmlFor Firefox
+- frame drop handling only for Firefox
 - destroy player on new setup call
 
 ## **[2.8.1]**
 
 ### **Release Notes**
 
-The main changes of this release are adding quality metrics htmlFor firefox
+The main changes of this release are adding quality metrics for firefox
 to detect frame dropping and handling by buffer increasing.
 Fixed is the user gesture error on playback start by tapping
 on the interaction playbutton on Android 5/6.
 Fixed is the playback start on start buffer.
 
-- Added quality handler htmlFor firefox with frame drop detection/handling.
+- Added quality handler for firefox with frame drop detection/handling.
 
 - Fixed user gesture error on Android 5/6.
 
@@ -2824,21 +2824,21 @@ Fixed is the playback start on start buffer.
 
 ### **Release Notes**
 
-The main changes of this release are improvements htmlFor playback on safari.
+The main changes of this release are improvements for playback on safari.
 The stream does not stops anymore in case of large gaps in buffer
 or unexpected pause calls. It is added a handling to keep low latency playback
 in case of multiple buffered ranges by a seek over buffer gaps (exclude iOS).
 
 - Added a handling to prevent playback stopping on unexpected pause calls.
 
-- Added a handling to seek over buffer gaps to keep low latency playback. This does not apply htmlFor iOS.
+- Added a handling to seek over buffer gaps to keep low latency playback. This does not apply for iOS.
 
 ### **Changelog**
 
 ### Added
 
 - handle 'playback suspended' on iOS in case of lost focus / menu by pausing the player
-- added new pause reason, state & errorcode htmlFor 'playback suspended'
+- added new pause reason, state & errorcode for 'playback suspended'
 - tweak buffer times
 
 ### Fixed
@@ -2865,7 +2865,7 @@ in case of multiple buffered ranges by a seek over buffer gaps (exclude iOS).
 - click on player let controls appear
 - click on playbutton starts playback
 - disable mobile autoPlay in demo
-- buffer value change htmlFor stable playback on IE/Edge, framerate dependent
+- buffer value change for stable playback on IE/Edge, framerate dependent
 
 ## **[2.3.4]**
 
@@ -2874,15 +2874,15 @@ in case of multiple buffered ranges by a seek over buffer gaps (exclude iOS).
 ### Added
 
 - add multiplayer
-- online flashplayer path htmlFor snippet
-- buffer improvement htmlFor ios
+- online flashplayer path for snippet
+- buffer improvement for ios
 - webpack build
   - native script tag, require, commonjs
-- separate demo html's htmlFor native and require load
+- separate demo html's for native and require load
 - destroy function
-- native hls playback enabled htmlFor safari
-- remove online dependency htmlFor flashplayer (relative path)
-- remove online dependency htmlFor external code (must load separately else not supported)
+- native hls playback enabled for safari
+- remove online dependency for flashplayer (relative path)
+- remove online dependency for external code (must load separately else not supported)
 - controls
   - play/pause
   - time
@@ -2890,8 +2890,8 @@ in case of multiple buffered ranges by a seek over buffer gaps (exclude iOS).
   - volume
   - full screen
 - config option to set flashplayer path (default is html root)
-- events htmlFor mute/unmute/volumechange
-- buffer control htmlFor ios
+- events for mute/unmute/volumechange
+- buffer control for ios
 - general IE/Edge support, more buffer
 - playback watcher to detect if playback started (user gesture required on mobile)
 - new pause reason/state/error
@@ -2899,11 +2899,11 @@ in case of multiple buffered ranges by a seek over buffer gaps (exclude iOS).
 ### Fixed
 
 - ignore force param in demo
-- check config htmlFor source object
+- check config for source object
 - docs
 - removing players in multiplayer
 - default server error
-- seek instead of increase speed in buffer control htmlFor IE/Edge
+- seek instead of increase speed in buffer control for IE/Edge
 
 ## **[2.0.3]**
 

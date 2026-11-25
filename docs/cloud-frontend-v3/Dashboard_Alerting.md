@@ -80,7 +80,7 @@ If the problem persists or isn't evident, consider using our troubleshooting too
 
 :::tip Troubleshooting
 The troubleshooting page on the [Analytics Dashboard](https://metrics.nanostream.cloud/) helps to investigate stream or user specific metrics across the streaming experience from stream ingest to the playout at the enduser. <br/>
-Learn more on how to troubleshoot [here](../analytics/troubleshooting).
+Learn more on how to troubleshoot [here](/docs/analytics/dashboard/troubleshooting).
 :::
 
 **4. Contact Support**:

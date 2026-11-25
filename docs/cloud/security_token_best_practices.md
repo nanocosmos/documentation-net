@@ -45,7 +45,12 @@ The recommended architecture keeps your credentials on the backend and issues sh
 
 ### Keep tokens short-lived
 
-Set expiration times between **5 minutes and 24 hours** depending on your use case. Shorter tokens reduce the window of opportunity for misuse. The default expiration is 2 weeks for non-revocable tokens and 24 hours for revocable tokens, but for production systems a much shorter duration is recommended.
+We recommend an expiration of **24 hours or less** in general. Shorter tokens reduce the window of opportunity for misuse:
+
+- **High-security use cases** (paid content, betting, private events): use much shorter tokens, for example 5–30 minutes, and renew them from your backend.
+- **Test pages and environments with lower security requirements:** longer, non-revocable tokens can be acceptable.
+
+Revocable tokens can be valid for at most **24 hours**. See [Token Revocation](./security_token_revocation) for the limits of each token type. These limits may change in the future.
 
 ### Restrict every token as tightly as possible
 

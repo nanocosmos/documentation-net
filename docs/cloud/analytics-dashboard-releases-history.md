@@ -95,4 +95,4 @@ With the introduction of version 2.25 we made versioning of our API and the Anal
 -  use toasts for error messages
 -  improved troubleshooting fine time range slider to automatically keep the maximal selected time range duration at 12 hours
 
-**NOTE: Changelog for previous versions can be found in the [API changelog](/analytics/api-releases/history)**
+**NOTE: Changelog for previous versions can be found in the [API changelog](/docs/analytics/api-releases/history)**

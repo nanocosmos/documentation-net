@@ -10,7 +10,7 @@ sidebar_label: Live Captions
 The Live Captions page provides usage analytics for the Live Captions service. It gives you an overview of transcription session uptime, language distribution, and per-stream usage.
 
 :::info
-Live Captions must be enabled for your organization before data appears here. To learn how to set up and configure Live Captions, see the [Live Captions setup guide](/docs/dashboard/live_captions).
+Live Captions are enabled for all organizations since November 2026. Data appears here once you have run streams with Live Captions. To learn how to set up and configure Live Captions, see the [Live Captions setup guide](/docs/dashboard/live_captions).
 :::
 
 ## Uptime Usage

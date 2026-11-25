@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     client.setup().then(() => {
         console.log('Webcaster.setup done');
     });
-}
+});
 ```
 
 3. **Creating a MediaStream from a Selection of Audio & Video Devices**
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         stream = new MediaStream([audioTrack, videoTrack]);
         */
     } catch(error) {
-        alert('Error creating stream:', error);
+        alert('Error creating stream: ' + error);
         return;
     }
 
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 maxVideoBitrateBps: HelperUtils.kbps(2000),
                 maxEncodingFramerate: 30,
             }
-        }
+        },
         ingestUrl: 'rtmp://bintu-stream.nanocosmos.de:1935/live',
         streamName: 'YOUR_STREAM_NAME',
         serverUrl: 'https://bintu-webrtc.nanocosmos.de/p/webrtc',
@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     client.setup().then(() => {
         console.log('Webcaster.setup done');
     });
-}
+});
 
 ```
 
@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 video: true
             });
         } catch (err) {
-            console.error('Error recovering client:', err);
+            console.error('Error muting client:', err);
         }
     }
 </script>

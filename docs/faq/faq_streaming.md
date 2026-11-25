@@ -54,7 +54,8 @@ nanocosmos supports the following Streaming formats:
 
 - RTMP with H264 Video and AAC Audio (nanoStream Apps/SDKs or 3rd party software/hardware)
 - nanoStream Webcaster (browser based)
-- Other formats upon request, e.g. SRT, RTSP, H265, VP9
+- SRT with H264 video and AAC audio (MPEG-TS), always enabled — see [SRT ingest](/docs/cloud/srt_ingest)
+- Other formats upon request, e.g. RTSP, H265, VP9
 
 #### Playback/Downstream:
 

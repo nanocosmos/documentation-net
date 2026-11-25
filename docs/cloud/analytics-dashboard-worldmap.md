@@ -23,12 +23,12 @@ The USA (as a special case) are separated in different regions, where each regio
 You can choose from the following categories:
 
 - **Playout/Ingests**: how many streams where ingested and played back
-- **Buffering Play Ratio** (only available with [H5Live metrics](./analytics#h5live) enabled): the ratio between buffer and playback duration over all playouts for a country
+- **Buffering Play Ratio** (only available with [H5Live metrics](/docs/analytics/dashboard/h5live) enabled): the ratio between buffer and playback duration over all playouts for a country
   - a ratio of 0% means no buffering
   - a ratio of 100% means no playback was possible
   - for countries like India with a high number of mobile connections and unstable internet connection, a higher buffering/play ratio compared to other countries is expected
-- **Latency** (only available with [H5Live metrics](./analytics#h5live) enabled): the average playback latency over all playbacks for a country
-- **Playtime average** (only available with [H5Live metrics](./analytics#h5live) enabled): the average playback duration of a playback event, shows how long a viewer will watch a stream
+- **Latency** (only available with [H5Live metrics](/docs/analytics/dashboard/h5live) enabled): the average playback latency over all playbacks for a country
+- **Playtime average** (only available with [H5Live metrics](/docs/analytics/dashboard/h5live) enabled): the average playback duration of a playback event, shows how long a viewer will watch a stream
 - **Usage** (received/sent): the ingest and playback usage (in gigabytes) for a country
 - **ABR playtime**: the playback duration of streams with activated **"adaptive bitrate"** option enabled
 - **ABR viewer**: the total viewer count of country/region
@@ -80,7 +80,7 @@ Clicking on a region in the **World Regions View**, lets you zoom in and shows c
 
 In **Country View** the Top 50 ranked countries are marked by a small indicator, while in **Zoom Region View** all countries are marked. The Top 10 in both cases is explicitly numerated to give a quick overview of the most popular locations.
 
-(A) `Country` - **Hovering** over the indicator shows country specific details, while **Clicking** opens up a [**Breakdown Menu**](./analytics-zoom#zoom-on-worldmap) of this countrys streaming activity. <br/>
+(A) `Country` - **Hovering** over the indicator shows country specific details, while **Clicking** opens up a [**Breakdown Menu**](/docs/analytics/dashboard#zoom-feature) of this countrys streaming activity. <br/>
 (B) `Country Overview` is shown when hovering over one of the Top 50 ranked countries.
 
 ## Zoom on Worldmap

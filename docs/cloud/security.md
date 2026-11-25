@@ -80,7 +80,7 @@ Tokens can be created via our dedicated [API](/docs/nanoplayer/nanoplayer_securi
 To make use of **Secure Playback**, it must be explicitly enabled for your organization. Activation may be subject to additional pricing or service terms.
 
 You can verify whether this feature is available by navigating to [dashboard.nanostream.cloud/organisation](https://dashboard.nanostream.cloud/organisation) in your dashboard.  
-In the **[Enabled Packages](./organization_overview#enabled-packages)** section, locate the entry for `Secure`. If it shows **Upgrade needed**, please contact us.
+In the **[Enabled Packages](/docs/dashboard/organization_overview#enabled-packages)** section, locate the entry for `Secure`. If it shows **Upgrade needed**, please contact us.
 
 ![Screenshot: Enabled Packages](../assets/dashboard/enabled-packages.png)  
 
@@ -193,7 +193,7 @@ For a detailed walkthrough of the token-based analysis workflow, visit the [Toke
 The following checklist summarizes the recommended security configuration for nanoStream:
 
 ### Token Configuration
-- [ ] Use **short-lived tokens** (5–30 minutes for high-security use cases, up to 24 hours maximum)
+- [ ] Use **short-lived tokens**: 24 hours or less in general, 5–30 minutes for high-security use cases (revocable tokens are limited to 24 hours)
 - [ ] Restrict tokens to **specific streams or stream groups** (avoid organization-wide tokens in production)
 - [ ] Bind tokens to the **viewer's IP address** whenever possible
 - [ ] Bind tokens to your **playback domain**

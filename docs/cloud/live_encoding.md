@@ -22,7 +22,8 @@ nanoStream Cloud works with browser-based, software-based, and hardware-based en
 |---------|-------------|-------------|-----------|
 | nanoStream Webcaster | H.264 | Opus | WebRTC |
 | Software/Hardware Encoders | H.264 | AAC | RTMP |
-| On Request | H.265, SRT, RTSP | - | – |
+| SRT Encoders ([SRT ingest](./srt_ingest)) | H.264 | AAC | MPEG-TS over SRT |
+| On Request | H.265, RTSP | - | – |
 
 ### Encoder Setup
 

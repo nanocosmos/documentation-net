@@ -34,8 +34,8 @@ If you don’t have an account yet, you can [sign up](https://dashboard.nanostre
   </Columns>
 </article>
 
-:::warning Live Transcoding
-Currently, the nanoStream Webcaster does not support [live transcoding](../dashboard/abr_transcoding).
+:::info Live Transcoding
+The nanoStream Webcaster can ingest into the live transcoding infrastructure, so you can combine it with [adaptive bitrate (ABR) and live transcoding](../dashboard/abr_transcoding).
 :::
 
 ## Webcaster Samples

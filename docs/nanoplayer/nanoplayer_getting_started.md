@@ -46,7 +46,7 @@ var config = {
             "switch": {
                 'method': 'server',
                 'pauseOnError': false,
-                'forcePlay': true
+                'forcePlay': true,
                 'timeout': 10,
             }
         },

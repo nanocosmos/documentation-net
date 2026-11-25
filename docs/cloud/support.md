@@ -165,7 +165,7 @@ You can force playback from a specific region by changing `h5live.server`.
 `bintu-play-use.nanocosmos.de`
 
 Full test URL:  
-[https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?group.id=XXXXX-YYYYY&general.serverDomain=bintu-play-use.nanocosmos.de]([https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?group.id=XXXXX-YYYYY&general.serverDomain=bintu-play-use.nanocosmos.de)
+[https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?group.id=XXXXX-YYYYY&general.serverDomain=bintu-play-use.nanocosmos.de](https://demo.nanocosmos.de/nanoplayer/release/nanoplayer.html?group.id=XXXXX-YYYYY&general.serverDomain=bintu-play-use.nanocosmos.de)
 :::
 
 ## Geo Locations and Host Overview
@@ -197,7 +197,7 @@ Geo overrides are not required for standard operation and should only be used wh
 Additional regions (South America, Turkey, Japan, Hong Kong) are available on request.
 
 :::info Primary Host URLs
-Primary host URLs are provided only when required for debugging. Please contact support via [our support form]((https://www.nanocosmos.net/support)).
+Primary host URLs are provided only when required for debugging. Please contact support via [our support form](https://www.nanocosmos.net/support).
 :::
 
 ## Additional Help

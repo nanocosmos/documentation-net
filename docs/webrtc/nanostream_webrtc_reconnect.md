@@ -46,7 +46,7 @@ const webcaster = new window.WebcasterApiV6.Webcaster({
       minDelaySec: 2,
       maxDelaySec: 15,
       maxRetries: 10
-    }
+    },
     streamName: '<STREAM-NAME-1>'
 });
 

@@ -295,6 +295,10 @@ const config = {
             to: '/docs/analytics/alerting', // New URI
             from: ['/docs/cloud/alerting'], // Old URIs to be redirected
           },
+          {
+            to: '/docs/cloud/user_roles', // linked as /docs/user_roles in sales material
+            from: ['/docs/user_roles'],
+          },
         ],
       },
     ],

@@ -95,7 +95,7 @@ curl -X POST https://bintu.nanocosmos.de/stream \
 All four caption stream option operations (create, modify, delete, and read back options) share this same permission restriction.
 
 :::warning Permissions & Requirements
-Live captioning must be enabled for your organization by nanocosmos. If it is not enabled for your organization, these endpoints return `403` (`LiveCaptioningNotEnabled`).
+Since November 2026, live captioning is enabled for all organizations. If an endpoint returns `403` (`LiveCaptioningNotEnabled`), live captioning is not available for your organization; please contact [support](https://www.nanocosmos.net/support).
 :::
 
 This is the core of the captioning integration. Stream options control the live captioning setup:

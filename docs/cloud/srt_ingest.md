@@ -9,6 +9,8 @@ The Secure Reliable Transport (SRT) protocol is a modern, UDP-based streaming pr
 
 While SRT is used exclusively as an **ingest** protocol in nanoStream Cloud, playback is performed via **H5Live** (ultra-low latency HTML5 playback) or **RTMP**. This hybrid workflow enables high-quality global ingest while maintaining ultra-low-latency delivery on all platforms.
 
+SRT ingest is always enabled and available for all organizations; no activation is needed.
+
 :::warning SRT Playback
 **SRT playback is currently not supported by nanoStream Cloud.**  
 Please use **H5Live Player** or **RTMP** for viewing your live streams.
