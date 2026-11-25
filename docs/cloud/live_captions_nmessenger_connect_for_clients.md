@@ -226,7 +226,7 @@ After loading the library and defining the overlay element, create a new `NanoMe
 document.addEventListener("DOMContentLoaded", function() {
   // Step 1: Create the messenger client
   const messenger = new NanoMessenger(
-    "bintu-nmessenger.nanostream.cloud", // server
+    "nmessenger.nanostream.cloud",       // server
     443,                                                 // port
     { overlayDiv: "caption-text" }                       // options
   );
@@ -256,7 +256,7 @@ The following table explains all values used when initializing the NanoMessenger
 
 | Parameter / Option | Where used | Description | Example |
 |--------------------|------------|-------------|---------|
-| Server | `new NanoMessenger(server, port, options)` | Hostname of the caption delivery service | `bintu-nmessenger.autodevops-prod.nanostream.cloud` |
+| Server | `new NanoMessenger(server, port, options)` | Hostname of the caption delivery service | `nmessenger.nanostream.cloud` |
 | Port | `new NanoMessenger(server, port, options)` | Secure WebSocket port (always HTTPS/WSS) | `443` |
 | overlayDiv | `options.overlayDiv` | ID of the HTML element that will receive and display the captions, as initialized [here](#2-create-a-caption-overlay). **Make sure they match**. | `"caption-text"` |
 | your-caption-token | `messenger.connect(token, ...)` | JWT token authorizing access to the caption stream. **Required for secure streams.** Pass `null` for non-secure streams. | `eyJhbGciOiJIUzI1NiIsInR5cCI6...` |
@@ -359,7 +359,7 @@ The `receive-captions.html` example below demonstrates how to use the reference 
     <script src="https://nmessenger.nanostream.cloud/client/nmessenger.js"></script>
     <script>
       function nmessengerMain(options = {}) {
-        const CAPTION_SERVER = "bintu-nmessenger.autodevops-prod.nanostream.cloud";
+        const CAPTION_SERVER = "nmessenger.nanostream.cloud";
         const CAPTION_PORT = 443;
         const params = new URLSearchParams(window.location.search);
         const channel = params.get("caption.channel");
