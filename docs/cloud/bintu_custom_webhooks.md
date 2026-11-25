@@ -15,7 +15,7 @@ This mechanism enables advanced use cases such as:
 - logging and auditing of publish events
 - enforcing business rules before a stream goes live
 
-Bintu webhooks are **synchronous and blocking**: Bintu will *wait* for your server's response. If your server responds with `200 OK`, the action proceeds. If it responds with `403`, the action is rejected.
+Bintu webhooks are **synchronous and blocking**: Bintu will *wait* for your server's response. If your server responds with `200 OK`, the action proceeds. Any other status, `403` but also `201` or `204`, rejects it. For `update_publish` calls, a response other than `200` disconnects the running stream.
 This makes webhooks a powerful and flexible control point in your streaming pipeline.
 
 ## Prerequisites
@@ -60,7 +60,7 @@ Your server must **always** return a valid HTTP response:
 |---------------|-------------|
 | `200 OK` | Allow publish |
 | `403 Forbidden` | Deny publish |
-| any other status | Request is rejected |
+| any other status (also `201`, `204`) | Request is rejected; for `update_publish`, the running stream is disconnected |
 
 :::tip Performance note
 Because the call is **blocking**, slow response times will slow down stream start times. Ensure your service responds quickly (< 100–300 ms recommended).
