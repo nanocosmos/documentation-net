@@ -16,7 +16,6 @@ variables:
   # staging and canary ON. Open decision, see README.md "CI/CD & deployment".
   STAGING_ENABLED: "false"
   CANARY_ENABLED: "false"
-  REVIEW_SUBDOMAIN: docs-dev-$CI_COMMIT_REF_SLUG
 
 # ── Image build ─────────────────────────────────────────────────────────────
 # gitlab.nanocosmos.cloud runners have no Docker daemon, so the Auto-DevOps
@@ -71,7 +70,7 @@ build_kaniko:
     - auto-deploy persist_environment_url
   environment:
     name: $CI_COMMIT_REF_SLUG
-    url: http://$REVIEW_SUBDOMAIN.$KUBE_INGRESS_BASE_DOMAIN
+    url: http://docs-dev-$CI_COMMIT_REF_SLUG.$KUBE_INGRESS_BASE_DOMAIN
     on_stop: stop_review
   artifacts:
     paths: [ environment_url.txt, tiller.log ]
