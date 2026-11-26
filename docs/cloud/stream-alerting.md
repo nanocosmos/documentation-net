@@ -71,8 +71,8 @@ The analysis for live stream alerts is executed every minute. The considered tim
 - start of time range: `end - 5 minutes`
 :::
 
-To fire up alerts we make use of 4 RTMP stats events for each minute. 20 events are collected in total for the given maximum range of 5 minutes. These events contain information regarding the **stream time ratio**, which is used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts. 
-This specific stat can be examined in detail using the [troubleshooting](./analytics-dashboard-troubleshooting.mdx#stream-time-ratio) feature on the [Analytics Dashboard](https://metrics.nanostream.cloud/troubleshooting). Each alert is part of an specific **alert category** and owns a unique alert code. 
+To fire up alerts we make use of 4 RTMP stats events for each minute. 20 events are collected in total for the given maximum range of 5 minutes. These events contain information regarding metrics like the **stream time ratio** and the **max frame delay**, which are used to identify potential ingest stream performance/quality issues in order to classify them and raise corresponding alerts. 
+These specific stats can be examined in detail using the [troubleshooting](./analytics-dashboard-troubleshooting.mdx#stream-time-ratio) feature on the [Analytics Dashboard](https://metrics.nanostream.cloud/troubleshooting). Each alert is part of an specific **alert category** and owns a unique alert code. 
 
 
 
@@ -171,6 +171,48 @@ If the average of all [stream time ratio (STR)](./analytics-dashboard-troublesho
 
 -----
 
+#### Max Frame Delay Alert
+##### Description
+The [Max Frame Delay](./analytics-dashboard-troubleshooting.mdx#max-frame-delay) (MFD) metric measures the maximum per-frame buffering latency at the ingest server, tracked separately for the audio and video track. A persistently elevated value increases end-to-end latency, while frequent brief stalls interrupt playback on their own even if the typical delay looks fine. Depending on which of these behaviors is observed, one of the alerts below is raised for the stream.
+
+:::info note
+The three Max Frame Delay alerts describe different effects rather than increasing severity levels. Since a stream can only show one of these behaviors at a time, just one alert is ever reported for it at once — the one with the widest viewer impact takes precedence if multiple conditions are met simultaneously.
+:::
+
+##### Subtypes
+<table>
+    <thead>
+        <tr>
+        <th>Code</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Recommended Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>23011</td>
+            <td>Persistently Elevated Frame Delay (Ultra Low Latency)</td>
+            <td>The frame delay is moderately elevated; regular playback is unaffected, but applications relying on ultra low latency may be affected.</td>
+            <td>No action is required unless you rely on ultra low latency playback. In that case, reduce the encoder's output buffer and verify the upstream connection has bandwidth headroom above the configured bitrate.</td>
+        </tr>
+        <tr>
+            <td>23012</td>
+            <td>Persistently High Frame Delay</td>
+            <td>The typical frame delay of the ingest is high, increasing end-to-end latency for all viewers regardless of playback mode.</td>
+            <td>Check the encoder for an oversized output buffer or an overly long keyframe interval, and verify the upstream bandwidth. Restart the stream after correcting the settings.</td>
+        </tr>
+        <tr>
+            <td>23013</td>
+            <td>Recurring Ingest Stalls</td>
+            <td>The ingest stalls repeatedly but briefly; viewers may see short interruptions, while the typical frame delay stays acceptable. This usually points at the network path rather than the encoder.</td>
+            <td>Check the network path between the encoder and ingest server for packet loss, bandwidth drops or an unstable uplink. Restarting the stream only helps if the encoder itself is the source; it will not resolve an unstable network path.</td>
+        </tr>
+    </tbody>
+</table>
+
+-----
+
 ### <span className="analytics-alertHeading-infrastructure" /> [24000 - 24999]
 
 Infrastructure alerts represent issues that may be invisible from the outside of our infrastructure and even if there are no direct impairments stream performance/quality wise, these issues can lead to critical problems. Alerts of this category serve especially as early notification system, so taking action is immediately possible. Occuring problems with the underlying **<u>Infrastructure</u>** of the corresponding stream are detected by analysing just the passthrough (non-transcoding) streams. 
@@ -255,6 +297,8 @@ These guidelines can be used to get an idea about **what the problem is, why it 
 While the exact solution may vary, some common approaches include:
 
 - **General performance issues detected by *Stream Time Ratio* metrics (error codes: 23001 / 23002):**  Restart the stream and run a bandwidth speed test afterwards
+- **Persistently elevated/high *Max Frame Delay* (error codes: 23011 / 23012):**  Check the encoder's output buffer size, keyframe interval and upstream bandwidth, then restart the stream; for 23011 (ultra low latency only), no action is required unless you rely on ultra low latency playback
+- **Recurring ingest stalls detected by *Max Frame Delay* (error code: 23013):**  Check the network path between encoder and ingest server for packet loss or bandwidth drops; a restart only helps if the encoder itself is the source
 - **Continuous restarts (error codes: 22000 / 22001):**  Restart the stream; for 22001, check local bandwidth using a speed test
 - **Inactive ingests (error codes: 22010 / 22011):**  Check encoder configuration; ensure the source is actively sending data; verify network connectivity between encoder and ingest server
 - **Duplicated ingests (error codes: 24100–24103):**  Stop all ingests using the same stream name across all machines/encoders/locations; restart only one from the intended source and review the ingest workflow  

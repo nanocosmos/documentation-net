@@ -199,6 +199,10 @@ Tracking this metric is important because it allows you to:
 - `Ensure smoother playback` – Lower delays provide real-time responsiveness with minimal buffering.
 
 *Note* : The max frame delay is calculated by the ingest server based on the frequency of received frames. The offset is crucial for ensuring a smooth playback experience, minimizing buffering and preventing video/audio desynchronization.
+
+:::tip note
+Persistently elevated or stalling max frame delay values automatically raise a [Max Frame Delay Alert](./stream-alerting.md#alert-types-and-codes). Learn more about the specific alert types and codes [here](./stream-alerting.md#alert-types-and-codes).
+:::
 <ScaledImage image="analytics-alert-max-time-frame-regular.png" alt="A Regular Max Frame Delay Example" widthScaling="50" title="A Regular Max Frame Delay Example" 
     description="Looking at this chart, most values are around 250–300 ms, with spikes reaching 350–375 ms, which we can consider a good range. Still, delays of 250–300 ms can cause minor issues, since it takes about a quarter of a second for the stream to reach viewers. For the smoothest experience, the goal is to keep the max frame delay under 200 ms. " />
 
