@@ -21,6 +21,7 @@ The Analytics Dashboard at [metrics.nanostream.cloud](https://metrics.nanostream
 | **Breakdown** | [metrics.nanostream.cloud/breakdown](https://metrics.nanostream.cloud/breakdown) | Traffic based analysis with one-click IP/Referrer blocking |
 | **Guardian based on IPs** | [metrics.nanostream.cloud/streamGuard](https://metrics.nanostream.cloud/streamGuard?misTerm=ip) | Activity by IP based analysis with one-click IP blocking |
 | **Guardian based on Tokens** | [metrics.nanostream.cloud/streamGuard?misTerm=jwtoken](https://metrics.nanostream.cloud/streamGuard?misTerm=jwtoken) | Activity by Playback Token based analysis with one-click token revocation |
+| **Guardian based on User Ids** | [metrics.nanostream.cloud/streamGuard](https://metrics.nanostream.cloud/streamGuard) (User Id tab) | Activity by user ID across all playback tokens and IPs of a user, with token revocation per JTI. Requires the `user` claim in the playback token |
 
 ## Setting Up Your Analysis {#setup}
 
@@ -69,6 +70,8 @@ When tokens are bound to specific user IDs, the concurrency metric becomes very 
 
 - A normal user typically has a concurrency of approximately **1**.
 - A concurrency value **> 2** strongly suggests simultaneous streams, indicating account sharing or unauthorized redistribution.
+
+Use the **User Id** tab of the Guardian to see this per user, over all of the user's playback tokens and IPs. Open a user to see their top playback tokens (JTI) and revoke them directly. See the [Analytics Guardian Guide](/docs/analytics/dashboard/guardian#guardian---user-id-breakdown) for details.
 
 ## Practical Analysis Workflow {#workflow}
 
