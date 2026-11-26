@@ -47,7 +47,7 @@ If the filter options are not used as intended, the user will be notified by the
 | Error Code | Short Name | Description | HTTP Code |
 |------------|------------|-------------|-----------|
 | 10**3001** | Stream not found | The provided stream name is not found on our servers. Please check for typos.  | 404 | 
-| 10**3002** | Tag not found | The given stream tag is not found on our servers. Please check for typos and varify if this tag actually exist, using the [bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Tag%20Collection). | 404 | 
+| 10**3002** | Tag not found | The given stream tag is not found on our servers. Please check for typos and varify if this tag actually exist, using the [bintu API](https://api.nanostream.cloud/docs/bintu/#operation/Tag%20Collection). | 404 | 
 | 10**3003** | Country not found | The provided country/region is not known on our servers. Please check for typos.  | 404 | 
 
 ## Processing Errors

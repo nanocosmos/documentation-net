@@ -41,7 +41,7 @@ Authorization: Bearer <bintu token>
 X-BINTU-TOKEN: <bintu token>
 ```
 
-This is the same bintu token you use with the other nanoStream Cloud APIs. You can get one from the nanoStream Cloud Dashboard or the bintu API, or create one from your API key with the [Cloud Token Service](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20bintu%20services).
+This is the same bintu token you use with the other nanoStream Cloud APIs. You can get one from the nanoStream Cloud Dashboard or the bintu API, or create one from your API key with the [Cloud Token Service](https://api.nanostream.cloud/docs/token/#operation/Create%20a%20token%20for%20the%20bintu%20services).
 
 The switching endpoints also accept your bintu API key directly, in an `X-BINTU-APIKEY` header.
 

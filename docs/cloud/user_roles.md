@@ -42,7 +42,7 @@ Before assigning roles, familiarize yourself with:
 Assess the responsibilities of each user within your organization and assign the appropriate role:
 
 - Determine the level of access each user needs based on their job functions.
-- Use the [nanoStream Dashboard](../dashboard/user_management) or the [Bintu API](https://doc.pages.nanocosmos.de/bintuapi-docs) to assign roles to users.
+- Use the [nanoStream Dashboard](../dashboard/user_management) or the [Bintu API](https://api.nanostream.cloud/docs/bintu/) to assign roles to users.
 
 ### 3. Monitor and Enforce Access Control
 It’s important to monitor user access and enforce RBAC policies consistently:
@@ -74,17 +74,17 @@ For a detailed overview of each role's permissions, refer to the [High-level Per
 
 | **Operation** | **Route** | **Description** | **Access Level** | **Dedicated docs** |
 |---|---|---|---|---|
-| **PUT** | `/user/permission`      | Update the user role of a user in your organization | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1permission/put)              |
-| **PUT** | `/user/tokenkey`        | Renew a user `tokenkey` to invalidate previously created API tokens | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1tokenkey/put) |
-| **GET** | `/permission` | Get the available endpoint valids for a given permission (by name) | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/getPermissionProfileByName) |
-| **GET** | `/permission/list` | List available roles and the associated permissions for your organization | <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Permission%20List) |
-| **GET** | `/user` | Displays the permission of users and an internal identifier (enhanced existing endpoint) | <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> | [More info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/User%20Info) |
+| **PUT** | `/user/permission`      | Update the user role of a user in your organization | <span className="role role-admin">nanoAdmin</span> | [More info](https://api.nanostream.cloud/docs/bintu/#tag/User/paths/~1user~1permission/put)              |
+| **PUT** | `/user/tokenkey`        | Renew a user `tokenkey` to invalidate previously created API tokens | <span className="role role-admin">nanoAdmin</span> | [More info](https://api.nanostream.cloud/docs/bintu/#tag/User/paths/~1user~1tokenkey/put) |
+| **GET** | `/permission` | Get the available endpoint valids for a given permission (by name) | <span className="role role-admin">nanoAdmin</span> | [More info](https://api.nanostream.cloud/docs/bintu/#operation/getPermissionProfileByName) |
+| **GET** | `/permission/list` | List available roles and the associated permissions for your organization | <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> | [More info](https://api.nanostream.cloud/docs/bintu/#operation/Permission%20List) |
+| **GET** | `/user` | Displays the permission of users and an internal identifier (enhanced existing endpoint) | <span className="role role-admin">nanoAdmin</span>, <span className="role role-user">nanoUser</span> | [More info](https://api.nanostream.cloud/docs/bintu/#operation/User%20Info) |
 
 ### Token API Endpoints
 
 | **Operation** | **Route** | **Description** | **Access Level** | **Dedicated docs** |
 |---|---|---|---|---|
-| **POST** | `/bintu/token` | Create an API token for the Bintu services | <span className="role role-admin">nanoAdmin</span> | [More info](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20bintu%20services) |
+| **POST** | `/bintu/token` | Create an API token for the Bintu services | <span className="role role-admin">nanoAdmin</span> | [More info](https://api.nanostream.cloud/docs/token/#operation/Create%20a%20token%20for%20the%20bintu%20services) |
 ## High-level Permission Overview
 
 ### API Access

@@ -108,6 +108,6 @@ You can retrieve tags via API to build your own workflow automation:
 
 | Action | Description | API Reference |
 |--------|-------------|---------------|
-| `POST` Create Stream | Create a stream with Tags. | [doc.pages.nanocosmos.de/bintuapi-docs/#operation/Create%20Stream](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Create%20Stream) |
-| `PUT` Set Stream Tags | Ability to update tags. | [doc.pages.nanocosmos.de/bintuapi-docs/#tag/Stream/paths/\~1stream\~1\{id}~1tag/put](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/Stream/paths/~1stream~1{id}~1tag/put) |
-| `GET` Tag Collection | Ability to list all existing tags in your organisation. | [doc.pages.nanocosmos.de/bintuapi-docs/#tag/Tag](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/Tag) |
+| `POST` Create Stream | Create a stream with Tags. | [api.nanostream.cloud/docs/bintu/#operation/Create%20Stream](https://api.nanostream.cloud/docs/bintu/#operation/Create%20Stream) |
+| `PUT` Set Stream Tags | Ability to update tags. | [api.nanostream.cloud/docs/bintu/#tag/Stream/paths/\~1stream\~1\{id}~1tag/put](https://api.nanostream.cloud/docs/bintu/#tag/Stream/paths/~1stream~1{id}~1tag/put) |
+| `GET` Tag Collection | Ability to list all existing tags in your organisation. | [api.nanostream.cloud/docs/bintu/#tag/Tag](https://api.nanostream.cloud/docs/bintu/#tag/Tag) |

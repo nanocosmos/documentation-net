@@ -295,7 +295,7 @@ The call to
 should give you all the info. The `state` value should be `live` when your broadcast is running.
 
 :::tip bintu developer documentation
-You can find the full bintu.live documentation [here](https://doc.pages.nanocosmos.de/bintuapi-docs/).
+You can find the full bintu.live documentation [here](https://api.nanostream.cloud/docs/bintu/).
 :::
 
 Example:

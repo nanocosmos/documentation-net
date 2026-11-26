@@ -202,7 +202,7 @@ The following checklist summarizes the recommended security configuration for na
 - [ ] Create tokens as **revocable** (`revocable: true`) for high-value events and per-user access
 
 ### Backend Security
-- [ ] Use **Bintu tokens** (`X-BINTU-TOKEN`) for API authentication — they are temporary, role-scoped, and can be [invalidated](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1tokenkey/put) if compromised
+- [ ] Use **Bintu tokens** (`X-BINTU-TOKEN`) for API authentication — they are temporary, role-scoped, and can be [invalidated](https://api.nanostream.cloud/docs/bintu/#tag/User/paths/~1user~1tokenkey/put) if compromised
 - [ ] Store credentials **exclusively on the backend** — never in client-side code
 - [ ] **Authenticate users** before issuing playback tokens
 - [ ] Validate `Origin` / `Referer` headers and enforce **CORS**

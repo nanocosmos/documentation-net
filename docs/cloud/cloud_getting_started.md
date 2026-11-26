@@ -60,7 +60,7 @@ The following roles can create a stream:
 
 ### Rest API
 
-You can use the API to create a stream with the [Create Stream API call](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Create%20Stream) and various request samples in our bintu Rest API documentation: [doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs). There you can also learn how to read the responses. A cURL request may look as follows:
+You can use the API to create a stream with the [Create Stream API call](https://api.nanostream.cloud/docs/bintu/#operation/Create%20Stream) and various request samples in our bintu Rest API documentation: [api.nanostream.cloud/docs/bintu](https://api.nanostream.cloud/docs/bintu/). There you can also learn how to read the responses. A cURL request may look as follows:
 
 ```bash title="bintu/create_stream.sh"
 BINTU_APIKEY=your-bintu-apikey
@@ -82,7 +82,7 @@ curl --request POST \
 ```
 
 :::note Advanced Developer API docs
-For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: [doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs). \
+For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: [api.nanostream.cloud/docs/bintu](https://api.nanostream.cloud/docs/bintu/). \
 The API reference provides full details on all available endpoints and workflows for managing stream options, including the topic discussed in this section.
 :::
 
@@ -137,7 +137,7 @@ If the account that created the stream is enabled for playback token security, a
 
 ### Get Stream Info Through Rest API
 
-You can find all the details for the [Get Stream Info API Call](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Stream%20Info). There you can also learn how to read the responses. The cURL request may look as follows:
+You can find all the details for the [Get Stream Info API Call](https://api.nanostream.cloud/docs/bintu/#operation/Stream%20Info). There you can also learn how to read the responses. The cURL request may look as follows:
 
 ```bash title="bintu/get_stream_info.sh"
 BINTU_APIKEY=your-bintu-apikey
@@ -252,7 +252,7 @@ Example ingest comparison:
 
 ### Live Recording & VOD
 
-Live content can also be turned into video on demand (VOD) so you can download it or replay it later. The VOD files can be found in the nanoStream Cloud Dashboard in the respective [stream overview](/docs/dashboard/stream_overview#stream-overview) or requested via the [Get Stream Info API Call](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Stream%20Info).
+Live content can also be turned into video on demand (VOD) so you can download it or replay it later. The VOD files can be found in the nanoStream Cloud Dashboard in the respective [stream overview](/docs/dashboard/stream_overview#stream-overview) or requested via the [Get Stream Info API Call](https://api.nanostream.cloud/docs/bintu/#operation/Stream%20Info).
 
 :::warning Am I recording my live content?
 You can check whether your live content is being recorded as VOD by looking at the ingest URL. If the term `rec` appears in the URL instead of `live`, it is being recorded.

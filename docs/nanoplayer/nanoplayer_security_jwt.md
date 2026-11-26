@@ -23,7 +23,7 @@ There are 2 locations in the dashboard where tokens can be created
 
 ## How to create JSON Web Token for secure playback via API
 
-[Token API Reference](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20H5Live%20Playback%20service)
+[Token API Reference](https://api.nanostream.cloud/docs/token/#operation/Create%20a%20token%20for%20the%20H5Live%20Playback%20service)
 
 ### Request URL and method
 * URL : `https://token.nanostream.cloud/api/v1/splay` 
@@ -182,7 +182,7 @@ With `forceDisconnect` disabled (default)
 
 ## How to verify JSON Web Token for secure playback via API
 
-[Token API Reference](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Validate%20a%20token%20for%20the%20H5Live%20Playback%20service)
+[Token API Reference](https://api.nanostream.cloud/docs/token/#operation/Validate%20a%20token%20for%20the%20H5Live%20Playback%20service)
 
 ### Request URL and method 
 
@@ -214,7 +214,7 @@ With `forceDisconnect` disabled (default)
 
 ## How to revoke a JSON Web Token for secure playback via API
 
-[Token API Reference](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Revoke%20a%20token%20for%20the%20H5Live%20Playback%20service)
+[Token API Reference](https://api.nanostream.cloud/docs/token/#operation/Revoke%20a%20token%20for%20the%20H5Live%20Playback%20service)
 
 ### Request URL and method 
 

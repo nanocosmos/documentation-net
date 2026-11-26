@@ -22,7 +22,7 @@ const ItemList = [
     title: 'bintu API',
     Svg: require('@site/static/img/bintu-api.svg').default,
     description: ("Create and manage your live streams, to enable ultra-low-latency live streaming at a global scale."),
-    link: 'https://doc.pages.nanocosmos.de/bintuapi-docs',
+    link: 'https://api.nanostream.cloud/docs/bintu/',
     button: 'Read documentation'
   },
 ];

@@ -124,7 +124,7 @@ Once a stream has been processed, all generated assets, such as **thumbnails**, 
 
 ### Get Live Processing Assets via REST API
 
-You can retrieve processed assets for a specific stream using the [bintu REST API](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Stream%20Info).  
+You can retrieve processed assets for a specific stream using the [bintu REST API](https://api.nanostream.cloud/docs/bintu/#operation/Stream%20Info).  
 This endpoint returns metadata for the stream, including a list of available processing outputs (e.g., thumbnails, motion clips, or replay URLs).
 
 It is possible to retrieve stream info with the following roles:
@@ -148,7 +148,7 @@ curl --request GET \
 ```
 
 :::note Advanced Developer bintu API docs
-For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: [doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs). \
+For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: [api.nanostream.cloud/docs/bintu](https://api.nanostream.cloud/docs/bintu/). \
 The API reference provides full details on all available endpoints and workflows for managing stream options, including the topic discussed in this section.
 :::
 

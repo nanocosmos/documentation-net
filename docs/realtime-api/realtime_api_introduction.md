@@ -50,7 +50,7 @@ Authenticate with your **bintu token**, the same token you use with the other na
 Authorization: Bearer <bintu token>
 ```
 
-You can get a bintu token from the nanoStream Cloud Dashboard or the bintu API, or create one from your API key with the [Cloud Token Service](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20bintu%20services).
+You can get a bintu token from the nanoStream Cloud Dashboard or the bintu API, or create one from your API key with the [Cloud Token Service](https://api.nanostream.cloud/docs/token/#operation/Create%20a%20token%20for%20the%20bintu%20services).
 
 ## Use cases
 

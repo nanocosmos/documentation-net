@@ -26,7 +26,7 @@ To find your API key or create a Bintu token, sign in to your nanoStream Cloud/b
 
 ## Token Workflow Overview {#token-workflow}
 
-[Token API Reference](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20H5Live%20Playback%20service)
+[Token API Reference](https://api.nanostream.cloud/docs/token/#operation/Create%20a%20token%20for%20the%20H5Live%20Playback%20service)
 
 The recommended architecture keeps your credentials on the backend and issues short-lived, context-aware tokens to each viewer:
 
@@ -63,7 +63,7 @@ For each token, apply as many restrictions as your use case allows:
 
 ### Protect your credentials
 
-For backend authentication with the nanoStream APIs, use a **Bintu token** (`X-BINTU-TOKEN`) rather than the organization API key whenever possible. Bintu tokens are temporary, session-based, and scoped to the user's role — limiting the impact if a credential is compromised. They can also be [manually invalidated](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/User/paths/~1user~1tokenkey/put) at any time.
+For backend authentication with the nanoStream APIs, use a **Bintu token** (`X-BINTU-TOKEN`) rather than the organization API key whenever possible. Bintu tokens are temporary, session-based, and scoped to the user's role — limiting the impact if a credential is compromised. They can also be [manually invalidated](https://api.nanostream.cloud/docs/bintu/#tag/User/paths/~1user~1tokenkey/put) at any time.
 
 The organization **API key** (`X-BINTU-APIKEY`) is permanent and grants the highest level of access. If you do use it, store it exclusively on your backend server. Never embed either credential in client-side JavaScript, mobile apps, or any code that could be inspected by end users. Your backend should be the only component that communicates with the Token Service API.
 
@@ -193,4 +193,4 @@ start();
 - [Dashboard Secure Playback Guide](/docs/dashboard/secure_playback)
 - [Token Revocation](/docs/cloud/security_token_revocation)
 - [Token Guardian View](/docs/cloud/security_token_guardian_view)
-- [Token API Reference](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20H5Live%20Playback%20service)
+- [Token API Reference](https://api.nanostream.cloud/docs/token/#operation/Create%20a%20token%20for%20the%20H5Live%20Playback%20service)

@@ -88,7 +88,7 @@ If you open the organisation overview page in the dashboard using [dashboard.nan
 You can configure your organization's webhook URL using the following API request.
 
 **API Reference** \
-[doc.pages.nanocosmos.de/bintuapi-docs/#operation/Set%20Webhook](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Set%20Webhook)
+[api.nanostream.cloud/docs/bintu/#operation/Set%20Webhook](https://api.nanostream.cloud/docs/bintu/#operation/Set%20Webhook)
 
 **Parameters**
 - `X-BINTU-APIKEY`: Your API key for authentication

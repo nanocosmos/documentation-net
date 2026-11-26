@@ -31,7 +31,7 @@ import Card from '@site/src/components/Card';
 
 // External link
 <Card
-  href="https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/processing"
+  href="https://api.nanostream.cloud/docs/bintu/#operation/processing"
   title="Bintu API"
   description="To utilize the API requests, read more in the bintu docs."
 />
@@ -56,7 +56,7 @@ import Card from '@site/src/components/Card';
 </Card>
 
 // External link
-<Card href="https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/processing">
+<Card href="https://api.nanostream.cloud/docs/bintu/#operation/processing">
   <Card.Header title="Bintu API" />
   <Card.Body>
     To utilize the API requests, read more in the bintu docs.

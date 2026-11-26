@@ -98,7 +98,7 @@ This gives you full control over your streaming workflow, whether you prefer an 
         The <strong>nanoStream Cloud Dashboard</strong> provides an intuitive, web-based interface to manage streams, analytics, and account settings, where no coding is required.
       </Card.Body>
     </Card>
-    <Card className="col col--6 margin-horiz--md" href="https://doc.pages.nanocosmos.de/bintuapi-docs/">
+    <Card className="col col--6 margin-horiz--md" href="https://api.nanostream.cloud/docs/bintu/">
       <Card.Header title="bintu API" />
       <Card.Body className="padding-vert--md">
         The <strong>bintu API</strong> enables developers to automate stream creation, grouping, tagging, and management for global, scalable live streaming operations.

@@ -15,7 +15,7 @@ You can work with Bintu in two ways:
       <Card.Header title="Dashboard" />
       <Card.Body>Use the nanoStream Cloud Dashboard to get an intuitive and comprehensive overview of your streaming activities.</Card.Body>
     </Card>
-    <Card className="col col--6 margin-horiz--md" href="https://doc.pages.nanocosmos.de/bintuapi-docs">
+    <Card className="col col--6 margin-horiz--md" href="https://api.nanostream.cloud/docs/bintu/">
       <Card.Header title="REST API" />
       <Card.Body>Use the bintu REST API directly for automation, backend integration, and dynamic workflows.</Card.Body>
     </Card>
@@ -26,7 +26,7 @@ You can work with Bintu in two ways:
 Both interfaces operate on the same underlying system: **API-created streams appear in the Dashboard instantly, and Dashboard changes are reflected via the API**.
 
 :::tip Bintu REST API Reference  
-The complete API specification, all endpoints, parameters, workflows, and response schemas, is available at [**doc.pages.nanocosmos.de/bintuapi-docs**](https://doc.pages.nanocosmos.de/bintuapi-docs). \
+The complete API specification, all endpoints, parameters, workflows, and response schemas, is available at [**api.nanostream.cloud/docs/bintu**](https://api.nanostream.cloud/docs/bintu/). \
 Use this when you need full request samples, field descriptions, and advanced configuration.
 :::
 
@@ -90,13 +90,13 @@ The Bintu REST API provides programmatic access to stream management.
 |  | URL |
 |--|--|
 | API Entry point | [https://bintu.nanocosmos.de](https://bintu.nanocosmos.de/) |
-| Official Documentation | [https://doc.pages.nanocosmos.de/bintuapi-docs/](https://doc.pages.nanocosmos.de/bintuapi-docs/) |
+| Official Documentation | [https://api.nanostream.cloud/docs/bintu/](https://api.nanostream.cloud/docs/bintu/) |
 
 ## API Examples
 
 The following examples illustrate how to interact with the Bintu API. Each example includes a **cURL command** and a **JavaScript snippet** for direct use in backend applications.
 
-For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: **[doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs)**. The API reference provides full details on all available endpoints and workflows.
+For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: **[api.nanostream.cloud/docs/bintu](https://api.nanostream.cloud/docs/bintu/)**. The API reference provides full details on all available endpoints and workflows.
 
 ### Get latest live stream
 
@@ -104,7 +104,7 @@ Retrieves the newest stream(s) in your organization (default is 50).
 This is useful for dashboards, monitoring tools, or backend systems that need quick access to recently created streams.
 
 **API Reference** \
-[doc.pages.nanocosmos.de/bintuapi-docs/#operation/Stream%20Collection%20Info](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Stream%20Collection%20Info)
+[api.nanostream.cloud/docs/bintu/#operation/Stream%20Collection%20Info](https://api.nanostream.cloud/docs/bintu/#operation/Stream%20Collection%20Info)
 
 **Parameters**
 - `X-BINTU-APIKEY`: your API key for authentication
@@ -136,7 +136,7 @@ To understand *what multi-bitrate streams are* and *how adaptive bitrate and liv
 :::
 
 **API Reference** \
-[doc.pages.nanocosmos.de/bintuapi-docs/#operation/Create%20Stream](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Create%20Stream)
+[api.nanostream.cloud/docs/bintu/#operation/Create%20Stream](https://api.nanostream.cloud/docs/bintu/#operation/Create%20Stream)
 
 **Parameters**
 - `YOUR_STREAM_ID`: the unique ID of your stream in nanoStream Cloud

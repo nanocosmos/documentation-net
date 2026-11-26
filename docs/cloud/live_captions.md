@@ -148,7 +148,7 @@ To use captions, you must first create a stream. See the stream creation guides:
       <Card.Header title="Create Stream via Dashboard" />
       <Card.Body>Use the web-based nanoStream Cloud Dashboard to configure and start streams.</Card.Body>
     </Card>
-    <Card className="col col--6 margin-horiz--md" href="https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Create%20Stream">
+    <Card className="col col--6 margin-horiz--md" href="https://api.nanostream.cloud/docs/bintu/#operation/Create%20Stream">
       <Card.Header title="Create Stream via API" />
       <Card.Body>Create streams programmatically using the bintu REST API.</Card.Body>
     </Card>
@@ -197,10 +197,10 @@ You can access the requests with the following permission level:
 
 **Supported API actions**
 
-- [`POST`](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/Stream-Options/paths/~1stream~1{id}~1options/post) → Add live captions to a stream
-- [`GET`](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/Stream-Options/paths/~1stream~1{id}~1options/get) → Retrieve current caption settings
-- [`PUT`](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/Stream-Options/paths/~1stream~1{id}~1options/put) → Update existing settings
-- [`DELETE`](https://doc.pages.nanocosmos.de/bintuapi-docs/#tag/Stream-Options/paths/~1stream~1{id}~1options/delete) → Remove live captions settings
+- [`POST`](https://api.nanostream.cloud/docs/bintu/#tag/Stream-Options/paths/~1stream~1{id}~1options/post) → Add live captions to a stream
+- [`GET`](https://api.nanostream.cloud/docs/bintu/#tag/Stream-Options/paths/~1stream~1{id}~1options/get) → Retrieve current caption settings
+- [`PUT`](https://api.nanostream.cloud/docs/bintu/#tag/Stream-Options/paths/~1stream~1{id}~1options/put) → Update existing settings
+- [`DELETE`](https://api.nanostream.cloud/docs/bintu/#tag/Stream-Options/paths/~1stream~1{id}~1options/delete) → Remove live captions settings
 
 **Parameters**
 - `YOUR_STREAM_ID`: the unique ID of your stream in nanoStream Cloud
@@ -225,7 +225,7 @@ curl --request POST \
 :::note Live Captions API-First Guide & Advanced bintu API docs
 For a complete end-to-end API walkthrough (including authentication, stream creation, caption option configuration, live monitoring, and CDN transcript downloads), see the [**Live Captions API Guide**](/docs/cloud/live_captions_api_guide).
 
-For additional languages, advanced configuration options, and complete request/response schemas, please refer to the official **bintu API documentation**: [doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs).
+For additional languages, advanced configuration options, and complete request/response schemas, please refer to the official **bintu API documentation**: [api.nanostream.cloud/docs/bintu](https://api.nanostream.cloud/docs/bintu/).
 :::
 
 ## Need assistance?

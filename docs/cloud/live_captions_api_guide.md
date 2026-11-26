@@ -9,7 +9,7 @@ This guide walks through the complete **Live Captions customer journey** using t
 
 :::info API Entry Point & Reference
 - **API Base URL:** `https://bintu.nanocosmos.de`
-- **Full API Reference:** [doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs)
+- **Full API Reference:** [api.nanostream.cloud/docs/bintu](https://api.nanostream.cloud/docs/bintu/)
 - **Dashboard:** [dashboard.nanostream.cloud](https://dashboard.nanostream.cloud)
 :::
 

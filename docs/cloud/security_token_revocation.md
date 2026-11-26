@@ -29,7 +29,7 @@ In general we recommend an expiration of 24 hours or less. Use shorter tokens fo
 
 Use the same Token Service endpoint, adding `"revocable": true` to the request body:
 
-[Token API Reference](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Create%20a%20token%20for%20the%20H5Live%20Playback%20service)
+[Token API Reference](https://api.nanostream.cloud/docs/token/#operation/Create%20a%20token%20for%20the%20H5Live%20Playback%20service)
 
 **Endpoint:**
 ```
@@ -145,4 +145,4 @@ For long-running or low-risk scenarios where tokens naturally expire within acce
 - [Token Best Practices](/docs/cloud/security_token_best_practices)
 - [Token Guardian View](/docs/cloud/security_token_guardian_view)
 - [JWT Secure Playback API](/docs/nanoplayer/nanoplayer_security_jwt)
-- [Token API Reference](https://doc.pages.nanocosmos.de/cloudtokenservice-api-docs/#operation/Revoke%20a%20token%20for%20the%20H5Live%20Playback%20service)
+- [Token API Reference](https://api.nanostream.cloud/docs/token/#operation/Revoke%20a%20token%20for%20the%20H5Live%20Playback%20service)

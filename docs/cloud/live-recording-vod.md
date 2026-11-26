@@ -75,7 +75,7 @@ Once a stream has been recorded, you can access its corresponding VOD asset eith
 
 ### Get VOD Assets via REST API
 
-The [bintu REST API](https://doc.pages.nanocosmos.de/bintuapi-docs/#operation/Stream%20Info) allows you to retrieve all details of a stream, including available recordings and their playback URLs. There you can also learn how to read the responses. You can query your VOD assets with a simple `GET` request to the **Stream Info** endpoint:
+The [bintu REST API](https://api.nanostream.cloud/docs/bintu/#operation/Stream%20Info) allows you to retrieve all details of a stream, including available recordings and their playback URLs. There you can also learn how to read the responses. You can query your VOD assets with a simple `GET` request to the **Stream Info** endpoint:
 
 **Parameters**:
 - `YOUR_STREAM_ID` – the unique ID of your live stream in nanoStream Cloud
@@ -88,7 +88,7 @@ curl --request GET \
   --header 'X-BINTU-APIKEY: REPLACE_WITH_YOUR_API_KEY'
 ```
 :::note Advanced Developer bintu API docs
-For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: [doc.pages.nanocosmos.de/bintuapi-docs](https://doc.pages.nanocosmos.de/bintuapi-docs). \
+For additional languages, advanced configuration options, and complete request/response samples, please refer to the official **bintu API documentation**: [api.nanostream.cloud/docs/bintu](https://api.nanostream.cloud/docs/bintu/). \
 The API reference provides full details on all available endpoints and workflows for managing stream options, including the topic discussed in this section.
 :::
 
