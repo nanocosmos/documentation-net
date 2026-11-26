@@ -173,7 +173,7 @@ If the average of all [stream time ratio (STR)](./analytics-dashboard-troublesho
 
 #### Max Frame Delay Alert
 ##### Description
-The [max frame delay](./analytics-dashboard-troubleshooting.mdx#max-frame-delay) (MFD) metric measures the maximum per-frame buffering latency at the ingest server, tracked separately for the audio and video track. A persistently elevated value increases end-to-end latency, while frequent brief stalls interrupt playback on their own even if the typical delay looks fine. Depending on which of these behaviors is observed, one of the alerts below is raised for the stream.
+The [Max Frame Delay](./analytics-dashboard-troubleshooting.mdx#max-frame-delay) (MFD) metric measures the maximum per-frame buffering latency at the ingest server, tracked separately for the audio and video track. A persistently elevated value increases end-to-end latency, while frequent brief stalls interrupt playback on their own even if the typical delay looks fine. Depending on which of these behaviors is observed, one of the alerts below is raised for the stream.
 
 :::info note
 The three Max Frame Delay alerts describe different effects rather than increasing severity levels. Since a stream can only show one of these behaviors at a time, just one alert is ever reported for it at once — the one with the widest viewer impact takes precedence if multiple conditions are met simultaneously.
